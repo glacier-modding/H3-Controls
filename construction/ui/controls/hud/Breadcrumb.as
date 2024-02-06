@@ -55,8 +55,23 @@ package hud
 			}
 			else
 			{
-				this.MainText = String(data.maintext) || "";
-				this.SubText = String(data.subtext) || "";
+				if (data.maintext !== undefined)
+				{
+					this.MainText = String(data.maintext);
+				}
+				else
+				{
+					this.MainText = "";
+				}
+				
+				if (data.subtext !== undefined)
+				{
+					this.SubText = String(data.subtext);
+				}
+				else
+				{
+					this.SubText = "";
+				}
 			}
 			if (data.progress)
 			{
