@@ -89,31 +89,31 @@ package common.menu
 			super();
 		}
 		
-		public static function setupText(param1:TextField, param2:String, param3:int = 28, param4:String = "$medium", param5:String = "#ebebeb", param6:Boolean = false):void
+		public static function setupText(t:TextField, text:String, textSize:int = 28, fontType:String = "$medium", fontColor:String = "#ebebeb", append:Boolean = false):void
 		{
-			var _loc7_:TextFormat = null;
-			if (param2 == null)
+			var textFormat:TextFormat = null;
+			if (text == null)
 			{
-				param2 = "";
+				text = "";
 			}
 			if (ControlsMain.isVrModeActive())
 			{
-				if (param4 == MenuConstants.FONT_TYPE_LIGHT || param4 == MenuConstants.FONT_TYPE_NORMAL)
+				if (fontType == MenuConstants.FONT_TYPE_LIGHT || fontType == MenuConstants.FONT_TYPE_NORMAL)
 				{
-					param4 = MenuConstants.FONT_TYPE_MEDIUM;
+					fontType = MenuConstants.FONT_TYPE_MEDIUM;
 				}
 			}
-			if (param6)
+			if (append)
 			{
-				param1.htmlText += "<font face=\"" + param4 + "\" color=\"" + param5 + "\" size=\"" + param3 + "\">" + param2 + "</font>";
+				t.htmlText += "<font face=\"" + fontType + "\" color=\"" + fontColor + "\" size=\"" + textSize + "\">" + text + "</font>";
 			}
 			else
 			{
-				param1.htmlText = "<font face=\"" + param4 + "\" color=\"" + param5 + "\" size=\"" + param3 + "\">" + param2 + "</font>";
-				(_loc7_ = new TextFormat()).color = MenuConstants.ColorNumber(param5);
-				_loc7_.font = param4;
-				_loc7_.size = param3;
-				param1.defaultTextFormat = _loc7_;
+				t.htmlText = "<font face=\"" + fontType + "\" color=\"" + fontColor + "\" size=\"" + textSize + "\">" + text + "</font>";
+				(textFormat = new TextFormat()).color = MenuConstants.ColorNumber(fontColor);
+				textFormat.font = fontType;
+				textFormat.size = textSize;
+				t.defaultTextFormat = textFormat;
 			}
 		}
 		
