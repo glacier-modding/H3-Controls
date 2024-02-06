@@ -71,8 +71,8 @@ package menu3.modal
       
       override public function onSetData(param1:Object) : void
       {
-         var _loc2_:Number = param1.hasOwnProperty("frameheightmax") ? Number(param1.frameheightmax) : FRAME_HEIGHT_MAX;
-         var _loc3_:Number = param1.hasOwnProperty("frameheightmin") ? Number(param1.frameheightmin) : FRAME_HEIGHT_MIN;
+         var frameHeightMax:Number = param1.hasOwnProperty("frameheightmax") ? Number(param1.frameheightmax) : FRAME_HEIGHT_MAX;
+         var frameHeightMin:Number = param1.hasOwnProperty("frameheightmin") ? Number(param1.frameheightmin) : FRAME_HEIGHT_MIN;
          var _loc4_:Number = this.m_viewDescription.x;
          var _loc5_:Number = this.m_viewDescription.y;
          super.onSetData(param1);
@@ -81,8 +81,8 @@ package menu3.modal
          setupText(this.m_viewText,param1.text);
          this.loadImage(param1.image);
          var _loc6_:Number = Math.ceil(this.m_imageTextView.height) + FRAME_REST_HEIGHT;
-         m_dialogHeight = updateDialogHeight(_loc6_,_loc3_,_loc2_);
-         if(_loc6_ > _loc2_)
+         m_dialogHeight = updateDialogHeight(_loc6_,frameHeightMin,frameHeightMax);
+         if(_loc6_ > frameHeightMax)
          {
             Log.xwarning(Log.ChannelModal,"Content Height is capped by frameHeightMax!");
          }

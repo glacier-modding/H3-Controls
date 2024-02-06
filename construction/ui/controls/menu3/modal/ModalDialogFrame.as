@@ -94,20 +94,20 @@ package menu3.modal
       
       protected function updateDialogHeight(param1:Number, param2:Number, param3:Number) : Number
       {
-         var _loc4_:Number = 0;
+         var height:Number = 0;
          if(this.m_fixedHeight >= 0)
          {
             Log.xinfo(Log.ChannelModal,"fixed height: " + this.m_fixedHeight);
-            _loc4_ = this.m_fixedHeight;
+            height = this.m_fixedHeight;
          }
          else
          {
-            _loc4_ = Math.ceil(param1);
-            _loc4_ = Math.max(_loc4_,param2);
-            _loc4_ = Math.min(_loc4_,param3);
-            Log.xinfo(Log.ChannelModal,"dialogHeight height: " + _loc4_);
+            height = Math.ceil(param1);
+            height = Math.max(height,param2);
+            height = Math.min(height,param3);
+            Log.xinfo(Log.ChannelModal,"dialogHeight height: " + height);
          }
-         return _loc4_;
+         return height;
       }
       
       protected function getSubmitButton() : ModalDialogGenericButton

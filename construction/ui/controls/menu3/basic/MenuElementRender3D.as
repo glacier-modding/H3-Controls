@@ -106,12 +106,12 @@ package menu3.basic
 			this.nodeUpdate(_loc6_.x, _loc6_.y, _loc6_.width, _loc6_.height, this.m_isVisibleOnScreen);
 		}
 		
-		private function nodeUpdate(param1:Number, param2:Number, param3:Number, param4:Number, param5:Boolean):void
+		private function nodeUpdate(x:Number, y:Number, width:Number, height:Number, visible:Boolean):void
 		{
 			if (this.m_GUIGroupName != null && this.m_GUIGroupName.length > 0)
 			{
-				Log.info(Log.ChannelDebug, this, "Render3DNodeUpdate: " + this.m_GUIGroupName + " x=" + param1 + " y=" + param2 + " width=" + param3 + " height=" + param4 + " visible=" + param5);
-				ExternalInterface.call("Render3DNodeUpdate", this.m_GUIGroupName, param1, param2, param3, param4, param5);
+				Log.info(Log.ChannelDebug, this, "Render3DNodeUpdate: " + this.m_GUIGroupName + " x=" + x + " y=" + y + " width=" + width + " height=" + height + " visible=" + visible);
+				ExternalInterface.call("Render3DNodeUpdate", this.m_GUIGroupName, x, y, width, height, visible);
 			}
 		}
 		

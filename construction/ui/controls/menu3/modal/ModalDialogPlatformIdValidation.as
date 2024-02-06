@@ -8,11 +8,11 @@ package menu3.modal
       
       private var m_platformId:String = "0";
       
-      public function ModalDialogPlatformIdValidation(param1:Object, param2:String)
+      public function ModalDialogPlatformIdValidation(param1:Object, platformid:String)
       {
          super(param1);
-         this.m_platformId = param2;
-         Log.xinfo(Log.ChannelModal,"using platformid " + param2 + " for validation");
+         this.m_platformId = platformid;
+         Log.xinfo(Log.ChannelModal,"using platformid " + platformid + " for validation");
       }
       
       override public function validate(param1:String) : Boolean

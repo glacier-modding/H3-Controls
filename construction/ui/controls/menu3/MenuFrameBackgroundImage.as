@@ -176,15 +176,15 @@ package menu3
 			{
 				return;
 			}
-			var _loc1_:int = Math.min(this.m_imageLoaders.length, this.m_currentData.m_imgResourceIds.length);
-			this.m_imagesNeeded = _loc1_ - 1;
-			Log.xinfo(Log.ChannelDebug, "loadAdditionalFrames frameCount=" + _loc1_ + " m_imagesNeeded=" + this.m_imagesNeeded);
+			var frameCount:int = Math.min(this.m_imageLoaders.length, this.m_currentData.m_imgResourceIds.length);
+			this.m_imagesNeeded = frameCount - 1;
+			Log.xinfo(Log.ChannelDebug, "loadAdditionalFrames frameCount=" + frameCount + " m_imagesNeeded=" + this.m_imagesNeeded);
 			if (this.m_imagesNeeded <= 0)
 			{
 				return;
 			}
 			var _loc2_:int = 1;
-			while (_loc2_ < _loc1_)
+			while (_loc2_ < frameCount)
 			{
 				this.m_imageLoaders[_loc2_] = new MenuImageLoader();
 				this.m_imageLoaders[_loc2_].center = false;

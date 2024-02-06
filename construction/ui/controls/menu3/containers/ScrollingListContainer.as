@@ -512,19 +512,19 @@ package menu3.containers
          this.updateChildrenVisibiltyOnRect(this.m_visibilityArea,param1,param2);
       }
       
-      protected function updateChildrenVisibiltyOnRect(param1:Rectangle, param2:Boolean, param3:Rectangle = null) : void
+      protected function updateChildrenVisibiltyOnRect(param1:Rectangle, param2:Boolean, targetBounds:Rectangle = null) : void
       {
          if(param1 == null)
          {
             return;
          }
          var _loc4_:Rectangle = param1.clone();
-         if(param3 != null)
+         if(targetBounds != null)
          {
-            _loc4_ = _loc4_.union(param3);
+            _loc4_ = _loc4_.union(targetBounds);
             if(this.m_debug)
             {
-               Log.info(Log.ChannelDebug,this,"updateChildrenVisibilty: targetBounds: " + param3);
+               Log.info(Log.ChannelDebug,this,"updateChildrenVisibilty: targetBounds: " + targetBounds);
                Log.info(Log.ChannelDebug,this,"updateChildrenVisibilty: Visible Area0: " + param1);
             }
          }
@@ -538,7 +538,7 @@ package menu3.containers
       
       private function updateContainerElementVisibility(param1:Boolean, param2:Rectangle, param3:BaseContainer) : void
       {
-         var _loc7_:Rectangle = null;
+         var bounds:Rectangle = null;
          var _loc4_:BaseContainer = null;
          var _loc5_:MenuElementBase = null;
          var _loc6_:int = 0;
@@ -546,12 +546,12 @@ package menu3.containers
          {
             if((_loc5_ = param3.m_children[_loc6_] as MenuElementBase) != null)
             {
-               _loc7_ = _loc5_.getBounds(this);
-               if(param2.intersects(_loc7_))
+               bounds = _loc5_.getBounds(this);
+               if(param2.intersects(bounds))
                {
                   if(this.m_debug)
                   {
-                     Log.info(Log.ChannelDebug,this,"updateChildrenVisibilty: Child " + _loc6_ + " bounds = " + _loc7_ + " in visible area");
+                     Log.info(Log.ChannelDebug,this,"updateChildrenVisibilty: Child " + _loc6_ + " bounds = " + bounds + " in visible area");
                   }
                   this.setElementVisibility(param1,_loc5_,true);
                   if((_loc4_ = _loc5_ as BaseContainer) != null)
@@ -563,7 +563,7 @@ package menu3.containers
                {
                   if(this.m_debug)
                   {
-                     Log.info(Log.ChannelDebug,this,"updateChildrenVisibilty: Child " + _loc6_ + " bounds = " + _loc7_);
+                     Log.info(Log.ChannelDebug,this,"updateChildrenVisibilty: Child " + _loc6_ + " bounds = " + bounds);
                   }
                   this.setElementVisibility(param1,_loc5_,false);
                }
@@ -721,22 +721,22 @@ package menu3.containers
             this.setScrollIndicator(this.m_scrollBounds.width,this.m_scrollMaxBounds.width,false);
             this.updateHorizontalScrollIndicator(getContainer().x,0);
          }
-         var _loc3_:Number = getContainer().x * -1;
-         var _loc4_:Number = getContainer().y * -1;
-         var _loc5_:Number = Math.max(_loc3_ + this.m_scrollBounds.width - this.m_scrollMaxBounds.width,0);
-         var _loc6_:Number = Math.max(_loc4_ + this.m_scrollBounds.height - this.m_scrollMaxBounds.height,0);
-         var _loc7_:Number = Math.min(_loc5_,_loc3_) * -1;
-         var _loc8_:Number = Math.min(_loc6_,_loc4_) * -1;
+         var xPos:Number = getContainer().x * -1;
+         var yPos:Number = getContainer().y * -1;
+         var _loc5_:Number = Math.max(xPos + this.m_scrollBounds.width - this.m_scrollMaxBounds.width,0);
+         var _loc6_:Number = Math.max(yPos + this.m_scrollBounds.height - this.m_scrollMaxBounds.height,0);
+         var offsetX:Number = Math.min(_loc5_,xPos) * -1;
+         var offsetY:Number = Math.min(_loc6_,yPos) * -1;
          if(this.m_debug)
          {
-            Log.info(Log.ChannelDebug,this,"xPos: " + _loc3_ + " yPos:" + _loc4_);
+            Log.info(Log.ChannelDebug,this,"xPos: " + xPos + " yPos:" + yPos);
             Log.info(Log.ChannelDebug,this,"m_scrollMaxBounds width: " + this.m_scrollMaxBounds.width + " height:" + this.m_scrollMaxBounds.height);
             Log.info(Log.ChannelDebug,this,"m_scrollBounds width: " + this.m_scrollBounds.width + " height:" + this.m_scrollBounds.height);
-            Log.info(Log.ChannelDebug,this,"offsetX: " + _loc7_ + " offsetY:" + _loc8_);
+            Log.info(Log.ChannelDebug,this,"offsetX: " + offsetX + " offsetY:" + offsetY);
          }
-         if(_loc7_ < 0 || _loc8_ < 0)
+         if(offsetX < 0 || offsetY < 0)
          {
-            _loc9_ = this.getScrollTargetFromOffset(_loc7_,_loc8_);
+            _loc9_ = this.getScrollTargetFromOffset(offsetX,offsetY);
             this.scrollToBounds(_loc9_,0);
          }
          if(this.m_reverseStartPos)

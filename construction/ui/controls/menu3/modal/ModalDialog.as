@@ -259,9 +259,9 @@ package menu3.modal
          }
       }
       
-      override public function onSetSize(param1:Number, param2:Number) : void
+      override public function onSetSize(size:Number, x:Number) : void
       {
-         Log.xinfo(Log.ChannelModal,"ModalDialog size: " + param1 + "x" + param2);
+         Log.xinfo(Log.ChannelModal,"ModalDialog size: " + size + "x" + x);
          Log.xinfo(Log.ChannelModal,"ModalDialog parent: " + parent.width + "x" + parent.height);
          if(this.m_bgTile != null)
          {

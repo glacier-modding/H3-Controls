@@ -287,24 +287,24 @@ package menu3
 			return _loc2_.getView().getBounds(stage);
 		}
 		
-		public function getBestElementForSelection(param1:int, param2:int, param3:Number, param4:Number):int
+		public function getBestElementForSelection(parentID:int, selectedId:int, inputX:Number, inputY:Number):int
 		{
-			var _loc9_:int = 0;
-			Log.xinfo(Log.ChannelContainer, "getBestElementForSelection: parentID:" + param1 + " selectedId:" + param2 + " inputX:" + param3 + " inputY:" + param4);
+			var bestElement:int = 0;
+			Log.xinfo(Log.ChannelContainer, "getBestElementForSelection: parentID:" + parentID + " selectedId:" + selectedId + " inputX:" + inputX + " inputY:" + inputY);
 			var _loc5_:int = -1;
-			var _loc6_:MenuElementBase = this.m_allChildren[param1];
-			var _loc7_:MenuElementBase = this.m_allChildren[param2];
+			var _loc6_:MenuElementBase = this.m_allChildren[parentID];
+			var _loc7_:MenuElementBase = this.m_allChildren[selectedId];
 			if (_loc6_ == null || _loc7_ == null)
 			{
 				return _loc5_;
 			}
 			var _loc8_:MenuElementBase;
-			if ((_loc8_ = LeafNavigationUtil.getBestElementForSelection(_loc6_, _loc6_, _loc7_, param3, param4)) != null)
+			if ((_loc8_ = LeafNavigationUtil.getBestElementForSelection(_loc6_, _loc6_, _loc7_, inputX, inputY)) != null)
 			{
-				if ((_loc9_ = MenuElementBase.getId(_loc8_)) >= 0)
+				if ((bestElement = MenuElementBase.getId(_loc8_)) >= 0)
 				{
-					Log.xinfo(Log.ChannelContainer, "getBestElementForSelection: bestElement:" + _loc9_);
-					return _loc9_;
+					Log.xinfo(Log.ChannelContainer, "getBestElementForSelection: bestElement:" + bestElement);
+					return bestElement;
 				}
 			}
 			Log.xinfo(Log.ChannelContainer, "getBestElementForSelection: no best element found.");

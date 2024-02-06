@@ -306,10 +306,10 @@ package hud
 		public function updateNode(param1:Object):void
 		{
 			var _loc5_:* = null;
-			var _loc2_:int = int(param1.uniqueId);
-			Log.info(Log.ChannelDebug, this, "updateNode: " + _loc2_);
+			var updateNode:int = int(param1.uniqueId);
+			Log.info(Log.ChannelDebug, this, "updateNode: " + updateNode);
 			Log.debugData(this, param1);
-			var _loc3_:InventoryItemIcon = this.m_allChildren[_loc2_] as InventoryItemIcon;
+			var _loc3_:InventoryItemIcon = this.m_allChildren[updateNode] as InventoryItemIcon;
 			if (!_loc3_)
 			{
 				Log.info(Log.ChannelDebug, this, "updateNode target not found");
@@ -480,13 +480,13 @@ package hud
 			}
 		}
 		
-		override public function onSetSize(param1:Number, param2:Number):void
+		override public function onSetSize(sizeX:Number, sizeY:Number):void
 		{
-			Log.xinfo(Log.ChannelDebug, "InventoryPage | onSetSize sizeX=" + param1 + " sizeY=" + param2);
-			this.m_screenWidth = param1;
-			this.m_screenHeight = param2;
-			MenuUtils.centerFillAspect(this.m_container, MenuConstants.BaseWidth, MenuConstants.BaseHeight, param1, param2);
-			MenuUtils.centerFill(this.m_background, MenuConstants.BaseWidth, MenuConstants.BaseHeight, param1, param2);
+			Log.xinfo(Log.ChannelDebug, "InventoryPage | onSetSize sizeX=" + sizeX + " sizeY=" + sizeY);
+			this.m_screenWidth = sizeX;
+			this.m_screenHeight = sizeY;
+			MenuUtils.centerFillAspect(this.m_container, MenuConstants.BaseWidth, MenuConstants.BaseHeight, sizeX, sizeY);
+			MenuUtils.centerFill(this.m_background, MenuConstants.BaseWidth, MenuConstants.BaseHeight, sizeX, sizeY);
 		}
 		
 		private function createSlotContainer(param1:Number, param2:Number, param3:Number, param4:Number):ListContainer
@@ -501,9 +501,9 @@ package hud
 			return _loc6_;
 		}
 		
-		override public function onSetViewport(param1:Number, param2:Number, param3:Number):void
+		override public function onSetViewport(scaleX:Number, scaleY:Number, param3:Number):void
 		{
-			Log.xinfo(Log.ChannelDebug, "InventoryPage | onSetViewport scaleX=" + param1 + " scaleY=" + param2);
+			Log.xinfo(Log.ChannelDebug, "InventoryPage | onSetViewport this.scaleX=" + scaleX + " scaleY=" + scaleY);
 			this.m_safeAreaRatio = param3;
 			this.m_view.scaleX = this.m_safeAreaRatio;
 			this.m_view.scaleY = this.m_safeAreaRatio;

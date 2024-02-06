@@ -47,9 +47,9 @@ package menu3.modal
       private function updateState() : void
       {
          this.m_unformattedInput = this.getDescriptionText();
-         var _loc1_:String = this.formatInputString(this.m_unformattedInput);
-         Log.xinfo(Log.ChannelModal,"formatInputString: rawInput=\'" + super.getDescriptionText() + "\' unformatted=\'" + this.m_unformattedInput + "\' formatted=\'" + _loc1_ + "\'");
-         updateInputField(_loc1_);
+         var formatted:String = this.formatInputString(this.m_unformattedInput);
+         Log.xinfo(Log.ChannelModal,"formatInputString: rawInput=\'" + super.getDescriptionText() + "\' unformatted=\'" + this.m_unformattedInput + "\' formatted=\'" + formatted + "\'");
+         updateInputField(formatted);
          super.onTextInputChange();
       }
       

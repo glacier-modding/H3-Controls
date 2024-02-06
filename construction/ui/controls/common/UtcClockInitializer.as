@@ -13,9 +13,9 @@ package common
 		
 		override public function onSetData(param1:Object):void
 		{
-			var _loc2_:String = ExternalInterface.call("CommonUtilsGetServerTimeAsAs3Date");
-			Log.xinfo(Log.ChannelCommon, "server utctimestamp " + _loc2_ + " - parsed: " + DateTimeUtils.parseUTCTimeStamp(_loc2_));
-			DateTimeUtils.initializeUtcClock(DateTimeUtils.parseUTCTimeStamp(_loc2_));
+			var utctimestamp:String = ExternalInterface.call("CommonUtilsGetServerTimeAsAs3Date");
+			Log.xinfo(Log.ChannelCommon, "server utctimestamp " + utctimestamp + " - parsed: " + DateTimeUtils.parseUTCTimeStamp(utctimestamp));
+			DateTimeUtils.initializeUtcClock(DateTimeUtils.parseUTCTimeStamp(utctimestamp));
 		}
 	}
 }

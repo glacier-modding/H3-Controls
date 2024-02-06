@@ -119,13 +119,13 @@ package menu3
 		
 		public function onSetData(param1:Object):void
 		{
-			var _loc2_:String = String(param1.prependedstring);
+			var text:String = String(param1.prependedstring);
 			if (param1.username)
 			{
-				_loc2_ = _loc2_.replace("{0}", param1.username);
+				text = text.replace("{0}", param1.username);
 			}
-			Log.xinfo(Log.ChannelCommon, "text: " + _loc2_);
-			this.Text = _loc2_;
+			Log.xinfo(Log.ChannelCommon, "text: " + text);
+			this.Text = text;
 		}
 	}
 }
