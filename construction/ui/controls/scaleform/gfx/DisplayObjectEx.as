@@ -25,6 +25,6 @@ package scaleform.gfx
        static public function setRendererFloat(o:DisplayObject, f:Number) : void { }
        static public function getRendererFloat(o:DisplayObject) : Number { return Number.NaN; }
 	   
-	   static public function skipNextMatrixLerp(o:DisplayObject) : void {}
+       static public function skipNextMatrixLerp(o:DisplayObject) : void {}
    }
 }

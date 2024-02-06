@@ -1,14 +1,13 @@
 package hud
 {
-   import common.BaseControl;
-   
-   public class ScoreUpdater extends BaseControl
-   {
-       
-      
-      public function ScoreUpdater()
-      {
-         super();
-      }
-   }
+	import common.BaseControl;
+	
+	public class ScoreUpdater extends BaseControl
+	{
+		
+		public function ScoreUpdater()
+		{
+			super();
+		}
+	}
 }

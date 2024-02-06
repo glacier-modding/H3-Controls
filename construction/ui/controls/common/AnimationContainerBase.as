@@ -1,7 +1,8 @@
 package common
 {
-   public interface AnimationContainerBase
-   {
-       
-   }
+	
+	public interface AnimationContainerBase
+	{
+	
+	}
 }

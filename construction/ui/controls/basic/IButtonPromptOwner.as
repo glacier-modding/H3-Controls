@@ -1,9 +1,9 @@
 package basic
 {
-   public interface IButtonPromptOwner
-   {
-       
-      
-      function updateButtonPrompts() : void;
-   }
+	
+	public interface IButtonPromptOwner
+	{
+		
+		function updateButtonPrompts():void;
+	}
 }
