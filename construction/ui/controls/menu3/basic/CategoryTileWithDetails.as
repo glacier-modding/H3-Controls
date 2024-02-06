@@ -17,7 +17,7 @@ package menu3.basic
 		
 		private const DETAILS_PADDING_Y:Number = 20;
 		
-		private const DETAILS_HEIGHT_MAX:Number = MenuConstants.MenuTileTallHeight - this.HEADER_HEIGHT - this.GAP_BETWEEN_HEADER_AND_DETAILS - this.DETAILS_PADDING_Y;
+		private const DETAILS_HEIGHT_MAX:Number = MenuConstants.MenuTileTallHeight - HEADER_HEIGHT - GAP_BETWEEN_HEADER_AND_DETAILS - DETAILS_PADDING_Y;
 		
 		private var m_detailBg:Sprite;
 		
