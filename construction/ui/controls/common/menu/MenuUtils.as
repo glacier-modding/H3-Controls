@@ -117,32 +117,32 @@ package common.menu
 			}
 		}
 		
-		public static function setTextColor(param1:TextField, param2:int):void
+		public static function setTextColor(param1:TextField, textColor:int):void
 		{
-			param1.textColor = param2;
-			var _loc3_:TextFormat = new TextFormat();
-			_loc3_.color = param2;
-			param1.defaultTextFormat = _loc3_;
+			param1.textColor = textColor;
+			var textFormat:TextFormat = new TextFormat();
+			textFormat.color = textColor;
+			param1.defaultTextFormat = textFormat;
 		}
 		
-		public static function setupTextUpper(param1:TextField, param2:String, param3:int = 28, param4:String = "$medium", param5:String = "#ebebeb", param6:Boolean = false):void
+		public static function setupTextUpper(param1:TextField, text:String, textSize:int = 28, fontType:String = "$medium", fontColor:String = "#ebebeb", append:Boolean = false):void
 		{
-			if (param2 == null)
+			if (text == null)
 			{
-				param2 = "";
+				text = "";
 			}
-			setupText(param1, param2.toUpperCase(), param3, param4, param5, param6);
+			setupText(param1, text.toUpperCase(), textSize, fontType, fontColor, append);
 		}
 		
-		public static function setupProfileName(param1:TextField, param2:String, param3:int = 28, param4:String = "$medium", param5:String = "#ebebeb", param6:Boolean = false):void
+		public static function setupProfileName(param1:TextField, text:String, textSize:int = 28, fontType:String = "$medium", fontColor:String = "#ebebeb", append:Boolean = false):void
 		{
-			if (param2 == null)
+			if (text == null)
 			{
-				param2 = "";
+				text = "";
 			}
-			setupText(param1, param2, param3, param4, param5, param6);
+			setupText(param1, text, textSize, fontType, fontColor, append);
 			CommonUtils.changeFontToGlobalIfNeeded(param1);
-			truncateTextfieldWithCharLimit(param1, 1, MenuConstants.PLAYERNAME_MIN_CHAR_COUNT, param5);
+			truncateTextfieldWithCharLimit(param1, 1, MenuConstants.PLAYERNAME_MIN_CHAR_COUNT, fontColor);
 			shrinkTextToFit(param1, param1.width, -1);
 		}
 		
@@ -872,87 +872,87 @@ package common.menu
 			}
 		}
 		
-		public static function setTintColor(param1:Object, param2:int, param3:Boolean = true):void
+		public static function setTintColor(param1:Object, tintType:int, param3:Boolean = true):void
 		{
 			var _loc4_:Number = NaN;
 			if (!param3)
 			{
 				_loc4_ = Number(param1.alpha);
 			}
-			var _loc5_:Color;
-			(_loc5_ = new Color()).setTint(MenuConstants.COLOR_GREY_ULTRA_LIGHT, 1);
-			switch (param2)
+			var colorTint:Color;
+			(colorTint = new Color()).setTint(MenuConstants.COLOR_GREY_ULTRA_LIGHT, 1);
+			switch (tintType)
 			{
 			case TINT_COLOR_BLACK: 
-				_loc5_.setTint(MenuConstants.COLOR_BLACK, 1);
+				colorTint.setTint(MenuConstants.COLOR_BLACK, 1);
 				break;
 			case TINT_COLOR_GREY: 
-				_loc5_.setTint(MenuConstants.COLOR_GREY_DARK, 1);
+				colorTint.setTint(MenuConstants.COLOR_GREY_DARK, 1);
 				break;
 			case TINT_COLOR_LIGHT_GREY: 
-				_loc5_.setTint(MenuConstants.COLOR_GREY_LIGHT, 1);
+				colorTint.setTint(MenuConstants.COLOR_GREY_LIGHT, 1);
 				break;
 			case TINT_COLOR_NEARLY_WHITE: 
-				_loc5_.setTint(MenuConstants.COLOR_GREY_ULTRA_LIGHT, 1);
+				colorTint.setTint(MenuConstants.COLOR_GREY_ULTRA_LIGHT, 1);
 				break;
 			case TINT_COLOR_WHITE: 
-				_loc5_.setTint(MenuConstants.COLOR_WHITE, 1);
+				colorTint.setTint(MenuConstants.COLOR_WHITE, 1);
 				break;
 			case TINT_COLOR_RED: 
-				_loc5_.setTint(MenuConstants.COLOR_RED, 1);
+				colorTint.setTint(MenuConstants.COLOR_RED, 1);
 				break;
 			case TINT_COLOR_LIGHT_RED: 
-				_loc5_.setTint(MenuConstants.COLOR_RED, 1);
+				colorTint.setTint(MenuConstants.COLOR_RED, 1);
 				break;
 			case TINT_COLOR_REAL_RED: 
-				_loc5_.setTint(MenuConstants.COLOR_RED, 1);
+				colorTint.setTint(MenuConstants.COLOR_RED, 1);
 				break;
 			case TINT_COLOR_DARKER_GREY: 
-				_loc5_.setTint(MenuConstants.COLOR_GREY_ULTRA_DARK, 1);
+				colorTint.setTint(MenuConstants.COLOR_GREY_ULTRA_DARK, 1);
 				break;
 			case TINT_COLOR_MEDIUM_GREY: 
-				_loc5_.setTint(MenuConstants.COLOR_GREY_MEDIUM, 1);
+				colorTint.setTint(MenuConstants.COLOR_GREY_MEDIUM, 1);
 				break;
 			case TINT_COLOR_ULTRA_DARK_GREY: 
-				_loc5_.setTint(MenuConstants.COLOR_GREY_ULTRA_DARK, 1);
+				colorTint.setTint(MenuConstants.COLOR_GREY_ULTRA_DARK, 1);
 				break;
 			case TINT_COLOR_MEDIUM_GREY_3: 
-				_loc5_.setTint(MenuConstants.COLOR_GREY_MEDIUM, 1);
+				colorTint.setTint(MenuConstants.COLOR_GREY_MEDIUM, 1);
 				break;
 			case TINT_COLOR_GREY_DARK_2: 
-				_loc5_.setTint(MenuConstants.COLOR_GREY_DARK, 1);
+				colorTint.setTint(MenuConstants.COLOR_GREY_DARK, 1);
 				break;
 			case TINT_COLOR_GREY_DARK_3: 
-				_loc5_.setTint(MenuConstants.COLOR_GREY_DARK, 1);
+				colorTint.setTint(MenuConstants.COLOR_GREY_DARK, 1);
 				break;
 			case TINT_COLOR_GREEN: 
-				_loc5_.setTint(MenuConstants.COLOR_GREEN, 1);
+				colorTint.setTint(MenuConstants.COLOR_GREEN, 1);
 				break;
 			case TINT_COLOR_GREEN_LIGHT: 
-				_loc5_.setTint(MenuConstants.COLOR_YELLOW, 1);
+				colorTint.setTint(MenuConstants.COLOR_YELLOW, 1);
 				break;
 			case TINT_COLOR_COLOR_GREY_GOTY: 
-				_loc5_.setTint(MenuConstants.COLOR_GREY, 1);
+				colorTint.setTint(MenuConstants.COLOR_GREY, 1);
 				break;
 			case TINT_COLOR_MEDIUM_GREY_GOTY: 
-				_loc5_.setTint(MenuConstants.COLOR_GREY_MEDIUM, 1);
+				colorTint.setTint(MenuConstants.COLOR_GREY_MEDIUM, 1);
 				break;
 			case TINT_COLOR_SUPER_LIGHT_GREY: 
-				_loc5_.setTint(MenuConstants.COLOR_GREY_LIGHT, 1);
+				colorTint.setTint(MenuConstants.COLOR_GREY_LIGHT, 1);
 				break;
 			case TINT_COLOR_GREYBG: 
-				_loc5_.setTint(MenuConstants.COLOR_GREY_LIGHT, 1);
+				colorTint.setTint(MenuConstants.COLOR_GREY_LIGHT, 1);
 				break;
 			case TINT_COLOR_YELLOW: 
-				_loc5_.setTint(MenuConstants.COLOR_YELLOW, 1);
+				colorTint.setTint(MenuConstants.COLOR_YELLOW, 1);
 				break;
 			case TINT_COLOR_YELLOW_LIGHT: 
-				_loc5_.setTint(MenuConstants.COLOR_YELLOW, 1);
+				colorTint.setTint(MenuConstants.COLOR_YELLOW, 1);
 				break;
 			case TINT_COLOR_MAGENTA_DARK: 
-				_loc5_.setTint(MenuConstants.COLOR_RED, 1);
+				colorTint.setTint(MenuConstants.COLOR_RED, 1);
 			}
-			param1.transform.colorTransform = _loc5_;
+			param1.transform.colorTransform = colorTint;
 			if (!param3)
 			{
 				param1.alpha = _loc4_;
@@ -1027,7 +1027,7 @@ package common.menu
 			param1.filters = _loc3_;
 		}
 		
-		public static function setColorFilter(param1:Sprite, param2:String = ""):void
+		public static function setColorFilter(param1:Sprite, colorFilter:String = ""):void
 		{
 			var _loc4_:ColorMatrixFilter = null;
 			var _loc5_:ColorMatrixFilter = null;
@@ -1036,7 +1036,7 @@ package common.menu
 				return;
 			}
 			var _loc3_:Array = [];
-			switch (param2)
+			switch (colorFilter)
 			{
 			case "selected": 
 				_loc4_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DEFAULT);
@@ -1324,10 +1324,10 @@ package common.menu
 			Animate.legacyTo(param1, 2, {"alpha": 0}, Animate.SineInOut, pulsateFadeIn, param1);
 		}
 		
-		public static function getEaseType(param1:String):int
+		public static function getEaseType(easeType:String):int
 		{
 			var _loc2_:int = 0;
-			switch (param1)
+			switch (easeType)
 			{
 			case "Linear": 
 				_loc2_ = Animate.Linear;
