@@ -1,4 +1,4 @@
-package menu3
+﻿package menu3
 {
 	import common.Log;
 	import flash.display.DisplayObject;
@@ -109,7 +109,6 @@ package menu3
 			}
 			var _loc8_:Vector3D;
 			(_loc8_ = _loc4_.clone()).normalize();
-			var _loc9_:Number = inputDir.dotProduct(_loc8_);
 			var _loc9_:Number = inputDir.dotProduct(_loc8_);
 			if ((_loc9_ = Math.min(_loc9_, 1)) > 0)
 			{
