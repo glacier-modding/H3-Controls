@@ -2,48 +2,89 @@
 <module type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="Basic">
     <configurations>
-      <configuration name="Basic" target-platform="Desktop" pure-as="true" main-class="basic_Main" output-file="Basic.swf" output-folder="$MODULE_DIR$/bin">
+      <configuration name="Basic" main-class="basic_Main" output-file="Basic.swf" output-folder="$MODULE_DIR$/bin" skip-build="true">
         <dependencies target-player="32.0">
-          <sdk name="AirSDK" />
+          <entries>
+            <entry library-name="flash" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="babd5ee6-4959-43bc-be58-490f24e0544f">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="FlexSDK" />
         </dependencies>
-        <compiler-options />
-        <packaging-air-desktop package-file-name="H3-Scaleform-Decompilation-Project" />
+        <compiler-options>
+          <map>
+            <entry key="compiler.keep-generated-actionscript" value="false" />
+          </map>
+        </compiler-options>
+        <packaging-air-desktop />
         <packaging-android />
         <packaging-ios />
       </configuration>
-      <configuration name="Common" target-platform="Desktop" pure-as="true" main-class="common_Main" output-file="Common.swf" output-folder="$MODULE_DIR$/bin">
-        <dependencies>
-          <sdk name="AirSDK" />
+      <configuration name="Common" main-class="common_Main" output-file="Common.swf" output-folder="$MODULE_DIR$/bin">
+        <dependencies target-player="32.0">
+          <entries>
+            <entry library-name="flash" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="ec3cf79e-e486-4f37-85fd-2ac08df7ecc8">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="FlexSDK" />
         </dependencies>
         <compiler-options />
-        <packaging-air-desktop package-file-name="Common" />
+        <packaging-air-desktop />
         <packaging-android />
         <packaging-ios />
       </configuration>
-      <configuration name="ControlsMain" target-platform="Desktop" pure-as="true" main-class="ControlsMain" output-file="ControlsMain.swf" output-folder="$MODULE_DIR$/bin">
-        <dependencies>
-          <sdk name="AirSDK" />
+      <configuration name="ControlsMain" main-class="ControlsMain" output-file="ControlsMain.swf" output-folder="$MODULE_DIR$/bin" skip-build="true">
+        <dependencies target-player="32.0">
+          <entries>
+            <entry library-name="flash" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="FlexSDK" />
         </dependencies>
         <compiler-options />
-        <packaging-air-desktop package-file-name="ControlsMain" />
+        <packaging-air-desktop />
         <packaging-android />
         <packaging-ios />
       </configuration>
-      <configuration name="Hud" target-platform="Desktop" pure-as="true" main-class="hud_Main" output-file="Hud.swf" output-folder="$MODULE_DIR$/bin">
-        <dependencies>
-          <sdk name="AirSDK" />
+      <configuration name="Hud" main-class="hud_Main" output-file="Hud.swf" output-folder="$MODULE_DIR$/bin" skip-build="true">
+        <dependencies target-player="32.0">
+          <entries>
+            <entry library-name="flash" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="2f581542-92b1-4ef7-8091-1b7b10d8a74e">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="FlexSDK" />
         </dependencies>
         <compiler-options />
-        <packaging-air-desktop package-file-name="Hud" />
+        <packaging-air-desktop />
         <packaging-android />
         <packaging-ios />
       </configuration>
-      <configuration name="Menu3" target-platform="Desktop" pure-as="true" main-class="menu3_Main" output-file="Menu3.swf" output-folder="$MODULE_DIR$/bin">
-        <dependencies>
-          <sdk name="AirSDK" />
+      <configuration name="Menu3" main-class="menu3_Main" output-file="Menu3.swf" output-folder="$MODULE_DIR$/bin" skip-build="true">
+        <dependencies target-player="32.0">
+          <entries>
+            <entry library-name="flash" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="f87781a8-8515-4b57-9774-e6380a5c36eb">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="FlexSDK" />
         </dependencies>
         <compiler-options />
-        <packaging-air-desktop package-file-name="Menu3" />
+        <packaging-air-desktop />
         <packaging-android />
         <packaging-ios />
       </configuration>
@@ -55,7 +96,48 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="AirSDK" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="jdk" jdkName="FlexSDK" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="babd5ee6-4959-43bc-be58-490f24e0544f" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/Basic.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="2f581542-92b1-4ef7-8091-1b7b10d8a74e" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/Hud.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="f87781a8-8515-4b57-9774-e6380a5c36eb" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/Menu3.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="ec3cf79e-e486-4f37-85fd-2ac08df7ecc8" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/Common.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="flash" level="project" />
   </component>
 </module>
