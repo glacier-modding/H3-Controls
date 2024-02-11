@@ -29,7 +29,7 @@ public class CampaignProgress extends BaseControl {
 	private var m_onMissionEnd:Boolean = false;
 	private var m_onFolderScreen:Boolean = false;
 	private var m_waitWithAnimation:Boolean = false;
-	private var m_campaignLayout:Array = new Array(0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1);
+	private var m_campaignLayout:Array = [0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1];
 	private var m_transitionBar:CampaignProgressBarView;
 	private var m_transitionFrom:int;
 	private var m_transitionTo:int;
@@ -47,14 +47,14 @@ public class CampaignProgress extends BaseControl {
 		if (this.m_onMissionEnd) {
 			this.m_progressStep--;
 		}
-		;
+
 		this.createBars(_arg_1.campaign, _arg_1.completed, _arg_1.goToExitObjectivesDone, _arg_1.goToExitObjectivesFail);
 		if (_arg_1.hardcore) {
 			MenuUtils.setColor(this.m_view.holder_mc, MenuConstants.COLOR_RED, false, 10);
 		} else {
 			MenuUtils.removeColor(this.m_view.holder_mc);
 		}
-		;
+
 	}
 
 	private function createBars(_arg_1:Array, _arg_2:Array, _arg_3:Boolean = false, _arg_4:Boolean = false):void {
@@ -74,14 +74,14 @@ public class CampaignProgress extends BaseControl {
 				_local_10 = (_local_12 + 1);
 				_local_8++;
 			}
-			;
+
 			if ((((_arg_1[_local_12] == 1) && (_local_12 >= (this.m_progressStep - 1))) && (_local_11 == _local_6))) {
 				_local_11 = (_local_12 + 1);
 			}
-			;
+
 			_local_12++;
 		}
-		;
+
 		Animate.kill(this.m_transitionBar);
 		var _local_13:int = (((this.m_slimView) && (!(this.m_onFolderScreen))) ? _local_10 : 0);
 		var _local_14:int = (((this.m_slimView) && (!(this.m_onFolderScreen))) ? _local_11 : _local_6);
@@ -92,7 +92,7 @@ public class CampaignProgress extends BaseControl {
 				this.m_view.frame_mc.x = (_local_5 - 17);
 				_local_5 = (_local_5 + 3);
 			}
-			;
+
 			if (this.m_view.holder_mc.numChildren <= _local_16) {
 				_local_15 = new CampaignProgressBarView();
 				this.m_view.holder_mc.addChild(_local_15);
@@ -104,16 +104,16 @@ public class CampaignProgress extends BaseControl {
 				_local_15.scaleY = 1;
 				_local_15.visible = true;
 			}
-			;
+
 			_local_16++;
 			if (((this.m_onFolderScreen) && (_local_17 == 0))) {
 				_local_9 = true;
 			}
-			;
+
 			if (_local_9) {
 				this.m_fadeUps.push(_local_15);
 			}
-			;
+
 			switch (_arg_1[_local_17]) {
 				case 0:
 					_local_15.x = _local_5;
@@ -128,7 +128,7 @@ public class CampaignProgress extends BaseControl {
 						} else {
 							_local_15.gotoAndStop(this.m_transitionTo);
 						}
-						;
+
 					} else {
 						if (_local_17 < _local_7) {
 							_local_15.gotoAndStop((4 - _arg_2[_local_17]));
@@ -143,9 +143,9 @@ public class CampaignProgress extends BaseControl {
 									} else {
 										_local_15.gotoAndStop(1);
 									}
-									;
+
 								}
-								;
+
 								this.animateMarker(_local_15);
 							} else {
 								if (_local_17 < _local_11) {
@@ -154,14 +154,14 @@ public class CampaignProgress extends BaseControl {
 									_local_15.gotoAndStop(9);
 									_local_15.alpha = 0.3;
 								}
-								;
+
 								_local_15.flash_mc.visible = false;
 							}
-							;
+
 						}
-						;
+
 					}
-					;
+
 					_local_5 = (_local_5 + 34);
 					break;
 				case 1:
@@ -174,14 +174,14 @@ public class CampaignProgress extends BaseControl {
 						if (_arg_2[_local_17] == 1) {
 							_local_9 = true;
 						}
-						;
+
 						if (this.m_waitWithAnimation) {
 							this.m_soundId = ((_arg_2[_local_17] == 1) ? "ui_debrief_scorescreen_evergreen_campaign_hotwin" : "ui_debrief_scorescreen_evergreen_campaign_hotfail");
 							_local_15.gotoAndStop(this.m_transitionFrom);
 						} else {
 							_local_15.gotoAndStop(this.m_transitionTo);
 						}
-						;
+
 					} else {
 						if (((this.m_progressStep == (_local_17 + 1)) && (!(this.m_onMissionEnd)))) {
 							if (_arg_3) {
@@ -192,9 +192,9 @@ public class CampaignProgress extends BaseControl {
 								} else {
 									_local_15.gotoAndStop(10);
 								}
-								;
+
 							}
-							;
+
 						} else {
 							if (this.m_progressStep > _local_17) {
 								_local_15.gotoAndStop(((_arg_2[_local_17] == 1) ? 12 : 13));
@@ -204,23 +204,23 @@ public class CampaignProgress extends BaseControl {
 								if (_local_17 > (_local_11 - 1)) {
 									_local_15.alpha = 0.3;
 								}
-								;
+
 							}
-							;
+
 						}
-						;
+
 					}
-					;
+
 					if (((this.m_progressStep == (_local_17 + 1)) && (!(this.m_onMissionEnd)))) {
 						this.animateMarker(_local_15);
 					} else {
 						_local_15.flash_mc.visible = false;
 					}
-					;
+
 					_local_5 = (_local_5 + 47);
 					break;
 			}
-			;
+
 			if (_local_17 == (_local_11 - 1)) {
 				this.m_view.frame_mc.campDots_mc.gotoAndStop((_local_8 + 1));
 				this.m_view.frame_mc.mid_mc.x = 9;
@@ -230,19 +230,19 @@ public class CampaignProgress extends BaseControl {
 				_local_5 = (_local_5 + 3);
 				this.m_view.frame_mc.visible = (!(this.m_onFolderScreen));
 			}
-			;
+
 			_local_17++;
 		}
-		;
+
 		this.m_view.back_mc.width = (_local_5 + 18);
 		this.m_view.x = (-(_local_5 - 4) / 2);
 		if ((((!(this.m_waitWithAnimation)) && (this.m_fadeUps.length > 0)) && (this.m_onMissionEnd))) {
 			for each (_local_20 in this.m_fadeUps) {
 				_local_20.alpha = 1;
 			}
-			;
+
 		}
-		;
+
 		var _local_18:int = this.m_view.holder_mc.numChildren;
 		var _local_19:int = _local_16;
 		while (_local_19 < _local_18) {
@@ -250,7 +250,7 @@ public class CampaignProgress extends BaseControl {
 			_local_15.visible = false;
 			_local_19++;
 		}
-		;
+
 	}
 
 	public function doAnimation():void {
@@ -270,9 +270,9 @@ public class CampaignProgress extends BaseControl {
 				for each (_local_1 in m_fadeUps) {
 					Animate.to(_local_1, 0.3, 0.3, {"alpha": 1}, Animate.Linear);
 				}
-				;
+
 			}
-			;
+
 		});
 		this.m_transitionBar.flash_mc.visible = true;
 		this.m_transitionBar.flash_mc.alpha = 1;
@@ -307,7 +307,7 @@ public class CampaignProgress extends BaseControl {
 		} else {
 			_arg_1.flash_mc.visible = false;
 		}
-		;
+
 	}
 
 	public function folderAnim():void {
@@ -318,14 +318,14 @@ public class CampaignProgress extends BaseControl {
 				if (_local_1.currentFrame == 9) {
 					_local_1.gotoAndStop(1);
 				}
-				;
+
 			}
-			;
+
 			this.m_view.frame_mc.visible = true;
 			this.m_view.frame_mc.alpha = 0;
 			Animate.to(this.m_view.frame_mc, 0.2, 0, {"alpha": 1}, Animate.Linear);
 		}
-		;
+
 	}
 
 	public function folderAnimReset():void {
@@ -335,12 +335,12 @@ public class CampaignProgress extends BaseControl {
 				if (_local_1.currentFrame == 1) {
 					_local_1.gotoAndStop(9);
 				}
-				;
+
 			}
-			;
+
 			this.m_view.frame_mc.visible = false;
 		}
-		;
+
 	}
 
 	public function set showMarker(_arg_1:Boolean):void {

@@ -55,7 +55,7 @@ public dynamic class StateText extends MenuElementBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		this.m_background = null;
 		this.m_text = null;
 		super.onUnregister();

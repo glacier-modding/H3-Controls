@@ -33,9 +33,9 @@ public class PhotoModeViewfinderCenter extends BaseControl {
 				Animate.to(this.m_view.reticle_mc.inner_mc, 0.8, 0.4, {"rotation": 180}, Animate.SineIn, this.rotateReticle);
 				Animate.to(this.m_view.reticle_mc.outer_mc, 0.8, 0.4, {"rotation": -180}, Animate.SineIn);
 			}
-			;
+
 		}
-		;
+
 		if (this.m_isScanning) {
 			if (((_arg_1 == this.m_maxCount) || (_arg_1 <= this.m_previousScanVal))) {
 				this.m_isScanning = false;
@@ -48,9 +48,9 @@ public class PhotoModeViewfinderCenter extends BaseControl {
 				Animate.to(this.m_view.reticle_mc.outer_mc, 0.2, 0, {"rotation": 0}, Animate.ExpoOut);
 				Animate.to(this.m_view, 0.2, 0, {"alpha": 0.4}, Animate.ExpoOut);
 			}
-			;
+
 		}
-		;
+
 		this.m_previousScanVal = _arg_1;
 	}
 
@@ -95,7 +95,7 @@ public class PhotoModeViewfinderCenter extends BaseControl {
 				this.m_view.alpha = 0.4;
 				this.m_view.reticle_mc.scaleX = (this.m_view.reticle_mc.scaleY = 1);
 		}
-		;
+
 	}
 
 	private function resetScanning():void {

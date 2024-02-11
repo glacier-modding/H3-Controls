@@ -119,7 +119,7 @@ public class ObjectivesBar extends BaseControl {
 			(this.m_objectivesHolder.getChildAt(_local_2) as LevelObjectiveView).iconAnim_mc.z = _arg_1;
 			_local_2++;
 		}
-		;
+
 	}
 
 	public function setEvergreenHardcore(_arg_1:Boolean):void {
@@ -151,7 +151,7 @@ public class ObjectivesBar extends BaseControl {
 			this.m_counterFieldTripleDigitWidth = _arg_1.counterTimer_mc.value_txt.textWidth;
 			_arg_1.counterTimer_mc.value_txt.text = "";
 		}
-		;
+
 	}
 
 	private function resetObjectiveView(_arg_1:LevelObjectiveView):void {
@@ -178,12 +178,12 @@ public class ObjectivesBar extends BaseControl {
 				for each (lstr in [this.m_lstrOptional, "[Доп.]", "[Дополнительно]"]) {
 					obj.objTitle = obj.objTitle.replace(lstr, "");
 				}
-				;
+
 				obj.objTitle = ((this.m_lstrOptional + " ") + StringUtil.trim(obj.objTitle));
 			}
-			;
+
 		}
-		;
+
 		TaskletSequencer.getGlobalInstance().addChunk(function ():void {
 			Animate.kill(m_objectivesHolder);
 			m_objectivesHolder.visible = true;
@@ -193,11 +193,11 @@ public class ObjectivesBar extends BaseControl {
 			if (data.primary.length > 0) {
 				addObjLines(data.primary);
 			}
-			;
+
 			if (data.secondary.length > 0) {
 				addObjLines(data.secondary);
 			}
-			;
+
 			updateHeights(bAnimate);
 		});
 		if (this.m_prevData != null) {
@@ -206,7 +206,7 @@ public class ObjectivesBar extends BaseControl {
 				releaseObjectiveViews(m_prevData.secondary);
 			});
 		}
-		;
+
 		TaskletSequencer.getGlobalInstance().addChunk(function ():void {
 			m_prevData = data;
 		});
@@ -222,27 +222,27 @@ public class ObjectivesBar extends BaseControl {
 				if (_arg_1[_local_2].timerData) {
 					this.m_timers[_arg_1[_local_2].timerData.id] = null;
 				}
-				;
+
 				if (_arg_1[_local_2].percentCounterData) {
 					this.m_percentCounters[_arg_1[_local_2].percentCounterData.id] = null;
 				}
-				;
+
 				if (_arg_1[_local_2].counterData) {
 					this.m_counters[_arg_1[_local_2].counterData.id] = null;
 				}
-				;
+
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 	}
 
 	public function updateTimers(timersArray:Array):void {
 		if (timersArray.length == 0) {
 			return;
 		}
-		;
+
 		TaskletSequencer.getGlobalInstance().addChunk(function ():void {
 			var _local_1:Object;
 			for each (_local_1 in timersArray) {
@@ -254,11 +254,11 @@ public class ObjectivesBar extends BaseControl {
 						m_timers[_local_1.id].y = 28;
 						m_timers[_local_1.id].htmlText = _local_1.timerString;
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		});
 	}
 
@@ -266,7 +266,7 @@ public class ObjectivesBar extends BaseControl {
 		if (percentCountersArray.length == 0) {
 			return;
 		}
-		;
+
 		TaskletSequencer.getGlobalInstance().addChunk(function ():void {
 			var _local_2:Object;
 			var _local_3:Object;
@@ -282,13 +282,13 @@ public class ObjectivesBar extends BaseControl {
 						_local_3.theField.y = 28;
 						_local_3.theField = (String(_local_2.percent) + "%");
 					}
-					;
+
 					_local_3.theBackground.width = (PERCENTAGE_BG_INIT_WIDTH * (_local_2.percent / 100));
 				}
-				;
+
 				_local_1++;
 			}
-			;
+
 		});
 	}
 
@@ -296,7 +296,7 @@ public class ObjectivesBar extends BaseControl {
 		if (countersArray.length == 0) {
 			return;
 		}
-		;
+
 		TaskletSequencer.getGlobalInstance().addChunk(function ():void {
 			var _local_2:Object;
 			var _local_3:Object;
@@ -307,10 +307,10 @@ public class ObjectivesBar extends BaseControl {
 				if (_local_3 != null) {
 					updateCounter(_local_3, _local_2.counterString, _local_2.counterHeader);
 				}
-				;
+
 				_local_1++;
 			}
-			;
+
 		});
 	}
 
@@ -320,13 +320,13 @@ public class ObjectivesBar extends BaseControl {
 			if (this.m_prevData.primary != null) {
 				_local_3 = this.findPrevObjectiveHelper(_arg_1, _arg_2, this.m_prevData.primary);
 			}
-			;
+
 			if (((_local_3 == null) && (!(this.m_prevData.secondary == null)))) {
 				_local_3 = this.findPrevObjectiveHelper(_arg_1, _arg_2, this.m_prevData.secondary);
 			}
-			;
+
 		}
-		;
+
 		return (_local_3);
 	}
 
@@ -336,10 +336,10 @@ public class ObjectivesBar extends BaseControl {
 			if ((((_arg_3[_local_4].id == _arg_1) && (_arg_3[_local_4].objTitle == _arg_2)) && (!(_arg_3[_local_4].view == null)))) {
 				return (_arg_3[_local_4]);
 			}
-			;
+
 			_local_4++;
 		}
-		;
+
 		return (null);
 	}
 
@@ -355,20 +355,20 @@ public class ObjectivesBar extends BaseControl {
 					} else {
 						this.updateObjective(_arg_1[_local_2], _local_3);
 					}
-					;
+
 					continue;
 				}
-				;
+
 			}
-			;
+
 			if (_arg_1[_local_2].isHint) {
 				this.addHint(_arg_1[_local_2]);
 			} else {
 				this.addObjective(_arg_1[_local_2]);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function updateYPosition(_arg_1:Object):void {
@@ -377,13 +377,13 @@ public class ObjectivesBar extends BaseControl {
 		if ((_arg_1.view.label_txt.numLines - 1) > 0) {
 			_local_2 = -6;
 		}
-		;
+
 		this.m_objectivesPosY = (this.m_objectivesPosY + (((SINGLE_LINE_NOTIFICATION_HEIGHT + ((_arg_1.view.label_txt.numLines - 1) * LABEL_TEXT_LEADING)) + _local_2) + OBJ_MARGIN_HEIGHT));
 		if ((((_arg_1.timerData) || (_arg_1.percentCounterData)) || (_arg_1.counterData))) {
 			_arg_1.view.counterTimer_mc.y = (((_arg_1.view.label_txt.numLines - 1) * LABEL_TEXT_LEADING) + _local_2);
 			this.m_objectivesPosY = (this.m_objectivesPosY + (OBJ_MARGIN_HEIGHT + COUNTDOWN_OBJ_HEIGHT));
 		}
-		;
+
 	}
 
 	private function addObjective(_arg_1:Object):void {
@@ -398,14 +398,14 @@ public class ObjectivesBar extends BaseControl {
 			_local_2 = MenuConstants.FontColorGreyMedium;
 			this.setObjectiveResolvedIcon(_arg_1);
 		}
-		;
+
 		if (_arg_1.objChanged) {
 			_arg_1.view.x = (this.m_startX + 150);
 			Animate.legacyTo(_arg_1.view, 1, {"x": this.m_startX}, Animate.ExpoOut);
 		} else {
 			_arg_1.view.x = this.m_startX;
 		}
-		;
+
 		if (_arg_1.timerData) {
 			this.initialiseObjectiveTimer(_arg_1.view, _arg_1.objTitle, _arg_1.timerData);
 			_local_2 = MenuConstants.FontColorWhite;
@@ -418,11 +418,11 @@ public class ObjectivesBar extends BaseControl {
 					this.initialiseObjectiveCounter(_arg_1.view, _arg_1.objTitle, _arg_1.objType, _arg_1.counterData);
 					_local_2 = MenuConstants.FontColorWhite;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		_arg_1.view.label_txt.htmlText = _arg_1.objTitle.toUpperCase();
 		MenuUtils.setTextColor(_arg_1.view.label_txt, MenuConstants.ColorNumber(_local_2));
 		this.updateYPosition(_arg_1);
@@ -440,9 +440,9 @@ public class ObjectivesBar extends BaseControl {
 				this.m_timers[_arg_1.id] = null;
 				_arg_1.view.counterTimer_mc.visible = false;
 			}
-			;
+
 		}
-		;
+
 		if (((_arg_1.percentCounterData) && (this.m_percentCounters[_arg_1.percentCounterData.id] == null))) {
 			this.initialiseObjectivePercentCounter(_arg_1.view, _arg_1.objTitle, _arg_1.percentCounterData);
 		} else {
@@ -450,9 +450,9 @@ public class ObjectivesBar extends BaseControl {
 				this.m_percentCounters[_arg_1.id] = null;
 				_arg_1.view.counterTimer_mc.visible = false;
 			}
-			;
+
 		}
-		;
+
 		if (((_arg_1.counterData) && (this.m_counters[_arg_1.counterData.id] == null))) {
 			this.initialiseObjectiveCounter(_arg_1.view, _arg_1.objTitle, _arg_1.objType, _arg_1.counterData);
 		} else {
@@ -460,9 +460,9 @@ public class ObjectivesBar extends BaseControl {
 				this.m_counters[_arg_1.id] = null;
 				_arg_1.view.counterTimer_mc.visible = false;
 			}
-			;
+
 		}
-		;
+
 		this.updateYPosition(_arg_1);
 		if (_arg_1.objChanged) {
 			_arg_1.view.x = (this.m_startX + 150);
@@ -474,13 +474,13 @@ public class ObjectivesBar extends BaseControl {
 				_local_3 = MenuConstants.FontColorGreyMedium;
 				this.setObjectiveResolvedIcon(_arg_1);
 			}
-			;
+
 			if ((((!(_arg_1.timerData)) && (!(_arg_1.percentCounterData))) && (!(_arg_1.counterData)))) {
 				MenuUtils.setTextColor(_arg_1.view.label_txt, MenuConstants.ColorNumber(_local_3));
 			}
-			;
+
 		}
-		;
+
 		this.m_objectivesHolder.addChild(_arg_1.view);
 	}
 
@@ -500,9 +500,9 @@ public class ObjectivesBar extends BaseControl {
 			} else {
 				_arg_1.view.iconAnim_mc.icon_mc.gotoAndStop(4);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function addHint(_arg_1:Object):void {
@@ -518,7 +518,7 @@ public class ObjectivesBar extends BaseControl {
 		} else {
 			_arg_1.view.x = _local_2;
 		}
-		;
+
 		var _local_3:Boolean = (((_arg_1.objType == 14) || (_arg_1.objType == 15)) || (_arg_1.objType == 16));
 		_arg_1.view.label_txt.htmlText = _arg_1.objTitle.toUpperCase();
 		MenuUtils.setTextColor(_arg_1.view.label_txt, MenuConstants.ColorNumber(((_local_3) ? MenuConstants.FontColorGreyMedium : MenuConstants.FontColorWhite)));
@@ -535,7 +535,7 @@ public class ObjectivesBar extends BaseControl {
 			_arg_1.view.x = ((this.m_startX + HINT_INDENTATON) + 150);
 			Animate.legacyTo(_arg_1.view, 1, {"x": (this.m_startX + HINT_INDENTATON)}, Animate.ExpoOut);
 		}
-		;
+
 		this.m_objectivesHolder.addChild(_arg_1.view);
 	}
 
@@ -543,15 +543,15 @@ public class ObjectivesBar extends BaseControl {
 		if ((((_arg_1) && (_arg_2 >= 60)) && (_arg_2 <= 62))) {
 			return (_arg_2 + 6);
 		}
-		;
+
 		if (((_arg_1) && (_arg_2 == 59))) {
 			return (73);
 		}
-		;
+
 		if ((((_arg_1) && (_arg_2 >= 4)) && (_arg_2 <= 7))) {
 			return (72);
 		}
-		;
+
 		return (_arg_2 + 1);
 	}
 
@@ -560,7 +560,7 @@ public class ObjectivesBar extends BaseControl {
 			if (((((bNoDupes) && (m_oppHolder.visible)) && (sIcon == m_oppLastIcon)) && (sTask == m_oppLastTask))) {
 				return;
 			}
-			;
+
 			Animate.kill(m_oppHolder);
 			Animate.kill(m_oppNotification.icon_mc);
 			Animate.kill(m_oppNotification);
@@ -692,18 +692,18 @@ public class ObjectivesBar extends BaseControl {
 		if (!this.m_objectivesHolder.visible) {
 			this.m_objectivesPosY = this.m_startY;
 		}
-		;
+
 		var _local_4:Number = this.m_objectivesPosY;
 		var _local_5:Number = _local_4;
 		if (this.m_oppHolder.visible) {
 			_local_5 = ((_local_5 + SINGLE_LINE_NOTIFICATION_HEIGHT) + OBJ_MARGIN_HEIGHT);
 		}
-		;
+
 		var _local_6:Number = _local_5;
 		if (this.m_intelHolder.visible) {
 			_local_6 = ((_local_6 + SINGLE_LINE_NOTIFICATION_HEIGHT) + OBJ_MARGIN_HEIGHT);
 		}
-		;
+
 		if (this.m_OpportunityPrevPosY != _local_4) {
 			if (this.m_oppHolder.visible) {
 				Animate.kill(this.m_oppMoveHolder);
@@ -711,9 +711,9 @@ public class ObjectivesBar extends BaseControl {
 			} else {
 				this.m_oppMoveHolder.y = _local_4;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_intelPrevposY != _local_5) {
 			if (this.m_intelHolder.visible) {
 				Animate.kill(this.m_intelMoveHolder);
@@ -721,9 +721,9 @@ public class ObjectivesBar extends BaseControl {
 			} else {
 				this.m_intelMoveHolder.y = _local_5;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_SecurityPrevPosY != _local_6) {
 			if (this.m_securityHolder.visible) {
 				Animate.kill(this.m_securityMoveHolder);
@@ -731,9 +731,9 @@ public class ObjectivesBar extends BaseControl {
 			} else {
 				this.m_securityMoveHolder.y = _local_6;
 			}
-			;
+
 		}
-		;
+
 		this.m_OpportunityPrevPosY = _local_4;
 		this.m_intelPrevposY = _local_5;
 		this.m_SecurityPrevPosY = _local_6;
@@ -748,7 +748,7 @@ public class ObjectivesBar extends BaseControl {
 			MenuUtils.setColor(_arg_1.counterTimer_mc.static_bg, MenuConstants.COLOR_RED, false);
 			MenuUtils.setColor(_arg_1.counterTimer_mc.dynamic_bg, MenuConstants.COLOR_RED, false);
 		}
-		;
+
 		_arg_1.counterTimer_mc.static_bg.visible = false;
 		_arg_1.counterTimer_mc.visible = true;
 		_arg_1.counterTimer_mc.value_txt.autoSize = "left";
@@ -757,12 +757,12 @@ public class ObjectivesBar extends BaseControl {
 		} else {
 			_arg_1.counterTimer_mc.value_txt.y = 28;
 		}
-		;
+
 		_arg_3.timerHeader = Localization.get("UI_BRIEFING_DIAL_TIME");
 		if (_arg_3.timerHeader) {
 			_arg_1.counterTimer_mc.header_txt.htmlText = _arg_3.timerHeader;
 		}
-		;
+
 		_arg_1.counterTimer_mc.value_txt.htmlText = _arg_3.timerString;
 		if (_arg_3.timerHeader) {
 			_arg_1.counterTimer_mc.value_txt.x = ((COUNTDOWN_OBJ_HEADER_XPOS + _arg_1.counterTimer_mc.header_txt.textWidth) + COUNTDOWN_OBJ_TEXT_GAP);
@@ -771,7 +771,7 @@ public class ObjectivesBar extends BaseControl {
 			_arg_1.counterTimer_mc.value_txt.x = COUNTDOWN_OBJ_HEADER_XPOS;
 			_arg_1.counterTimer_mc.dynamic_bg.width = (this.m_counterFieldTimerWidth + 3);
 		}
-		;
+
 		this.m_timers[_arg_3.id] = _arg_1.counterTimer_mc.value_txt;
 	}
 
@@ -787,12 +787,12 @@ public class ObjectivesBar extends BaseControl {
 		} else {
 			_arg_1.counterTimer_mc.value_txt.y = 28;
 		}
-		;
+
 		_arg_3.percentCounterHeader = Localization.get("UI_HUD_INFECTION_IN_BODY");
 		if (_arg_3.percentCounterHeader) {
 			_arg_1.counterTimer_mc.header_txt.htmlText = _arg_3.percentCounterHeader;
 		}
-		;
+
 		_arg_1.counterTimer_mc.value_txt.text = (String(_arg_3.percent) + "%");
 		_arg_1.counterTimer_mc.value_txt.x = ((((COUNTDOWN_OBJ_HEADER_XPOS + PERCENTAGE_BG_INIT_WIDTH) + 3) - COUNTDOWN_OBJ_TEXT_GAP) - this.m_counterFieldPercentWidth);
 		_arg_1.counterTimer_mc.dynamic_bg.width = PERCENTAGE_BG_INIT_WIDTH;
@@ -836,11 +836,11 @@ public class ObjectivesBar extends BaseControl {
 		} else {
 			_local_4.y = 28;
 		}
-		;
+
 		if (_arg_3) {
 			_local_6.htmlText = _arg_3;
 		}
-		;
+
 		_local_4.htmlText = _arg_2;
 		_local_4.x = COUNTDOWN_OBJ_HEADER_XPOS;
 		_local_5.width = (this.determineCounterBackgroundCounterTextWidth(_arg_2) + 5);
@@ -849,11 +849,11 @@ public class ObjectivesBar extends BaseControl {
 			_local_6.x = COUNTDOWN_OBJ_HEADER_XPOS;
 			_local_5.width = (_local_5.width + (_local_6.textWidth + COUNTDOWN_OBJ_TEXT_GAP));
 		}
-		;
+
 		if (_arg_2 != _local_7) {
 			this.animateCounterTextScale(_local_4, _local_6);
 		}
-		;
+
 	}
 
 	private function animateCounterTextScale(_arg_1:TextField, _arg_2:TextField):void {
@@ -878,11 +878,11 @@ public class ObjectivesBar extends BaseControl {
 		if (_arg_1.length <= 1) {
 			return (this.m_counterFieldSingleDigitWidth);
 		}
-		;
+
 		if (_arg_1.length == 2) {
 			return (this.m_counterFieldDoubleDigitWidth);
 		}
-		;
+
 		return (this.m_counterFieldTripleDigitWidth);
 	}
 

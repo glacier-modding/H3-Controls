@@ -77,9 +77,9 @@ public dynamic class ElusiveTargetTesterSequenceBase extends MenuElementBase {
 					Animate.fromTo(redOverlaySplit02, data.animateout.duration, delayDuration, {"y": (m_unitHeight * data.animateout.second_startpos)}, {"y": (m_unitHeight * data.animateout.second_endpos)}, Animate.ExpoOut);
 				});
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function animateSequenceContainer(data:Object, currentSequenceContainer:Sprite):void {
@@ -103,9 +103,9 @@ public dynamic class ElusiveTargetTesterSequenceBase extends MenuElementBase {
 					Animate.to(currentSequenceContainer, data.sequence.animateout.duration, delayDuration, {"y": (m_unitHeight * data.sequence.animateout.endpos)}, Animate.ExpoInOut);
 				});
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function animateImageContainer(_arg_1:DisplayObjectContainer, _arg_2:Number, _arg_3:Number, _arg_4:Number, _arg_5:Number, _arg_6:Number, _arg_7:Number, _arg_8:Number, _arg_9:String):void {
@@ -132,7 +132,7 @@ public dynamic class ElusiveTargetTesterSequenceBase extends MenuElementBase {
 			EtSequenceTextBlocks.setupTimerBlock(_arg_1, _arg_3, this);
 			this.animateTextBlock(_arg_3, _arg_1.animatedirection, _arg_1.animatein, _arg_1.animateout, _arg_2);
 		}
-		;
+
 	}
 
 	private function animateTextBlock(container:*, animatedirection:String, animatein:Object, animateout:Object, totalduration:Number):void {
@@ -151,9 +151,9 @@ public dynamic class ElusiveTargetTesterSequenceBase extends MenuElementBase {
 					Animate.fromTo(container, animateout.duration, delayDuration, {"y": (m_unitHeight * animateout.startpos)}, {"y": (m_unitHeight * animateout.endpos)}, theEasingOut);
 				});
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function getEasing(_arg_1:String):int {
@@ -192,7 +192,7 @@ public dynamic class ElusiveTargetTesterSequenceBase extends MenuElementBase {
 			default:
 				_local_2 = Animate.Linear;
 		}
-		;
+
 		return (_local_2);
 	}
 
@@ -205,12 +205,12 @@ public dynamic class ElusiveTargetTesterSequenceBase extends MenuElementBase {
 			this.m_countDownTimer.stopCountDown();
 			this.m_countDownTimer = null;
 		}
-		;
+
 		if (((_arg_1) && (!(this.m_countDownTimer)))) {
 			this.m_countDownTimer = new CountDownTimer();
 			this.m_countDownTimer.startCountDown(_arg_2, _arg_1, this, _arg_3);
 		}
-		;
+
 	}
 
 	public function stopCountDownTimer():void {
@@ -235,7 +235,7 @@ public dynamic class ElusiveTargetTesterSequenceBase extends MenuElementBase {
 			this.m_countDownTimer.stopCountDown();
 			this.m_countDownTimer = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 

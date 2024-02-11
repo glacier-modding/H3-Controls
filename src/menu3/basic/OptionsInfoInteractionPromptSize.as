@@ -26,7 +26,7 @@ public dynamic class OptionsInfoInteractionPromptSize extends OptionsInfo {
 		if (((!(_arg_1.uioptionname == null)) && (_arg_1.uioptionname.length > 0))) {
 			_local_2 = CommonUtils.getUIOptionValueNumber(_arg_1.uioptionname);
 		}
-		;
+
 		var _local_3:Object = MenuConstants.InteractionIndicatorFontSpecs[_local_2];
 		if (((!(_arg_1.customtext == null)) && (_arg_1.customtext.length > 0))) {
 			this.m_customTextFieldLabel = this.setupTextfield(_arg_1.customtext, _local_3.fontSizeLabel, _local_3.yOffsetLabel, (_local_3.fScaleGroup * _local_3.fScaleIndividual), MenuConstants.FONT_TYPE_BOLD);
@@ -34,7 +34,7 @@ public dynamic class OptionsInfoInteractionPromptSize extends OptionsInfo {
 			this.m_customTextFieldLabel.name = "m_customTextFieldLabel";
 			this.m_customTextFieldDesc.name = "m_customTextFieldDesc";
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -47,12 +47,12 @@ public dynamic class OptionsInfoInteractionPromptSize extends OptionsInfo {
 			m_view.removeChild(this.m_customTextFieldLabel);
 			this.m_customTextFieldLabel = null;
 		}
-		;
+
 		if (this.m_customTextFieldDesc != null) {
 			m_view.removeChild(this.m_customTextFieldDesc);
 			this.m_customTextFieldDesc = null;
 		}
-		;
+
 	}
 
 	private function setupTextfield(_arg_1:String, _arg_2:int, _arg_3:int, _arg_4:Number, _arg_5:String):TextField {

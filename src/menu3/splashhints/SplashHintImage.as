@@ -27,7 +27,7 @@ public class SplashHintImage extends Sprite {
 			this.m_imageContainer.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new MenuImageLoader();
 		this.m_imageContainer.addChildAt(this.m_loader, 0);
 		this.m_loader.center = false;
@@ -35,7 +35,7 @@ public class SplashHintImage extends Sprite {
 			if (onComplete != null) {
 				onComplete();
 			}
-			;
+
 		});
 	}
 
@@ -51,7 +51,7 @@ public class SplashHintImage extends Sprite {
 		if (this.m_loader != null) {
 			return (this.m_loader.getImage().width);
 		}
-		;
+
 		return (super.width);
 	}
 
@@ -59,7 +59,7 @@ public class SplashHintImage extends Sprite {
 		if (this.m_loader != null) {
 			return (this.m_loader.getImage().height);
 		}
-		;
+
 		return (super.height);
 	}
 

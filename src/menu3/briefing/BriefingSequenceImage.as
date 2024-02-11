@@ -49,13 +49,13 @@ public class BriefingSequenceImage extends BaseControl {
 		if (this.m_imageSequenceDuration) {
 			baseduration = this.m_imageSequenceDuration;
 		}
-		;
+
 		if (this.m_loader != null) {
 			this.m_loader.cancelIfLoading();
 			this.m_imageContainer.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new MenuImageLoader();
 		this.m_imageContainer.addChild(this.m_loader);
 		this.m_loader.center = false;

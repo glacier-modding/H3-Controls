@@ -35,7 +35,7 @@ public class ConnectionIndicator extends NotificationListener {
 			MenuUtils.setupText(this.m_view.label2_txt, "", 16, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorGreyUltraLight);
 			this.m_view.back_mc.height = ((this.m_view.label_txt.y + this.m_view.label_txt.textHeight) + 14);
 		}
-		;
+
 		this.m_view.visible = true;
 		this.m_view.spinner_mc.visible = true;
 		CommonUtils.changeFontToGlobalFont(this.m_view.label_txt);
@@ -81,7 +81,7 @@ public class ConnectionIndicator extends NotificationListener {
 		if (!_arg_1) {
 			this.HideNotification();
 		}
-		;
+
 	}
 
 

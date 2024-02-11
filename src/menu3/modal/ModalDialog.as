@@ -62,13 +62,13 @@ public class ModalDialog extends BaseControl {
 					} else {
 						_arg_1.view = "menu3.modal.ModalDialogGeneric";
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		return (this.openDialog(_arg_1));
 	}
 
@@ -83,14 +83,14 @@ public class ModalDialog extends BaseControl {
 			this.m_isEnterFrameActive = true;
 			this.addEventListener(Event.ENTER_FRAME, this.onEnterFrame);
 		}
-		;
+
 		Animate.kill(this.m_modalContainer);
 		Animate.kill(this.m_bgTile);
 		if (this.m_child != null) {
 			this.m_dialogContainer.removeChild(this.m_child);
 			this.m_child = null;
 		}
-		;
+
 		this.m_bgTile.alpha = 0;
 		this.m_bgTile.visible = true;
 		this.m_bgTile.width = parent.width;
@@ -135,7 +135,7 @@ public class ModalDialog extends BaseControl {
 				m_modalContainer.z = 0;
 				m_modalContainer.transform.matrix3D = null;
 			}
-			;
+
 		};
 		this.m_taskletSequencer.addChunk(funcAnimation);
 		return (dialogInformation);
@@ -149,7 +149,7 @@ public class ModalDialog extends BaseControl {
 			};
 			this.m_taskletSequencer.addChunk(func);
 		}
-		;
+
 	}
 
 	public function buttonPressed(data:Object):void {
@@ -160,7 +160,7 @@ public class ModalDialog extends BaseControl {
 			};
 			this.m_taskletSequencer.addChunk(func);
 		}
-		;
+
 	}
 
 	public function onScroll(delta:Number, animate:Boolean):void {
@@ -171,7 +171,7 @@ public class ModalDialog extends BaseControl {
 			};
 			this.m_taskletSequencer.addChunk(func);
 		}
-		;
+
 	}
 
 	public function updateButtonPrompts():void {
@@ -182,7 +182,7 @@ public class ModalDialog extends BaseControl {
 			};
 			this.m_taskletSequencer.addChunk(func);
 		}
-		;
+
 	}
 
 	public function hideDialog():void {
@@ -203,13 +203,13 @@ public class ModalDialog extends BaseControl {
 			this.m_dialogContainer.removeChild(this.m_child);
 			this.m_child = null;
 		}
-		;
+
 		this.m_taskletSequencer.clear();
 		if (this.m_isEnterFrameActive) {
 			this.m_isEnterFrameActive = false;
 			this.removeEventListener(Event.ENTER_FRAME, this.onEnterFrame);
 		}
-		;
+
 	}
 
 	public function onSetItemSelected(index:int, selected:Boolean):void {
@@ -220,7 +220,7 @@ public class ModalDialog extends BaseControl {
 			};
 			this.m_taskletSequencer.addChunk(func);
 		}
-		;
+
 	}
 
 	override public function onSetSize(_arg_1:Number, _arg_2:Number):void {
@@ -232,7 +232,7 @@ public class ModalDialog extends BaseControl {
 			this.m_bgTile.x = (parent.width / -2);
 			this.m_bgTile.y = (parent.height / -2);
 		}
-		;
+
 	}
 
 	override public function onSetViewport(_arg_1:Number, _arg_2:Number, _arg_3:Number):void {
@@ -241,7 +241,7 @@ public class ModalDialog extends BaseControl {
 			this.m_modalContainer.scaleX = this.m_scaleRatio;
 			this.m_modalContainer.scaleY = this.m_scaleRatio;
 		}
-		;
+
 	}
 
 	public function onTextFieldEdited(value:String):void {
@@ -252,11 +252,11 @@ public class ModalDialog extends BaseControl {
 				if (_local_1 != null) {
 					_local_1.onTextFieldEdited(value);
 				}
-				;
+
 			};
 			this.m_taskletSequencer.addChunk(func);
 		}
-		;
+
 	}
 
 

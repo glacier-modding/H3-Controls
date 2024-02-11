@@ -198,9 +198,9 @@ public class TextArea extends TextInput {
 	override public function handleInput(event:InputEvent):void {
 		super.handleInput(event);
 		if (event.handled) {
-			return;
+
 		} else if (_editable) {
-			return;
+
 		} else {
 			var navEquivalent:String = event.details.navEquivalent;
 			switch (navEquivalent) {

@@ -17,7 +17,7 @@ public class ButtonPromptContainer extends Sprite {
 		} else {
 			this.addRegularButtonPrompts(_arg_1, _arg_3);
 		}
-		;
+
 	}
 
 	private function addTabNavigationLayout(_arg_1:Object, _arg_2:Function):void {
@@ -50,12 +50,12 @@ public class ButtonPromptContainer extends Sprite {
 					_local_3 = (_local_3 + Math.ceil(((MenuConstants.CategoryElementWidth + (2 * 62)) + 10)));
 					_local_7++;
 				}
-				;
+
 			}
-			;
+
 			_local_4++;
 		}
-		;
+
 	}
 
 	private function addRegularButtonPrompts(_arg_1:Object, _arg_2:Function):void {
@@ -92,16 +92,16 @@ public class ButtonPromptContainer extends Sprite {
 							_local_3 = (_local_3 + Math.ceil((_local_4 + MenuConstants.ButtonPromptsXOffset)));
 							_local_8++;
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			_local_5++;
 		}
-		;
+
 	}
 
 	private function addPrompt(_arg_1:Number, _arg_2:Object, _arg_3:Function):Number {
@@ -122,7 +122,7 @@ public class ButtonPromptContainer extends Sprite {
 		if (((_arg_1 == null) || (_arg_1.actiontype == null))) {
 			return (_local_2);
 		}
-		;
+
 		if (typeof (_arg_1.actiontype) == "string") {
 			_local_2.actionType = _arg_1.actiontype;
 		} else {
@@ -137,13 +137,13 @@ public class ButtonPromptContainer extends Sprite {
 					} else {
 						_local_2.actionTypes.push(_local_3);
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		return (_local_2);
 	}
 
@@ -154,10 +154,10 @@ public class ButtonPromptContainer extends Sprite {
 			if (_local_1 != null) {
 				_local_1.onUnregister();
 			}
-			;
+
 			removeChildAt(0);
 		}
-		;
+
 	}
 
 

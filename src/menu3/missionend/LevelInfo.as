@@ -15,14 +15,14 @@ public class LevelInfo {
 			this.m_levelPointsAccum = _arg_1;
 			this.m_levelPointsOffset = _arg_2;
 		}
-		;
+
 	}
 
 	public function getLevelFromList(_arg_1:Number):Number {
 		if (!this.m_levelPointsAccum) {
 			return (1);
 		}
-		;
+
 		var _local_2:Number = 0;
 		var _local_3:int;
 		while (_local_3 < this.m_levelPointsAccum.length) {
@@ -31,10 +31,10 @@ public class LevelInfo {
 			} else {
 				break;
 			}
-			;
+
 			_local_3++;
 		}
-		;
+
 		var _local_4:int = (this.m_levelPointsOffset + this.m_levelPointsAccum.length);
 		var _local_5:int = (_local_2 - this.m_levelPointsOffset);
 		var _local_6:Number = (_arg_1 - this.m_levelPointsAccum[_local_5]);
@@ -42,7 +42,7 @@ public class LevelInfo {
 		if (_local_2 < (_local_4 - 1)) {
 			_local_7 = (_local_6 / (this.m_levelPointsAccum[(_local_5 + 1)] - this.m_levelPointsAccum[_local_5]));
 		}
-		;
+
 		return ((_local_2 + 1) + _local_7);
 	}
 
@@ -51,7 +51,7 @@ public class LevelInfo {
 		if (_arg_1 >= this.m_levelPointsAccum[_local_2]) {
 			return (true);
 		}
-		;
+
 		return (false);
 	}
 

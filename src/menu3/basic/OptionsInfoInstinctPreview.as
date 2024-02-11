@@ -43,7 +43,7 @@ public dynamic class OptionsInfoInstinctPreview extends OptionsInfoPreview {
 				_local_4.gotoAndStop("attentive");
 				_local_4.witnessIcon.visible = false;
 			}
-			;
+
 			this.m_indicator1.x = 346;
 			this.m_indicator1.y = 17;
 			this.m_indicator2.x = 109;
@@ -57,7 +57,7 @@ public dynamic class OptionsInfoInstinctPreview extends OptionsInfoPreview {
 			this.m_indicator3.visible = ((_local_3) ? true : false);
 			this.m_indicator4.visible = ((_local_3) ? true : false);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {

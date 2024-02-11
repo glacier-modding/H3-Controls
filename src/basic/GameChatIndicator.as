@@ -14,7 +14,7 @@ import common.Animate;
 public class GameChatIndicator extends BaseControl {
 
 	private var m_view:GameChatIndicatorView;
-	private var m_aStatusArray:Array = new Array("TALKING", "NON_TALKING", "MUTED", "RESTRICTED");
+	private var m_aStatusArray:Array = ["TALKING", "NON_TALKING", "MUTED", "RESTRICTED"];
 
 	public function GameChatIndicator() {
 		this.m_view = new GameChatIndicatorView();
@@ -29,7 +29,7 @@ public class GameChatIndicator extends BaseControl {
 		if (((_arg_1) && (!(_arg_1 == null)))) {
 			this.showGameChat(_arg_1.name, _arg_1.status);
 		}
-		;
+
 	}
 
 	private function showGameChat(_arg_1:String, _arg_2:String):void {
@@ -61,7 +61,7 @@ public class GameChatIndicator extends BaseControl {
 			default:
 				this.hideGameChat();
 		}
-		;
+
 	}
 
 	private function hideGameChat():void {

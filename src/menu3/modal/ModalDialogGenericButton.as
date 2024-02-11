@@ -40,11 +40,11 @@ public dynamic class ModalDialogGenericButton extends CollapsableListContainer {
 		if (_arg_1.dialogWidth != undefined) {
 			this.setButtonWidth(_arg_1.dialogWidth);
 		}
-		;
+
 		if (_arg_1.optionstyle === true) {
 			this.m_optionStyle = true;
 		}
-		;
+
 		this.m_iconLabel = "arrowright";
 		if (_arg_1.icon) {
 			this.m_iconLabel = _arg_1.icon;
@@ -56,13 +56,13 @@ public dynamic class ModalDialogGenericButton extends CollapsableListContainer {
 					if (_arg_1.type == "cancel") {
 						this.m_iconLabel = "failed";
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_WHITE, true, false);
 		MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_SOLID_BACKGROUND, true, 1);
 		if (_arg_1.title != undefined) {
@@ -71,13 +71,13 @@ public dynamic class ModalDialogGenericButton extends CollapsableListContainer {
 			} else {
 				this.setupTextField(_arg_1.titleplaceholder);
 			}
-			;
+
 		}
-		;
+
 		if (getNodeProp(this, "pressable") === false) {
 			this.setPressable(false);
 		}
-		;
+
 		var _local_2:int = ((m_isSelected) ? this.STATE_SELECTED : this.STATE_DEFAULT);
 		this.setSelectedAnimationState(_local_2);
 		setItemSelected(m_isSelected);
@@ -111,7 +111,7 @@ public dynamic class ModalDialogGenericButton extends CollapsableListContainer {
 			this.m_view.tileIcon.alpha = 0.5;
 			this.m_view.title.alpha = 0.5;
 		}
-		;
+
 	}
 
 	public function onPressed():void {
@@ -139,7 +139,7 @@ public dynamic class ModalDialogGenericButton extends CollapsableListContainer {
 		if (m_isSelected) {
 			return;
 		}
-		;
+
 		var _local_2:int = ((_arg_1) ? this.STATE_HOVER : this.STATE_DEFAULT);
 		this.setSelectedAnimationState(_local_2);
 	}
@@ -149,7 +149,7 @@ public dynamic class ModalDialogGenericButton extends CollapsableListContainer {
 		if (m_isSelected) {
 			_local_1 = this.STATE_SELECTED;
 		}
-		;
+
 		this.setSelectedAnimationState(_local_1);
 	}
 
@@ -157,7 +157,7 @@ public dynamic class ModalDialogGenericButton extends CollapsableListContainer {
 		if (!this.m_isPressable) {
 			return;
 		}
-		;
+
 		if (((_arg_1 == this.STATE_SELECTED) || (_arg_1 == this.STATE_HOVER))) {
 			MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_RED, true, 1);
 			MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_RED, false, true, MenuConstants.COLOR_WHITE, 1, 0, true);
@@ -176,10 +176,10 @@ public dynamic class ModalDialogGenericButton extends CollapsableListContainer {
 				MenuUtils.removeDropShadowFilter(this.m_view.title);
 				MenuUtils.removeDropShadowFilter(this.m_view.tileIcon);
 			}
-			;
+
 			this.callTextTicker(false);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -190,7 +190,7 @@ public dynamic class ModalDialogGenericButton extends CollapsableListContainer {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

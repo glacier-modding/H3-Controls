@@ -39,7 +39,7 @@ public dynamic class ThumbnailItemTile extends MenuElementTileBase implements II
 		if (this.m_view.mouseOverIndicator) {
 			this.m_view.mouseOverIndicator.visible = false;
 		}
-		;
+
 		addChild(this.m_view);
 	}
 
@@ -51,22 +51,22 @@ public dynamic class ThumbnailItemTile extends MenuElementTileBase implements II
 			if (((_arg_1.ondemand == undefined) || (!(_arg_1.ondemand)))) {
 				this.loadImage();
 			}
-			;
+
 		} else {
 			this.m_imagePath = null;
 		}
-		;
+
 		if (_arg_1.expandedHeight) {
 			this.m_expandedToHeight = _arg_1.expandedHeight;
 		} else {
 			this.m_expandedToHeight = 300;
 		}
-		;
+
 		var _local_2:ThumbnailScrollingListContainer = this.getParentThumbnailScrollingList();
 		if (_local_2 != null) {
 			_local_2.onReloadData(this, _arg_1);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -77,11 +77,11 @@ public dynamic class ThumbnailItemTile extends MenuElementTileBase implements II
 				this.m_tileState.destroy();
 				this.m_tileState = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -94,7 +94,7 @@ public dynamic class ThumbnailItemTile extends MenuElementTileBase implements II
 		if (this.m_view.mouseOverIndicator) {
 			Animate.complete(this.m_view.mouseOverIndicator);
 		}
-		;
+
 	}
 
 	private function killAnimations():void {
@@ -102,7 +102,7 @@ public dynamic class ThumbnailItemTile extends MenuElementTileBase implements II
 		if (this.m_view.mouseOverIndicator) {
 			Animate.kill(this.m_view.mouseOverIndicator);
 		}
-		;
+
 	}
 
 	public function isImageLoaded():Boolean {
@@ -113,21 +113,21 @@ public dynamic class ThumbnailItemTile extends MenuElementTileBase implements II
 		if (this.m_loader == null) {
 			return;
 		}
-		;
+
 		this.m_loader.cancelIfLoading();
 		this.m_loader = null;
 		this.m_imageData = null;
 		if (this.m_tileState != null) {
 			this.m_tileState.unloadImage();
 		}
-		;
+
 	}
 
 	public function loadImage():void {
 		if (this.m_imagePath == null) {
 			return;
 		}
-		;
+
 		this.unloadImage();
 		this.m_loader = new MenuImageLoader();
 		this.m_loader.loadImage(this.m_imagePath, function ():void {
@@ -135,7 +135,7 @@ public dynamic class ThumbnailItemTile extends MenuElementTileBase implements II
 			if (m_imageData != null) {
 				m_imageData = null;
 			}
-			;
+
 			m_imageData = m_loader.getImageData();
 			if (m_imageData != null) {
 				m_tileState.setImageFrom(m_imageData);
@@ -143,9 +143,9 @@ public dynamic class ThumbnailItemTile extends MenuElementTileBase implements II
 				if (((m_isFocusedOnParentList) && (!(_local_1 == null)))) {
 					_local_1.onImageLoaded(m_imageData);
 				}
-				;
+
 			}
-			;
+
 		});
 	}
 
@@ -153,21 +153,21 @@ public dynamic class ThumbnailItemTile extends MenuElementTileBase implements II
 		if (_arg_1 == this.m_isFocusedOnParentList) {
 			return;
 		}
-		;
+
 		this.m_isFocusedOnParentList = _arg_1;
 		if (this.m_isFocusedOnParentList) {
 			this.onExpand(true);
 		} else {
 			this.onCollapse(true);
 		}
-		;
+
 	}
 
 	private function getParentThumbnailScrollingList():ThumbnailScrollingListContainer {
 		if (((parent == null) || (parent.parent == null))) {
 			return (null);
 		}
-		;
+
 		return (parent.parent as ThumbnailScrollingListContainer);
 	}
 
@@ -178,14 +178,14 @@ public dynamic class ThumbnailItemTile extends MenuElementTileBase implements II
 			if (_local_1 != null) {
 				_local_1.onItemSelected(getData(), this.m_imageData);
 			}
-			;
+
 		} else {
 			if (_local_1 != null) {
 				_local_1.onItemUnselected();
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function setItemHover(_arg_1:Boolean):void {
@@ -197,9 +197,9 @@ public dynamic class ThumbnailItemTile extends MenuElementTileBase implements II
 				this.m_view.mouseOverIndicator.alpha = 0;
 				Animate.legacyTo(this.m_view.mouseOverIndicator, MenuConstants.HiliteTime, {"alpha": 1}, Animate.SineIn);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function onExpand(_arg_1:Boolean):void {
@@ -207,7 +207,7 @@ public dynamic class ThumbnailItemTile extends MenuElementTileBase implements II
 		if (this.m_view.mouseOverIndicator) {
 			this.m_view.mouseOverIndicator.visible = false;
 		}
-		;
+
 		this.m_view.collapsed.alpha = 0;
 		this.m_view.expander.alpha = this.ExpanderAlpha;
 		Animate.to(this.m_view.expander, MenuConstants.HiliteTime, 0, {"height": this.m_expandedToHeight}, Animate.SineIn, this.onExpandComplete);

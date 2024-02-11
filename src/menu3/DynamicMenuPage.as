@@ -79,19 +79,19 @@ public class DynamicMenuPage extends BaseControl {
 		if (_arg_2.ncols) {
 			_local_3.width = (_arg_2.ncols * MenuConstants.GridUnitWidth);
 		}
-		;
+
 		if (_arg_2.nrows) {
 			_local_3.height = (_arg_2.nrows * MenuConstants.GridUnitHeight);
 		}
-		;
+
 		if (_arg_2.width) {
 			_local_3.width = _arg_2.width;
 		}
-		;
+
 		if (_arg_2.height) {
 			_local_3.height = _arg_2.height;
 		}
-		;
+
 		_local_3.sizeX = this.m_width;
 		_local_3.sizeY = this.m_height;
 		_local_3.safeAreaRatio = this.m_safeAreaRatio;
@@ -99,7 +99,7 @@ public class DynamicMenuPage extends BaseControl {
 			Log.error("DynamicMenuPage", this, (("menu2 is not supported anymore: " + _arg_1) + " !!!!1!1!11!!!!"));
 			_arg_1 = _arg_1.replace("menu2", "menu3");
 		}
-		;
+
 		var _local_4:Class = (getDefinitionByName(_arg_1) as Class);
 		var _local_5:Sprite = new _local_4(_local_3);
 		this.m_allChildren[_arg_2.id] = _local_5;
@@ -119,13 +119,13 @@ public class DynamicMenuPage extends BaseControl {
 		} else {
 			elementSprite.x = ((node.col * MenuConstants.GridUnitWidth) || (0));
 		}
-		;
+
 		if (node.y) {
 			elementSprite.y = node.y;
 		} else {
 			elementSprite.y = ((node.row * MenuConstants.GridUnitHeight) || (0));
 		}
-		;
+
 		elementSprite.rotationX = ((node.rotationX) || (0));
 		elementSprite.rotationY = ((node.rotationY) || (0));
 		elementSprite.rotationZ = ((node.rotationZ) || (0));
@@ -154,7 +154,7 @@ public class DynamicMenuPage extends BaseControl {
 			}, false, 0, false);
 			elementBase.setEngineCallbacks(sendEvent, sendEventWithValue);
 		}
-		;
+
 		var children:Array = node.children;
 		if (((children) && (elementBase))) {
 			i = 0;
@@ -164,28 +164,28 @@ public class DynamicMenuPage extends BaseControl {
 					childHandling = this.parseElementChildStructure(elementBase, childData);
 					this.m_taskletSequencer.addChunk(childHandling);
 				}
-				;
+
 				i = (i + 1);
 			}
-			;
+
 			changed = function ():void {
 				elementBase.onChildrenChanged();
 			};
 			this.m_taskletSequencer.addChunk(changed);
 		}
-		;
+
 		var applyDataFunc:Function = function ():void {
 			var _local_1:Object;
 			applyData(elementSprite);
 			if (((!(elementBase == null)) && (node.ismenusystemnode === true))) {
 				if (node.visible != null) {
-					_local_1 = new Object();
+					_local_1 = {};
 					_local_1["visible"] = (!(node.visible === false));
 					elementBase.setVisible(_local_1);
 				}
-				;
+
 			}
-			;
+
 		};
 		this.m_taskletSequencer.addChunk(applyDataFunc);
 	}
@@ -201,7 +201,7 @@ public class DynamicMenuPage extends BaseControl {
 				};
 				m_taskletSequencer.addChunk(childHandlingAdd);
 			}
-			;
+
 		};
 		return (childHandling);
 	}
@@ -211,19 +211,19 @@ public class DynamicMenuPage extends BaseControl {
 			var _local_2:* = _arg_1;
 			(_local_2["onSetData"](((_arg_1["_nodedata"]["data"]) || ({}))));
 		}
-		;
+
 	}
 
 	private function processElement(_arg_1:Object):Sprite {
 		if (!_arg_1.view) {
 			return (null);
 		}
-		;
+
 		var _local_2:Sprite = this.createElement(_arg_1.view, _arg_1);
 		if (!_local_2) {
 			return (null);
 		}
-		;
+
 		this.parseElementStructure(_local_2, _arg_1);
 		return (_local_2);
 	}
@@ -234,7 +234,7 @@ public class DynamicMenuPage extends BaseControl {
 			if (((_local_1) && (_local_1[method]))) {
 				_local_1[method].apply(_local_1, args);
 			}
-			;
+
 		};
 		this.m_taskletSequencer.addChunk(func);
 	}
@@ -244,7 +244,7 @@ public class DynamicMenuPage extends BaseControl {
 		if (_local_2 == null) {
 			return (null);
 		}
-		;
+
 		return (_local_2.getView().getBounds(stage));
 	}
 
@@ -257,7 +257,7 @@ public class DynamicMenuPage extends BaseControl {
 		if (((_local_6 == null) || (_local_7 == null))) {
 			return (_local_5);
 		}
-		;
+
 		var _local_8:MenuElementBase = LeafNavigationUtil.getBestElementForSelection(_local_6, _local_6, _local_7, _arg_3, _arg_4);
 		if (_local_8 != null) {
 			_local_9 = MenuElementBase.getId(_local_8);
@@ -265,9 +265,9 @@ public class DynamicMenuPage extends BaseControl {
 				Log.xinfo(Log.ChannelContainer, ("getBestElementForSelection: bestElement:" + _local_9));
 				return (_local_9);
 			}
-			;
+
 		}
-		;
+
 		Log.xinfo(Log.ChannelContainer, "getBestElementForSelection: no best element found.");
 		return (_local_5);
 	}
@@ -280,7 +280,7 @@ public class DynamicMenuPage extends BaseControl {
 		if (_local_2 == null) {
 			return;
 		}
-		;
+
 		var _local_3:Object = _local_2();
 		if (((_local_3) && (_local_3.numChildren))) {
 			_local_4 = (_local_3.numChildren as int);
@@ -290,9 +290,9 @@ public class DynamicMenuPage extends BaseControl {
 				this.unregister(_local_6);
 				_local_5++;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function unregister(obj:Object):void {
@@ -315,9 +315,9 @@ public class DynamicMenuPage extends BaseControl {
 				};
 				this.m_taskletSequencer.addChunk(funcMenuElementUnregister);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function assignViewToStructure(parentId:int, view:BaseControl):void {
@@ -326,7 +326,7 @@ public class DynamicMenuPage extends BaseControl {
 			if (!_local_1) {
 				return;
 			}
-			;
+
 			var _local_2:Sprite = (view as Sprite);
 			var _local_3:uint;
 			while (_local_3 < getContainer().numChildren) {
@@ -334,10 +334,10 @@ public class DynamicMenuPage extends BaseControl {
 					getContainer().removeChildAt(_local_3);
 					break;
 				}
-				;
+
 				_local_3++;
 			}
-			;
+
 			_local_1.addChild2(view, 0);
 			_local_1.onChildrenChanged();
 		};
@@ -352,7 +352,7 @@ public class DynamicMenuPage extends BaseControl {
 			if (!node) {
 				return;
 			}
-			;
+
 			child = processElement(childData);
 			var funcChildrenChanged:Function = function ():void {
 				node.addChild2(child, index);
@@ -370,13 +370,13 @@ public class DynamicMenuPage extends BaseControl {
 			if (!_local_1) {
 				return;
 			}
-			;
+
 			var _local_2:MenuElementBase = _local_1.m_parent;
 			if (_local_2 != null) {
 				_local_2.removeChild2(_local_1);
 				_local_2.onChildrenChanged();
 			}
-			;
+
 			unregister(_local_1);
 		};
 		this.m_taskletSequencer.addChunk(func);
@@ -391,8 +391,8 @@ public class DynamicMenuPage extends BaseControl {
 			if (!_local_1) {
 				return;
 			}
-			;
-			var _local_2:Array = new Array();
+
+			var _local_2:Array = [];
 			var _local_3:int;
 			while (_local_3 < childNodeIds.length) {
 				_local_4 = childNodeIds[_local_3];
@@ -400,14 +400,14 @@ public class DynamicMenuPage extends BaseControl {
 				if (_local_5 != null) {
 					_local_2.push(_local_5);
 				}
-				;
+
 				_local_3++;
 			}
-			;
+
 			if (_local_2.length > 0) {
 				_local_1.reorderChildren(_local_2);
 			}
-			;
+
 		};
 		this.m_taskletSequencer.addChunk(func);
 	}
@@ -418,12 +418,12 @@ public class DynamicMenuPage extends BaseControl {
 			if (!_local_1) {
 				return;
 			}
-			;
+
 			var _local_2:Object = _local_1.parent;
 			if (!_local_2) {
 				return;
 			}
-			;
+
 			_local_2.setChildIndex(_local_1, (_local_2.numChildren - 1));
 		};
 		this.m_taskletSequencer.addChunk(func);
@@ -435,7 +435,7 @@ public class DynamicMenuPage extends BaseControl {
 			if (!_local_1) {
 				return;
 			}
-			;
+
 			_local_1["_nodedata"] = nodeData;
 			applyData(_local_1);
 		};
@@ -450,13 +450,13 @@ public class DynamicMenuPage extends BaseControl {
 			if (!elementSprite) {
 				return;
 			}
-			;
+
 			unregisterChildren(elementSprite);
 			menuElement = (m_allChildren[nodeId] as MenuElementBase);
 			if (!menuElement) {
 				return;
 			}
-			;
+
 			var funcClearMenuElement:Function = function ():void {
 				var persistentReloadData:Object;
 				var menuElementParent:MenuElementBase;
@@ -473,7 +473,7 @@ public class DynamicMenuPage extends BaseControl {
 					onSetData(data);
 					return;
 				}
-				;
+
 				child = processElement(nodeData);
 				if (child) {
 					funcReplace = function ():void {
@@ -481,12 +481,12 @@ public class DynamicMenuPage extends BaseControl {
 						if (_local_1 != null) {
 							_local_1.onPersistentReloadData(persistentReloadData);
 						}
-						;
+
 						menuElementParent.replaceChild2(elementSprite, child);
 					};
 					m_taskletSequencer.addChunk(funcReplace);
 				}
-				;
+
 				var funcChildrenChanged:Function = function ():void {
 					menuElementParent.onChildrenChanged();
 				};
@@ -503,12 +503,12 @@ public class DynamicMenuPage extends BaseControl {
 			if (!_local_1) {
 				return;
 			}
-			;
+
 			var _local_2:Object = _local_1.parent;
 			while ((((_local_2) && (!(_local_2 == this))) && ((!(_local_2["handleEvent"])) || (!(_local_2["handleEvent"](eventName, _local_1)))))) {
 				_local_2 = _local_2.parent;
 			}
-			;
+
 		};
 		this.m_taskletSequencer.addChunk(func);
 	}
@@ -520,20 +520,20 @@ public class DynamicMenuPage extends BaseControl {
 					unregisterChildren(m_container.getChildAt(0));
 					m_container.removeChildAt(0);
 				}
-				;
+
 			}
-			;
+
 			m_allChildren = {};
 			if (!data.root) {
 				return;
 			}
-			;
+
 			var funcProcessElement:Function = function ():void {
 				var _local_1:Sprite = processElement(data.root);
 				if (_local_1) {
 					m_container.addChild(_local_1);
 				}
-				;
+
 			};
 			m_taskletSequencer.addChunk(funcProcessElement);
 		};
@@ -552,7 +552,7 @@ public class DynamicMenuPage extends BaseControl {
 		for (_local_1 in this.m_allChildren) {
 			_local_2 = this.m_allChildren[_local_1];
 		}
-		;
+
 	}
 
 

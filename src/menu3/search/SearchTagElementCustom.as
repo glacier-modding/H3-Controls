@@ -34,7 +34,7 @@ public dynamic class SearchTagElementCustom extends SearchTagElement {
 		if (_arg_1.width != null) {
 			this.updateWidth(_arg_1.width);
 		}
-		;
+
 		super.onSetData(_arg_1);
 		this.setupInputTextField(_arg_1);
 		updateState();
@@ -50,7 +50,7 @@ public dynamic class SearchTagElementCustom extends SearchTagElement {
 		if (_arg_1.defaulttext) {
 			this.InputTextField.text = _arg_1.defaulttext;
 		}
-		;
+
 	}
 
 	override protected function setupTitleTextField(_arg_1:String):void {
@@ -74,11 +74,11 @@ public dynamic class SearchTagElementCustom extends SearchTagElement {
 					MenuUtils.setColor(this.InputTextFiledBackground, MenuConstants.COLOR_WHITE, false);
 					this.InputTextField.textColor = MenuConstants.COLOR_GREY_DARK;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function updateWidth(_arg_1:Number):void {

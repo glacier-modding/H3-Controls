@@ -49,26 +49,26 @@ public dynamic class Credits extends MenuElementBase {
 			_local_2.autoSize = TextFieldAutoSize.LEFT;
 			this.m_height = (this.m_height + _local_2.textHeight);
 		}
-		;
+
 		if (_arg_1.images) {
 			_local_3 = 100;
 			if (_arg_1.subline) {
 				_local_3 = (_local_3 + this.m_height);
 			}
-			;
+
 			_local_4 = 0;
 			while (_local_4 < _arg_1.images.length) {
 				if (_arg_1.images[_local_4].paddingTop) {
 					_local_3 = (_local_3 + _arg_1.images[_local_4].paddingTop);
 				}
-				;
+
 				_local_3 = (_local_3 + (_arg_1.images[_local_4].height + 100));
 				_local_4++;
 			}
-			;
+
 			this.m_height = Math.max(this.m_height, _local_3);
 		}
-		;
+
 		if (_arg_1.credits) {
 			_local_5 = this.m_height;
 			_local_6 = 0;
@@ -78,21 +78,21 @@ public dynamic class Credits extends MenuElementBase {
 					_local_5 = (_local_5 + 25);
 					_local_7++;
 				}
-				;
+
 				_local_5 = (_local_5 + 30);
 				_local_6++;
 			}
-			;
+
 			this.m_height = Math.max(this.m_height, _local_5);
 		}
-		;
+
 	}
 
 	public function setCreditsVisible(_arg_1:Boolean):void {
 		if (this.visible == _arg_1) {
 			return;
 		}
-		;
+
 		this.visible = _arg_1;
 		if (!_arg_1) {
 			removeChild(this.m_view);
@@ -100,7 +100,7 @@ public dynamic class Credits extends MenuElementBase {
 		} else {
 			this.createView();
 		}
-		;
+
 	}
 
 	private function createView():void {
@@ -120,7 +120,7 @@ public dynamic class Credits extends MenuElementBase {
 		} else {
 			MenuUtils.setupText(this.m_view.headline_txt, _local_1.headline, ((_local_1.smallerHeadline == true) ? 40 : 50), MenuConstants.FONT_TYPE_GLOBAL, this.COLOR_WHITE);
 		}
-		;
+
 		if (_local_1.subline) {
 			MenuUtils.setupText(this.m_view.subline_txt, _local_1.subline, ((_local_1.breadtext == true) ? 18 : 22), MenuConstants.FONT_TYPE_GLOBAL, this.COLOR_GREY_DARK);
 			this.m_view.subline_txt.multiline = true;
@@ -129,14 +129,14 @@ public dynamic class Credits extends MenuElementBase {
 		} else {
 			this.m_view.subline_txt.visible = false;
 		}
-		;
+
 		this.m_view.separator_mc.visible = _local_1.separator;
 		if (_local_1.images) {
 			_local_2 = 100;
 			if (_local_1.subline) {
 				_local_2 = (_local_2 + this.m_view.subline_txt.height);
 			}
-			;
+
 			_local_3 = 0;
 			while (_local_3 < _local_1.images.length) {
 				this.m_loader = new ImageLoader();
@@ -145,15 +145,15 @@ public dynamic class Credits extends MenuElementBase {
 				if (_local_1.images[_local_3].paddingTop) {
 					_local_2 = (_local_2 + _local_1.images[_local_3].paddingTop);
 				}
-				;
+
 				this.m_loader.y = _local_2;
 				_local_2 = (_local_2 + (_local_1.images[_local_3].height + 100));
 				this.m_view.addChild(this.m_loader);
 				_local_3++;
 			}
-			;
+
 		}
-		;
+
 		if (_local_1.credits) {
 			_local_4 = 0;
 			_local_5 = 0;
@@ -179,19 +179,19 @@ public dynamic class Credits extends MenuElementBase {
 						if ((((_local_1.credits[_local_5].names[_local_7] == undefined) || (_local_1.credits[_local_5].names[_local_7] == "")) || (_local_1.credits[_local_5].names[_local_7] == "Anonymous"))) {
 							this.m_view.titlesAndNames_mc.visible = false;
 						}
-						;
+
 					}
-					;
+
 					_local_7++;
 				}
-				;
+
 				this.m_view.titlesAndNames_mc.addChild(_local_6);
 				_local_4 = (_local_4 + 30);
 				_local_5++;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -199,7 +199,7 @@ public dynamic class Credits extends MenuElementBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	public function getCreditsHeight():Number {

@@ -29,14 +29,14 @@ public dynamic class MenuElementTileBase extends MenuElementBase {
 			this.m_loading = false;
 			this.setItemSelected(this.m_isSelected);
 		}
-		;
+
 	}
 
 	public function setItemSelected(_arg_1:Boolean):void {
 		if (this.m_isSelected == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_isSelected = _arg_1;
 		this.handleSelectionChange();
 	}
@@ -60,7 +60,7 @@ public dynamic class MenuElementTileBase extends MenuElementBase {
 		if (this.m_wheelDelayActive) {
 			Animate.kill(this);
 		}
-		;
+
 		super.onUnregister();
 	}
 

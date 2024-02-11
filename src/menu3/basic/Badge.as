@@ -76,11 +76,11 @@ public class Badge extends Sprite implements AnimationContainerBase {
 		if (_arg_1 <= 0) {
 			return;
 		}
-		;
+
 		if (_arg_1 == this.m_playerLevel) {
 			return;
 		}
-		;
+
 		this.m_playerLevel = _arg_1;
 		this.createBadge();
 		this.updateSize();
@@ -91,7 +91,7 @@ public class Badge extends Sprite implements AnimationContainerBase {
 		if (this.m_maxSize <= 0) {
 			return;
 		}
-		;
+
 		this.m_badgeScaleValue = (this.m_maxSize / this.m_badgeSizeReference);
 		trace(("Badge [ updateSize ] end-scale --> " + this.m_badgeScaleValue));
 		this.m_view.scaleX = this.m_badgeScaleValue;
@@ -127,7 +127,7 @@ public class Badge extends Sprite implements AnimationContainerBase {
 		while (this.m_view.numChildren > 0) {
 			this.m_view.removeChildAt(0);
 		}
-		;
+
 		this.m_view.scaleX = (this.m_view.scaleY = 1);
 	}
 
@@ -158,7 +158,7 @@ public class Badge extends Sprite implements AnimationContainerBase {
 					}, Animate.BackOut);
 				});
 			}
-			;
+
 			Animate.fromTo(this.m_badgeFXClip.fxInner, 0.5, (delay + 0.1), {"alpha": 1}, {"alpha": 0}, Animate.SineOut);
 			Animate.addFromTo(this.m_badgeFXClip.fxInner, 0.6, (delay + 0.1), {
 				"scaleX": 1,
@@ -178,20 +178,20 @@ public class Badge extends Sprite implements AnimationContainerBase {
 		} else {
 			this.m_view.alpha = 1;
 		}
-		;
+
 	}
 
 	private function findFrameID(_arg_1:int):String {
 		while (_arg_1 > this.m_totalLevelsPerGroup) {
 			_arg_1 = (_arg_1 - this.m_totalLevelsPerGroup);
 		}
-		;
+
 		var _local_2:int = int((Math.ceil((_arg_1 / this.m_levelsPerRow)) - 1));
 		this.m_useAssetCutOut = false;
 		if (((_local_2 == 1) || (_local_2 == 3))) {
 			this.m_useAssetCutOut = true;
 		}
-		;
+
 		var _local_3:int = (_arg_1 - (this.m_levelsPerRow * _local_2));
 		var _local_4:int = int((Math.ceil((_local_3 / this.m_levelsPerColumn)) - 1));
 		this.m_latinLevelFrameId = Math.min((_local_4 + 1), this.m_latinLevelTotal);
@@ -206,12 +206,12 @@ public class Badge extends Sprite implements AnimationContainerBase {
 			_arg_1 = (_arg_1 - this.m_latinLevelChange);
 			_local_2++;
 		}
-		;
+
 		var _local_3:String = (((this.LATIN_NAME_LINKAGE_PREFIX + _local_2) + "_") + this.m_latinLevelFrameId);
 		if (this.m_useAssetCutOut) {
 			_local_3 = (_local_3 + this.ASSET_LINKAGE_CUTOUT_SUFFIX);
 		}
-		;
+
 		return (_local_3);
 	}
 
@@ -222,7 +222,7 @@ public class Badge extends Sprite implements AnimationContainerBase {
 		if (this.m_useAssetCutOut) {
 			_local_4 = (_local_4 + this.ASSET_LINKAGE_CUTOUT_SUFFIX);
 		}
-		;
+
 		return (_local_4);
 	}
 
@@ -235,9 +235,9 @@ public class Badge extends Sprite implements AnimationContainerBase {
 			if (_local_2 >= _local_3) {
 				_local_2 = (_local_2 - _local_3);
 			}
-			;
+
 		}
-		;
+
 		var _local_4:int = int((Math.ceil((_arg_1 / this.m_levelsPerRow)) - 1));
 		var _local_5:int = (_arg_1 - (this.m_levelsPerRow * _local_4));
 		var _local_6:int = int(Math.ceil((_local_5 / this.m_levelsPerColumn)));
@@ -256,9 +256,9 @@ public class Badge extends Sprite implements AnimationContainerBase {
 			} else {
 				this.m_playerLevel = this.m_playerLevel;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function setTintAndScaleFactor(_arg_1:int, _arg_2:int):void {
@@ -269,21 +269,21 @@ public class Badge extends Sprite implements AnimationContainerBase {
 				if (_arg_1 == 2) {
 					this.m_badgeCenterScaleFactor = this.SCALE_FACTOR_2;
 				}
-				;
+
 				this.m_latinNameScaleFactor = this.SCALE_FACTOR_4;
 			} else {
 				if (_arg_2 > 5) {
 					if (_arg_1 == 2) {
 						this.m_badgeCenterScaleFactor = this.SCALE_FACTOR_3;
 					}
-					;
+
 					this.m_latinNameScaleFactor = this.SCALE_FACTOR_5;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1 == 0) {
 			this.m_propsColor = this.TINT_COLOR_WHITE;
 			this.m_shieldColor = this.TINT_COLOR_NONE;
@@ -309,15 +309,15 @@ public class Badge extends Sprite implements AnimationContainerBase {
 							this.m_shieldColor = this.TINT_COLOR_DARK;
 							this.m_numeralColor = this.TINT_COLOR_WHITE;
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function tintAssets(_arg_1:Sprite, _arg_2:Sprite):void {
@@ -331,12 +331,12 @@ public class Badge extends Sprite implements AnimationContainerBase {
 				if (this.m_propsColor != this.TINT_COLOR_NONE) {
 					MenuUtils.setColor(_local_3, this.m_propsColor);
 				}
-				;
+
 			}
-			;
+
 			_local_4++;
 		}
-		;
+
 	}
 
 	private function scaleAsset(_arg_1:Sprite, _arg_2:Number):void {

@@ -17,7 +17,7 @@ public class ModalDialogRegexValidation extends ModalDialogValidation {
 		if (!super.validate(_arg_1)) {
 			return (false);
 		}
-		;
+
 		this.regEx.lastIndex = 0;
 		return (this.regEx.test(_arg_1));
 	}

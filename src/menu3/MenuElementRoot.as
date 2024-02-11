@@ -49,7 +49,7 @@ public dynamic class MenuElementRoot extends CollapsableListContainer {
 		if (targetY < getView().getBounds(getView()).height) {
 			targetY = getView().getBounds(getView()).height;
 		}
-		;
+
 		Animate.legacyTo(getContainer(), MenuConstants.ScrollTime, {"y": targetY}, Animate.ExpoOut);
 		var alphaCountdown:Number = 1;
 		var i:int;
@@ -59,10 +59,10 @@ public dynamic class MenuElementRoot extends CollapsableListContainer {
 				alphaCountdown = (alphaCountdown - 0.3);
 				m_children[i].alpha = alphaCountdown;
 			}
-			;
+
 			i = (i + 1);
 		}
-		;
+
 	}
 
 	public function handleBoundsChanged(_arg_1:Rectangle, _arg_2:Number):void {
@@ -71,13 +71,13 @@ public dynamic class MenuElementRoot extends CollapsableListContainer {
 			m_children[_local_3].alpha = 1;
 			_local_3++;
 		}
-		;
+
 		Animate.complete(getContainer());
 		var _local_4:Number = ((this.m_rootBounds.bottom - (MenuConstants.MenuElementRootPivotBottomOffset * MenuConstants.GridUnitHeight)) - _arg_1.height);
 		if (_local_4 < getView().getBounds(getView()).height) {
 			_local_4 = getView().getBounds(getView()).height;
 		}
-		;
+
 		Animate.legacyTo(getContainer(), _arg_2, {"y": _local_4}, Animate.ExpoOut);
 	}
 
@@ -89,16 +89,16 @@ public dynamic class MenuElementRoot extends CollapsableListContainer {
 			this.handleBoundsChanged(getVisibleContainerBounds(), MenuConstants.ScrollTime);
 			_local_4 = true;
 		}
-		;
+
 		if (_arg_1 == "scrollingListContainerScrolled") {
 			this.handleScrollingListContainerScrolled((_arg_2 as ScrollingListContainer));
 			_local_4 = true;
 		}
-		;
+
 		if (!_local_4) {
 			return (super.handleEvent(_arg_1, _arg_2));
 		}
-		;
+
 		return (false);
 	}
 

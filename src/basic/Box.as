@@ -49,11 +49,11 @@ public class Box extends Sprite {
 				if (_arg_5 == TYPE_OUTLINE) {
 					this.drawOutline();
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function drawSolid(_arg_1:Boolean = false):void {
@@ -64,7 +64,7 @@ public class Box extends Sprite {
 		} else {
 			graphics.drawRect(this.m_xOffset, this.m_yOffset, this.m_width, this.m_height);
 		}
-		;
+
 		graphics.endFill();
 	}
 
@@ -113,23 +113,23 @@ public class Box extends Sprite {
 											this.m_xOffset = -(this.m_width >> 1);
 											this.m_yOffset = -(this.m_height);
 										}
-										;
+
 									}
-									;
+
 								}
-								;
+
 							}
-							;
+
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 

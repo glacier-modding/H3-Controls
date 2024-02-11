@@ -26,9 +26,9 @@ public dynamic class CategoryElementBase extends CollapsableListContainer implem
 			if (((!(this.getData().direction == "horizontal")) && (!(this.getData().direction == "horizontalWrap")))) {
 				_arg_1.x = 32;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function enableSpacer():void {
@@ -47,14 +47,14 @@ public dynamic class CategoryElementBase extends CollapsableListContainer implem
 		if (_arg_1) {
 			bubbleEvent("categorySelected", this);
 		}
-		;
+
 	}
 
 	public function setItemHover(_arg_1:Boolean):void {
 		if (this.m_isCategorySelected) {
 			return;
 		}
-		;
+
 		var _local_2:int = ((_arg_1) ? this.STATE_HOVER : this.STATE_DEFAULT);
 		this.setSelectedAnimationState(_local_2);
 	}
@@ -67,7 +67,7 @@ public dynamic class CategoryElementBase extends CollapsableListContainer implem
 		if (getNodeProp(this, "ismenusystem") != true) {
 			return;
 		}
-		;
+
 		this.m_isCategorySelected = _arg_1;
 		var _local_2:int = ((_arg_1) ? this.STATE_SELECTED : this.STATE_DEFAULT);
 		this.setSelectedAnimationState(_local_2);

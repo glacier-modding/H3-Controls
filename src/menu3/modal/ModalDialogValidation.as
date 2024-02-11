@@ -28,11 +28,11 @@ public class ModalDialogValidation {
 		if (((this.minChars == 0) && (_arg_1 == null))) {
 			return (true);
 		}
-		;
+
 		if (_arg_1 == null) {
 			return (false);
 		}
-		;
+
 		return (_arg_1.length >= this.minChars);
 	}
 

@@ -85,18 +85,18 @@ public class ControlsMain extends Sprite {
 			if (!hasTraceChannels()) {
 				return (false);
 			}
-			;
+
 			if ((_arg_1.toLowerCase() in ms_enabledChannels)) {
 				return (false);
 			}
-			;
+
 		} else {
 			if (((hasTraceChannels()) && (!(_arg_1.toLowerCase() in ms_enabledChannels)))) {
 				return (false);
 			}
-			;
+
 		}
-		;
+
 		return (true);
 	}
 
@@ -105,7 +105,7 @@ public class ControlsMain extends Sprite {
 		for each (_local_1 in ms_enabledChannels) {
 			return (true);
 		}
-		;
+
 		return (false);
 	}
 
@@ -126,7 +126,7 @@ public class ControlsMain extends Sprite {
 		if (_arg_3 >= 0) {
 			_arg_1.setChildIndex(_arg_2, _arg_3);
 		}
-		;
+
 	}
 
 	public function LoadMovie(swf:String, rid:String):void {
@@ -149,20 +149,20 @@ public class ControlsMain extends Sprite {
 			removeChild(_local_2);
 			delete this.m_loadedMovies[_arg_1];
 		}
-		;
+
 	}
 
 	public function SetMouseActive(_arg_1:Boolean):void {
 		if (ms_isMouseActive == _arg_1) {
 			return;
 		}
-		;
+
 		trace(("info | Mouse | SetMouseActive: " + _arg_1));
 		ms_isMouseActive = _arg_1;
 		if (ms_onMouseActiveChanged != null) {
 			ms_onMouseActiveChanged(ms_isMouseActive);
 		}
-		;
+
 	}
 
 	public function SetVrModeActive(_arg_1:Boolean):void {
@@ -187,7 +187,7 @@ public class ControlsMain extends Sprite {
 		if (ms_displaySize == _arg_1) {
 			return;
 		}
-		;
+
 		trace(("info | SetDisplaySize: " + _arg_1));
 		ms_displaySize = _arg_1;
 	}
@@ -205,7 +205,7 @@ public class ControlsMain extends Sprite {
 			trace(((("setTraceChannels: " + ((_arg_1) ? "disabled" : "enabled")) + " trace channel: ") + _local_3));
 			ms_enabledChannels[_local_3.toLowerCase()] = true;
 		}
-		;
+
 	}
 
 

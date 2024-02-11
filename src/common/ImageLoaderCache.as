@@ -8,14 +8,14 @@ public class ImageLoaderCache {
 
 	private static var s_instance:ImageLoaderCache;
 
-	private var m_imageRegister:Object = new Object();
+	private var m_imageRegister:Object = {};
 
 
 	public static function getGlobalInstance():ImageLoaderCache {
 		if (s_instance == null) {
 			s_instance = new (ImageLoaderCache)();
 		}
-		;
+
 		return (s_instance);
 	}
 
@@ -27,32 +27,32 @@ public class ImageLoaderCache {
 			_local_4.loadImage(_arg_1);
 			this.m_imageRegister[_arg_1] = _local_4;
 		}
-		;
+
 		_local_4.m_referenceCount++;
 		if (_local_4.isLoading()) {
 			if (_arg_2 != null) {
 				_local_4.m_successCallbacks.push(_arg_2);
 			}
-			;
+
 			if (_arg_3 != null) {
 				_local_4.m_failedCallbacks.push(_arg_3);
 			}
-			;
+
 		} else {
 			if (_local_4.m_failed) {
 				if (_arg_3 != null) {
 					(_arg_3());
 				}
-				;
+
 			} else {
 				if (_arg_2 != null) {
 					(_arg_2(_local_4.m_bitmapData));
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function unregisterLoadImage(_arg_1:String, _arg_2:Function = null, _arg_3:Function = null):void {
@@ -65,20 +65,20 @@ public class ImageLoaderCache {
 			this.m_imageRegister[_arg_1] = null;
 			return;
 		}
-		;
+
 		if (_local_4.isLoading()) {
 			if (_arg_2 != null) {
 				_local_5 = _local_4.m_successCallbacks.indexOf(_arg_2);
 				_local_4.m_successCallbacks.splice(_local_5, 1);
 			}
-			;
+
 			if (_arg_3 != null) {
 				_local_6 = _local_4.m_failedCallbacks.indexOf(_arg_3);
 				_local_4.m_failedCallbacks.splice(_local_6, 1);
 			}
-			;
+
 		}
-		;
+
 	}
 
 
@@ -122,7 +122,7 @@ class ImageLoader_internal extends Loader {
 		if (this.m_isLoading) {
 			this.cancel();
 		}
-		;
+
 		this.ClearImage();
 		this.m_failed = false;
 		this.m_isLoading = true;
@@ -135,7 +135,7 @@ class ImageLoader_internal extends Loader {
 		for each (_local_1 in this.m_successCallbacks) {
 			(_local_1(this.m_bitmapData));
 		}
-		;
+
 		this.m_successCallbacks.length = 0;
 		this.m_failedCallbacks.length = 0;
 	}
@@ -146,7 +146,7 @@ class ImageLoader_internal extends Loader {
 		for each (_local_1 in this.m_failedCallbacks) {
 			(_local_1());
 		}
-		;
+
 		this.m_successCallbacks.length = 0;
 		this.m_failedCallbacks.length = 0;
 	}
@@ -164,7 +164,7 @@ class ImageLoader_internal extends Loader {
 			this.closeRequest();
 			this.callFailedCallbacks();
 		}
-		;
+
 	}
 
 	public function cancelAndClearImage():void {
@@ -173,14 +173,14 @@ class ImageLoader_internal extends Loader {
 		} else {
 			this.ClearImage();
 		}
-		;
+
 	}
 
 	public function onResourceReady(_arg_1:String):void {
 		if (this.m_toLoadUrl != _arg_1) {
 			return;
 		}
-		;
+
 		this.RegisterLoaderListeners();
 		var _local_2:URLRequest = new URLRequest(_arg_1);
 		this.load(_local_2);
@@ -190,7 +190,7 @@ class ImageLoader_internal extends Loader {
 		if (this.m_toLoadUrl != _arg_1) {
 			return;
 		}
-		;
+
 		this.m_failed = true;
 		this.closeRequest();
 		this.callFailedCallbacks();
@@ -205,7 +205,7 @@ class ImageLoader_internal extends Loader {
 			_local_3 = (_local_2 as Bitmap);
 			this.m_bitmapData = _local_3.bitmapData;
 		}
-		;
+
 		this.callCallbacks();
 	}
 

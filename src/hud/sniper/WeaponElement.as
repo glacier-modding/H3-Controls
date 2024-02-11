@@ -47,26 +47,26 @@ public class WeaponElement extends BaseControl {
 			if (this.m_currentWeaponImage != _arg_1.weaponStatus.icon) {
 				this.loadImage(_arg_1.weaponStatus.icon);
 			}
-			;
+
 			if (_arg_1.weaponStatus.aPerks) {
 				if (String(_arg_1.weaponStatus.aPerks) != String(this.m_aPerks)) {
 					this.setWeaponPerks(_arg_1.weaponStatus.aPerks);
 				}
-				;
+
 			}
-			;
+
 			if (_arg_1.weaponStatus.aAmmoTypes) {
 				if (String(_arg_1.weaponStatus.aAmmoTypes) != String(this.m_aAmmoTypes)) {
 					this.setCurrentWeaponAmmo(_arg_1.weaponStatus.aAmmoTypes);
 				}
-				;
+
 			}
-			;
+
 			this.setWeaponAmmoInfo(_arg_1.weaponStatus.nAmmoRemaining, _arg_1.weaponStatus.nAmmoTotal, _arg_1.weaponStatus.nAmmoInClip, _arg_1.weaponStatus.nWeaponType, _arg_1.weaponStatus.bCanReload, _arg_1.weaponStatus.bIsReloading, _arg_1.weaponStatus.fTimeBetweenBullets, _arg_1.weaponStatus.nCurrentAmmoType);
 		} else {
 			this.m_view.visible = false;
 		}
-		;
+
 	}
 
 	public function setWeaponAmmoInfo(nAmmoRemaining:int, nAmmoTotal:int, nAmmoInClip:int, nWeaponType:Number, bCanReload:Boolean, bIsReloading:Boolean, fTimeBetweenBullets:Number, nCurrentAmmoType:int):void {
@@ -80,7 +80,7 @@ public class WeaponElement extends BaseControl {
 		if ((((this.m_currentAmmoInGun == nAmmoRemaining) && (!(bIsReloading))) && (this.m_currentAmmoType == nCurrentAmmoType))) {
 			return;
 		}
-		;
+
 		this.m_view.totalammo.gotoAndStop(((nAmmoTotal == 999) ? 2 : 1));
 		var ammoTypeFrameAdd:int;
 		if (this.m_aAmmoTypes[nCurrentAmmoType] == "titaniumcomposite") {
@@ -89,9 +89,9 @@ public class WeaponElement extends BaseControl {
 			if (this.m_aAmmoTypes[nCurrentAmmoType] == "tacticalshock") {
 				ammoTypeFrameAdd = 22;
 			}
-			;
+
 		}
-		;
+
 		if (((!(nCurrentAmmoType == this.m_currentAmmoType)) && (!(bIsReloading)))) {
 			this.setCurrentWeaponAmmoSelected(nCurrentAmmoType);
 			this.playSound("ChangeAmmo");
@@ -103,7 +103,7 @@ public class WeaponElement extends BaseControl {
 				this.m_view.bullets[("b_" + (k + 1))].gotoAndStop(0);
 				k = (k + 1);
 			}
-			;
+
 			this.m_view.bullets.gotoAndStop((nAmmoInClip + ammoTypeFrameAdd));
 			m = 0;
 			while (m < nAmmoInClip) {
@@ -111,22 +111,22 @@ public class WeaponElement extends BaseControl {
 				this.m_view.bullets[("b_" + (m + 1))].gotoAndStop(63);
 				m = (m + 1);
 			}
-			;
+
 			j = 0;
 			while (j < nAmmoRemaining) {
 				if (j == (nAmmoRemaining - 1)) {
 					primaryBulletOnAmmoChange = true;
 				}
-				;
+
 				this.bulletsReload(this.m_view.bullets[("b_" + (j + 1))], (0.5 * ((j + 1) / 10)), primaryBulletOnAmmoChange);
 				j = (j + 1);
 			}
-			;
+
 		} else {
 			if (bIsReloading) {
 				return;
 			}
-			;
+
 			chamberingSpeed = (fTimeBetweenBullets - 0.4);
 			this.m_view.bullets.gotoAndStop((nAmmoInClip + ammoTypeFrameAdd));
 			if (nAmmoRemaining == nAmmoInClip) {
@@ -137,20 +137,20 @@ public class WeaponElement extends BaseControl {
 					if (i == (nAmmoInClip - 1)) {
 						primaryBullet = true;
 					}
-					;
+
 					this.bulletsReload(this.m_view.bullets[("b_" + (i + 1))], (0.5 * ((i + 1) / 10)), primaryBullet);
 					i = (i + 1);
 				}
-				;
+
 			} else {
 				Animate.fromTo(this.m_view.bullets[("b_" + (nAmmoRemaining + 1))], 0.15, 0, {"frames": 43}, {"frames": 63}, Animate.ExpoIn);
 				Animate.fromTo(this.m_view.bullets[("b_" + nAmmoRemaining)], chamberingSpeed, 0, {"frames": 2}, {"frames": 21}, Animate.Linear, function ():void {
 					Animate.fromTo(m_view.bullets[("b_" + nAmmoRemaining)], 0.25, 0, {"frames": 22}, {"frames": 42}, Animate.Linear);
 				});
 			}
-			;
+
 		}
-		;
+
 		this.m_currentAmmoInGun = nAmmoRemaining;
 		this.m_prevAmmoInClip = nAmmoInClip;
 	}
@@ -162,7 +162,7 @@ public class WeaponElement extends BaseControl {
 			} else {
 				bullet.gotoAndStop(42);
 			}
-			;
+
 		});
 	}
 
@@ -186,7 +186,7 @@ public class WeaponElement extends BaseControl {
 			_local_2 = (_local_2 + this.m_iconSpacing);
 			_local_4++;
 		}
-		;
+
 	}
 
 	private function setCurrentWeaponAmmoSelected(_arg_1:int):void {
@@ -199,7 +199,7 @@ public class WeaponElement extends BaseControl {
 			this.m_aAmmoAdded[_local_2].width = (this.m_aAmmoAdded[_local_2].height = this.m_iconSize);
 			_local_2++;
 		}
-		;
+
 		MenuUtils.setColor(this.m_aAmmoAdded[_arg_1].icons, MenuConstants.COLOR_GREY_ULTRA_DARK, false);
 		this.m_aAmmoAdded[_arg_1].bg.alpha = 1;
 		MenuUtils.setupText(this.m_view.ammoname.ammo_txt, Localization.get(this.m_aAmmoLocaStrings[_arg_1]), 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
@@ -232,14 +232,14 @@ public class WeaponElement extends BaseControl {
 						this.m_view.perks.addChild(_local_4);
 						_local_2 = (_local_2 - this.m_iconSpacing);
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			_local_3++;
 		}
-		;
+
 	}
 
 	private function loadImage(imagePath:String):void {
@@ -251,7 +251,7 @@ public class WeaponElement extends BaseControl {
 			this.m_view.image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new ImageLoader();
 		this.m_view.image.addChild(this.m_loader);
 		MenuUtils.setColor(this.m_view.image, MenuConstants.COLOR_WHITE, false);
@@ -268,7 +268,7 @@ public class WeaponElement extends BaseControl {
 				m_loader.rotation = -90;
 				_local_1 = (1 / _local_1);
 			}
-			;
+
 			m_loader.width = max_width;
 			m_loader.scaleY = m_loader.scaleX;
 			m_loader.x = x_offset;

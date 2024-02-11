@@ -57,14 +57,14 @@ public dynamic class OptionsInfoTopRightPreview extends OptionsInfoPreview {
 			this.m_idIntervalRefresh = setInterval(this.showNotification, 5000);
 			this.showNotification();
 		}
-		;
+
 		if (((!(_arg_1.previewData)) || (!(_arg_1.previewData.showEvergreenEconomyWidget)))) {
 			this.m_economyWidget.visible = false;
 		} else {
 			this.m_economyWidget.visible = true;
 			this.m_economyWidget.onSetData(1234);
 		}
-		;
+
 	}
 
 	private function showNotification():void {

@@ -37,7 +37,7 @@ public class ModalDialogEditLinePublicId extends ModalDialogGenericEditLine {
 		if (((_local_1) && (!(getSubmitButton() == null)))) {
 			m_callbackSendEvent("onElementDown");
 		}
-		;
+
 	}
 
 	private function updateState():void {
@@ -67,11 +67,11 @@ public class ModalDialogEditLinePublicId extends ModalDialogGenericEditLine {
 			if ((((_local_4 == 1) || (_local_4 == 3)) || (_local_4 == 10))) {
 				_local_2 = (_local_2 + _local_3);
 			}
-			;
+
 			_local_2 = (_local_2 + this.m_unformattedInput.charAt(_local_4));
 			_local_4++;
 		}
-		;
+
 		return (_local_2);
 	}
 
@@ -85,7 +85,7 @@ public class ModalDialogEditLinePublicId extends ModalDialogGenericEditLine {
 		if (m_isValid) {
 			m_isValid = (this.m_unformattedInput.length == this.m_publicIdLength);
 		}
-		;
+
 	}
 
 

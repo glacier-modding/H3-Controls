@@ -21,10 +21,10 @@ public class Mask extends BaseControl {
 			if (this.getChildAt(_local_1) != this.m_view) {
 				this.getChildAt(_local_1).mask = this.m_view;
 			}
-			;
+
 			_local_1++;
 		}
-		;
+
 	}
 
 	override public function onSetSize(_arg_1:Number, _arg_2:Number):void {

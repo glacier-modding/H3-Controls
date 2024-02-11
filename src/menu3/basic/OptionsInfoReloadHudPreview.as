@@ -59,7 +59,7 @@ public dynamic class OptionsInfoReloadHudPreview extends OptionsInfoPreview {
 			this.m_weapon.onSetData(_local_4);
 			this.m_weaponHints.onSetData(_local_4);
 		}
-		;
+
 	}
 
 	private function makeData(_arg_1:Number, _arg_2:Number):Object {

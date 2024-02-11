@@ -49,7 +49,7 @@ public class SplashHintBackground extends BaseControl implements ISplashHint {
 		if (this.m_view != null) {
 			this.m_view.visible = (!(_arg_1.hinttype == MenuConstants.SPLASH_HINT_TYPE_CONTROLLER));
 		}
-		;
+
 	}
 
 	public function show():void {

@@ -33,7 +33,7 @@ public class ModalDialogDlcMissingElement extends Sprite implements ModalDialogC
 		if (_arg_1.image) {
 			this.loadDlcImage(_arg_1.image);
 		}
-		;
+
 	}
 
 	public function destroy():void {
@@ -42,7 +42,7 @@ public class ModalDialogDlcMissingElement extends Sprite implements ModalDialogC
 			removeChild(this.m_dlcMissingView);
 			this.m_dlcMissingView = null;
 		}
-		;
+
 	}
 
 	private function setupDlcTextFields(_arg_1:Boolean, _arg_2:String, _arg_3:String, _arg_4:String):void {
@@ -62,7 +62,7 @@ public class ModalDialogDlcMissingElement extends Sprite implements ModalDialogC
 		if (this.m_dlcMissingView.title.numLines > 4) {
 			_local_6 = 2;
 		}
-		;
+
 		this.m_dlcMissingView.title.y = (this.m_dlcMissingView.title.y - ((this.m_dlcMissingView.title.numLines - _local_6) * 31));
 		var _local_7:int = 12;
 		switch ((this.m_dlcMissingView.title.numLines + (1 - _local_6))) {
@@ -81,13 +81,13 @@ public class ModalDialogDlcMissingElement extends Sprite implements ModalDialogC
 			default:
 				_local_7 = 12;
 		}
-		;
+
 		MenuUtils.truncateTextfield(this.m_dlcMissingView.description, _local_7, null, CommonUtils.changeFontToGlobalIfNeeded(this.m_dlcMissingView.description));
 		var _local_8:int = 1;
 		if (this.m_dlcMissingView.description.numLines > _local_7) {
 			_local_8 = 2;
 		}
-		;
+
 		var _local_9:Number = ((this.m_dlcMissingView.description.numLines - _local_8) * 24);
 		this.m_dlcMissingView.title.y = (this.m_dlcMissingView.title.y - _local_9);
 		this.m_dlcMissingView.line.y = (this.m_dlcMissingView.line.y - _local_9);
@@ -113,7 +113,7 @@ public class ModalDialogDlcMissingElement extends Sprite implements ModalDialogC
 		if (this.m_dlcImageLoader == null) {
 			return;
 		}
-		;
+
 		this.m_dlcImageLoader.cancelIfLoading();
 		this.m_dlcMissingView.image.removeChild(this.m_dlcImageLoader);
 		this.m_dlcImageLoader = null;

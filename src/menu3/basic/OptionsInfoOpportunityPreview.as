@@ -56,13 +56,13 @@ public dynamic class OptionsInfoOpportunityPreview extends OptionsInfoPreview {
 				"scaleY": 1
 			}, Animate.SineOut);
 		}
-		;
+
 		if (_local_2 == UIOPTION_OPPORTUNITIES_OFF) {
 			this.m_oppPreview.onSetData({"state": OpportunityPreview.STATE_DEFAULT});
 		} else {
 			this.m_oppPreview.onSetData({"state": OpportunityPreview.STATE_FAR});
 		}
-		;
+
 	}
 
 	override protected function onPreviewRemovedFromStage():void {

@@ -76,7 +76,7 @@ public class ModalDialogImageWithText extends ModalDialogFrameInformation {
 		if (_local_6 > _local_2) {
 			Log.xwarning(Log.ChannelModal, "Content Height is capped by frameHeightMax!");
 		}
-		;
+
 		this.m_viewFrame.height = m_dialogHeight;
 	}
 
@@ -124,12 +124,12 @@ public class ModalDialogImageWithText extends ModalDialogFrameInformation {
 			this.m_imageLoader.cancelIfLoading();
 			this.m_imageLoader = null;
 		}
-		;
+
 		if (this.m_imageHolder != null) {
 			this.m_imageTextView.removeChild(this.m_imageHolder);
 			this.m_imageHolder = null;
 		}
-		;
+
 	}
 
 

@@ -25,7 +25,7 @@ public dynamic class TextElementControlBinding extends MenuElementBase {
 		if (_arg_1.visible != null) {
 			this.visible = _arg_1.visible;
 		}
-		;
+
 		this.m_textformat = new TextFormat();
 		this.m_textformat.align = TextFormatAlign.LEFT;
 		this.m_textformat.size = ((_arg_1.fontSize) || (24));
@@ -48,7 +48,7 @@ public dynamic class TextElementControlBinding extends MenuElementBase {
 			this.m_textfield.borderColor = 0xFF00FF;
 			this.m_view.tileBg.alpha = 0.2;
 		}
-		;
+
 		this.m_textfield.setTextFormat(this.m_textformat);
 		this.m_textfield.y = ((this.m_view.tileBg.height >> 1) - (this.m_textfield.height >> 1));
 		this.m_view.tileBg.width = this.m_textfield.width;
@@ -66,7 +66,7 @@ public dynamic class TextElementControlBinding extends MenuElementBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

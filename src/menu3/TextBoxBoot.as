@@ -38,7 +38,7 @@ public class TextBoxBoot extends BaseControl {
 		if (this.m_checkForGlobalFont) {
 			CommonUtils.changeFontToGlobalIfNeeded(this.m_textfield);
 		}
-		;
+
 	}
 
 	public function SetText(_arg_1:String):void {
@@ -80,7 +80,7 @@ public class TextBoxBoot extends BaseControl {
 			this.m_textformat.color = _local_2;
 			this.applyFormat();
 		}
-		;
+
 	}
 
 	public function SetColor(_arg_1:String):void {
@@ -105,7 +105,7 @@ public class TextBoxBoot extends BaseControl {
 		if (_arg_1.username) {
 			_local_2 = _local_2.replace("{0}", _arg_1.username);
 		}
-		;
+
 		Log.xinfo(Log.ChannelCommon, ("text: " + _local_2));
 		this.Text = _local_2;
 	}

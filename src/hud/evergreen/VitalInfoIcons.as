@@ -54,7 +54,7 @@ public class VitalInfoIcons extends BaseControl {
 				m_assassinIcon.visible = false;
 			});
 		}
-		;
+
 		if (((data.isLookoutNearby) || (data.isLookoutAlerted))) {
 			this.m_lookoutIcon.visible = true;
 			this.m_lookoutIcon.gotoAndStop(((data.isLookoutAlerted) ? "lookout_alert" : "lookout_near"));
@@ -74,7 +74,7 @@ public class VitalInfoIcons extends BaseControl {
 				m_lookoutIcon.visible = false;
 			});
 		}
-		;
+
 	}
 
 

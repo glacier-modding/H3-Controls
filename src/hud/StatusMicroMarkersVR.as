@@ -117,10 +117,10 @@ public class StatusMicroMarkersVR extends BaseControl {
 				} else {
 					m_tensionIndicatorMc.iconMc.gotoAndStop(((state > 0) ? state : 1));
 				}
-				;
+
 				m_isTensionIndicatorVisible = true;
 			}
-			;
+
 			updateIndicators();
 		});
 	}
@@ -138,7 +138,7 @@ public class StatusMicroMarkersVR extends BaseControl {
 		if (this.m_isTensionIndicatorVisible) {
 			_local_1 = (_local_1 + (this.m_widthIndicator + DX_GAP_BETWEEN_INDICATORS));
 		}
-		;
+
 		_local_2 = ((this.m_isLVAIndicatorVisible) ? 1 : 0);
 		Animate.to(this.m_informationBarLVA, 0.5, 0, {
 			"x": (_local_3 * _local_1),
@@ -148,7 +148,7 @@ public class StatusMicroMarkersVR extends BaseControl {
 		if (this.m_isLVAIndicatorVisible) {
 			_local_1 = (_local_1 + (this.m_widthIndicator + DX_GAP_BETWEEN_INDICATORS));
 		}
-		;
+
 		_local_2 = ((this.m_isTrespassingIndicatorVisible) ? 1 : 0);
 		Animate.to(this.m_trespassingIndicatorMc, 0.5, 0, {
 			"x": (_local_3 * _local_1),
@@ -162,7 +162,7 @@ public class StatusMicroMarkersVR extends BaseControl {
 			this.m_timerView.visible = false;
 			return;
 		}
-		;
+
 		this.m_timerView.visible = true;
 		this.m_timerView.value_txt.text = timers[0].timerString;
 		this.m_timerView.clockIcon.alpha = 0;
@@ -222,7 +222,7 @@ class TimerView extends Sprite {
 		} else {
 			this.bg.x = (-(this.bg.width) - 1);
 		}
-		;
+
 		this.clockIcon.x = (this.bg.x + 1);
 		this.value_txt.x = ((this.clockIcon.x + this.clockIcon.width) + 5);
 	}

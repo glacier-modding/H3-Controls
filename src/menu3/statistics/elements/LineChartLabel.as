@@ -31,7 +31,7 @@ public class LineChartLabel extends Sprite {
 		if (_arg_2) {
 			this.drawIcon();
 		}
-		;
+
 		this.setTitle();
 	}
 
@@ -52,7 +52,7 @@ public class LineChartLabel extends Sprite {
 			if (this.m_useIcon) {
 				_local_1.x = (this.m_icon.x + this.m_icon.width);
 			}
-			;
+
 		} else {
 			if (this.m_textOrientation == TEXT_ORIENTATION_RIGHT) {
 				if (this.m_useIcon) {
@@ -60,16 +60,16 @@ public class LineChartLabel extends Sprite {
 				} else {
 					_local_1.x = -(_local_1.width);
 				}
-				;
+
 			} else {
 				if (this.m_textOrientation == TEXT_ORIENTATION_CENTER) {
 					_local_1.x = -(_local_1.width / 2);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		_local_1.y = (-(_local_1.height) / 2);
 		addChild(_local_1);
 	}

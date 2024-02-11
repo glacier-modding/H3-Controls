@@ -32,7 +32,7 @@ public class ModalDialogImageTextElement extends Sprite implements ModalDialogCo
 		if (_arg_1.image) {
 			this.loadImage(_arg_1.image);
 		}
-		;
+
 	}
 
 	public function destroy():void {
@@ -41,7 +41,7 @@ public class ModalDialogImageTextElement extends Sprite implements ModalDialogCo
 			removeChild(this.m_dialogDlcView);
 			this.m_dialogDlcView = null;
 		}
-		;
+
 	}
 
 	private function setupText(_arg_1:String, _arg_2:String):void {
@@ -55,7 +55,7 @@ public class ModalDialogImageTextElement extends Sprite implements ModalDialogCo
 		} else {
 			this.m_dialogDlcView.line.visible = false;
 		}
-		;
+
 		if (((!(_arg_2 == null)) && (!(_arg_2 == "")))) {
 			this.m_dialogDlcView.description.autoSize = "left";
 			this.m_dialogDlcView.description.width = 366;
@@ -63,13 +63,13 @@ public class ModalDialogImageTextElement extends Sprite implements ModalDialogCo
 			this.m_dialogDlcView.description.wordWrap = true;
 			MenuUtils.setupText(this.m_dialogDlcView.description, _arg_2, 20, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 		}
-		;
+
 		MenuUtils.truncateTextfield(this.m_dialogDlcView.title, 4, null, CommonUtils.changeFontToGlobalIfNeeded(this.m_dialogDlcView.title));
 		var _local_3:int = 1;
 		if (this.m_dialogDlcView.title.numLines > 4) {
 			_local_3 = 2;
 		}
-		;
+
 		this.m_dialogDlcView.title.y = (this.m_dialogDlcView.title.y - ((this.m_dialogDlcView.title.numLines - _local_3) * 31));
 		var _local_4:int = 12;
 		switch ((this.m_dialogDlcView.title.numLines + (1 - _local_3))) {
@@ -88,13 +88,13 @@ public class ModalDialogImageTextElement extends Sprite implements ModalDialogCo
 			default:
 				_local_4 = 12;
 		}
-		;
+
 		MenuUtils.truncateTextfield(this.m_dialogDlcView.description, _local_4, null, CommonUtils.changeFontToGlobalIfNeeded(this.m_dialogDlcView.description));
 		var _local_5:int = 1;
 		if (this.m_dialogDlcView.description.numLines > _local_4) {
 			_local_5 = 2;
 		}
-		;
+
 		var _local_6:Number = ((this.m_dialogDlcView.description.numLines - _local_5) * 24);
 		this.m_dialogDlcView.title.y = (this.m_dialogDlcView.title.y - _local_6);
 		this.m_dialogDlcView.line.y = (this.m_dialogDlcView.line.y - _local_6);
@@ -120,7 +120,7 @@ public class ModalDialogImageTextElement extends Sprite implements ModalDialogCo
 		if (this.m_imageLoader == null) {
 			return;
 		}
-		;
+
 		this.m_imageLoader.cancelIfLoading();
 		this.m_dialogDlcView.image.removeChild(this.m_imageLoader);
 		this.m_imageLoader = null;

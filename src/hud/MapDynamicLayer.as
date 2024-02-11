@@ -42,7 +42,7 @@ public class MapDynamicLayer extends BaseControl {
 			this.m_sprite.graphics.drawRect(_local_4, _local_5, _local_6, _local_7);
 			_local_2 = (_local_2 + 5);
 		}
-		;
+
 	}
 
 	public function setSuspiciousBodies(_arg_1:Array):void {
@@ -53,7 +53,7 @@ public class MapDynamicLayer extends BaseControl {
 		if (_arg_1.length == 0) {
 			return;
 		}
-		;
+
 		this.m_spriteSuspiciousBodies.graphics.beginFill(0x990000, 0.8);
 		var _local_2:Number = ((_arg_1[0] * 0.5) + 0.3);
 		var _local_3:int = 1;
@@ -64,7 +64,7 @@ public class MapDynamicLayer extends BaseControl {
 			this.m_spriteSuspiciousBodies.graphics.drawCircle(_local_4, _local_5, _local_2);
 			_local_3 = (_local_3 + 2);
 		}
-		;
+
 		this.m_spriteSuspiciousBodies.graphics.endFill();
 	}
 

@@ -37,10 +37,10 @@ public class StatisticBars extends Sprite {
 			} else {
 				_local_1.visible = false;
 			}
-			;
+
 			_local_3++;
 		}
-		;
+
 		this.show();
 	}
 
@@ -56,7 +56,7 @@ public class StatisticBars extends Sprite {
 			_local_2 = (_local_2 + 0.05);
 			_local_3++;
 		}
-		;
+
 	}
 
 	public function destroy():void {
@@ -68,16 +68,16 @@ public class StatisticBars extends Sprite {
 			_local_2.destroy();
 			_local_1++;
 		}
-		;
+
 		this.m_statisticBars.length = 0;
 		while (this.m_view.numChildren > 0) {
 			if ((this.m_view.getChildAt(0) is MovieClip)) {
 				MovieClip(this.m_view.getChildAt(0)).gotoAndStop(1);
 			}
-			;
+
 			this.m_view.removeChild(this.m_view.getChildAt(0));
 		}
-		;
+
 		removeChild(this.m_view);
 		this.m_view = null;
 	}

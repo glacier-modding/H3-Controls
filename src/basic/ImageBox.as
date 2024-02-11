@@ -41,27 +41,27 @@ public class ImageBox extends BaseControl {
 		if (this.m_isVisible == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_isVisible = _arg_1;
 		if (!_arg_1) {
 			this.unloadImage();
 		} else {
 			this.loadImage(this.m_rid);
 		}
-		;
+
 	}
 
 	public function loadImage(_arg_1:String):void {
 		if (((this.m_isRegistered) && (this.m_rid == _arg_1))) {
 			return;
 		}
-		;
+
 		this.unloadImage();
 		this.m_rid = _arg_1;
 		if (((!(this.m_isVisible)) || (this.m_rid == null))) {
 			return;
 		}
-		;
+
 		var _local_2:ImageLoaderCache = ImageLoaderCache.getGlobalInstance();
 		this.m_isRegistered = true;
 		_local_2.registerLoadImage(this.m_rid, this.onSuccess, null);
@@ -74,7 +74,7 @@ public class ImageBox extends BaseControl {
 			_local_1.unregisterLoadImage(this.m_rid, this.onSuccess, null);
 			this.m_isRegistered = false;
 		}
-		;
+
 		this.m_loader.bitmapData = null;
 	}
 
@@ -88,7 +88,7 @@ public class ImageBox extends BaseControl {
 			this.m_loader.x = (-(this.m_loader.width) / 2);
 			this.m_loader.y = (-(this.m_loader.height) / 2);
 		}
-		;
+
 	}
 
 	public function onSetData(_arg_1:Object):void {
@@ -96,7 +96,7 @@ public class ImageBox extends BaseControl {
 		if (_local_2 != null) {
 			this.loadImage(_local_2);
 		}
-		;
+
 	}
 
 	public function set CenterImage(_arg_1:Boolean):void {

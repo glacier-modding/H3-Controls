@@ -24,15 +24,15 @@ public class IndicatorBase implements IIndicator {
 			this.m_textTickerUtil.onUnregister();
 			this.m_textTickerUtil = null;
 		}
-		;
+
 		if (this.m_indicatorView == null) {
 			return;
 		}
-		;
+
 		if (this.m_indicatorView.parent != null) {
 			this.m_indicatorView.parent.removeChild(this.m_indicatorView);
 		}
-		;
+
 		this.m_indicatorView = null;
 	}
 
@@ -46,7 +46,7 @@ public class IndicatorBase implements IIndicator {
 		if (_arg_1) {
 			Animate.to(this.m_indicatorView, MenuConstants.HiliteTime, 0, {"alpha": 1}, Animate.Linear);
 		}
-		;
+
 	}
 
 

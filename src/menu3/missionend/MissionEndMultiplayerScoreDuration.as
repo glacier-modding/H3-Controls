@@ -39,7 +39,7 @@ public dynamic class MissionEndMultiplayerScoreDuration extends MenuElementBase 
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

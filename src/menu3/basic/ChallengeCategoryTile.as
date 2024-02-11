@@ -42,7 +42,7 @@ public dynamic class ChallengeCategoryTile extends MenuElementTileBase {
 		if (_arg_1.image) {
 			this.loadImage(_arg_1.image);
 		}
-		;
+
 		var _local_2:int = int(_arg_1.totalcount);
 		var _local_3:int = int(_arg_1.totalcompleted);
 		if (_local_2 == _local_3) {
@@ -53,7 +53,7 @@ public dynamic class ChallengeCategoryTile extends MenuElementTileBase {
 			MenuUtils.setupIcon(this.m_iconSprite, "check", MenuConstants.COLOR_GREY_DARK, false, true, MenuConstants.COLOR_WHITE);
 			addChild(this.m_iconSprite);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -64,16 +64,16 @@ public dynamic class ChallengeCategoryTile extends MenuElementTileBase {
 				this.m_view.image.removeChild(this.m_loader);
 				this.m_loader = null;
 			}
-			;
+
 			if (this.m_iconSprite) {
 				removeChild(this.m_iconSprite);
 				this.m_iconSprite = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -93,7 +93,7 @@ public dynamic class ChallengeCategoryTile extends MenuElementTileBase {
 			this.m_view.tileSelect.alpha = 0;
 			MenuUtils.pulsate(this.m_view.tileSelectPulsate, false);
 		}
-		;
+
 	}
 
 	override protected function handleSelectionChange():void {
@@ -117,7 +117,7 @@ public dynamic class ChallengeCategoryTile extends MenuElementTileBase {
 			this.m_view.image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new MenuImageLoader();
 		this.m_view.image.addChild(this.m_loader);
 		this.m_loader.center = true;
@@ -130,7 +130,7 @@ public dynamic class ChallengeCategoryTile extends MenuElementTileBase {
 				m_view.image.width = MenuConstants.MenuTileTallWidth;
 				m_view.image.scaleY = m_view.image.scaleX;
 			}
-			;
+
 		});
 	}
 

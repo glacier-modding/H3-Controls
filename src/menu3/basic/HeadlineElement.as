@@ -57,7 +57,7 @@ public dynamic class HeadlineElement extends MenuElementBase {
 			this.m_dottedLineContainer.addChild(_local_5);
 			this.m_view.addChild(this.m_dottedLineContainer);
 		}
-		;
+
 		var _local_2:String = this.getHeaderString(_arg_1);
 		var _local_3:String = this.getTitleString(_arg_1);
 		if (_arg_1.largetitle) {
@@ -67,30 +67,30 @@ public dynamic class HeadlineElement extends MenuElementBase {
 			if (_local_6 == null) {
 				_local_6 = _arg_1.icon;
 			}
-			;
+
 			if (_local_6 != null) {
 				this.m_view.typeIcon.visible = true;
 				MenuUtils.setupIcon(this.m_view.typeIcon, _local_6, MenuConstants.COLOR_GREY_ULTRA_DARK, false, true, MenuConstants.COLOR_WHITE, 1, 0, true);
 			}
-			;
+
 			this.setupTextFields(_local_2, _local_3, _arg_1.multilinetitle);
 		}
-		;
+
 		var _local_4:* = "";
 		if (_arg_1.creatorname) {
 			_local_4 = _arg_1.creatorname;
 		}
-		;
+
 		if (_arg_1.publicid) {
 			_local_4 = (_local_4 + (((" " + Localization.get("UI_DIALOG_SLASH")) + " ") + _arg_1.publicid));
 		}
-		;
+
 		if (_local_4 != "") {
 			MenuUtils.setupText(this.m_view.creatorname, ((Localization.get("UI_AUTHOR_BY") + " ") + _local_4), 24, MenuConstants.FONT_TYPE_MEDIUM, this.m_fontColor);
 			MenuUtils.truncateTextfield(this.m_view.creatorname, 1, MenuConstants.FontColorGreyDark);
 			CommonUtils.changeFontToGlobalIfNeeded(this.m_view.creatorname);
 		}
-		;
+
 	}
 
 	private function getHeaderString(_arg_1:Object):String {
@@ -113,27 +113,27 @@ public dynamic class HeadlineElement extends MenuElementBase {
 							if (_local_7.charAt((_local_7.length - 1)) != _local_4.charAt(0)) {
 								_local_7 = (_local_7 + _local_4);
 							}
-							;
+
 						}
-						;
+
 						if (_local_2.length > 0) {
 							_local_2 = (_local_2 + " ");
 						}
-						;
+
 						_local_2 = (_local_2 + _local_7);
 					}
-					;
+
 				}
-				;
+
 				_local_6++;
 			}
-			;
+
 		}
-		;
+
 		if (_local_2.length == 0) {
 			_local_2 = _arg_1.header;
 		}
-		;
+
 		return (_local_2);
 	}
 
@@ -141,15 +141,15 @@ public dynamic class HeadlineElement extends MenuElementBase {
 		if (_arg_1.title != undefined) {
 			return (_arg_1.title);
 		}
-		;
+
 		if (_arg_1.player != undefined) {
 			if (_arg_1.player2 != undefined) {
 				return ((_arg_1.player + MenuConstants.PLAYER_MULTIPLAYER_DELIMITER) + _arg_1.player2);
 			}
-			;
+
 			return (_arg_1.player);
 		}
-		;
+
 		return ("");
 	}
 
@@ -171,11 +171,11 @@ public dynamic class HeadlineElement extends MenuElementBase {
 		if (_arg_1 == null) {
 			_arg_1 = "";
 		}
-		;
+
 		if (_arg_2 == null) {
 			_arg_2 = "";
 		}
-		;
+
 		if (_arg_3) {
 			this.m_view.titlemultiline.visible = true;
 			this.m_view.header.visible = false;
@@ -198,14 +198,14 @@ public dynamic class HeadlineElement extends MenuElementBase {
 			MenuUtils.truncateTextfield(this.m_view.title, 1, null);
 			this.m_textTickerUtil.callTextTicker(true);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
 		if (this.m_view == null) {
 			return;
 		}
-		;
+
 		this.m_textTickerUtil.onUnregister();
 		this.m_textTickerUtil = null;
 		removeChild(this.m_view);

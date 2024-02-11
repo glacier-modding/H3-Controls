@@ -45,8 +45,8 @@ public class IntelWallWidget extends BaseControl {
 	public static const Look_RedHair:int = 10;
 	public static const Look_NoHair:int = 11;
 
-	private var analysingDots:Array = new Array("", ".", "..", "...", "..", ".");
-	private var analysingIcons:Array = new Array("Glasses", "Earrings", "Necklace", "Hat", "Tattoo", "Hair", "Bald");
+	private var analysingDots:Array = ["", ".", "..", "...", "..", "."];
+	private var analysingIcons:Array = ["Glasses", "Earrings", "Necklace", "Hat", "Tattoo", "Hair", "Bald"];
 	private var m_view:IntelWallView = new IntelWallView();
 	private var m_lineSeparator1:DottedLine = new DottedLine(802, MenuConstants.COLOR_WHITE, DottedLine.TYPE_HORIZONTAL, 2, 3);
 	private var m_lineSeparator2:DottedLine = new DottedLine(802, MenuConstants.COLOR_WHITE, DottedLine.TYPE_HORIZONTAL, 2, 3);
@@ -96,7 +96,7 @@ public class IntelWallWidget extends BaseControl {
 			default:
 				this.m_view.crimeIcon_mc.gotoAndStop("Questionmark");
 		}
-		;
+
 		this.setupAgenda(_arg_1.agenda);
 		this.setupTell(_arg_1.tellA, this.m_view.tellType2_txt, this.m_view.tellHeadline2_txt, this.m_view.tell2Icon_mc);
 		this.setupTell(_arg_1.tellB, this.m_view.tellType3_txt, this.m_view.tellHeadline3_txt, this.m_view.tell3Icon_mc);
@@ -138,7 +138,7 @@ public class IntelWallWidget extends BaseControl {
 				this.m_view.tell1Icon_mc.gotoAndStop("Questionmark");
 				MenuUtils.setupText(this.m_view.tellHeadline1_txt, "", 36, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorWhite);
 		}
-		;
+
 	}
 
 	private function setupTell(_arg_1:int, _arg_2:TextField, _arg_3:TextField, _arg_4:MovieClip):void {
@@ -182,7 +182,7 @@ public class IntelWallWidget extends BaseControl {
 				_arg_4.gotoAndStop("Questionmark");
 				MenuUtils.setupText(_arg_3, "", 36, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorWhite);
 		}
-		;
+
 	}
 
 	private function setupLook(_arg_1:int, _arg_2:TextField, _arg_3:TextField, _arg_4:MovieClip):void {
@@ -242,7 +242,7 @@ public class IntelWallWidget extends BaseControl {
 				_arg_4.gotoAndStop("Questionmark");
 				MenuUtils.setupText(_arg_3, "", 28, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorWhite);
 		}
-		;
+
 	}
 
 	private function setAnalysingIcon(_arg_1:MovieClip, _arg_2:TextField):void {
@@ -261,9 +261,9 @@ public class IntelWallWidget extends BaseControl {
 				_arg_1.gotoAndStop("Questionmark");
 				_arg_2 = 0;
 			}
-			;
+
 		}
-		;
+
 		_arg_2++;
 		Animate.delay(_arg_1, 0.2, this.iconAnimAnalysin, _arg_1, _arg_2);
 	}
@@ -272,7 +272,7 @@ public class IntelWallWidget extends BaseControl {
 		if (_arg_2 >= this.analysingDots.length) {
 			_arg_2 = 0;
 		}
-		;
+
 		_arg_1.text = (Localization.get("UI_EVERGREEN_SAFEHOUSE_INTELWALL_ANALYSING").toUpperCase() + this.analysingDots[_arg_2]);
 		Animate.delay(_arg_1, 0.5, this.dotAnimAnalysing, _arg_1, (_arg_2 + 1));
 	}
@@ -305,7 +305,7 @@ public class IntelWallWidget extends BaseControl {
 			this.m_view.eq_mc[("row" + _local_1)].gotoAndStop(MenuUtils.getRandomInRange(1, 15, true));
 			_local_1++;
 		}
-		;
+
 		Animate.delay(this.m_view.eq_mc, 0.06, this.effectsEQupdate);
 	}
 

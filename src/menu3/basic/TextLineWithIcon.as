@@ -54,7 +54,7 @@ public dynamic class TextLineWithIcon extends MenuElementBase {
 			this.m_color = MenuConstants.GetColorByName(_arg_1.colorname);
 			this.m_fontcolor = MenuConstants.ColorString(this.m_color);
 		}
-		;
+
 		this.m_iconLabel = _arg_1.icon;
 		MenuUtils.setupIcon(this.m_icon, this.m_iconLabel, this.m_color, true, false);
 		this.setupTextField(_arg_1.title);
@@ -66,7 +66,7 @@ public dynamic class TextLineWithIcon extends MenuElementBase {
 		if (_local_2 > 1) {
 			this.m_textfield.autoSize = TextFieldAutoSize.NONE;
 		}
-		;
+
 		this.m_view.x = 0;
 		this.m_view.y = 0;
 		if (_arg_1.align == "right") {
@@ -75,16 +75,16 @@ public dynamic class TextLineWithIcon extends MenuElementBase {
 			if (_arg_1.align == "center") {
 				this.m_view.x = ((this.m_textfield.x + this.m_textfield.width) * -0.5);
 			}
-			;
+
 		}
-		;
+
 		this.m_isTextScrollingEnabled = ((_arg_1.force_scroll) ? true : false);
 		MenuUtils.addDropShadowFilter(this.m_textfield);
 		MenuUtils.addDropShadowFilter(this.m_icon);
 		if (this.m_isTextScrollingEnabled) {
 			this.callTextTicker(true);
 		}
-		;
+
 	}
 
 	override public function getView():Sprite {
@@ -111,14 +111,14 @@ public dynamic class TextLineWithIcon extends MenuElementBase {
 			this.m_textTickerUtil.onUnregister();
 			this.m_textTickerUtil = null;
 		}
-		;
+
 		this.m_textfield = null;
 		this.m_icon = null;
 		if (this.m_view != null) {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

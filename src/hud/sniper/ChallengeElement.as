@@ -36,7 +36,7 @@ public class ChallengeElement extends BaseControl {
 		if (!data.imagePath) {
 			data.imagePath = "";
 		}
-		;
+
 		Animate.delay(this.m_view, 1, function ():void {
 			ShowNotification(data.title, data.icon, data.total, data.count, data.completed, data.text, data.type, (data.timeRemaining - 1), data.imagePath);
 		});
@@ -58,7 +58,7 @@ public class ChallengeElement extends BaseControl {
 			this.m_view.image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_view.x = 0;
 		this.m_view.alpha = 1;
 		this.m_view.overlay.alpha = 0;
@@ -72,7 +72,7 @@ public class ChallengeElement extends BaseControl {
 		if (count >= 1) {
 			this.m_view.progressbar.value.scaleX = ((count - 1) / total);
 		}
-		;
+
 		this.m_view.visible = true;
 		Animate.to(this.m_view.progressbar.value, 0.6, 0, {"scaleX": (count / total)}, Animate.ExpoOut);
 		Animate.to(this.m_view.overlay, 0.8, 0, {
@@ -85,7 +85,7 @@ public class ChallengeElement extends BaseControl {
 		} else {
 			this.playSound("ChallengePartiallyComplete");
 		}
-		;
+
 		Animate.delay(this.m_view, (timeRemaining - 0.5), function ():void {
 			Animate.kill(m_view.progressbar.value);
 			Animate.kill(m_view.overlay);
@@ -110,7 +110,7 @@ public class ChallengeElement extends BaseControl {
 			this.m_view.image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new ImageLoader();
 		this.m_view.image.addChild(this.m_loader);
 		this.m_loader.loadImage(imagePath, function ():void {
@@ -120,7 +120,7 @@ public class ChallengeElement extends BaseControl {
 				m_loader.width = 120;
 				m_loader.scaleY = m_loader.scaleX;
 			}
-			;
+
 			m_loader.x = (m_loader.width / -2);
 			m_loader.y = (m_loader.height / -2);
 			Animate.delay(m_view.imageoverlay, 0.5, function ():void {

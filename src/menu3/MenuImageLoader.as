@@ -40,7 +40,7 @@ public class MenuImageLoader extends Sprite implements IScreenVisibilityReceiver
 			this.m_imageLoader.cancel();
 			this.m_rid = null;
 		}
-		;
+
 	}
 
 	public function getImage():Bitmap {
@@ -49,7 +49,7 @@ public class MenuImageLoader extends Sprite implements IScreenVisibilityReceiver
 		if ((_local_1 is Bitmap)) {
 			return (_local_1 as Bitmap);
 		}
-		;
+
 		return (null);
 	}
 
@@ -60,7 +60,7 @@ public class MenuImageLoader extends Sprite implements IScreenVisibilityReceiver
 			_local_2 = (_local_1 as Bitmap);
 			return (_local_2.bitmapData);
 		}
-		;
+
 		return (null);
 	}
 
@@ -69,14 +69,14 @@ public class MenuImageLoader extends Sprite implements IScreenVisibilityReceiver
 			if (_arg_3 != null) {
 				(_arg_3());
 			}
-			;
+
 			return;
 		}
-		;
+
 		if (this.m_rid == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_imageLoader.alpha = 0;
 		this.m_loadIndicator.alpha = 0;
 		this.m_loadIndicator.value.play();
@@ -89,14 +89,14 @@ public class MenuImageLoader extends Sprite implements IScreenVisibilityReceiver
 		if (!this.m_loadOnVisibleOnScreen) {
 			this.triggerLoadImage();
 		}
-		;
+
 	}
 
 	private function triggerLoadImage():void {
 		if (((!(this.m_isLoaded)) && (!(this.m_rid == null)))) {
 			this.m_imageLoader.loadImage(this.m_rid, this.onSuccess, this.onFailed);
 		}
-		;
+
 	}
 
 	private function unloadImage():void {
@@ -104,7 +104,7 @@ public class MenuImageLoader extends Sprite implements IScreenVisibilityReceiver
 			this.m_imageLoader.cancelAndClearImage();
 			this.m_isLoaded = false;
 		}
-		;
+
 	}
 
 	private function onSuccess():void {
@@ -116,14 +116,14 @@ public class MenuImageLoader extends Sprite implements IScreenVisibilityReceiver
 			this.m_imageLoader.content.x = 0;
 			this.m_imageLoader.content.y = 0;
 		}
-		;
+
 		Animate.legacyTo(this.m_imageLoader, 0.3, {"alpha": 1}, Animate.Linear);
 		Animate.legacyTo(this.m_loadIndicator, 0.3, {"alpha": 0}, Animate.Linear);
 		this.m_loadIndicator.value.stop();
 		if (this.m_callback != null) {
 			this.m_callback();
 		}
-		;
+
 	}
 
 	private function onFailed():void {
@@ -132,7 +132,7 @@ public class MenuImageLoader extends Sprite implements IScreenVisibilityReceiver
 		if (this.m_failedCallback != null) {
 			this.m_failedCallback();
 		}
-		;
+
 	}
 
 	public function clearCallbacks():void {
@@ -144,13 +144,13 @@ public class MenuImageLoader extends Sprite implements IScreenVisibilityReceiver
 		if (!this.m_loadOnVisibleOnScreen) {
 			return;
 		}
-		;
+
 		if (_arg_1) {
 			this.triggerLoadImage();
 		} else {
 			this.unloadImage();
 		}
-		;
+
 	}
 
 

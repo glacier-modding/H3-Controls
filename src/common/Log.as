@@ -53,7 +53,7 @@ public class Log {
 		if (_arg_2) {
 			_local_4 = (((("type: " + _arg_2.type) + " - target: ") + ((_arg_2.target == null) ? "<none>" : _arg_2.target.name)) + ((_arg_3 == null) ? "" : (" - " + _arg_3)));
 		}
-		;
+
 		logMessage("info", ChannelMouse, _arg_1, _local_4);
 	}
 
@@ -73,14 +73,14 @@ public class Log {
 				_local_4 = ("--" + _local_4);
 				_local_6++;
 			}
-			;
+
 		}
-		;
+
 		for (_local_5 in _arg_2) {
 			info(ChannelDebug, _arg_3, ((((("| " + _local_4) + " : ") + _local_5) + ": ") + _arg_2[_local_5]));
 			debugDataRecursive((_arg_1 + 1), _arg_2[_local_5], _arg_3);
 		}
-		;
+
 	}
 
 	public static function dumpData(_arg_1:Object, _arg_2:Object):void {
@@ -96,24 +96,24 @@ public class Log {
 		if (_arg_2 == null) {
 			return (_arg_1 + "null");
 		}
-		;
+
 		if (_arg_3) {
 			_arg_1 = (_arg_1 + "[");
 		} else {
 			_arg_1 = (_arg_1 + "{");
 		}
-		;
+
 		var _local_4:Boolean = true;
 		for (_local_5 in _arg_2) {
 			if (!_local_4) {
 				_arg_1 = (_arg_1 + ",");
 			}
-			;
+
 			_local_6 = _arg_2[_local_5];
 			if (!_arg_3) {
 				_arg_1 = (_arg_1 + (('"' + _local_5) + '":'));
 			}
-			;
+
 			if (_local_6 == null) {
 				_arg_1 = (_arg_1 + "null");
 			} else {
@@ -131,24 +131,24 @@ public class Log {
 							} else {
 								_arg_1 = (_arg_1 + (('"' + _local_6) + '"'));
 							}
-							;
+
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			_local_4 = false;
 		}
-		;
+
 		if (_arg_3) {
 			_arg_1 = (_arg_1 + "]");
 		} else {
 			_arg_1 = (_arg_1 + "}");
 		}
-		;
+
 		return (_arg_1);
 	}
 
@@ -156,13 +156,13 @@ public class Log {
 		if (!ControlsMain.isLogChannelEnabled(_arg_2)) {
 			return;
 		}
-		;
+
 		if (_arg_3) {
 			trace(((((((((_arg_1 + " | ") + _arg_2) + " | ") + getQualifiedClassName(_arg_3)) + "(") + _arg_3.name) + "): ") + _arg_4));
 		} else {
 			trace(((((_arg_1 + " | ") + _arg_2) + ": ") + _arg_4));
 		}
-		;
+
 	}
 
 

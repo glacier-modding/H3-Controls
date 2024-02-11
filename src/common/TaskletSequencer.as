@@ -31,7 +31,7 @@ public class TaskletSequencer extends Sprite {
 			s_instance = new (TaskletSequencer)();
 			s_instance.startDaemon();
 		}
-		;
+
 		return (s_instance);
 	}
 
@@ -49,7 +49,7 @@ public class TaskletSequencer extends Sprite {
 		if (((this.m_isProcessing) || ((this.m_stack.isEmpty()) && (this.m_nextQueue.isEmpty())))) {
 			return;
 		}
-		;
+
 		this.m_isProcessing = true;
 		var actualProcessingTime_ms:Number = Math.max((this.processingTime_ms - this.FUNCTION_AVERAGE_LONG_CALL_TIME_MS), 0);
 		var currentTime_ms:int = getTimer();
@@ -60,40 +60,40 @@ public class TaskletSequencer extends Sprite {
 			while ((!(this.m_nextQueue.isEmpty()))) {
 				this.m_stack.getBottom().enqueue(this.m_nextQueue.dequeue());
 			}
-			;
+
 		}
-		;
+
 		while (true) {
 			if (!this.m_nextQueue.isEmpty()) {
 				this.m_stack.push(this.m_nextQueue);
 				this.m_nextQueue = new Queue();
 			}
-			;
+
 			if (this.m_stack.isEmpty()) break;
 			try {
 				(this.m_stack.getTop().dequeue()());
 			} catch (err:Error) {
 				trace(("error in TaskletSequencer chunk --> " + err.getStackTrace()));
 			}
-			;
+
 			if (this.m_stack.getTop().isEmpty()) {
 				this.m_stack.pop();
 			}
-			;
+
 			currentTime_ms = getTimer();
 			if (((currentTime_ms >= maxTime_ms) || (debug_forceOnlyOneCallPerFrame))) break;
 		}
-		;
+
 		if (!this.m_nextQueue.isEmpty()) {
 			this.m_stack.push(this.m_nextQueue);
 			this.m_nextQueue = new Queue();
 		}
-		;
+
 		this.m_isProcessing = false;
 		if (this.m_stack.isEmpty()) {
 			dispatchEvent(s_evtComplete);
 		}
-		;
+
 	}
 
 	private function startDaemon():void {
@@ -105,14 +105,14 @@ public class TaskletSequencer extends Sprite {
 		if (this.m_nLastUpdateId == _local_2) {
 			return;
 		}
-		;
+
 		this.m_nLastUpdateId = _local_2;
 		if (ControlsMain.isVrModeActive()) {
 			this.processingTime_ms = this.m_queueMaxProcessingTimeVR_ms;
 		} else {
 			this.processingTime_ms = this.m_queueMaxProcessingTime_ms;
 		}
-		;
+
 		this.update();
 	}
 
@@ -166,7 +166,7 @@ class Stack {
 		if (this.isEmpty()) {
 			return (null);
 		}
-		;
+
 		return (this.m_queues[(this.m_queues.length - 1)]);
 	}
 
@@ -174,7 +174,7 @@ class Stack {
 		if (this.isEmpty()) {
 			return (null);
 		}
-		;
+
 		return (this.m_queues[0]);
 	}
 

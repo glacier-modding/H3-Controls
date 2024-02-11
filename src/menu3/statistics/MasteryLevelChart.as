@@ -31,7 +31,7 @@ public class MasteryLevelChart extends PieChart {
 		if (!this.m_data.isAvailable) {
 			this.m_data.completed = "";
 		}
-		;
+
 		this.m_totalNumberOfSlices = this.m_data.total;
 		this.m_completedNumberOfSlices = ((this.m_data.isAvailable) ? this.m_data.completed : 0);
 		if (this.m_totalNumberOfSlices > 40) {
@@ -39,7 +39,7 @@ public class MasteryLevelChart extends PieChart {
 			this.m_totalNumberOfSlices = 72;
 			this.m_gapSize = -0.005;
 		}
-		;
+
 		this.m_sliceSize = (360 * ((1 / this.m_totalNumberOfSlices) - this.m_gapSize));
 		this.m_rotationStep = (360 / this.m_totalNumberOfSlices);
 		Animate.delay(this, 0.2, this.createBackground, null);
@@ -65,7 +65,7 @@ public class MasteryLevelChart extends PieChart {
 			this.m_bgContainer.addChild(_local_2);
 			_local_4++;
 		}
-		;
+
 		Animate.to(this.m_bgContainer, 0.2, 0, {
 			"alpha": 1,
 			"scaleX": 1,
@@ -95,7 +95,7 @@ public class MasteryLevelChart extends PieChart {
 			_local_4 = (_local_4 + 0.02);
 			_local_5++;
 		}
-		;
+
 	}
 
 	private function createPieChartValue():void {

@@ -61,7 +61,7 @@ public class ChallengesBar extends NotificationListener {
 			Animate.kill(this.m_view.image_mc);
 			Animate.kill(this.m_view.checkmark_mc);
 		}
-		;
+
 	}
 
 	override public function HideNotification():void {

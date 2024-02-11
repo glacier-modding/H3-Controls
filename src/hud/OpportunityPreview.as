@@ -74,11 +74,11 @@ public class OpportunityPreview extends BaseControl {
 		if (CommonUtils.getPlatformString() == CommonUtils.PLATFORM_ORBIS) {
 			return (Localization.get("UI_HUD_OPPORTUNITY_ACCEPT_PS4"));
 		}
-		;
+
 		if (CommonUtils.isPCVRControllerUsed()) {
 			return (Localization.get("UI_HUD_OPPORTUNITY_ACCEPT_PCVR"));
 		}
-		;
+
 		return (Localization.get("UI_HUD_OPPORTUNITY_ACCEPT"));
 	}
 
@@ -102,7 +102,7 @@ public class OpportunityPreview extends BaseControl {
 			default:
 				this.handleUpdatedViewBlendOut(_arg_1);
 		}
-		;
+
 	}
 
 	private function handleUpdateTimeoutBar(_arg_1:Object):void {
@@ -110,7 +110,7 @@ public class OpportunityPreview extends BaseControl {
 			this.m_timeOutRunning = true;
 			this.playSound("play_gui_opportunity_timer");
 		}
-		;
+
 		var _local_2:Number = (_arg_1.durationTimeLeft / _arg_1.duration);
 		_local_2 = Math.max(0, Math.min(_local_2, 1));
 		this.m_timeoutClip.fill.scaleX = _local_2;
@@ -165,11 +165,11 @@ public class OpportunityPreview extends BaseControl {
 				m_timeOutRunning = false;
 				playSound("stop_gui_opportunity_timer");
 			}
-			;
+
 			if (m_state != STATE_DEFAULT) {
 				return;
 			}
-			;
+
 			Animate.to(m_view, TRANSITION_TIME, 0, {"alpha": 0}, Animate.ExpoOut, function ():void {
 				m_view.visible = false;
 			});
@@ -191,7 +191,7 @@ public class OpportunityPreview extends BaseControl {
 			this.m_view.removeChild(this.m_headerDottedLine);
 			this.m_headerDottedLine = null;
 		}
-		;
+
 	}
 
 	public function playSound(_arg_1:String):void {

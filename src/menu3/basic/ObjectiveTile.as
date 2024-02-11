@@ -107,17 +107,17 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 		if (_local_3) {
 			this.m_useZoomedImage = false;
 		}
-		;
+
 		if (this.m_useZoomedImage) {
 			MenuUtils.setColorFilter(this.m_view.image);
 		} else {
 			MenuUtils.setColorFilter(this.m_view.imagesmall);
 		}
-		;
+
 		if (this.m_useZoomedImage == true) {
 			this.m_view.conditionsBg.visible = false;
 		}
-		;
+
 		this.m_markedForRemoval = (_arg_1.markedforremoval == true);
 		this.m_isLocked = (_arg_1.islocked == true);
 		this.m_isAvailable = ((_arg_1.availability == null) || (_arg_1.availability.available == true));
@@ -128,20 +128,20 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 		if (_arg_1.contracttype != undefined) {
 			this.m_contractType = _arg_1.contracttype;
 		}
-		;
+
 		if ((this.m_view.indicator.numChildren > 0)) {
 			this.m_animateConditions = false;
 		} else {
 			this.m_animateConditions = true;
 		}
-		;
+
 		this.m_view.indicator.removeChildren();
 		this.setupTextFields(_arg_1.header, _arg_1.title);
 		this.changeTextColor(((this.m_pressable) ? MenuConstants.COLOR_WHITE : MenuConstants.COLOR_GREY), ((this.m_pressable) ? MenuConstants.COLOR_WHITE : MenuConstants.COLOR_GREY));
 		if (this.m_markedForRemoval) {
 			this.changeTextColor(MenuConstants.COLOR_GREY, MenuConstants.COLOR_GREY);
 		}
-		;
+
 		if (!this.m_isAvailable) {
 			setAvailablity(this.m_view, _arg_1, "tall");
 		} else {
@@ -153,7 +153,7 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 				if (_local_2 == this.CONTRACT_STATE_INPROGRESS) {
 					_local_5 = "arrowright";
 				}
-				;
+
 				if (_local_2 == this.CONTRACT_STATE_FAILED) {
 					MenuUtils.setupText(m_valueIndicator.title, Localization.get("UI_MENU_PAGE_PLANNING_ELEMENT_FAILED"), 24, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 					MenuUtils.setupIcon(m_valueIndicator.valueIcon, _local_5, MenuConstants.COLOR_WHITE, true, true, MenuConstants.COLOR_RED, MenuConstants.MenuElementBackgroundAlpha);
@@ -168,11 +168,11 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 						} else {
 							MenuUtils.setupText(m_valueIndicator.title, Localization.get("UI_MENU_PAGE_PLANNING_ELEMENT_COMPLETED"), 24, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 				MenuUtils.truncateTextfield(m_valueIndicator.title, 1);
 				this.m_view.indicator.addChild(m_valueIndicator);
 			} else {
@@ -185,11 +185,11 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 					MenuUtils.truncateTextfield(m_valueIndicator.title, 1);
 					this.m_view.indicator.addChild(m_valueIndicator);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		var _local_4:* = (!(this.m_useZoomedImage));
 		if (_arg_1.displayaskill) {
 			this.setConditions(ObjectiveUtil.prepareConditions([], _local_4));
@@ -197,21 +197,21 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 			if (_arg_1.conditions) {
 				this.setConditions(ObjectiveUtil.prepareConditions(_arg_1.conditions, _local_4));
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.perks != undefined) {
 			if (_arg_1.perks[0] != "NONE") {
 				this.setupPerks(_arg_1.perks);
 			}
-			;
+
 		}
-		;
+
 		this.setOverlayColor();
 		if (_arg_1.image) {
 			this.loadImage(_arg_1.image);
 		}
-		;
+
 		this.m_view.description.text = "";
 		this.m_view.description.y = this.m_descriptionInitalY;
 		this.m_view.description.height = this.m_descriptionInitalHeight;
@@ -224,9 +224,9 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 				if (m_valueIndicator != null) {
 					this.m_view.description.height = (this.m_view.description.height - m_valueIndicator.height);
 				}
-				;
+
 			}
-			;
+
 			MenuUtils.setupText(this.m_view.description, _arg_1.description, 18, MenuConstants.FONT_TYPE_NORMAL, (((this.m_isLocked) || (!(this.m_isAvailable))) ? MenuConstants.FontColorGreyMedium : MenuConstants.FontColorWhite));
 			MenuUtils.truncateHTMLField(this.m_view.description, this.m_view.description.htmlText);
 			if (_arg_1.descriptionAlignment == "top") {
@@ -235,9 +235,9 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 				_local_9 = this.m_view.description.textHeight;
 				this.m_view.description.y = (this.m_descriptionInitalY + (this.m_descriptionInitalHeight - _local_9));
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function setContractState(_arg_1:String):void {
@@ -257,7 +257,7 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 			case this.CONTRACT_STATE_FAILED:
 				break;
 		}
-		;
+
 		this.setOverlayColor();
 	}
 
@@ -268,7 +268,7 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 			} else {
 				MenuUtils.setColorFilter(this.m_view.imagesmall, "selected");
 			}
-			;
+
 		} else {
 			if (_arg_1) {
 				if (this.m_useZoomedImage) {
@@ -276,7 +276,7 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 				} else {
 					MenuUtils.setColorFilter(this.m_view.imagesmall, "selected");
 				}
-				;
+
 			} else {
 				if (!m_isSelected) {
 					if (this.m_useZoomedImage) {
@@ -284,13 +284,13 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 					} else {
 						MenuUtils.setColorFilter(this.m_view.imagesmall, this.m_contractState);
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function setConditions(_arg_1:Array):void {
@@ -317,27 +317,27 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 					MenuUtils.setupText(_local_5.description, _arg_1[_local_4].summary, 18, MenuConstants.FONT_TYPE_NORMAL, (((this.m_isLocked) || (!(this.m_isAvailable))) ? MenuConstants.FontColorGreyMedium : MenuConstants.FontColorWhite));
 					MenuUtils.truncateTextfield(_local_5.description, 7, (((this.m_isLocked) || (!(this.m_isAvailable))) ? MenuConstants.FontColorGreyMedium : MenuConstants.FontColorWhite));
 				}
-				;
+
 			}
-			;
+
 			if (this.m_useZoomedImage) {
 				MenuUtils.setupIcon(_local_5.valueIcon, _arg_1[_local_4].icon, (((this.m_isLocked) || (!(this.m_isAvailable))) ? MenuConstants.COLOR_GREY_MEDIUM : MenuConstants.COLOR_WHITE), true, true, MenuConstants.COLOR_MENU_TABS_BACKGROUND, MenuConstants.MenuElementBackgroundAlpha);
 			} else {
 				MenuUtils.setupIcon(_local_5.valueIcon, _arg_1[_local_4].icon, (((this.m_isLocked) || (!(this.m_isAvailable))) ? MenuConstants.COLOR_GREY_MEDIUM : MenuConstants.COLOR_WHITE), true, false);
 			}
-			;
+
 			if (this.m_contractState == this.CONTRACT_STATE_COMPLETED) {
 				if (_arg_1[_local_4].hardcondition === false) {
 					this.setupConditionCompletion(_local_5, _arg_1[_local_4].satisfied);
 				}
-				;
+
 			}
-			;
+
 			if (((_arg_1[_local_4].type == null) && (_arg_1.length == 1))) {
 				if (_arg_1[_local_4].header) {
 					MenuUtils.setupText(_local_5.header, _arg_1[_local_4].header, 18, MenuConstants.FONT_TYPE_NORMAL, (((this.m_isLocked) || (!(this.m_isAvailable))) ? MenuConstants.FontColorGreyMedium : MenuConstants.FontColorWhite));
 				}
-				;
+
 				if (_arg_1[_local_4].title) {
 					MenuUtils.setupText(_local_5.title, _arg_1[_local_4].title, 24, MenuConstants.FONT_TYPE_MEDIUM, (((this.m_isLocked) || (!(this.m_isAvailable))) ? MenuConstants.FontColorGreyMedium : MenuConstants.FontColorWhite));
 					_local_5.title.autoSize = "left";
@@ -346,32 +346,32 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 					_local_5.title.wordWrap = true;
 					MenuUtils.truncateTextfield(_local_5.title, 3, (((this.m_isLocked) || (!(this.m_isAvailable))) ? MenuConstants.FontColorGreyMedium : MenuConstants.FontColorWhite));
 				}
-				;
+
 			}
-			;
+
 			_local_5.alpha = 0;
 			if (_local_2) {
 				this.m_newConditionsContainer.push(_local_5);
 			} else {
 				this.m_conditionsContainer.push(_local_5);
 			}
-			;
+
 			if (this.m_useZoomedImage) {
 				MenuUtils.addDropShadowFilter(_local_5);
 			}
-			;
+
 			this.m_view.indicator.addChild(_local_5);
 			if (((_arg_1[_local_4].type == this.CONDITION_TYPE_KILL) || (_arg_1[_local_4].type == this.CONDITION_TYPE_DEFAULTKILL))) {
 				_local_3 = (_local_3 - (MenuConstants.ValueIndicatorHeight + 14));
 			}
-			;
+
 			_local_4++;
 		}
-		;
+
 		if (!_local_2) {
 			this.showConditions(TILETYPE_CURRENT, 0.2);
 		}
-		;
+
 	}
 
 	private function showNewIndicator():void {
@@ -406,7 +406,7 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 		} else {
 			arr = this.m_conditionsContainer;
 		}
-		;
+
 		this.m_conditionCompletionIndicatorCount = 0;
 		iconCount = 0;
 		headerCount = 0;
@@ -428,7 +428,7 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 					if (m_conditionCompletionIndicators.length > 0) {
 						showConditionCompletion();
 					}
-					;
+
 					iconCount = (iconCount + 1);
 				});
 				if (arr[i].description.length > 1) {
@@ -467,13 +467,13 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 						titleCount = (titleCount + 1);
 					});
 				}
-				;
+
 			}
-			;
+
 			delay = (delay + 0.1);
 			i = (i + 1);
 		}
-		;
+
 		if (!this.m_animateConditions) {
 			index = 0;
 			while (index < this.m_conditionCompletionIndicators.length) {
@@ -482,9 +482,9 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 				this.m_conditionCompletionIndicators[index].alpha = 1;
 				index = (index + 1);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function setupConditionCompletion(_arg_1:ConditionIndicatorSmallView, _arg_2:Boolean):void {
@@ -494,7 +494,7 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 		} else {
 			_local_3 = new KillConditionFailIndicatorView();
 		}
-		;
+
 		_local_3.x = ((_arg_1.valueIcon.x + (_arg_1.valueIcon.width / 2)) - 5);
 		_local_3.y = ((_arg_1.valueIcon.y + (_arg_1.valueIcon.height / 2)) - (_local_3.height / 2));
 		_local_3.scaleX = 0;
@@ -539,7 +539,7 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 			this.m_view.addChild(_local_6);
 			_local_7++;
 		}
-		;
+
 	}
 
 	private function setupTextFields(_arg_1:String, _arg_2:String):void {
@@ -572,12 +572,12 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 					this.m_indicatorTextObjArray[_local_2].textticker.stopTextTicker(this.m_indicatorTextObjArray[_local_2].indicatortextfield, this.m_indicatorTextObjArray[_local_2].title);
 					MenuUtils.truncateTextfield(this.m_indicatorTextObjArray[_local_2].indicatortextfield, 1, MenuConstants.FontColorWhite);
 				}
-				;
+
 				_local_2++;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function loadImage(imagePath:String):void {
@@ -588,17 +588,17 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 			} else {
 				this.m_view.imagesmall.removeChild(this.m_loader);
 			}
-			;
+
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new MenuImageLoader(ControlsMain.isVrModeActive(), this.m_loadOnVisibleOnScreen);
 		if (this.m_useZoomedImage) {
 			this.m_view.image.addChild(this.m_loader);
 		} else {
 			this.m_view.imagesmall.addChild(this.m_loader);
 		}
-		;
+
 		this.m_loader.center = true;
 		this.m_loader.loadImage(imagePath, function ():void {
 			Animate.legacyTo(m_view.tileDarkBg, 0.3, {"alpha": 0}, Animate.Linear);
@@ -610,7 +610,7 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 					m_view.image.width = MenuConstants.MenuTileTallWidth;
 					m_view.image.scaleY = m_view.image.scaleX;
 				}
-				;
+
 			} else {
 				MenuUtils.trySetCacheAsBitmap(m_view.imagesmall, true);
 				m_view.imagesmall.height = MenuConstants.MenuTileSmallHeight;
@@ -619,9 +619,9 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 					m_view.imagesmall.width = MenuConstants.MenuTileSmallWidth;
 					m_view.imagesmall.scaleY = m_view.imagesmall.scaleX;
 				}
-				;
+
 			}
-			;
+
 		});
 		this.m_loader.setVisibleOnScreen(this.m_isVisibleOnScreen);
 		if (this.m_isLocked) {
@@ -633,11 +633,11 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 				if (!this.m_isAvailable) {
 					MenuUtils.setColorFilter(this.m_loader, "shop");
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override protected function handleSelectionChange():void {
@@ -646,7 +646,7 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (m_isSelected) {
 			if (!this.m_loadOnVisibleOnScreen) {
 				setPopOutScale(this.m_view, true);
@@ -658,14 +658,14 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 					Animate.to(m_view.dropShadow, 0.3, 0, {"alpha": 1}, Animate.ExpoOut);
 				});
 			}
-			;
+
 			this.setOverlayColor(true);
 			if (this.m_pressable) {
 				MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_RED, true, MenuConstants.MenuElementSelectedAlpha);
 				MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_RED, false, true, MenuConstants.COLOR_WHITE, 1, 0, true);
 				this.callTextTicker(true);
 			}
-			;
+
 		} else {
 			setPopOutScale(this.m_view, false);
 			Animate.kill(this.m_view.dropShadow);
@@ -676,9 +676,9 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 				MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, ((this.m_markedForRemoval) ? MenuConstants.COLOR_GREY : MenuConstants.COLOR_WHITE), true, false);
 				this.callTextTicker(false);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -694,10 +694,10 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 					this.m_indicatorTextObjArray[_local_1].textticker = null;
 					_local_1++;
 				}
-				;
+
 				this.m_indicatorTextObjArray = [];
 			}
-			;
+
 			if (this.m_conditionsContainer.length > 0) {
 				_local_1 = 0;
 				while (_local_1 < this.m_conditionsContainer.length) {
@@ -707,10 +707,10 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 					Animate.kill(this.m_conditionsContainer[_local_1].description);
 					_local_1++;
 				}
-				;
+
 				this.m_conditionsContainer = [];
 			}
-			;
+
 			if (this.m_newConditionsContainer.length > 0) {
 				_local_1 = 0;
 				while (_local_1 < this.m_newConditionsContainer.length) {
@@ -720,24 +720,24 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 					Animate.kill(this.m_newConditionsContainer[_local_1].description);
 					_local_1++;
 				}
-				;
+
 				this.m_newConditionsContainer = [];
 			}
-			;
+
 			if (this.m_conditionCompletionIndicators.length > 0) {
 				_local_1 = 0;
 				while (_local_1 < this.m_conditionCompletionIndicators.length) {
 					Animate.kill(this.m_conditionCompletionIndicators[_local_1]);
 					_local_1++;
 				}
-				;
+
 				this.m_conditionCompletionIndicators = [];
 			}
-			;
+
 			while (this.m_view.indicator.numChildren > 0) {
 				this.m_view.indicator.removeChild(this.m_view.indicator.getChildAt(0));
 			}
-			;
+
 			if (this.m_loader) {
 				this.m_loader.cancelIfLoading();
 				if (this.m_useZoomedImage) {
@@ -745,10 +745,10 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 				} else {
 					this.m_view.imagesmall.removeChild(this.m_loader);
 				}
-				;
+
 				this.m_loader = null;
 			}
-			;
+
 			if (this.m_perkElements.length > 0) {
 				_local_1 = 0;
 				while (_local_1 < this.m_perkElements.length) {
@@ -756,14 +756,14 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 					this.m_perkElements[_local_1] = null;
 					_local_1++;
 				}
-				;
+
 				this.m_perkElements = [];
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -772,15 +772,15 @@ public dynamic class ObjectiveTile extends MenuElementAvailabilityBase implement
 		if (!this.m_loadOnVisibleOnScreen) {
 			return;
 		}
-		;
+
 		if (this.m_loader != null) {
 			this.m_loader.setVisibleOnScreen(_arg_1);
 		}
-		;
+
 		if (this.m_view != null) {
 			this.m_view.visible = _arg_1;
 		}
-		;
+
 	}
 
 

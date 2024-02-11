@@ -44,20 +44,20 @@ public class TopNavigationHandler extends Sprite implements IConfigurableMenuRes
 			this.m_view.tileIcon.visible = true;
 			this.setIcon(_arg_1.icon);
 		}
-		;
+
 	}
 
 	public function onUnregister():void {
 		if (this.m_view == null) {
 			return;
 		}
-		;
+
 		this.m_textTickerUtil.onUnregister();
 		if (this.m_parent != null) {
 			this.m_parent.removeChild(this);
 			this.m_parent = null;
 		}
-		;
+
 		removeChild(this.m_promptsContainer);
 		this.m_promptsContainer = null;
 		removeChild(this.m_view);

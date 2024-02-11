@@ -57,7 +57,7 @@ public dynamic class MapLayerIndicator extends BaseControl implements IButtonPro
 		if (((prompt == null) || (mouseCallback == null))) {
 			return;
 		}
-		;
+
 		prompt.addEventListener(MouseEvent.MOUSE_UP, function (_arg_1:MouseEvent):void {
 			_arg_1.stopPropagation();
 			mouseCallback(actiontype);
@@ -77,7 +77,7 @@ public dynamic class MapLayerIndicator extends BaseControl implements IButtonPro
 			this.m_layerIndicatorLevelDict[_local_2] = _arg_1;
 			this.m_labelContainer.addChild(_local_2);
 		}
-		;
+
 		return (this.m_labelContainer.getChildAt(_arg_1) as MapLayIndicatorLabelView);
 	}
 
@@ -86,7 +86,7 @@ public dynamic class MapLayerIndicator extends BaseControl implements IButtonPro
 			this.m_labelContainer.visible = false;
 			return;
 		}
-		;
+
 		TaskletSequencer.getGlobalInstance().addChunk(function ():void {
 			var _local_1:int;
 			var _local_2:int;
@@ -111,23 +111,23 @@ public dynamic class MapLayerIndicator extends BaseControl implements IButtonPro
 							_local_5 = (m_labelContainer.getChildAt(m_selectedMapLayerLevel) as MapLayIndicatorLabelView);
 							MenuUtils.setColor(_local_5.bg, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 						}
-						;
+
 						m_selectedMapLayerLevel = _local_2;
 					}
-					;
+
 					_local_4.icon.visible = _local_3.agentOnLevel;
 					_local_1++;
 					_local_2++;
 				}
-				;
+
 				while (m_labelContainer.numChildren > m_numOfElements) {
 					_local_6 = (m_labelContainer.getChildAt((m_labelContainer.numChildren - 1)) as MapLayIndicatorLabelView);
 					_local_6.removeEventListener(MouseEvent.MOUSE_UP, handleMouseUp);
 					m_labelContainer.removeChild(_local_6);
 				}
-				;
+
 			}
-			;
+
 			m_view.promptsMc.prompt1.alpha = ((m_selectedMapLayerLevel == (m_numOfElements - 1)) ? 0.2 : 1);
 			m_view.promptsMc.prompt2.alpha = ((m_selectedMapLayerLevel == 0) ? 0.2 : 1);
 		});
@@ -161,7 +161,7 @@ public dynamic class MapLayerIndicator extends BaseControl implements IButtonPro
 		if (_local_3 != 0) {
 			sendEventWithValue("onChangeMapLayer", _local_3);
 		}
-		;
+
 	}
 
 	private function handlePromptMouseEvent(_arg_1:String):void {
@@ -170,11 +170,11 @@ public dynamic class MapLayerIndicator extends BaseControl implements IButtonPro
 		if (((_local_2) && (this.m_selectedMapLayerLevel >= this.m_numOfElements))) {
 			return;
 		}
-		;
+
 		if (((!(_local_2)) && (this.m_selectedMapLayerLevel <= 0))) {
 			return;
 		}
-		;
+
 		var _local_3:int = ((_local_2) ? 1 : -1);
 		sendEventWithValue("onChangeMapLayer", _local_3);
 	}

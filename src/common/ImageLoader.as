@@ -27,7 +27,7 @@ public class ImageLoader extends Loader {
 		if (this.m_loadOnAddedToStage) {
 			this.addEventListener(Event.ADDED_TO_STAGE, this.onAdded);
 		}
-		;
+
 	}
 
 	public function isLoading():Boolean {
@@ -38,7 +38,7 @@ public class ImageLoader extends Loader {
 		if (this.m_isLoading) {
 			this.cancel();
 		}
-		;
+
 		this.ClearImage();
 		this.m_isLoading = true;
 		this.m_callback = _arg_2;
@@ -48,7 +48,7 @@ public class ImageLoader extends Loader {
 		} else {
 			this.m_rid = _arg_1;
 		}
-		;
+
 	}
 
 	private function triggerRequestAsyncLoad(_arg_1:String):void {
@@ -66,9 +66,9 @@ public class ImageLoader extends Loader {
 				this.m_failedCallback();
 				this.m_failedCallback = null;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function cancelAndClearImage():void {
@@ -77,14 +77,14 @@ public class ImageLoader extends Loader {
 		} else {
 			this.ClearImage();
 		}
-		;
+
 	}
 
 	public function onResourceReady(_arg_1:String):void {
 		if (this.m_toLoadUrl != _arg_1) {
 			return;
 		}
-		;
+
 		this.RegisterLoaderListeners();
 		var _local_2:URLRequest = new URLRequest(_arg_1);
 		this.load(_local_2);
@@ -94,13 +94,13 @@ public class ImageLoader extends Loader {
 		if (this.m_toLoadUrl != _arg_1) {
 			return;
 		}
-		;
+
 		this.closeRequest();
 		if (this.m_failedCallback != null) {
 			this.m_failedCallback();
 			this.m_failedCallback = null;
 		}
-		;
+
 	}
 
 	private function onLoadingComplete(_arg_1:Event):void {
@@ -109,7 +109,7 @@ public class ImageLoader extends Loader {
 			this.m_callback();
 			this.m_callback = null;
 		}
-		;
+
 	}
 
 	private function onLoadFailed(_arg_1:IOErrorEvent):void {
@@ -118,7 +118,7 @@ public class ImageLoader extends Loader {
 			this.m_failedCallback();
 			this.m_failedCallback = null;
 		}
-		;
+
 	}
 
 	private function onAdded(_arg_1:Event):void {
@@ -127,7 +127,7 @@ public class ImageLoader extends Loader {
 			this.triggerRequestAsyncLoad(this.m_rid);
 			this.m_rid = null;
 		}
-		;
+
 	}
 
 	private function onRemoved(_arg_1:Event):void {
@@ -135,7 +135,7 @@ public class ImageLoader extends Loader {
 		if (this.m_isLoading) {
 			this.cancel();
 		}
-		;
+
 		this.ClearImage();
 	}
 

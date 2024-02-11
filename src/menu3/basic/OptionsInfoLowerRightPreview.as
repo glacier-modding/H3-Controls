@@ -43,7 +43,7 @@ public dynamic class OptionsInfoLowerRightPreview extends OptionsInfoPreview {
 			this.m_ridNoSaveIcon = _arg_1.previewData.noSaveIcon;
 			this.m_noSave.loadImage(this.m_ridNoSaveIcon);
 		}
-		;
+
 		var _local_2:Number = CommonUtils.getUIOptionValueNumber("UI_OPTION_GAME_AID_WEAPON_HUD");
 		var _local_3:Boolean = CommonUtils.getUIOptionValue("UI_OPTION_GAME_AUTOSAVE_HUD");
 		if (_local_2 == WEAPONHUD_OFF) {
@@ -52,7 +52,7 @@ public dynamic class OptionsInfoLowerRightPreview extends OptionsInfoPreview {
 			this.m_weapon.visible = true;
 			this.m_weapon.onSetData(this.makeWeaponData(_local_2));
 		}
-		;
+
 		this.m_noSave.visible = _local_3;
 	}
 

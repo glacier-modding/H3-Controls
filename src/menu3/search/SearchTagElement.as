@@ -28,14 +28,14 @@ public dynamic class SearchTagElement extends SearchElementBase {
 			if (getNodeProp(this, "pressable") == false) {
 				this.m_isElementActive = true;
 			}
-			;
+
 		}
-		;
+
 		this.m_isElementDisabled = false;
 		if (_arg_1.hasOwnProperty("disabled")) {
 			this.m_isElementDisabled = _arg_1.disabled;
 		}
-		;
+
 		this.updateState();
 	}
 
@@ -60,9 +60,9 @@ public dynamic class SearchTagElement extends SearchElementBase {
 			} else {
 				setState(((m_isSelected) ? STATE_SELECT : STATE_NONE));
 			}
-			;
+
 		}
-		;
+
 	}
 
 

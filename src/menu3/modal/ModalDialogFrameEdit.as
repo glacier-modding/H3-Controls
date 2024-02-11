@@ -62,9 +62,9 @@ public class ModalDialogFrameEdit extends ModalDialogFrameInformation implements
 			if (_arg_1.title) {
 				this.m_originalTitle = _arg_1.title;
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.description) {
 			this.setDescription(_arg_1.description);
 		} else {
@@ -75,9 +75,9 @@ public class ModalDialogFrameEdit extends ModalDialogFrameInformation implements
 			} else {
 				this.setDescription("");
 			}
-			;
+
 		}
-		;
+
 		this.m_validator = new ModalDialogValidator(_arg_1.validation);
 		this.setErrorMessage(null);
 		this.onTextInputChange();
@@ -93,7 +93,7 @@ public class ModalDialogFrameEdit extends ModalDialogFrameInformation implements
 		if (((this.m_errorMessage == null) || (this.m_errorMessage.length == 0))) {
 			_local_1 = ((this.getDescriptionText() == this.m_defaultString) ? this.m_defaultStringUnformatted : this.m_inputField.text);
 		}
-		;
+
 		ExternalInterface.call("ModalDialogHide", _local_1);
 	}
 
@@ -109,7 +109,7 @@ public class ModalDialogFrameEdit extends ModalDialogFrameInformation implements
 		if (this.m_inputField.caretIndex >= _local_2) {
 			this.m_inputField.setSelection(_arg_1.length, _arg_1.length);
 		}
-		;
+
 	}
 
 	override protected function setItemSelected(_arg_1:Boolean):void {
@@ -121,13 +121,13 @@ public class ModalDialogFrameEdit extends ModalDialogFrameInformation implements
 			} else {
 				this.m_inputField.setSelection(this.m_inputField.text.length, this.m_inputField.text.length);
 			}
-			;
+
 			ExternalInterface.call("ModalDialogTextFieldSelected", true, this.getDescriptionText(), this.m_defaultStringUnformatted);
 		} else {
 			this.removeDescriptionStageFocus();
 			ExternalInterface.call("ModalDialogTextFieldSelected", false);
 		}
-		;
+
 	}
 
 	public function onTextFieldEdited(_arg_1:String):void {
@@ -161,7 +161,7 @@ public class ModalDialogFrameEdit extends ModalDialogFrameInformation implements
 		if (this.m_inputField.hasEventListener(Event.ENTER_FRAME)) {
 			this.m_inputField.removeEventListener(Event.ENTER_FRAME, this.onSetDescriptionStageFocus);
 		}
-		;
+
 		stage.focus = null;
 	}
 
@@ -182,7 +182,7 @@ public class ModalDialogFrameEdit extends ModalDialogFrameInformation implements
 		} else {
 			this.m_errorMessage = _arg_1.getMessage();
 		}
-		;
+
 	}
 
 	protected function validate(_arg_1:String):void {
@@ -190,7 +190,7 @@ public class ModalDialogFrameEdit extends ModalDialogFrameInformation implements
 		if (this.m_validator == null) {
 			return;
 		}
-		;
+
 		var _local_2:ModalDialogValidation = this.m_validator.validate(_arg_1);
 		this.setErrorMessage(_local_2);
 		this.m_isValid = (_local_2 == null);
@@ -202,33 +202,33 @@ public class ModalDialogFrameEdit extends ModalDialogFrameInformation implements
 		if (m_buttonCount <= 0) {
 			return;
 		}
-		;
+
 		if (!this.m_inputField.multiline) {
 			if (_arg_1.keyCode == MenuConstants.KEYCODE_ENTER) {
 				_arg_1.stopImmediatePropagation();
 				if (this.isSubmitValid()) {
 					m_callbackSendEvent("onElementDown");
 				}
-				;
+
 				return;
 			}
-			;
+
 		}
-		;
+
 		if (((_arg_1.keyCode == MenuConstants.KEYCODE_RIGHT) || (_arg_1.keyCode == MenuConstants.KEYCODE_DOWN))) {
 			if (((this.m_inputField.caretIndex >= this.m_inputField.length) && (!(_arg_1.shiftKey)))) {
 				_arg_1.stopImmediatePropagation();
 				m_callbackSendEvent("onElementDown");
 			}
-			;
+
 		} else {
 			if (((_arg_1.keyCode == MenuConstants.KEYCODE_ESC) || ((CommonUtils.getPlatformString() == CommonUtils.PLATFORM_STADIA) && (_arg_1.keyCode == MenuConstants.KEYCODE_TAB)))) {
 				_arg_1.stopImmediatePropagation();
 				m_callbackSendEventWithValue("onElementOver", m_cancelButtonIndex);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function contentMouseEvent(_arg_1:MouseEvent):void {

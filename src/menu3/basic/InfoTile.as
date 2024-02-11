@@ -16,7 +16,7 @@ public dynamic class InfoTile extends MenuElementTileBase {
 
 	protected var m_view:InfoTileView;
 	private var m_loader:MenuImageLoader;
-	private var m_textObj:Object = new Object();
+	private var m_textObj:Object = {};
 	private var m_textTicker:textTicker;
 	private var m_alwaysTicker:Boolean = false;
 	private var m_imagePath:String = null;
@@ -42,13 +42,13 @@ public dynamic class InfoTile extends MenuElementTileBase {
 			MenuUtils.setTintColor(this.m_view.tileSelect, MenuUtils.TINT_COLOR_GREY, false);
 			MenuUtils.setTintColor(this.m_view.tileSelectPulsate, MenuUtils.TINT_COLOR_GREY, false);
 		}
-		;
+
 		this.setupTextFields(_arg_1.title, _arg_1.description);
 		this.m_alwaysTicker = (_arg_1.alwaysTicker === true);
 		if (this.m_alwaysTicker) {
 			this.callTextTicker(true);
 		}
-		;
+
 		this.handleSelectionChange();
 	}
 
@@ -64,14 +64,14 @@ public dynamic class InfoTile extends MenuElementTileBase {
 		if (!this.m_textTicker) {
 			this.m_textTicker = new textTicker();
 		}
-		;
+
 		if (_arg_1) {
 			this.m_textTicker.startTextTickerHtml(this.m_view.title, this.m_textObj.title);
 		} else {
 			this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 			MenuUtils.truncateTextfield(this.m_view.title, 1, MenuConstants.FontColorGreyUltraDark);
 		}
-		;
+
 	}
 
 	override protected function handleSelectionChange():void {
@@ -81,7 +81,7 @@ public dynamic class InfoTile extends MenuElementTileBase {
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (m_isSelected) {
 			setPopOutScale(this.m_view, true);
 			Animate.to(this.m_view.dropShadow, 0.3, 0, {"alpha": 1}, Animate.ExpoOut);
@@ -94,11 +94,11 @@ public dynamic class InfoTile extends MenuElementTileBase {
 			this.m_view.tileSelect.alpha = 0;
 			MenuUtils.pulsate(this.m_view.tileSelectPulsate, false);
 		}
-		;
+
 		if (!this.m_alwaysTicker) {
 			this.callTextTicker(m_isSelected);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -109,11 +109,11 @@ public dynamic class InfoTile extends MenuElementTileBase {
 				this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 				this.m_textTicker = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	private function completeAnimations():void {

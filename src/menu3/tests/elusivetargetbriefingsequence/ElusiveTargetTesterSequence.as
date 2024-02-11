@@ -35,7 +35,7 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 
 	public function ElusiveTargetTesterSequence(_arg_1:Object) {
 		super(_arg_1);
-		this.m_sequencesArray = new Array();
+		this.m_sequencesArray = [];
 	}
 
 	override public function onSetData(_arg_1:Object):void {
@@ -107,7 +107,7 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 		this.m_sequenceContainer02 = new Sprite();
 		this.m_sequenceContainer02.name = "m_sequenceContainer02";
 		this.m_containerForSequences.addChild(this.m_sequenceContainer02);
-		this.m_sequenceContainerArray = new Array(this.m_sequenceContainer02, this.m_sequenceContainer01);
+		this.m_sequenceContainerArray = [this.m_sequenceContainer02, this.m_sequenceContainer01];
 		this.m_containerForTextBlocks = new Sprite();
 		this.m_containerForTextBlocks.name = "m_containerForTextBlocks";
 		this.m_baseContainer.addChild(this.m_containerForTextBlocks);
@@ -117,7 +117,7 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 		this.m_textBlockContainer02 = new Sprite();
 		this.m_textBlockContainer02.name = "m_textBlockContainer02";
 		this.m_containerForTextBlocks.addChild(this.m_textBlockContainer02);
-		this.m_textBlockContainerArray = new Array(this.m_textBlockContainer02, this.m_textBlockContainer01);
+		this.m_textBlockContainerArray = [this.m_textBlockContainer02, this.m_textBlockContainer01];
 		this.showSequencePart();
 	}
 
@@ -134,11 +134,11 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 			if (this.m_sequencesArray.length <= 0) {
 				return;
 			}
-			;
+
 			_local_1 = this.m_sequencesArray.shift();
 			this.goSequence(_local_1, this.m_sequenceContainerArray[0], this.m_textBlockContainerArray[0]);
 		}
-		;
+
 	}
 
 	private function goSequence(_arg_1:Object, _arg_2:Sprite, _arg_3:Sprite):void {
@@ -156,14 +156,14 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 			_arg_2.addChild(_local_4);
 			this.loadImage(_arg_1.image, _arg_1.sequence.totalduration);
 		}
-		;
+
 		if (_arg_1.redoverlay) {
 			_local_5 = new Sprite();
 			_local_5.name = "redOverlayContainer";
 			_arg_2.addChild(_local_5);
 			createRedOverlay(_arg_1.redoverlay, _arg_1.sequence.totalduration, _local_5);
 		}
-		;
+
 		if (_arg_1.textblocks) {
 			_local_6 = 0;
 			while (_local_6 < _arg_1.textblocks.length) {
@@ -173,9 +173,9 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 				insertTextBlock(_arg_1.textblocks[_local_6], _arg_1.sequence.totalduration, _local_7);
 				_local_6++;
 			}
-			;
+
 		}
-		;
+
 		animateSequenceContainer(_arg_1, _arg_2);
 		Animate.delay(this.m_baseContainer, _arg_1.sequence.totalduration, this.showSequencePart, null);
 	}
@@ -188,14 +188,14 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 		} else {
 			return;
 		}
-		;
+
 		if (this.m_sequenceContainerArray[0].name == "m_sequenceContainer01") {
 			if (this.m_loader01 != null) {
 				this.m_loader01.cancelIfLoading();
 				daImageContainer.removeChild(this.m_loader01);
 				this.m_loader01 = null;
 			}
-			;
+
 			this.m_loader01 = new MenuImageLoader();
 			daImageContainer.addChild(this.m_loader01);
 			this.m_loader01.center = false;
@@ -205,7 +205,7 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 					animateImageDuration = ((data.animateimage.duration) ? data.animateimage.duration : sequenceDuration);
 					animateImageContainer(daImageContainer, daImageContainer.width, daImageContainer.height, animateImageDuration, data.animateimage.startpos, data.animateimage.endpos, data.animateimage.startscale, data.animateimage.endscale, data.animateimage.easing);
 				}
-				;
+
 			});
 		} else {
 			if (this.m_sequenceContainerArray[0].name == "m_sequenceContainer02") {
@@ -214,7 +214,7 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 					daImageContainer.removeChild(this.m_loader02);
 					this.m_loader02 = null;
 				}
-				;
+
 				this.m_loader02 = new MenuImageLoader();
 				daImageContainer.addChild(this.m_loader02);
 				this.m_loader02.center = false;
@@ -224,12 +224,12 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 						animateImageDuration = ((data.animateimage.duration) ? data.animateimage.duration : sequenceDuration);
 						animateImageContainer(daImageContainer, daImageContainer.width, daImageContainer.height, animateImageDuration, data.animateimage.startpos, data.animateimage.endpos, data.animateimage.startscale, data.animateimage.endscale, data.animateimage.easing);
 					}
-					;
+
 				});
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function getView():Sprite {
@@ -267,11 +267,11 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 						trace((("XXX ElusiveTargetTesterSequence | delayRemoveChildrenFromOldContainers | oldSequenceContainer.name: " + _arg_1.name) + " | oldImageContainer.removeChild(m_loader02)"));
 						_local_3.removeChild(this.m_loader02);
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			while (_arg_1.numChildren > 0) {
 				_local_4 = _arg_1.getChildAt(0);
 				while (_local_4.numChildren > 0) {
@@ -280,12 +280,12 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 					Animate.complete(_local_5);
 					_local_4.removeChild(_local_5);
 				}
-				;
+
 				trace((((("XXX ElusiveTargetTesterSequence | delayRemoveChildrenFromOldContainers | oldSequenceContainer.name: " + _arg_1.name) + " | remove & Animate.complete(") + _local_4.name) + ")"));
 				Animate.kill(_local_4);
 				_arg_1.removeChild(_local_4);
 			}
-			;
+
 			while (_arg_2.numChildren > 0) {
 				_local_6 = _arg_2.getChildAt(0);
 				while (_local_6.numChildren > 0) {
@@ -294,14 +294,14 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 					Animate.complete(_local_7);
 					_local_6.removeChild(_local_7);
 				}
-				;
+
 				trace((((("XXX ElusiveTargetTesterSequence | delayRemoveChildrenFromOldContainers | oldTextBlockContainer.name: " + _arg_2.name) + " | remove & Animate.complete(") + _local_6.name) + ")"));
 				Animate.kill(_local_6);
 				_arg_2.removeChild(_local_6);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -323,10 +323,10 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 				_local_1.removeChild(this.m_loader01);
 				trace(("XXX ElusiveTargetTesterSequence | onUnregister | removing m_loader01 from: " + _local_1.name));
 			}
-			;
+
 			this.m_loader01 = null;
 		}
-		;
+
 		if (this.m_loader02) {
 			this.m_loader02.cancelIfLoading();
 			if (this.m_sequenceContainerArray[0].getChildByName("imageContainer")) {
@@ -334,10 +334,10 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 				_local_1.removeChild(this.m_loader02);
 				trace(("XXX ElusiveTargetTesterSequence | onUnregister | removing m_loader02 from: " + _local_1.name));
 			}
-			;
+
 			this.m_loader02 = null;
 		}
-		;
+
 		while (this.m_baseContainer.numChildren > 0) {
 			_local_2 = this.m_baseContainer.getChildAt(0);
 			while (_local_2.numChildren > 0) {
@@ -350,22 +350,22 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 						Animate.kill(_local_5);
 						_local_4.removeChild(_local_5);
 					}
-					;
+
 					trace(((((("XXX ElusiveTargetTesterSequence | onUnregister | remove/kill: m_baseContiainer." + _local_2.name) + ".") + _local_3.name) + ".") + _local_4.name));
 					Animate.kill(_local_4);
 					_local_3.removeChild(_local_4);
 				}
-				;
+
 				trace(((("XXX ElusiveTargetTesterSequence | onUnregister | remove/kill: m_baseContiainer." + _local_2.name) + ".") + _local_3.name));
 				Animate.kill(_local_3);
 				_local_2.removeChild(_local_3);
 			}
-			;
+
 			trace(("XXX ElusiveTargetTesterSequence | onUnregister | remove/kill: m_baseContiainer." + _local_2.name));
 			Animate.kill(_local_2);
 			this.m_baseContainer.removeChild(_local_2);
 		}
-		;
+
 		trace("XXX ElusiveTargetTesterSequence | onUnregister | remove/kill: m_baseContiainer");
 		removeChild(this.m_baseContainer);
 		this.m_sequencesArray = [];
@@ -373,12 +373,12 @@ public dynamic class ElusiveTargetTesterSequence extends ElusiveTargetTesterSequ
 			removeChild(this.m_background);
 			this.m_background = null;
 		}
-		;
+
 		if (this.m_testAlignmentGrid) {
 			removeChild(this.m_testAlignmentGrid);
 			this.m_testAlignmentGrid = null;
 		}
-		;
+
 	}
 
 

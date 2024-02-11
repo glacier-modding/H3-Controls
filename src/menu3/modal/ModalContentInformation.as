@@ -38,7 +38,7 @@ public class ModalContentInformation {
 					_arg_1.addGap(_local_5);
 					_local_5 = 0;
 				}
-				;
+
 				_local_7 = new ModalDialogContentImageView();
 				_local_8 = new MenuImageLoader();
 				_local_8.center = false;
@@ -47,13 +47,13 @@ public class ModalContentInformation {
 				_arg_1.appendEntry(_local_7, false, _arg_2[_local_6].imageheight, "image");
 				_local_5 = _local_4;
 			}
-			;
+
 			if (_arg_2[_local_6].description) {
 				if (_local_5 > 0) {
 					_arg_1.addGap(_local_5);
 					_local_5 = 0;
 				}
-				;
+
 				_local_9 = new TextField();
 				_local_9.autoSize = "left";
 				_local_9.antiAliasType = AntiAliasType.NORMAL;
@@ -75,50 +75,50 @@ public class ModalContentInformation {
 					_local_11.letterSpacing = 0.3;
 					_local_9.setTextFormat(_local_11);
 				}
-				;
+
 				_arg_1.appendEntry(_local_9, false, _local_9.height);
 				_local_5 = _local_4;
 			}
-			;
+
 			if (_arg_2[_local_6].contract) {
 				if (_local_5 > 0) {
 					_arg_1.addGap(_local_5);
 					_local_5 = 0;
 				}
-				;
+
 				_local_14 = new ModalDialogContractElement();
 				_local_14.setData(_arg_2[_local_6].contract);
 				_arg_1.appendEntry(_local_14, false, 0, "contract");
 				_local_5 = _local_4;
 			}
-			;
+
 			if (_arg_2[_local_6].dlcmissing) {
 				if (_local_5 > 0) {
 					_arg_1.addGap(_local_5);
 					_local_5 = 0;
 				}
-				;
+
 				_local_15 = new ModalDialogDlcMissingElement();
 				_local_15.setData(_arg_2[_local_6].dlcmissing);
 				_arg_1.appendEntry(_local_15, false, 0, "dlcmissing");
 				_local_5 = _local_4;
 			}
-			;
+
 			if (_arg_2[_local_6].imagetext) {
 				if (_local_5 > 0) {
 					_arg_1.addGap(_local_5);
 					_local_5 = 0;
 				}
-				;
+
 				_local_16 = new ModalDialogImageTextElement();
 				_local_16.setData(_arg_2[_local_6].imagetext);
 				_arg_1.appendEntry(_local_16, false, 0, "imagetext");
 				_local_5 = _local_4;
 			}
-			;
+
 			_local_6++;
 		}
-		;
+
 	}
 
 

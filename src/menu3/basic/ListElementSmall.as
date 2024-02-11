@@ -53,9 +53,9 @@ public dynamic class ListElementSmall extends CollapsableListContainer {
 			} else {
 				this.setupTextField(_arg_1.titleplaceholder);
 			}
-			;
+
 		}
-		;
+
 		this.m_isTextScrollingEnabled = ((_arg_1.force_scroll) ? true : false);
 		var _local_2:int = ((m_isSelected) ? this.STATE_SELECTED : this.STATE_DEFAULT);
 		this.setSelectedAnimationState(_local_2);
@@ -68,11 +68,11 @@ public dynamic class ListElementSmall extends CollapsableListContainer {
 			if (this.m_isTextScrollingEnabled) {
 				this.callTextTicker(true);
 			}
-			;
+
 		} else {
 			this.setItemSelected(m_isSelected);
 		}
-		;
+
 	}
 
 	override public function getView():Sprite {
@@ -99,16 +99,16 @@ public dynamic class ListElementSmall extends CollapsableListContainer {
 			if (((!(this.getData().direction == "horizontal")) && (!(this.getData().direction == "horizontalWrap")))) {
 				_arg_1.x = 32;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function setItemHover(_arg_1:Boolean):void {
 		if (((m_isSelected) || (m_isGroupSelected))) {
 			return;
 		}
-		;
+
 		var _local_2:int = ((_arg_1) ? this.STATE_HOVER : this.STATE_DEFAULT);
 		this.setSelectedAnimationState(_local_2);
 	}
@@ -121,9 +121,9 @@ public dynamic class ListElementSmall extends CollapsableListContainer {
 			if (m_isGroupSelected) {
 				_local_1 = this.STATE_GROUP_SELECTED;
 			}
-			;
+
 		}
-		;
+
 		this.setSelectedAnimationState(_local_1);
 	}
 
@@ -131,7 +131,7 @@ public dynamic class ListElementSmall extends CollapsableListContainer {
 		if (m_isSelected == _arg_1) {
 			return;
 		}
-		;
+
 		m_isSelected = _arg_1;
 		this.handleSelectionChange();
 	}
@@ -140,11 +140,11 @@ public dynamic class ListElementSmall extends CollapsableListContainer {
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (this.m_selectable == false) {
 			return;
 		}
-		;
+
 		if (_arg_1 == this.STATE_SELECTED) {
 			if (this.m_pressable) {
 				this.changeTextColor(((this.m_greyedout) ? MenuConstants.COLOR_GREY : MenuConstants.COLOR_WHITE));
@@ -155,7 +155,7 @@ public dynamic class ListElementSmall extends CollapsableListContainer {
 				MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 				MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_GREY, true, false);
 			}
-			;
+
 			MenuUtils.removeDropShadowFilter(this.m_view.title);
 			MenuUtils.removeDropShadowFilter(this.m_view.tileIcon);
 			this.callTextTicker(true);
@@ -178,7 +178,7 @@ public dynamic class ListElementSmall extends CollapsableListContainer {
 						MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 						MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_GREY, true, false);
 					}
-					;
+
 					MenuUtils.removeDropShadowFilter(this.m_view.title);
 					MenuUtils.removeDropShadowFilter(this.m_view.tileIcon);
 					this.callTextTicker(true);
@@ -193,13 +193,13 @@ public dynamic class ListElementSmall extends CollapsableListContainer {
 						this.m_view.tileSelect.alpha = 0;
 						this.callTextTicker(false);
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function handleMouseOver(_arg_1:Function, _arg_2:MouseEvent):void {
@@ -207,7 +207,7 @@ public dynamic class ListElementSmall extends CollapsableListContainer {
 			_arg_2.stopImmediatePropagation();
 			return;
 		}
-		;
+
 		super.handleMouseOver(_arg_1, _arg_2);
 	}
 
@@ -218,10 +218,10 @@ public dynamic class ListElementSmall extends CollapsableListContainer {
 		_arg_2.stopImmediatePropagation();
 		if (this["_nodedata"]) {
 			_local_3 = (this["_nodedata"]["id"] as int);
-			_local_4 = new Array(_local_3, false);
+			_local_4 = [_local_3, false];
 			(_arg_1("onElementHover", _local_4));
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -232,7 +232,7 @@ public dynamic class ListElementSmall extends CollapsableListContainer {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

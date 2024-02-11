@@ -47,7 +47,7 @@ public class CommonUtils {
 		if (_arg_1 == null) {
 			_arg_1 = ControlsMain.getControllerType();
 		}
-		;
+
 		return ((_arg_1 == CONTROLLER_TYPE_OCULUSVR) || (_arg_1 == CONTROLLER_TYPE_OPENVR));
 	}
 
@@ -55,7 +55,7 @@ public class CommonUtils {
 		if (platformType == null) {
 			platformType = ExternalInterface.call("CommonUtilsGetPlatformString");
 		}
-		;
+
 		return (platformType);
 	}
 
@@ -65,17 +65,17 @@ public class CommonUtils {
 		if (!_local_3) {
 			return (true);
 		}
-		;
+
 		var _local_4:int;
 		while (_local_4 < _arg_1.currentLabels.length) {
 			_local_5 = _arg_1.currentLabels[_local_4];
 			if (_local_5.name == _arg_2) {
 				return (true);
 			}
-			;
+
 			_local_4++;
 		}
-		;
+
 		return (false);
 	}
 
@@ -91,7 +91,7 @@ public class CommonUtils {
 			_arg_1.setTextFormat(new TextFormat("$global", _local_2.size, _local_2.color, _local_2.bold, _local_2.italic, _local_2.underline, _local_2.url, _local_2.target, _local_2.align, _local_2.leftMargin, _local_2.rightMargin, _local_2.indent, _local_2.leading));
 			return (true);
 		}
-		;
+
 		return (false);
 	}
 
@@ -101,7 +101,7 @@ public class CommonUtils {
 		} else {
 			trace((((((("Movie clip " + _arg_1.name) + " has no frame label '") + _arg_2) + "'. Staying at frame ") + _arg_1.currentLabel) + "."));
 		}
-		;
+
 	}
 
 	public static function gotoFrameLabelAndPlay(_arg_1:MovieClip, _arg_2:String):void {
@@ -110,7 +110,7 @@ public class CommonUtils {
 		} else {
 			trace((((((("Movie clip " + _arg_1.name) + " has no frame label '") + _arg_2) + "'. Staying at frame ") + _arg_1.currentLabel) + "."));
 		}
-		;
+
 	}
 
 	public static function getActiveTextLocaleIndex():int {

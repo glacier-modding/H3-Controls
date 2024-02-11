@@ -68,7 +68,7 @@ public class ModalDialogGenericEditText extends ModalDialogFrameEdit {
 		} else {
 			this.m_viewTileSelect.alpha = this.DISABLED_ALPHA;
 		}
-		;
+
 	}
 
 	override protected function setTitle(_arg_1:String):void {

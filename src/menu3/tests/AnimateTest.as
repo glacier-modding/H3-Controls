@@ -16,7 +16,7 @@ public dynamic class AnimateTest extends MenuElementBase {
 
 	private const OBJECT_COUNT:int = 10;
 
-	private var m_objects:Array = new Array();
+	private var m_objects:Array = [];
 
 	public function AnimateTest(_arg_1:Object) {
 		super(_arg_1);
@@ -25,7 +25,7 @@ public dynamic class AnimateTest extends MenuElementBase {
 			this.m_objects.push(this.createSpriteObject());
 			_local_2++;
 		}
-		;
+
 	}
 
 	private static function setupEasingAnimation(_arg_1:Sprite, _arg_2:Boolean, _arg_3:Number, _arg_4:int):void {
@@ -70,7 +70,7 @@ public dynamic class AnimateTest extends MenuElementBase {
 			this.m_objects[_local_4].y = (((this.m_objects[_local_4].height + _local_3) * _local_4) + _local_2);
 			_local_4++;
 		}
-		;
+
 	}
 
 	private function killAnimations():void {
@@ -80,7 +80,7 @@ public dynamic class AnimateTest extends MenuElementBase {
 			Animate.kill(this.m_objects[_local_1]);
 			_local_1++;
 		}
-		;
+
 	}
 
 	private function startAnimationGroup():void {
@@ -109,7 +109,7 @@ public dynamic class AnimateTest extends MenuElementBase {
 			setupAlphaAnimation(this.m_objects[_local_1], true, Animate.Linear);
 			_local_1++;
 		}
-		;
+
 	}
 
 	private function setupParallelTest():void {
@@ -123,7 +123,7 @@ public dynamic class AnimateTest extends MenuElementBase {
 			this.setupEasingTest();
 			return;
 		}
-		;
+
 		var _local_3:Number = 0.5;
 		var _local_4:Number = 0;
 		Animate.addOffset(this.m_objects[_arg_1], _local_3, _local_4, {"rotation": 360}, _arg_2, this.setupParallelAnimation, (_arg_1 + 1), _arg_2);
@@ -168,7 +168,7 @@ public dynamic class AnimateTest extends MenuElementBase {
 
 	private function setupCallbackTest2():void {
 		var textObj:Object;
-		textObj = new Object();
+		textObj = {};
 		textObj["Text"] = "Hello Object!";
 		Animate.delay(this.m_objects[0], 0.1, this.callbackObject, textObj);
 		textObj["Text"] = "Hello Object2!";

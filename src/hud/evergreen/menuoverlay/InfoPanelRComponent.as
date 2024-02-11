@@ -130,7 +130,7 @@ public class InfoPanelRComponent extends Sprite implements IMenuOverlayComponent
 			this.m_icon.visible = true;
 			MenuUtils.setupIcon(this.m_icon, _arg_1.icon, MenuConstants.COLOR_WHITE, true, false, 0xFFFFFF, 0, 0, false);
 		}
-		;
+
 		if ((((_arg_1 == null) || (_arg_1.lstrTitle == null)) || (_arg_1.lstrTitle == ""))) {
 			this.m_title_txt.visible = false;
 			this.m_title_txt.text = "";
@@ -139,7 +139,7 @@ public class InfoPanelRComponent extends Sprite implements IMenuOverlayComponent
 			this.m_title_txt.text = _arg_1.lstrTitle.toUpperCase();
 			MenuUtils.truncateTextfield(this.m_title_txt, 1, MenuConstants.FontColorWhite);
 		}
-		;
+
 		if ((((_arg_1 == null) || (_arg_1.lstrHeader == null)) || (_arg_1.lstrHeader == ""))) {
 			this.m_header_txt.visible = false;
 			this.m_header_txt.text = "";
@@ -147,7 +147,7 @@ public class InfoPanelRComponent extends Sprite implements IMenuOverlayComponent
 			this.m_header_txt.visible = true;
 			this.m_header_txt.text = _arg_1.lstrHeader.toUpperCase();
 		}
-		;
+
 		if ((((_arg_1 == null) || (_arg_1.lstrDescription == null)) || (_arg_1.lstrDescription == ""))) {
 			this.m_descr_txt.visible = false;
 			this.m_descr_txt.text = "";
@@ -156,16 +156,16 @@ public class InfoPanelRComponent extends Sprite implements IMenuOverlayComponent
 			this.m_descr_txt.text = _arg_1.lstrDescription;
 			CommonUtils.changeFontToGlobalIfNeeded(this.m_descr_txt);
 		}
-		;
+
 		var _local_2:int = (((_arg_1 == null) || (_arg_1.perks == null)) ? 0 : _arg_1.perks.length);
 		while (this.m_perksHolder.numChildren > _local_2) {
 			this.m_perksHolder.removeChildAt((this.m_perksHolder.numChildren - 1));
 		}
-		;
+
 		while (this.m_perksHolder.numChildren < _local_2) {
 			this.m_perksHolder.addChild(new ModalItemPerkView());
 		}
-		;
+
 		var _local_3:Number = 0;
 		var _local_4:Number = 0;
 		var _local_5:Boolean = true;
@@ -188,16 +188,16 @@ public class InfoPanelRComponent extends Sprite implements IMenuOverlayComponent
 				_local_3 = (_local_3 + (_local_4 + PXPADDING));
 				_local_4 = 0;
 			}
-			;
+
 			_local_5 = (!(_local_5));
 			_local_6++;
 		}
-		;
+
 		var _local_7:int = (((_arg_1 == null) || (_arg_1.labels == null)) ? 0 : _arg_1.labels.length);
 		while (this.m_labelsHolder.numChildren > 0) {
 			this.m_labelsHolder.removeChildAt((this.m_labelsHolder.numChildren - 1));
 		}
-		;
+
 		var _local_8:Number = 0;
 		_local_6 = 0;
 		while (_local_6 < _local_7) {
@@ -225,10 +225,10 @@ public class InfoPanelRComponent extends Sprite implements IMenuOverlayComponent
 					this.m_labelsHolder.addChild(_local_11);
 					break;
 			}
-			;
+
 			_local_6++;
 		}
-		;
+
 		this.updateLayout();
 	}
 
@@ -249,7 +249,7 @@ public class InfoPanelRComponent extends Sprite implements IMenuOverlayComponent
 		} else {
 			this.m_title_txt.y = ((yLayout + (PXICONSIZE / 2)) - (this.m_title_txt.textHeight / 2));
 		}
-		;
+
 		yLayout = (yLayout + PXICONSIZE);
 		if (!this.m_descr_txt.visible) {
 			this.m_headlineSeparator.visible = false;
@@ -261,7 +261,7 @@ public class InfoPanelRComponent extends Sprite implements IMenuOverlayComponent
 			this.m_descr_txt.y = yLayout;
 			yLayout = (yLayout + this.m_descr_txt.textHeight);
 		}
-		;
+
 		if (this.m_perksHolder.numChildren == 0) {
 			this.m_perkSeparator.visible = false;
 		} else {
@@ -272,7 +272,7 @@ public class InfoPanelRComponent extends Sprite implements IMenuOverlayComponent
 			this.m_perksHolder.y = yLayout;
 			yLayout = (yLayout + this.m_perksHolder.height);
 		}
-		;
+
 		if (this.m_labelsHolder.numChildren == 0) {
 			this.m_labelSeparator.visible = false;
 		} else {
@@ -283,7 +283,7 @@ public class InfoPanelRComponent extends Sprite implements IMenuOverlayComponent
 			this.m_labelsHolder.y = yLayout;
 			yLayout = (yLayout + this.m_labelsHolder.height);
 		}
-		;
+
 		var wasEmpty:Boolean = this.m_isEmpty;
 		this.m_isEmpty = (((((!(this.m_icon.visible)) && (!(this.m_title_txt.visible))) && (!(this.m_header_txt.visible))) && (!(this.m_descr_txt.visible))) && (this.m_perksHolder.numChildren == 0));
 		if (this.m_isEmpty) {
@@ -298,7 +298,7 @@ public class InfoPanelRComponent extends Sprite implements IMenuOverlayComponent
 			Animate.to(this.m_background, 0.1, 0, {"height": (yLayout + (2 * PXPADDING))}, Animate.SineOut);
 			Animate.to(this.m_contentMask, 0.1, 0, {"height": (yLayout + (1.5 * PXPADDING))}, Animate.SineOut);
 		}
-		;
+
 		if (!this.m_isEmpty) {
 			yContent = (((this.m_yBottom - PXMARGINBOTTOM) - yLayout) - PXPADDING);
 			yBackground = (((this.m_yBottom - PXMARGINBOTTOM) - yLayout) - (2 * PXPADDING));
@@ -312,9 +312,9 @@ public class InfoPanelRComponent extends Sprite implements IMenuOverlayComponent
 				Animate.addTo(this.m_background, 0.1, 0, {"y": yBackground}, Animate.SineOut);
 				Animate.addTo(this.m_contentMask, 0.1, 0, {"y": yContentMask}, Animate.SineOut);
 			}
-			;
+
 		}
-		;
+
 	}
 
 

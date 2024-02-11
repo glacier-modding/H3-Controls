@@ -276,7 +276,7 @@ public class ScrollingList extends CoreList {
 			return;
 		}
 		if (index >= _scrollPosition && index < _scrollPosition + _totalRenderers) {
-			return;
+
 		} else if (index < _scrollPosition) {
 			scrollPosition = index;
 		} else {

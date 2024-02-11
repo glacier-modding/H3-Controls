@@ -45,7 +45,7 @@ public class UnnoticedKillElement extends MovieClip {
 			this.updateBar(_arg_1);
 			this.pulsateHeaderIn();
 		}
-		;
+
 	}
 
 	private function updateHeader(_arg_1:String):void {

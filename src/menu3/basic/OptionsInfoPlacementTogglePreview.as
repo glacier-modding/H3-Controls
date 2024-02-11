@@ -28,7 +28,7 @@ public dynamic class OptionsInfoPlacementTogglePreview extends OptionsInfoHoldTo
 		if (!ControlsMain.isVrModeActive()) {
 			this.m_placeIndicator.filters = [new DropShadowFilter(2, 90, 0, 1, 4, 4, 0.5, BitmapFilterQuality.HIGH, false, false, false)];
 		}
-		;
+
 		this.onSetData(_arg_1);
 	}
 
@@ -51,11 +51,11 @@ public dynamic class OptionsInfoPlacementTogglePreview extends OptionsInfoHoldTo
 		if (_arg_1 == "aim-start") {
 			this.m_placeIndicator.visible = true;
 		}
-		;
+
 		if (_arg_1 == "aim-done") {
 			this.m_placeIndicator.visible = false;
 		}
-		;
+
 	}
 
 

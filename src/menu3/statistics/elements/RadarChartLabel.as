@@ -45,7 +45,7 @@ public class RadarChartLabel extends Sprite {
 		if (_arg_4) {
 			this.drawBackground();
 		}
-		;
+
 		this.setTitle();
 	}
 
@@ -79,7 +79,7 @@ public class RadarChartLabel extends Sprite {
 		if (_local_1) {
 			this.tfContainer.rotation = 180;
 		}
-		;
+
 		this.tfContainer.addChild(this.tf);
 		addChild(this.tfContainer);
 	}

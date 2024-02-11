@@ -56,13 +56,13 @@ public class textTicker {
 		if (_arg_3) {
 			this.m_allValues.textcolor = _arg_1.textColor;
 		}
-		;
+
 		this.m_allValues.fullString = _arg_2;
 		this.m_allValues.onTextChanged = _arg_4;
 		if (!this.m_fakeStage) {
 			this.m_fakeStage = new Sprite();
 		}
-		;
+
 		clearTimeout(this.m_resetDelayID);
 		clearTimeout(this.initDelayID);
 		this.initDelayID = setTimeout(this.initTicker, this.initDelayValue, this.m_allValues);
@@ -75,13 +75,13 @@ public class textTicker {
 		if (this.m_fakeStage) {
 			this.m_fakeStage.removeEventListener(Event.ENTER_FRAME, this.update);
 		}
-		;
+
 		_arg_1.scrollH = 0;
 		_arg_1.htmlText = _arg_2;
 		if (this.m_allValues.onTextChanged != null) {
 			this.m_allValues.onTextChanged(this.m_allValues.textfield);
 		}
-		;
+
 	}
 
 	private function initTicker(_arg_1:Object):void {
@@ -91,16 +91,16 @@ public class textTicker {
 		if (this.m_allValues.textcolor != null) {
 			this.m_allValues.textfield.textColor = this.m_allValues.textcolor;
 		}
-		;
+
 		if (this.m_allValues.onTextChanged != null) {
 			this.m_allValues.onTextChanged(this.m_allValues.textfield);
 		}
-		;
+
 		var _local_2:int = this.m_allValues.textfield.maxScrollH;
 		if (this.m_allValues.textfield.maxScrollH <= 0) {
 			return;
 		}
-		;
+
 		var _local_3:String;
 		var _local_4:int = -1;
 		var _local_5:TextFormat = this.m_allValues.textfield.getTextFormat();
@@ -108,21 +108,21 @@ public class textTicker {
 			_local_3 = _local_5.font;
 			_local_4 = ((_local_5.size != null) ? int(_local_5.size) : -1);
 		}
-		;
+
 		var _local_6:* = "      ";
 		if (((!(_local_3 == null)) && (_local_4 > 0))) {
 			_local_6 = (((((('<font face="' + _local_3) + '" size="') + _local_4) + '">') + _local_6) + "</font>");
 		}
-		;
+
 		this.m_allValues.textfield.htmlText = ((this.m_allValues.fullString + _local_6) + this.m_allValues.fullString);
 		if (this.m_allValues.textcolor != null) {
 			this.m_allValues.textfield.textColor = this.m_allValues.textcolor;
 		}
-		;
+
 		if (this.m_allValues.onTextChanged != null) {
 			this.m_allValues.onTextChanged(this.m_allValues.textfield);
 		}
-		;
+
 		this.m_totalFrames = (_arg_1.textfield.maxScrollH - _local_2);
 		this.goTextTicker();
 	}
@@ -131,7 +131,7 @@ public class textTicker {
 		if (this.m_fakeStage) {
 			this.m_fakeStage.addEventListener(Event.ENTER_FRAME, this.update);
 		}
-		;
+
 		this.m_prevFrame = getTimer();
 	}
 
@@ -148,13 +148,13 @@ public class textTicker {
 				if (this.m_fakeStage != null) {
 					this.m_fakeStage.removeEventListener(Event.ENTER_FRAME, this.update);
 				}
-				;
+
 				clearTimeout(this.m_resetDelayID);
 				this.m_resetDelayID = setTimeout(this.goTextTicker, this.m_resetDelayValue);
 			}
-			;
+
 		}
-		;
+
 		this.m_allValues.textfield.scrollH = this.m_frame;
 	}
 

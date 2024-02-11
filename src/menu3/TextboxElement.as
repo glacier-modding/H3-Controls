@@ -34,12 +34,12 @@ public dynamic class TextboxElement extends MenuElementBase {
 		if (((_local_3.length > 0) && (!(_local_3.charAt(0) == "$")))) {
 			_local_3 = ("$" + _local_3);
 		}
-		;
+
 		var _local_4:String = ((_arg_1.color) || ("#FFFFFF"));
 		if ((((!(_local_4 == null)) && (_local_4.length > 0)) && (!(_local_4.charAt(0) == "#")))) {
 			_local_4 = ("#" + _local_4);
 		}
-		;
+
 		var _local_5:int = ((_arg_1.size) || (18));
 		this.m_textfield.antiAliasType = AntiAliasType.ADVANCED;
 		var _local_6:Boolean = ((_arg_1.multiline) || (true));
@@ -51,24 +51,24 @@ public dynamic class TextboxElement extends MenuElementBase {
 		if (_arg_1.visible != null) {
 			this.visible = _arg_1.visible;
 		}
-		;
+
 		if (_arg_1.toUpper === true) {
 			MenuUtils.setupTextUpper(this.m_textfield, _local_2, _local_5, _local_3, _local_4);
 		} else {
 			MenuUtils.setupText(this.m_textfield, _local_2, _local_5, _local_3, _local_4);
 		}
-		;
+
 		if (_arg_1.align != undefined) {
 			this.m_textformat = this.m_textfield.getTextFormat();
 			this.m_textformat.align = _arg_1.align;
 			this.m_textfield.setTextFormat(this.m_textformat);
 		}
-		;
+
 		this.m_useDynamicTextBounds = (_arg_1.useDynamicTextBounds === true);
 		if (_arg_1.dropShadow === true) {
 			MenuUtils.addDropShadowFilter(this.m_textfield);
 		}
-		;
+
 	}
 
 	override public function getHeight():Number {
@@ -81,7 +81,7 @@ public dynamic class TextboxElement extends MenuElementBase {
 			_local_2.width = this.m_textfield.textWidth;
 			_local_2.height = this.m_textfield.textHeight;
 		}
-		;
+
 		return (_local_2);
 	}
 
@@ -92,7 +92,7 @@ public dynamic class TextboxElement extends MenuElementBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

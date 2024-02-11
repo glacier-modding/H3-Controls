@@ -21,14 +21,14 @@ public class ModalDialogValidator {
 			Log.info(Log.ChannelModal, this, "No validation data - dialog Validation disabled");
 			return;
 		}
-		;
+
 		Log.info(Log.ChannelModal, this, "Found a validation array");
 		for each (_local_2 in _arg_1) {
 			_local_3 = _local_2.type;
 			if (((_local_3 == null) || (_local_3.length == 0))) {
 				_local_3 = "regex";
 			}
-			;
+
 			_local_4 = null;
 			switch (_local_3) {
 				case "regex":
@@ -39,7 +39,7 @@ public class ModalDialogValidator {
 						Log.xerror(Log.ChannelModal, "regex validator definition not valid");
 						Log.debugData(this, _local_2);
 					}
-					;
+
 					break;
 				case "platformid":
 					_local_6 = _local_2.platformid;
@@ -49,16 +49,16 @@ public class ModalDialogValidator {
 						Log.xerror(Log.ChannelModal, "platformid validator definition not valid");
 						Log.debugData(this, _local_2);
 					}
-					;
+
 					break;
 			}
-			;
+
 			if (_local_4 != null) {
 				this.m_validators.push(_local_4);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function validate(_arg_1:String):ModalDialogValidation {
@@ -69,15 +69,15 @@ public class ModalDialogValidator {
 				if (((_local_2 == null) || (_local_2.getLevel() < _local_3.getLevel()))) {
 					_local_2 = _local_3;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (_local_2 != null) {
 			Log.xinfo(Log.ChannelModal, (((((("returning validator that failed on '" + _arg_1) + "' level=") + _local_2.getLevel()) + " message='") + _local_2.getMessage()) + "'"));
 		}
-		;
+
 		return (_local_2);
 	}
 

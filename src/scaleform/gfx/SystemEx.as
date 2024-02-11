@@ -38,7 +38,7 @@ public final class SystemEx {
 
 	// Return an array of file names of all loaded swfs with ActionScript code sections.
 	static public function getCodeFileNames():Array {
-		return new Array;
+		return [];
 	}
 
 	// Return data type of "v". This method is different from the standard

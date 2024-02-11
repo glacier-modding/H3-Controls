@@ -20,7 +20,7 @@ import common.menu.MenuUtils;
 public class ButtonPromptImage extends BaseControl {
 
 	private static var s_pool:ObjectPool = new ObjectPool(ButtonPromptImage, 20);
-	private static var s_pcLocalizedKey:Array = new Array({
+	private static var s_pcLocalizedKey:Array = [{
 		"id": 39,
 		"str": "cancel",
 		"locStr": "UI_KEYPROMPT_ESC"
@@ -64,7 +64,7 @@ public class ButtonPromptImage extends BaseControl {
 		"id": 61,
 		"str": "rb",
 		"locStr": "UI_KEYPROMPT_PAGEDOWN"
-	});
+	}];
 
 	private var m_view:ButtonPromptView;
 	private var m_platform:String;
@@ -95,7 +95,7 @@ public class ButtonPromptImage extends BaseControl {
 			this.m_platform = _arg_1;
 			CommonUtils.gotoFrameLabelAndStop(this.m_view, _arg_1);
 		}
-		;
+
 	}
 
 	public function get platform():String {
@@ -112,12 +112,12 @@ public class ButtonPromptImage extends BaseControl {
 					this.localizeKey(s_pcLocalizedKey[_local_2].locStr);
 					break;
 				}
-				;
+
 				_local_2++;
 			}
-			;
+
 		}
-		;
+
 		this.applyOpenVROffset();
 	}
 
@@ -135,22 +135,22 @@ public class ButtonPromptImage extends BaseControl {
 				if (_local_2) {
 					_arg_1 = (_arg_1 + "_xbox360");
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (this.platform == "ps4") {
 			if (_arg_1 == "select") {
 				_local_3 = CommonUtils.isDualShock4TrackpadAlternativeButtonNeeded();
 				if (_local_3) {
 					_arg_1 = (_arg_1 + "_alt");
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (((!(this.m_platform == "key")) && ((_arg_1 == "accept") || (_arg_1 == "cancel")))) {
 			_local_4 = ControlsMain.getMenuAcceptCancelLayout();
 			_local_5 = 1;
@@ -160,7 +160,7 @@ public class ButtonPromptImage extends BaseControl {
 		} else {
 			CommonUtils.gotoFrameLabelAndStop(this.m_view.button_mc, _arg_1);
 		}
-		;
+
 		if (((this.m_platform == "key") && (!(_arg_1 == "")))) {
 			_local_8 = 0;
 			while (_local_8 < s_pcLocalizedKey.length) {
@@ -168,12 +168,12 @@ public class ButtonPromptImage extends BaseControl {
 					this.localizeKey(s_pcLocalizedKey[_local_8].locStr);
 					break;
 				}
-				;
+
 				_local_8++;
 			}
-			;
+
 		}
-		;
+
 		this.applyOpenVROffset();
 	}
 
@@ -187,7 +187,7 @@ public class ButtonPromptImage extends BaseControl {
 			_local_2 = this.m_view.button_mc.key_txt.defaultTextFormat;
 			this.m_view.button_mc.key_txt.setTextFormat(_local_2);
 		}
-		;
+
 		this.resetOpenVROffset();
 	}
 
@@ -201,10 +201,10 @@ public class ButtonPromptImage extends BaseControl {
 			if (_local_3 <= 1) {
 				MenuUtils.shrinkTextToFit(this.m_view.button_mc.button_txt, -1, -1, 9, 1);
 			}
-			;
+
 			this.m_view.button_mc.button_txt.y = (-(Math.floor((this.m_view.button_mc.button_txt.textHeight / 2))) - 2);
 		}
-		;
+
 		this.resetOpenVROffset();
 	}
 
@@ -217,11 +217,11 @@ public class ButtonPromptImage extends BaseControl {
 					this.m_view.y = 3;
 					return;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		this.m_view.y = 0;
 	}
 

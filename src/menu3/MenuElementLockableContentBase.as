@@ -21,24 +21,24 @@ public dynamic class MenuElementLockableContentBase extends MenuElementAvailabil
 		if (m_infoIndicator == null) {
 			return;
 		}
-		;
+
 		Animate.complete(m_infoIndicator);
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (m_isSelected) {
 			Animate.to(m_infoIndicator, MenuConstants.HiliteTime, 0, {"alpha": 1}, Animate.Linear);
 		} else {
 			m_infoIndicator.alpha = 0;
 		}
-		;
+
 		var _local_1:IIndicator = getIndicator(EEscalationLevelIndicator);
 		if (_local_1 != null) {
 			_local_2 = (m_isSelected == false);
 			_local_1.setVisible(_local_2);
 		}
-		;
+
 	}
 
 

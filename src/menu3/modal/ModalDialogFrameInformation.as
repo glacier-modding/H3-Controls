@@ -24,7 +24,7 @@ public class ModalDialogFrameInformation extends ModalDialogFrame {
 		if (this.m_scrollingContainer == null) {
 			return;
 		}
-		;
+
 		this.m_scrollingContainer.scroll(_arg_1, _arg_2);
 	}
 
@@ -33,7 +33,7 @@ public class ModalDialogFrameInformation extends ModalDialogFrame {
 		if (this.m_scrollingContainer == null) {
 			return;
 		}
-		;
+
 		this.m_scrollingContainer.onFadeInFinished();
 	}
 
@@ -44,33 +44,33 @@ public class ModalDialogFrameInformation extends ModalDialogFrame {
 		if (_arg_2.category) {
 			_local_3 = _arg_2.category;
 		}
-		;
+
 		if (_arg_2.title) {
 			if (_local_3.length > 0) {
 				_local_3 = (_local_3 + " | ");
 			}
-			;
+
 			_local_3 = (_local_3 + _arg_2.title);
 		}
-		;
+
 		if (_local_3.length > 0) {
 			if (this.m_maxTitleWidth <= 0) {
 				this.m_maxTitleWidth = _arg_1.width;
 			}
-			;
+
 			_local_4 = -1;
 			_local_5 = 20;
 			MenuUtils.setupTextAndShrinkToFitUpper(_arg_1, _local_3, 48, MenuConstants.FONT_TYPE_BOLD, this.m_maxTitleWidth, _local_4, _local_5, MenuConstants.FontColorWhite);
 			CommonUtils.changeFontToGlobalIfNeeded(_arg_1);
 		}
-		;
+
 	}
 
 	protected function setupDescription(_arg_1:TextField, _arg_2:Object):void {
 		if (_arg_2.description) {
 			this.setupText(_arg_1, _arg_2.description);
 		}
-		;
+
 	}
 
 	protected function setupText(_arg_1:TextField, _arg_2:String):void {
@@ -82,7 +82,7 @@ public class ModalDialogFrameInformation extends ModalDialogFrame {
 		if (_arg_1.information) {
 			ModalContentInformation.createContent(this.m_scrollingContainer, _arg_1.information);
 		}
-		;
+
 	}
 
 	protected function destroyInformation():void {
@@ -93,10 +93,10 @@ public class ModalDialogFrameInformation extends ModalDialogFrame {
 			if (_local_2 != null) {
 				_local_2.destroy();
 			}
-			;
+
 			_local_1++;
 		}
-		;
+
 		this.m_scrollingContainer.removeChildren();
 		this.m_scrollingContainer.onUnregister();
 	}

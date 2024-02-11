@@ -80,19 +80,19 @@ public dynamic class DetailedScoreTileSniper extends MenuElementTileBase {
 				CommonUtils.changeFontToGlobalIfNeeded(this.m_view.headerTxt);
 				MenuUtils.truncateTextfield(this.m_view.headerTxt, 1, MenuConstants.FontColorWhite);
 			}
-			;
+
 		}
-		;
+
 		if (!_arg_1.isonline) {
 			this.m_view.offlineTxt.visible = true;
 			MenuUtils.setupText(this.m_view.offlineTxt, Localization.get("UI_DIALOG_SCORE_OFFLINE"), 26, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 			return;
 		}
-		;
+
 		if (_arg_1.isloading) {
 			return;
 		}
-		;
+
 		var _local_2:SniperScoreObject = new SniperScoreObject(Localization.get("UI_SNIPERSCORING_SUMMARY_BASESCORE"), _arg_1.SniperChallengeScore.BaseScore);
 		var _local_3:SniperScoreObject = new SniperScoreObject(((Localization.get("UI_SNIPERSCORING_SUMMARY_TIME_BONUS") + "  |  ") + MenuUtils.getTimeString(_arg_1.SniperChallengeScore.TimeTaken)), _arg_1.SniperChallengeScore.TimeBonus);
 		var _local_4:SniperScoreObject = new SniperScoreObject(Localization.get("UI_SNIPERSCORING_SUMMARY_SILENT_ASSASIN_BONUS"), _arg_1.SniperChallengeScore.SilentAssassinBonus);
@@ -111,53 +111,53 @@ public dynamic class DetailedScoreTileSniper extends MenuElementTileBase {
 				MenuUtils.setupTextUpper(this.m_missionScoreMc.newBestTitle, Localization.get("UI_RATING_NEW_PERSONAL BEST"), 14, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 				this.showNewBest(this.m_missionScoreMc);
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.IsNewBestTime != null) {
 			if (_arg_1.IsNewBestTime) {
 				this.m_isNewBestTime = true;
 				MenuUtils.setupTextUpper(this.m_missionTimeMc.newBestTitle, Localization.get("UI_RATING_NEW_PERSONAL BEST"), 14, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 				this.showNewBest(this.m_missionTimeMc);
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.IsNewBestStars != null) {
 			if (_arg_1.IsNewBestStars) {
 				this.m_isNewBestRating = true;
 				MenuUtils.setupTextUpper(this.m_missionRatingMc.newBestTitle, Localization.get("UI_RATING_NEW_PERSONAL BEST"), 14, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 				this.showNewBest(this.m_missionRatingMc);
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.Percentile != null) {
 			this.setLeaderboardPositionChart(_arg_1.Percentile);
 		}
-		;
+
 		if (((!(_arg_1.SniperChallengeScore.SilentAssassin == null)) && (_arg_1.SniperChallengeScore.SilentAssassin == true))) {
 			this.setSilentAssassin();
 		} else {
 			if (_arg_1.SniperChallengeScore.PlayStyle != null) {
 				this.setPlayStyle(_arg_1.SniperChallengeScore.PlayStyle.Name);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function setLeaderboardPositionChart(_arg_1:Object):void {
 		_arg_1.Spread.reverse();
 		var _local_2:int = ((_arg_1.Spread.length - 1) - _arg_1.Index);
 		_arg_1.Index = _local_2;
-		var _local_3:Array = new Array();
+		var _local_3:Array = [];
 		var _local_4:int;
 		while (_local_4 <= (_arg_1.Spread.length - 1)) {
 			_local_3.push(_arg_1.Spread[_local_4]);
 			_local_4++;
 		}
-		;
+
 		_local_3.sort(Array.NUMERIC);
 		var _local_5:Number = (1 / _local_3[(_local_3.length - 1)]);
 		this.m_view.leaderboardPosMc.visible = true;
@@ -169,10 +169,10 @@ public dynamic class DetailedScoreTileSniper extends MenuElementTileBase {
 			if (_local_6 == _arg_1.Index) {
 				MenuUtils.setColor(this.m_view.leaderboardPosMc[("barMc_0" + _local_6)], MenuConstants.COLOR_RED, false);
 			}
-			;
+
 			_local_6++;
 		}
-		;
+
 	}
 
 	private function setMissionRating(_arg_1:Number):void {
@@ -214,7 +214,7 @@ public dynamic class DetailedScoreTileSniper extends MenuElementTileBase {
 			_local_3 = (_local_3 + 32);
 			_local_5++;
 		}
-		;
+
 		_local_3 = (_local_3 + 14);
 		this.m_yOffset = (this.m_yOffset + _local_3);
 	}
@@ -239,7 +239,7 @@ public dynamic class DetailedScoreTileSniper extends MenuElementTileBase {
 			_local_3 = (_local_3 + 32);
 			_local_5++;
 		}
-		;
+
 		_local_3 = (_local_3 + 14);
 		this.addDottedLine(0, _local_3, this.m_view.multipliersScoreMc);
 		this.m_yOffset = (this.m_yOffset + _local_3);
@@ -270,31 +270,31 @@ public dynamic class DetailedScoreTileSniper extends MenuElementTileBase {
 		if (_arg_1 == this.m_missionRatingMc) {
 			MenuUtils.setupText(this.m_missionRatingMc.ratingValue, this.m_totalChallengesMultiplier.toFixed(2), 40, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 		}
-		;
+
 		if (_arg_1 == this.m_missionTimeMc) {
 			MenuUtils.setupText(this.m_missionTimeMc.timeValue, this.m_missionTimeMc.timeValue.text, 40, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 			CommonUtils.changeFontToGlobalFont(this.m_missionTimeMc.timeValue);
 		}
-		;
+
 		if (_arg_1 == this.m_missionScoreMc) {
 			MenuUtils.setupText(this.m_missionScoreMc.scoreValue, this.m_missionScoreMc.scoreValue.text, 40, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 		}
-		;
+
 	}
 
 	private function hideMissionSummaryLines(_arg_1:MovieClip):void {
 		if (_arg_1 == this.m_missionRatingMc) {
 			this.m_view.missionSummaryMc.lineMc_01.alpha = (this.m_view.missionSummaryMc.lineMc_02.alpha = 0);
 		}
-		;
+
 		if (_arg_1 == this.m_missionTimeMc) {
 			this.m_view.missionSummaryMc.lineMc_02.alpha = (this.m_view.missionSummaryMc.lineMc_03.alpha = 0);
 		}
-		;
+
 		if (_arg_1 == this.m_missionScoreMc) {
 			this.m_view.missionSummaryMc.lineMc_03.alpha = (this.m_view.missionSummaryMc.lineMc_04.alpha = 0);
 		}
-		;
+
 	}
 
 	private function offsetMissionSummary(_arg_1:MovieClip):void {
@@ -324,13 +324,13 @@ public dynamic class DetailedScoreTileSniper extends MenuElementTileBase {
 			Animate.kill(this.m_missionRatingMc.ratingIcons.getChildByName(("icon" + _local_1)));
 			_local_1++;
 		}
-		;
+
 		var _local_2:int;
 		while (_local_2 <= 9) {
 			Animate.kill(this.m_view.leaderboardPosMc[("barMc_0" + _local_2)]);
 			_local_2++;
 		}
-		;
+
 	}
 
 	private function playSound(_arg_1:String):void {
@@ -347,7 +347,7 @@ public dynamic class DetailedScoreTileSniper extends MenuElementTileBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

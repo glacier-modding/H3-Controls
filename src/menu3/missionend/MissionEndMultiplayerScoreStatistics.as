@@ -38,7 +38,7 @@ public dynamic class MissionEndMultiplayerScoreStatistics extends MenuElementBas
 		this.cleanupElements();
 		if (_arg_1.stats != null) {
 			_arg_1.stats.reverse();
-			this.m_listElements = new Array();
+			this.m_listElements = [];
 			this.m_view.line_static.visible = true;
 			_local_2 = 0;
 			while (_local_2 < _arg_1.stats.length) {
@@ -57,10 +57,10 @@ public dynamic class MissionEndMultiplayerScoreStatistics extends MenuElementBas
 				_local_8 = ((462 - (33 * _local_2)) / 100);
 				_local_2++;
 			}
-			;
+
 			Animate.to(this.m_view.line, (0.4 + (_local_2 / 20)), 0, {"scaleY": _local_8}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 	private function setupStatisticElements(_arg_1:MissionEndMultiplayerScoreStatisticsElementView, _arg_2:String, _arg_3:String, _arg_4:String, _arg_5:String, _arg_6:String, _arg_7:Boolean, _arg_8:int):void {
@@ -72,7 +72,7 @@ public dynamic class MissionEndMultiplayerScoreStatistics extends MenuElementBas
 			_local_9.y = 33;
 			_arg_1.addChild(_local_9);
 		}
-		;
+
 		Animate.offset(_arg_1, 0.4, (_arg_8 / 20), {"y": -33}, Animate.ExpoOut);
 		Animate.addTo(_arg_1, 0.4, (_arg_8 / 20), {"alpha": 1}, Animate.ExpoOut);
 		if (_arg_3 != "-") {
@@ -81,14 +81,14 @@ public dynamic class MissionEndMultiplayerScoreStatistics extends MenuElementBas
 		} else {
 			MenuUtils.setupText(_arg_1.playervalue, _arg_3, 20, MenuConstants.FONT_TYPE_MEDIUM, _arg_5);
 		}
-		;
+
 		if (_arg_4 != "-") {
 			MenuUtils.setupText(_arg_1.opponentvalue, "0", 20, MenuConstants.FONT_TYPE_MEDIUM, _arg_6);
 			Animate.fromTo(_arg_1.opponentvalue, 0.6, (_arg_8 / 20), {"intAnimation": "0"}, {"intAnimation": _arg_4}, Animate.Linear);
 		} else {
 			MenuUtils.setupText(_arg_1.opponentvalue, _arg_4, 20, MenuConstants.FONT_TYPE_MEDIUM, _arg_6);
 		}
-		;
+
 	}
 
 	private function cleanupElements():void {
@@ -103,10 +103,10 @@ public dynamic class MissionEndMultiplayerScoreStatistics extends MenuElementBas
 				this.m_view.removeChild(this.m_listElements[_local_1]);
 				_local_1++;
 			}
-			;
+
 			this.m_listElements = [];
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -115,7 +115,7 @@ public dynamic class MissionEndMultiplayerScoreStatistics extends MenuElementBas
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 

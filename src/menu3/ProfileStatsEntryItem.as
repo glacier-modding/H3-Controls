@@ -33,7 +33,7 @@ public dynamic class ProfileStatsEntryItem extends MenuElementBase {
 			MenuUtils.setupText(this.m_view.score, _arg_1.score, 24, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraLight);
 			MenuUtils.setupText(this.m_view.comment, _arg_1.info, 18, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorGreyMedium);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -41,7 +41,7 @@ public dynamic class ProfileStatsEntryItem extends MenuElementBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	override public function getView():Sprite {

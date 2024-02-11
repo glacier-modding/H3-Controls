@@ -25,7 +25,7 @@ public class ObjectiveUtil {
 			MenuUtils.setupText(_arg_1.method, _local_6[1], 18, MenuConstants.FONT_TYPE_MEDIUM, _arg_4);
 			MenuUtils.truncateTextfield(_arg_1.method, 1, _arg_4);
 		}
-		;
+
 		var _local_8:textTicker = new textTicker();
 		_arg_3.unshift({
 			"indicatortextfield": _arg_1.title,
@@ -50,7 +50,7 @@ public class ObjectiveUtil {
 			_local_6 = _local_6.replace(_local_2, "");
 			return ([_local_6, _local_4]);
 		}
-		;
+
 		_arg_1 = _arg_1.replace(_local_2, "");
 		return ([_arg_1]);
 	}
@@ -59,8 +59,8 @@ public class ObjectiveUtil {
 		if (((!(_arg_1 == ICON_DISGUISE)) && (!(_arg_1 == ICON_WEAPON)))) {
 			return (null);
 		}
-		;
-		var _local_2:Object = new Object();
+
+		var _local_2:Object = {};
 		if (_arg_1 == ICON_DISGUISE) {
 			_local_2["header"] = Localization.get("UI_BRIEFING_CONDITION_DISGUISE");
 			_local_2["title"] = Localization.get("UI_BRIEFING_CONDITION_ANY_DISGUISE");
@@ -70,7 +70,7 @@ public class ObjectiveUtil {
 			_local_2["title"] = Localization.get("UI_BRIEFING_CONDITION_ANY_METHOD");
 			_local_2["icon"] = ICON_WEAPON;
 		}
-		;
+
 		_local_2["type"] = "defaultkill";
 		_local_2["hardcondition"] = true;
 		return (_local_2);
@@ -89,19 +89,19 @@ public class ObjectiveUtil {
 					if (((_arg_1[0].icon == ICON_DISGUISE) && (_arg_3))) {
 						_arg_1.push(createCondition(ICON_WEAPON));
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (((_arg_1.length == 2) && (_arg_1[0].icon == ICON_DISGUISE))) {
 			_local_5 = _arg_1[0];
 			_arg_1[0] = _arg_1[1];
 			_arg_1[1] = _local_5;
 		}
-		;
+
 		return (_arg_1);
 	}
 

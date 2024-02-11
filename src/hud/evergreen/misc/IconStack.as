@@ -27,7 +27,7 @@ public class IconStack extends Sprite {
 		while (numChildren > (_arg_1 + 1)) {
 			removeChild(getChildAt((numChildren - 1)));
 		}
-		;
+
 		while (numChildren < _arg_1) {
 			if (numChildren != 0) {
 				_local_2 = new IconStackThinSlice();
@@ -35,9 +35,9 @@ public class IconStack extends Sprite {
 				_local_2.y = this.m_icon.y;
 				addChild(_local_2);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function get numItemsInStack():int {

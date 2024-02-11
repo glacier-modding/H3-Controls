@@ -45,7 +45,7 @@ public dynamic class MissionRewardItem extends MissionRewardItemView {
 			image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new MenuImageLoader();
 		this.m_loader.center = true;
 		image.addChild(this.m_loader);
@@ -59,11 +59,11 @@ public dynamic class MissionRewardItem extends MissionRewardItemView {
 				m_loader.height = _local_2;
 				m_loader.width = (_local_2 * _local_3);
 			}
-			;
+
 			if (callback != null) {
 				callback();
 			}
-			;
+
 		}, failedCallback);
 	}
 

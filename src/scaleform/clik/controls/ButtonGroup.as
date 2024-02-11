@@ -59,7 +59,7 @@ public class ButtonGroup extends EventDispatcher {
 	public static function getGroup(name:String, scope:DisplayObjectContainer):ButtonGroup {
 		var list:Object = groups[scope];
 		if (list == null) {
-			list = groups[scope] = new Object();
+			list = groups[scope] = {};
 		}
 		var group:ButtonGroup = list[name.toLowerCase()];
 		if (group == null) {

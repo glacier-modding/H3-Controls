@@ -73,7 +73,7 @@ public class EvergreenSpycameraWidget extends BaseControl {
 			default:
 				this.m_view.visible = false;
 		}
-		;
+
 	}
 
 	public function setScanValue(_arg_1:Number):void {
@@ -82,17 +82,17 @@ public class EvergreenSpycameraWidget extends BaseControl {
 				this.m_isScanning = true;
 				this.effectsStop();
 			}
-			;
+
 		}
-		;
+
 		if (this.m_isScanning) {
 			if (_arg_1 <= this.m_previousScanVal) {
 				this.m_isScanning = false;
 				this.effectsStart();
 			}
-			;
+
 		}
-		;
+
 		this.m_previousScanVal = _arg_1;
 	}
 
@@ -128,7 +128,7 @@ public class EvergreenSpycameraWidget extends BaseControl {
 				this.m_view.status_mc.gotoAndStop("nosuspect");
 				MenuUtils.setupText(this.m_view.status_mc.statusPrime_txt, Localization.get("UI_EVERGREEN_SPYCAM_NOSUSPECT").toUpperCase(), 24, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 		}
-		;
+
 		this.m_view.status_mc.back_mc.width = Math.max(this.minBackWidth, Math.max((this.m_view.status_mc.statusHeadline_txt.textWidth + 30), (this.m_view.status_mc.statusPrime_txt.textWidth + 30)));
 	}
 
@@ -159,7 +159,7 @@ public class EvergreenSpycameraWidget extends BaseControl {
 				this.m_view.agenda_mc.visualIcon_mc.gotoAndStop("Questionmark");
 				MenuUtils.setupText(this.m_view.agenda_mc.visualHeadline_txt, "", 24, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 		}
-		;
+
 		this.m_view.agenda_mc.back_mc.width = Math.max((this.m_view.agenda_mc.visualHeadline_txt.textWidth + 30), this.minBackWidth);
 	}
 
@@ -202,7 +202,7 @@ public class EvergreenSpycameraWidget extends BaseControl {
 				_arg_2.visualIcon_mc.gotoAndStop("Questionmark");
 				MenuUtils.setupText(_arg_2.visualHeadline_txt, "", 24, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 		}
-		;
+
 		_arg_2.back_mc.width = Math.max((_arg_2.visualHeadline_txt.textWidth + 30), this.minBackWidth);
 	}
 
@@ -264,7 +264,7 @@ public class EvergreenSpycameraWidget extends BaseControl {
 				_arg_2.visualIcon_mc.gotoAndStop("Questionmark");
 				MenuUtils.setupText(_arg_2.visualHeadline_txt, "", 24, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 		}
-		;
+
 		_arg_2.back_mc.width = Math.max((_arg_2.visualHeadline_txt.textWidth + 30), this.minBackWidth);
 	}
 
@@ -289,11 +289,11 @@ public class EvergreenSpycameraWidget extends BaseControl {
 				_local_1 = (_local_1 + (MenuUtils.getRandomInRange(0, 0xFF, true).toString(2) + " "));
 				_local_4++;
 			}
-			;
+
 			_local_1 = (_local_1 + "\n");
 			_local_3++;
 		}
-		;
+
 		this.m_view.effectBinary_txt.text = _local_1;
 		Animate.delay(this.m_view.effectBinary_txt, 0.4, this.effectsFillBinaryText);
 	}

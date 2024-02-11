@@ -44,7 +44,7 @@ public dynamic class SimpleButtonTileScrollingListContainer extends ScrollingLis
 			removeChild(this.m_background);
 			this.m_background = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -61,9 +61,9 @@ public dynamic class SimpleButtonTileScrollingListContainer extends ScrollingLis
 				this.m_background.visible = true;
 				this.m_tileFound = true;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function GetFirstSimpleButtonTile(_arg_1:BaseContainer):SimpleButtonTile {
@@ -78,14 +78,14 @@ public dynamic class SimpleButtonTileScrollingListContainer extends ScrollingLis
 			} else {
 				_local_3 = (_arg_1.m_children[_local_2] as SimpleButtonTile);
 			}
-			;
+
 			if (_local_3 != null) {
 				return (_local_3);
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 		return (null);
 	}
 
@@ -124,7 +124,7 @@ public dynamic class SimpleButtonTileScrollingListContainer extends ScrollingLis
 			_local_1 = _local_4;
 			_local_2 = (this.m_originalBarPosX + ((MenuConstants.BaseWidth - _local_1) / 2));
 		}
-		;
+
 		this.m_background.width = _local_1;
 		this.m_background.x = _local_2;
 	}

@@ -18,7 +18,7 @@ public class WeaponHintsElement extends BaseControl {
 
 	private var m_view:WeaponHintsElementView;
 	private var m_reloadUrgent:Boolean = false;
-	private var m_lastWeaponData:Object = new Object();
+	private var m_lastWeaponData:Object = {};
 	private var m_delay:Number;
 	private var m_bgOrigScaleFactorX:Number;
 	private var m_topPosY:Number;
@@ -46,7 +46,7 @@ public class WeaponHintsElement extends BaseControl {
 			this.m_view.bulletChamberingTimerMc.y = this.m_centerPosY;
 			this.m_setInitialPosY = true;
 		}
-		;
+
 		this.m_view.reload.reload_txt.alpha = 0;
 		this.m_view.reload.overlay.alpha = 0;
 		this.m_view.reload.bg.alpha = 0;
@@ -54,18 +54,18 @@ public class WeaponHintsElement extends BaseControl {
 			if (_arg_1.weaponStatus.bIsFirearm) {
 				this.setWeaponAmmoInfo(_arg_1.weaponStatus.nAmmoRemaining, _arg_1.weaponStatus.nAmmoTotal, _arg_1.weaponStatus.nAmmoInClip, _arg_1.weaponStatus.nWeaponType, _arg_1.weaponStatus.bInfiniteAmmo, _arg_1.weaponStatus.bIsReloading, _arg_1.weaponStatus.bCanReload);
 			}
-			;
+
 			if ((((_arg_1.weaponStatus.bIsReloading) && (!(this.m_reloadTimerAnimCalled))) && (_arg_1.weaponStatus.fReloadDuration > 0))) {
 				this.runReloadTimer(_arg_1.weaponStatus.fReloadDuration, _arg_1.weaponStatus.nAmmoInClip, _arg_1.weaponStatus.nAmmoRemaining, _arg_1.weaponStatus.nCurrentAmmoType, true);
 			} else {
 				if ((((_arg_1.weaponStatus.fTimeBetweenBullets > 0) && (this.m_sniperModeIsEntered)) && (_arg_1.weaponStatus.nCurrentAmmoType == this.m_lastWeaponData.nCurrentAmmoType))) {
 					this.runBulletChamberingTimer(_arg_1.weaponStatus.fTimeBetweenBullets, _arg_1.weaponStatus.nAmmoInClip, _arg_1.weaponStatus.nAmmoRemaining, _arg_1.weaponStatus.nCurrentAmmoType, true);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		this.m_lastWeaponData = _arg_1.weaponStatus;
 	}
 
@@ -81,7 +81,7 @@ public class WeaponHintsElement extends BaseControl {
 			this.m_view.alpha = 1;
 			return;
 		}
-		;
+
 		if (((_arg_1 >= 0) && (_arg_2 >= 0))) {
 			if (_arg_4 == 4) {
 				this.m_reloadUrgent = false;
@@ -108,17 +108,17 @@ public class WeaponHintsElement extends BaseControl {
 								this.m_reloadUrgent = true;
 								this.pulsateReloadMc(true);
 							}
-							;
+
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function pulsateReloadMc(_arg_1:Boolean):void {
@@ -134,7 +134,7 @@ public class WeaponHintsElement extends BaseControl {
 			this.m_reloadAnimIsRunning = true;
 			this.pulsateFadeIn();
 		}
-		;
+
 	}
 
 	private function pulsateFadeIn():void {
@@ -172,9 +172,9 @@ public class WeaponHintsElement extends BaseControl {
 					this.m_view.reloadTimerMc.bulletActiveMc.gotoAndStop(3);
 					nAmmoTypeFrameOffset = 28;
 				}
-				;
+
 			}
-			;
+
 			this.m_view.reloadTimerMc.alpha = 1;
 			this.m_view.reloadTimerMc.bar.scaleX = 0;
 			this.m_view.reloadTimerMc.bulletActiveMc.y = 23;
@@ -192,7 +192,7 @@ public class WeaponHintsElement extends BaseControl {
 				m_reloadTimerAnimCalled = false;
 			});
 		}
-		;
+
 	}
 
 	private function runBulletChamberingTimer(duration:Number, nAmmoInClip:int, nAmmoRemaining:int, nCurrentAmmoType:int, start:Boolean):void {
@@ -207,7 +207,7 @@ public class WeaponHintsElement extends BaseControl {
 			if (((nAmmoRemaining < 1) || (nAmmoInClip == nAmmoRemaining))) {
 				return;
 			}
-			;
+
 			nAmmoTypeFrameOffset = 0;
 			this.m_view.bulletChamberingTimerMc.bulletActiveMc.gotoAndStop(1);
 			if (nCurrentAmmoType == 1) {
@@ -218,9 +218,9 @@ public class WeaponHintsElement extends BaseControl {
 					this.m_view.bulletChamberingTimerMc.bulletActiveMc.gotoAndStop(3);
 					nAmmoTypeFrameOffset = 28;
 				}
-				;
+
 			}
-			;
+
 			this.m_view.bulletChamberingTimerMc.alpha = 1;
 			this.m_view.bulletChamberingTimerMc.bar.scaleX = 0;
 			this.m_view.bulletChamberingTimerMc.bulletActiveMc.y = 23;
@@ -235,7 +235,7 @@ public class WeaponHintsElement extends BaseControl {
 				Animate.to(m_view.bulletChamberingTimerMc, 0.2, 0, {"alpha": 0}, Animate.ExpoOut);
 			});
 		}
-		;
+
 	}
 
 	private function setElementFormats(_arg_1:String):void {

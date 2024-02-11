@@ -37,7 +37,7 @@ public dynamic class CategoryElement extends CategoryElementBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -76,9 +76,9 @@ public dynamic class CategoryElement extends CategoryElementBase {
 				MenuUtils.setupIcon(this.m_view.tileIcon, this.m_icon, MenuConstants.COLOR_WHITE, true, false);
 				this.changeTextColor(MenuConstants.COLOR_WHITE);
 			}
-			;
+
 		}
-		;
+
 	}
 
 

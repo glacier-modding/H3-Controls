@@ -71,7 +71,7 @@ public dynamic class OptionsInfoLowerLeftPreview extends OptionsInfoSlideshowPre
 			tracker.scaleX = (tracker.scaleY = 0.35);
 			getPreviewContentContainer().addChild(tracker);
 		}
-		;
+
 		heroMapTracker = new PlayerHeroMapTracker();
 		heroMapTracker.name = "heroMapTracker";
 		heroMapTracker.scaleX = (heroMapTracker.scaleY = 0.45);
@@ -160,7 +160,7 @@ public dynamic class OptionsInfoLowerLeftPreview extends OptionsInfoSlideshowPre
 					flags = (flags & (~(VitalInfoBar.ANIMFLAG_LOOKOUT_LABEL_NO_FLASH)));
 					break;
 			}
-			;
+
 			this.m_evergreenVitalInfoBar.animationFlags = flags;
 			this.m_evergreenVitalInfoBar.onSetData({
 				"isAssassinNearby": isEvergreenAssassinProximityEnabled,
@@ -171,7 +171,7 @@ public dynamic class OptionsInfoLowerLeftPreview extends OptionsInfoSlideshowPre
 				"isPrestigeObjectiveActive": false
 			});
 		}
-		;
+
 		if (isMinimapFixed) {
 			this.m_degMinimapRotationMin = 0;
 			this.m_degMinimapRotationMax = 0;
@@ -179,7 +179,7 @@ public dynamic class OptionsInfoLowerLeftPreview extends OptionsInfoSlideshowPre
 			this.m_degMinimapRotationMin = (((!(data.previewData)) || (data.previewData.degMinimapRotationMin == null)) ? 155 : data.previewData.degMinimapRotationMin);
 			this.m_degMinimapRotationMax = (((!(data.previewData)) || (data.previewData.degMinimapRotationMax == null)) ? 155 : data.previewData.degMinimapRotationMax);
 		}
-		;
+
 		if (!isMinimapEnabled) {
 			this.m_minimapPseudoView.visible = false;
 			this.m_statusMarkers.visible = false;
@@ -205,7 +205,7 @@ public dynamic class OptionsInfoLowerLeftPreview extends OptionsInfoSlideshowPre
 			for each (tracker in this.m_minimapNpcMarkers) {
 				tracker.visible = ((showNpcs) && (isMinimapNpcsEnabled));
 			}
-			;
+
 			if (((!(showNpcs)) || (nMinimapShowTargets == UIOPTION_MINIMAP_SHOWTARGETS_OFF))) {
 				this.m_minimapTargetMarker1.visible = false;
 				this.m_minimapTargetMarker2.visible = false;
@@ -223,9 +223,9 @@ public dynamic class OptionsInfoLowerLeftPreview extends OptionsInfoSlideshowPre
 					"levelCheckResult": 0
 				});
 			}
-			;
+
 		}
-		;
+
 		if (((!(data.previewData)) || (!(data.previewData.showVitalInfo)))) {
 			this.m_aiInformation.visible = false;
 		} else {
@@ -236,7 +236,7 @@ public dynamic class OptionsInfoLowerLeftPreview extends OptionsInfoSlideshowPre
 				m_aiInformation.showAIinformation(m_lstrAiInformationSample);
 			}, 250);
 		}
-		;
+
 		this.updateMinimapRotation();
 	}
 
@@ -249,7 +249,7 @@ public dynamic class OptionsInfoLowerLeftPreview extends OptionsInfoSlideshowPre
 			_local_3 = (0.5 - (0.5 * Math.cos((Math.PI * _local_2))));
 			_local_1 = (this.m_degMinimapRotationMin + (_local_3 * (this.m_degMinimapRotationMax - this.m_degMinimapRotationMin)));
 		}
-		;
+
 		this.m_minimapPseudoView.rotation = _local_1;
 		this.projectToMinimapEdge(this.m_minimapNorthMarker, 270);
 		this.projectToMinimapEdge(this.m_minimapTargetMarker1, 115);
@@ -265,11 +265,11 @@ public dynamic class OptionsInfoLowerLeftPreview extends OptionsInfoSlideshowPre
 		while (_local_6 < 0) {
 			_local_6 = (_local_6 + 360);
 		}
-		;
+
 		while (_local_6 > 360) {
 			_local_6 = (_local_6 - 360);
 		}
-		;
+
 		if (((_local_6 >= 45) && (_local_6 < 135))) {
 			_local_7 = (((_local_6 - 90) * Math.PI) / 180);
 			_arg_1.y = ((_local_4 + (_local_5 / 2)) - (_arg_1.height / 2));
@@ -289,11 +289,11 @@ public dynamic class OptionsInfoLowerLeftPreview extends OptionsInfoSlideshowPre
 					_arg_1.x = ((_local_3 + (_local_5 / 2)) - (_arg_1.width / 2));
 					_arg_1.y = (_local_4 + (((_local_5 / 2) - (_arg_1.height / 2)) * Math.tan(_local_7)));
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override protected function onPreviewRemovedFromStage():void {

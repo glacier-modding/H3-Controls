@@ -95,7 +95,7 @@ public class OutfitWidgetVR extends BaseControl {
 		} else {
 			this.m_imgOutfit.height = (this.m_mask_pxHeight * this.m_hitmanSuitCrop_fScale);
 		}
-		;
+
 		this.m_imgOutfit.scaleX = this.m_imgOutfit.scaleY;
 		this.m_imgOutfit.x = (-(this.m_imgOutfit.width) + ((this.m_imgOutfit.width - this.m_mask_pxWidth) / 2));
 	}
@@ -113,7 +113,7 @@ public class OutfitWidgetVR extends BaseControl {
 			this.m_container.x = 0;
 			this.m_container.alpha = 1;
 		}
-		;
+
 	}
 
 	private function repositionTextFields(_arg_1:Boolean):void {
@@ -138,7 +138,7 @@ public class OutfitWidgetVR extends BaseControl {
 			this.m_txtHeader.alpha = 1;
 			this.m_txtOutfitName.alpha = 1;
 		}
-		;
+
 	}
 
 	private function onPropertiesChanged():void {

@@ -40,7 +40,7 @@ public dynamic class ModalDialogGenericCheckboxButton extends ModalDialogGeneric
 		if (((m_isSelected) && (!(this.m_isChecked)))) {
 			MenuUtils.setupIcon(m_view.tileIcon, m_iconLabel, MenuConstants.COLOR_WHITE, true, false);
 		}
-		;
+
 		m_view.tileIcon.icons.visible = this.m_isChecked;
 	}
 
@@ -53,12 +53,12 @@ public dynamic class ModalDialogGenericCheckboxButton extends ModalDialogGeneric
 		if (m_isSelected) {
 			_local_1 = STATE_SELECTED;
 		}
-		;
+
 		this.setSelectedAnimationState(_local_1);
 		if (this.m_updateSubmitEnabled != null) {
 			this.m_updateSubmitEnabled();
 		}
-		;
+
 	}
 
 

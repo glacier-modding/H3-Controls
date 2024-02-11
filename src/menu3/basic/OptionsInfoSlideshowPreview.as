@@ -97,19 +97,19 @@ public dynamic class OptionsInfoSlideshowPreview extends OptionsInfo {
 				framesNew = new <Frame>[new Frame(data.backgroundImage, 0, 1, null)];
 				this.m_msDurationTotal = 1;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_frames) {
 			this.m_frames.forEach(function (_arg_1:Frame):void {
 				if (m_frameBitmap.bitmapData == _arg_1.bitmapData) {
 					m_frameBitmap.bitmapData = null;
 				}
-				;
+
 				_arg_1.unloadImage();
 			});
 		}
-		;
+
 		this.m_frames = framesNew;
 		this.m_isPingPong = ((data.previewData) && (data.previewData.isPingPong));
 		this.m_isLockedAtFirstFrame = ((data.previewData) && (data.previewData.isLockedAtFirstFrame));
@@ -132,16 +132,16 @@ public dynamic class OptionsInfoSlideshowPreview extends OptionsInfo {
 				this.onPreviewSlideshowExitedFrameLabel(this.m_labelCurrentFrame);
 				this.m_labelCurrentFrame = null;
 			}
-			;
+
 			return;
 		}
-		;
+
 		var _local_4:int = (this.m_frames.length - 1);
 		var _local_5:int = getTimer();
 		if (this.m_isLockedAtFirstFrame) {
 			this.m_msAnimationOrigin = _local_5;
 		}
-		;
+
 		this.m_dirCurrent = Dir_Forward;
 		if (!this.m_isPingPong) {
 			_local_6 = ((_local_5 - this.m_msAnimationOrigin) % this.m_msDurationTotal);
@@ -151,9 +151,9 @@ public dynamic class OptionsInfoSlideshowPreview extends OptionsInfo {
 				_local_6 = (((2 * this.m_msDurationTotal) - _local_6) - 1);
 				this.m_dirCurrent = Dir_Backward;
 			}
-			;
+
 		}
-		;
+
 		var _local_7:int;
 		while (_local_7 < this.m_frames.length) {
 			_local_11 = this.m_frames[_local_7];
@@ -164,10 +164,10 @@ public dynamic class OptionsInfoSlideshowPreview extends OptionsInfo {
 				this.m_iCurrentFrame = _local_7;
 				this.m_labelCurrentFrame = _local_11.label;
 			}
-			;
+
 			_local_7++;
 		}
-		;
+
 		var _local_8:int = _local_1;
 		var _local_9:int = _local_3;
 		var _local_10:String = _local_2;
@@ -175,7 +175,7 @@ public dynamic class OptionsInfoSlideshowPreview extends OptionsInfo {
 			if (_local_10) {
 				this.onPreviewSlideshowExitedFrameLabel(_local_10);
 			}
-			;
+
 			if (((_local_8 <= 0) && (_local_9 == Dir_Backward))) {
 				if (this.m_isPingPong) {
 					_local_9 = Dir_Forward;
@@ -183,7 +183,7 @@ public dynamic class OptionsInfoSlideshowPreview extends OptionsInfo {
 				} else {
 					_local_8 = _local_4;
 				}
-				;
+
 			} else {
 				if (((_local_8 >= _local_4) && (_local_9 == Dir_Forward))) {
 					if (this.m_isPingPong) {
@@ -192,20 +192,20 @@ public dynamic class OptionsInfoSlideshowPreview extends OptionsInfo {
 					} else {
 						_local_8 = 0;
 					}
-					;
+
 				} else {
 					_local_8 = (_local_8 + _local_9);
 				}
-				;
+
 			}
-			;
+
 			_local_10 = this.m_frames[_local_8].label;
 			if (_local_10) {
 				this.onPreviewSlideshowEnteredFrameLabel(_local_10);
 			}
-			;
+
 		}
-		;
+
 		if (!this.m_previewContentContainer.visible) {
 			this.m_previewContentContainer.visible = this.m_frames[0].isLoaded;
 			if (!this.m_isImmediateLoad) {
@@ -213,23 +213,23 @@ public dynamic class OptionsInfoSlideshowPreview extends OptionsInfo {
 					_local_12.alpha = 0;
 					Animate.to(_local_12, 0.25, 0, {"alpha": 1}, Animate.SineOut);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function areFramesSynchronized(_arg_1:int, _arg_2:int, _arg_3:int, _arg_4:int):Boolean {
 		if (((_arg_1 == 0) && (_arg_3 == 0))) {
 			return (true);
 		}
-		;
+
 		var _local_5:int = (this.m_frames.length - 1);
 		if (((_arg_1 == _local_5) && (_arg_3 == _local_5))) {
 			return (true);
 		}
-		;
+
 		return ((_arg_1 == _arg_3) && (_arg_2 == _arg_4));
 	}
 
@@ -248,13 +248,13 @@ public dynamic class OptionsInfoSlideshowPreview extends OptionsInfo {
 					if (m_frameBitmap.bitmapData == _local_1.bitmapData) {
 						m_frameBitmap.bitmapData = null;
 					}
-					;
+
 					_local_1.unloadImage();
 				}
-				;
+
 				m_frames = null;
 			}
-			;
+
 		}, (1000 / 20));
 	}
 

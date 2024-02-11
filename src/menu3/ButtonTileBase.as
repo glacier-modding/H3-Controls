@@ -27,7 +27,7 @@ public dynamic class ButtonTileBase extends MenuElementTileBase {
 	protected var m_iconName:String;
 	protected var m_GroupSelected:Boolean = false;
 	protected var m_textTicker:textTicker;
-	protected var m_textObj:Object = new Object();
+	protected var m_textObj:Object = {};
 	protected var m_infoText:String;
 	protected var m_currentState:int = 0;
 	protected var m_currentSubState:String = "default";
@@ -54,12 +54,12 @@ public dynamic class ButtonTileBase extends MenuElementTileBase {
 		if (_arg_1.substate != null) {
 			this.m_currentSubState = _arg_1.substate;
 		}
-		;
+
 		this.m_infoText = "";
 		if (_arg_1.infoTitle != null) {
 			this.m_infoText = _arg_1.infoTitle;
 		}
-		;
+
 		MenuUtils.setupTextUpper(this.m_view.information, this.m_infoText, 22, MenuConstants.FONT_TYPE_MEDIUM);
 		MenuUtils.truncateHTMLField(this.m_view.information, this.m_view.information.htmlText);
 		if (_arg_1.infoPlayer != null) {
@@ -75,10 +75,10 @@ public dynamic class ButtonTileBase extends MenuElementTileBase {
 			if (this.m_infoText.length > 0) {
 				_local_4 = (this.m_view.information.htmlText + _local_4);
 			}
-			;
+
 			this.m_view.information.htmlText = _local_4;
 		}
-		;
+
 		this.m_currentState = ((m_isSelected) ? this.STATE_SELECTED : this.STATE_DEFAULT);
 		if (((_arg_1.hasOwnProperty("disabled")) && (_arg_1.disabled == true))) {
 			this.m_currentState = this.STATE_DISABLED;
@@ -86,9 +86,9 @@ public dynamic class ButtonTileBase extends MenuElementTileBase {
 			if (getNodeProp(this, "selectable") == false) {
 				this.m_currentState = this.STATE_NOT_SELECTABLE;
 			}
-			;
+
 		}
-		;
+
 		MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_BUTTON_TILE_DESELECTED, true, 1);
 	}
 
@@ -96,7 +96,7 @@ public dynamic class ButtonTileBase extends MenuElementTileBase {
 		if (this.m_currentState == this.STATE_DISABLED) {
 			return;
 		}
-		;
+
 		this.m_currentState = ((m_isSelected) ? this.STATE_SELECTED : this.STATE_DEFAULT);
 		this.updateState();
 	}
@@ -106,14 +106,14 @@ public dynamic class ButtonTileBase extends MenuElementTileBase {
 			this.m_GroupSelected = _arg_1;
 			this.updateState();
 		}
-		;
+
 	}
 
 	override public function setItemSelected(_arg_1:Boolean):void {
 		if (m_isSelected == _arg_1) {
 			return;
 		}
-		;
+
 		m_isSelected = _arg_1;
 		this.handleSelectionChange();
 	}
@@ -130,18 +130,18 @@ public dynamic class ButtonTileBase extends MenuElementTileBase {
 				if (this.m_currentSubState == this.SUBSTATE_DONE) {
 					_arg_1 = MenuConstants.COLOR_GREEN;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		this.m_view.header.textColor = MenuConstants.COLOR_WHITE;
 		this.m_view.title.textColor = _arg_1;
 		this.m_view.information.textColor = _arg_1;
 		if (this.m_textTicker) {
 			this.m_textTicker.setTextColor(_arg_1);
 		}
-		;
+
 	}
 
 	protected function completeAnimations():void {
@@ -153,7 +153,7 @@ public dynamic class ButtonTileBase extends MenuElementTileBase {
 		if (m_loading) {
 			return;
 		}
-		;
+
 		this.callTextTicker(m_isSelected);
 		if (((_arg_2 == this.STATE_NOT_SELECTABLE) || (_arg_2 == this.STATE_DISABLED))) {
 			setPopOutScale(_arg_1, false);
@@ -163,7 +163,7 @@ public dynamic class ButtonTileBase extends MenuElementTileBase {
 			if (_arg_1.buttonnumber) {
 				MenuUtils.setColor(_arg_1.buttonnumber, MenuConstants.COLOR_GREY, false);
 			}
-			;
+
 		} else {
 			if (_arg_2 == this.STATE_SELECTED) {
 				setPopOutScale(_arg_1, true);
@@ -174,7 +174,7 @@ public dynamic class ButtonTileBase extends MenuElementTileBase {
 				if (_arg_1.buttonnumber) {
 					MenuUtils.setColor(_arg_1.buttonnumber, MenuConstants.COLOR_WHITE, false);
 				}
-				;
+
 			} else {
 				setPopOutScale(_arg_1, false);
 				_arg_1.dropShadow.alpha = 0;
@@ -184,7 +184,7 @@ public dynamic class ButtonTileBase extends MenuElementTileBase {
 					if (_arg_1.buttonnumber) {
 						MenuUtils.setColor(_arg_1.buttonnumber, MenuConstants.COLOR_GREY, false);
 					}
-					;
+
 					this.changeTextColor(MenuConstants.COLOR_GREY);
 				} else {
 					this.changeTextColor(MenuConstants.COLOR_WHITE);
@@ -193,30 +193,30 @@ public dynamic class ButtonTileBase extends MenuElementTileBase {
 					if (_arg_1.buttonnumber) {
 						MenuUtils.setColor(_arg_1.buttonnumber, MenuConstants.COLOR_WHITE, false);
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	protected function callTextTicker(_arg_1:Boolean):void {
 		if (!this.m_textTicker) {
 			this.m_textTicker = new textTicker();
 		}
-		;
+
 		if (_arg_1) {
 			if (((this.m_titleChanged) || (!(this.m_textTicker.isRunning())))) {
 				this.m_textTicker.startTextTicker(this.m_view.title, this.m_textObj.title);
 			}
-			;
+
 		} else {
 			this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 			MenuUtils.truncateTextfield(this.m_view.title, 1, null);
 		}
-		;
+
 		this.m_titleChanged = false;
 	}
 
@@ -231,7 +231,7 @@ public dynamic class ButtonTileBase extends MenuElementTileBase {
 			this.m_textObj.title = this.m_view.title.htmlText;
 			MenuUtils.truncateTextfield(this.m_view.title, 1, null);
 		}
-		;
+
 	}
 
 	protected function showText(_arg_1:Boolean):void {
@@ -244,7 +244,7 @@ public dynamic class ButtonTileBase extends MenuElementTileBase {
 			this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 			this.m_textTicker = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 

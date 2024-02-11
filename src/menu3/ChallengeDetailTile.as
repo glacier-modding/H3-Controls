@@ -45,7 +45,7 @@ public dynamic class ChallengeDetailTile extends MenuElementBase {
 		if (_arg_1.progress != null) {
 			this.setupProgress(_arg_1.progress.count, _arg_1.progress.total);
 		}
-		;
+
 		var _local_2:Boolean;
 		var _local_3:Boolean;
 		if (_arg_1.rewards) {
@@ -55,20 +55,20 @@ public dynamic class ChallengeDetailTile extends MenuElementBase {
 					_local_2 = true;
 					this.setupMasteryReward(_local_4, _arg_1.completed);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.unlocks) {
 			if (_arg_1.unlocks.length > 0) {
 				_local_5 = _arg_1.unlocks[0];
 				_local_3 = true;
 				this.setupChallengeUnlocks(_local_5, _arg_1.completed);
 			}
-			;
+
 		}
-		;
+
 		if (((_local_2) || (_local_3))) {
 			this.createSeparatorLine();
 			MenuUtils.setupText(this.m_view.rewardsTitle, _arg_1.rewardsTitle, 28, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorWhite);
@@ -76,11 +76,11 @@ public dynamic class ChallengeDetailTile extends MenuElementBase {
 			if (((_local_2) && (!(_local_3)))) {
 				this.m_view.challengeMastery.y = this.m_view.challengeUnlocks.y;
 			}
-			;
+
 		} else {
 			this.m_view.rewardsTitle.visible = false;
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -90,22 +90,22 @@ public dynamic class ChallengeDetailTile extends MenuElementBase {
 			while (this.m_view.challengeUnlocks.perks.numChildren > 0) {
 				this.m_view.challengeUnlocks.perks.removeChildAt(0);
 			}
-			;
+
 			if (this.m_unlocksImageLoader != null) {
 				this.m_unlocksImageLoader.cancelIfLoading();
 				this.m_view.challengeUnlocks.image.removeChild(this.m_unlocksImageLoader);
 				this.m_unlocksImageLoader = null;
 			}
-			;
+
 			if (this.m_verticalSeparator != null) {
 				this.m_view.removeChild(this.m_verticalSeparator);
 				this.m_verticalSeparator = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -121,7 +121,7 @@ public dynamic class ChallengeDetailTile extends MenuElementBase {
 			MenuUtils.setupIcon(this.m_view.headerClip.icon, _arg_3, MenuConstants.COLOR_WHITE, true, true, MenuConstants.COLOR_MENU_TABS_BACKGROUND, MenuConstants.MenuElementBackgroundAlpha);
 			this.m_view.headerClip.icon.visible = true;
 		}
-		;
+
 	}
 
 	private function setupBody(_arg_1:String):void {
@@ -144,7 +144,7 @@ public dynamic class ChallengeDetailTile extends MenuElementBase {
 			MenuUtils.setupText(this.m_view.progressClip.value, ((String(_arg_1) + "/") + String(_arg_2)), 18, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorWhite);
 			Animate.to(this.m_view.progressClip.progressbar, 0.6, 0.1, {"scaleX": (_arg_1 / _arg_2)}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 	private function setupMasteryReward(_arg_1:Object, _arg_2:Boolean):void {
@@ -170,7 +170,7 @@ public dynamic class ChallengeDetailTile extends MenuElementBase {
 			this.setupUnlockPerks(_arg_1.perks);
 			this.setupUnlockImage(_arg_1.image);
 		}
-		;
+
 	}
 
 	private function setupUnlockRarity(_arg_1:String):void {
@@ -183,7 +183,7 @@ public dynamic class ChallengeDetailTile extends MenuElementBase {
 		} else {
 			this.m_view.challengeUnlocks.rarityIcon.visible = false;
 		}
-		;
+
 	}
 
 	private function setupUnlockPerks(_arg_1:Array):void {
@@ -192,15 +192,15 @@ public dynamic class ChallengeDetailTile extends MenuElementBase {
 		while (this.m_view.challengeUnlocks.perks.numChildren > 0) {
 			this.m_view.challengeUnlocks.perks.removeChildAt(0);
 		}
-		;
+
 		if (((_arg_1 == null) || (_arg_1.length == 0))) {
 			return;
 		}
-		;
+
 		if (((_arg_1.length == 1) && (_arg_1[0] == "NONE"))) {
 			return;
 		}
-		;
+
 		var _local_2:int;
 		var _local_5:int;
 		while (_local_5 < _arg_1.length) {
@@ -212,7 +212,7 @@ public dynamic class ChallengeDetailTile extends MenuElementBase {
 			_local_2 = (_local_2 + 50);
 			_local_5++;
 		}
-		;
+
 	}
 
 	private function setupUnlockImage(imagePath:String):void {
@@ -220,7 +220,7 @@ public dynamic class ChallengeDetailTile extends MenuElementBase {
 			this.m_unlocksImageLoader.cancelIfLoading();
 			this.m_view.challengeUnlocks.image.removeChild(this.m_unlocksImageLoader);
 		}
-		;
+
 		if (((imagePath) && (imagePath.length > 0))) {
 			this.m_unlocksImageLoader = new MenuImageLoader();
 			this.m_view.challengeUnlocks.image.addChild(this.m_unlocksImageLoader);
@@ -230,7 +230,7 @@ public dynamic class ChallengeDetailTile extends MenuElementBase {
 				MenuUtils.scaleProportionalByHeight(DisplayObject(m_unlocksImageLoader.getImage()), 152);
 			});
 		}
-		;
+
 	}
 
 

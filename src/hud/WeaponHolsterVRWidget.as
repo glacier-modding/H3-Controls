@@ -66,11 +66,11 @@ public class WeaponHolsterVRWidget extends BaseControl {
 					this.m_view.iconOnBackPri_mc.x = 70.5;
 					this.setWeaponOnBackIcon(this.m_view.iconOnBackPri_mc, 0.46, false);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.itemSecondary == null) {
 			this.m_view.imageHolderSec_mc.visible = false;
 			this.setLegalStateIcon(this.m_view.iconSec_mc, 0.23, LEGALSTATE_CLEAR);
@@ -81,7 +81,7 @@ public class WeaponHolsterVRWidget extends BaseControl {
 			this.setLegalStateIcon(this.m_view.iconSec_mc, 0.23, _arg_1.itemSecondary.legalState);
 			this.setWeaponOnBackIcon(this.m_view.iconOnBackSec_mc, 0.23, true);
 		}
-		;
+
 	}
 
 	public function onHandEnteredHolster():void {
@@ -97,7 +97,7 @@ public class WeaponHolsterVRWidget extends BaseControl {
 			this.loadPrimaryImage(_arg_1);
 			this.m_currentPrimaryImage = _arg_1;
 		}
-		;
+
 	}
 
 	private function setSecondaryWeaponImage(_arg_1:String):void {
@@ -105,7 +105,7 @@ public class WeaponHolsterVRWidget extends BaseControl {
 			this.loadSecondaryImage(_arg_1);
 			this.m_currentSecondaryImage = _arg_1;
 		}
-		;
+
 	}
 
 	private function loadPrimaryImage(imagePath:String):void {
@@ -123,21 +123,21 @@ public class WeaponHolsterVRWidget extends BaseControl {
 				m_primaryLoader.rotation = -90;
 				_local_1 = true;
 			}
-			;
+
 			m_primaryLoader.width = REDUCED_WIDTH;
 			m_primaryLoader.scaleY = m_primaryLoader.scaleX;
 			if (m_primaryLoader.height > MAX_HEIGHT) {
 				m_primaryLoader.height = MAX_HEIGHT;
 				m_primaryLoader.scaleX = m_primaryLoader.scaleY;
 			}
-			;
+
 			m_primaryLoader.x = ((REDUCED_WIDTH / -2) - (m_primaryLoader.width / 2));
 			if (_local_1) {
 				m_primaryLoader.y = ((m_primaryLoader.height / 2) + ((MAX_HEIGHT - m_primaryLoader.height) / 2));
 			} else {
 				m_primaryLoader.y = ((m_primaryLoader.height / -2) + ((MAX_HEIGHT - m_primaryLoader.height) / 2));
 			}
-			;
+
 			m_primaryLoader.visible = true;
 		});
 	}
@@ -157,21 +157,21 @@ public class WeaponHolsterVRWidget extends BaseControl {
 				m_secondaryLoader.rotation = -90;
 				_local_1 = true;
 			}
-			;
+
 			m_secondaryLoader.width = REDUCED_WIDTH;
 			m_secondaryLoader.scaleY = m_secondaryLoader.scaleX;
 			if (m_secondaryLoader.height > MAX_HEIGHT) {
 				m_secondaryLoader.height = MAX_HEIGHT;
 				m_secondaryLoader.scaleX = m_secondaryLoader.scaleY;
 			}
-			;
+
 			m_secondaryLoader.x = ((REDUCED_WIDTH / -2) - (m_secondaryLoader.width / 2));
 			if (_local_1) {
 				m_secondaryLoader.y = ((m_secondaryLoader.height / 2) + ((MAX_HEIGHT - m_secondaryLoader.height) / 2));
 			} else {
 				m_secondaryLoader.y = ((m_secondaryLoader.height / -2) + ((MAX_HEIGHT - m_secondaryLoader.height) / 2));
 			}
-			;
+
 			m_secondaryLoader.visible = true;
 		});
 	}
@@ -185,7 +185,7 @@ public class WeaponHolsterVRWidget extends BaseControl {
 		} else {
 			_arg_1.visible = false;
 		}
-		;
+
 	}
 
 	private function setWeaponOnBackIcon(_arg_1:MovieClip, _arg_2:Number, _arg_3:Boolean):void {
@@ -197,7 +197,7 @@ public class WeaponHolsterVRWidget extends BaseControl {
 		} else {
 			_arg_1.visible = false;
 		}
-		;
+
 	}
 
 

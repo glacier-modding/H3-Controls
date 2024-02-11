@@ -40,7 +40,7 @@ public dynamic class ThumbnailSelectedltemTile extends Sprite implements IConfig
 		if (this.m_view == null) {
 			return;
 		}
-		;
+
 		this.unloadImage();
 		this.m_view.removeEventListener(MouseEvent.ROLL_OVER, this.handleMouseRollOverSelection, false);
 		this.m_thumbnailScrollingList = null;

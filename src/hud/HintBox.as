@@ -40,7 +40,7 @@ public class HintBox extends BaseControl {
 			this.m_view.y = 30;
 			Animate.legacyTo(this.m_view, 1, {"y": 0}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 

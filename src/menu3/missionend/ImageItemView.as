@@ -53,7 +53,7 @@ public dynamic class ImageItemView extends MissionRewardItemView {
 		if (this.m_selectionFrameView != null) {
 			return;
 		}
-		;
+
 		this.m_selectionFrameView = new ChallengeSelectionFrameView();
 		this.m_selectionFrameView.x = image.x;
 		this.m_selectionFrameView.y = image.y;
@@ -75,7 +75,7 @@ public dynamic class ImageItemView extends MissionRewardItemView {
 			this.visible = false;
 			this.image.visible = false;
 		}
-		;
+
 	}
 
 	public function animateIn(_arg_1:String):void {
@@ -107,7 +107,7 @@ public dynamic class ImageItemView extends MissionRewardItemView {
 			default:
 				Log.info(Log.ChannelDebug, this, " No state set for challenge-tile!?");
 		}
-		;
+
 	}
 
 	public function animateOut(val:*):void {
@@ -150,7 +150,7 @@ public dynamic class ImageItemView extends MissionRewardItemView {
 				_local_2 = (m_loader.width / m_loader.height);
 				_local_1 = m_loader;
 			}
-			;
+
 			var _local_3:int = imageMask.width;
 			var _local_4:int = imageMask.height;
 			_local_1.width = _local_3;
@@ -159,11 +159,11 @@ public dynamic class ImageItemView extends MissionRewardItemView {
 				_local_1.height = _local_4;
 				_local_1.width = (_local_4 * _local_2);
 			}
-			;
+
 			if (callback != null) {
 				callback();
 			}
-			;
+
 		}, failedCallback);
 	}
 
@@ -173,18 +173,18 @@ public dynamic class ImageItemView extends MissionRewardItemView {
 			if (this.m_loader.parent != null) {
 				this.m_loader.parent.removeChild(this.m_loader);
 			}
-			;
+
 			this.m_loader = null;
 		}
-		;
+
 		if (this.m_bitmapImage != null) {
 			if (this.m_bitmapImage.parent != null) {
 				this.m_bitmapImage.parent.removeChild(this.m_bitmapImage);
 			}
-			;
+
 			this.m_bitmapImage = null;
 		}
-		;
+
 	}
 
 

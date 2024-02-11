@@ -47,7 +47,7 @@ public dynamic class Divider extends MenuElementBase {
 		if (_arg_1.showLine !== true) {
 			return;
 		}
-		;
+
 		var _local_4:Number = ((_arg_1.lineWidth != null) ? _arg_1.lineWidth : 2);
 		var _local_5:String = ((_arg_1.direction != null) ? _arg_1.direction : "vertical");
 		var _local_6:Point = new Point(-1, 0);
@@ -62,7 +62,7 @@ public dynamic class Divider extends MenuElementBase {
 			this.m_line.graphics.drawRect(_local_6.x, (_local_6.y + _local_8), _local_2, _local_4);
 			this.m_line.graphics.endFill();
 		}
-		;
+
 	}
 
 

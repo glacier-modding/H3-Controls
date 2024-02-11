@@ -32,7 +32,7 @@ public class ButtonPrompts extends BaseControl {
 		while (this.m_promptsContainer.numChildren > 0) {
 			this.m_promptsContainer.removeChildAt(0);
 		}
-		;
+
 		var _local_2:Number = 0;
 		var _local_3:int;
 		while (_local_3 < _arg_1.buttonprompts.length) {
@@ -54,14 +54,14 @@ public class ButtonPrompts extends BaseControl {
 						_local_2 = (_local_2 + ((_local_8) ? (_local_4.width + 24) : _local_4.button.width));
 						_local_7++;
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			_local_3++;
 		}
-		;
+
 	}
 
 	private function addPrompt(_arg_1:Object, _arg_2:Number):MenuButtonLegendViewHUD {

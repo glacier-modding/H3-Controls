@@ -62,12 +62,12 @@ public dynamic class SearchTagElementCustomInput extends SearchTagElementCustom 
 			InputTextField.type = TextFieldType.INPUT;
 			this.m_allowKeyboardInput = true;
 		}
-		;
+
 		InputTextField.text = "";
 		if (_arg_1.maxchars != undefined) {
 			InputTextField.maxChars = _arg_1.maxchars;
 		}
-		;
+
 		InputTextField.addEventListener(Event.CHANGE, this.textInputChange);
 	}
 
@@ -79,9 +79,9 @@ public dynamic class SearchTagElementCustomInput extends SearchTagElementCustom 
 			} else {
 				this.setDescriptionStageFocusDelayed();
 			}
-			;
+
 		}
-		;
+
 		super.setState(_arg_1);
 	}
 
@@ -97,7 +97,7 @@ public dynamic class SearchTagElementCustomInput extends SearchTagElementCustom 
 		if (((this.m_currentState == STATE_SELECT) || (this.m_currentState == STATE_ACTIVE_SELECT))) {
 			stage.focus = InputTextField;
 		}
-		;
+
 	}
 
 	public function doTextFieldAccept():void {
@@ -106,7 +106,7 @@ public dynamic class SearchTagElementCustomInput extends SearchTagElementCustom 
 		} else {
 			this.onTextFieldEdited(InputTextField.text);
 		}
-		;
+
 	}
 
 	public function onTextFieldEdited(_arg_1:String):void {
@@ -114,25 +114,25 @@ public dynamic class SearchTagElementCustomInput extends SearchTagElementCustom 
 		if (!this.m_allowKeyboardInput) {
 			return;
 		}
-		;
+
 		if (!this["_nodedata"]) {
 			return;
 		}
-		;
+
 		if (this.m_sendEventWithValue == null) {
 			return;
 		}
-		;
+
 		var _local_2:int = (this["_nodedata"]["id"] as int);
 		var _local_3:String = StringUtil.trim(_arg_1.replace(/[\r\n\x08]+/g, ""));
 		if (_local_3.length <= 0) {
 			this.m_sendEventWithValue("onElementDown", _local_2);
 		} else {
-			_local_4 = new Array(_local_2, _local_3);
+			_local_4 = [_local_2, _local_3];
 			Log.info(Log.ChannelDebug, this, ("sending input " + _local_3));
 			this.m_sendEventWithValue("onInputEntered", _local_4);
 		}
-		;
+
 		InputTextField.text = "";
 	}
 
@@ -142,7 +142,7 @@ public dynamic class SearchTagElementCustomInput extends SearchTagElementCustom 
 		} else {
 			super.updateState();
 		}
-		;
+
 	}
 
 	override public function onAcceptPressed():void {
@@ -155,7 +155,7 @@ public dynamic class SearchTagElementCustomInput extends SearchTagElementCustom 
 		if (InputTextField.hasEventListener(Event.ENTER_FRAME)) {
 			return;
 		}
-		;
+
 		InputTextField.addEventListener(Event.ENTER_FRAME, this.onSetDescriptionStageFocus);
 	}
 
@@ -163,11 +163,11 @@ public dynamic class SearchTagElementCustomInput extends SearchTagElementCustom 
 		if (InputTextField.hasEventListener(Event.ENTER_FRAME)) {
 			InputTextField.removeEventListener(Event.ENTER_FRAME, this.onSetDescriptionStageFocus);
 		}
-		;
+
 		if (stage) {
 			stage.focus = null;
 		}
-		;
+
 		this.captureKeyboardInput(false);
 	}
 
@@ -177,7 +177,7 @@ public dynamic class SearchTagElementCustomInput extends SearchTagElementCustom 
 		if (this.m_allowKeyboardInput) {
 			this.captureKeyboardInput(true);
 		}
-		;
+
 	}
 
 	private function textInputChange(_arg_1:Event):void {
@@ -189,27 +189,27 @@ public dynamic class SearchTagElementCustomInput extends SearchTagElementCustom 
 		if (!this["_nodedata"]) {
 			return;
 		}
-		;
+
 		if (this.m_sendEventWithValue == null) {
 			return;
 		}
-		;
+
 		var _local_2:int = (this["_nodedata"]["id"] as int);
 		if (_arg_1.keyCode == MenuConstants.KEYCODE_ESC) {
 			this.m_sendEventWithValue("onElementCancel", _local_2);
 			if (isRequiredExplicitTextFocus()) {
 				this.removeDescriptionStageFocus();
 			}
-			;
+
 			return;
 		}
-		;
+
 		if (_arg_1.keyCode == MenuConstants.KEYCODE_F1) {
-			_local_3 = new Array(_local_2, "action-select");
+			_local_3 = [_local_2, "action-select"];
 			this.m_sendEventWithValue("onTriggerAction", _local_3);
 			return;
 		}
-		;
+
 		if (((_arg_1.keyCode == MenuConstants.KEYCODE_RIGHT) || (_arg_1.keyCode == MenuConstants.KEYCODE_DOWN))) {
 			if (((InputTextField.caretIndex >= InputTextField.length) && (!(_arg_1.shiftKey)))) {
 				if (_arg_1.keyCode == MenuConstants.KEYCODE_RIGHT) {
@@ -217,16 +217,16 @@ public dynamic class SearchTagElementCustomInput extends SearchTagElementCustom 
 				} else {
 					this.m_sendEventWithValue("onElementDown", _local_2);
 				}
-				;
+
 				return;
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.keyCode == MenuConstants.KEYCODE_ENTER) {
 			this.doTextFieldAccept();
 		}
-		;
+
 	}
 
 	private function captureKeyboardInput(_arg_1:Boolean):void {
@@ -237,7 +237,7 @@ public dynamic class SearchTagElementCustomInput extends SearchTagElementCustom 
 		} else {
 			InputTextField.removeEventListener(KeyboardEvent.KEY_DOWN, this.onKeyDownHandler);
 		}
-		;
+
 	}
 
 

@@ -43,9 +43,9 @@ public dynamic class OptionsInfoActionXpPreview extends OptionsInfoPreview {
 				this.m_idIntervalRefresh = setInterval(this.showNotification, 3000);
 				this.showNotification();
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function showNotification():void {

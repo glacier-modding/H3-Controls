@@ -32,7 +32,7 @@ public dynamic class MissionPaymentPage extends MenuElementBase {
 	private var m_bgBottom:Sprite = new Sprite();
 	private var m_bgList:Sprite = new Sprite();
 	private var m_posX:Number = 0;
-	private var m_elements:Array = new Array();
+	private var m_elements:Array = [];
 
 	public function MissionPaymentPage(_arg_1:Object) {
 		super(_arg_1);
@@ -55,7 +55,7 @@ public dynamic class MissionPaymentPage extends MenuElementBase {
 		if ((((_arg_1.loading) || (_arg_1.ContractPayment == undefined)) || (_arg_1.ContractPayment.Currency == undefined))) {
 			return;
 		}
-		;
+
 		this.addHeadline("AVAILABLE PAYOUT");
 		var _local_3:Object = _arg_1.ContractPayment.Currency;
 		var _local_4:Object = _local_3.Payment;
@@ -63,26 +63,26 @@ public dynamic class MissionPaymentPage extends MenuElementBase {
 			for each (_local_13 in _local_4) {
 				this.addLine(_local_13.Name, _local_13.Amount);
 			}
-			;
+
 		}
-		;
+
 		var _local_5:Object = _local_3.Bonuses;
 		if (_local_5 != null) {
 			for each (_local_14 in _local_5) {
 				this.addLine(_local_14.Name, _local_14.Amount);
 			}
-			;
+
 		}
-		;
+
 		this.addHeadline("DEDUCTIONS FOR EVIDENCE");
 		var _local_6:Object = _local_3.Expenses;
 		if (_local_6 != null) {
 			for each (_local_15 in _local_6) {
 				this.addLine(_local_15.Name, (_local_15.Amount * -1));
 			}
-			;
+
 		}
-		;
+
 		var _local_7:Object = _local_3.TotalPayment;
 		this.addHeadline("FINAL PAYOUT");
 		if (_local_7 != null) {
@@ -90,11 +90,11 @@ public dynamic class MissionPaymentPage extends MenuElementBase {
 				for (_local_17 in _local_16) {
 					this.addLine(_local_17, _local_16[_local_17]);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		var _local_8:Number = (0 - (MenuConstants.tileGap + MenuConstants.TabsLineUpperYPos));
 		var _local_9:Number = (this.LIST_LEFT - this.BG_BORDER);
 		var _local_10:Number = (this.LIST_WIDTH + (this.BG_BORDER * 2));
@@ -129,7 +129,7 @@ public dynamic class MissionPaymentPage extends MenuElementBase {
 		if (this.m_posX > 0) {
 			this.m_posX = (this.m_posX + this.LINE_HEIGHT);
 		}
-		;
+
 		var _local_2:TextField = this.createTextField();
 		MenuUtils.setupText(_local_2, _arg_1);
 		_local_2.y = this.m_posX;
@@ -166,7 +166,7 @@ public dynamic class MissionPaymentPage extends MenuElementBase {
 		for each (_local_1 in this.m_elements) {
 			this.m_listView.removeChild(_local_1);
 		}
-		;
+
 		this.m_elements.length = 0;
 		this.m_posX = 0;
 		this.clearBackground();
@@ -182,7 +182,7 @@ public dynamic class MissionPaymentPage extends MenuElementBase {
 			Animate.delay(this.m_elements[_local_1], _local_2, this.playSound, "ScoreRating");
 			_local_1++;
 		}
-		;
+
 	}
 
 	private function completeAnimations():void {
@@ -191,7 +191,7 @@ public dynamic class MissionPaymentPage extends MenuElementBase {
 			Animate.kill(this.m_elements[_local_1]);
 			_local_1++;
 		}
-		;
+
 	}
 
 	private function drawBackground():void {

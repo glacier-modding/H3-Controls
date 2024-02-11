@@ -67,7 +67,7 @@ public class WeaponSelector extends BaseControl {
 	private var m_actionIllegalWarningBackDrop:Sprite;
 	private var m_textTicker:textTicker;
 	private var m_textTickerUtilDesc:TextTickerUtil = new TextTickerUtil();
-	private var m_textObj:Object = new Object();
+	private var m_textObj:Object = {};
 	private var m_selectedIndex:int;
 	private var m_loadingOriginIndex:int;
 	private var m_previousSelectedIndex:int = -1;
@@ -84,9 +84,9 @@ public class WeaponSelector extends BaseControl {
 	private var m_itemInfoPosX:Number = 0;
 	private var m_animIndexStart:Number;
 	private var m_itemsInView:Number;
-	private var m_aChildrenPool:Array = new Array();
-	private var m_aChildrenImageLoaderPool:Array = new Array();
-	private var m_aChildrenImageLoader2Pool:Array = new Array();
+	private var m_aChildrenPool:Array = [];
+	private var m_aChildrenImageLoaderPool:Array = [];
+	private var m_aChildrenImageLoader2Pool:Array = [];
 	private var m_aWarnings:Array;
 	private var m_isActionInventory:Boolean;
 	private var m_initialImageLoaded:Boolean;
@@ -122,7 +122,7 @@ public class WeaponSelector extends BaseControl {
 			this.m_labelOffsetY = 48;
 			this.m_labelFont = MenuConstants.FONT_TYPE_BOLD;
 		}
-		;
+
 		this.m_selectedIndex = 0;
 		this.m_previousSelectedIndex = -1;
 		this.m_animIndexStart = 0;
@@ -152,7 +152,7 @@ public class WeaponSelector extends BaseControl {
 			this.m_warningInfoHolder.scaleX = 1.2;
 			this.m_warningInfoHolder.scaleY = 1.2;
 		}
-		;
+
 		this.m_weaponInfoHolder.addChild(this.m_warningInfoHolder);
 		this.instantiateWarningMessages();
 		this.m_weaponInfo = new WeaponSelectorInfoView();
@@ -176,7 +176,7 @@ public class WeaponSelector extends BaseControl {
 			this.m_weaponInfo.missing_mc.redback_mc.height = (this.m_weaponInfo.missing_mc.redback_mc.height * 1.2);
 			this.m_weaponInfo.desc_text.height = (this.m_weaponInfo.desc_text.height * 1.2);
 		}
-		;
+
 		this.reserveAvailableSlots(30);
 		MenuUtils.setupText(this.m_view.prompt_txt, "", this.m_fontSizeMedium, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraLight);
 		this.m_view.prompt_txt.autoSize = "left";
@@ -191,7 +191,7 @@ public class WeaponSelector extends BaseControl {
 			this.m_actionIllegalWarning.scaleX = 1.2;
 			this.m_actionIllegalWarning.scaleY = 1.2;
 		}
-		;
+
 		MenuUtils.setupText(this.m_actionIllegalWarning.title, Localization.get("UI_HUD_ACTION_ILLEGAL"), 16, this.m_labelFont, MenuConstants.FontColorWhite);
 		this.m_actionIllegalWarning.title.autoSize = "left";
 		this.m_actionIllegalWarningBackDrop = new Sprite();
@@ -206,7 +206,7 @@ public class WeaponSelector extends BaseControl {
 			this.m_poisonTypesHolder.scaleX = 1.2;
 			this.m_poisonTypesHolder.scaleY = 1.2;
 		}
-		;
+
 		this.m_weaponInfo.addChild(this.m_poisonTypesHolder);
 		this.m_poisonViewLethal = this.createPoisonType(1, Localization.get("UI_HUD_INVENTORY_POISON_TYPE_LETHAL"));
 		this.m_poisonViewSedative = this.createPoisonType(2, Localization.get("UI_HUD_INVENTORY_POISON_TYPE_SEDATIVE"));
@@ -220,7 +220,7 @@ public class WeaponSelector extends BaseControl {
 			this.m_killTypesHolder.scaleX = 1.2;
 			this.m_killTypesHolder.scaleY = 1.2;
 		}
-		;
+
 		this.m_weaponInfo.addChild(this.m_killTypesHolder);
 		this.reserveAvailableKillTypes(10);
 		this.m_ghostItemIndicator = new WeaponSelectorGhostItemView();
@@ -235,7 +235,7 @@ public class WeaponSelector extends BaseControl {
 		this.m_perksHolder.name = "m_perksHolder";
 		if (this.m_scaleUp) {
 		}
-		;
+
 		this.m_perksHolder.visible = false;
 		this.m_weaponInfo.addChild(this.m_perksHolder);
 		this.reservePerks(10);
@@ -269,7 +269,7 @@ public class WeaponSelector extends BaseControl {
 		if (this.m_killTypeViews.length >= _arg_1) {
 			return;
 		}
-		;
+
 		var _local_2:int = this.m_killTypeViews.length;
 		while (_local_2 < _arg_1) {
 			_local_3 = this.createKillType();
@@ -277,7 +277,7 @@ public class WeaponSelector extends BaseControl {
 			this.m_killTypeViews.push(_local_3);
 			_local_2++;
 		}
-		;
+
 	}
 
 	private function createKillType():WeaponSelectorKilltypeView {
@@ -297,7 +297,7 @@ public class WeaponSelector extends BaseControl {
 		if (this.m_perkIcons.length >= _arg_1) {
 			return;
 		}
-		;
+
 		var _local_2:Number = (this.xPerksRight - (PX_PERKICONSIZE / 2));
 		var _local_5:int = this.m_perkIcons.length;
 		while (_local_5 < _arg_1) {
@@ -313,7 +313,7 @@ public class WeaponSelector extends BaseControl {
 			this.m_perkIcons.push(_local_4);
 			_local_5++;
 		}
-		;
+
 	}
 
 	private function reserveAvailableSlots(_arg_1:int):void {
@@ -323,7 +323,7 @@ public class WeaponSelector extends BaseControl {
 		if (this.m_aChildrenPool.length >= _arg_1) {
 			return;
 		}
-		;
+
 		var _local_2:int = this.m_aChildrenPool.length;
 		while (_local_2 < _arg_1) {
 			_local_3 = new WeaponSlotView();
@@ -338,7 +338,7 @@ public class WeaponSelector extends BaseControl {
 			this.m_aChildrenPool.push(_local_3);
 			_local_2++;
 		}
-		;
+
 	}
 
 	public function onSetData(_arg_1:Object):void {
@@ -365,7 +365,7 @@ public class WeaponSelector extends BaseControl {
 			_local_5.visible = false;
 			_local_2++;
 		}
-		;
+
 		this.m_itemsInView = _arg_1.mainslotsSlim.length;
 		this.reserveAvailableSlots(this.m_itemsInView);
 		this.m_scaleDownFactor = NaN;
@@ -379,7 +379,7 @@ public class WeaponSelector extends BaseControl {
 			} else {
 				_local_6 = ((_arg_1.otherslotsCount > 0) ? this.m_locNoAvailableItems : this.m_locNoItems);
 			}
-			;
+
 			MenuUtils.setupText(this.m_view.action_txt, _local_6, 40, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorGreyMedium);
 			this.m_view.action_txt.visible = true;
 			this.m_weaponInfo.visible = false;
@@ -394,7 +394,7 @@ public class WeaponSelector extends BaseControl {
 			if (this.m_selectedIndex == -1) {
 				this.m_selectedIndex = 0;
 			}
-			;
+
 			this.m_loadingOriginIndex = this.m_selectedIndex;
 			this.m_animIndexStart = this.m_selectedIndex;
 			this.m_blockImageQueue = false;
@@ -403,17 +403,17 @@ public class WeaponSelector extends BaseControl {
 				this.loadImageFromQueue();
 				_local_7++;
 			}
-			;
+
 			this.setSelectedImage(true);
 		}
-		;
+
 	}
 
 	private function loadImageFromQueue():void {
 		if (((this.m_blockImageQueue) || (this.m_currentImageRequestIndex >= this.m_itemsInView))) {
 			return;
 		}
-		;
+
 		var _local_1:int = int(((this.m_currentImageRequestIndex + 1) / 2));
 		var _local_2:int = (((this.m_currentImageRequestIndex % 2) == 0) ? (this.m_loadingOriginIndex + _local_1) : (this.m_loadingOriginIndex - _local_1));
 		_local_2 = ((_local_2 + this.m_itemsInView) % this.m_itemsInView);
@@ -427,7 +427,7 @@ public class WeaponSelector extends BaseControl {
 		if (this.m_itemsInView <= 1) {
 			this.m_animIndexStart = this.m_selectedIndex;
 		}
-		;
+
 		this.m_animDirection = _arg_2;
 		if (!this.m_isRotationRunning) {
 			addEventListener(Event.ENTER_FRAME, this.onUpdateFrame);
@@ -435,7 +435,7 @@ public class WeaponSelector extends BaseControl {
 			this.m_currentFrame = getTimer();
 			this.m_prevFrame = this.m_currentFrame;
 		}
-		;
+
 		this.setSelectedImage();
 	}
 
@@ -450,7 +450,7 @@ public class WeaponSelector extends BaseControl {
 		if (this.m_scaleUp) {
 			this.m_weaponInfo.ammoDisplay.x = (this.m_weaponInfo.ammoDisplay.x - 20);
 		}
-		;
+
 	}
 
 	private function updateItemInformationWithSlotData(_arg_1:Object):void {
@@ -468,7 +468,7 @@ public class WeaponSelector extends BaseControl {
 		if (((_arg_1.nItemHUDType == 1) && (!(this.m_initialImageLoaded)))) {
 			return;
 		}
-		;
+
 		this.m_textTickerUtilDesc.onUnregister();
 		this.m_textObj = [];
 		this.m_weaponInfo.label_text.htmlText = "";
@@ -481,7 +481,7 @@ public class WeaponSelector extends BaseControl {
 			this.m_killTypeViews[_local_8].visible = false;
 			_local_2++;
 		}
-		;
+
 		this.m_ghostItemIndicator.visible = false;
 		this.m_actionIllegalWarning.visible = false;
 		MenuUtils.setColor(this.m_weaponInfo.line, ((_arg_1.notininventory) ? MenuConstants.COLOR_GREY_MEDIUM : MenuConstants.COLOR_GREY_ULTRA_LIGHT), false);
@@ -490,13 +490,13 @@ public class WeaponSelector extends BaseControl {
 			if (this.m_textTicker) {
 				this.m_textTicker.stopTextTicker(this.m_weaponInfo.label_text, _arg_1.label);
 			}
-			;
+
 			_local_3 = MenuConstants.FontColorGreyUltraLight;
 			_local_4 = MenuConstants.COLOR_GREY_ULTRA_LIGHT;
 			if (this.m_actionIllegalWarning) {
 				this.m_warningInfoHolder.removeChild(this.m_actionIllegalWarning);
 			}
-			;
+
 			this.m_poisonTypesHolder.visible = false;
 			if (((!(_arg_1.notininventory)) && (_arg_1.isIllegal))) {
 				this.m_isShowLineWanted = true;
@@ -510,9 +510,9 @@ public class WeaponSelector extends BaseControl {
 				if (_arg_1.sPoisonType != undefined) {
 					this.setupPoisonType(_arg_1.sPoisonType, _local_7);
 				}
-				;
+
 			}
-			;
+
 			if (_arg_1.notininventory) {
 				this.m_weaponInfo.missing_mc.missing_txt.htmlText = _arg_1.missingText;
 				this.m_weaponInfo.missing_mc.redback_mc.width = (Math.ceil(this.m_weaponInfo.missing_mc.missing_txt.textWidth) + 16);
@@ -524,13 +524,13 @@ public class WeaponSelector extends BaseControl {
 					this.m_textTickerUtilDesc.addTextTickerHtml(this.m_weaponInfo.desc_text);
 					this.m_textTickerUtilDesc.callTextTicker(true);
 				}
-				;
+
 				this.m_weaponInfo.desc_text.visible = true;
 				this.m_isShowLineWanted = true;
 				_local_3 = MenuConstants.FontColorGreyMedium;
 				_local_4 = MenuConstants.COLOR_GREY_MEDIUM;
 			}
-			;
+
 			this.m_weaponInfo.action_text.htmlText = _arg_1.actionName;
 			MenuUtils.setTextColor(this.m_weaponInfo.action_text, _local_4);
 			this.m_textObj.title = _arg_1.label;
@@ -541,17 +541,17 @@ public class WeaponSelector extends BaseControl {
 				if (!this.m_textTicker) {
 					this.m_textTicker = new textTicker();
 				}
-				;
+
 				this.m_textTicker.startTextTicker(this.m_weaponInfo.label_text, _arg_1.label, CommonUtils.changeFontToGlobalIfNeeded);
 				this.m_textTicker.setTextColor(_local_4);
 			}
-			;
+
 		} else {
 			MenuUtils.setTextColor(this.m_weaponInfo.label_text, MenuConstants.COLOR_GREY_ULTRA_LIGHT);
 			if (this.m_textTicker) {
 				this.m_textTicker.stopTextTicker(this.m_weaponInfo.label_text, _arg_1.label);
 			}
-			;
+
 			this.m_poisonTypesHolder.visible = false;
 			if (((_arg_1.isContainer) && (_arg_1.containsItem))) {
 				this.m_textObj.title = _arg_1.containedLabel;
@@ -561,11 +561,11 @@ public class WeaponSelector extends BaseControl {
 					if (!this.m_textTicker) {
 						this.m_textTicker = new textTicker();
 					}
-					;
+
 					this.m_textTicker.startTextTicker(this.m_weaponInfo.label_text, _arg_1.containedLabel, CommonUtils.changeFontToGlobalIfNeeded);
 					this.m_textTicker.setTextColor(MenuConstants.COLOR_GREY_ULTRA_LIGHT);
 				}
-				;
+
 				this.m_weaponInfo.container_label_text.htmlText = _arg_1.label;
 				if (_arg_1.bContainedItemSuspicious) {
 					this.m_isShowLineWanted = true;
@@ -581,15 +581,15 @@ public class WeaponSelector extends BaseControl {
 						} else {
 							this.showWarningMessage(2, true);
 						}
-						;
+
 					} else {
 						this.showWarningMessage(0, false);
 						this.showWarningMessage(1, false);
 						this.showWarningMessage(2, false);
 					}
-					;
+
 				}
-				;
+
 			} else {
 				this.m_textObj.title = _arg_1.label;
 				this.m_textObj.tf = this.m_weaponInfo.label_text;
@@ -598,11 +598,11 @@ public class WeaponSelector extends BaseControl {
 					if (!this.m_textTicker) {
 						this.m_textTicker = new textTicker();
 					}
-					;
+
 					this.m_textTicker.startTextTicker(this.m_weaponInfo.label_text, _arg_1.label, CommonUtils.changeFontToGlobalIfNeeded);
 					this.m_textTicker.setTextColor(MenuConstants.COLOR_GREY_ULTRA_LIGHT);
 				}
-				;
+
 				if (_arg_1.suspicious) {
 					this.m_isShowLineWanted = true;
 					this.showWarningMessage(0, false);
@@ -617,38 +617,38 @@ public class WeaponSelector extends BaseControl {
 						} else {
 							this.showWarningMessage(2, true);
 						}
-						;
+
 					} else {
 						this.showWarningMessage(0, false);
 						this.showWarningMessage(1, false);
 						this.showWarningMessage(2, false);
 					}
-					;
+
 				}
-				;
+
 				this.hideKillTypes();
 				if (((!(_arg_1.actionAndKillTypes == undefined)) || (_arg_1.nItemHUDType == 1))) {
 					if (((_arg_1.actionAndKillTypes.length > 0) || (_arg_1.nItemHUDType == 1))) {
 						this.m_isShowLineWanted = true;
 						this.setupKillTypes(_arg_1.actionAndKillTypes, ((_arg_1.nItemHUDType == 1) ? true : false));
 					}
-					;
+
 				}
-				;
+
 				if (_arg_1.sPoisonType != undefined) {
 					this.m_itemInfoPosX = this.setupPoisonType(_arg_1.sPoisonType, this.m_itemInfoPosX);
 				}
-				;
+
 				if (this.m_ghostItemIndicatorHolder != null) {
 					_local_8 = 0;
 					while (_local_8 < (this.m_ghostItemIndicatorHolder.numChildren - 1)) {
 						this.loopGhostItemIndicators(this.m_ghostItemIndicatorHolder.getChildAt(_local_8), false);
 						_local_8++;
 					}
-					;
+
 					this.m_weaponInfo.removeChild(this.m_ghostItemIndicatorHolder);
 				}
-				;
+
 				if (_arg_1.nItemHUDType == 1) {
 					_local_9 = this.m_aChildrenPool[this.m_selectedIndex];
 					this.m_ghostItemIndicatorHolder = new Sprite();
@@ -665,13 +665,13 @@ public class WeaponSelector extends BaseControl {
 						this.loopGhostItemIndicators(_local_13, true, (_local_9.weaponImage_mc.height / 4));
 						_local_12++;
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.notininventory) {
 			this.m_weaponInfo.ammoDisplay.ammoCurrent_txt.htmlText = "";
 			this.m_weaponInfo.ammoDisplay.ammoTotal_txt.htmlText = "";
@@ -683,7 +683,7 @@ public class WeaponSelector extends BaseControl {
 				} else {
 					this.m_weaponInfo.ammoDisplay.ammoTotal_txt.htmlText = "";
 				}
-				;
+
 			} else {
 				if (_arg_1.ammo > -1) {
 					this.m_weaponInfo.ammoDisplay.ammoCurrent_txt.htmlText = _arg_1.ammo;
@@ -696,13 +696,13 @@ public class WeaponSelector extends BaseControl {
 						this.m_weaponInfo.ammoDisplay.ammoCurrent_txt.htmlText = "";
 						this.m_weaponInfo.ammoDisplay.ammoTotal_txt.htmlText = "";
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		this.m_weaponInfo.ammoDisplay.ammoTotal_txt.x = (this.m_weaponInfo.ammoDisplay.ammoCurrent_txt.textWidth + 2);
 		this.UpdateAmmoDisplayPosition();
 		if (this.m_evergreenRarityLabel != null) {
@@ -710,7 +710,7 @@ public class WeaponSelector extends BaseControl {
 			this.m_evergreenRarityLabel = null;
 			this.m_perksHolder.x = 0;
 		}
-		;
+
 		if (EvergreenUtils.isValidRarityLabel(_arg_1.evergreenRarity)) {
 			this.m_evergreenRarityLabel = EvergreenUtils.createRarityLabel(_arg_1.evergreenRarity, false);
 			this.m_evergreenRarityLabel.name = "m_evergreenRarityLabel";
@@ -722,12 +722,12 @@ public class WeaponSelector extends BaseControl {
 			this.m_perksHolder.x = -(this.m_evergreenRarityLabel.width + PX_PERKICONGAP);
 			this.m_isShowLineWanted = true;
 		}
-		;
+
 		if (((!(this.m_evergreenLoseOnWoundedLabel == null)) && (!(_arg_1.evergreenLoseOnWounded)))) {
 			this.m_killTypesHolder.removeChild(this.m_evergreenLoseOnWoundedLabel);
 			this.m_evergreenLoseOnWoundedLabel = null;
 		}
-		;
+
 		if (_arg_1.evergreenLoseOnWounded === true) {
 			if (this.m_evergreenLoseOnWoundedLabel == null) {
 				this.m_evergreenLoseOnWoundedLabel = new WeaponSelectorKilltypeView();
@@ -736,20 +736,20 @@ public class WeaponSelector extends BaseControl {
 				this.m_evergreenLoseOnWoundedLabel.back_mc.width = (Math.ceil(this.m_evergreenLoseOnWoundedLabel.label_txt.textWidth) + 16);
 				this.m_killTypesHolder.addChild(this.m_evergreenLoseOnWoundedLabel);
 			}
-			;
+
 			this.m_evergreenLoseOnWoundedLabel.x = this.m_itemInfoPosX;
 			this.m_itemInfoPosX = (this.m_itemInfoPosX + (this.m_evergreenLoseOnWoundedLabel.width + 8));
 			this.m_evergreenLoseOnWoundedLabel.y = this.m_labelOffsetY;
 			this.m_isShowLineWanted = true;
 		}
-		;
+
 		this.m_perksHolder.visible = false;
 		if (((!(_arg_1.perks == undefined)) && (_arg_1.perks.length > 0))) {
 			this.setupPerks(_arg_1.perks);
 			this.m_perksHolder.visible = true;
 			this.m_isShowLineWanted = true;
 		}
-		;
+
 		this.showLine(this.m_isShowLineWanted);
 	}
 
@@ -762,7 +762,7 @@ public class WeaponSelector extends BaseControl {
 			} else {
 				_arg_1.rotation = MenuUtils.getRandomInRange(60, 120);
 			}
-			;
+
 			_local_4 = _arg_1.y;
 			_arg_1.y = (_local_4 + MenuUtils.getRandomInRange(-(_arg_3), _arg_3));
 			this.loopStart({
@@ -771,7 +771,7 @@ public class WeaponSelector extends BaseControl {
 				"orignalYPos": _local_4
 			});
 		}
-		;
+
 	}
 
 	private function loopStart(_arg_1:Object):void {
@@ -784,7 +784,7 @@ public class WeaponSelector extends BaseControl {
 		} else {
 			_arg_1.obj.rotation = MenuUtils.getRandomInRange(60, 120);
 		}
-		;
+
 		_arg_1.obj.y = (_arg_1.orignalYPos + MenuUtils.getRandomInRange(-(_arg_1.yRange), _arg_1.yRange));
 		this.loopStart(_arg_1);
 	}
@@ -793,7 +793,7 @@ public class WeaponSelector extends BaseControl {
 		if (this.m_showLine == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_showLine = _arg_1;
 		if (_arg_2) {
 			Animate.kill(this.m_weaponInfo.line);
@@ -801,7 +801,7 @@ public class WeaponSelector extends BaseControl {
 		} else {
 			Animate.to(this.m_weaponInfo.line, 0.2, 0, {"alpha": ((_arg_1) ? 1 : 0)}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 	private function setupPoisonType(_arg_1:String, _arg_2:Number):Number {
@@ -820,11 +820,11 @@ public class WeaponSelector extends BaseControl {
 				_local_3 = this.m_poisonViewEmetic;
 				break;
 		}
-		;
+
 		if (_local_3 == null) {
 			return (_arg_2);
 		}
-		;
+
 		this.m_isShowLineWanted = true;
 		var _local_4:Number = 8;
 		_local_3.x = _arg_2;
@@ -840,7 +840,7 @@ public class WeaponSelector extends BaseControl {
 			this.m_killTypeViews[_local_1].visible = false;
 			_local_1++;
 		}
-		;
+
 	}
 
 	private function setupKillTypes(_arg_1:Array, _arg_2:Boolean):void {
@@ -859,21 +859,21 @@ public class WeaponSelector extends BaseControl {
 			_local_3.visible = true;
 			_local_5++;
 		}
-		;
+
 		if (_arg_2) {
 			this.m_ghostItemIndicator.visible = true;
 			this.m_ghostItemIndicator.x = this.m_itemInfoPosX;
 			this.m_itemInfoPosX = (this.m_itemInfoPosX + (this.m_ghostItemIndicator.back_mc.width + _local_4));
 		}
-		;
+
 	}
 
 	private function instantiateWarningMessages():void {
 		var _local_3:WeaponSelectorWarningView;
 		var _local_4:Sprite;
 		this.m_warningInfoHolder.alpha = 1;
-		var _local_1:Array = new Array(Localization.get("UI_HUD_WEAPON_ILLEGAL"), Localization.get("UI_HUD_WEAPON_SUSPISIOUS"), Localization.get("UI_HUD_INVENTORY_NOT_DETECTED_DURING_FRISK"));
-		this.m_aWarnings = new Array();
+		var _local_1:Array = [Localization.get("UI_HUD_WEAPON_ILLEGAL"), Localization.get("UI_HUD_WEAPON_SUSPISIOUS"), Localization.get("UI_HUD_INVENTORY_NOT_DETECTED_DURING_FRISK")];
+		this.m_aWarnings = [];
 		var _local_2:int;
 		while (_local_2 < _local_1.length) {
 			_local_3 = new WeaponSelectorWarningView();
@@ -892,7 +892,7 @@ public class WeaponSelector extends BaseControl {
 			this.m_aWarnings.push(_local_3);
 			_local_2++;
 		}
-		;
+
 	}
 
 	public function showWarningMessage(_arg_1:int, _arg_2:Boolean):void {
@@ -900,19 +900,19 @@ public class WeaponSelector extends BaseControl {
 		if (_arg_1 == 0) {
 			this.m_itemInfoPosX = 0;
 		}
-		;
+
 		this.m_aWarnings[_arg_1].x = this.m_itemInfoPosX;
 		if (_arg_2) {
 			this.m_itemInfoPosX = (this.m_itemInfoPosX + (this.m_aWarnings[_arg_1].backDropHolder.getChildAt(0).width + 8));
 		}
-		;
+
 		var _local_3:Number = ((_arg_2) ? 1 : 0);
 		if (this.m_aWarnings[_arg_1].alpha != _local_3) {
 			Animate.to(this.m_aWarnings[_arg_1], 0.2, 0, {"alpha": _local_3}, Animate.ExpoOut);
 		} else {
 			Animate.kill(this.m_aWarnings[_arg_1]);
 		}
-		;
+
 	}
 
 	private function setupPerks(_arg_1:Array):void {
@@ -925,10 +925,10 @@ public class WeaponSelector extends BaseControl {
 			} else {
 				this.m_perkElements[_local_2].visible = false;
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 	}
 
 	public function UpdatePositions():void {
@@ -937,10 +937,10 @@ public class WeaponSelector extends BaseControl {
 			if (this.m_aChildrenPool[_local_1].visible) {
 				this.UpdatePosition(_local_1);
 			}
-			;
+
 			_local_1++;
 		}
-		;
+
 	}
 
 	private function calcScaleDownFactor():void {
@@ -953,9 +953,9 @@ public class WeaponSelector extends BaseControl {
 			if (this.m_scaleDownFactor < _local_3) {
 				this.m_scaleDownFactor = _local_3;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function UpdatePosition(_arg_1:int):void {
@@ -971,7 +971,7 @@ public class WeaponSelector extends BaseControl {
 		if (isNaN(this.m_scaleDownFactor)) {
 			this.calcScaleDownFactor();
 		}
-		;
+
 		_local_7 = ((Number(_arg_1) - this.m_animIndexStart) / this.m_itemsInView);
 		_local_8 = (((_local_2 * _local_7) + _local_3) + _local_4);
 		var _local_9:Number = (Math.cos(_local_8) * this.m_ellipseWidth);
@@ -991,14 +991,14 @@ public class WeaponSelector extends BaseControl {
 			this.m_aChildrenPool[_arg_1].scaleX = (this.m_aChildrenPool[_arg_1].scaleY = (_local_11 * this.m_scaleDownFactor));
 			this.m_aChildrenPool[_arg_1].alpha = _local_12;
 		}
-		;
+
 	}
 
 	private function setSelectedImage(_arg_1:Boolean = false):void {
 		if (this.m_previousSelectedIndex == this.m_selectedIndex) {
 			return;
 		}
-		;
+
 		var _local_2:Number = 1.75;
 		var _local_3:Number = 25;
 		if (((this.m_previousSelectedIndex >= 0) && (this.m_previousSelectedIndex < this.m_itemsInView))) {
@@ -1011,9 +1011,9 @@ public class WeaponSelector extends BaseControl {
 				Animate.to(this.m_aChildrenPool[this.m_previousSelectedIndex].weaponImage_mc, 0.2, 0, {"y": 0}, Animate.SineOut);
 				Animate.to(this.m_aChildrenPool[this.m_previousSelectedIndex].containedWeaponImage_mc, 0.2, 0, {"y": 0}, Animate.SineOut);
 			}
-			;
+
 		}
-		;
+
 		if (((this.m_selectedIndex >= 0) && (this.m_selectedIndex < this.m_itemsInView))) {
 			if (_arg_1) {
 				Animate.kill(this.m_aChildrenPool[this.m_selectedIndex].weaponImage_mc);
@@ -1024,9 +1024,9 @@ public class WeaponSelector extends BaseControl {
 				Animate.to(this.m_aChildrenPool[this.m_selectedIndex].weaponImage_mc, 0.2, 0, {"y": _local_3}, Animate.SineOut);
 				Animate.to(this.m_aChildrenPool[this.m_selectedIndex].containedWeaponImage_mc, 0.2, 0, {"y": _local_3}, Animate.SineOut);
 			}
-			;
+
 		}
-		;
+
 		this.m_previousSelectedIndex = this.m_selectedIndex;
 	}
 
@@ -1043,13 +1043,13 @@ public class WeaponSelector extends BaseControl {
 				_local_4 = (_local_4 - this.m_itemsInView);
 				this.m_animIndexStart = (this.m_animIndexStart - this.m_itemsInView);
 			}
-			;
+
 			if (((this.m_animIndexStart <= this.m_selectedIndex) && (_local_4 >= this.m_selectedIndex))) {
 				_local_4 = this.m_selectedIndex;
 				removeEventListener(Event.ENTER_FRAME, this.onUpdateFrame);
 				this.m_isRotationRunning = false;
 			}
-			;
+
 		} else {
 			_local_4 = (this.m_animIndexStart - _local_3);
 			if (((this.m_animIndexStart >= this.m_selectedIndex) && (_local_4 <= this.m_selectedIndex))) {
@@ -1061,11 +1061,11 @@ public class WeaponSelector extends BaseControl {
 					_local_4 = (_local_4 + this.m_itemsInView);
 					this.m_animIndexStart = (this.m_animIndexStart + this.m_itemsInView);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		this.m_animIndexStart = _local_4;
 		this.UpdatePositions();
 	}
@@ -1087,21 +1087,21 @@ public class WeaponSelector extends BaseControl {
 				weaponLoader.rotation = -90;
 				_local_1 = true;
 			}
-			;
+
 			weaponLoader.width = reducedWidth;
 			weaponLoader.scaleY = weaponLoader.scaleX;
 			if (weaponLoader.height > maxHeight) {
 				weaponLoader.height = maxHeight;
 				weaponLoader.scaleX = weaponLoader.scaleY;
 			}
-			;
+
 			weaponLoader.x = ((((m_inventoryBgHeight - 20) / 2) - weaponLoader.width) - ((reducedWidth - weaponLoader.width) / 2));
 			if (_local_1) {
 				weaponLoader.y = ((weaponLoader.height / 2) + ((maxHeight - weaponLoader.height) / 2));
 			} else {
 				weaponLoader.y = ((weaponLoader.height / -2) + ((maxHeight - weaponLoader.height) / 2));
 			}
-			;
+
 			m_imageLoadCount = (m_imageLoadCount + 1);
 			loadImageFromQueue();
 			if (((m_imageLoadCount == m_itemsInView) && (!(m_initialImageLoaded)))) {
@@ -1110,15 +1110,15 @@ public class WeaponSelector extends BaseControl {
 					if (m_currentSlotData.nItemHUDType == 1) {
 						updateItemInformationWithSlotData(m_currentSlotData);
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			if (slotIndex == m_selectedIndex) {
 				UpdateAmmoDisplayPosition();
 			}
-			;
+
 			m_aChildrenPool[slotIndex].visible = true;
 			UpdatePosition(slotIndex);
 		}, function ():void {
@@ -1130,11 +1130,11 @@ public class WeaponSelector extends BaseControl {
 					if (m_currentSlotData.nItemHUDType == 1) {
 						updateItemInformationWithSlotData(m_currentSlotData);
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		});
 	}
 
@@ -1150,7 +1150,7 @@ public class WeaponSelector extends BaseControl {
 		if (this.m_data.mainslotsSlim[slotIndex].containedIcon == null) {
 			return;
 		}
-		;
+
 		var imagePath:String = (this.m_data.mainslotsSlim[slotIndex].containedIcon as String);
 		maxHeight = ((this.m_inventoryBgHeight - 20) - 40);
 		reducedWidth = 95;
@@ -1174,28 +1174,28 @@ public class WeaponSelector extends BaseControl {
 				containerClip.addChild(_local_5);
 				containerClip.addChild(_local_6);
 			}
-			;
+
 			var _local_2:Boolean;
 			if (_local_5.width > _local_5.height) {
 				_local_5.rotation = -90;
 				_local_6.rotation = -90;
 				_local_2 = true;
 			}
-			;
+
 			_local_5.width = (_local_6.width = reducedWidth);
 			_local_5.scaleY = (_local_6.scaleY = _local_5.scaleX);
 			if (_local_5.height > maxHeight) {
 				_local_5.height = (_local_6.height = maxHeight);
 				_local_5.scaleX = (_local_6.scaleX = _local_5.scaleY);
 			}
-			;
+
 			_local_5.x = (((((m_inventoryBgHeight - 20) / 2) - _local_5.width) - ((reducedWidth - _local_5.width) / 2)) - 40);
 			if (_local_2) {
 				_local_5.y = (((_local_5.height / 2) + ((maxHeight - _local_5.height) / 2)) + 20);
 			} else {
 				_local_5.y = (((_local_5.height / -2) + ((maxHeight - _local_5.height) / 2)) + 20);
 			}
-			;
+
 			_local_6.x = _local_5.x;
 			_local_6.y = _local_5.y;
 			MenuUtils.setColor(_local_5, MenuConstants.COLOR_BLACK, false);
@@ -1215,7 +1215,7 @@ public class WeaponSelector extends BaseControl {
 				m_imagesThatHaveFilters[_local_6] = true;
 				MenuUtils.trySetCacheAsBitmap(containerClip, true);
 			}
-			;
+
 			m_aChildrenPool[slotIndex].visible = true;
 			UpdatePosition(slotIndex);
 		});
@@ -1228,7 +1228,7 @@ public class WeaponSelector extends BaseControl {
 				_local_3 = (_local_3 + Localization.get("UI_HUD_INVENTORY_ACTION_SELECT"));
 				_local_3 = (_local_3 + this.PROMPT_SEP_STRING);
 			}
-			;
+
 		} else {
 			if (_arg_1 > 0) {
 				_local_3 = (_local_3 + Localization.get("UI_HUD_INVENTORY_SELECT"));
@@ -1237,7 +1237,7 @@ public class WeaponSelector extends BaseControl {
 					_local_3 = (_local_3 + Localization.get("UI_HUD_INVENTORY_DROP_ITEM"));
 					_local_3 = (_local_3 + this.PROMPT_SEP_STRING);
 				}
-				;
+
 				if (_arg_2.isContainer) {
 					if (_arg_2.containsItem) {
 						_local_3 = (_local_3 + Localization.get("UI_HUD_INVENTORY_ACTION_RETRIEVE"));
@@ -1247,15 +1247,15 @@ public class WeaponSelector extends BaseControl {
 							_local_3 = (_local_3 + Localization.get("UI_HUD_INVENTORY_ACTION_CONCEAL"));
 							_local_3 = (_local_3 + this.PROMPT_SEP_STRING);
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		this.m_view.prompt_txt.htmlText = _local_3;
 	}
 
@@ -1271,39 +1271,39 @@ public class WeaponSelector extends BaseControl {
 				this.m_textTicker.stopTextTicker(this.m_textObj.tf, this.m_textObj.title);
 				this.m_textTicker = null;
 			}
-			;
+
 			if (this.m_isRotationRunning) {
 				removeEventListener(Event.ENTER_FRAME, this.onUpdateFrame);
 				this.m_isRotationRunning = false;
 			}
-			;
+
 			if (((this.m_previousSelectedIndex >= 0) && (this.m_previousSelectedIndex < this.m_aChildrenPool.length))) {
 				Animate.kill(this.m_aChildrenPool[this.m_previousSelectedIndex].weaponImage_mc);
 				Animate.kill(this.m_aChildrenPool[this.m_previousSelectedIndex].containedWeaponImage_mc);
 				this.m_aChildrenPool[this.m_previousSelectedIndex].weaponImage_mc.y = 0;
 				this.m_aChildrenPool[this.m_previousSelectedIndex].containedWeaponImage_mc.y = 0;
 			}
-			;
+
 			if (((this.m_selectedIndex >= 0) && (this.m_selectedIndex < this.m_aChildrenPool.length))) {
 				Animate.kill(this.m_aChildrenPool[this.m_selectedIndex].weaponImage_mc);
 				Animate.kill(this.m_aChildrenPool[this.m_selectedIndex].containedWeaponImage_mc);
 				this.m_aChildrenPool[this.m_selectedIndex].weaponImage_mc.y = 0;
 				this.m_aChildrenPool[this.m_selectedIndex].containedWeaponImage_mc.y = 0;
 			}
-			;
+
 			_local_2 = 0;
 			while (_local_2 < this.m_itemsInView) {
 				this.m_aChildrenImageLoaderPool[_local_2].cancel();
 				this.m_aChildrenImageLoader2Pool[_local_2].cancel();
 				_local_2++;
 			}
-			;
+
 			_local_3 = 0;
 			while (_local_3 < this.m_aWarnings.length) {
 				Animate.kill(this.m_aWarnings[_local_3]);
 				_local_3++;
 			}
-			;
+
 			this.m_imageLoadCount = 0;
 			this.m_initialImageLoaded = false;
 			if (this.m_ghostItemIndicatorHolder != null) {
@@ -1312,16 +1312,16 @@ public class WeaponSelector extends BaseControl {
 					this.loopGhostItemIndicators(this.m_ghostItemIndicatorHolder.getChildAt(_local_4), false);
 					_local_4++;
 				}
-				;
+
 			}
-			;
+
 			Animate.kill(this.m_view);
 			if (this.m_weaponInfo != null) {
 				Animate.kill(this.m_weaponInfo.line);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function onSetViewport(_arg_1:Number, _arg_2:Number, _arg_3:Number):void {
@@ -1343,7 +1343,7 @@ public class WeaponSelector extends BaseControl {
 		if (ControlsMain.isVrModeActive()) {
 			return;
 		}
-		;
+
 		this.m_fScaleAccum = 1;
 		var _local_3:DisplayObject = this;
 		do {
@@ -1360,11 +1360,11 @@ public class WeaponSelector extends BaseControl {
 					_local_7.blurX = (_local_7.blurY = _local_8);
 					_local_5.filters = _local_6;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 

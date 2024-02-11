@@ -102,7 +102,7 @@ public dynamic class PlayerProfileBadgeElement extends MenuElementBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

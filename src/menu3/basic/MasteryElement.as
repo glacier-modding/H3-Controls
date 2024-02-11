@@ -40,11 +40,11 @@ public dynamic class MasteryElement extends MenuElementBase {
 		if (((_arg_1.masterycompletion == undefined) || (_arg_1.masteryxpleft == undefined))) {
 			return (false);
 		}
-		;
+
 		if (((_arg_1.masterycompletion >= 0) && (!(_arg_1.masteryxpleft == "")))) {
 			return (true);
 		}
-		;
+
 		return (false);
 	}
 
@@ -52,18 +52,18 @@ public dynamic class MasteryElement extends MenuElementBase {
 		if ((((((getData().masteryheader == _arg_1.masteryheader) && (getData().masterytitle == _arg_1.masterytitle)) && (getData().masterycompletion == _arg_1.masterycompletion)) && (getData().masteryxpleft == _arg_1.masteryxpleft)) && (getData().showUnit == _arg_1.showUnit))) {
 			return;
 		}
-		;
+
 		super.onSetData(_arg_1);
 		if (((_arg_1.masterycompletion == undefined) || (_arg_1.masteryxpleft == undefined))) {
 			this.m_view.visible = false;
 			return;
 		}
-		;
+
 		var _local_2:Boolean = true;
 		if (_arg_1.showUnit != null) {
 			_local_2 = _arg_1.showUnit;
 		}
-		;
+
 		this.showMastery(_arg_1.masteryheader, _arg_1.masterytitle, _arg_1.masterycompletion, _arg_1.masteryxpleft, _local_2);
 	}
 
@@ -77,7 +77,7 @@ public dynamic class MasteryElement extends MenuElementBase {
 			if (((!(isNaN(_local_6))) && (!(_local_6 == 0)))) {
 				_arg_4 = MenuUtils.formatNumber(_local_6);
 			}
-			;
+
 			this.m_view.visible = true;
 			_local_7 = (((_arg_1 != null) ? _arg_1 : "") + ((_arg_2 != null) ? (" " + _arg_2) : ""));
 			this.m_view.masterytitle.htmlText = _local_7.toUpperCase();
@@ -91,13 +91,13 @@ public dynamic class MasteryElement extends MenuElementBase {
 			if (_arg_5) {
 				_local_9 = ((_local_9 + " ") + this.m_unit);
 			}
-			;
+
 			this.m_masteryXpTitleText = _local_9.toUpperCase();
 			this.m_view.masteryxptitle.htmlText = this.m_masteryXpTitleText;
 		} else {
 			this.m_view.visible = false;
 		}
-		;
+
 	}
 
 	public function setupDifficulty(_arg_1:Boolean):void {
@@ -113,7 +113,7 @@ public dynamic class MasteryElement extends MenuElementBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 

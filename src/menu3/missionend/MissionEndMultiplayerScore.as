@@ -71,7 +71,7 @@ public dynamic class MissionEndMultiplayerScore extends MenuElementBase {
 			this.m_view.image.x = (this.m_view.flarecontainer.x = 391.5);
 			this.m_isLocalplayer = false;
 		}
-		;
+
 		MenuUtils.setupText(this.m_view.badge.level, _arg_1.profilelevel, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 		this.m_view.badge.levelbg.width = (this.m_view.badge.level.textWidth + 20);
 		this.updateBadgeLevel(_arg_1.profilelevel);
@@ -98,27 +98,27 @@ public dynamic class MissionEndMultiplayerScore extends MenuElementBase {
 				this.m_isWinner = false;
 				this.m_isNeutral = false;
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.image) {
 			_local_10 = this.loadImage(_arg_1.image);
 			if (((!(_local_10)) && (this.m_imageIsReady))) {
 				if (this.m_isWinner != this.m_imageIsWinner) {
 					this.setImageWinnerState(this.m_isWinner);
 				}
-				;
+
 			}
-			;
+
 		} else {
 			this.unLoadImage();
 		}
-		;
+
 		if (this.m_mask != null) {
 			this.m_view.removeChild(this.m_mask);
 			this.m_mask = null;
 		}
-		;
+
 		var _local_6:Number = ((_arg_1.maskx) || (0));
 		var _local_7:Number = ((_arg_1.masky) || (0));
 		var _local_8:Number = ((_arg_1.maskwidth) || (0));
@@ -132,14 +132,14 @@ public dynamic class MissionEndMultiplayerScore extends MenuElementBase {
 			this.m_view.addChild(this.m_mask);
 			getContainer().mask = this.m_mask;
 		}
-		;
+
 	}
 
 	private function loadImage(imagePath:String):Boolean {
 		if (this.m_imagePath == imagePath) {
 			return (false);
 		}
-		;
+
 		this.m_imagePath = imagePath;
 		this.m_imageIsReady = false;
 		this.unLoadImage();
@@ -160,7 +160,7 @@ public dynamic class MissionEndMultiplayerScore extends MenuElementBase {
 		if (this.m_view.image == null) {
 			return;
 		}
-		;
+
 		this.unloadFlare();
 		if (_arg_1) {
 			if (!this.m_isNeutral) {
@@ -169,12 +169,12 @@ public dynamic class MissionEndMultiplayerScore extends MenuElementBase {
 				this.m_view.flarecontainer.scaleX = ((this.m_isLocalplayer) ? 2 : -2);
 				this.m_view.flarecontainer.scaleY = 2;
 			}
-			;
+
 			MenuUtils.addColorFilter(this.m_view.image, []);
 		} else {
 			MenuUtils.addColorFilter(this.m_view.image, [MenuConstants.COLOR_MATRIX_DARKENED_DESATURATED]);
 		}
-		;
+
 		this.m_imageIsWinner = _arg_1;
 	}
 
@@ -192,7 +192,7 @@ public dynamic class MissionEndMultiplayerScore extends MenuElementBase {
 			this.m_view.image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.unloadFlare();
 	}
 
@@ -202,7 +202,7 @@ public dynamic class MissionEndMultiplayerScore extends MenuElementBase {
 			this.m_view.flarecontainer.removeChild(this.m_flare);
 			this.m_flare = null;
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -213,11 +213,11 @@ public dynamic class MissionEndMultiplayerScore extends MenuElementBase {
 				this.m_view.badge.badgecontainer.removeChild(this.m_badge);
 				this.m_badge = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

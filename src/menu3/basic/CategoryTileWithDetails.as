@@ -70,12 +70,12 @@ public dynamic class CategoryTileWithDetails extends CategoryTile {
 			this.m_detailsHeight = Math.min(this.m_details.textHeight, this.DETAILS_HEIGHT_MAX);
 			this.m_details.y = ((MenuConstants.MenuTileTallHeight - this.DETAILS_PADDING_Y) - this.m_detailsHeight);
 		}
-		;
+
 		this.m_showDetailsOnSelect = true;
 		if (_arg_1.showDetailsOnSelect === false) {
 			this.m_showDetailsOnSelect = false;
 		}
-		;
+
 		var _local_2:* = (_arg_1.showDetails === true);
 		this.setDetailsVisible(_local_2);
 	}
@@ -85,17 +85,17 @@ public dynamic class CategoryTileWithDetails extends CategoryTile {
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (!this.m_showDetailsOnSelect) {
 			return;
 		}
-		;
+
 		if (m_isSelected) {
 			this.setDetailsVisible(true);
 		} else {
 			this.setDetailsVisible(false);
 		}
-		;
+
 	}
 
 	public function setDetailsVisible(_arg_1:Boolean):void {
@@ -123,7 +123,7 @@ public dynamic class CategoryTileWithDetails extends CategoryTile {
 			m_view.tileSelect.y = this.m_originalTileSelectPosY;
 			this.m_details.visible = false;
 		}
-		;
+
 	}
 
 	private function killAnimations():void {
@@ -134,11 +134,11 @@ public dynamic class CategoryTileWithDetails extends CategoryTile {
 		if (this.m_detailBg != null) {
 			Animate.kill(this.m_detailBg);
 		}
-		;
+
 		if (this.m_details != null) {
 			Animate.kill(this.m_details);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -148,14 +148,14 @@ public dynamic class CategoryTileWithDetails extends CategoryTile {
 				m_view.removeChild(this.m_detailBg);
 				this.m_detailBg = null;
 			}
-			;
+
 			if (this.m_details != null) {
 				m_view.removeChild(this.m_details);
 				this.m_details = null;
 			}
-			;
+
 		}
-		;
+
 		super.onUnregister();
 	}
 

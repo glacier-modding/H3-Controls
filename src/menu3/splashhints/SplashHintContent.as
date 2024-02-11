@@ -102,17 +102,17 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 		if (this.m_view == null) {
 			this.initView();
 		}
-		;
+
 		if (this.m_controllerMc != null) {
 			_local_2 = this.getButtonIdFromText(this.m_description);
 			_local_3 = 0;
 			while (_local_3 < _local_2.length) {
 				_local_3++;
 			}
-			;
+
 			this.setControllerButtons(_local_2);
 		}
-		;
+
 		this.updateView();
 		this.setPrompts();
 	}
@@ -129,7 +129,7 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 			this.m_iconMc = this.m_view.icon;
 			this.m_headerTf = this.m_view.header;
 		}
-		;
+
 		this.m_lineMc = this.m_view.line;
 		this.m_titleTf = this.m_view.title;
 		this.m_descriptionTf = this.m_view.description;
@@ -142,24 +142,24 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 			if (this.m_view.controller != null) {
 				this.m_view.controller.x = (this.m_view.controller.x - DX);
 			}
-			;
+
 			if (this.m_view.line != null) {
 				this.m_view.line.x = (this.m_view.line.x + DX);
 			}
-			;
+
 			if (this.m_view.title != null) {
 				this.m_view.title.x = (this.m_view.title.x + DX);
 			}
-			;
+
 			if (this.m_view.description != null) {
 				this.m_view.description.x = (this.m_view.description.x + DX);
 				this.m_view.description.width = 600;
 			}
-			;
+
 		} else {
 			this.m_view.y = (MenuConstants.UserLineUpperYPos - 252);
 		}
-		;
+
 		if (this.m_imageRID != "") {
 			this.m_imageMc = new SplashHintImage();
 			this.m_imageContainer.addChild(this.m_imageMc);
@@ -168,7 +168,7 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 				m_imageMc.y = -(m_imageMc.height - MenuConstants.BaseHeight);
 			});
 		}
-		;
+
 		this.m_container.addChild(this.m_view);
 		this.m_promptContainer = new Sprite();
 		this.m_promptContainer.x = (MenuConstants.menuXOffset + 96);
@@ -181,7 +181,7 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 				"scale": this.m_iconMc.scaleX
 			};
 		}
-		;
+
 		if (this.m_headerTf != null) {
 			this.headerProps = {
 				"xpos": this.m_headerTf.x,
@@ -189,7 +189,7 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 				"scale": this.m_headerTf.scaleX
 			};
 		}
-		;
+
 		if (this.m_titleTf != null) {
 			this.titleProps = {
 				"xpos": this.m_titleTf.x,
@@ -197,11 +197,11 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 				"scale": this.m_titleTf.scaleX
 			};
 		}
-		;
+
 		if (this.m_descriptionTf != null) {
 			this.m_descriptionTf.autoSize = TextFieldAutoSize.LEFT;
 		}
-		;
+
 	}
 
 	private function updateView():void {
@@ -214,16 +214,16 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 			this.m_descriptionTf.scaleX = 1;
 			this.m_descriptionTf.scaleY = 1;
 		}
-		;
+
 		if (this.m_iconMc != null) {
 			this.m_iconMc.icons.gotoAndStop(this.m_iconID);
 			MenuUtils.setColor(this.m_iconMc.icons, MenuConstants.COLOR_WHITE);
 		}
-		;
+
 		if (this.m_headerTf != null) {
 			MenuUtils.setupText(this.m_headerTf, this.m_header, 24, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGrey);
 		}
-		;
+
 		MenuUtils.setupTextAndShrinkToFit(this.m_titleTf, this.m_title, 60, MenuConstants.FONT_TYPE_BOLD, this.m_lineMc.width, 0, 9, MenuConstants.FontColorWhite);
 		MenuUtils.setupText(this.m_descriptionTf, this.m_description, 24, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 	}
@@ -245,11 +245,11 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 		if (this.m_controllerMc == null) {
 			return;
 		}
-		;
+
 		if (CommonUtils.getPlatformString() == CommonUtils.PLATFORM_STADIA) {
 			return;
 		}
-		;
+
 		var _local_2:String = ControlsMain.getControllerType();
 		if (_arg_1.length != 0) {
 			_local_8 = 0;
@@ -282,32 +282,32 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 									} else {
 										_local_16 = ((((((!(_local_11)) && (!(_local_10))) && (!(_local_12))) && (!(_local_13))) && (!(_local_14))) && (!(_local_15)));
 									}
-									;
+
 								}
-								;
+
 							}
-							;
+
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 				if (!_local_16) {
 					_arg_1.splice(_local_8, 1);
 					_local_8--;
 				}
-				;
+
 				_local_8++;
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.length == 0) {
 			this.m_controllerMc.visible = false;
 			return;
 		}
-		;
+
 		this.m_controllerMc.visible = true;
 		this.m_controllerMc.gotoAndStop(_local_2);
 		this.stopButtonEffects(true);
@@ -325,57 +325,57 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 				_local_18 = (_local_20.toUpperCase() == _local_17.toUpperCase());
 				_local_19++;
 			}
-			;
+
 			if (this.m_controllerMc.buttons[_local_17] != null) {
 				this.m_controllerMc.buttons[_local_17].visible = _local_18;
 				if (_local_18) {
 					if (ControlsMain.isVrModeActive()) {
 						MenuUtils.removeFilters(this.m_controllerMc.buttons[_local_17]);
 					}
-					;
+
 					this.addButtonEffect(_local_17);
 				}
-				;
+
 			}
-			;
+
 			_local_7++;
 		}
-		;
+
 		if (!this.m_firstTimeFlag) {
 			this.showController(0);
 		}
-		;
+
 	}
 
 	private function getInputPostFix(_arg_1:String):String {
 		if ((((_arg_1 == CommonUtils.CONTROLLER_TYPE_PC) || (_arg_1 == CommonUtils.CONTROLLER_TYPE_XBOXONE)) || (_arg_1 == CommonUtils.CONTROLLER_TYPE_XBOXSERIESX))) {
 			return (POSTFIX_XBOX);
 		}
-		;
+
 		if (((_arg_1 == CommonUtils.CONTROLLER_TYPE_SWITCHPRO) || (_arg_1 == CommonUtils.CONTROLLER_TYPE_SWITCHJOYCON))) {
 			return (POSTFIX_NS);
 		}
-		;
+
 		if (_arg_1 == CommonUtils.CONTROLLER_TYPE_OCULUSVR) {
 			return (POSTFIX_OCULUSVR);
 		}
-		;
+
 		if (_arg_1 == CommonUtils.CONTROLLER_TYPE_OPENVR) {
 			return (POSTFIX_OPENVR);
 		}
-		;
+
 		if (_arg_1 == CommonUtils.CONTROLLER_TYPE_PS4) {
 			return (POSTFIX_PS4);
 		}
-		;
+
 		if (_arg_1 == CommonUtils.CONTROLLER_TYPE_PS5) {
 			return (POSTFIX_PS5);
 		}
-		;
+
 		if (_arg_1 == CommonUtils.CONTROLLER_TYPE_KEY) {
 			return (POSTFIX_KEY);
 		}
-		;
+
 		return ("");
 	}
 
@@ -383,7 +383,7 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 		if (_arg_1 == CommonUtils.CONTROLLER_TYPE_KEY) {
 			return (KEYBOARD_MOUSE_BUTTON_INDEX_START);
 		}
-		;
+
 		return (CONTROLLER_BUTTON_INDEX_START);
 	}
 
@@ -391,7 +391,7 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 		if (_arg_1 == CommonUtils.CONTROLLER_TYPE_KEY) {
 			return (KEYBOARD_MOUSE_BUTTON_INDEX_END);
 		}
-		;
+
 		return (CONTROLLER_BUTTON_INDEX_END);
 	}
 
@@ -415,7 +415,7 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 		if (this.m_isMissionTitle) {
 			this.playSound("play_ui_mission_title_appear");
 		}
-		;
+
 		if (this.m_iconMc != null) {
 			this.m_iconMc.alpha = 0;
 			this.m_iconMc.frame.visible = true;
@@ -430,38 +430,38 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 				"scaleY": 1
 			}, Animate.ExpoOut);
 		}
-		;
+
 		if (this.m_headerTf != null) {
 			this.m_headerTf.alpha = 0;
 			Animate.fromTo(this.m_headerTf, 0.2, (this.m_animationDelayIn + 0.1), {"alpha": 0}, {"alpha": 1}, Animate.ExpoOut);
 			Animate.addFromTo(this.m_headerTf, 0.3, (this.m_animationDelayIn + 0.1), {"x": (this.headerProps.xpos - 10)}, {"x": this.headerProps.xpos}, Animate.ExpoOut);
 		}
-		;
+
 		if (this.m_titleTf != null) {
 			this.m_titleTf.alpha = 0;
 			Animate.fromTo(this.m_titleTf, 0.2, (this.m_animationDelayIn + 0.2), {"alpha": 0}, {"alpha": 1}, Animate.ExpoOut);
 			Animate.addFromTo(this.m_titleTf, 0.3, (this.m_animationDelayIn + 0.2), {"x": (this.titleProps.xpos - 10)}, {"x": this.titleProps.xpos}, Animate.ExpoOut);
 		}
-		;
+
 		if (this.m_lineMc != null) {
 			this.m_lineMc.scaleX = 0;
 			Animate.fromTo(this.m_lineMc, 0.3, (this.m_animationDelayIn + 0.3), {"scaleX": 0}, {"scaleX": 1}, Animate.ExpoOut);
 		}
-		;
+
 		if (this.m_descriptionTf != null) {
 			this.m_descriptionTf.alpha = 0;
 			Animate.fromTo(this.m_descriptionTf, 0.3, (this.m_animationDelayIn + 0.4), {"alpha": 0}, {"alpha": 1}, Animate.ExpoOut);
 		}
-		;
+
 		if (this.m_hintType == MenuConstants.SPLASH_HINT_TYPE_CONTROLLER) {
 			this.showController((this.m_animationDelayIn + 0.4));
 		} else {
 			if (this.m_imageMc != null) {
 				Animate.delay(this.m_imageMc, (this.m_animationDelayIn + 0.4), this.m_imageMc.show);
 			}
-			;
+
 		}
-		;
+
 		this.m_firstTimeFlag = false;
 	}
 
@@ -471,12 +471,12 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 		if (this.m_isMissionTitle) {
 			this.playSound("play_ui_mission_title_disappear");
 		}
-		;
+
 		this.m_imageContainer.alpha = 0;
 		if (this.m_view != null) {
 			this.m_view.alpha = 0;
 		}
-		;
+
 	}
 
 	public function playSound(_arg_1:String):void {
@@ -504,7 +504,7 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 			this.pulsate(this.m_highlightEffects[_local_2], _arg_1);
 			_local_2++;
 		}
-		;
+
 	}
 
 	private function stopButtonEffects(_arg_1:Boolean = false):void {
@@ -514,21 +514,21 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 			if (_arg_1) {
 				this.m_controllerMc.buttons.removeChild(this.m_highlightEffects[_local_2]);
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 		if (_arg_1) {
 			this.m_highlightEffects = [];
 		}
-		;
+
 	}
 
 	private function pulsate(_arg_1:MovieClip, _arg_2:Number):void {
 		if (_arg_1 == null) {
 			return;
 		}
-		;
+
 		_arg_1.alpha = 1;
 		if (_arg_1.mc1 != null) {
 			_arg_1.mc1.alpha = 0;
@@ -542,7 +542,7 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 				"scaleY": 4.5
 			}, Animate.ExpoOut);
 		}
-		;
+
 		if (_arg_1.mc2 != null) {
 			_arg_1.mc2.alpha = 0;
 			Animate.fromTo(_arg_1.mc2, 1.4, (_arg_2 + 0.25), {
@@ -555,24 +555,24 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 				"scaleY": 4.5
 			}, Animate.ExpoOut, this.pulsateComplete, _arg_1);
 		}
-		;
+
 	}
 
 	private function pulsateComplete(_arg_1:MovieClip):void {
 		if (_arg_1 == null) {
 			return;
 		}
-		;
+
 		if (_arg_1.mc1 != null) {
 			_arg_1.mc1.scaleX = 1;
 			_arg_1.mc1.scaleY = 1;
 		}
-		;
+
 		if (_arg_1.mc2 != null) {
 			_arg_1.mc2.scaleX = 1;
 			_arg_1.mc2.scaleY = 1;
 		}
-		;
+
 		Animate.delay(_arg_1, 0.5, this.pulsate, _arg_1, 0);
 	}
 
@@ -580,18 +580,18 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 		if (this.m_iconMc != null) {
 			Animate.complete(this.m_iconMc);
 		}
-		;
+
 		if (this.m_headerTf != null) {
 			Animate.complete(this.m_headerTf);
 		}
-		;
+
 		Animate.complete(this.m_titleTf);
 		Animate.complete(this.m_lineMc);
 		Animate.complete(this.m_descriptionTf);
 		if (this.m_imageMc != null) {
 			Animate.complete(this.m_imageMc);
 		}
-		;
+
 		Animate.complete(this.m_controllerMc);
 		Animate.complete(this.m_view);
 	}
@@ -600,7 +600,7 @@ public class SplashHintContent extends BaseControl implements ISplashHint, IButt
 		if (_arg_1 == null) {
 			return ([]);
 		}
-		;
+
 		return (_arg_1.match(/btn\d+\w*/gi));
 	}
 

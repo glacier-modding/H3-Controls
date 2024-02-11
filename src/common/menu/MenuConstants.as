@@ -270,7 +270,7 @@ public class MenuConstants {
 		if (_arg_1.toLowerCase() == DIFFICULTY_MODE_PRO1) {
 			return (DIFFICULTY_MODE_PRO1);
 		}
-		;
+
 		return (DIFFICULTY_MODE_NORMAL);
 	}
 
@@ -286,31 +286,31 @@ public class MenuConstants {
 		if (_arg_1 == "black") {
 			return (COLOR_BLACK);
 		}
-		;
+
 		if (_arg_1 == "red") {
 			return (COLOR_RED);
 		}
-		;
+
 		if (_arg_1 == "yellow") {
 			return (COLOR_YELLOW);
 		}
-		;
+
 		if (_arg_1 == "turquoise") {
 			return (COLOR_TURQUOISE);
 		}
-		;
+
 		if (_arg_1 == "green") {
 			return (COLOR_GREEN);
 		}
-		;
+
 		if (_arg_1 == "blue") {
 			return (COLOR_BLUE);
 		}
-		;
+
 		if (_arg_1 == "purple") {
 			return (COLOR_PURPLE);
 		}
-		;
+
 		return (COLOR_WHITE);
 	}
 

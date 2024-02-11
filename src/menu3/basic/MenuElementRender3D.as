@@ -38,7 +38,7 @@ public dynamic class MenuElementRender3D extends MenuElementBase {
 		if (hasEventListener(Event.ADDED_TO_STAGE)) {
 			removeEventListener(Event.ADDED_TO_STAGE, this.addedToStageHandler, false);
 		}
-		;
+
 		this.nodeUpdate(0, 0, 0, 0, false);
 		super.onUnregister();
 	}
@@ -52,7 +52,7 @@ public dynamic class MenuElementRender3D extends MenuElementBase {
 		if (_arg_1.showBorder !== true) {
 			this.m_rectangle.graphics.clear();
 		}
-		;
+
 	}
 
 	private function addedToStageHandler():void {
@@ -83,7 +83,7 @@ public dynamic class MenuElementRender3D extends MenuElementBase {
 		if (this.m_isVisibleOnScreen == _local_1) {
 			return;
 		}
-		;
+
 		this.m_isVisibleOnScreen = _local_1;
 		this.updateNotifySize();
 	}
@@ -92,7 +92,7 @@ public dynamic class MenuElementRender3D extends MenuElementBase {
 		if (this.m_localBounds == null) {
 			return;
 		}
-		;
+
 		var _local_1:Point = new Point(this.m_localBounds.x, this.m_localBounds.y);
 		var _local_2:Point = _local_1.add(new Point(this.m_localBounds.width, this.m_localBounds.height));
 		var _local_3:Point = this.localToGlobal(_local_1);
@@ -107,7 +107,7 @@ public dynamic class MenuElementRender3D extends MenuElementBase {
 			Log.info(Log.ChannelDebug, this, ((((((((((("Render3DNodeUpdate: " + this.m_GUIGroupName) + " x=") + _arg_1) + " y=") + _arg_2) + " width=") + _arg_3) + " height=") + _arg_4) + " visible=") + _arg_5));
 			ExternalInterface.call("Render3DNodeUpdate", this.m_GUIGroupName, _arg_1, _arg_2, _arg_3, _arg_4, _arg_5);
 		}
-		;
+
 	}
 
 	private function getVisibilityOnScreen():Boolean {
@@ -116,10 +116,10 @@ public dynamic class MenuElementRender3D extends MenuElementBase {
 			if (_local_1.visible == false) {
 				return (false);
 			}
-			;
+
 			_local_1 = _local_1.parent;
 		}
-		;
+
 		return (true);
 	}
 
@@ -129,7 +129,7 @@ public dynamic class MenuElementRender3D extends MenuElementBase {
 			_local_1.addEventListener(VisibilityChangedEvent.VISIBILITY_CHANGED, this.visibilityChangedHandler, false, 0, true);
 			_local_1 = _local_1.parent;
 		}
-		;
+
 	}
 
 	private function removeVisibilityChangedEventListener():void {
@@ -138,7 +138,7 @@ public dynamic class MenuElementRender3D extends MenuElementBase {
 			_local_1.removeEventListener(VisibilityChangedEvent.VISIBILITY_CHANGED, this.visibilityChangedHandler, false);
 			_local_1 = _local_1.parent;
 		}
-		;
+
 	}
 
 

@@ -53,7 +53,7 @@ public dynamic class ProfileElement extends MenuElementBase {
 		if (this.m_profileLevel == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_profileLevel = _arg_1;
 		this.updateConnectionLine();
 	}
@@ -62,7 +62,7 @@ public dynamic class ProfileElement extends MenuElementBase {
 		if (this.m_state == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_state = _arg_1;
 		this.updateConnectionLine();
 	}
@@ -72,7 +72,7 @@ public dynamic class ProfileElement extends MenuElementBase {
 		if (this.m_state == STATE_UNDEFINED) {
 			return;
 		}
-		;
+
 		var _local_1:* = (this.m_profileLevel > 0);
 		if (this.m_state == STATE_CONNECTED) {
 			MenuUtils.setupTextUpper(this.m_view.onlineheader, Localization.get("UI_MENU_LOBBY_JOINED_TITLE"), 12, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorYellow);
@@ -88,15 +88,15 @@ public dynamic class ProfileElement extends MenuElementBase {
 					if (this.m_profileLevel > 0) {
 						_local_2 = ((((_local_2 + " - ") + Localization.get("UI_DIALOG_ESCALATION_LEVEL")) + " ") + this.m_profileLevel.toFixed(0));
 					}
-					;
+
 					MenuUtils.setupTextUpper(this.m_view.onlineheader, _local_2, 12, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorGreen);
 					CommonUtils.changeFontToGlobalIfNeeded(this.m_view.onlineheader);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		this.updateBadgeLevel(this.m_profileLevel);
 		this.m_badge.visible = _local_1;
 		this.m_view.line.visible = _local_1;

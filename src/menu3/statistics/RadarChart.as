@@ -85,7 +85,7 @@ public class RadarChart extends Sprite {
 			this.m_bgContainer.addChild(_local_3);
 			_local_1++;
 		}
-		;
+
 		var _local_6:Number = this.getInitialRotation();
 		_local_1 = 0;
 		while (_local_1 < this.m_shapeData.numberOfSides) {
@@ -97,27 +97,27 @@ public class RadarChart extends Sprite {
 			_local_6 = (_local_6 + this.m_shapeData.centralAngle);
 			_local_1++;
 		}
-		;
+
 		if (this.m_useAnimation) {
 			if (this.m_showGlobal) {
 				Animate.delay(this, 0.1, this.drawGraph, [this.GRAPH_TYPE_GLOBAL]);
 			}
-			;
+
 			if (this.m_showPlayer) {
 				Animate.delay(this, 0.4, this.drawGraph, [this.GRAPH_TYPE_PLAYER]);
 			}
-			;
+
 		} else {
 			if (this.m_showGlobal) {
 				this.drawGraph(this.GRAPH_TYPE_GLOBAL);
 			}
-			;
+
 			if (this.m_showPlayer) {
 				this.drawGraph(this.GRAPH_TYPE_PLAYER);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function drawGraph(_arg_1:String):void {
@@ -139,9 +139,9 @@ public class RadarChart extends Sprite {
 				this.m_playerGraph = _local_9;
 				_local_10 = this.m_playerChartContainer.pointContainer;
 			}
-			;
+
 		}
-		;
+
 		var _local_12:int;
 		while (_local_12 < this.m_shapeData.numberOfSides) {
 			if (_arg_1 == this.GRAPH_TYPE_GLOBAL) {
@@ -150,9 +150,9 @@ public class RadarChart extends Sprite {
 				if (_arg_1 == this.GRAPH_TYPE_PLAYER) {
 					_local_11 = this.m_shapeData.statistics[_local_12].player;
 				}
-				;
+
 			}
-			;
+
 			_local_7 = (_local_11 / this.m_shapeData.dataTotal);
 			_local_5 = Point.interpolate(_local_4, _local_3, (_local_7 * 4));
 			_local_8 = MenuUtils.toRadians(_local_2);
@@ -161,13 +161,13 @@ public class RadarChart extends Sprite {
 			_local_2 = (_local_2 + this.m_shapeData.centralAngle);
 			_local_12++;
 		}
-		;
+
 		if (this.m_useAnimation) {
 			this.animateGraph(_arg_1);
 		} else {
 			this.showGraph(_arg_1);
 		}
-		;
+
 	}
 
 	private function getInitialRotation():Number {
@@ -195,9 +195,9 @@ public class RadarChart extends Sprite {
 				fillColor = MenuConstants.COLOR_RED;
 				fillAlpha = 1;
 			}
-			;
+
 		}
-		;
+
 		var _local_3:* = container;
 		with (_local_3) {
 			graphics.clear();
@@ -210,16 +210,16 @@ public class RadarChart extends Sprite {
 				} else {
 					graphics.lineTo(graph[i].point.x, graph[i].point.y);
 				}
-				;
+
 				graph[i].clip.x = graph[i].point.x;
 				graph[i].clip.y = graph[i].point.y;
 				i++;
 			}
-			;
+
 			graphics.lineTo(graph[0].point.x, graph[0].point.y);
 			graphics.endFill();
 		}
-		;
+
 	}
 
 	private function animateGraph(_arg_1:String):void {
@@ -233,9 +233,9 @@ public class RadarChart extends Sprite {
 				_local_2 = this.m_playerGraph;
 				this.m_view.addEventListener(Event.ENTER_FRAME, this.updatePlayerGraph);
 			}
-			;
+
 		}
-		;
+
 		var _local_3:Number = 0;
 		var _local_4:int = _local_2.length;
 		var _local_6:int;
@@ -249,7 +249,7 @@ public class RadarChart extends Sprite {
 			_local_3 = (_local_3 + 0.01);
 			_local_6++;
 		}
-		;
+
 	}
 
 	private function setAnimationState(_arg_1:String, _arg_2:RadarChartPoint, _arg_3:Boolean):void {
@@ -261,9 +261,9 @@ public class RadarChart extends Sprite {
 			if (_arg_1 == this.GRAPH_TYPE_PLAYER) {
 				_local_4 = this.m_playerGraph;
 			}
-			;
+
 		}
-		;
+
 		var _local_5:Boolean = true;
 		var _local_6:int = _local_4.length;
 		var _local_7:int;
@@ -272,19 +272,19 @@ public class RadarChart extends Sprite {
 				_local_5 = false;
 				return;
 			}
-			;
+
 			_local_7++;
 		}
-		;
+
 		if (_arg_1 == this.GRAPH_TYPE_GLOBAL) {
 			this.m_view.removeEventListener(Event.ENTER_FRAME, this.updateGlobalGraph);
 		} else {
 			if (_arg_1 == this.GRAPH_TYPE_PLAYER) {
 				this.m_view.removeEventListener(Event.ENTER_FRAME, this.updatePlayerGraph);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function updateGlobalGraph(evt:Event):void {
@@ -301,14 +301,14 @@ public class RadarChart extends Sprite {
 				} else {
 					graphics.lineTo(m_globalGraph[i].clip.x, m_globalGraph[i].clip.y);
 				}
-				;
+
 				i++;
 			}
-			;
+
 			graphics.lineTo(m_globalGraph[0].clip.x, m_globalGraph[0].clip.y);
 			graphics.endFill();
 		}
-		;
+
 	}
 
 	private function updatePlayerGraph(evt:Event):void {
@@ -324,14 +324,14 @@ public class RadarChart extends Sprite {
 				} else {
 					graphics.lineTo(m_playerGraph[i].clip.x, m_playerGraph[i].clip.y);
 				}
-				;
+
 				i++;
 			}
-			;
+
 			graphics.lineTo(m_playerGraph[0].clip.x, m_playerGraph[0].clip.y);
 			graphics.endFill();
 		}
-		;
+
 	}
 
 
@@ -424,7 +424,7 @@ class RadarChartPoint {
 		if (_arg_3) {
 			this.drawClip();
 		}
-		;
+
 	}
 
 	/*private*/

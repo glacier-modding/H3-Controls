@@ -27,7 +27,7 @@ public dynamic class DestinationCategoryDetailTile extends MenuElementLockableCo
 
 	private var m_view:DestinationCategoryDetailTileView;
 	private var m_loader:MenuImageLoader;
-	private var m_textObj:Object = new Object();
+	private var m_textObj:Object = {};
 	private var m_textTicker:textTicker;
 	private var m_stickerIndicator:FreeDlcIndicator;
 	private var m_pressable:Boolean = true;
@@ -73,24 +73,24 @@ public dynamic class DestinationCategoryDetailTile extends MenuElementLockableCo
 			MenuUtils.setTintColor(this.m_view.tileSelectPulsate, MenuUtils.TINT_COLOR_GREY, false);
 			this.m_view.informationBg.visible = false;
 		}
-		;
+
 		this.m_enableInfo = true;
 		if (_arg_1.hasOwnProperty("enableinfo")) {
 			this.m_enableInfo = _arg_1.enableinfo;
 		}
-		;
+
 		this.m_alwaysDisplaySelectedState = false;
 		if (_arg_1.hasOwnProperty("alwaysdisplayselectedstate")) {
 			this.m_alwaysDisplaySelectedState = _arg_1.alwaysdisplayselectedstate;
 		}
-		;
+
 		MenuUtils.removeColor(this.m_view.image);
 		if (_arg_1.forcetintnotowned === true) {
 			MenuUtils.setColorFilter(this.m_view.image, "shop");
 		} else {
 			MenuUtils.setColorFilter(this.m_view.image);
 		}
-		;
+
 		if (this.m_alwaysDisplaySelectedState) {
 			this.m_view.tileIcon.alpha = 1;
 			this.m_view.tileIcon.y = this.m_tileIconEndPosY;
@@ -102,37 +102,37 @@ public dynamic class DestinationCategoryDetailTile extends MenuElementLockableCo
 				this.m_view.title.scaleX = (this.m_view.title.scaleY = this.TITLE_END_SCALE);
 				this.m_view.title.y = this.m_titleEndPosY;
 			}
-			;
+
 		}
-		;
+
 		this.setupTextFields(_arg_1.header, _arg_1.title);
 		if (this.m_enableInfo) {
 			this.setupInfo(_arg_1.infoicon, _arg_1.infotitle, _arg_1.infoline1, _arg_1.infoline2);
 		} else {
 			this.setupInfo("", "", "", "");
 		}
-		;
+
 		if (_arg_1.image) {
 			this.loadImage(_arg_1.image);
 		}
-		;
+
 		if (_arg_1.availability) {
 			setAvailablity(this.m_view, _arg_1, "small");
 		}
-		;
+
 		if (this.m_stickerIndicator != null) {
 			this.m_stickerIndicator.onUnregister();
 			this.m_stickerIndicator = null;
 		}
-		;
+
 		if (_arg_1.stickertext != undefined) {
 			this.m_stickerIndicator = new FreeDlcIndicator("small");
-			_local_2 = new Object();
+			_local_2 = {};
 			_local_2.freedlc_header = _arg_1.stickertext;
 			_local_2.freedlc_icon = _arg_1.stickericon;
 			this.m_stickerIndicator.onSetData(this.m_view, _local_2);
 		}
-		;
+
 	}
 
 	private function setupTextFields(_arg_1:String, _arg_2:String):void {
@@ -148,14 +148,14 @@ public dynamic class DestinationCategoryDetailTile extends MenuElementLockableCo
 		if (!this.m_textTicker) {
 			this.m_textTicker = new textTicker();
 		}
-		;
+
 		if (_arg_1) {
 			this.m_textTicker.startTextTicker(this.m_view.title, this.m_textObj.title);
 		} else {
 			this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 			MenuUtils.truncateTextfield(this.m_view.title, 1, MenuConstants.FontColorWhite);
 		}
-		;
+
 	}
 
 	private function changeTextColor(_arg_1:uint):void {
@@ -175,7 +175,7 @@ public dynamic class DestinationCategoryDetailTile extends MenuElementLockableCo
 		} else {
 			this.m_view.info.icon.visible = false;
 		}
-		;
+
 		MenuUtils.setupText(this.m_view.info.title, _arg_2, 24, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraLight);
 		MenuUtils.setupText(this.m_view.info.line1, _arg_3, 18, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorGreyUltraLight);
 		MenuUtils.setupText(this.m_view.info.line2, _arg_4, 18, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorGreyUltraLight);
@@ -190,7 +190,7 @@ public dynamic class DestinationCategoryDetailTile extends MenuElementLockableCo
 			this.m_view.image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new MenuImageLoader();
 		this.m_view.image.addChild(this.m_loader);
 		this.m_loader.center = true;
@@ -203,7 +203,7 @@ public dynamic class DestinationCategoryDetailTile extends MenuElementLockableCo
 				m_view.image.width = MenuConstants.MenuTileTallWidth;
 				m_view.image.scaleY = m_view.image.scaleX;
 			}
-			;
+
 		});
 	}
 
@@ -223,7 +223,7 @@ public dynamic class DestinationCategoryDetailTile extends MenuElementLockableCo
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (m_isSelected) {
 			Animate.to(this.m_view.tileSelect, MenuConstants.HiliteTime, 0, {"alpha": 1}, Animate.ExpoOut);
 			MenuUtils.pulsate(this.m_view.tileSelectPulsate, true);
@@ -242,9 +242,9 @@ public dynamic class DestinationCategoryDetailTile extends MenuElementLockableCo
 					Animate.to(this.m_view.informationBg, MenuConstants.HiliteTime, 0, {"alpha": 1}, Animate.ExpoOut);
 					Animate.to(this.m_view.info, MenuConstants.HiliteTime, 0, {"alpha": 1}, Animate.ExpoOut);
 				}
-				;
+
 			}
-			;
+
 			Animate.to(this.m_view.header, MenuConstants.HiliteTime, 0, {"y": this.m_headerEndPosY}, Animate.ExpoOut);
 			Animate.to(this.m_view.title, MenuConstants.HiliteTime, 0, {
 				"scaleX": this.TITLE_END_SCALE,
@@ -264,14 +264,14 @@ public dynamic class DestinationCategoryDetailTile extends MenuElementLockableCo
 					this.m_view.informationBg.alpha = 0;
 					this.m_view.info.alpha = 0;
 				}
-				;
+
 			}
-			;
+
 			this.m_view.header.y = this.HEADER_START_POS_Y;
 			this.m_view.title.y = this.TITLE_START_POS_Y;
 			this.m_view.title.scaleX = (this.m_view.title.scaleY = this.TITLE_START_SCALE);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -282,17 +282,17 @@ public dynamic class DestinationCategoryDetailTile extends MenuElementLockableCo
 				this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 				this.m_textTicker = null;
 			}
-			;
+
 			if (this.m_loader) {
 				this.m_loader.cancelIfLoading();
 				this.m_view.image.removeChild(this.m_loader);
 				this.m_loader = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	private function completeAnimations():void {
@@ -305,7 +305,7 @@ public dynamic class DestinationCategoryDetailTile extends MenuElementLockableCo
 		if (m_infoIndicator != null) {
 			Animate.complete(m_infoIndicator);
 		}
-		;
+
 		Animate.complete(this.m_view.header);
 		Animate.complete(this.m_view.title);
 	}

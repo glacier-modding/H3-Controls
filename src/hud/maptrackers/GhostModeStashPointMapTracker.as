@@ -46,7 +46,7 @@ public class GhostModeStashPointMapTracker extends LevelCheckedMapTracker {
 				setMainView(this.m_view_special_crate);
 				return;
 		}
-		;
+
 	}
 
 	override public function getTextForLegend():String {

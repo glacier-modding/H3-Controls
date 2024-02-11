@@ -52,7 +52,7 @@ public class WorldMapTerritoryWidget extends BaseControl {
 			default:
 				_arg_1 = "down_left";
 		}
-		;
+
 		this.m_expandDetailsLeft = ((_arg_1 == "down_left") || (_arg_1 == "up_left"));
 		this.m_expandDetailsUp = ((_arg_1 == "up_left") || (_arg_1 == "up_right"));
 		this.m_tooltipBackground.graphics.clear();
@@ -84,32 +84,32 @@ public class WorldMapTerritoryWidget extends BaseControl {
 			this.m_mapMarker.gotoAndStop("not_in_campaign");
 			return;
 		}
-		;
+
 		if (_arg_1.visited == VisitedAndWon) {
 			this.m_mapMarker.gotoAndStop("mission_completed");
 			return;
 		}
-		;
+
 		if (_arg_1.visited == VisitedAndLost) {
 			this.m_mapMarker.gotoAndStop("mission_failed");
 			return;
 		}
-		;
+
 		if (_arg_1.isHotMission) {
 			this.m_mapMarker.gotoAndStop(((_arg_1.isSelectedInMenu) ? "selected_mission_showdown" : "mission_showdown"));
 			if (((this.m_mapMarker.icon_mc) && (_arg_1.isSelectedInMenu))) {
 				this.m_mapMarker.icon_mc.gotoAndPlay(1);
 			}
-			;
+
 		} else {
 			if (_arg_1.isAlerted) {
 				this.m_mapMarker.gotoAndStop(((_arg_1.isSelectedInMenu) ? "selected_mission_alerted" : "mission_alerted"));
 			} else {
 				this.m_mapMarker.gotoAndStop(((_arg_1.isSelectedInMenu) ? "selected_mission" : "mission"));
 			}
-			;
+
 		}
-		;
+
 		var _local_2:Boolean = ((_arg_1.isThisSelectedToTravelNext) || (_arg_1.isMenuZoomedIn));
 		if (this.m_mapMarker.blink_mc) {
 			if (!_local_2) {
@@ -117,13 +117,13 @@ public class WorldMapTerritoryWidget extends BaseControl {
 			} else {
 				this.m_mapMarker.blink_mc.gotoAndStop(1);
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.isSelectedInMenu) {
 			parent.setChildIndex(this, (parent.numChildren - 1));
 		}
-		;
+
 		if (((!(_arg_1.isSelectedInMenu)) || (_local_2))) {
 			Animate.kill(this.m_collapsedTooltipContent);
 			this.m_collapsedTooltipContent.alpha = 0;
@@ -135,10 +135,10 @@ public class WorldMapTerritoryWidget extends BaseControl {
 			} else {
 				this.m_collapsedTooltipContent.x = -((this.m_mapMarker.width * 0.75) + (this.m_collapsedTooltipContent.backgroundWidth * this.m_collapsedTooltipContent.scaleX));
 			}
-			;
+
 			Animate.to(this.m_collapsedTooltipContent, 0.2, 0.2, {"alpha": 1}, Animate.SineOut);
 		}
-		;
+
 		if (((!(_arg_1.isSelectedInMenu)) || (!(_local_2)))) {
 			Animate.kill(this.m_expandedTooltipContent);
 			this.m_expandedTooltipContent.alpha = 0;
@@ -151,11 +151,11 @@ public class WorldMapTerritoryWidget extends BaseControl {
 			} else {
 				this.m_expandedTooltipContent.x = -((this.m_mapMarker.width * 0.75) + (this.m_expandedTooltipContent.backgroundWidth * this.m_expandedTooltipContent.scaleX));
 			}
-			;
+
 			this.m_expandedTooltipContent.y = (-(this.m_expandedTooltipContent.backgroundHeight * this.m_expandedTooltipContent.scaleY) / 2);
 			Animate.to(this.m_expandedTooltipContent, 0.2, 0.2, {"alpha": 1}, Animate.SineOut);
 		}
-		;
+
 		if (!_arg_1.isSelectedInMenu) {
 			Animate.kill(this.m_tooltipBackground);
 			this.m_tooltipBackground.width = 1;
@@ -166,7 +166,7 @@ public class WorldMapTerritoryWidget extends BaseControl {
 					this.m_tooltipBackground.y = this.m_collapsedTooltipContent.y;
 					this.m_tooltipBackground.height = (this.m_collapsedTooltipContent.backgroundHeight * this.m_collapsedTooltipContent.scaleY);
 				}
-				;
+
 				Animate.to(this.m_tooltipBackground, 0.2, 0, {
 					"y": this.m_collapsedTooltipContent.y,
 					"width": (this.m_collapsedTooltipContent.backgroundWidth * this.m_collapsedTooltipContent.scaleX),
@@ -178,7 +178,7 @@ public class WorldMapTerritoryWidget extends BaseControl {
 					this.m_tooltipBackground.y = this.m_expandedTooltipContent.y;
 					this.m_tooltipBackground.height = (this.m_expandedTooltipContent.backgroundHeight * this.m_expandedTooltipContent.scaleY);
 				}
-				;
+
 				Animate.to(this.m_tooltipBackground, 0.2, 0, {
 					"y": this.m_expandedTooltipContent.y,
 					"width": (this.m_expandedTooltipContent.backgroundWidth * this.m_expandedTooltipContent.scaleX),
@@ -187,9 +187,9 @@ public class WorldMapTerritoryWidget extends BaseControl {
 				this.send_dxExpandedCenter((this.m_expandedTooltipContent.x + ((this.m_expandedTooltipContent.backgroundWidth * this.m_expandedTooltipContent.scaleX) / 2)));
 				this.send_dyExpandedCenter((this.m_expandedTooltipContent.y + ((this.m_expandedTooltipContent.backgroundHeight * this.m_expandedTooltipContent.scaleY) / 2)));
 			}
-			;
+
 		}
-		;
+
 	}
 
 
@@ -313,7 +313,7 @@ class CollapsedTooltipContent extends Sprite {
 			_arg_3.alpha = 1;
 			_arg_4.alpha = 1;
 		}
-		;
+
 		_arg_4.htmlText = (('<font face="$global">' + _arg_2.toString()) + "</font>");
 		_arg_3.x = (_arg_1 + (_arg_3.width / 2));
 		_arg_1 = (_arg_1 + (_arg_3.width * 1.25));
@@ -363,18 +363,18 @@ class CollapsedTooltipContent extends Sprite {
 			_local_2 = (_local_2 + (_local_6 + DYGAP));
 			_local_3 = DYGAP;
 		}
-		;
+
 		var _local_7:int = _arg_1.bonusRequirements.length;
 		while (this.m_bonusRequirements.numChildren > _local_7) {
 			this.m_bonusRequirements.removeChildAt((this.m_bonusRequirements.numChildren - 1));
 		}
-		;
+
 		while (this.m_bonusRequirements.numChildren < _local_7) {
 			_local_8 = new iconsAll76x76View();
 			_local_8.y = (_local_8.height / 2);
 			this.m_bonusRequirements.addChild(_local_8);
 		}
-		;
+
 		var _local_9:int;
 		while (_local_9 < _local_7) {
 			_local_8 = iconsAll76x76View(this.m_bonusRequirements.getChildAt(_local_9));
@@ -383,13 +383,13 @@ class CollapsedTooltipContent extends Sprite {
 			_local_8.x = ((_local_8.width / 2) + (_local_9 * (_local_8.width * 1.5)));
 			_local_9++;
 		}
-		;
+
 		if (_local_7 > 0) {
 			this.m_bonusRequirements.y = _local_2;
 			_local_2 = (_local_2 + (this.m_bonusRequirements.height + DYGAP));
 			_local_3 = DYGAP;
 		}
-		;
+
 		var _local_10:Number = Math.max(this.m_destinationName_txt.textWidth, (_local_4 - PXPADDING), this.m_bonusRequirements.width);
 		var _local_11:Number = ((_local_2 - _local_3) - PXPADDING);
 		this.m_dottedLine.updateLineLength(_local_10);
@@ -484,7 +484,7 @@ class BonusRequirement extends Sprite {
 		} else {
 			this.m_title_txt.y = -4;
 		}
-		;
+
 	}
 
 
@@ -527,19 +527,19 @@ class BonusRequirementsBlock extends Sprite {
 			this.m_dyContentHeight = 0;
 			return;
 		}
-		;
+
 		this.visible = true;
 		var _local_2:int = _arg_1.bonusRequirements.length;
 		while (this.m_bonusRequirements.length > _local_2) {
 			removeChild(this.m_bonusRequirements.pop());
 		}
-		;
+
 		while (this.m_bonusRequirements.length < _local_2) {
 			_local_3 = new BonusRequirement();
 			this.m_bonusRequirements.push(_local_3);
 			addChild(_local_3);
 		}
-		;
+
 		var _local_4:Number = ((this.m_dottedLine.y + this.m_dottedLine.dottedLineThickness) + DYGAP);
 		var _local_5:Number = DYGAP;
 		var _local_6:Number = 0;
@@ -560,17 +560,17 @@ class BonusRequirementsBlock extends Sprite {
 				_local_4 = (_local_4 + DYGAP);
 				_local_5 = DYGAP;
 			}
-			;
+
 			_local_7 = _local_9;
 			_local_8++;
 		}
-		;
+
 		if (_local_7) {
 			_local_4 = (_local_4 + _local_6);
 			_local_4 = (_local_4 + DYGAP);
 			_local_5 = DYGAP;
 		}
-		;
+
 		this.m_dyContentHeight = (_local_4 - _local_5);
 	}
 
@@ -679,7 +679,7 @@ class AirTicketButton extends Sprite {
 			});
 			this.m_state = state;
 		}
-		;
+
 	}
 
 
@@ -804,7 +804,7 @@ class ExpandedTooltipContent extends Sprite {
 		} else {
 			this.m_headlineHotMission.y = -(this.m_headlineHotMission.height);
 		}
-		;
+
 		var _local_2:Number = PXPADDING;
 		var _local_3:Number = 0;
 		this.m_destinationCountry_txt.text = _arg_1.lstrDestinationCountry.toUpperCase();
@@ -827,7 +827,7 @@ class ExpandedTooltipContent extends Sprite {
 			_local_2 = (_local_2 + DYGAP);
 			_local_3 = DYGAP;
 		}
-		;
+
 		this.m_bonusRequirementsBlock.onSetData(_arg_1);
 		if (this.m_bonusRequirementsBlock.dyContentHeight > 0) {
 			this.m_bonusRequirementsBlock.y = _local_2;
@@ -835,13 +835,13 @@ class ExpandedTooltipContent extends Sprite {
 			_local_2 = (_local_2 + DYGAP);
 			_local_3 = DYGAP;
 		}
-		;
+
 		if (_arg_1.isThisSelectedToTravelNext) {
 			this.m_airTicketButton.showCancelMessage();
 		} else {
 			this.m_airTicketButton.showBookMessage();
 		}
-		;
+
 		this.m_airTicketButton.y = (_local_2 + DYGAP);
 		_local_2 = (this.m_airTicketButton.y + this.m_airTicketButton.dyContentHeight);
 		_local_2 = (_local_2 + DYGAP);

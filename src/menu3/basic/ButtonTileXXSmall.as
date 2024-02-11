@@ -29,7 +29,7 @@ public dynamic class ButtonTileXXSmall extends ButtonTileBase {
 		if (m_view == null) {
 			return (null);
 		}
-		;
+
 		return (m_view.tileBg);
 	}
 
@@ -40,11 +40,11 @@ public dynamic class ButtonTileXXSmall extends ButtonTileBase {
 				m_textTicker.stopTextTicker(m_view.title, m_textObj.title);
 				m_textTicker = null;
 			}
-			;
+
 			removeChild((m_view as ButtonTileXXSmallView));
 			m_view = null;
 		}
-		;
+
 	}
 
 

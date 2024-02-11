@@ -64,12 +64,12 @@ public class BriefingSequenceTimerTextBlock extends BaseControl {
 			this.m_countDownTimer.stopCountDown();
 			this.m_countDownTimer = null;
 		}
-		;
+
 		if (((_arg_2) && (!(this.m_countDownTimer)))) {
 			this.m_countDownTimer = new BriefingSequenceTimer();
 			this.m_countDownTimer.startCountDown(_arg_1, _arg_2, this, this.m_fontStyle, this.m_fontSize, this.m_fontColorBlack);
 		}
-		;
+
 	}
 
 	public function stopCountDownTimer():void {
@@ -91,7 +91,7 @@ public class BriefingSequenceTimerTextBlock extends BaseControl {
 		if (this.m_textRightAligned) {
 			_local_3.align = "right";
 		}
-		;
+
 		this.m_theTextField = new TextField();
 		this.m_theTextField.alpha = 0;
 		this.m_theTextField.autoSize = "left";
@@ -111,12 +111,12 @@ public class BriefingSequenceTimerTextBlock extends BaseControl {
 		if (this.m_appendUpwards) {
 			this.m_theTextField.y = -(_local_5);
 		}
-		;
+
 		if (this.m_showRegPoint) {
 			_local_8 = new DotIndicatorView();
 			this.m_countDownTextContainer.addChild(_local_8);
 		}
-		;
+
 		Animate.delay(this, _arg_2, this.startSequence, _arg_1);
 	}
 
@@ -134,7 +134,7 @@ public class BriefingSequenceTimerTextBlock extends BaseControl {
 			this.pushFlickerValues(flickerInDurations);
 			this.startFlicker(flickerInDurations);
 		}
-		;
+
 		if (this.m_flickerOut) {
 			flickerOutDurations = new Vector.<Number>();
 			this.pushFlickerValues(flickerOutDurations);
@@ -144,10 +144,10 @@ public class BriefingSequenceTimerTextBlock extends BaseControl {
 				flickerOutTotalDuration = (flickerOutTotalDuration + flickerOutDurations[i]);
 				i = (i + 1);
 			}
-			;
+
 			Animate.delay(this, (baseduration - flickerOutTotalDuration), this.startFlicker, flickerOutDurations);
 		}
-		;
+
 		Animate.to(this.m_countDownTextContainer, this.m_animateInDuration, 0, {
 			"x": (this.m_unitWidth * this.m_animateInEndRow),
 			"y": (this.m_unitHeight * this.m_animateInEndCol)
@@ -170,9 +170,9 @@ public class BriefingSequenceTimerTextBlock extends BaseControl {
 			if (this.m_theTextField.alpha == 0) {
 				this.m_theTextField.alpha = (this.getRandomRange(2, 10) / 10);
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.length >= 1) {
 			Animate.delay(this.m_theTextField, _arg_1.pop(), this.startFlicker, _arg_1);
 		} else {
@@ -184,11 +184,11 @@ public class BriefingSequenceTimerTextBlock extends BaseControl {
 					this.m_theTextField.alpha = 0;
 					this.m_flickerOut = false;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function getRandomRange(_arg_1:Number, _arg_2:Number):Number {
@@ -202,7 +202,7 @@ public class BriefingSequenceTimerTextBlock extends BaseControl {
 			_arg_1.push((this.getRandomRange(2, 20) / 300));
 			_local_3++;
 		}
-		;
+
 	}
 
 	override public function getContainer():Sprite {
@@ -234,7 +234,7 @@ public class BriefingSequenceTimerTextBlock extends BaseControl {
 			default:
 				this.m_fontStyle = MenuConstants.FONT_TYPE_NORMAL;
 		}
-		;
+
 	}
 
 	public function set FontSize(_arg_1:int):void {

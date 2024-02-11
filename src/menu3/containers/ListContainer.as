@@ -52,7 +52,7 @@ public dynamic class ListContainer extends BaseContainer {
 			if (m_children.indexOf(_arg_2) >= 0) {
 				this.repositionChild(_arg_2);
 			}
-			;
+
 		} else {
 			if (_arg_1 == "onEndChildBoundsChanged") {
 				if (m_children.length > 0) {
@@ -60,7 +60,7 @@ public dynamic class ListContainer extends BaseContainer {
 					this.repositionChild(m_children[(m_children.length - 1)]);
 					this.resumePopOutScale();
 				}
-				;
+
 			} else {
 				if (_arg_1 == "onChildBoundsChanged") {
 					if (m_children.length > 0) {
@@ -71,16 +71,16 @@ public dynamic class ListContainer extends BaseContainer {
 							this.repositionChild(_local_4);
 							_local_3++;
 						}
-						;
+
 						this.resumePopOutScale();
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		return (super.handleEvent(_arg_1, _arg_2));
 	}
 
@@ -93,7 +93,7 @@ public dynamic class ListContainer extends BaseContainer {
 			_local_2.pausePopOutScale();
 			_local_1++;
 		}
-		;
+
 	}
 
 	override public function resumePopOutScale():void {
@@ -105,7 +105,7 @@ public dynamic class ListContainer extends BaseContainer {
 			_local_2.resumePopOutScale();
 			_local_1++;
 		}
-		;
+
 	}
 
 	public function repositionChild(element:Sprite):void {
@@ -124,22 +124,22 @@ public dynamic class ListContainer extends BaseContainer {
 				if (!hasPropCol) {
 					fetchBounds = true;
 				}
-				;
+
 			} else {
 				if (!hasPropRow) {
 					fetchBounds = true;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (fetchBounds) {
 			containerBounds = getMenuElementBounds(this, this, function (_arg_1:MenuElementBase):Boolean {
 				return ((_arg_1.visible) && (m_children.indexOf(_arg_1) < elementIndex));
 			});
 		}
-		;
+
 		if (this.m_direction == "dual") {
 			x = containerBounds.width;
 			y = containerBounds.height;
@@ -150,26 +150,26 @@ public dynamic class ListContainer extends BaseContainer {
 				} else {
 					x = (MenuConstants.GridUnitWidth * getNodeProp(element, "col"));
 				}
-				;
+
 			} else {
 				if (!hasPropRow) {
 					y = containerBounds.height;
 				} else {
 					y = (MenuConstants.GridUnitHeight * getNodeProp(element, "row"));
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (!hasPropCol) {
 			element.x = (x + (this.m_xOffset * MenuConstants.GridUnitWidth));
 		}
-		;
+
 		if (!hasPropRow) {
 			element.y = (y + (this.m_yOffset * MenuConstants.GridUnitHeight));
 		}
-		;
+
 	}
 
 

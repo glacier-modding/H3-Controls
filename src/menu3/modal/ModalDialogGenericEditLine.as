@@ -31,7 +31,7 @@ public class ModalDialogGenericEditLine extends ModalDialogFrameEdit {
 		if (!_arg_1.hasOwnProperty("dialogWidth")) {
 			_arg_1.dialogWidth = ModalDialogGeneric.FRAME_WIDTH;
 		}
-		;
+
 		_arg_1.dialogHeight = ModalDialogGeneric.FRAME_HEIGHT_MIN;
 		super(_arg_1);
 		this.createView();
@@ -66,7 +66,7 @@ public class ModalDialogGenericEditLine extends ModalDialogFrameEdit {
 		if (_arg_1.hint) {
 			MenuUtils.setupText(this.m_viewDescription, _arg_1.hint, 21, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 		}
-		;
+
 		var _local_2:Number = ((_arg_1.hasOwnProperty("frameheightmax")) ? _arg_1.frameheightmax : ModalDialogGeneric.FRAME_HEIGHT_MAX);
 		var _local_3:Number = ((_arg_1.hasOwnProperty("frameheightmin")) ? _arg_1.frameheightmin : ModalDialogGeneric.FRAME_HEIGHT_MIN);
 		m_dialogWidth = ((_arg_1.hasOwnProperty("dialogWidth")) ? _arg_1.dialogWidth : ModalDialogGeneric.FRAME_WIDTH);
@@ -80,7 +80,7 @@ public class ModalDialogGenericEditLine extends ModalDialogFrameEdit {
 			_local_7 = (_local_7 - (_local_5 - this.m_viewTitle.y));
 			_local_5 = this.m_viewTitle.y;
 		}
-		;
+
 		createAndAddScrollContainer(_local_4, _local_5, (m_dialogWidth - _local_4), (_local_2 - _local_7), _local_6);
 		_arg_1.multiline = false;
 		super.onSetData(_arg_1);
@@ -90,25 +90,25 @@ public class ModalDialogGenericEditLine extends ModalDialogFrameEdit {
 			this.m_viewDescription.y = 0;
 			m_scrollingContainer.append(this.m_viewDescription, false, this.m_viewDescription.height, false);
 		}
-		;
+
 		setupInformation(_arg_1);
 		if (m_scrollingContainer.getContentHeight() > 0) {
 			_local_11 = m_scrollingContainer.getScrollDist();
 			m_scrollingContainer.addGap(_local_11);
 		}
-		;
+
 		var _local_8:Boolean;
 		if (this.m_viewErrorMsg.text.length == 0) {
 			this.m_viewErrorMsg.text = "ForSizeCheck";
 			_local_8 = true;
 		}
-		;
+
 		var _local_9:Number = ((_arg_1.compacterrorline === true) ? 30 : 0);
 		m_scrollingContainer.append(this.m_content, false, (this.m_content.height - _local_9), false);
 		if (_local_8) {
 			this.m_viewErrorMsg.text = "";
 		}
-		;
+
 		var _local_10:Number = (Math.ceil(m_scrollingContainer.getContentHeight()) + _local_7);
 		m_dialogHeight = updateDialogHeight(_local_10, _local_3, _local_2);
 		this.m_viewFrame.height = m_dialogHeight;
@@ -122,7 +122,7 @@ public class ModalDialogGenericEditLine extends ModalDialogFrameEdit {
 		} else {
 			this.m_viewTileSelect.alpha = this.DISABLED_ALPHA;
 		}
-		;
+
 	}
 
 	override protected function setTitle(_arg_1:String):void {
@@ -135,7 +135,7 @@ public class ModalDialogGenericEditLine extends ModalDialogFrameEdit {
 		} else {
 			MenuUtils.setupTextAndShrinkToFit(this.m_viewTitle, _arg_1, 48, MenuConstants.FONT_TYPE_BOLD, m_maxTitleWidth, _local_2, _local_3, MenuConstants.FontColorWhite);
 		}
-		;
+
 	}
 
 	override protected function setInputFieldText(_arg_1:String):void {
@@ -151,13 +151,13 @@ public class ModalDialogGenericEditLine extends ModalDialogFrameEdit {
 			this.m_viewErrorMsg.text = "";
 			return;
 		}
-		;
+
 		var _local_2:String = _arg_1.getMessage();
 		if (((_local_2 == null) || (_local_2.length <= 0))) {
 			this.m_viewErrorMsg.text = "";
 			return;
 		}
-		;
+
 		switch (_arg_1.getLevel()) {
 			case 1:
 				MenuUtils.setupText(this.m_viewErrorMsg, _local_2, 21, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorRed);
@@ -165,7 +165,7 @@ public class ModalDialogGenericEditLine extends ModalDialogFrameEdit {
 			default:
 				MenuUtils.setupText(this.m_viewErrorMsg, _local_2, 21, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 		}
-		;
+
 	}
 
 

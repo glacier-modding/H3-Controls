@@ -33,7 +33,7 @@ public class DroppedItemVR extends BaseControl {
 		if (this.m_pulsateCounter >= 3) {
 			return;
 		}
-		;
+
 		Animate.fromTo(this.m_view.arrow_mc, 0.4, 0, {"frames": 0}, {"frames": 60}, Animate.Linear, this.animateArrows);
 		this.m_pulsateCounter = (this.m_pulsateCounter + 1);
 	}

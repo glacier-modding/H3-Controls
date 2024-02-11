@@ -37,9 +37,9 @@ public class PhotoModeViewfinderFocusFrame extends BaseControl {
 				Animate.to(this.m_view, 0.4, 0, {"alpha": 0.7}, Animate.ExpoOut);
 				this.pulsateOuterFrameOnScanning();
 			}
-			;
+
 		}
-		;
+
 		if (this.m_isScanning) {
 			this.m_frameFactor = ((_arg_1 <= 5) ? 4 : 10);
 			this.m_pulseSpeed = ((_arg_1 <= 5) ? 0.3 : 0.1);
@@ -52,9 +52,9 @@ public class PhotoModeViewfinderFocusFrame extends BaseControl {
 				this.m_view.scanframe_outer_mc.frame_mc.gotoAndStop(0);
 				Animate.to(this.m_view, 0.2, 0, {"alpha": 0.4}, Animate.ExpoOut);
 			}
-			;
+
 		}
-		;
+
 		this.m_previousScanVal = _arg_1;
 	}
 
@@ -92,7 +92,7 @@ public class PhotoModeViewfinderFocusFrame extends BaseControl {
 		if (((this.m_isScanning) || (this.m_isFocusingOnIntel))) {
 			return;
 		}
-		;
+
 		Animate.kill(this.m_view.viewfinder_mc);
 		Animate.kill(this.m_view.scanframe_outer_mc.frame_mc);
 		this.m_view.scanframe_outer_mc.frame_mc.gotoAndStop(0);
@@ -102,9 +102,9 @@ public class PhotoModeViewfinderFocusFrame extends BaseControl {
 			if (_arg_1 > this.m_previousZoomVal) {
 				Animate.fromTo(this.m_view.viewfinder_mc, 0.2, 0, {"frames": 51}, {"frames": 100}, Animate.Linear);
 			}
-			;
+
 		}
-		;
+
 		this.m_previousZoomVal = _arg_1;
 	}
 
@@ -135,7 +135,7 @@ public class PhotoModeViewfinderFocusFrame extends BaseControl {
 				this.m_view.visible = true;
 				this.m_view.alpha = 0.4;
 		}
-		;
+
 	}
 
 	private function resetScanning():void {
@@ -157,7 +157,7 @@ public class PhotoModeViewfinderFocusFrame extends BaseControl {
 					pulsateOuterFrameOnWithinFocus();
 					m_isFocusingOnIntel = true;
 				}
-				;
+
 			});
 		} else {
 			this.m_view.viewfinder_mc.alpha = 1;
@@ -165,7 +165,7 @@ public class PhotoModeViewfinderFocusFrame extends BaseControl {
 			this.m_view.scanframe_outer_mc.frame_mc.gotoAndStop(0);
 			this.m_isFocusingOnIntel = false;
 		}
-		;
+
 	}
 
 	private function killAllAnims():void {

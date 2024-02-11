@@ -24,7 +24,7 @@ public dynamic class SearchButton extends MenuElementTileBase {
 	protected var m_view:Object;
 	protected var m_iconName:String;
 	protected var m_textTicker:textTicker;
-	protected var m_textObj:Object = new Object();
+	protected var m_textObj:Object = {};
 	protected var m_title:String;
 	protected var m_currentState:int = 0;
 	private var m_previousState:int = 0;
@@ -58,11 +58,11 @@ public dynamic class SearchButton extends MenuElementTileBase {
 				this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 				this.m_textTicker = null;
 			}
-			;
+
 			removeChild((this.m_view as ButtonTileSmallView));
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -79,15 +79,15 @@ public dynamic class SearchButton extends MenuElementTileBase {
 			if (getNodeProp(this, "selectable") == false) {
 				this.m_currentState = this.STATE_NOT_SELECTABLE;
 			}
-			;
+
 		}
-		;
+
 		if (getNodeProp(this, "pressable") == false) {
 			MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_GREY_LIGHT, false);
 		} else {
 			MenuUtils.removeColor(this.m_view.tileSelect);
 		}
-		;
+
 		this.setupTextFields(_arg_1.header, _arg_1.title);
 		this.updateState();
 	}
@@ -100,7 +100,7 @@ public dynamic class SearchButton extends MenuElementTileBase {
 		if (m_isSelected == _arg_1) {
 			return;
 		}
-		;
+
 		m_isSelected = _arg_1;
 		this.handleSelectionChange();
 	}
@@ -116,14 +116,14 @@ public dynamic class SearchButton extends MenuElementTileBase {
 		if (this.m_textTicker) {
 			this.m_textTicker.setTextColor(_arg_1);
 		}
-		;
+
 	}
 
 	override protected function handleSelectionChange():void {
 		if (this.m_currentState == this.STATE_DISABLED) {
 			return;
 		}
-		;
+
 		this.m_currentState = ((m_isSelected) ? this.STATE_SELECTED : this.STATE_DEFAULT);
 		this.updateState();
 	}
@@ -138,12 +138,12 @@ public dynamic class SearchButton extends MenuElementTileBase {
 		if (((state == this.STATE_DISABLED) || (state == this.STATE_NOT_SELECTABLE))) {
 			Animate.complete(this.m_animationBox);
 		}
-		;
+
 		this.completeAnimations();
 		if (m_loading) {
 			return;
 		}
-		;
+
 		this.callTextTicker(m_isSelected);
 		if (((state == this.STATE_NOT_SELECTABLE) || (state == this.STATE_DISABLED))) {
 			setPopOutScale(m_view, false);
@@ -169,9 +169,9 @@ public dynamic class SearchButton extends MenuElementTileBase {
 				MenuUtils.removeColor(m_view.tileSelect);
 				MenuUtils.setupIcon(m_view.tileIcon, this.m_iconName, MenuConstants.COLOR_GREY_ULTRA_DARK, true, false);
 			}
-			;
+
 		}
-		;
+
 		if ((((state == this.STATE_DEFAULT) && (!(this.m_previousState == this.STATE_SELECTED))) && (!(this.m_previousState == this.STATE_DEFAULT)))) {
 			fromScaleX = (this.m_animationBox.scaleX * 4);
 			fromScaleY = (this.m_animationBox.scaleY * 4);
@@ -183,7 +183,7 @@ public dynamic class SearchButton extends MenuElementTileBase {
 				m_animationBox.alpha = 0;
 			});
 		}
-		;
+
 		this.m_previousState = state;
 	}
 
@@ -191,14 +191,14 @@ public dynamic class SearchButton extends MenuElementTileBase {
 		if (!this.m_textTicker) {
 			this.m_textTicker = new textTicker();
 		}
-		;
+
 		if (_arg_1) {
 			this.m_textTicker.startTextTicker(this.m_view.title, this.m_textObj.title);
 		} else {
 			this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 			MenuUtils.truncateTextfield(this.m_view.title, 1, null);
 		}
-		;
+
 	}
 
 	protected function setupTextFields(_arg_1:String, _arg_2:String):void {

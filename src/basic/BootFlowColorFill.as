@@ -27,7 +27,7 @@ public class BootFlowColorFill extends BaseControl {
 		if (this.m_enableMultiply) {
 			this.m_backdrop.blendMode = "multiply";
 		}
-		;
+
 		addChild(this.m_backdrop);
 	}
 
@@ -39,7 +39,7 @@ public class BootFlowColorFill extends BaseControl {
 		if (this.m_enableMultiply) {
 			this.m_backdrop.blendMode = "multiply";
 		}
-		;
+
 	}
 
 	override public function getContainer():Sprite {

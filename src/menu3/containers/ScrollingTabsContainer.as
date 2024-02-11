@@ -62,17 +62,17 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 		if (_arg_1.overflowscrolling) {
 			this.m_overflowScrollingFactor = _arg_1.overflowscrolling;
 		}
-		;
+
 		if (!this.m_isSubMenu) {
 			this.m_previousVisibilityConfig = null;
 			this.m_topNavigation = new TopNavigationHandler();
 			this.m_topNavigation.onSetData(_arg_1.topnavigation);
 		}
-		;
+
 		if (!this.m_isSubMenu) {
 			this.updateButtonPrompts();
 		}
-		;
+
 		var _local_4:Number = ((this.m_isSubMenu) ? this.SUB_MENU_START_Y : MenuConstants.TabsBgOffsetYPos);
 		var _local_5:Number = ((this.m_isSubMenu) ? this.SUB_MENU_HEIGHT : (MenuConstants.TabsLineLowerYPos - MenuConstants.TabsLineMidYPos));
 		this.m_tabBackground = new Sprite();
@@ -97,7 +97,7 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 			addChild(this.m_mask);
 			getContainer().mask = this.m_mask;
 		}
-		;
+
 		addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
 	}
 
@@ -108,7 +108,7 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 			this.m_topNavigation = new TopNavigationHandler();
 			this.m_topNavigation.onSetData(_arg_1.topnavigation);
 		}
-		;
+
 	}
 
 	override public function addChild2(_arg_1:Sprite, _arg_2:int = -1):void {
@@ -118,9 +118,9 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 			if (_local_3 != null) {
 				_local_3.enableSpacer();
 			}
-			;
+
 		}
-		;
+
 		super.addChild2(_arg_1, _arg_2);
 	}
 
@@ -130,7 +130,7 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 			this.m_topNavigation = null;
 			this.m_previousVisibilityConfig = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -154,12 +154,12 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 						"hidePrompt": ((!(_arg_1.lb)) && (_local_3))
 					});
 				}
-				;
+
 				this.updateButtonPrompts();
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function replaceButtonPrompt(_arg_1:Object, _arg_2:String, _arg_3:Object):void {
@@ -174,22 +174,22 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 					if (_local_5 == _arg_2) {
 						_arg_1[_local_4] = _arg_3;
 					}
-					;
+
 				} else {
 					if ((_local_5 is Object)) {
 						if (_local_5["name"] == _arg_2) {
 							_arg_1[_local_4] = _arg_3;
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			_local_4++;
 		}
-		;
+
 	}
 
 	public function updateButtonPrompts():void {
@@ -200,10 +200,10 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 			if (m_sendEventWithValue != null) {
 				_local_2 = this.handlePromptMouseEvent;
 			}
-			;
+
 			MenuUtils.parsePrompts(_local_1, null, this.m_topNavigation.m_promptsContainer, true, _local_2);
 		}
-		;
+
 	}
 
 	private function handlePromptMouseEvent(_arg_1:String):void {
@@ -211,7 +211,7 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 		if (m_sendEventWithValue == null) {
 			return;
 		}
-		;
+
 		if (this["_nodedata"]) {
 			_local_2 = (this["_nodedata"]["id"] as int);
 			if (_arg_1 == "lb") {
@@ -220,11 +220,11 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 				if (_arg_1 == "rb") {
 					m_sendEventWithValue("onElementPageNext", _local_2);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function getScrollBounds():Rectangle {
@@ -250,7 +250,7 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 		if (_arg_2 < 0) {
 			_arg_2 = MenuConstants.ScrollTime;
 		}
-		;
+
 		if (this.m_overflowScrollingFactor > 0) {
 			_local_7 = _arg_1.clone();
 			_local_7.inflate((_arg_1.width * this.m_overflowScrollingFactor), (_arg_1.height * this.m_overflowScrollingFactor));
@@ -259,13 +259,13 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 			_local_7.offset(getContainer().x, getContainer().y);
 			_arg_1 = _local_7;
 		}
-		;
+
 		if (this.m_scrollBounds.containsRect(_arg_1)) {
 			Animate.kill(getContainer());
 			return;
 		}
-		;
-		var _local_3:Object = new Object();
+
+		var _local_3:Object = {};
 		var _local_4:Number = 0;
 		var _local_5:Number = ((this.m_scrollBounds.left + this.m_scrollBounds.right) * 0.5);
 		var _local_6:Number = ((_arg_1.left + _arg_1.right) * 0.5);
@@ -275,7 +275,7 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 			_local_8 = this.m_scrollBounds.union(_arg_1);
 			_local_4 = (_local_8.width - this.m_scrollBounds.width);
 		}
-		;
+
 		if (_local_4 > 0) {
 			_local_9 = getContainer().x;
 			if (_local_5 > _local_6) {
@@ -283,18 +283,18 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 			} else {
 				_local_9 = (_local_9 - _local_4);
 			}
-			;
+
 			_local_3["x"] = _local_9;
 		}
-		;
+
 		if (_local_3["x"] !== undefined) {
 			Animate.kill(getContainer());
 			if (_local_3["x"] !== undefined) {
 				Animate.legacyTo(getContainer(), _arg_2, {"x": _local_3["x"]}, Animate.ExpoOut);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function setFocusTarget(_arg_1:Sprite):void {
@@ -302,7 +302,7 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 		if (this.m_topNavigation != null) {
 			this.m_topNavigation.updateFrom(_arg_1);
 		}
-		;
+
 	}
 
 	public function setFocusTargetWithScrollTime(target:Sprite, scrollTime:Number):void {
@@ -317,7 +317,7 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 		if (m_isSelected) {
 			bubbleEvent("scrollingListContainerSelected", this);
 		}
-		;
+
 	}
 
 	override public function repositionChild(_arg_1:Sprite):void {
@@ -338,11 +338,11 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 					this.setFocusTargetWithScrollTime(_arg_2, MenuConstants.TabsHoverScrollTime);
 					bubbleEvent("scrollingListContainerScrolled", this);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		return (super.handleEvent(_arg_1, _arg_2));
 	}
 
@@ -352,7 +352,7 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 		if (!this.m_isSubMenu) {
 			Animate.to(this.m_tabBackground, MenuConstants.PageOpenTime, 0, {"alpha": 1}, Animate.Linear);
 		}
-		;
+
 		this.scaleBackground();
 		stage.addEventListener(ScreenResizeEvent.SCREEN_RESIZED, this.onScreenResize, true, 0, true);
 		addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
@@ -386,7 +386,7 @@ public dynamic class ScrollingTabsContainer extends ListContainer implements IBu
 			_local_1 = _local_4;
 			_local_2 = (this.m_originalBarPosX + ((MenuConstants.BaseWidth - _local_1) / 2));
 		}
-		;
+
 		this.m_tabBackground.width = _local_1;
 		this.m_tabBackground.x = _local_2;
 	}

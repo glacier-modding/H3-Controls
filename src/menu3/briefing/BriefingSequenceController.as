@@ -62,10 +62,10 @@ public class BriefingSequenceController extends BaseControl {
 				var _local_2:* = sequenceChild;
 				(_local_2["start"](this.m_baseDuration, this.m_animateInDuration));
 			}
-			;
+
 			i = (i + 1);
 		}
-		;
+
 		Animate.fromTo(this.m_sequenceContainer, this.m_animateInDuration, 0, {
 			"x": (this.m_unitWidth * this.m_animateInStartRow),
 			"y": (this.m_unitHeight * this.m_animateInStartCol)
@@ -97,12 +97,12 @@ public class BriefingSequenceController extends BaseControl {
 				if (_local_3["stopCountDownTimer"]) {
 					_local_3["stopCountDownTimer"];
 				}
-				;
+
 			}
-			;
+
 			_local_1++;
 		}
-		;
+
 		this.m_sequenceContainer.alpha = 0;
 		this.m_sequenceContainer.removeChild(this.m_mask);
 	}

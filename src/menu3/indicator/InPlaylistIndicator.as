@@ -20,7 +20,7 @@ public class InPlaylistIndicator extends IndicatorBase {
 			m_indicatorView.icon.gotoAndStop(1);
 			m_indicatorView.bg.gotoAndStop(1);
 		}
-		;
+
 	}
 
 	public function setColorInvert(_arg_1:Boolean):void {

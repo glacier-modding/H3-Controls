@@ -79,7 +79,7 @@ public dynamic class OptionsInfoTopLeftPreview extends OptionsInfoPreview {
 		if (data.previewData.fScale != undefined) {
 			this.m_fScale = data.previewData.fScale;
 		}
-		;
+
 		pxBGWidth = PX_PREVIEW_BACKGROUND_WIDTH;
 		var/*const*/ pxBGHeight:Number = ((pxBGWidth / 1920) * 1080);
 		this.m_objectivesBar.x = 30;
@@ -94,13 +94,13 @@ public dynamic class OptionsInfoTopLeftPreview extends OptionsInfoPreview {
 			thing.scaleX = this.m_fScale;
 			thing.scaleY = this.m_fScale;
 		}
-		;
+
 		nOptionObjectives = CommonUtils.getUIOptionValueNumber("UI_OPTION_GAME_AID_OBJECTIVES");
 		if (this.m_idTimeoutObjectives != 0) {
 			clearTimeout(this.m_idTimeoutObjectives);
 			this.m_idTimeoutObjectives = 0;
 		}
-		;
+
 		switch (nOptionObjectives) {
 			case UIOPTION_OBJECTIVES_OFF:
 				this.m_objectivesBar.updateAndShowObjectives(makeObjectivesEmptyData());
@@ -114,10 +114,10 @@ public dynamic class OptionsInfoTopLeftPreview extends OptionsInfoPreview {
 				} else {
 					this.showUpdatingObjectivesStep1();
 				}
-				;
+
 				break;
 		}
-		;
+
 		if (!data.previewData.showPiPWithImage) {
 			this.m_objectivesBar.visible = true;
 			this.m_pipImageScaler.visible = false;
@@ -132,7 +132,7 @@ public dynamic class OptionsInfoTopLeftPreview extends OptionsInfoPreview {
 			});
 			this.showPiPStep1();
 		}
-		;
+
 	}
 
 	private function showUpdatingObjectivesStep1():void {
@@ -200,7 +200,7 @@ public dynamic class OptionsInfoTopLeftPreview extends OptionsInfoPreview {
 			this.m_pipImageLoader.cancelAndClearImage();
 			this.m_pipImageLoader = null;
 		}
-		;
+
 		super.onPreviewRemovedFromStage();
 	}
 

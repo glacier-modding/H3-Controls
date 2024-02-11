@@ -38,7 +38,7 @@ public class LocationImage extends Sprite {
 		if (!this.m_totalCompletion) {
 			Animate.legacyFrom(this.m_view, 0.3, {"alpha": 0}, Animate.ExpoOut);
 		}
-		;
+
 		this.init();
 	}
 
@@ -50,7 +50,7 @@ public class LocationImage extends Sprite {
 		} else {
 			this.m_imageMask.scaleX = 1;
 		}
-		;
+
 	}
 
 	public function destroy():void {
@@ -60,10 +60,10 @@ public class LocationImage extends Sprite {
 			if ((this.m_view.getChildAt(0) is MovieClip)) {
 				MovieClip(this.m_view.getChildAt(0)).gotoAndStop(1);
 			}
-			;
+
 			this.m_view.removeChild(this.m_view.getChildAt(0));
 		}
-		;
+
 		removeChild(this.m_view);
 		this.m_view = null;
 		this.m_imageMask = null;

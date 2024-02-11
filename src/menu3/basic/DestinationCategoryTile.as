@@ -27,7 +27,7 @@ public dynamic class DestinationCategoryTile extends MenuElementLockableContentB
 
 	private var m_view:DestinationCategoryTileView;
 	private var m_loader:MenuImageLoader;
-	private var m_textObj:Object = new Object();
+	private var m_textObj:Object = {};
 	private var m_textTicker:textTicker;
 	private var m_pressable:Boolean = true;
 	private var m_alwaysDisplaySelectedState:Boolean = false;
@@ -66,17 +66,17 @@ public dynamic class DestinationCategoryTile extends MenuElementLockableContentB
 			MenuUtils.setTintColor(this.m_view.tileSelectPulsate, MenuUtils.TINT_COLOR_GREY, false);
 			this.m_view.informationBg.visible = false;
 		}
-		;
+
 		this.m_enableInfo = true;
 		if (_arg_1.hasOwnProperty("enableinfo")) {
 			this.m_enableInfo = _arg_1.enableinfo;
 		}
-		;
+
 		this.m_alwaysDisplaySelectedState = false;
 		if (_arg_1.hasOwnProperty("alwaysdisplayselectedstate")) {
 			this.m_alwaysDisplaySelectedState = _arg_1.alwaysdisplayselectedstate;
 		}
-		;
+
 		if (this.m_alwaysDisplaySelectedState) {
 			this.m_view.tileIcon.alpha = 1;
 			this.m_view.tileIcon.y = this.TILEICON_Y_END_POS;
@@ -88,24 +88,24 @@ public dynamic class DestinationCategoryTile extends MenuElementLockableContentB
 				this.m_view.title.scaleX = (this.m_view.title.scaleY = this.TITLE_END_SCALE);
 				this.m_view.title.y = this.TITLE_Y_END_POS;
 			}
-			;
+
 		}
-		;
+
 		this.setupTextFields(_arg_1.header, _arg_1.title);
 		if (this.m_enableInfo) {
 			this.setupInfo(_arg_1.timeheader, _arg_1.timevalue, _arg_1.completionheader, _arg_1.completionvalue);
 		} else {
 			this.setupInfo("", "", "", "");
 		}
-		;
+
 		if (_arg_1.image) {
 			this.loadImage(_arg_1.image);
 		}
-		;
+
 		if (_arg_1.availability) {
 			setAvailablity(this.m_view, _arg_1, "small");
 		}
-		;
+
 	}
 
 	private function setupTextFields(_arg_1:String, _arg_2:String):void {
@@ -121,14 +121,14 @@ public dynamic class DestinationCategoryTile extends MenuElementLockableContentB
 		if (!this.m_textTicker) {
 			this.m_textTicker = new textTicker();
 		}
-		;
+
 		if (_arg_1) {
 			this.m_textTicker.startTextTicker(this.m_view.title, this.m_textObj.title);
 		} else {
 			this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 			MenuUtils.truncateTextfield(this.m_view.title, 1, MenuConstants.FontColorWhite);
 		}
-		;
+
 	}
 
 	private function changeTextColor(_arg_1:uint):void {
@@ -154,7 +154,7 @@ public dynamic class DestinationCategoryTile extends MenuElementLockableContentB
 			this.m_view.image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new MenuImageLoader(ControlsMain.isVrModeActive());
 		this.m_view.image.addChild(this.m_loader);
 		this.m_loader.center = true;
@@ -167,7 +167,7 @@ public dynamic class DestinationCategoryTile extends MenuElementLockableContentB
 				m_view.image.width = MenuConstants.MenuTileTallWidth;
 				m_view.image.scaleY = m_view.image.scaleX;
 			}
-			;
+
 		});
 	}
 
@@ -187,7 +187,7 @@ public dynamic class DestinationCategoryTile extends MenuElementLockableContentB
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (m_isSelected) {
 			Animate.legacyTo(this.m_view.tileSelect, MenuConstants.HiliteTime, {"alpha": 1}, Animate.Linear);
 			MenuUtils.pulsate(this.m_view.tileSelectPulsate, true);
@@ -201,9 +201,9 @@ public dynamic class DestinationCategoryTile extends MenuElementLockableContentB
 					Animate.legacyTo(this.m_view.informationBg, MenuConstants.HiliteTime, {"alpha": 1}, Animate.Linear);
 					Animate.legacyTo(this.m_view.info, MenuConstants.HiliteTime, {"alpha": 1}, Animate.Linear);
 				}
-				;
+
 			}
-			;
+
 			Animate.legacyTo(this.m_view.header, MenuConstants.HiliteTime, {"y": this.HEADER_Y_END_POS}, Animate.Linear);
 			Animate.legacyTo(this.m_view.title, MenuConstants.HiliteTime, {
 				"scaleX": this.TITLE_END_SCALE,
@@ -221,14 +221,14 @@ public dynamic class DestinationCategoryTile extends MenuElementLockableContentB
 					this.m_view.informationBg.alpha = 0;
 					this.m_view.info.alpha = 0;
 				}
-				;
+
 			}
-			;
+
 			this.m_view.header.y = this.HEADER_Y_START_POS;
 			this.m_view.title.y = this.TITLE_Y_START_POS;
 			this.m_view.title.scaleX = (this.m_view.title.scaleY = this.TITLE_START_SCALE);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -239,17 +239,17 @@ public dynamic class DestinationCategoryTile extends MenuElementLockableContentB
 				this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 				this.m_textTicker = null;
 			}
-			;
+
 			if (this.m_loader) {
 				this.m_loader.cancelIfLoading();
 				this.m_view.image.removeChild(this.m_loader);
 				this.m_loader = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	private function completeAnimations():void {
@@ -262,7 +262,7 @@ public dynamic class DestinationCategoryTile extends MenuElementLockableContentB
 		if (m_infoIndicator != null) {
 			Animate.complete(m_infoIndicator);
 		}
-		;
+
 		Animate.complete(this.m_view.header);
 		Animate.complete(this.m_view.title);
 	}

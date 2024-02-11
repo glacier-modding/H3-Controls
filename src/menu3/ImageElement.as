@@ -25,7 +25,7 @@ public dynamic class ImageElement extends MenuElementBase {
 			removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 	}
 
 

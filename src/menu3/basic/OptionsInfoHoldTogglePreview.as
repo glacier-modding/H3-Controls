@@ -31,7 +31,7 @@ public dynamic class OptionsInfoHoldTogglePreview extends OptionsInfoSlideshowPr
 		if (!ControlsMain.isVrModeActive()) {
 			this.m_buttonsContainer.filters = [new DropShadowFilter(2, 90, 0, 1, 8, 8, 1, BitmapFilterQuality.HIGH, false, false, false)];
 		}
-		;
+
 		this.onSetData(_arg_1);
 	}
 
@@ -49,7 +49,7 @@ public dynamic class OptionsInfoHoldTogglePreview extends OptionsInfoSlideshowPr
 				_local_5 = new InteractionIndicator();
 				this.m_buttonsContainer.addChild(_local_5);
 			}
-			;
+
 			_local_5.onSetData({
 				"m_eState": InteractionIndicator.STATE_AVAILABLE,
 				"m_eTypeId": InteractionIndicator.TYPE_PRESS,
@@ -67,11 +67,11 @@ public dynamic class OptionsInfoHoldTogglePreview extends OptionsInfoSlideshowPr
 			_local_5.scaleY = 1.25;
 			_local_4++;
 		}
-		;
+
 		while (this.m_buttonsContainer.numChildren > _local_3) {
 			this.m_buttonsContainer.removeChildAt(_local_3);
 		}
-		;
+
 	}
 
 	override protected function onPreviewSlideshowEnteredFrameLabel(_arg_1:String):void {
@@ -85,14 +85,14 @@ public dynamic class OptionsInfoHoldTogglePreview extends OptionsInfoSlideshowPr
 					if ((((_local_4.when == Trigger.When_OnEntered) || ((_local_4.when == Trigger.When_OnEnteredFwd) && (dirCurrent == Dir_Forward))) || ((_local_4.when == Trigger.When_OnEnteredBwd) && (dirCurrent == Dir_Backward)))) {
 						_local_4.runOnIndicator(InteractionIndicator(this.m_buttonsContainer.getChildAt(_local_3)));
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			_local_3++;
 		}
-		;
+
 	}
 
 	override protected function onPreviewSlideshowExitedFrameLabel(_arg_1:String):void {
@@ -106,14 +106,14 @@ public dynamic class OptionsInfoHoldTogglePreview extends OptionsInfoSlideshowPr
 					if ((((_local_4.when == Trigger.When_OnExited) || ((_local_4.when == Trigger.When_OnExitedFwd) && (dirCurrent == Dir_Forward))) || ((_local_4.when == Trigger.When_OnExitedBwd) && (dirCurrent == Dir_Backward)))) {
 						_local_4.runOnIndicator(InteractionIndicator(this.m_buttonsContainer.getChildAt(_local_3)));
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			_local_3++;
 		}
-		;
+
 	}
 
 
@@ -159,7 +159,7 @@ class Trigger {
 			if (!_local_4.frameLabel) {
 				trace("error: missing triggerData.frameLabel");
 			}
-			;
+
 			switch (_local_3.when) {
 				case "OnEntered":
 					_local_4.when = When_OnEntered;
@@ -182,7 +182,7 @@ class Trigger {
 				default:
 					trace(("error: unrecognized triggerData.when: " + _local_3.when));
 			}
-			;
+
 			switch (_local_3.what) {
 				case "AnimatePress":
 					_local_4.what = What_AnimatePress;
@@ -199,10 +199,10 @@ class Trigger {
 				default:
 					trace(("error: unrecognized triggerData.what: " + _local_3.what));
 			}
-			;
+
 			_local_2.push(_local_4);
 		}
-		;
+
 		return (_local_2);
 	}
 
@@ -291,7 +291,7 @@ class Trigger {
 				}, Animate.Linear);
 				return;
 		}
-		;
+
 	}
 
 

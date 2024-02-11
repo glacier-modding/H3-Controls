@@ -176,7 +176,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		if (_local_4) {
 			_local_5 = Math.min(_arg_1.XPGain, _local_5);
 		}
-		;
+
 		var _local_6:BarValues = new BarValues();
 		_local_6.xpTotalGain = _local_5;
 		_local_6.endXP = _arg_1.XP;
@@ -191,7 +191,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		if (_local_9) {
 			_local_6.endBarProgress = 1;
 		}
-		;
+
 		return (_local_6);
 	}
 
@@ -199,13 +199,13 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		if (_arg_1.levelInfo == null) {
 			return;
 		}
-		;
+
 		var _local_5:Boolean = _arg_1.levelInfo.isLevelMaxed(_arg_3);
 		if (_local_5) {
 			_arg_1.barView.scaleX = _arg_1.originalScale;
 			return;
 		}
-		;
+
 		var _local_6:Number = _arg_1.levelInfo.getLevelFromList(_arg_3);
 		var _local_7:Number = _arg_1.levelInfo.getLevelFromList(_arg_4);
 		var _local_8:int = int(_local_6);
@@ -216,7 +216,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		if (_local_12) {
 			_local_11 = 1;
 		}
-		;
+
 		animateBarFill(_arg_1, _local_8, _local_9, _local_11, _local_10);
 	}
 
@@ -232,17 +232,17 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				if (barAniValues.newLevelCallback != null) {
 					barAniValues.newLevelCallback(_local_1);
 				}
-				;
+
 				if (((endBarProgress == 1) && (fillingsLeft == 1))) {
 					return;
 				}
-				;
+
 				barAniValues.barView.scaleX = 0;
 				animateBarFill(barAniValues, _local_1, nextFillingsLeft, endBarProgress, speed);
 			});
 			return;
 		}
-		;
+
 		duration = (Math.max(0, Math.min((endBarProgress - currentBarProgress), 1)) * speed);
 		var targetScale:Number = (endBarProgress * barAniValues.originalScale);
 		Animate.to(barAniValues.barView, duration, 0, {"scaleX": targetScale}, Animate.Linear);
@@ -289,7 +289,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		if (this.m_dottedLinePlayerName) {
 			this.m_dottedLinePlayerName.alpha = 0;
 		}
-		;
+
 		this.m_evergreenCampaignView.alpha = 0;
 	}
 
@@ -322,7 +322,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		} else {
 			this.m_evergreenAnimation = false;
 		}
-		;
+
 		this.m_isSniper = (_arg_1.ContractType == "sniper");
 		this.m_isUnlockableMasteryVisible = false;
 		this.m_isVersus = ((_arg_1.isversus != null) ? _arg_1.isversus : false);
@@ -336,17 +336,17 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			this.m_isNewBestScore = true;
 			MenuUtils.setupTextUpper(this.m_missionScoreMc.newBestTitle, Localization.get("UI_RATING_NEW_PERSONAL BEST"), 14, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 		}
-		;
+
 		if ((((!(this.m_isEvergreen)) && (!(_arg_1.IsNewBestTime == null))) && (_arg_1.IsNewBestTime))) {
 			this.m_isNewBestTime = true;
 			MenuUtils.setupTextUpper(this.m_missionTimeMc.newBestTitle, Localization.get("UI_RATING_NEW_PERSONAL BEST"), 14, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 		}
-		;
+
 		if ((((!(this.m_isEvergreen)) && (!(_arg_1.IsNewBestStars == null))) && (_arg_1.IsNewBestStars))) {
 			this.m_isNewBestRating = true;
 			MenuUtils.setupTextUpper(this.m_missionRatingMc.newBestTitle, Localization.get("UI_RATING_NEW_PERSONAL BEST"), 14, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 		}
-		;
+
 		if (((_arg_1.Challenges) && (_arg_1.Challenges.length > 0))) {
 			_local_10 = 0;
 			while (_local_10 < _arg_1.Challenges.length) {
@@ -355,37 +355,37 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				if (_local_11.XPGain != undefined) {
 					_local_12 = _local_11.XPGain;
 				}
-				;
+
 				if (_local_11.IsActionReward === true) {
 					if (_local_12 > 0) {
 						this.m_barRewards.push(_local_11);
 						this.m_actionXPGain = (this.m_actionXPGain + _local_12);
 					}
-					;
+
 				} else {
 					this.m_challengeCountGain++;
 					this.m_challengeXPGain = (this.m_challengeXPGain + _local_12);
 				}
-				;
+
 				_local_10++;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_challengeXPGain > 0) {
-			_local_13 = new Object();
+			_local_13 = {};
 			_local_13.ChallengeName = "UI_MENU_PAGE_PLANNING_CHALLENGES";
 			_local_13.XPGain = this.m_challengeXPGain;
 			this.m_barRewards.unshift(_local_13);
 		}
-		;
+
 		if (_arg_1.player != null) {
 			MenuUtils.setupText(this.m_playerNameMc.labelTxt, _arg_1.player, 60, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorWhite);
 			CommonUtils.changeFontToGlobalIfNeeded(this.m_playerNameMc.labelTxt);
 			MenuUtils.truncateTextfieldWithCharLimit(this.m_playerNameMc.labelTxt, 1, MenuConstants.PLAYERNAME_MIN_CHAR_COUNT, MenuConstants.FontColorWhite);
 			MenuUtils.shrinkTextToFit(this.m_playerNameMc.labelTxt, this.m_playerNameMc.labelTxt.width, -1);
 		}
-		;
+
 		if (!this.m_isOnline) {
 			this.resetVisibility();
 			this.m_view.offlineTxt.visible = true;
@@ -393,22 +393,22 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			Animate.to(this.m_playerNameMc, 0.3, 0.1, {"alpha": 1}, Animate.ExpoOut);
 			return;
 		}
-		;
+
 		if (_arg_1.LocationProgression != null) {
 			this.m_locationLevelInfo = new LevelInfo();
 			this.m_locationLevelInfo.init(_arg_1.LocationProgression.LevelInfo, 0);
 		}
-		;
+
 		if (_arg_1.UnlockableProgression != null) {
 			this.m_sniperUnlockableLevelInfo = new LevelInfo();
 			this.m_sniperUnlockableLevelInfo.init(_arg_1.UnlockableProgression.LevelInfo, 0);
 		}
-		;
+
 		this.m_hideLocationProgression = true;
 		if (_arg_1.CompletionData != null) {
 			this.m_hideLocationProgression = (_arg_1.CompletionData.HideProgression === true);
 		}
-		;
+
 		this.m_profileBarValues = new BarValues();
 		this.m_profileMasteryMc.barFill.scaleX = 0;
 		this.m_xpTotal = (this.m_challengeXPGain + this.m_actionXPGain);
@@ -421,7 +421,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			MenuUtils.setColor(this.m_profileMasteryMc.barFill, MenuConstants.COLOR_WHITE);
 			this.m_profileMasteryMc.barFill.scaleX = (this.m_profileBarValues.startBarProgress * this.m_profileBarOriginalScale);
 		}
-		;
+
 		this.setLevelInfoProfile("");
 		if (this.m_isEvergreen) {
 			this.m_view.missionSummaryMc.lineMc_01.alpha = 0;
@@ -429,13 +429,13 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			this.m_view.missionSummaryMc.lineMc_03.alpha = 0;
 			this.m_view.missionSummaryMc.lineMc_04.alpha = 0;
 		}
-		;
+
 		this.m_showRating = ((_arg_1.showrating != undefined) ? _arg_1.showrating : (!(_arg_1.rating == null)));
 		this.m_ratingScore = ((_arg_1.rating != null) ? _arg_1.rating : 0);
 		if (this.m_isEvergreen) {
 			this.m_showRating = false;
 		}
-		;
+
 		var _local_2:Boolean;
 		this.m_isSilentAssassin = (this.m_ratingScore >= 5);
 		if (_arg_1.silentAssassin != null) {
@@ -445,9 +445,9 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				this.m_isSilentAssassin = _arg_1.MedicineMan;
 				_local_2 = true;
 			}
-			;
+
 		}
-		;
+
 		if (((!(_arg_1.PlayStyle == null)) && ((_arg_1.EvergreenFailed == null) || (!(_arg_1.EvergreenFailed))))) {
 			MenuUtils.setupTextAndShrinkToFitUpper(this.m_playStyleMc.title, _arg_1.PlayStyle.Name, 28, MenuConstants.FONT_TYPE_MEDIUM, this.m_playStyleMc.title.width, -1, 15, MenuConstants.FontColorGreyUltraDark);
 			this.m_playStyleSoundId = ("ui_debrief_scorescreen_playstyle_sweetener_" + _arg_1.PlayStyle.Type);
@@ -455,14 +455,14 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		} else {
 			this.m_hasPlayStyle = false;
 		}
-		;
+
 		var _local_3:int = 1;
 		while (_local_3 <= 5) {
 			_local_15 = this.m_missionRatingMc.ratingIcons.getChildByName(("icon" + _local_3));
 			MenuUtils.setColor(_local_15, MenuConstants.COLOR_WHITE, true, ((this.m_showRating) ? 0.1 : 0));
 			_local_3++;
 		}
-		;
+
 		if (_local_2) {
 			MenuUtils.setupTextUpper(this.m_silentAssassinMc.title, Localization.get("UI_RATING_MEDICINE_MAN").toUpperCase(), 28, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 			MenuUtils.setColor(this.m_silentAssassinMc.bg, MenuConstants.COLOR_BLUE);
@@ -470,7 +470,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			MenuUtils.setupTextUpper(this.m_silentAssassinMc.title, Localization.get("UI_RATING_SILENT_ASSASSIN").toUpperCase(), 28, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 			MenuUtils.setColor(this.m_silentAssassinMc.bg, MenuConstants.COLOR_RED);
 		}
-		;
+
 		if (!this.m_isEvergreen) {
 			_local_16 = Localization.get("UI_MENU_MISSION_END_RATING_TITLE");
 			MenuUtils.setupTextUpper(this.m_missionRatingMc.ratingTitle, _local_16, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorRed);
@@ -481,7 +481,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				_local_18 = _arg_1.challengeMultiplier;
 				MenuUtils.setupText(this.m_missionRatingMc.ratingValue, _local_18.toFixed(2), 40, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 			}
-			;
+
 		} else {
 			_local_19 = Localization.get("EVERGREEN_GAMEFLOW_XPGAINED_TITLE");
 			MenuUtils.setupTextUpper(this.m_missionRatingMc.ratingTitle, _local_19, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorRed);
@@ -490,11 +490,11 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			} else {
 				this.m_xpAnimatedValue = this.m_xpTotal;
 			}
-			;
+
 			MenuUtils.setupText(this.m_missionRatingMc.ratingValue, this.formatXpNumber(this.m_xpAnimatedValue), 40, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorBlack);
 			this.m_missionRatingMc.newBestBg.alpha = 1;
 		}
-		;
+
 		var _local_4:int;
 		var _local_5:Array = _arg_1.scoreSummary;
 		if (_local_5 != null) {
@@ -507,27 +507,27 @@ public dynamic class MissionEndScore extends MenuElementBase {
 						if (_local_5[_local_20].headline == "UI_SNIPERSCORING_SUMMARY_TIME_BONUS") {
 							this.m_timeTotal = this.timeFromStringSniper(_local_5[_local_20].count);
 						}
-						;
+
 					}
-					;
+
 				} else {
 					if (_local_5[_local_20].type == "total") {
 						_local_4 = _local_5[_local_20].scoreTotal;
 					}
-					;
+
 				}
-				;
+
 				_local_20++;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_evergreenAnimation) {
 			this.m_timeAnimatedValue = 0;
 		} else {
 			this.m_timeAnimatedValue = this.m_timeTotal;
 		}
-		;
+
 		var _local_6:String = Localization.get("UI_MENU_MISSION_END_TIME_TITLE");
 		MenuUtils.setupTextUpper(this.m_missionTimeMc.timeTitle, _local_6, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorRed);
 		MenuUtils.setupText(this.m_missionTimeMc.timeValue, this.formatTime(this.m_timeAnimatedValue), 40, MenuConstants.FONT_TYPE_MEDIUM, ((this.m_isEvergreen) ? MenuConstants.FontColorBlack : MenuConstants.FontColorWhite));
@@ -535,7 +535,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		if (this.m_isEvergreen) {
 			this.m_missionTimeMc.newBestBg.alpha = 1;
 		}
-		;
+
 		if (!this.m_isEvergreen) {
 			_local_21 = Localization.get("UI_MENU_MISSION_END_SCORE_TITLE");
 			MenuUtils.setupTextUpper(this.m_missionScoreMc.scoreTitle, _local_21, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorRed);
@@ -544,7 +544,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			} else {
 				MenuUtils.setupText(this.m_missionScoreMc.scoreValue, MenuUtils.formatNumber(_local_4), 40, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 			}
-			;
+
 		} else {
 			this.m_payoutTotal = ((_arg_1.EvergreenPayout) ? _arg_1.EvergreenPayout : 0);
 			if (this.m_evergreenAnimation) {
@@ -552,7 +552,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			} else {
 				this.m_payoutAnimatedValue = this.m_payoutTotal;
 			}
-			;
+
 			if (this.m_payoutTotal < 0) {
 				_local_22 = Localization.get("EVERGREEN_GAMEFLOW_MISSIONPAYOUT_LOST_TITLE");
 				MenuUtils.setupTextUpper(this.m_missionScoreMc.scoreTitle, _local_22, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
@@ -568,9 +568,9 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				this.m_missionScoreMc.newBestBg.alpha = 1;
 				this.m_missionScoreMc.newBestBgNegative.alpha = 0;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_isEvergreen) {
 			this.m_evergreenCampaignView.alpha = 1;
 			this.m_evergreenCampaignView.x = 348;
@@ -581,7 +581,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			this.m_dottedLineLeaderBoard.y = 868;
 			this.m_locationCompletionMc.y = 872;
 		}
-		;
+
 		var _local_7:* = "";
 		var _local_8:* = "unlocked";
 		this.m_unlockableBarValues = null;
@@ -594,7 +594,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			} else {
 				_local_7 = Localization.get("EVERGREEN_GAMEFLOW_MASTERY_TITLE");
 			}
-			;
+
 			this.m_unlockableMaxLevel = this.m_locationLevelInfo.getMaxLevel();
 			this.m_unlockableMasteryIsLocation = true;
 		} else {
@@ -603,9 +603,9 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				_local_7 = Localization.get(_arg_1.UnlockableProgression.Name);
 				this.m_unlockableMaxLevel = this.m_sniperUnlockableLevelInfo.getMaxLevel();
 			}
-			;
+
 		}
-		;
+
 		if (this.m_unlockableBarValues != null) {
 			this.m_isUnlockableMasteryVisible = true;
 			MenuUtils.setColor(this.m_unlockableMasteryMc.barBg, MenuConstants.COLOR_WHITE, true, 0.1);
@@ -615,7 +615,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			MenuUtils.setupTextUpper(this.m_unlockableMasteryMc.title, _local_7, 24, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorRed);
 			this.setLevelNumberUnlockable(this.m_unlockableBarValues.startLevelNr);
 		}
-		;
+
 		this.m_hasLeaderboard = ((!(_arg_1.LeaderboardFriendsInfo == null)) || (!(_arg_1.LeaderboardInfo == null)));
 		if (this.m_hasLeaderboard) {
 			_local_24 = Localization.get("UI_MENU_PAGE_LEADERBOARDS_TITLE");
@@ -625,14 +625,14 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				MenuUtils.setupTextUpper(this.m_leaderboardMc.friendsTxt, _local_25, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorRed);
 				MenuUtils.setupTextUpper(this.m_leaderboardMc.friendsTxt, (" " + _arg_1.LeaderboardFriendsInfo), 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite, true);
 			}
-			;
+
 			if (_arg_1.LeaderboardInfo != null) {
 				MenuUtils.setupTextUpper(this.m_leaderboardMc.globalTxt, _local_26, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorRed);
 				MenuUtils.setupTextUpper(this.m_leaderboardMc.globalTxt, (" " + _arg_1.LeaderboardInfo), 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite, true);
 			}
-			;
+
 		}
-		;
+
 		var _local_9:Array = _arg_1.OpportunityRewards;
 		this.m_opportunityCountGain = ((_local_9 != null) ? _local_9.length : 0);
 		this.setLocationProgression(_arg_1);
@@ -646,7 +646,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		if (this.m_isSniper) {
 			return (this.formatTimeSniper(_arg_1));
 		}
-		;
+
 		var _local_2:* = "";
 		var _local_3:int = int((_arg_1 / 3600));
 		_local_2 = (_local_2 + (((_local_3 < 10) ? "0" : "") + _local_3));
@@ -672,7 +672,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		if (_arg_1.length < 8) {
 			return (0);
 		}
-		;
+
 		var _local_2:int = (_arg_1.length - 8);
 		return (((parseInt(_arg_1.substr(0, (_local_2 + 2))) * 3600) + (parseInt(_arg_1.substr((_local_2 + 3), 2)) * 60)) + parseInt(_arg_1.substr((_local_2 + 6), 2)));
 	}
@@ -681,7 +681,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		if (_arg_1.length != 9) {
 			return (0);
 		}
-		;
+
 		return (((parseInt(_arg_1.substr(0, 2)) * 60000) + (parseInt(_arg_1.substr(3, 2)) * 1000)) + parseInt(_arg_1.substr(6, 3)));
 	}
 
@@ -689,7 +689,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		if (((!(this.m_isOnline)) || (this.m_animationStarted))) {
 			return;
 		}
-		;
+
 		this.m_animationStarted = true;
 		Animate.kill(this.m_view);
 		var _local_1:Number = ((this.m_useAnimation) ? 0.1 : 0.05);
@@ -701,7 +701,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			_local_2 = (_local_2 + _local_1);
 			Animate.delay(this.m_view, _local_2, this.showUnlockableMastery);
 		}
-		;
+
 		_local_2 = (_local_2 + _local_1);
 		Animate.delay(this.m_view, _local_2, this.showMissionResults);
 		if (this.m_isVersus) {
@@ -709,7 +709,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			Animate.delay(this.m_view, _local_2, this.animateProfileProgression);
 			return;
 		}
-		;
+
 		if (!this.m_useAnimation) {
 			this.showMissionRating();
 			if (this.m_isSilentAssassin) {
@@ -718,34 +718,34 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				if (this.m_hasPlayStyle) {
 					Animate.delay(this.m_view, _local_2, this.showPlayStyle);
 				}
-				;
+
 			}
-			;
+
 			if (this.m_isNewBestRating) {
 				Animate.delay(this.m_view, _local_2, this.showNewBest, this.m_missionRatingMc);
 			}
-			;
+
 			if (this.m_isNewBestTime) {
 				Animate.delay(this.m_view, _local_2, this.showNewBest, this.m_missionTimeMc);
 			}
-			;
+
 			if (this.m_isNewBestScore) {
 				Animate.delay(this.m_view, _local_2, this.showNewBest, this.m_missionScoreMc);
 			}
-			;
+
 		}
-		;
+
 		_local_2 = (_local_2 + _local_1);
 		if (this.m_hasLeaderboard) {
 			Animate.delay(this.m_view, _local_2, this.showLeaderboardElement);
 		}
-		;
+
 		Animate.delay(this.m_view, _local_2, this.showLocationCompletion);
 		Animate.delay(this.m_view, _local_2, this.showLocationProgression);
 		if (!this.m_useAnimation) {
 			return;
 		}
-		;
+
 		_local_2 = (_local_2 + 0.2);
 		Animate.delay(this.m_view, _local_2, this.showMissionRating);
 		if (this.m_isSilentAssassin) {
@@ -756,31 +756,31 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				_local_2 = (_local_2 + 0.4);
 				Animate.delay(this.m_view, _local_2, this.showPlayStyle);
 			}
-			;
+
 		}
-		;
+
 		if (this.m_isNewBestRating) {
 			_local_2 = (_local_2 + 0.4);
 			Animate.delay(this.m_view, _local_2, this.showNewBest, this.m_missionRatingMc);
 		}
-		;
+
 		if (this.m_isNewBestTime) {
 			_local_2 = (_local_2 + 0.4);
 			Animate.delay(this.m_view, _local_2, this.showNewBest, this.m_missionTimeMc);
 		}
-		;
+
 		if (this.m_isNewBestScore) {
 			_local_2 = (_local_2 + 0.4);
 			Animate.delay(this.m_view, _local_2, this.showNewBest, this.m_missionScoreMc);
 		}
-		;
+
 		_local_2 = (_local_2 + 1);
 		Animate.delay(this.m_view, _local_2, this.animateProfileProgression);
 		if (this.m_evergreenAnimation) {
 			_local_2 = (_local_2 + (this.animateProfileProgressionDuration() + 0.5));
 			Animate.delay(this.m_view, _local_2, this.animateEvergreenMissionResults);
 		}
-		;
+
 	}
 
 	private function showPlayerInfo():void {
@@ -796,7 +796,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		} else {
 			this.setLevelNumberProfile(this.m_profileBarValues.startLevelNr);
 		}
-		;
+
 		Animate.to(this.m_dottedLineProfileMastery, 0.3, 0, {"alpha": 1}, Animate.ExpoOut);
 		Animate.to(this.m_profileMasteryMc, 0.3, 0.05, {"alpha": 1}, Animate.ExpoOut);
 	}
@@ -813,11 +813,11 @@ public dynamic class MissionEndScore extends MenuElementBase {
 					_local_1 = this.m_sniperUnlockableLevelInfo.isLevelMaxed(this.m_unlockableBarValues.endXP);
 					this.m_unlockableMasteryMc.barFill.scaleX = ((_local_1) ? this.m_unlockableBarOriginalScale : getFinalBarScale(this.m_sniperUnlockableLevelInfo.getLevelFromList(this.m_unlockableBarValues.endXP), this.m_unlockableBarOriginalScale));
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		Animate.to(this.m_dottedLineUnlockableMastery, 0.3, 0, {"alpha": 1}, Animate.ExpoOut);
 		Animate.to(this.m_unlockableMasteryMc, 0.3, 0, {"alpha": 1}, Animate.ExpoOut);
 	}
@@ -862,7 +862,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				Animate.to(_local_2, 0.5, 0.3, {"alpha": 1}, Animate.ExpoOut);
 				Animate.from(_local_3, 0.5, 0.3, {"x": (_local_3.x - 20)}, Animate.ExpoOut);
 			}
-			;
+
 		} else {
 			Animate.to(this.m_missionRatingMc, 0.3, 0, {"alpha": 1}, Animate.ExpoOut);
 			Animate.to(this.m_missionTimeMc, 0.3, 0.05, {"alpha": 1}, Animate.ExpoOut);
@@ -873,9 +873,9 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				Animate.to(this.m_view.missionSummaryMc.lineMc_03, 0.3, 0.1, {"alpha": 1}, Animate.ExpoOut);
 				Animate.to(this.m_view.missionSummaryMc.lineMc_04, 0.3, 0.1, {"alpha": 1}, Animate.ExpoOut);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function animateEvergreenMissionResults():void {
@@ -884,19 +884,19 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		if (this.m_xpTotal != 0) {
 			_local_1 = (_local_1 + 1);
 		}
-		;
+
 		_local_1 = (_local_1 + 0.5);
 		Animate.delay(this.m_view, _local_1, this.animateTime);
 		if (this.m_timeTotal != 0) {
 			_local_1 = (_local_1 + 1);
 		}
-		;
+
 		_local_1 = (_local_1 + 0.5);
 		Animate.delay(this.m_view, _local_1, this.animatePayout);
 		if (this.m_payoutTotal != 0) {
 			_local_1 = (_local_1 + 1);
 		}
-		;
+
 		_local_1 = (_local_1 + 0.5);
 		Animate.delay(this.m_view, _local_1, this.animateCampaignProgress);
 	}
@@ -910,7 +910,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			if (this.m_xpAnimatedValue != this.m_xpTotal) {
 				this.playSound("ui_debrief_scorescreen_evergreen_xp_counting_begin");
 			}
-			;
+
 		} else {
 			if (this.m_xpAnimatedValue < this.m_xpTotal) {
 				_local_1 = getTimer();
@@ -922,24 +922,24 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				} else {
 					this.m_xpAnimatedValue = this.m_xpTotal;
 				}
-				;
+
 				MenuUtils.setupText(this.m_missionRatingMc.ratingValue, this.formatXpNumber(this.m_xpAnimatedValue), 40, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorBlack);
 			}
-			;
+
 		}
-		;
+
 		if (this.m_xpAnimatedValue == this.m_xpTotal) {
 			if (this.m_xpTotal != 0) {
 				this.playSound("ui_debrief_scorescreen_evergreen_xp_counting_done");
 			} else {
 				this.playSound("ui_debrief_scorescreen_evergreen_xp_counting_done_zero");
 			}
-			;
+
 			this.blinkNewBestClip(this.m_missionRatingMc);
 		} else {
 			Animate.delay(this.m_view, 0.01, this.animateXp);
 		}
-		;
+
 	}
 
 	private function animateTime():void {
@@ -952,7 +952,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			if (this.m_timeAnimatedValue != this.m_timeTotal) {
 				this.playSound("ui_debrief_scorescreen_evergreen_time_counting_begin");
 			}
-			;
+
 		} else {
 			if (this.m_timeAnimatedValue < this.m_timeTotal) {
 				_local_1 = getTimer();
@@ -964,20 +964,20 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				} else {
 					this.m_timeAnimatedValue = this.m_timeTotal;
 				}
-				;
+
 				_local_4 = this.formatTime(this.m_timeAnimatedValue);
 				MenuUtils.setupText(this.m_missionTimeMc.timeValue, _local_4, 40, MenuConstants.FONT_TYPE_MEDIUM, ((this.m_isEvergreen) ? MenuConstants.FontColorBlack : MenuConstants.FontColorWhite));
 			}
-			;
+
 		}
-		;
+
 		if (this.m_timeAnimatedValue == this.m_timeTotal) {
 			this.playSound("ui_debrief_scorescreen_evergreen_time_counting_done");
 			this.blinkNewBestClip(this.m_missionTimeMc);
 		} else {
 			Animate.delay(this.m_view, 0.01, this.animateTime);
 		}
-		;
+
 	}
 
 	private function animatePayout():void {
@@ -990,7 +990,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			if (this.m_payoutAnimatedValue != this.m_payoutTotal) {
 				this.playSound("ui_debrief_scorescreen_evergreen_payout_counting_begin");
 			}
-			;
+
 		} else {
 			if (Math.abs(this.m_payoutAnimatedValue) < Math.abs(this.m_payoutTotal)) {
 				_local_1 = getTimer();
@@ -1002,30 +1002,30 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				} else {
 					this.m_payoutAnimatedValue = this.m_payoutTotal;
 				}
-				;
+
 				_local_4 = (MenuUtils.formatNumber(this.m_payoutAnimatedValue) + Localization.get("UI_EVERGREEN_MERCES"));
 				if (this.m_payoutTotal < 0) {
 					MenuUtils.setupText(this.m_missionScoreMc.scoreValue, _local_4, 40, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 				} else {
 					MenuUtils.setupText(this.m_missionScoreMc.scoreValue, _local_4, 40, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorBlack);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (this.m_payoutAnimatedValue == this.m_payoutTotal) {
 			if (this.m_payoutTotal != 0) {
 				this.playSound("ui_debrief_scorescreen_evergreen_payout_counting_done");
 			} else {
 				this.playSound("ui_debrief_scorescreen_evergreen_payout_counting_done_zero");
 			}
-			;
+
 			this.blinkNewBestClip(this.m_missionScoreMc);
 		} else {
 			Animate.delay(this.m_view, 0.01, this.animatePayout);
 		}
-		;
+
 	}
 
 	private function blinkNewBestClip(_arg_1:MovieClip):void {
@@ -1055,12 +1055,12 @@ public dynamic class MissionEndScore extends MenuElementBase {
 					}, Animate.ExpoOut);
 					_local_1 = (_local_1 + 0.05);
 				}
-				;
+
 			}
-			;
+
 			_local_3++;
 		}
-		;
+
 		Animate.to(this.m_dottedLineMissionSummary, 0.3, 0, {"alpha": 1}, Animate.ExpoOut);
 	}
 
@@ -1073,7 +1073,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			Animate.fromTo(this.m_silentAssassinMc, 0.3, 0, {"alpha": 0}, {"alpha": 1}, Animate.ExpoOut);
 			return;
 		}
-		;
+
 		Animate.delay(this.m_playstyleDelaySprite, 0.15, this.playPlayStyleSound);
 		this.m_silentAssassinMc.bg.alpha = 0;
 		this.m_silentAssassinMc.fx.scaleX = (this.m_silentAssassinMc.fx.scaleY = 1);
@@ -1092,7 +1092,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			Animate.fromTo(this.m_playStyleMc, 0.3, 0, {"alpha": 0}, {"alpha": 1}, Animate.ExpoOut);
 			return;
 		}
-		;
+
 		Animate.delay(this.m_playstyleDelaySprite, 0.15, this.playPlayStyleSound);
 		this.m_playStyleMc.bg.alpha = 0;
 		this.m_playStyleMc.fx.scaleX = (this.m_playStyleMc.fx.scaleY = 1);
@@ -1110,7 +1110,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		if (this.m_playStyleSoundId != null) {
 			this.playSound(this.m_playStyleSoundId);
 		}
-		;
+
 		this.playSound("ui_debrief_scorescreen_playstyle");
 	}
 
@@ -1128,7 +1128,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			this.hideMissionSummaryLines(_arg_1);
 			return;
 		}
-		;
+
 		Animate.delay(this.m_newBestDelaySprite, 0.15, this.playNewBestSound, _arg_1);
 		Animate.fromTo(_arg_1.newBestTitle, 0.1, 0.2, {"alpha": 0}, {"alpha": 1}, Animate.ExpoOut);
 		Animate.fromTo(_arg_1.newBestBg, 0.1, 0.15, {"alpha": 0}, {"alpha": 1}, Animate.ExpoOut);
@@ -1144,15 +1144,15 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		if (_arg_1 == this.m_missionRatingMc) {
 			this.playSound("ui_debrief_scorescreen_mission_rating");
 		}
-		;
+
 		if (_arg_1 == this.m_missionTimeMc) {
 			this.playSound("ui_debrief_scorescreen_mission_time");
 		}
-		;
+
 		if (_arg_1 == this.m_missionScoreMc) {
 			this.playSound("ui_debrief_scorescreen_mission_score");
 		}
-		;
+
 	}
 
 	private function offsetMissionSummary(_arg_1:Number, _arg_2:MovieClip):void {
@@ -1177,20 +1177,20 @@ public dynamic class MissionEndScore extends MenuElementBase {
 					MenuUtils.setColor(_local_3, MenuConstants.COLOR_GREY_ULTRA_DARK, false);
 					_local_2++;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1 == this.m_missionTimeMc) {
 			MenuUtils.setupText(this.m_missionTimeMc.timeValue, this.m_missionTimeMc.timeValue.text, 40, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 			CommonUtils.changeFontToGlobalFont(this.m_missionTimeMc.timeValue);
 		}
-		;
+
 		if (_arg_1 == this.m_missionScoreMc) {
 			MenuUtils.setupText(this.m_missionScoreMc.scoreValue, this.m_missionScoreMc.scoreValue.text, 40, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 		}
-		;
+
 	}
 
 	private function hideMissionSummaryLines(_arg_1:MovieClip):void {
@@ -1200,21 +1200,21 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			Animate.to(this.m_view.missionSummaryMc.lineMc_01, 0.3, 0.1, {"alpha": 0}, Animate.ExpoOut);
 			Animate.to(this.m_view.missionSummaryMc.lineMc_02, 0.3, 0.1, {"alpha": 0}, Animate.ExpoOut);
 		}
-		;
+
 		if (_arg_1 == this.m_missionTimeMc) {
 			Animate.kill(this.m_view.missionSummaryMc.lineMc_02);
 			Animate.kill(this.m_view.missionSummaryMc.lineMc_03);
 			Animate.to(this.m_view.missionSummaryMc.lineMc_02, 0.3, 0.1, {"alpha": 0}, Animate.ExpoOut);
 			Animate.to(this.m_view.missionSummaryMc.lineMc_03, 0.3, 0.1, {"alpha": 0}, Animate.ExpoOut);
 		}
-		;
+
 		if (_arg_1 == this.m_missionScoreMc) {
 			Animate.kill(this.m_view.missionSummaryMc.lineMc_03);
 			Animate.kill(this.m_view.missionSummaryMc.lineMc_04);
 			Animate.to(this.m_view.missionSummaryMc.lineMc_03, 0.3, 0.1, {"alpha": 0}, Animate.ExpoOut);
 			Animate.to(this.m_view.missionSummaryMc.lineMc_04, 0.3, 0.1, {"alpha": 0}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 	private function showLeaderboardElement():void {
@@ -1236,7 +1236,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			this.animateSniperProgression();
 			return;
 		}
-		;
+
 		var _local_1:Number = this.animateProfileProgressionDuration();
 		this.animateBarRewards(0);
 		var _local_2:BarAnimationValues = new BarAnimationValues();
@@ -1253,7 +1253,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			_local_3.levelInfo = this.m_locationLevelInfo;
 			initBarValues(_local_3, _local_1, this.m_unlockableBarValues.startXP, this.m_unlockableBarValues.endXP);
 		}
-		;
+
 		Animate.delay(this.m_view, _local_1, this.animateSniperProgression);
 	}
 
@@ -1261,7 +1261,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		if (((this.m_isUnlockableMasteryVisible) && (!(this.m_unlockableMasteryIsLocation)))) {
 			this.animateSniperUnlockableMastery();
 		}
-		;
+
 	}
 
 	private function animateBarRewards(_arg_1:int):void {
@@ -1269,25 +1269,25 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			this.playSound("ui_debrief_achievement_scorescreen_tick_lp");
 			this.m_tickSoundStarted = true;
 		}
-		;
+
 		if (_arg_1 >= this.m_barRewards.length) {
 			if (this.m_tickSoundStarted) {
 				this.playSound("ui_debrief_achievement_scorescreen_tick_lp_stop");
 				this.m_tickSoundStarted = false;
 			}
-			;
+
 			this.setLevelInfoProfile("");
 			return;
 		}
-		;
+
 		if (_arg_1 == 0) {
 			this.m_animateBarStartXp = this.m_profileBarValues.startXP;
 			if (this.m_unlockableBarValues != null) {
 				this.m_animateBarStartXpUnlockable = this.m_unlockableBarValues.startXP;
 			}
-			;
+
 		}
-		;
+
 		Animate.kill(this.m_profileMasteryMc.infoTxt);
 		this.m_profileMasteryMc.infoTxt.alpha = 0;
 		var _local_2:Object = this.m_barRewards[_arg_1];
@@ -1358,11 +1358,11 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		} else {
 			_local_3 = (_arg_1 == this.m_profileBarValues.endLevelNr);
 		}
-		;
+
 		if (((this.m_useAnimation) && (!(_local_3)))) {
 			Animate.fromTo(this.m_profileMasteryMc.fx, 0.5, 0, {"alpha": 1}, {"alpha": 0}, Animate.ExpoOut);
 		}
-		;
+
 		this.setLevelNumberBadge(_arg_1, _local_3);
 	}
 
@@ -1375,7 +1375,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			this.m_dottedLinePlayerName.y = ((this.m_playerLevelMc.y + (this.m_playerLevelMc.height >> 1)) - 8);
 			this.m_view.addChild(this.m_dottedLinePlayerName);
 		}
-		;
+
 		if (this.m_useAnimation) {
 			Animate.fromTo(this.m_playerLevelMc, 0.3, 0, {
 				"alpha": 0,
@@ -1406,13 +1406,13 @@ public dynamic class MissionEndScore extends MenuElementBase {
 					default:
 						this.playSound("ui_debrief_scorescreen_badge_init");
 				}
-				;
+
 			} else {
 				this.playSound("ui_debrief_scorescreen_levelup");
 			}
-			;
+
 		}
-		;
+
 		this.m_badge.setLevel(_arg_1, _arg_2, this.m_useAnimation);
 	}
 
@@ -1427,9 +1427,9 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			if (this.m_useAnimation) {
 				this.playSound("ui_debrief_scorescreen_progressbar_locationmastery_levelup");
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function setLocationProgression(_arg_1:Object):void {
@@ -1445,7 +1445,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 		if (_arg_1.LocationCompletionTitle != null) {
 			_local_2 = ((!(_arg_1.LocationCompletionTitle == _arg_1.ContractTitle)) && (!(_arg_1.contractTitle == "")));
 		}
-		;
+
 		this.m_barViews = [];
 		this.m_barViewsProgress = [];
 		var _local_3:Array = [];
@@ -1458,12 +1458,12 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			if (_local_2) {
 				this.m_barViews[_local_4].y = (this.m_barViews[_local_4].y + (this.m_locationCompletionMc.contractTitle.height - 7));
 			}
-			;
+
 			_local_4++;
 		}
-		;
+
 		if (_arg_1.OpportunityStatistics != null) {
-			_local_5 = new Object();
+			_local_5 = {};
 			_local_5.Title = Localization.get("UI_BRIEFING_OPPORTUNITIES");
 			_local_5.Icon = "opportunitydiscovered";
 			_local_5.Completed = _arg_1.OpportunityStatistics.Completed;
@@ -1472,11 +1472,11 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			if (_local_5.Count > 0) {
 				_local_3.push(_local_5);
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.ChallengeCompletion != null) {
-			_local_5 = new Object();
+			_local_5 = {};
 			_local_5.Title = Localization.get("UI_MENU_PAGE_PLANNING_CHALLENGES");
 			_local_5.Icon = "challenge";
 			_local_5.Completed = _arg_1.ChallengeCompletion.CompletedChallengesCount;
@@ -1485,15 +1485,15 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			if (_local_5.Count > 0) {
 				_local_3.push(_local_5);
 			}
-			;
+
 		}
-		;
+
 		var _local_6:* = (_local_3.length > 0);
 		this.m_locationCompletionMc.visible = _local_6;
 		if (!_local_6) {
 			return;
 		}
-		;
+
 		MenuUtils.setupIcon(this.m_locationCompletionMc.icon, "stats", MenuConstants.COLOR_BLACK, false, true, MenuConstants.COLOR_WHITE);
 		MenuUtils.setupTextUpper(this.m_locationCompletionMc.title, _arg_1.LocationCompletionTitle, 24, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 		MenuUtils.setupText(this.m_locationCompletionMc.value, _arg_1.LocationCompletionPercent, 24, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
@@ -1502,7 +1502,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			MenuUtils.setupTextUpper(this.m_locationCompletionMc.contractTitle, _arg_1.ContractTitle, 19, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 			MenuUtils.truncateTextfield(this.m_locationCompletionMc.contractTitle, 1, MenuConstants.FontColorWhite, CommonUtils.changeFontToGlobalIfNeeded(this.m_locationCompletionMc.contractTitle));
 		}
-		;
+
 		var _local_7:int;
 		while (((_local_7 < _local_3.length) && (_local_7 < this.m_barViews.length))) {
 			_local_8 = _local_3[_local_7].Count;
@@ -1528,7 +1528,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			this.m_barViews[_local_7].visible = true;
 			_local_7++;
 		}
-		;
+
 	}
 
 	private function showLocationProgression():void {
@@ -1542,12 +1542,12 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				} else {
 					this.m_barViews[_local_2].barCompletedNew.scaleX = this.m_barViewsProgress[_local_2].newScaleX;
 				}
-				;
+
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 	}
 
 	private function formatNewBestTextFields(_arg_1:MovieClip):void {
@@ -1623,7 +1623,7 @@ public dynamic class MissionEndScore extends MenuElementBase {
 			Animate.kill(this.m_barViews[_local_1].barCompletedNew);
 			_local_1++;
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -1633,11 +1633,11 @@ public dynamic class MissionEndScore extends MenuElementBase {
 				this.playSound("ui_debrief_achievement_scorescreen_tick_lp_stop");
 				this.m_tickSoundStarted = false;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 

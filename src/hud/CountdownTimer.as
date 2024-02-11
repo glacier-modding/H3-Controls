@@ -28,7 +28,7 @@ public class CountdownTimer extends BaseControl {
 			this.m_textLocaleYOffset = 13;
 			this.m_timeTextFontSize = 52;
 		}
-		;
+
 		MenuUtils.setupText(this.m_view.header_txt, Localization.get("UI_BRIEFING_DIAL_TIME"), 16, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraLight);
 	}
 
@@ -47,7 +47,7 @@ public class CountdownTimer extends BaseControl {
 		} else {
 			MenuUtils.setupText(this.m_view.header_txt, Localization.get("UI_BRIEFING_DIAL_TIME"), 16, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraLight);
 		}
-		;
+
 		this.m_view.visible = true;
 	}
 
@@ -61,7 +61,7 @@ public class CountdownTimer extends BaseControl {
 
 	public function SetText(_arg_1:String):void {
 		this.m_view.visible = true;
-		var _local_2:Array = new Array();
+		var _local_2:Array = [];
 		_local_2 = _arg_1.split(":");
 		var _local_3:Number = _local_2.length;
 		var _local_4:Number = _local_2[(_local_3 - 2)];

@@ -31,7 +31,7 @@ public dynamic class MultiplayerScoreLineWithText extends MenuElementBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 

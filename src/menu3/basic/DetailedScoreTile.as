@@ -71,7 +71,7 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 		if (this.m_isEvergreen) {
 			_local_2 = false;
 		}
-		;
+
 		var _local_4:* = (_arg_1.animate === true);
 		var _local_5:Boolean;
 		var _local_6:* = "";
@@ -90,15 +90,15 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 				MenuUtils.truncateTextfieldWithCharLimit(this.m_view.headerTxt, 1, MenuConstants.PLAYERNAME_MIN_CHAR_COUNT);
 				MenuUtils.shrinkTextToFit(this.m_view.headerTxt, this.m_view.headerTxt.width, -1);
 			}
-			;
+
 		}
-		;
+
 		if (!_arg_1.isonline) {
 			this.m_view.offlineTxt.visible = true;
 			MenuUtils.setupText(this.m_view.offlineTxt, Localization.get("UI_DIALOG_SCORE_OFFLINE"), 26, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 			return;
 		}
-		;
+
 		if (_arg_1.silentAssassin != null) {
 			_local_7 = _arg_1.silentAssassin;
 		} else {
@@ -106,41 +106,41 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 				_local_7 = _arg_1.MedicineMan;
 				this.m_silentAssassinIsMedicineMan = true;
 			}
-			;
+
 		}
-		;
+
 		if (((!(_arg_1.PlayStyle == null)) && (!(_local_7)))) {
 			_local_6 = _arg_1.PlayStyle.Name;
 			_local_5 = true;
 		}
-		;
+
 		if (((!(this.m_isEvergreen)) && (!(_arg_1.IsNewBestScore == null)))) {
 			if (_arg_1.IsNewBestScore) {
 				this.m_isNewBestScore = true;
 				MenuUtils.setupTextUpper(this.m_missionScoreMc.newBestTitle, Localization.get("UI_RATING_NEW_PERSONAL BEST"), 14, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 				this.showNewBest(this.m_missionScoreMc);
 			}
-			;
+
 		}
-		;
+
 		if (((!(this.m_isEvergreen)) && (!(_arg_1.IsNewBestTime == null)))) {
 			if (_arg_1.IsNewBestTime) {
 				this.m_isNewBestTime = true;
 				MenuUtils.setupTextUpper(this.m_missionTimeMc.newBestTitle, Localization.get("UI_RATING_NEW_PERSONAL BEST"), 14, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 				this.showNewBest(this.m_missionTimeMc);
 			}
-			;
+
 		}
-		;
+
 		if (((!(this.m_isEvergreen)) && (!(_arg_1.IsNewBestStars == null)))) {
 			if (_arg_1.IsNewBestStars) {
 				this.m_isNewBestRating = true;
 				MenuUtils.setupTextUpper(this.m_missionRatingMc.newBestTitle, Localization.get("UI_RATING_NEW_PERSONAL BEST"), 14, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 				this.showNewBest(this.m_missionRatingMc);
 			}
-			;
+
 		}
-		;
+
 		var _local_8:int = 5;
 		var _local_10:int = 1;
 		while (_local_10 <= _local_8) {
@@ -148,11 +148,11 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 			MenuUtils.setColor(_local_9, MenuConstants.COLOR_WHITE, true, ((_local_2) ? 0.1 : 0));
 			_local_10++;
 		}
-		;
+
 		if (((!(this.m_isEvergreen)) && (!(_arg_1.Percentile == null)))) {
 			this.setLeaderboardPositionChart(_arg_1.Percentile);
 		}
-		;
+
 		if (_arg_1.scoresummary != null) {
 			this.setMissionTime(_arg_1.scoresummary);
 			this.setMissionScore(_arg_1.scoresummary, _arg_1.EvergreenPayout);
@@ -161,14 +161,14 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 			} else {
 				this.setPreliminaryScore(_arg_1.scoresummary);
 			}
-			;
+
 		}
-		;
+
 		this.m_view.missionSummaryMc.y = (this.m_yOffset + 19);
 		if ((((_local_2) || (_local_7)) || (_local_5))) {
 			this.setMissionRating(_local_3, _local_7, _local_5, _local_6, _local_4, _arg_1);
 		}
-		;
+
 	}
 
 	private function setMissionRating(_arg_1:int, _arg_2:Boolean, _arg_3:Boolean, _arg_4:String, _arg_5:Boolean, _arg_6:Object):void {
@@ -193,7 +193,7 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 				if (this.m_isNewBestRating) {
 					MenuUtils.setColor(_local_9, MenuConstants.COLOR_GREY_ULTRA_DARK, false);
 				}
-				;
+
 				if (_local_11 <= _arg_1) {
 					Animate.to(_local_9, 0.15, _local_10, {"alpha": 1}, Animate.ExpoOut);
 					Animate.addFrom(_local_9, 0.3, _local_10, {
@@ -202,10 +202,10 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 					}, Animate.ExpoOut);
 					_local_10 = (_local_10 + 0.05);
 				}
-				;
+
 				_local_11++;
 			}
-			;
+
 		} else {
 			_local_12 = 0;
 			if (((_arg_6.Challenges) && (_arg_6.Challenges.length > 0))) {
@@ -216,31 +216,31 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 					if (_local_15.XPGain != undefined) {
 						_local_16 = _local_15.XPGain;
 					}
-					;
+
 					if (_local_16 > 0) {
 						_local_12 = (_local_12 + _local_16);
 					}
-					;
+
 					_local_14++;
 				}
-				;
+
 			}
-			;
+
 			_local_13 = Localization.get("EVERGREEN_GAMEFLOW_XPGAINED_TITLE");
 			MenuUtils.setupTextUpper(this.m_missionRatingMc.ratingTitle, _local_13, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorRed);
 			MenuUtils.setupText(this.m_missionRatingMc.ratingValue, this.formatXpNumber(_local_12), 40, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorBlack);
 			this.m_missionRatingMc.newBestBg.alpha = 1;
 		}
-		;
+
 		if (_arg_2) {
 			this.setSilentAssassin();
 		} else {
 			if (_arg_3) {
 				this.setPlayStyle(_arg_4);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function formatXpNumber(_arg_1:int):String {
@@ -251,13 +251,13 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 		_arg_1.Spread.reverse();
 		var _local_2:int = ((_arg_1.Spread.length - 1) - _arg_1.Index);
 		_arg_1.Index = _local_2;
-		var _local_3:Array = new Array();
+		var _local_3:Array = [];
 		var _local_4:int;
 		while (_local_4 <= (_arg_1.Spread.length - 1)) {
 			_local_3.push(_arg_1.Spread[_local_4]);
 			_local_4++;
 		}
-		;
+
 		_local_3.sort(Array.NUMERIC);
 		var _local_5:Number = (1 / _local_3[(_local_3.length - 1)]);
 		this.m_view.leaderboardPosMc.visible = true;
@@ -269,10 +269,10 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 			if (_local_6 == _arg_1.Index) {
 				MenuUtils.setColor(this.m_view.leaderboardPosMc[("barMc_0" + _local_6)], MenuConstants.COLOR_RED, false);
 			}
-			;
+
 			_local_6++;
 		}
-		;
+
 	}
 
 	private function setMissionTime(_arg_1:Array):void {
@@ -286,12 +286,12 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 				if (((_arg_1[_local_5].type == "summary") && ((_arg_1[_local_5].headline == "UI_SCORING_SUMMARY_TIME") || (_arg_1[_local_5].headline == "UI_SNIPERSCORING_SUMMARY_TIME_BONUS")))) {
 					_local_3 = _arg_1[_local_5].count;
 				}
-				;
+
 				_local_5++;
 			}
-			;
+
 		}
-		;
+
 		MenuUtils.setupTextUpper(this.m_missionTimeMc.timeTitle, _local_2, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorRed);
 		if (this.m_isEvergreen) {
 			_local_4 = MenuConstants.FontColorBlack;
@@ -301,16 +301,16 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 			} else {
 				_local_4 = MenuConstants.FontColorWhite;
 			}
-			;
+
 		}
-		;
+
 		MenuUtils.setupText(this.m_missionTimeMc.timeValue, _local_3, 40, MenuConstants.FONT_TYPE_MEDIUM, _local_4);
 		CommonUtils.changeFontToGlobalFont(this.m_missionTimeMc.timeValue);
 		this.m_missionTimeMc.visible = true;
 		if (this.m_isEvergreen) {
 			this.m_missionTimeMc.newBestBg.alpha = 1;
 		}
-		;
+
 	}
 
 	private function setMissionScore(_arg_1:Array, _arg_2:Number):void {
@@ -328,12 +328,12 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 					if (_arg_1[_local_5].type == "total") {
 						_local_4 = _arg_1[_local_5].scoreTotal;
 					}
-					;
+
 					_local_5++;
 				}
-				;
+
 			}
-			;
+
 			MenuUtils.setupTextUpper(this.m_missionScoreMc.scoreTitle, _local_3, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorRed);
 			MenuUtils.setupText(this.m_missionScoreMc.scoreValue, MenuUtils.formatNumber(_local_4), 40, MenuConstants.FONT_TYPE_MEDIUM, ((this.m_isNewBestScore) ? MenuConstants.FontColorGreyUltraDark : MenuConstants.FontColorWhite));
 		} else {
@@ -353,9 +353,9 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 				this.m_missionScoreMc.newBestBg.alpha = 1;
 				this.m_missionScoreMc.newBestBgNegative.alpha = 0;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function setPreliminaryScore(_arg_1:Array):void {
@@ -377,10 +377,10 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 				this.m_view.preliminaryScoreMc.addChild(_local_4);
 				_local_3 = (_local_3 + 32);
 			}
-			;
+
 			_local_5++;
 		}
-		;
+
 		_local_3 = (_local_3 + 14);
 		this.addDottedLine(0, _local_3, this.m_view.preliminaryScoreMc);
 		this.m_yOffset = (this.m_yOffset + _local_3);
@@ -413,7 +413,7 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 			_local_5 = (_local_5 + 32);
 			_local_7++;
 		}
-		;
+
 		var _local_8:int;
 		while (_local_8 < _arg_2.length) {
 			_local_6 = new ScoreListElementView();
@@ -425,7 +425,7 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 			_local_5 = (_local_5 + 32);
 			_local_8++;
 		}
-		;
+
 		_local_5 = (_local_5 + 14);
 		this.addDottedLine(0, _local_5, this.m_view.preliminaryScoreMc);
 		this.m_yOffset = (this.m_yOffset + _local_5);
@@ -439,7 +439,7 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 			MenuUtils.setupTextUpper(this.m_view.silentAssassinMc.title, Localization.get("UI_RATING_SILENT_ASSASSIN").toUpperCase(), 28, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 			MenuUtils.setColor(this.m_view.silentAssassinMc.bg, MenuConstants.COLOR_RED);
 		}
-		;
+
 		this.m_view.silentAssassinMc.visible = true;
 	}
 
@@ -468,33 +468,33 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 				MenuUtils.setColor(_local_3, MenuConstants.COLOR_GREY_ULTRA_DARK, false);
 				_local_2++;
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1 == this.m_missionTimeMc) {
 			MenuUtils.setupText(this.m_missionTimeMc.timeValue, this.m_missionTimeMc.timeValue.text, 40, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 			CommonUtils.changeFontToGlobalFont(this.m_missionTimeMc.timeValue);
 		}
-		;
+
 		if (_arg_1 == this.m_missionScoreMc) {
 			MenuUtils.setupText(this.m_missionScoreMc.scoreValue, this.m_missionScoreMc.scoreValue.text, 40, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 		}
-		;
+
 	}
 
 	private function hideMissionSummaryLines(_arg_1:MovieClip):void {
 		if (_arg_1 == this.m_missionRatingMc) {
 			this.m_view.missionSummaryMc.lineMc_01.alpha = (this.m_view.missionSummaryMc.lineMc_02.alpha = 0);
 		}
-		;
+
 		if (_arg_1 == this.m_missionTimeMc) {
 			this.m_view.missionSummaryMc.lineMc_02.alpha = (this.m_view.missionSummaryMc.lineMc_03.alpha = 0);
 		}
-		;
+
 		if (_arg_1 == this.m_missionScoreMc) {
 			this.m_view.missionSummaryMc.lineMc_03.alpha = (this.m_view.missionSummaryMc.lineMc_04.alpha = 0);
 		}
-		;
+
 	}
 
 	private function offsetMissionSummary(_arg_1:MovieClip):void {
@@ -524,13 +524,13 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 			Animate.kill(this.m_missionRatingMc.ratingIcons.getChildByName(("icon" + _local_1)));
 			_local_1++;
 		}
-		;
+
 		var _local_2:int;
 		while (_local_2 <= 9) {
 			Animate.kill(this.m_view.leaderboardPosMc[("barMc_0" + _local_2)]);
 			_local_2++;
 		}
-		;
+
 	}
 
 	private function playSound(_arg_1:String):void {
@@ -547,7 +547,7 @@ public dynamic class DetailedScoreTile extends MenuElementTileBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

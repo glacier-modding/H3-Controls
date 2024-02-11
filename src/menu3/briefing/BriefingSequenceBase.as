@@ -10,7 +10,7 @@ import common.Animate;
 public class BriefingSequenceBase extends BaseControl {
 
 	public var m_totalDuration:Number;
-	private var m_staggeredSequencesArray:Array = new Array();
+	private var m_staggeredSequencesArray:Array = [];
 
 
 	public function startSequence():void {
@@ -27,7 +27,7 @@ public class BriefingSequenceBase extends BaseControl {
 		} else {
 			trace("ETBriefing | BriefingSequenceBase | onCurrentSequenceEnd | STOP TEH MADNESS");
 		}
-		;
+
 	}
 
 	override public function onChildrenAttached():void {
@@ -37,7 +37,7 @@ public class BriefingSequenceBase extends BaseControl {
 			this.m_staggeredSequencesArray.push(getContainer().getChildAt(_local_1));
 			_local_1++;
 		}
-		;
+
 	}
 
 	public function onUnregister():void {

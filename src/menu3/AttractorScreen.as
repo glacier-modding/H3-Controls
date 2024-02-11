@@ -37,7 +37,7 @@ public dynamic class AttractorScreen extends BaseControl {
 		if (this.m_frame > this.m_totalFrames) {
 			this.m_frameFactor = 0;
 		}
-		;
+
 		this.m_view.lines.gotoAndStop(this.m_frame);
 		this.m_view.planes.gotoAndStop(this.m_frame);
 	}

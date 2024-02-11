@@ -30,7 +30,7 @@ public class Quad extends BaseControl {
 			_local_3.alphaOffset = this.m_view.shape_mc.transform.colorTransform.alphaOffset;
 			this.m_view.shape_mc.transform.colorTransform = _local_3;
 		}
-		;
+
 	}
 
 	public function set Alpha(_arg_1:int):void {
@@ -42,7 +42,7 @@ public class Quad extends BaseControl {
 			_local_2.alphaOffset = ((_arg_1 * 0x0100) / 100);
 			this.m_view.shape_mc.transform.colorTransform = _local_2;
 		}
-		;
+
 	}
 
 	override public function onSetSize(_arg_1:Number, _arg_2:Number):void {

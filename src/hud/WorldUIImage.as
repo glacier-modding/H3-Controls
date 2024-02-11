@@ -38,13 +38,13 @@ public class WorldUIImage extends BaseControl {
 		if (((this.m_isRegistered) && (this.m_rid == _arg_1))) {
 			return;
 		}
-		;
+
 		this.unloadImage();
 		this.m_rid = _arg_1;
 		if (this.m_rid == null) {
 			return;
 		}
-		;
+
 		var _local_2:ImageLoaderCache = ImageLoaderCache.getGlobalInstance();
 		this.m_isRegistered = true;
 		_local_2.registerLoadImage(this.m_rid, this.onSuccess, null);
@@ -57,7 +57,7 @@ public class WorldUIImage extends BaseControl {
 			_local_1.unregisterLoadImage(this.m_rid, this.onSuccess, null);
 			this.m_isRegistered = false;
 		}
-		;
+
 		this.m_loader.bitmapData = null;
 	}
 
@@ -76,7 +76,7 @@ public class WorldUIImage extends BaseControl {
 		if (_local_2) {
 			this.loadImage(_local_2);
 		}
-		;
+
 	}
 
 

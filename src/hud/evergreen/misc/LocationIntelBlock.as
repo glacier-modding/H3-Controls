@@ -113,13 +113,13 @@ public class LocationIntelBlock extends Sprite {
 			this.m_dyContentHeight = 0;
 			return;
 		}
-		;
+
 		if (data.isHotMission) {
 			this.m_labelTargets_txt.text = this.s_targetLabel_suspects;
 		} else {
 			this.m_labelTargets_txt.text = this.s_targetLabel_targets;
 		}
-		;
+
 		this.visible = true;
 		y = ((this.m_dottedLine.y + this.m_dottedLine.dottedLineThickness) + DYGAP);
 		var dyGapLastUsed:Number = DYGAP;
@@ -143,7 +143,7 @@ public class LocationIntelBlock extends Sprite {
 				_arg_3.alpha = 1;
 				_arg_4.alpha = 1;
 			}
-			;
+
 			_arg_3.htmlText = (('<font face="$global">' + _arg_1.toString()) + "</font>");
 			_arg_4.y = y;
 			_arg_2.y = ((y + (_arg_4.height / 2)) - (_arg_2.height / 2));
@@ -157,7 +157,7 @@ public class LocationIntelBlock extends Sprite {
 				y = (y + DYGAP);
 				dyGapLastUsed = DYGAP;
 			}
-			;
+
 			_arg_4.x = (_arg_2.x + (((dxMaxLabelWidth + 50) + (((m_dxContentWidth - m_pxPadding) / 2) - dxMaxStackWidth)) / 2));
 			_arg_3.x = ((_arg_4.x - 20) - _arg_3.textWidth);
 			dyLastStackHeight = stackHeight;
@@ -173,7 +173,7 @@ public class LocationIntelBlock extends Sprite {
 			y = (y + DYGAP);
 			dyGapLastUsed = DYGAP;
 		}
-		;
+
 		this.m_dyContentHeight = (y - dyGapLastUsed);
 	}
 

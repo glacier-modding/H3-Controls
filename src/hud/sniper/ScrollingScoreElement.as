@@ -28,7 +28,7 @@ public class ScrollingScoreElement extends BaseControl {
 		this.m_scrollingContainer = new Sprite();
 		this.m_scrollingContainer.y = (this.m_elementYOffset * 21);
 		addChild(this.m_scrollingContainer);
-		this.m_elementsArray = new Array();
+		this.m_elementsArray = [];
 	}
 
 	public function onSetData(_arg_1:Object):void {
@@ -36,11 +36,11 @@ public class ScrollingScoreElement extends BaseControl {
 		if (_arg_1 == null) {
 			return;
 		}
-		;
+
 		if (_arg_1.type == 12) {
 			return;
 		}
-		;
+
 		var _local_2:String = ((_arg_1.point >= 0) ? "+" : "-");
 		var _local_3:String = String(Math.abs(_arg_1.point));
 		var _local_4:String = ((((_arg_1.name + "     ") + _local_2) + " ") + _local_3);
@@ -65,7 +65,7 @@ public class ScrollingScoreElement extends BaseControl {
 			default:
 				_local_7 = "common";
 		}
-		;
+
 		switch (_arg_1.type) {
 			case 3:
 				_local_6 = MenuConstants.FontColorRed;
@@ -88,7 +88,7 @@ public class ScrollingScoreElement extends BaseControl {
 			default:
 				_local_6 = MenuConstants.FontColorWhite;
 		}
-		;
+
 		MenuUtils.setupText(_local_5.score_mc.score_txt, _local_4, 18, MenuConstants.FONT_TYPE_MEDIUM, _local_6);
 		_local_5.score_mc.alpha = 0.8;
 		_local_5.alpha = 0;
@@ -99,10 +99,10 @@ public class ScrollingScoreElement extends BaseControl {
 			if (this.m_elementsArray[_local_9].isactive) {
 				_local_8 = (_local_8 + 1);
 			}
-			;
+
 			_local_9++;
 		}
-		;
+
 		_local_5.elementdelaynum = _local_8;
 		_local_5.levelOfAwesomeness = _local_7;
 		_local_5.isactive = true;
@@ -140,15 +140,15 @@ public class ScrollingScoreElement extends BaseControl {
 								"scaleY": 1.05
 							}, Animate.ExpoOut);
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		Animate.offset(_arg_1, 0.4, (0.3 + (_arg_1.elementdelaynum * 0.2)), {"y": -(this.m_elementYOffset)}, Animate.ExpoIn, this.scoreAnimFlowSwipe, _arg_1);
 	}
 
@@ -172,16 +172,16 @@ public class ScrollingScoreElement extends BaseControl {
 			if (this.m_elementsArray[_local_2].isactive) {
 				return;
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 		this.m_elementsArray = [];
 		this.m_scrollingContainer.y = (this.m_elementYOffset * 21);
 		while (this.m_staticContainer.numChildren > 0) {
 			this.m_staticContainer.removeChildAt(0);
 		}
-		;
+
 	}
 
 	public function playSound(_arg_1:String):void {
@@ -198,7 +198,7 @@ public class ScrollingScoreElement extends BaseControl {
 			});
 			_local_1++;
 		}
-		;
+
 	}
 
 

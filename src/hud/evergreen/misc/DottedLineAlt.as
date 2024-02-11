@@ -31,7 +31,7 @@ public class DottedLineAlt extends Sprite {
 		while (this.m_txt.textWidth < _arg_1) {
 			this.m_txt.appendText(" .");
 		}
-		;
+
 	}
 
 	public function get dottedLineLength():Number {

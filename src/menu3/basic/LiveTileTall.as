@@ -16,7 +16,7 @@ public dynamic class LiveTileTall extends MenuTileTall {
 	private static const DotIndicatorY:Number = 16;
 
 	private var m_dotIndicators:Sprite;
-	private var m_dots:Array = new Array();
+	private var m_dots:Array = [];
 	private var m_timerdot:DotIndicatorTimerView;
 	private var m_tileCount:int;
 	private var m_timeremain:Number = 0;
@@ -66,11 +66,11 @@ public dynamic class LiveTileTall extends MenuTileTall {
 					this.m_dotIndicators.x = ((m_view.tileDarkBg.width / 2) + (_local_5 * (15 / -2)));
 					_local_5++;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (this.m_dots.length) {
 			this.m_timerdot = new DotIndicatorTimerView();
 			this.m_timerdot.width = (this.m_timerdot.height = 10);
@@ -83,7 +83,7 @@ public dynamic class LiveTileTall extends MenuTileTall {
 			this.m_timerdot.gotoAndStop((100 - _local_9));
 			this.animateDots(null);
 		}
-		;
+
 	}
 
 	private function removeTimerDot():void {
@@ -92,7 +92,7 @@ public dynamic class LiveTileTall extends MenuTileTall {
 			this.m_dotIndicators.removeChild(this.m_timerdot);
 			this.m_timerdot = null;
 		}
-		;
+
 	}
 
 	private function removeDots():void {
@@ -103,7 +103,7 @@ public dynamic class LiveTileTall extends MenuTileTall {
 			this.m_dotIndicators.removeChild(_local_2);
 			_local_1++;
 		}
-		;
+
 		this.m_dots = [];
 	}
 
@@ -114,15 +114,15 @@ public dynamic class LiveTileTall extends MenuTileTall {
 			if (reset) {
 				this.m_timerdot.gotoAndStop(0);
 			}
-			;
+
 			Animate.to(this.m_timerdot, this.m_timeremain, 0, {"frames": 100}, Animate.Linear, function ():void {
 				if (reset) {
 					m_dotAnimationStarted = false;
 				}
-				;
+
 			});
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -133,7 +133,7 @@ public dynamic class LiveTileTall extends MenuTileTall {
 			m_view.indicator.removeChild(this.m_dotIndicators);
 			this.m_dotIndicators = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -145,9 +145,9 @@ public dynamic class LiveTileTall extends MenuTileTall {
 				Animate.complete(this.m_dots[_local_1]);
 				_local_1++;
 			}
-			;
+
 		}
-		;
+
 		Animate.complete(m_view.tileIcon.icons);
 	}
 

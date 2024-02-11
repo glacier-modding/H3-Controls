@@ -38,11 +38,11 @@ public dynamic class MapReticleLegend extends BaseControl {
 					this.setHeadAndTitlesTexts("", "", _arg_2);
 					this.setBg((this.m_view.singletitle.width + (MenuConstants.tileImageBorder * 3)), 30);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		this.m_view.visible = (!((_arg_1 == null) && (_arg_2 == null)));
 	}
 

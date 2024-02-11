@@ -95,15 +95,15 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 		var _local_2:Array = _arg_1.Challenges;
 		this.m_challenges = _local_2;
 		if (_local_2 == null) {
-			this.m_challenges = new Array();
+			this.m_challenges = [];
 		}
-		;
+
 		this.m_challengeImages = _arg_1.ChallengeImages;
 		if (this.m_challengeImages == null) {
-			this.m_challengeImages = new Array();
+			this.m_challengeImages = [];
 			this.m_challengeImages.length = this.m_challenges.length;
 		}
-		;
+
 		var _local_3:Dictionary = new Dictionary();
 		var _local_4:int;
 		while (_local_4 < this.m_challenges.length) {
@@ -114,27 +114,27 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 				if (this.m_challenges[_local_4].Id !== undefined) {
 					_local_7 = this.m_challenges[_local_4].Id;
 				}
-				;
+
 			}
-			;
+
 			if (_local_7.length > 0) {
 				_local_3[_local_7] = _local_4;
 			}
-			;
+
 			_local_4++;
 		}
-		;
+
 		var _local_5:Array = _arg_1.NewChallenges;
 		var _local_6:Array = _arg_1.NewChallengeImages;
 		if (_local_5 != null) {
 			if (_local_6 == null) {
-				_local_6 = new Array();
+				_local_6 = [];
 			}
-			;
+
 			if (_local_6.length != _local_5.length) {
 				_local_6.length = _local_5.length;
 			}
-			;
+
 			_local_8 = 0;
 			while (_local_8 < _local_5.length) {
 				if (_local_5[_local_8].IsActionReward !== true) {
@@ -148,19 +148,19 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 						this.m_challenges.push(_local_5[_local_8]);
 						this.m_challengeImages.push(_local_6[_local_8]);
 					}
-					;
+
 				}
-				;
+
 				_local_8++;
 			}
-			;
+
 		}
-		;
+
 		this.m_totalChallengeCount = this.m_challenges.length;
 		if (this.m_totalChallengeCount == 0) {
 			return;
 		}
-		;
+
 		if (this.m_totalChallengeCount > 200) {
 			this.m_imageScaleDown = 0.1;
 		} else {
@@ -169,9 +169,9 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 			} else {
 				this.m_imageScaleDown = 0.25;
 			}
-			;
+
 		}
-		;
+
 		this.calculateTileScale(1);
 		this.createChallengeTiles();
 		this.m_stopLoading = false;
@@ -182,7 +182,7 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 		if (this.m_loadingImagesInProgress == 0) {
 			this.startLoadImageFromQueue();
 		}
-		;
+
 		this.setTexts("", "");
 		this.setXpText(0);
 		this.m_gainedXp = 0;
@@ -192,7 +192,7 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 			this.m_challengeTiles[_local_1].view.setVisible(false);
 			_local_1++;
 		}
-		;
+
 		Animate.to(this.m_dottedLineContainer, 0.4, 0.1, {"alpha": 1}, Animate.ExpoOut);
 		Animate.delay(this.m_view, 1, this.showTileGrid);
 	}
@@ -201,7 +201,7 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 		if (this.m_loadingImagesInProgress == 0) {
 			this.startLoadImageFromQueue();
 		}
-		;
+
 	}
 
 	public function unloadImages():void {
@@ -240,18 +240,18 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 						if (_local_7 == 4) {
 							Animate.from(_local_6, 0.2, _local_1, {"x": (_local_6.x + 10)}, Animate.ExpoOut);
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			Animate.to(_local_6.image, _local_3, _local_1, {"alpha": 0.5}, Animate.ExpoOut);
 			_local_1 = (_local_1 + _local_2);
 			_local_4++;
 		}
-		;
+
 		Animate.delay(this, (_local_1 + _local_3), this.animateTile, 0);
 	}
 
@@ -259,17 +259,17 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 		if (_arg_1 >= this.m_challengeTiles.length) {
 			return;
 		}
-		;
+
 		if (this.m_tilesAppearSoundStarted) {
 			this.playSound("ui_debrief_achievement_tiles_appear_stop");
 			this.m_tilesAppearSoundStarted = false;
 		}
-		;
+
 		if (!this.m_tickSoundStarted) {
 			this.playSound("ui_debrief_achievement_scorescreen_tick_lp");
 			this.m_tickSoundStarted = true;
 		}
-		;
+
 		var _local_2:Object = this.m_challengeTiles[_arg_1];
 		var _local_3:ImageItemView = _local_2.view;
 		var _local_4:String = CHALLENGE_STATE_UNCOMPLETE;
@@ -279,9 +279,9 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 			if (_local_2.Completed === true) {
 				_local_4 = CHALLENGE_STATE_COMPLETE;
 			}
-			;
+
 		}
-		;
+
 		_local_3.animateIn(_local_4);
 		if (_local_4 == CHALLENGE_STATE_NEW) {
 			this.unlockChallenge(_local_2);
@@ -289,13 +289,13 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 				this.playSound("ui_debrief_achievement_scorescreen_tick_lp_stop");
 				this.m_tickSoundStarted = false;
 			}
-			;
+
 			this.playSound("ui_debrief_achievement_scorescreen_tile_highlight");
 			Animate.delay(this.m_view, 1, this.animateTile, (_arg_1 + 1));
 		} else {
 			Animate.delay(this.m_view, 0.03, this.animateTile, (_arg_1 + 1));
 		}
-		;
+
 		this.checkChallengeCountCompleted(_local_4);
 	}
 
@@ -309,7 +309,7 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 			this.m_gainedXp = (this.m_gainedXp + challengeTile.XPGain);
 			currentXpReward = challengeTile.XPGain;
 		}
-		;
+
 		multiplier = 0;
 		var drops:Array = challengeTile.Drops;
 		if (drops != null) {
@@ -318,18 +318,18 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 				if (drops[i].Type == "challengemultiplier") {
 					multiplier = (multiplier + drops[i].Properties.Multiplier);
 				}
-				;
+
 				i = (i + 1);
 			}
-			;
+
 		}
-		;
+
 		this.m_gainedMultiplier = (this.m_gainedMultiplier + multiplier);
 		if (!this.m_isTotalXpBgVisible) {
 			this.m_isTotalXpBgVisible = true;
 			Animate.to(this.m_view.totalXP_bg, 0.3, 0, {"scaleX": 1}, Animate.ExpoInOut);
 		}
-		;
+
 		var header:String = "";
 		if (multiplier > 0) {
 			multiplier = (multiplier + 1);
@@ -347,16 +347,16 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 			} else {
 				this.setXpText(0);
 			}
-			;
+
 		}
-		;
+
 		var title:String = "";
 		if (challengeTile.ChallengeName !== undefined) {
 			title = Localization.get(challengeTile.ChallengeName);
 		} else {
 			title = Localization.get(challengeTile.Name);
 		}
-		;
+
 		Animate.delay(this.m_view, 0.1, this.setTexts, title, header);
 		var imageItemView:ImageItemView = challengeTile.view;
 		imageItemView.parent.setChildIndex(imageItemView, (imageItemView.parent.numChildren - 1));
@@ -390,7 +390,7 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 			if (((this.m_gainedXp <= 0) && (this.m_gainedMultiplier <= 0))) {
 				return;
 			}
-			;
+
 			delay = ((lastChallengeState == CHALLENGE_STATE_NEW) ? 1 : 0.4);
 			awardType = "";
 			endTitle = "";
@@ -406,9 +406,9 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 					endTitle = Localization.get("UI_MENU_SCORE_MULTIPLIER_CHALLENGE");
 					endValue = (this.m_gainedMultiplier + 1);
 				}
-				;
+
 			}
-			;
+
 			Animate.delay(this.m_view, delay, function ():void {
 				m_view.title.alpha = 0;
 				m_view.header.alpha = 0;
@@ -420,9 +420,9 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 					if (awardType == "multiplier") {
 						setMultiplierText(endValue);
 					}
-					;
+
 				}
-				;
+
 				Animate.fromTo(m_view.totalXP_bg.inner, 0.4, 0, {
 					"scaleX": 0.7,
 					"scaleY": 0.7
@@ -438,7 +438,7 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 				playSound("ui_debrief_achievement_scorescreen_total_xp");
 			});
 		}
-		;
+
 	}
 
 	private function setTexts(_arg_1:String, _arg_2:String):void {
@@ -452,7 +452,7 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 		if (_arg_1 == 0) {
 			_local_2 = "";
 		}
-		;
+
 		MenuUtils.setupTextAndShrinkToFit(this.m_view.totalXP, _local_2, 70, MenuConstants.FONT_TYPE_MEDIUM, this.m_view.totalXP.width, -1, 50, MenuConstants.FontColorBlack);
 	}
 
@@ -482,7 +482,7 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 					"path": _local_6
 				});
 			}
-			;
+
 			_local_5.scaleX = this.m_tileScale;
 			_local_5.scaleY = this.m_tileScale;
 			_local_7 = (_local_3 % this.m_tileCountX);
@@ -496,7 +496,7 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 			this.m_shuffledTileIndexes.push(_local_3);
 			_local_3++;
 		}
-		;
+
 		this.m_shuffledTileIndexes = MenuUtils.shuffleArray(this.m_shuffledTileIndexes);
 	}
 
@@ -505,15 +505,15 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 		if (_local_1 >= 750) {
 			return (1);
 		}
-		;
+
 		if (_local_1 >= 500) {
 			return (2);
 		}
-		;
+
 		if (_local_1 >= 250) {
 			return (3);
 		}
-		;
+
 		return (4);
 	}
 
@@ -542,11 +542,11 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 				} else {
 					_local_8 = true;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		this.m_tileScale = _local_2;
 	}
 
@@ -556,7 +556,7 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 			this.loadImageFromQueue();
 			_local_1++;
 		}
-		;
+
 	}
 
 	private function loadImageFromQueue():void {
@@ -564,19 +564,19 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 		if (this.m_stopLoading) {
 			return;
 		}
-		;
+
 		if (this.m_unloadingImagesInProgress) {
 			Animate.delay(this.m_view, 0.01, this.loadImageFromQueue);
 			return;
 		}
-		;
+
 		if (this.m_loadImageQueue.length > 0) {
 			_local_1 = this.m_loadImageQueue.shift();
 			this.m_loadingImagesInProgress++;
 			_local_1.view.loadImage(_local_1.path, this.loadImageDone, this.loadImageDone, this.m_imageScaleDown);
 			this.m_loadImageLoaded.push(_local_1);
 		}
-		;
+
 	}
 
 	private function loadImageDone():void {
@@ -593,7 +593,7 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 			_local_1.view.unloadImage();
 			this.m_loadImageQueue.unshift(_local_1);
 		}
-		;
+
 		this.m_unloadingImagesInProgress = false;
 	}
 
@@ -613,14 +613,14 @@ public dynamic class MissionEndChallengePage extends MenuElementBase {
 			this.m_challengeTiles[_local_1].view.killAnimation();
 			_local_1++;
 		}
-		;
+
 		this.playSound("ui_debrief_achievement_scorescreen_tick_xp_lp_stop");
 		this.playSound("ui_debrief_achievement_scorescreen_tick_lp_stop");
 		if (this.m_tilesAppearSoundStarted) {
 			this.playSound("ui_debrief_achievement_tiles_appear_stop");
 			this.m_tilesAppearSoundStarted = false;
 		}
-		;
+
 		this.unloadImages();
 		this.m_challengeTiles.length = 0;
 		this.m_view = null;

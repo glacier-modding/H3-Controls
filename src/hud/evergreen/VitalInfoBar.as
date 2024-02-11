@@ -95,14 +95,14 @@ public class VitalInfoBar extends BaseControl {
 					"y": yPos
 				}, Animate.SineInOut);
 			}
-			;
+
 			yPos = (yPos - this.m_verticalSpacing);
 		} else {
 			Animate.to(this.m_assassinBar, 0.4, 0, {"alpha": 0}, Animate.SineInOut, function ():void {
 				m_assassinBar.visible = false;
 			});
 		}
-		;
+
 		if (((this.m_lookout_near) || (this.m_lookout_allerted))) {
 			this.m_lookoutBar.visible = true;
 			if (noSlide) {
@@ -114,7 +114,7 @@ public class VitalInfoBar extends BaseControl {
 					"y": yPos
 				}, Animate.SineInOut);
 			}
-			;
+
 			yPos = (yPos - this.m_verticalSpacing);
 		} else {
 			Animate.to(this.m_lookoutBar, 0.4, 0, {
@@ -124,7 +124,7 @@ public class VitalInfoBar extends BaseControl {
 				m_lookoutBar.visible = false;
 			});
 		}
-		;
+
 		if (this.m_prestige_missing) {
 			this.m_prestigeBar.visible = true;
 			if (noSlide) {
@@ -136,7 +136,7 @@ public class VitalInfoBar extends BaseControl {
 					"y": yPos
 				}, Animate.SineInOut);
 			}
-			;
+
 		} else {
 			Animate.to(this.m_prestigeBar, 0.4, 0, {
 				"alpha": 0,
@@ -145,7 +145,7 @@ public class VitalInfoBar extends BaseControl {
 				m_prestigeBar.visible = false;
 			});
 		}
-		;
+
 	}
 
 	private function updateLabel(bar_mc:EvergreenVitalInfoBar_view, txt:String, noFlash:Boolean, shrink:Boolean = true):void {
@@ -161,7 +161,7 @@ public class VitalInfoBar extends BaseControl {
 				"scaleY": 1
 			}, Animate.SineOut);
 		}
-		;
+
 		var barWidth:Number = ((bar_mc.label_txt.x + bar_mc.label_txt.textWidth) + 16);
 		if (noFlash) {
 			if (shrink) {
@@ -170,7 +170,7 @@ public class VitalInfoBar extends BaseControl {
 			} else {
 				bar_mc.back_mc.width = barWidth;
 			}
-			;
+
 		} else {
 			bar_mc.back_mc.width = (barWidth + (this.m_verticalSpacing * 2));
 			Animate.to(bar_mc.back_mc, 0.3, 0, {"width": barWidth}, Animate.SineOut, this.flashBar, bar_mc, 3);
@@ -180,9 +180,9 @@ public class VitalInfoBar extends BaseControl {
 					Animate.to(bar_mc.back_mc, 0.5, 0, {"width": 39}, Animate.SineOut);
 				});
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function flashBar(_arg_1:MovieClip, _arg_2:Number):void {
@@ -204,7 +204,7 @@ public class VitalInfoBar extends BaseControl {
 			Animate.kill(_arg_1.flash_mc);
 			_arg_1.flash_mc.visible = false;
 		}
-		;
+
 	}
 
 	public function set textShowDuration(_arg_1:Number):void {
@@ -218,74 +218,74 @@ public class VitalInfoBar extends BaseControl {
 			if (this.m_allerted_territory) {
 				this.updateLabel(this.m_allertedTerriBar, this.str_allerted_territory, Boolean((this.m_animFlags & ANIMFLAG_TERRITORY_LABEL_NO_FLASH)));
 			}
-			;
+
 			_local_2 = true;
 		}
-		;
+
 		if (_arg_1.isAssassinNearby != this.m_assassin_near) {
 			this.m_assassin_near = _arg_1.isAssassinNearby;
 			if (((!(this.m_assassin_allerted)) && (this.m_assassin_near))) {
 				this.m_assassinBar.gotoAndStop("assassin_near");
 				this.updateLabel(this.m_assassinBar, this.str_assassin_near, Boolean((this.m_animFlags & ANIMFLAG_ASSASSIN_LABEL_NO_FLASH)));
 			}
-			;
+
 			_local_2 = true;
 		}
-		;
+
 		if (_arg_1.isAssassinAlerted != this.m_assassin_allerted) {
 			this.m_assassin_allerted = _arg_1.isAssassinAlerted;
 			if (this.m_assassin_allerted) {
 				this.m_assassinBar.gotoAndStop("assassin_alert");
 				this.updateLabel(this.m_assassinBar, this.str_assassin_alerted, Boolean((this.m_animFlags & ANIMFLAG_ASSASSIN_LABEL_NO_FLASH)));
 			}
-			;
+
 			if (((!(this.m_assassin_allerted)) && (this.m_assassin_near))) {
 				this.m_assassinBar.gotoAndStop("assassin_near");
 				this.updateLabel(this.m_assassinBar, this.str_assassin_near, Boolean((this.m_animFlags & ANIMFLAG_ASSASSIN_LABEL_NO_FLASH)));
 			}
-			;
+
 			_local_2 = true;
 		}
-		;
+
 		if (_arg_1.isLookoutNearby != this.m_lookout_near) {
 			this.m_lookout_near = _arg_1.isLookoutNearby;
 			if (((!(this.m_lookout_allerted)) && (this.m_lookout_near))) {
 				this.m_lookoutBar.gotoAndStop("lookout_near");
 				this.updateLabel(this.m_lookoutBar, this.str_lookout_near, Boolean((this.m_animFlags & ANIMFLAG_LOOKOUT_LABEL_NO_FLASH)));
 			}
-			;
+
 			_local_2 = true;
 		}
-		;
+
 		if (_arg_1.isLookoutAlerted != this.m_lookout_allerted) {
 			this.m_lookout_allerted = _arg_1.isLookoutAlerted;
 			if (this.m_lookout_allerted) {
 				this.m_lookoutBar.gotoAndStop("lookout_alert");
 				this.updateLabel(this.m_lookoutBar, this.str_lookout_alerted, Boolean((this.m_animFlags & ANIMFLAG_LOOKOUT_LABEL_NO_FLASH)));
 			}
-			;
+
 			if (((!(this.m_lookout_allerted)) && (this.m_lookout_near))) {
 				this.m_lookoutBar.gotoAndStop("lookout_near");
 				this.updateLabel(this.m_lookoutBar, this.str_lookout_near, Boolean((this.m_animFlags & ANIMFLAG_LOOKOUT_LABEL_NO_FLASH)));
 			}
-			;
+
 			_local_2 = true;
 		}
-		;
+
 		if (_arg_1.isPrestigeObjectiveActive != this.m_prestige_missing) {
 			this.m_prestige_missing = _arg_1.isPrestigeObjectiveActive;
 			if (this.m_prestige_missing) {
 				this.m_prestigeBar.gotoAndStop("prestige_incomplete");
 				this.updateLabel(this.m_prestigeBar, this.str_prestige_missing, Boolean((this.m_animFlags & ANIMFLAG_PRESTIGE_LABEL_NO_FLASH)), false);
 			}
-			;
+
 			_local_2 = true;
 		}
-		;
+
 		if (_local_2) {
 			this.updatePositions();
 		}
-		;
+
 	}
 
 

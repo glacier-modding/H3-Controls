@@ -30,7 +30,7 @@ public class Subtitle extends BaseControl {
 			MenuUtils.setupText(this.m_view.sub_txt, _local_2, 22, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraLight);
 			this.m_view.visible = true;
 		}
-		;
+
 	}
 
 

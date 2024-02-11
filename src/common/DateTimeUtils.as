@@ -32,7 +32,7 @@ public class DateTimeUtils {
 			_local_3 = ExternalInterface.call("CommonUtilsGetServerTimeAsAs3Date");
 			DateTimeUtils.initializeUtcClock(DateTimeUtils.parseUTCTimeStamp(_local_3));
 		}
-		;
+
 		var _local_2:Date = new Date();
 		_local_2.setTime((m_serverUTCTimeAtStartup.getTime() + (_local_1 - m_localUTCTimeAtStartup)));
 		return (_local_2);
@@ -47,7 +47,7 @@ public class DateTimeUtils {
 		} else {
 			trace(((("DateTimeUtils: Warning, parseUTCTimeStamp() failed, invalid date string " + _arg_1) + " ") + _local_2));
 		}
-		;
+
 		return (_local_3);
 	}
 
@@ -56,22 +56,22 @@ public class DateTimeUtils {
 		if (_local_2.length != 2) {
 			trace(("DateTimeUtils: Warning, parseSqlUTCTimeStamp() failed, invalid date string: " + _arg_1));
 		}
-		;
+
 		var _local_3:Array = _local_2[0].split("-");
 		if (_local_3.length != 3) {
 			trace(("DateTimeUtils: Warning, parseSqlUTCTimeStamp() failed, invalid ymd string: " + _local_2[0]));
 		}
-		;
+
 		var _local_4:Array = _local_2[1].split(":");
 		if (_local_4.length != 3) {
 			trace(("DateTimeUtils: Warning, parseSqlUTCTimeStamp() failed, invalid hms string: " + _local_2[1]));
 		}
-		;
+
 		var _local_5:Array = _local_4[2].split(".");
 		if (_local_5.length != 2) {
 			trace(("DateTimeUtils: Warning, parseSqlUTCTimeStamp() failed, invalid hms string: " + _local_5[2]));
 		}
-		;
+
 		var _local_6:Date = new Date(0);
 		var _local_7:int = (_local_3[1] - 1);
 		_local_6.setUTCFullYear(_local_3[0], _local_7, _local_3[2]);
@@ -88,7 +88,7 @@ public class DateTimeUtils {
 		} else {
 			trace("DateTimeUtils: Warning, parseTimeStamp() failed, invalid date string");
 		}
-		;
+
 		return (_local_3);
 	}
 
@@ -104,7 +104,7 @@ public class DateTimeUtils {
 		if (_local_3 >= 4) {
 			_local_2 = (_local_2 - (_local_3 * ((60 * 60) * 24)));
 		}
-		;
+
 		var _local_4:Number = Math.floor((_local_2 / (60 * 60)));
 		_local_2 = (_local_2 - (_local_4 * (60 * 60)));
 		var _local_5:Number = (Math.floor((_local_2 / 60)) % 60);
@@ -177,7 +177,7 @@ public class DateTimeUtils {
 			_local_7 = new Date(_local_6);
 			return (_local_7);
 		}
-		;
+
 		return (new Date());
 	}
 
@@ -188,7 +188,7 @@ public class DateTimeUtils {
 		} else {
 			_local_2 = (_local_2 - ((_arg_1.timezoneOffset * 60) * 1000));
 		}
-		;
+
 		return (new Date(_local_2));
 	}
 
@@ -196,7 +196,7 @@ public class DateTimeUtils {
 		while (_arg_1.length < _arg_3) {
 			_arg_1 = (_arg_2 + _arg_1);
 		}
-		;
+
 		return (_arg_1);
 	}
 
@@ -217,13 +217,13 @@ public class DateTimeUtils {
 			if (((s_monthAbbreviationArray == null) || (!(s_monthAbbreviationArray.length == 12)))) {
 				s_monthAbbreviationArray = DEFAULT_MONTH_ABBREVIATIONS;
 			}
-			;
+
 			if (((s_dateAbbreviationFormat == null) || (s_dateAbbreviationFormat.length == 0))) {
 				s_dateAbbreviationFormat = DEFAULT_DATE_ABBREVIATION_FORMAT;
 			}
-			;
+
 		}
-		;
+
 	}
 
 

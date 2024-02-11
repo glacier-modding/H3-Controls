@@ -40,7 +40,7 @@ public dynamic class HeadlineWithTags extends HeadlineElement {
 		if (_arg_1.tags != null) {
 			this.setupTags(_arg_1.tags);
 		}
-		;
+
 	}
 
 	private function setupTags(_arg_1:Array):void {
@@ -54,7 +54,7 @@ public dynamic class HeadlineWithTags extends HeadlineElement {
 		if (((_arg_1 == null) || (_arg_1.length <= 0))) {
 			return;
 		}
-		;
+
 		var _local_2:Number = 0;
 		var _local_3:Boolean;
 		var _local_4:int;
@@ -74,7 +74,7 @@ public dynamic class HeadlineWithTags extends HeadlineElement {
 				MenuUtils.truncateTextfield(_local_6, 1, null);
 				_local_3 = true;
 			}
-			;
+
 			_local_5.bg.width = _local_9;
 			_local_5.bg.x = (_local_9 / 2);
 			_local_5.linethrough.visible = (!(_local_7));
@@ -83,13 +83,13 @@ public dynamic class HeadlineWithTags extends HeadlineElement {
 				_local_5.linethrough.width = _local_10;
 				_local_5.linethrough.x = ((_local_10 / 2) + (this.TAG_LINETHROUGH_SPACE_X / 2));
 			}
-			;
+
 			this.m_tagContainer.addChild(_local_5);
 			_local_5.x = _local_2;
 			_local_2 = (_local_2 + (_local_9 + this.TAG_OFFSET_X));
 			_local_4++;
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {

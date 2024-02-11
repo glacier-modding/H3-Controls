@@ -49,10 +49,10 @@ public class StashMarkerElement extends BaseMarkerElement {
 				this.pulsateOverlays(m_view.stashbarOverlay, true);
 				this.pulsateBlurs(m_view.stashbarBlur, true);
 			}
-			;
+
 			this.m_isCounting = true;
 		}
-		;
+
 		if (_arg_1 <= 0) {
 			this.m_isCounting = false;
 			m_view.stashbar.bar.gotoAndStop(1);
@@ -65,9 +65,9 @@ public class StashMarkerElement extends BaseMarkerElement {
 				this.pulsateOverlays(m_view.stashbarOverlay, true, true);
 				this.pulsateBlurs(m_view.stashbarBlur, true, true);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function pulsateBlurs(_arg_1:Sprite, _arg_2:Boolean, _arg_3:Boolean = false):void {
@@ -79,7 +79,7 @@ public class StashMarkerElement extends BaseMarkerElement {
 				"singlePulseThenKill": _arg_3
 			});
 		}
-		;
+
 	}
 
 	private function pulsateBlursIn(_arg_1:Object):void {
@@ -103,7 +103,7 @@ public class StashMarkerElement extends BaseMarkerElement {
 			} else {
 				pulsateBlursIn(clipObject);
 			}
-			;
+
 		});
 	}
 
@@ -116,7 +116,7 @@ public class StashMarkerElement extends BaseMarkerElement {
 				"singlePulseThenKill": _arg_3
 			});
 		}
-		;
+
 	}
 
 	private function pulsateOverlaysIn(_arg_1:Object):void {
@@ -130,7 +130,7 @@ public class StashMarkerElement extends BaseMarkerElement {
 		} else {
 			this.pulsateOverlaysIn(_arg_1);
 		}
-		;
+
 	}
 
 	private function pulsateIcons(_arg_1:Sprite, _arg_2:Boolean, _arg_3:Boolean = false):void {
@@ -143,7 +143,7 @@ public class StashMarkerElement extends BaseMarkerElement {
 				"singlePulseThenKill": _arg_3
 			});
 		}
-		;
+
 	}
 
 	private function pulsateIconsIn(_arg_1:Object):void {
@@ -161,7 +161,7 @@ public class StashMarkerElement extends BaseMarkerElement {
 			} else {
 				pulsateIconsIn(clipObject);
 			}
-			;
+
 		});
 	}
 

@@ -107,7 +107,7 @@ public dynamic class OptionsInfoSubtitleSpeakerPreview extends OptionsInfo {
 			this.m_indicator.scaleX = 0.85;
 			this.m_indicator.scaleY = 0.85;
 		}
-		;
+
 	}
 
 	private function loadImage(_arg_1:String, _arg_2:String, _arg_3:Function, _arg_4:Vector.<DisplayObject> = null):String {
@@ -115,23 +115,23 @@ public dynamic class OptionsInfoSubtitleSpeakerPreview extends OptionsInfo {
 		if (_arg_2 == _arg_1) {
 			return (_arg_1);
 		}
-		;
+
 		if (_arg_1) {
 			ImageLoaderCache.getGlobalInstance().unregisterLoadImage(_arg_1, _arg_3);
 		}
-		;
+
 		if (_arg_4) {
 			for each (_local_5 in _arg_4) {
 				_local_5.visible = false;
 			}
-			;
+
 		}
-		;
+
 		_arg_1 = _arg_2;
 		if (_arg_1) {
 			ImageLoaderCache.getGlobalInstance().registerLoadImage(_arg_1, _arg_3);
 		}
-		;
+
 		return (_arg_1);
 	}
 
@@ -154,9 +154,9 @@ public dynamic class OptionsInfoSubtitleSpeakerPreview extends OptionsInfo {
 				_local_4.alpha = 0;
 				Animate.to(_local_4, 0.25, 0, {"alpha": 1}, Animate.SineOut);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	protected function onPreviewRemovedFromStage():void {

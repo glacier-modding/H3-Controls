@@ -69,11 +69,11 @@ public dynamic class ListContainerWithHeader extends ListContainer {
 					this.m_headLineVerticalView.x = (this.HEADLINE_VERTICAL_OFFSET * -1);
 					MenuUtils.setColor(this.m_headLineVerticalView.bg, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function onAdded(_arg_1:Event):void {
@@ -91,12 +91,12 @@ public dynamic class ListContainerWithHeader extends ListContainer {
 		if ((((this.m_scrollListContainer == null) || (this.m_headLineView == null)) || (m_children.length == 0))) {
 			return;
 		}
-		;
+
 		var _local_1:Number = this.m_scrollListContainer.getPositionX();
 		if (_local_1 == this.m_previousScrollPosX) {
 			return;
 		}
-		;
+
 		this.m_previousScrollPosX = _local_1;
 		var _local_2:Boolean;
 		var _local_3:Point = new Point(0, 0);
@@ -110,9 +110,9 @@ public dynamic class ListContainerWithHeader extends ListContainer {
 			} else {
 				_local_3.x = _local_5;
 			}
-			;
+
 		}
-		;
+
 		this.setFloatingPositionHeadLineTitle(_local_2, _local_3);
 	}
 
@@ -121,11 +121,11 @@ public dynamic class ListContainerWithHeader extends ListContainer {
 		if ((((this.m_headLineView == null) || (_arg_2 == null)) || (m_children.length == 0))) {
 			return;
 		}
-		;
+
 		if ((((this.m_isFloatingPositionActive == _arg_1) && (this.m_currentLocalPos.x == _arg_2.x)) && (this.m_currentLocalPos.y == _arg_2.y))) {
 			return;
 		}
-		;
+
 		this.m_isFloatingPositionActive = _arg_1;
 		this.m_currentLocalPos = _arg_2;
 		if (!_arg_1) {
@@ -138,7 +138,7 @@ public dynamic class ListContainerWithHeader extends ListContainer {
 			this.m_headLineView.title.x = this.HEADLINE_OFFSET_X;
 			this.m_headLineView.title.y = _local_3.y;
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -169,7 +169,7 @@ public dynamic class ListContainerWithHeader extends ListContainer {
 			this.m_headLineView.visible = true;
 			MenuUtils.truncateTextfield(this.m_headLineView.title, 1, MenuConstants.FontColorWhite);
 		}
-		;
+
 		if (this.m_headLineVerticalView != null) {
 			this.m_containerBoundsHeight = containerBounds.height;
 			bgHeight = (this.m_containerBoundsHeight + this.HEADLINE_BG_HEIGHT_OFFSET);
@@ -177,19 +177,19 @@ public dynamic class ListContainerWithHeader extends ListContainer {
 			this.m_headLineVerticalView.bg.y = (this.m_containerBoundsHeight / 2);
 			this.m_headLineVerticalView.visible = true;
 		}
-		;
+
 	}
 
 	override protected function handleChildSelectionChange():void {
 		if (this.m_headLineView.title == null) {
 			return;
 		}
-		;
+
 		if (m_isChildSelected) {
 			if (!this.m_textTicker) {
 				this.m_textTicker = new textTicker();
 			}
-			;
+
 			this.m_textTicker.startTextTickerHtml(this.m_headLineView.title, this.m_headLineTitleText, CommonUtils.changeFontToGlobalIfNeeded);
 		} else {
 			if (this.m_textTicker) {
@@ -197,9 +197,9 @@ public dynamic class ListContainerWithHeader extends ListContainer {
 				this.m_textTicker = null;
 				MenuUtils.truncateTextfield(this.m_headLineView.title, 1, MenuConstants.FontColorWhite);
 			}
-			;
+
 		}
-		;
+
 	}
 
 

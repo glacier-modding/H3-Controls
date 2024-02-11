@@ -41,7 +41,7 @@ public class CalcUtil {
 			_local_18 = ((_local_12 + (_arg_5 * _local_10)) / _local_12);
 			_local_6 = Math.min(_local_17, _local_18);
 		}
-		;
+
 		var _local_13:Point = CalcUtil.getCenterPosOffsetForScaledBound(_arg_3, _local_6);
 		var _local_14:Number = (_arg_1.x + (_local_13.x * _local_7));
 		var _local_15:Number = (_arg_1.y + (_local_13.y * _local_8));

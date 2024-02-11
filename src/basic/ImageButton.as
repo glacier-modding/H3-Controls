@@ -44,7 +44,7 @@ public class ImageButton extends BaseControl {
 		if (_local_2) {
 			this.loadImage(_local_2);
 		}
-		;
+
 	}
 
 	public function onSetFocused(_arg_1:Boolean):void {
@@ -59,7 +59,7 @@ public class ImageButton extends BaseControl {
 		} else {
 			this.m_outline.visible = false;
 		}
-		;
+
 	}
 
 	public function onButtonPressed():void {

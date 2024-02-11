@@ -15,9 +15,7 @@ public dynamic class GlobalLoadIndicatorView extends MovieClip {
 	}
 
 
-	internal function frame15():* {
-		stop();
-	}
+
 
 
 }

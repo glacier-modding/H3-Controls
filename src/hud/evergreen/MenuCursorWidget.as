@@ -159,7 +159,7 @@ public class MenuCursorWidget extends BaseControl {
 			_arg_1 = Math.max(_arg_1, (76 * this.m_fScaleIcon));
 			_arg_2 = Math.max(_arg_2, (76 * this.m_fScaleIcon));
 		}
-		;
+
 		this.m_sprSizeTL.x = (-(_arg_1) / 2);
 		this.m_sprSizeTL.y = (-(_arg_2) / 2);
 		this.m_sprSizeTR.x = (_arg_1 / 2);
@@ -221,7 +221,7 @@ public class MenuCursorWidget extends BaseControl {
 			_local_8.alpha = _arg_1;
 			_local_9.alpha = _arg_1;
 		}
-		;
+
 		Animate.fromTo(this.m_sprAnimTL, 0.2, (1 / 30), ((_arg_2) ? _local_3 : _local_6), ((_arg_2) ? _local_6 : _local_3), ((_arg_2) ? Animate.SineIn : Animate.SineOut));
 		Animate.fromTo(this.m_sprAnimTR, 0.2, (1 / 30), ((_arg_2) ? _local_3 : _local_7), ((_arg_2) ? _local_7 : _local_3), ((_arg_2) ? Animate.SineIn : Animate.SineOut));
 		Animate.fromTo(this.m_sprAnimBL, 0.2, (1 / 30), ((_arg_2) ? _local_3 : _local_8), ((_arg_2) ? _local_8 : _local_3), ((_arg_2) ? Animate.SineIn : Animate.SineOut));

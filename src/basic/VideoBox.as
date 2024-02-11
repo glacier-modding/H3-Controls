@@ -99,14 +99,14 @@ public class VideoBox extends BaseControl {
 			this.m_bConstrained = _arg_1;
 			this.updatePause();
 		}
-		;
+
 	}
 
 	public function pause():void {
 		if (this.m_bPaused) {
 			return;
 		}
-		;
+
 		this.m_bPaused = true;
 		this.updatePause();
 	}
@@ -115,7 +115,7 @@ public class VideoBox extends BaseControl {
 		if (!this.m_bPaused) {
 			return;
 		}
-		;
+
 		this.m_bPaused = false;
 		this.updatePause();
 	}
@@ -131,12 +131,12 @@ public class VideoBox extends BaseControl {
 		} else {
 			this.m_enableSubtitle = CommonUtils.getUIOptionValue("UI_OPTION_GRAPHICS_SUBTITLES");
 		}
-		;
+
 		if (this.m_subView) {
 			this.m_containerVideo.removeChild(this.m_subView);
 			this.m_subView = null;
 		}
-		;
+
 		this.m_subView = new Subtitle();
 		this.m_containerVideo.addChild(this.m_subView);
 		this.m_subView.onSetData("");
@@ -178,14 +178,14 @@ public class VideoBox extends BaseControl {
 		if (((_local_2) && (this.m_autoplay))) {
 			this.play(_local_2);
 		}
-		;
+
 	}
 
 	public function getVideoDuration():Number {
 		if (this.m_loader == null) {
 			return (-1);
 		}
-		;
+
 		return (this.m_loader.getVideoDuration());
 	}
 
@@ -193,7 +193,7 @@ public class VideoBox extends BaseControl {
 		if (this.m_loader == null) {
 			return (-1);
 		}
-		;
+
 		return (this.m_loader.getVideoCurrentTime());
 	}
 
@@ -201,7 +201,7 @@ public class VideoBox extends BaseControl {
 		if (this.m_bScaleToFill == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_bScaleToFill = _arg_1;
 		this.updatePositionAndScale();
 	}
@@ -216,7 +216,7 @@ public class VideoBox extends BaseControl {
 		if ((((this.m_safeAreaScaleX == _arg_1) && (this.m_safeAreaScaleY == _arg_2)) && (_arg_3 == this.m_safeAreaRatio))) {
 			return;
 		}
-		;
+
 		this.m_safeAreaRatio = _arg_3;
 		this.m_safeAreaScaleX = _arg_1;
 		this.m_safeAreaScaleY = _arg_2;
@@ -231,7 +231,7 @@ public class VideoBox extends BaseControl {
 		} else {
 			_local_3 = _local_2;
 		}
-		;
+
 		this.updatePositionAndScaleForObject(this.m_containerVideo, _local_3);
 		this.updatePositionAndScaleForObject(this.m_containerInfoBox, _local_2);
 		this.updatePositionAndScaleForObject(this.m_containerTips, _local_2);
@@ -278,11 +278,11 @@ public class VideoBox extends BaseControl {
 			this.m_loader.x = (-(this.m_loader.width) / 2);
 			this.m_loader.y = (-(this.m_loader.height) / 2);
 		}
-		;
+
 		if (this.m_subView) {
 			this.alignSubs();
 		}
-		;
+
 		this.alignTips();
 	}
 
@@ -322,7 +322,7 @@ public class VideoBox extends BaseControl {
 			_local_2 = _arg_1.ObjectiveData;
 			_local_3 = _arg_1.LoadingInformationData;
 		}
-		;
+
 		this.setObjectiveData(_local_2);
 		this.setExtraInfoData(_local_3);
 	}
@@ -333,11 +333,11 @@ public class VideoBox extends BaseControl {
 		while (this.m_containerObjectives.numChildren > 0) {
 			this.m_containerObjectives.removeChildAt(0);
 		}
-		;
+
 		if (_arg_1 == null) {
 			return;
 		}
-		;
+
 		var _local_2:int;
 		var _local_3:int;
 		while (_local_3 < _arg_1.length) {
@@ -345,7 +345,7 @@ public class VideoBox extends BaseControl {
 				trace("Error: Cannot show more than 5 objctives on loading screen");
 				return;
 			}
-			;
+
 			_local_2++;
 			_local_4 = _arg_1[_local_3];
 			_local_5 = new LoadingScreenObjectiveTile();
@@ -355,7 +355,7 @@ public class VideoBox extends BaseControl {
 			this.m_containerObjectives.addChild(_local_5);
 			_local_3++;
 		}
-		;
+
 	}
 
 	private function setExtraInfoData(_arg_1:Object):void {
@@ -365,7 +365,7 @@ public class VideoBox extends BaseControl {
 		} else {
 			this.m_infoBoxWithBackgroundView.visible = false;
 		}
-		;
+
 	}
 
 	public function onMetadata(_arg_1:Object):void {
@@ -376,7 +376,7 @@ public class VideoBox extends BaseControl {
 		if (_arg_1 < 0) {
 			_arg_1 = CommonUtils.getSubtitleSize();
 		}
-		;
+
 		this.m_subtitleFontSize = _arg_1;
 	}
 
@@ -384,7 +384,7 @@ public class VideoBox extends BaseControl {
 		if (_arg_1 < 0) {
 			_arg_1 = CommonUtils.getSubtitleBGAlpha();
 		}
-		;
+
 		this.m_subtitleBGAlpha = _arg_1;
 	}
 
@@ -393,9 +393,9 @@ public class VideoBox extends BaseControl {
 			Log.info(Log.ChannelVideo, this, ((("Subtitle (disabled) (Videobox): [" + _arg_2) + "] ") + _arg_1));
 			return;
 		}
-		;
+
 		Log.info(Log.ChannelVideo, this, ((("Subtitle (Videobox): [" + _arg_2) + "] ") + _arg_1));
-		var _local_3:Object = new Object();
+		var _local_3:Object = {};
 		_local_3.text = _arg_1;
 		_local_3.fontsize = this.m_subtitleFontSize;
 		_local_3.pctBGAlpha = this.m_subtitleBGAlpha;
@@ -403,7 +403,7 @@ public class VideoBox extends BaseControl {
 			this.m_characterNameLastShown = _arg_2;
 			_local_3.characterName = _arg_2;
 		}
-		;
+
 		this.m_subView.onSetData(_local_3);
 	}
 

@@ -32,14 +32,14 @@ public class MenuVideoBox extends VideoBox {
 		if (this.m_drawBackground == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_drawBackground = _arg_1;
 		if (this.m_drawBackground) {
 			this.redrawBackground();
 		} else {
 			this.clearBackground();
 		}
-		;
+
 	}
 
 	override public function play(_arg_1:String):void {
@@ -69,7 +69,7 @@ public class MenuVideoBox extends VideoBox {
 		if (((this.m_backgroundWidth == _local_2.sizeX) && (this.m_backgroundHeight == _local_2.sizeY))) {
 			return;
 		}
-		;
+
 		this.m_backgroundWidth = _local_2.sizeX;
 		this.m_backgroundHeight = _local_2.sizeY;
 		this.redrawBackground();
@@ -81,7 +81,7 @@ public class MenuVideoBox extends VideoBox {
 		if (((this.m_backgroundX == _local_1) && (this.m_backgroundY == _local_2))) {
 			return;
 		}
-		;
+
 		this.m_backgroundX = _local_1;
 		this.m_backgroundY = _local_2;
 		this.redrawBackground();
@@ -98,7 +98,7 @@ public class MenuVideoBox extends VideoBox {
 			this.m_background.graphics.drawRect(this.m_backgroundX, this.m_backgroundY, this.m_backgroundWidth, this.m_backgroundHeight);
 			this.m_background.graphics.endFill();
 		}
-		;
+
 	}
 
 	private function clearBackground():void {

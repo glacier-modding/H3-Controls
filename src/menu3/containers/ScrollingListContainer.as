@@ -92,7 +92,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 			this.m_scrollBarVertical.x = (this.m_scrollBarVertical.x + _arg_1.scrollbarspaceoffset);
 			this.m_scrollBarHorizontal.y = (this.m_scrollBarHorizontal.y + _arg_1.scrollbarspaceoffset);
 		}
-		;
+
 		var _local_6:Number = ((_arg_1.masktopoffset) || (0));
 		var _local_7:Number = ((_arg_1.maskleftoffset) || (0));
 		var _local_8:Number = ((_arg_1.maskwidthoffset) || (0));
@@ -109,9 +109,9 @@ public dynamic class ScrollingListContainer extends ListContainer {
 				_local_6 = _local_12;
 				_local_9 = _local_12;
 			}
-			;
+
 		}
-		;
+
 		if (((!(_arg_1.novalidcontent)) && ((this.isVertical()) || (_local_11)))) {
 			this.m_maskStartLeftOffset = _local_10;
 			this.m_mask = new MaskView();
@@ -125,22 +125,22 @@ public dynamic class ScrollingListContainer extends ListContainer {
 			if (((this.isHorizontal()) && ((ControlsMain.isVrModeActive()) || (_arg_1.usemaskvisibilitycheck === true)))) {
 				this.m_visibilityArea = this.m_maskArea.clone();
 			}
-			;
+
 			if (_arg_1.outsidemaskscrolling) {
 				this.m_useMaskScrolling = _arg_1.outsidemaskscrolling;
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.overflowscrolling) {
 			this.m_overflowScrollingFactor = _arg_1.overflowscrolling;
 		}
-		;
+
 		if (_arg_1.mousewheelstepsize) {
 			this.m_mouseWheelStepSizeX = _arg_1.mousewheelstepsize;
 			this.m_mouseWheelStepSizeY = _arg_1.mousewheelstepsize;
 		}
-		;
+
 		this.m_reverseStartPos = (_arg_1.reversestartpos === true);
 		this.m_instantFirstScroll = (_arg_1.instantfirstscroll === true);
 		this.m_usePersistentReloadData = (_arg_1.usepersistentreloaddata === true);
@@ -159,26 +159,26 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		if (this.m_isMouseDragActive) {
 			this.handleDragEnd(new MouseEvent(MouseEvent.MOUSE_UP));
 		}
-		;
+
 		if (this.m_indicatorHandler) {
 			this.m_indicatorHandler.destroy();
 			this.m_indicatorHandler = null;
 		}
-		;
+
 		if (this.m_clickArea) {
 			removeChild(this.m_clickArea);
 			this.m_clickArea = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 
 	override public function getPersistentReloadData():Object {
 		var _local_1:Object = super.getPersistentReloadData();
 		if (_local_1 == null) {
-			_local_1 = new Object();
+			_local_1 = {};
 		}
-		;
+
 		var _local_2:Sprite = getContainer();
 		var _local_3:Rectangle = this.getScrollBounds();
 		_local_3.offset(-(_local_2.x), -(_local_2.y));
@@ -191,12 +191,12 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		if (((((!(this.m_usePersistentReloadData)) || (_arg_1 == null)) || (m_children == null)) || (m_children.length <= 0))) {
 			return;
 		}
-		;
+
 		var _local_2:Rectangle = _arg_1.scrollbounds;
 		if (_local_2 != null) {
 			this.scrollToBoundsInternal(_local_2, 0, false);
 		}
-		;
+
 	}
 
 	override public function setEngineCallbacks(_arg_1:Function, _arg_2:Function):void {
@@ -241,7 +241,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		if (_arg_2 < 0) {
 			_arg_2 = MenuConstants.ScrollTime;
 		}
-		;
+
 		var _local_3:Boolean = true;
 		this.scrollToBoundsInternal(_arg_1, _arg_2, _local_3);
 	}
@@ -256,7 +256,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		if (!_local_3) {
 			this.m_mouseWheelScrollActive = false;
 		}
-		;
+
 	}
 
 	protected function scrollToBoundsInternal(targetBounds:Rectangle, scrollTime:Number, useOverflowScrolling:Boolean):Boolean {
@@ -276,7 +276,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		if (this.m_scrollingDisabled) {
 			return (false);
 		}
-		;
+
 		this.m_lastScrollWasTriggeredByMask = false;
 		var clampToMaxBounds:Boolean = this.m_alwaysClampToMaxBounds;
 		if (((useOverflowScrolling) && (this.m_overflowScrollingFactor > 0))) {
@@ -285,28 +285,28 @@ public dynamic class ScrollingListContainer extends ListContainer {
 			targetBounds = overflowTargetBound;
 			clampToMaxBounds = true;
 		}
-		;
+
 		if (this.m_debug) {
 			Log.info(Log.ChannelDebug, this, ((((((("scrollBounds: x=" + this.m_scrollBounds.x) + " y=") + this.m_scrollBounds.y) + " w=") + this.m_scrollBounds.width) + " h=") + this.m_scrollBounds.height));
 			Log.info(Log.ChannelDebug, this, ((((((("targetBounds: x=" + targetBounds.x) + " y=") + targetBounds.y) + " w=") + targetBounds.width) + " h=") + targetBounds.height));
 		}
-		;
+
 		if (clampToMaxBounds) {
 			targetBounds = this.clampTargetBoundsToMaxScrollBounds(targetBounds);
 			if (this.m_debug) {
 				Log.info(Log.ChannelDebug, this, ((((((("clamped targetBounds: x=" + targetBounds.x) + " y=") + targetBounds.y) + " w=") + targetBounds.width) + " h=") + targetBounds.height));
 			}
-			;
+
 		}
-		;
+
 		if (this.m_scrollBounds.containsRect(targetBounds)) {
 			Animate.kill(getContainer());
 			Animate.kill(this.m_scrollBarHorizontal.indicator);
 			Animate.kill(this.m_scrollBarVertical.indicator);
 			return (false);
 		}
-		;
-		var scrollCheckResult:Object = new Object();
+
+		var scrollCheckResult:Object = {};
 		if (((this.isHorizontal()) || (this.isDual()))) {
 			scrollOffsetX = 0;
 			centerX = ((this.m_scrollBounds.left + this.m_scrollBounds.right) * 0.5);
@@ -317,7 +317,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 				rectUnionX = this.m_scrollBounds.union(targetBounds);
 				scrollOffsetX = (rectUnionX.width - this.m_scrollBounds.width);
 			}
-			;
+
 			if (scrollOffsetX > 0) {
 				currentX = getContainer().x;
 				if (centerX > centerTargetX) {
@@ -327,12 +327,12 @@ public dynamic class ScrollingListContainer extends ListContainer {
 					currentX = (currentX - scrollOffsetX);
 					scrollCheckResult.dirX = -1;
 				}
-				;
+
 				scrollCheckResult["x"] = currentX;
 			}
-			;
+
 		}
-		;
+
 		if (((this.isVertical()) || (this.isDual()))) {
 			scrollOffsetY = 0;
 			centerY = ((this.m_scrollBounds.top + this.m_scrollBounds.bottom) * 0.5);
@@ -343,7 +343,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 				rectUnionY = this.m_scrollBounds.union(targetBounds);
 				scrollOffsetY = (rectUnionY.height - this.m_scrollBounds.height);
 			}
-			;
+
 			if (scrollOffsetY > 0) {
 				currentY = getContainer().y;
 				if (centerY > centerTargetY) {
@@ -353,25 +353,25 @@ public dynamic class ScrollingListContainer extends ListContainer {
 					currentY = (currentY - scrollOffsetY);
 					scrollCheckResult.dirY = -1;
 				}
-				;
+
 				scrollCheckResult["y"] = currentY;
 			}
-			;
+
 		}
-		;
+
 		if (((!(scrollCheckResult["x"] === undefined)) || (!(scrollCheckResult["y"] === undefined)))) {
 			targetIsTopLeft = true;
 			scrollAnimationTime = MenuConstants.SwipeInTime;
 			if (scrollTime == 0) {
 				scrollAnimationTime = 0;
 			}
-			;
+
 			Animate.kill(getContainer());
 			if (scrollCheckResult["x"] !== undefined) {
 				if (scrollCheckResult["x"] < -0.01) {
 					targetIsTopLeft = false;
 				}
-				;
+
 				if (scrollTime != 0) {
 					Animate.legacyTo(getContainer(), scrollTime, {"x": scrollCheckResult["x"]}, Animate.ExpoOut, function ():void {
 						onScrollComplete();
@@ -379,18 +379,18 @@ public dynamic class ScrollingListContainer extends ListContainer {
 				} else {
 					getContainer().x = scrollCheckResult["x"];
 				}
-				;
+
 				if (this.m_scrollBarHorizontal.visible) {
 					this.updateHorizontalScrollIndicator(scrollCheckResult["x"], scrollAnimationTime);
 				}
-				;
+
 			}
-			;
+
 			if (scrollCheckResult["y"] !== undefined) {
 				if (scrollCheckResult["y"] < -0.01) {
 					targetIsTopLeft = false;
 				}
-				;
+
 				if (scrollTime != 0) {
 					Animate.legacyTo(getContainer(), scrollTime, {"y": scrollCheckResult["y"]}, Animate.ExpoOut, function ():void {
 						onScrollComplete();
@@ -398,28 +398,28 @@ public dynamic class ScrollingListContainer extends ListContainer {
 				} else {
 					getContainer().y = scrollCheckResult["y"];
 				}
-				;
+
 				if (this.m_scrollBarVertical.visible) {
 					this.updateVerticalScrollIndicator(scrollCheckResult["y"], scrollAnimationTime);
 				}
-				;
+
 			}
-			;
+
 			if (((!(this.m_mask == null)) && (!(this.m_maskStartLeftOffset == 0)))) {
 				this.setStartMaskActive(targetIsTopLeft, (scrollTime / 2));
 			}
-			;
+
 			this.updateChildrenVisibility(false, targetBounds);
 		} else {
 			scrollTime = 0;
 		}
-		;
+
 		if (scrollTime == 0) {
 			Animate.delay(getContainer(), scrollTime, function ():void {
 				onScrollComplete();
 			});
 		}
-		;
+
 		return (true);
 	}
 
@@ -433,7 +433,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		if (this.m_experimentalFastMode) {
 			this.recalculateTotalBounds();
 		}
-		;
+
 		this.updateChildrenVisibility(true);
 	}
 
@@ -441,7 +441,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		if (this.m_visibilityArea == null) {
 			return;
 		}
-		;
+
 		this.updateChildrenVisibiltyOnRect(this.m_visibilityArea, _arg_1, _arg_2);
 	}
 
@@ -449,7 +449,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		if (_arg_1 == null) {
 			return;
 		}
-		;
+
 		var _local_4:Rectangle = _arg_1.clone();
 		if (_arg_3 != null) {
 			_local_4 = _local_4.union(_arg_3);
@@ -457,14 +457,14 @@ public dynamic class ScrollingListContainer extends ListContainer {
 				Log.info(Log.ChannelDebug, this, ("updateChildrenVisibilty: targetBounds: " + _arg_3));
 				Log.info(Log.ChannelDebug, this, ("updateChildrenVisibilty: Visible Area0: " + _arg_1));
 			}
-			;
+
 		}
-		;
+
 		_local_4.inflate(MenuConstants.GridUnitWidth, 0);
 		if (this.m_debug) {
 			Log.info(Log.ChannelDebug, this, ("updateChildrenVisibilty: Visible Area: " + _arg_1));
 		}
-		;
+
 		this.updateContainerElementVisibility(_arg_2, _local_4, this);
 	}
 
@@ -481,26 +481,26 @@ public dynamic class ScrollingListContainer extends ListContainer {
 					if (this.m_debug) {
 						Log.info(Log.ChannelDebug, this, (((("updateChildrenVisibilty: Child " + _local_6) + " bounds = ") + _local_7) + " in visible area"));
 					}
-					;
+
 					this.setElementVisibility(_arg_1, _local_5, true);
 					_local_4 = (_local_5 as BaseContainer);
 					if (_local_4 != null) {
 						this.updateContainerElementVisibility(_arg_1, _arg_2, _local_4);
 					}
-					;
+
 				} else {
 					if (this.m_debug) {
 						Log.info(Log.ChannelDebug, this, ((("updateChildrenVisibilty: Child " + _local_6) + " bounds = ") + _local_7));
 					}
-					;
+
 					this.setElementVisibility(_arg_1, _local_5, false);
 				}
-				;
+
 			}
-			;
+
 			_local_6++;
 		}
-		;
+
 	}
 
 	protected function setElementVisibility(_arg_1:Boolean, _arg_2:MenuElementBase, _arg_3:Boolean):void {
@@ -509,7 +509,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		if (_local_4 != null) {
 			_local_4.setVisibleOnScreen(_arg_3);
 		}
-		;
+
 	}
 
 	private function setStartMaskActive(_arg_1:Boolean, _arg_2:Number):void {
@@ -518,11 +518,11 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		if (((!(getContainer().mask == this.m_mask)) || (this.m_mask == null))) {
 			return;
 		}
-		;
+
 		if (this.m_isStartMaskActive == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_isStartMaskActive = _arg_1;
 		if (_arg_1) {
 			_local_3 = (this.m_maskArea.x - this.m_maskStartLeftOffset);
@@ -537,13 +537,13 @@ public dynamic class ScrollingListContainer extends ListContainer {
 					"width": _local_4
 				}, Animate.Linear);
 			}
-			;
+
 		} else {
 			Animate.kill(this.m_mask);
 			this.m_mask.x = this.m_maskArea.x;
 			this.m_mask.width = this.m_maskArea.width;
 		}
-		;
+
 	}
 
 	protected function setScrollIndicatorColors():void {
@@ -551,12 +551,12 @@ public dynamic class ScrollingListContainer extends ListContainer {
 			MenuUtils.setColor(this.m_scrollBarVertical.indicator, MenuConstants.COLOR_RED, true, MenuConstants.MenuElementSelectedAlpha);
 			MenuUtils.setColor(this.m_scrollBarVertical.indicatorbg, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 		}
-		;
+
 		if (this.m_scrollBarHorizontal != null) {
 			MenuUtils.setColor(this.m_scrollBarHorizontal.indicator, MenuConstants.COLOR_RED, true, MenuConstants.MenuElementSelectedAlpha);
 			MenuUtils.setColor(this.m_scrollBarHorizontal.indicatorbg, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 		}
-		;
+
 	}
 
 	private function setScrollIndicator(_arg_1:Number, _arg_2:Number, _arg_3:Boolean):void {
@@ -587,7 +587,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 			this.m_clickAreaScrollBarH = this.m_scrollBarHorizontal.indicatorbg.getBounds(this);
 			this.m_clickAreaScrollBarH.inflate(0, 20);
 		}
-		;
+
 	}
 
 	private function updateVerticalScrollIndicator(_arg_1:int, _arg_2:Number):void {
@@ -597,7 +597,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		} else {
 			this.m_scrollBarVertical.indicator.y = -(_local_3);
 		}
-		;
+
 		this.m_dragAreaScrollBarV.y = -(_local_3);
 	}
 
@@ -608,7 +608,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		} else {
 			this.m_scrollBarHorizontal.indicator.x = -(_local_3);
 		}
-		;
+
 		this.m_dragAreaScrollBarH.x = -(_local_3);
 	}
 
@@ -622,19 +622,19 @@ public dynamic class ScrollingListContainer extends ListContainer {
 			this.m_scrollMaxBounds.x = (this.m_scrollMaxBounds.x - _local_2.x);
 			this.m_scrollMaxBounds.y = (this.m_scrollMaxBounds.y - _local_2.y);
 		}
-		;
+
 		this.m_scrollBarVertical.visible = false;
 		this.m_scrollBarHorizontal.visible = false;
 		if (((((this.isVertical()) || (this.isDual())) && (!(this.m_hideScrollBar))) && (Math.floor(this.m_scrollMaxBounds.height) > this.m_scrollBounds.height))) {
 			this.setScrollIndicator(this.m_scrollBounds.height, this.m_scrollMaxBounds.height, true);
 			this.updateVerticalScrollIndicator(getContainer().y, 0);
 		}
-		;
+
 		if (((((this.isHorizontal()) || (this.isDual())) && (!(this.m_hideScrollBar))) && (Math.floor(this.m_scrollMaxBounds.width) > this.m_scrollBounds.width))) {
 			this.setScrollIndicator(this.m_scrollBounds.width, this.m_scrollMaxBounds.width, false);
 			this.updateHorizontalScrollIndicator(getContainer().x, 0);
 		}
-		;
+
 		var _local_3:Number = (getContainer().x * -1);
 		var _local_4:Number = (getContainer().y * -1);
 		var _local_5:Number = Math.max(((_local_3 + this.m_scrollBounds.width) - this.m_scrollMaxBounds.width), 0);
@@ -647,30 +647,30 @@ public dynamic class ScrollingListContainer extends ListContainer {
 			Log.info(Log.ChannelDebug, this, ((("m_scrollBounds width: " + this.m_scrollBounds.width) + " height:") + this.m_scrollBounds.height));
 			Log.info(Log.ChannelDebug, this, ((("offsetX: " + _local_7) + " offsetY:") + _local_8));
 		}
-		;
+
 		if (((_local_7 < 0) || (_local_8 < 0))) {
 			_local_9 = this.getScrollTargetFromOffset(_local_7, _local_8);
 			this.scrollToBounds(_local_9, 0);
 		}
-		;
+
 		if (this.m_reverseStartPos) {
 			_local_10 = new Rectangle(((_local_1.x + _local_1.width) - 1), ((_local_1.y + _local_1.height) - 1), 1, 1);
 			this.scrollToBounds(_local_10, 0);
 		}
-		;
+
 	}
 
 	public function setFocusTarget(target:Sprite):void {
 		if (this.m_mouseWheelScrollActive) {
 			return;
 		}
-		;
+
 		var menuElem:MenuElementBase = (target as MenuElementBase);
 		if (((this.m_debug) && (!(menuElem == null)))) {
 			Log.info(Log.ChannelDebug, this, ("setFocusTarget: " + menuElem.name));
 			Log.info(Log.ChannelDebug, menuElem, ("y: " + menuElem.y));
 		}
-		;
+
 		var targetBounds:Rectangle = getMenuElementBounds(menuElem, this, function (_arg_1:MenuElementBase):Boolean {
 			return (_arg_1.visible);
 		});
@@ -680,14 +680,14 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		} else {
 			this.scrollToBounds(targetBounds);
 		}
-		;
+
 	}
 
 	override protected function handleSelectionChange():void {
 		if (m_isSelected) {
 			bubbleEvent("scrollingListContainerSelected", this);
 		}
-		;
+
 	}
 
 	override public function repositionChild(_arg_1:Sprite):void {
@@ -695,7 +695,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		if (!this.m_experimentalFastMode) {
 			this.recalculateTotalBounds();
 		}
-		;
+
 	}
 
 	override public function handleEvent(_arg_1:String, _arg_2:Sprite):Boolean {
@@ -703,12 +703,12 @@ public dynamic class ScrollingListContainer extends ListContainer {
 			this.setFocusTarget(_arg_2);
 			bubbleEvent("scrollingListContainerScrolled", this);
 		}
-		;
+
 		if (_arg_1 == "itemHoverOn") {
 			this.setFocusTarget(_arg_2);
 			bubbleEvent("scrollingListContainerScrolled", this);
 		}
-		;
+
 		return (super.handleEvent(_arg_1, _arg_2));
 	}
 
@@ -738,11 +738,11 @@ public dynamic class ScrollingListContainer extends ListContainer {
 						bubbleEvent("scrollingListContainerScrolled", this);
 						return;
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			if (((!(_local_5)) && (this.m_scrollBarHorizontal.visible))) {
 				if (this.m_dragAreaScrollBarH.containsPoint(_local_4)) {
 					_arg_2.stopImmediatePropagation();
@@ -757,11 +757,11 @@ public dynamic class ScrollingListContainer extends ListContainer {
 						bubbleEvent("scrollingListContainerScrolled", this);
 						return;
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			if (_local_5) {
 				this.m_isMouseDragActive = true;
 				stage.addEventListener(MouseEvent.MOUSE_MOVE, this.handleDragMouseMove, true);
@@ -770,9 +770,9 @@ public dynamic class ScrollingListContainer extends ListContainer {
 				this.m_mouseDragPos = _local_3;
 				return;
 			}
-			;
+
 		}
-		;
+
 		super.handleMouseDown(_arg_1, _arg_2);
 	}
 
@@ -790,7 +790,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		} else {
 			_local_7 = this.getScrollTargetFromOffset(0, _local_6.y);
 		}
-		;
+
 		var _local_8:Number = 0;
 		var _local_9:Boolean;
 		this.scrollToBoundsInternal(_local_7, _local_8, _local_9);
@@ -809,11 +809,11 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		if (_arg_2.delta == 0) {
 			return;
 		}
-		;
+
 		if (((this.m_mouseWheelStepSizeX == 0) && (this.m_mouseWheelStepSizeY == 0))) {
 			return;
 		}
-		;
+
 		_arg_2.stopImmediatePropagation();
 		var _local_3:Number = 0;
 		var _local_4:Number = 0;
@@ -822,7 +822,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		} else {
 			_local_4 = (-(_arg_2.delta) * this.m_mouseWheelStepSizeY);
 		}
-		;
+
 		var _local_5:Rectangle = this.getScrollTargetFromOffset(_local_3, _local_4);
 		this.m_mouseWheelScrollActive = true;
 		this.scrollToMouseWheelTarget(_local_5);
@@ -842,7 +842,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 			_arg_1 = _arg_1.intersection(this.m_scrollMaxBounds);
 			_arg_1.offset(getContainer().x, getContainer().y);
 		}
-		;
+
 		return (_arg_1);
 	}
 
@@ -866,7 +866,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		if (_arg_1 <= 0) {
 			_arg_1 = 1;
 		}
-		;
+
 		this.m_screenScale = (MenuConstants.BaseHeight / _arg_1);
 	}
 
@@ -876,17 +876,17 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		if (((this.m_useMaskScrolling) && (_local_2))) {
 			_local_1 = true;
 		}
-		;
+
 		if (_local_1 == this.m_maskScrollingIsActive) {
 			return;
 		}
-		;
+
 		if (_local_1) {
 			this.enableMaskScrolling();
 		} else {
 			this.disableMaskScrolling();
 		}
-		;
+
 	}
 
 	private function enableMaskScrolling():void {
@@ -894,7 +894,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 			this.m_maskScrollingIsActive = true;
 			getContainer().addEventListener(Event.ENTER_FRAME, this.updateMaskScrolling);
 		}
-		;
+
 	}
 
 	private function disableMaskScrolling():void {
@@ -902,26 +902,26 @@ public dynamic class ScrollingListContainer extends ListContainer {
 			this.m_maskScrollingIsActive = false;
 			getContainer().removeEventListener(Event.ENTER_FRAME, this.updateMaskScrolling);
 		}
-		;
+
 	}
 
 	private function updateMaskScrolling():void {
 		if (((!(this.m_maskScrollingIsActive)) || (stage == null))) {
 			return;
 		}
-		;
+
 		var _local_1:Point = new Point(stage.mouseX, stage.mouseY);
 		if ((((!(this.m_maskLastMousePos == null)) && (this.m_maskLastMousePos.equals(_local_1))) && (!(this.m_lastScrollWasTriggeredByMask)))) {
 			this.m_maskLastTargetBoundsRelativeToContainer = null;
 			return;
 		}
-		;
+
 		this.m_maskLastMousePos = _local_1;
 		var _local_2:Point = globalToLocal(_local_1);
 		if (this.m_maskArea.containsPoint(_local_2)) {
 			return;
 		}
-		;
+
 		var _local_3:Rectangle = this.m_scrollMaxBounds.clone();
 		var _local_4:Sprite = getContainer();
 		_local_3.x = (_local_3.x + _local_4.x);
@@ -929,7 +929,7 @@ public dynamic class ScrollingListContainer extends ListContainer {
 		if (!_local_3.containsPoint(_local_2)) {
 			return;
 		}
-		;
+
 		var _local_5:Rectangle;
 		var _local_6:Rectangle = this.getLeafElementBounds(m_children, _local_2);
 		if (_local_6 != null) {
@@ -940,9 +940,9 @@ public dynamic class ScrollingListContainer extends ListContainer {
 				this.scrollToBounds(_local_6);
 				this.m_lastScrollWasTriggeredByMask = true;
 			}
-			;
+
 		}
-		;
+
 		this.m_maskLastTargetBoundsRelativeToContainer = _local_5;
 	}
 
@@ -962,15 +962,15 @@ public dynamic class ScrollingListContainer extends ListContainer {
 						bounds = this.getLeafElementBounds(element.m_children, pos);
 						return (bounds);
 					}
-					;
+
 					return (elementBounds);
 				}
-				;
+
 			}
-			;
+
 			i = (i + 1);
 		}
-		;
+
 		return (null);
 	}
 

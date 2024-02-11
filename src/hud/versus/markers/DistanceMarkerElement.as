@@ -50,7 +50,7 @@ public class DistanceMarkerElement extends MovieClip {
 				this.m_view.rotation = 90;
 				break;
 		}
-		;
+
 		this.m_view.y = -((this.markerHeight >> 1) + (_local_2 >> 1));
 	}
 

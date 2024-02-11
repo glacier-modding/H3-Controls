@@ -63,29 +63,29 @@ public dynamic class OptionsInfoPreview extends OptionsInfo {
 				this.m_ridKeepAliveImages.push(_local_3);
 				ImageLoaderCache.getGlobalInstance().registerLoadImage(_local_3);
 			}
-			;
+
 		} else {
 			this.m_ridKeepAliveImages = null;
 		}
-		;
+
 		if (_local_2) {
 			while (_local_2.length > 0) {
 				ImageLoaderCache.getGlobalInstance().unregisterLoadImage(_local_2.pop());
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function loadImage(_arg_1:String):void {
 		if (_arg_1 == this.m_ridCurrentImage) {
 			return;
 		}
-		;
+
 		if (this.m_ridCurrentImage) {
 			ImageLoaderCache.getGlobalInstance().unregisterLoadImage(this.m_ridCurrentImage, this.onImageLoadSucceeded);
 		}
-		;
+
 		this.m_previewContentContainer.visible = false;
 		this.m_ridCurrentImage = _arg_1;
 		if (this.m_ridCurrentImage) {
@@ -96,7 +96,7 @@ public dynamic class OptionsInfoPreview extends OptionsInfo {
 		} else {
 			this.m_previewContentContainer.visible = true;
 		}
-		;
+
 	}
 
 	private function onImageLoadSucceeded(_arg_1:BitmapData):void {
@@ -111,12 +111,12 @@ public dynamic class OptionsInfoPreview extends OptionsInfo {
 					_local_2.alpha = 0;
 					Animate.to(_local_2, 0.25, 0, {"alpha": 1}, Animate.SineOut);
 				}
-				;
+
 			}
-			;
+
 			this.onPreviewBackgroundImageLoaded();
 		}
-		;
+
 	}
 
 	protected function onPreviewBackgroundImageLoading():void {
@@ -132,9 +132,9 @@ public dynamic class OptionsInfoPreview extends OptionsInfo {
 				while (m_ridKeepAliveImages.length > 0) {
 					ImageLoaderCache.getGlobalInstance().unregisterLoadImage(m_ridKeepAliveImages.pop());
 				}
-				;
+
 			}
-			;
+
 		}, (1000 / 20));
 	}
 

@@ -67,7 +67,7 @@ public class ChallengeElement extends BaseControl {
 		if (!data.imagePath) {
 			data.imagePath = "";
 		}
-		;
+
 		Animate.delay(this, dtDelay, function ():void {
 			ShowNotification(data.title, data.total, data.count, data.completed, (data.timeRemaining - 1), data.imagePath);
 		});
@@ -76,7 +76,7 @@ public class ChallengeElement extends BaseControl {
 				ShowTotalNotification(data.overallChallenges.title, data.overallChallenges.total, data.overallChallenges.count, (data.timeRemaining - 1.5));
 			});
 		}
-		;
+
 	}
 
 	public function ShowNotification(title:String, total:uint, count:uint, completed:Boolean, timeRemaining:Number, imagePath:String):void {
@@ -101,7 +101,7 @@ public class ChallengeElement extends BaseControl {
 			this.m_view.image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_view.x = 0;
 		this.m_view.alpha = 1;
 		if (total == 1) {
@@ -127,17 +127,17 @@ public class ChallengeElement extends BaseControl {
 			if (count >= 1) {
 				this.m_view.progressbar.value.scaleX = ((count - 1) / total);
 			}
-			;
+
 			this.m_view.challenge_txt.alpha = 1;
 			this.m_view.progress_txt.alpha = 1;
 			this.m_view.progressbar.alpha = 1;
 		}
-		;
+
 		this.m_view.visible = true;
 		if (total != 1) {
 			Animate.to(this.m_view.progressbar.value, 0.6, 0, {"scaleX": (count / total)}, Animate.ExpoOut);
 		}
-		;
+
 		Animate.to(this.m_view.overlay, 0.8, 0, {
 			"scaleX": scaleFactorX,
 			"alpha": 0
@@ -148,7 +148,7 @@ public class ChallengeElement extends BaseControl {
 		} else {
 			this.playSound("ChallengePartiallyComplete");
 		}
-		;
+
 		Animate.delay(this, (timeRemaining - 0.5), function ():void {
 			Animate.kill(m_view.progressbar.value);
 			Animate.kill(m_view.overlay);
@@ -184,7 +184,7 @@ public class ChallengeElement extends BaseControl {
 				this.m_view.image.removeChild(this.m_loader);
 				this.m_loader = null;
 			}
-			;
+
 			this.m_loader = new ImageLoader();
 			this.m_view.image.addChild(this.m_loader);
 			this.m_loader.loadImage(imagePath, function ():void {
@@ -194,7 +194,7 @@ public class ChallengeElement extends BaseControl {
 					m_loader.width = 120;
 					m_loader.scaleY = m_loader.scaleX;
 				}
-				;
+
 				m_loader.x = (m_loader.width / -2);
 				m_loader.y = (m_loader.height / -2);
 				Animate.delay(m_view.imageoverlay, 0.5, function ():void {
@@ -211,7 +211,7 @@ public class ChallengeElement extends BaseControl {
 		} else {
 			Animate.delay(this.m_view.completediconsoverlay, 0.3, completedIconsAnimationHandler);
 		}
-		;
+
 	}
 
 	public function playSound(_arg_1:String):void {
@@ -254,18 +254,18 @@ public class ChallengeElement extends BaseControl {
 			if (count >= 1) {
 				this.m_viewTotal.progressbar.value.scaleX = ((count - 1) / total);
 			}
-			;
+
 			this.m_viewTotal.challenge_txt.alpha = 1;
 			this.m_viewTotal.progress_txt.alpha = 1;
 			this.m_viewTotal.progressbar.alpha = 1;
 		}
-		;
+
 		Animate.delay(this.m_viewTotal, 0.1, function ():void {
 			m_viewTotal.visible = true;
 			if (total != 1) {
 				Animate.to(m_viewTotal.progressbar.value, 0.6, 0, {"scaleX": (count / total)}, Animate.ExpoOut);
 			}
-			;
+
 			Animate.to(m_viewTotal.overlay, 0.8, 0, {
 				"scaleX": scaleFactorX,
 				"alpha": 0

@@ -49,7 +49,7 @@ public dynamic class OptionsInfoTargetInfoPreview extends OptionsInfoPreview {
 				}]
 			}]);
 		}
-		;
+
 	}
 
 

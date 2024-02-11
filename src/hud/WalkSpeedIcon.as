@@ -48,9 +48,9 @@ public class WalkSpeedIcon extends BaseControl {
 					}, Animate.SineOut);
 				}, data.speed);
 			}
-			;
+
 		}
-		;
+
 	}
 
 

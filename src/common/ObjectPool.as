@@ -21,11 +21,11 @@ public class ObjectPool {
 			if (this.m_onNewObjectAllocated != null) {
 				this.m_onNewObjectAllocated(_local_5);
 			}
-			;
+
 			this.m_objectsAvailable.push(_local_5);
 			_local_4++;
 		}
-		;
+
 	}
 
 	public function acquireObject():* {
@@ -37,9 +37,9 @@ public class ObjectPool {
 			if (this.m_onNewObjectAllocated != null) {
 				this.m_onNewObjectAllocated(_local_1);
 			}
-			;
+
 		}
-		;
+
 		return (_local_1);
 	}
 

@@ -30,7 +30,7 @@ public class EvergreenBreadcrumb extends BaseControl {
 			default:
 				this.m_view.gotoAndStop("none");
 		}
-		;
+
 	}
 
 

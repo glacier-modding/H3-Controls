@@ -62,21 +62,21 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 		if (!this.m_tileView) {
 			this.m_tileView = _arg_1;
 		}
-		;
+
 		if (!this.m_tileSize) {
 			this.m_tileSize = _arg_3;
 		}
-		;
+
 		this.m_hasDLCIssues = false;
 		if (this.m_valueIndicator) {
 			this.m_tileView.indicator.removeChild(this.m_valueIndicator);
 			this.m_valueIndicator = null;
 		}
-		;
+
 		if (_arg_2.agencypickup == null) {
 			return;
 		}
-		;
+
 		switch (this.m_tileSize) {
 			case "large":
 				this.m_valueIndicator = new ValueIndicatorLargeView();
@@ -84,18 +84,18 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 			default:
 				this.m_valueIndicator = new ValueIndicatorSmallView();
 		}
-		;
+
 		if (_arg_2.hidebarcode) {
 			this.m_valueIndicator.header.width = (this.m_valueIndicator.title.width = 278);
 		}
-		;
+
 		this.m_valueIndicator.y = (this.m_tileView.tileBg.height - MenuConstants.ValueIndicatorYOffset);
 		MenuUtils.setupText(this.m_valueIndicator.header, _arg_2.agencypickup.header, 18, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorGrey);
 		var _local_4:String = _arg_2.agencypickup.title;
 		if (((!(_arg_2.agencypickup.itemcount == null)) && (_arg_2.agencypickup.itemcount > 1))) {
 			_local_4 = (_local_4 + (", x" + _arg_2.agencypickup.itemcount));
 		}
-		;
+
 		MenuUtils.setupText(this.m_valueIndicator.title, _local_4, 24, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 		var _local_5:String = this.m_valueIndicator.title.htmlText;
 		MenuUtils.truncateTextfield(this.m_valueIndicator.header, 1);
@@ -115,12 +115,12 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 				default:
 					_local_6 = MenuConstants.COLOR_COMMON;
 			}
-			;
+
 			MenuUtils.setupIcon(this.m_valueIndicator.valueIcon, _arg_2.agencypickup.icon, MenuConstants.COLOR_WHITE, true, true, _local_6, 1);
 		} else {
 			MenuUtils.setupIcon(this.m_valueIndicator.valueIcon, _arg_2.agencypickup.icon, MenuConstants.COLOR_WHITE, true, true, MenuConstants.COLOR_MENU_TABS_BACKGROUND, MenuConstants.MenuElementBackgroundAlpha);
 		}
-		;
+
 		this.m_textTickerUtil.clearOnly();
 		this.m_textTickerUtil.addTextTicker(this.m_valueIndicator.title, _local_5);
 		this.m_tileView.indicator.addChild(this.m_valueIndicator);
@@ -140,16 +140,16 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 		if (!this.m_tileView) {
 			this.m_tileView = _arg_1;
 		}
-		;
+
 		if (!this.m_tileSize) {
 			this.m_tileSize = _arg_3;
 		}
-		;
+
 		if (this.m_aboveBarcodeIndicator == null) {
 			this.m_aboveBarcodeIndicator = new Sprite();
 			this.m_tileView.addChild(this.m_aboveBarcodeIndicator);
 		}
-		;
+
 		this.m_icon = _arg_2.icon;
 		this.m_hasDLCIssues = false;
 		this.clearIndicators();
@@ -163,7 +163,7 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 						_local_4 = new EscalationLevelIndicator(this.m_tileSize, this.m_tileView.tileBg.height);
 						this.m_indicatorUtil.add(this.EEscalationLevelIndicator, _local_4, this.m_tileView.indicator, _arg_2);
 					}
-					;
+
 					switch (this.m_tileSize) {
 						case "large":
 							this.m_infoIndicator = new InfoIndicatorLargeView();
@@ -171,7 +171,7 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 						default:
 							this.m_infoIndicator = new InfoIndicatorSmallView();
 					}
-					;
+
 					this.m_infoIndicator.alpha = 0;
 					MenuUtils.setColor(this.m_infoIndicator.darkBg, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 					this.m_infoIndicator.y = (this.m_tileView.tileBg.height - MenuConstants.ValueIndicatorYOffset);
@@ -181,17 +181,17 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 						this.m_infoIndicator.darkBg.height = (this.m_infoIndicator.darkBg.height + _local_7);
 						this.m_infoIndicator.y = (this.m_infoIndicator.y - _local_7);
 					}
-					;
+
 					MenuUtils.setupIcon(this.m_infoIndicator.valueIcon, "info", MenuConstants.COLOR_WHITE, true, false);
 					this.m_tileView.indicator.addChild(this.m_infoIndicator);
 					if (this.isElusive(_arg_2)) {
 						this.parseElusiveData(_arg_2);
 					}
-					;
+
 					if (((!(_arg_2.completionstate == null)) && (_arg_2.completionstate.length > 0))) {
 						CompletionStatusIndicatorUtil.addIndicator(this.m_tileView.indicator, _arg_2.completionstate);
 					}
-					;
+
 				} else {
 					if (_arg_2.totallevels != null) {
 						this.setContractState("available");
@@ -200,39 +200,39 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 						if (((!(_arg_2.completionstate == null)) && (_arg_2.completionstate.length > 0))) {
 							CompletionStatusIndicatorUtil.addIndicator(this.m_tileView.indicator, _arg_2.completionstate);
 						}
-						;
+
 					} else {
 						if (((_arg_2.totallevels == null) && ((!(_arg_2.completionstate == null)) && (_arg_2.completionstate.length > 0)))) {
 							this.setContractState("available");
 							if (((!(_arg_2.completionstate == null)) && (_arg_2.completionstate.length > 0))) {
 								CompletionStatusIndicatorUtil.addIndicator(this.m_tileView.indicator, _arg_2.completionstate);
 							}
-							;
+
 						} else {
 							this.setContractState("available");
 							this.parseElusiveData(_arg_2);
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			if (_arg_2.isInPlaylist === true) {
 				_local_8 = new InPlaylistIndicator(this.m_tileView.tileBg.width, this.m_tileView.tileBg.height);
 				this.m_indicatorUtil.add(this.EInPlaylistIndicator, _local_8, this.m_aboveBarcodeIndicator, _arg_2);
 				if (_arg_2.isMarkedForDeletion != undefined) {
 					_local_8.markForDeletion(_arg_2.isMarkedForDeletion);
 				}
-				;
+
 			}
-			;
+
 			if (((!(_arg_2.levelcount == null)) && (!(_arg_2.levelcounttotal == null)))) {
 				_local_9 = new LevelCountIndicator(this.m_tileView.tileBg.width, this.m_tileView.tileBg.height);
 				this.m_indicatorUtil.add(this.ELevelCountIndicator, _local_9, this.m_tileView.indicator, _arg_2);
 			}
-			;
+
 			if (_arg_2.vr === true) {
 				_local_10 = new VRIndicator(this.m_tileView.tileBg.width, this.m_tileView.tileBg.height);
 				this.m_indicatorUtil.add(this.EVRIndicator, _local_10, this.m_tileView.indicator, _arg_2);
@@ -241,9 +241,9 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 					_local_11 = new NoVRIndicator(this.m_tileView.tileBg.width, this.m_tileView.tileBg.height);
 					this.m_indicatorUtil.add(this.EVRIndicator, _local_11, this.m_tileView.indicator, _arg_2);
 				}
-				;
+
 			}
-			;
+
 		} else {
 			switch (this.m_tileSize) {
 				case "large":
@@ -252,14 +252,14 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 				default:
 					this.m_valueIndicator = new ValueIndicatorSmallView();
 			}
-			;
+
 			this.m_textTickerUtil.clearOnly();
 			_local_12 = _arg_2.availability.unavailable_reason;
 			if (_arg_2.freedlc === true) {
 				_local_13 = new FreeDlcIndicator(this.m_tileSize);
 				this.m_indicatorUtil.add(this.EFreeDlcIndicator, _local_13, this.m_tileView.indicator, _arg_2);
 			}
-			;
+
 			switch (_local_12) {
 				case "entitlements_missing":
 					this.setContractState("shop");
@@ -305,7 +305,7 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 					if (_arg_2.availability.percentage_complete >= 0) {
 						MenuUtils.setupText(this.m_valueIndicator.value, (Math.round((_arg_2.availability.percentage_complete * 100)) + "%"), 32, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 					}
-					;
+
 					break;
 				case "dlc_installing":
 					this.setContractState("installing");
@@ -317,7 +317,7 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 					if (_arg_2.availability.percentage_complete >= 0) {
 						MenuUtils.setupText(this.m_valueIndicator.value, (Math.round((_arg_2.availability.percentage_complete * 100)) + "%"), 32, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 					}
-					;
+
 					break;
 				case "dlc_unknown":
 					this.setContractState("unknown");
@@ -335,12 +335,12 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 					this.m_valueIndicator.valueIcon.visible = false;
 					this.m_textTickerUtil.addTextTicker(this.m_valueIndicator.title, Localization.get("UI_DIALOG_DLC_STATE_UNKNOWN"));
 			}
-			;
+
 			this.m_hasDLCIssues = true;
 			this.m_tileView.indicator.addChild(this.m_valueIndicator);
 			this.parseElusiveData(_arg_2);
 		}
-		;
+
 	}
 
 	private function clearIndicators():void {
@@ -348,32 +348,32 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 		if (((this.m_tileView == null) || (this.m_tileView.indicator == null))) {
 			return;
 		}
-		;
+
 		if (this.m_timeindicator) {
 			this.m_tileView.indicator.removeChild(this.m_timeindicator);
 			this.m_timeindicator = null;
 		}
-		;
+
 		if (this.m_infoIndicator) {
 			this.m_tileView.indicator.removeChild(this.m_infoIndicator);
 			this.m_infoIndicator = null;
 		}
-		;
+
 		if (this.m_valueIndicator) {
 			this.m_tileView.indicator.removeChild(this.m_valueIndicator);
 			this.m_valueIndicator = null;
 		}
-		;
+
 		if (this.m_ElusiveIndicator) {
 			this.m_tileView.indicator.removeChild(this.m_ElusiveIndicator);
 			this.m_ElusiveIndicator = null;
 		}
-		;
+
 		if (this.m_newIndicator) {
 			this.m_tileView.indicator.removeChild(this.m_newIndicator);
 			this.m_newIndicator = null;
 		}
-		;
+
 		CompletionStatusIndicatorUtil.removeIndicator(this.m_tileView.indicator);
 	}
 
@@ -398,15 +398,15 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 				if (_local_6 < _local_5) {
 					_local_2 = true;
 				}
-				;
+
 				_local_7 = DateTimeUtils.getUTCClockNow().getTime();
 				_local_8 = DateTimeUtils.parseUTCTimeStamp(_arg_1.playableUntil).getTime();
 				if (_local_7 >= _local_8) {
 					_local_3 = true;
 				}
-				;
+
 			}
-			;
+
 			switch (_arg_1.elusivecontractstate) {
 				case "not_completed":
 					this.parseTimedData(_arg_1);
@@ -415,14 +415,14 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 					if (!this.m_hasDLCIssues) {
 						this.setContractState("failed");
 					}
-					;
+
 					this.showTimeRanOut();
 					break;
 				case "completed":
 					if (!this.m_hasDLCIssues) {
 						this.setContractState("completed");
 					}
-					;
+
 					switch (this.m_tileSize) {
 						case "large":
 							this.m_ElusiveIndicator = new ValueIndicatorLargeView();
@@ -430,7 +430,7 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 						default:
 							this.m_ElusiveIndicator = new ValueIndicatorSmallView();
 					}
-					;
+
 					this.m_ElusiveIndicator.y = ((this.m_hasDLCIssues) ? ((this.m_tileView.tileBg.height - MenuConstants.ValueIndicatorYOffset) - MenuConstants.ValueIndicatorHeight) : (this.m_tileView.tileBg.height - MenuConstants.ValueIndicatorYOffset));
 					_local_9 = ((_local_2) && (!(_local_3)));
 					_local_10 = ((_local_9) ? Localization.get("UI_CONTRACT_ELUSIVE_STATE_COMPLETED_PREVIOUSLY") : Localization.get("UI_CONTRACT_ELUSIVE_STATE_COMPLETED"));
@@ -440,7 +440,7 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 					} else {
 						MenuUtils.setupText(this.m_ElusiveIndicator.titlelarge, _local_10, 38, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 					}
-					;
+
 					this.m_textTickerUtil.addTextTickerHtml(this.m_ElusiveIndicator.titlelarge);
 					MenuUtils.truncateTextfield(this.m_ElusiveIndicator.titlelarge, 1);
 					MenuUtils.setupIcon(this.m_ElusiveIndicator.valueIcon, this.m_contractState, MenuConstants.COLOR_WHITE, true, true, MenuConstants.COLOR_MENU_TABS_BACKGROUND, MenuConstants.MenuElementBackgroundAlpha);
@@ -451,7 +451,7 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 					if (!this.m_hasDLCIssues) {
 						this.setContractState("failed");
 					}
-					;
+
 					switch (this.m_tileSize) {
 						case "large":
 							this.m_ElusiveIndicator = new ValueIndicatorLargeView();
@@ -459,7 +459,7 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 						default:
 							this.m_ElusiveIndicator = new ValueIndicatorSmallView();
 					}
-					;
+
 					this.m_ElusiveIndicator.y = ((this.m_hasDLCIssues) ? ((this.m_tileView.tileBg.height - MenuConstants.ValueIndicatorYOffset) - MenuConstants.ValueIndicatorHeight) : (this.m_tileView.tileBg.height - MenuConstants.ValueIndicatorYOffset));
 					_local_11 = ((_local_2) && (!(_local_3)));
 					_local_12 = ((_local_11) ? Localization.get("UI_CONTRACT_ELUSIVE_STATE_COMPLETED_BUT_DIED_PREVIOUSLY") : Localization.get("UI_CONTRACT_ELUSIVE_STATE_COMPLETED_BUT_DIED"));
@@ -469,7 +469,7 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 					} else {
 						MenuUtils.setupText(this.m_ElusiveIndicator.titlelarge, _local_12, 38, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 					}
-					;
+
 					this.m_textTickerUtil.addTextTickerHtml(this.m_ElusiveIndicator.titlelarge);
 					MenuUtils.truncateTextfield(this.m_ElusiveIndicator.titlelarge, 1);
 					MenuUtils.setupIcon(this.m_ElusiveIndicator.valueIcon, this.m_contractState, MenuConstants.COLOR_WHITE, true, true, MenuConstants.COLOR_MENU_TABS_BACKGROUND, MenuConstants.MenuElementBackgroundAlpha);
@@ -478,11 +478,11 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 				default:
 					this.parseTimedData(_arg_1);
 			}
-			;
+
 		} else {
 			this.parseTimedData(_arg_1);
 		}
-		;
+
 	}
 
 	private function setupArcadeTimer(_arg_1:Object):Boolean {
@@ -492,7 +492,7 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 				this.m_countDownTimer.stopCountDown();
 				this.m_countDownTimer = null;
 			}
-			;
+
 			this.m_countDownTimer = new CountDownTimer();
 			if (_arg_1.masterylocked) {
 				this.setContractState("masterylocked");
@@ -502,13 +502,13 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 				} else {
 					this.setContractState("failed");
 				}
-				;
+
 			}
-			;
+
 			this.showTimer(_arg_1.playableSince, Localization.get("UI_CONTRACT_ARCADE_STATE_FAILED"));
 			return (true);
 		}
-		;
+
 		return (false);
 	}
 
@@ -517,42 +517,42 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 			this.m_countDownTimer.stopCountDown();
 			this.m_countDownTimer = null;
 		}
-		;
+
 		var _local_2:Number = DateTimeUtils.getUTCClockNow().getTime();
 		var _local_3:* = "playable";
 		if (((_arg_1.playableSince) && (_local_2 <= DateTimeUtils.parseUTCTimeStamp(_arg_1.playableSince).getTime()))) {
 			_local_3 = "notplayable";
 		}
-		;
+
 		if (((_arg_1.playableUntil) && (_local_2 >= DateTimeUtils.parseUTCTimeStamp(_arg_1.playableUntil).getTime()))) {
 			_local_3 = "gone";
 		}
-		;
+
 		switch (_local_3) {
 			case "notplayable":
 				if (!this.m_countDownTimer) {
 					this.m_countDownTimer = new CountDownTimer();
 				}
-				;
+
 				if (!this.m_hasDLCIssues) {
 					this.setContractState("locked");
 				}
-				;
+
 				this.showTimer(_arg_1.playableSince, Localization.get("UI_DIALOG_TARGET_ARRIVES"));
 				return;
 			case "playable":
 				if (((_arg_1.playableUntil) && (!(this.m_countDownTimer)))) {
 					this.m_countDownTimer = new CountDownTimer();
 				}
-				;
+
 				if (!this.m_hasDLCIssues) {
 					this.setContractState("available");
 				}
-				;
+
 				if (_arg_1.playableUntil) {
 					this.showTimer(_arg_1.playableUntil);
 				}
-				;
+
 				return;
 			case "gone":
 				this.m_textTickerUtil.clearOnly();
@@ -560,15 +560,15 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 					this.m_countDownTimer.stopCountDown();
 					this.m_countDownTimer = null;
 				}
-				;
+
 				if (!this.m_hasDLCIssues) {
 					this.setContractState("failed");
 				}
-				;
+
 				this.showTimeRanOut();
 				return;
 		}
-		;
+
 	}
 
 	private function isElusive(_arg_1:Object):Boolean {
@@ -584,17 +584,17 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 			if (_local_2 < _local_3) {
 				return (false);
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.playableUntil) {
 			_local_4 = DateTimeUtils.parseUTCTimeStamp(_arg_1.playableUntil).getTime();
 			if (_local_2 >= _local_4) {
 				return (false);
 			}
-			;
+
 		}
-		;
+
 		return (true);
 	}
 
@@ -610,7 +610,7 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 			default:
 				this.m_ElusiveIndicator = new ValueIndicatorSmallView();
 		}
-		;
+
 		this.m_ElusiveIndicator.y = ((this.m_hasDLCIssues) ? ((this.m_tileView.tileBg.height - MenuConstants.ValueIndicatorYOffset) - MenuConstants.ValueIndicatorHeight) : (this.m_tileView.tileBg.height - MenuConstants.ValueIndicatorYOffset));
 		MenuUtils.setupText(this.m_ElusiveIndicator.titlelarge, Localization.get("UI_CONTRACT_ELUSIVE_STATE_TIME_RAN_OUT"), 38, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 		MenuUtils.truncateTextfield(this.m_ElusiveIndicator.titlelarge, 1);
@@ -628,19 +628,19 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 				default:
 					this.m_timeindicator = new TimeIndicatorSmallView();
 			}
-			;
+
 			this.m_timeindicator.y = ((this.m_hasDLCIssues) ? ((this.m_tileView.tileBg.height - MenuConstants.ValueIndicatorYOffset) - MenuConstants.ValueIndicatorHeight) : (this.m_tileView.tileBg.height - MenuConstants.ValueIndicatorYOffset));
 			MenuUtils.setupIcon(this.m_timeindicator.valueIcon, "timed", MenuConstants.COLOR_WHITE, true, true, MenuConstants.COLOR_MENU_TABS_BACKGROUND, MenuConstants.MenuElementBackgroundAlpha);
 			this.m_tileView.indicator.addChild(this.m_timeindicator);
 		}
-		;
+
 		if (_arg_2) {
 			MenuUtils.setupTextUpper(this.m_timeindicator.header, _arg_2, 18, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorGrey);
 			this.m_countDownTimer.startCountDown(this.m_timeindicator.title, _arg_1, this, 24, MenuConstants.FontColorWhite);
 		} else {
 			this.m_countDownTimer.startCountDown(this.m_timeindicator.titlelarge, _arg_1, this, 38, MenuConstants.FontColorWhite);
 		}
-		;
+
 	}
 
 	public function timerComplete():void {
@@ -657,18 +657,18 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 					if (this.m_infoIndicator) {
 						this.m_tileView.indicator.removeChild(this.m_infoIndicator);
 					}
-					;
+
 					this.setContractState("available");
 					this.parseTimedData(_local_1);
 					return;
 				}
-				;
+
 				this.setContractState("failed");
 			}
-			;
+
 			this.showTimeRanOut();
 		}
-		;
+
 	}
 
 	public function setContractState(_arg_1:String):void {
@@ -699,7 +699,7 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 				this.m_tileView.tileIcon.icons.gotoAndStop(this.m_icon);
 				break;
 		}
-		;
+
 		this.setOverlayColor();
 	}
 
@@ -708,14 +708,14 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 		if (((this.m_tileView == null) || (this.m_tileView.image == null))) {
 			return;
 		}
-		;
+
 		if (_arg_1) {
 			MenuUtils.setColorFilter(this.m_tileView.image, "selected");
 		} else {
 			_local_2 = ((this.m_contractState) ? this.m_contractState : "");
 			MenuUtils.setColorFilter(this.m_tileView.image, _local_2);
 		}
-		;
+
 	}
 
 	override protected function handleSelectionChange():void {
@@ -729,12 +729,12 @@ public dynamic class MenuElementAvailabilityBase extends MenuElementTileBase {
 			this.m_tileView.removeChild(this.m_aboveBarcodeIndicator);
 			this.m_aboveBarcodeIndicator = null;
 		}
-		;
+
 		if (this.m_countDownTimer) {
 			this.m_countDownTimer.stopCountDown();
 			this.m_countDownTimer = null;
 		}
-		;
+
 		this.m_textTickerUtil.onUnregister();
 		this.m_textTickerUtil = null;
 		super.onUnregister();

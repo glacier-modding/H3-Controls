@@ -108,9 +108,9 @@ public class StatusMarkers extends BaseControl {
 			if (_arg_1.bTrespassing) {
 				this.m_isTrespassing = true;
 			}
-			;
+
 		}
-		;
+
 		Animate.kill(this);
 		Animate.delay(this, this.m_trespassingInitDelay, this.checkTrespassing);
 	}
@@ -130,11 +130,11 @@ public class StatusMarkers extends BaseControl {
 				if (this.m_trespassingIsActive) {
 					this.clearTrespassing();
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function showTrespassing(_arg_1:String = ""):void {
@@ -170,7 +170,7 @@ public class StatusMarkers extends BaseControl {
 		} else {
 			this.trespassingIndicatorMc.visible = false;
 		}
-		;
+
 		this.setTrespassingMessage();
 	}
 
@@ -199,16 +199,16 @@ public class StatusMarkers extends BaseControl {
 					this.trespassingIndicatorMc.bgGradient.alpha = 0.3;
 					this.trespassingIndicatorMc.y = 105;
 				}
-				;
+
 				Animate.fromTo(this.trespassingIndicatorMc.iconMc, 0.3, 0.1, {"alpha": 0}, {"alpha": 1}, Animate.Linear);
 				Animate.fromTo(this.trespassingIndicatorMc.labelTxt, 0.3, 0.15, {"alpha": 0}, {"alpha": 1}, Animate.Linear);
 			}
-			;
+
 			DISABLE_MIN_HEIGHT = -1;
 			MIN_FONT_SIZE = 9;
 			MenuUtils.setupTextAndShrinkToFitUpper(this.trespassingIndicatorMc.labelTxt, msg, 18, MenuConstants.FONT_TYPE_MEDIUM, 184, DISABLE_MIN_HEIGHT, MIN_FONT_SIZE, MenuConstants.FontColorGreyUltraDark);
 		}
-		;
+
 		this.m_previousMsg = msg;
 	}
 
@@ -230,7 +230,7 @@ public class StatusMarkers extends BaseControl {
 		if (_arg_1) {
 			this.pulsateIn();
 		}
-		;
+
 	}
 
 	private function pulsateIn():void {
@@ -265,7 +265,7 @@ public class StatusMarkers extends BaseControl {
 			if (!this.m_witnessShown) {
 				this.showTension();
 			}
-			;
+
 			if (_arg_3 >= 1) {
 				this.tensionIndicatorMc.iconMc.gotoAndStop(8);
 				if (_arg_3 >= 2) {
@@ -281,18 +281,18 @@ public class StatusMarkers extends BaseControl {
 						"x": 212
 					}, Animate.ExpoOut);
 				}
-				;
+
 				this.m_witnessShown = true;
 			} else {
 				this.m_witnessShown = false;
 				this.showTension();
 			}
-			;
+
 		} else {
 			this.m_witnessShown = false;
 			this.hideTension();
 		}
-		;
+
 	}
 
 	private function showTension():void {
@@ -344,7 +344,7 @@ public class StatusMarkers extends BaseControl {
 		if (_arg_1) {
 			MenuUtils.setupTextUpper(this.informationBarLVA.labelTxt, Localization.get("UI_MENU_LVA_BLENDING_IN_CROWD"), 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraLight);
 		}
-		;
+
 		this.informationBarLVA.labelTxt.setTextFormat(this.m_labelTxtTextFormat);
 		this.setGradientOverlayLVA(((this.m_isHiddenInCrowd) || (this.m_isHiddenInVegetation)));
 	}
@@ -354,7 +354,7 @@ public class StatusMarkers extends BaseControl {
 		if (_arg_1) {
 			MenuUtils.setupTextUpper(this.informationBarLVA.labelTxt, Localization.get("UI_MENU_LVA_HIDDEN"), 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraLight);
 		}
-		;
+
 		this.informationBarLVA.labelTxt.setTextFormat(this.m_labelTxtTextFormat);
 		this.setGradientOverlayLVA(((this.m_isHiddenInCrowd) || (this.m_isHiddenInVegetation)));
 	}
@@ -366,11 +366,11 @@ public class StatusMarkers extends BaseControl {
 		if (((!(this.m_hiddenStateFirstTimeInitiated)) && (_arg_1))) {
 			this.m_hiddenStateFirstTimeInitiated = true;
 		}
-		;
+
 		if (this.m_hiddenStateFirstTimeInitiated) {
 			this.playSound(((_arg_1) ? "play_ui_crowd_blendin" : "play_ui_crowd_blendout"));
 		}
-		;
+
 		Animate.to(this.gradientOverlayLVA, 0.5, 0, {"alpha": ((_arg_1) ? 0.9 : 0)}, Animate.ExpoOut);
 		Animate.to(this.informationBarLVA, 0.5, 0, {
 			"y": ((_arg_1) ? -104 : -112),
@@ -390,7 +390,7 @@ public class StatusMarkers extends BaseControl {
 			this.mapHiddenBg_Container.addChild(minimapHiddenBg);
 			this.m_minimapHidden = true;
 		}
-		;
+
 		if (this.m_minimapHidden) {
 			Animate.kill(this.informationBarMinimapHidden);
 			Animate.kill(this.informationBarMinimapHidden.iconMc);
@@ -409,10 +409,10 @@ public class StatusMarkers extends BaseControl {
 					mapHiddenBg_Container.removeChildAt(0);
 					m_minimapHidden = false;
 				}
-				;
+
 			});
 		}
-		;
+
 	}
 
 	public function playSound(_arg_1:String):void {

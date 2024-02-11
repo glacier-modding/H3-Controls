@@ -18,7 +18,7 @@ public class InventoryItemDetail extends Sprite {
 	private const SPACE_Y:int = 40;
 
 	private var m_title:TextField = new TextField();
-	private var m_views:Array = new Array();
+	private var m_views:Array = [];
 
 	public function InventoryItemDetail() {
 		this.m_title.autoSize = TextFieldAutoSize.LEFT;
@@ -31,12 +31,12 @@ public class InventoryItemDetail extends Sprite {
 		if (_arg_1 == null) {
 			return;
 		}
-		;
+
 		MenuUtils.setupText(this.m_title, _arg_1.label, 24, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraLight);
 		if (((_arg_1.details == null) || (_arg_1.details.length <= 0))) {
 			return;
 		}
-		;
+
 		var _local_2:int;
 		while (_local_2 < _arg_1.details.length) {
 			_local_3 = this.createDetailView(_arg_1.details[_local_2]);
@@ -46,10 +46,10 @@ public class InventoryItemDetail extends Sprite {
 				_local_3.x = this.DETAIL_VIEW_BEGIN_X;
 				_local_3.y = (this.DETAIL_VIEW_BEGIN_Y + (this.SPACE_Y * _local_2));
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 	}
 
 	public function onUnregister():void {
@@ -68,11 +68,11 @@ public class InventoryItemDetail extends Sprite {
 				} else {
 					MenuUtils.setupIcon(_local_2.icon, _arg_1.icon, MenuConstants.COLOR_WHITE, true, false);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (((!(_arg_1.title == undefined)) && (_arg_1.title.length > 0))) {
 			_local_2.valuebar.visible = false;
 			MenuUtils.setupText(_local_2.title, _arg_1.title, 20, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorGreyUltraLight);
@@ -82,9 +82,9 @@ public class InventoryItemDetail extends Sprite {
 				_local_3 = (_arg_1.value * 6);
 				_local_2.valuebar.gotoAndStop(("value" + _local_3.toString()));
 			}
-			;
+
 		}
-		;
+
 		return (_local_2);
 	}
 
@@ -94,7 +94,7 @@ public class InventoryItemDetail extends Sprite {
 			removeChild(this.m_views[_local_1]);
 			_local_1++;
 		}
-		;
+
 		this.m_views.length = 0;
 	}
 

@@ -93,11 +93,11 @@ public dynamic class ModalDialogItemDetails extends ModalDialogContainerBase {
 			this.m_textTickerUtil.addTextTickerHtml(this.m_view.headerClip.itemNameLabel, 2000);
 			this.m_textTickerUtil.callTextTicker(true, this.m_view.headerClip.itemNameLabel.textColor);
 		}
-		;
+
 		if (data.description) {
 			this.createDescriptionText(data.description);
 		}
-		;
+
 		if (data.subtype) {
 			iconLabel = data.subtype;
 			if (data.type == "access") {
@@ -116,53 +116,53 @@ public dynamic class ModalDialogItemDetails extends ModalDialogContainerBase {
 								if (iconLabel == "safehouse_area") {
 									iconLabel = "safehouse_unlock";
 								}
-								;
+
 								iconLabel = ("evergreen_" + iconLabel);
 							} else {
 								if (data.type == "disguise") {
 									iconLabel = "disguise";
 								}
-								;
+
 							}
-							;
+
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			MenuUtils.setupIcon(this.m_view.headerClip.itemIcon, iconLabel, MenuConstants.COLOR_WHITE, true, false);
 		} else {
 			if (data.icon) {
 				MenuUtils.setupIcon(this.m_view.headerClip.itemIcon, data.icon, MenuConstants.COLOR_WHITE, true, false);
 			}
-			;
+
 		}
-		;
+
 		if (data.type) {
 			MenuUtils.setupTextUpper(this.m_view.headerClip.itemTypeLabel, data.type, 23, MenuConstants.FONT_TYPE_LIGHT, MenuConstants.FontColorWhite);
 		}
-		;
+
 		if (data.subtype) {
 			subtypeLocaKey = ("UI_ITEM_SUBTYPE_" + data.subtype);
 			subtypeLocaKey = subtypeLocaKey.toUpperCase();
 			MenuUtils.setupTextUpper(this.m_view.headerClip.itemTypeLabel, Localization.get(subtypeLocaKey), 23, MenuConstants.FONT_TYPE_LIGHT, MenuConstants.FontColorWhite);
 		}
-		;
+
 		isEvergreenGameMode = (data.currentContractType == "evergreen");
 		var evergreenRarity:int = (((isEvergreenGameMode) && (!(data.item == null))) ? data.item.Evergreen_Rarity : EvergreenUtils.ITEMRARITY_NONE);
 		var evergreenCapacityCost:int = (((isEvergreenGameMode) && (!(data.item == null))) ? data.item.Evergreen_CapacityCost : 0);
 		if (data.perks) {
 			this.setPerksAndEvergreenAttribs(data.perks, evergreenRarity, evergreenCapacityCost);
 		}
-		;
+
 		if (data.item) {
 			if (((!(data.description)) && (data.item.Description))) {
 				this.createDescriptionText(Localization.get(data.item.Description));
 			}
-			;
+
 			if (!data.name) {
 				nameStr = "";
 				if (data.item.Name_LOC) {
@@ -171,32 +171,32 @@ public dynamic class ModalDialogItemDetails extends ModalDialogContainerBase {
 					if (data.item.Name) {
 						nameStr = Localization.get(data.item.Name);
 					}
-					;
+
 				}
-				;
+
 				MenuUtils.setupTextUpper(this.m_view.headerClip.itemNameLabel, nameStr, 40, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorWhite);
 				this.m_textTickerUtil.addTextTickerHtml(this.m_view.headerClip.itemNameLabel, 2000);
 				this.m_textTickerUtil.callTextTicker(true, this.m_view.headerClip.itemNameLabel.textColor);
 			}
-			;
+
 			if (data.item.InventoryCategoryIcon) {
 				MenuUtils.setupIcon(this.m_view.headerClip.itemIcon, data.item.InventoryCategoryIcon, MenuConstants.COLOR_WHITE, true, false);
 			}
-			;
+
 			if (((!(data.perks)) && (data.item.Perks))) {
 				this.setPerksAndEvergreenAttribs(data.item.Perks, evergreenRarity, evergreenCapacityCost);
 			}
-			;
+
 		}
-		;
+
 		var isGhostItem:Boolean = (((!(data.item == null)) && (!(data.item.ItemHUDType == null))) && (data.item.ItemHUDType == "EIHT_GhostItem"));
 		if (((!(data.actionAndKillTypes == undefined)) || (isGhostItem))) {
 			if (((data.actionAndKillTypes.length > 0) || (isGhostItem))) {
 				this.setupKillTypes(data.actionAndKillTypes, isGhostItem);
 			}
-			;
+
 		}
-		;
+
 		if (((!(data.item == null)) && (!(data.item.PoisonType == undefined)))) {
 			showPoisonType = true;
 			switch (data.item.PoisonType) {
@@ -215,23 +215,23 @@ public dynamic class ModalDialogItemDetails extends ModalDialogContainerBase {
 				default:
 					showPoisonType = false;
 			}
-			;
+
 			if (showPoisonType) {
 				this.setupPoisonType(poisonType, poisonTypeString);
 			}
-			;
+
 		}
-		;
+
 		if (this.m_killTypesHolder != null) {
 			if (this.m_perkHolder != null) {
 				this.m_scrollingContainer.addGap(15);
 			}
-			;
+
 			this.m_scrollingContainer.appendEntry(this.m_killTypeSeparatorLine, false, this.m_killTypeSeparatorLine.height);
 			this.m_scrollingContainer.addGap(15);
 			this.m_scrollingContainer.appendEntry(this.m_killTypesHolder, false, this.m_killTypesHolder.height);
 		}
-		;
+
 		this.alignInfo();
 		this.m_isAvailable = (((data.resourceAvailability == null) || (data.resourceAvailability.Availability == null)) || (data.resourceAvailability.Availability.available == true));
 		if (this.m_isAvailable) {
@@ -243,7 +243,7 @@ public dynamic class ModalDialogItemDetails extends ModalDialogContainerBase {
 			MenuUtils.setupText(this.m_view.entitlementBar.header, Localization.get("UI_MENU_MISSION_END_LOCKED_MASTERY_REQUIRES"), 24, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 			MenuUtils.setupText(this.m_view.entitlementBar.title, data.missingEntitlementTitle, 25, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorWhite);
 		}
-		;
+
 		var imagePath:String = data.image;
 		if (imagePath != null) {
 			this.m_itemImageLoader = new MenuImageLoader();
@@ -256,9 +256,9 @@ public dynamic class ModalDialogItemDetails extends ModalDialogContainerBase {
 			if (!this.m_isAvailable) {
 				MenuUtils.setColorFilter(this.m_itemImageLoader, "shop");
 			}
-			;
+
 		}
-		;
+
 		var obj:Object = {};
 		obj.buttonprompts = data.displaybuttons;
 		this.setButtonPrompts(obj);
@@ -269,22 +269,22 @@ public dynamic class ModalDialogItemDetails extends ModalDialogContainerBase {
 		if (this.m_view == null) {
 			return;
 		}
-		;
+
 		this.createScrollContainer();
 		if (this.m_perkHolder != null) {
 			this.m_perkHolder = null;
 		}
-		;
+
 		if (this.m_killTypesHolder != null) {
 			this.m_killTypesHolder = null;
 		}
-		;
+
 		if (this.m_itemImageLoader != null) {
 			this.m_itemImageLoader.cancelIfLoading();
 			this.m_view.removeChild(this.m_itemImageLoader);
 			this.m_itemImageLoader = null;
 		}
-		;
+
 	}
 
 	private function setPerksAndEvergreenAttribs(perks:Array, evergreenRarity:int, evergreenCapacityCost:int):void {
@@ -313,14 +313,14 @@ public dynamic class ModalDialogItemDetails extends ModalDialogContainerBase {
 				if (_local_6.height > highestPerk) {
 					highestPerk = _local_6.height;
 				}
-				;
+
 				colCount++;
 				if (colCount > 1) {
 					colCount = 0;
 					yOffset = (yOffset + (highestPerk + (PADDING * 2)));
 					highestPerk = 0;
 				}
-				;
+
 				m_perkHolder.addChild(_local_6);
 			};
 			switch (evergreenRarity) {
@@ -337,25 +337,25 @@ public dynamic class ModalDialogItemDetails extends ModalDialogContainerBase {
 					(addPerk("featured", true, EvergreenUtils.LABELBGCOLOR[EvergreenUtils.LABELPURPOSE_ITEMRARITY_LEGENDARY], Localization.get("UI_INVENTORY_EVERGREEN_ITEMRARITY_LEGENDARY"), Localization.get("UI_INVENTORY_EVERGREEN_ITEMRARITY")));
 					break;
 			}
-			;
+
 			if (evergreenCapacityCost > 0) {
 				(addPerk(("evergreen_gearcost_" + evergreenCapacityCost.toString()), false, 0, Localization.get("Evergreen_Setpieces_GearWall_Item_GearCapacityCost").replace("{0}", evergreenCapacityCost.toString()), Localization.get("Evergreen_Setpieces_GearWall_Item_GearCapacityCost_Description")));
 			}
-			;
+
 			if (hasPerks) {
 				i = 0;
 				while (i < perks.length) {
 					(addPerk(perks[i], false, 0, Localization.get((("UI_ITEM_PERKS_" + perks[i].toUpperCase()) + "_NAME")), Localization.get((("UI_ITEM_PERKS_" + perks[i].toUpperCase()) + "_DESC"))));
 					i = (i + 1);
 				}
-				;
+
 			}
-			;
+
 			this.m_scrollingContainer.appendEntry(this.m_perkSeparatorLine, false, this.m_perkSeparatorLine.height);
 			this.m_scrollingContainer.addGap(15);
 			this.m_scrollingContainer.appendEntry(this.m_perkHolder, false, this.m_perkHolder.height);
 		}
-		;
+
 	}
 
 	private function setupPoisonType(_arg_1:int, _arg_2:String):void {
@@ -387,7 +387,7 @@ public dynamic class ModalDialogItemDetails extends ModalDialogContainerBase {
 			this.m_killTypesHolder.addChild(_local_3);
 			_local_5++;
 		}
-		;
+
 		if (_arg_2) {
 			_local_6 = new ModalDialogItemDetailsGhostItemView();
 			MenuUtils.setupText(_local_6.label_txt, Localization.get("UI_HUD_WEAPON_GHOST"), 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
@@ -397,14 +397,14 @@ public dynamic class ModalDialogItemDetails extends ModalDialogContainerBase {
 			this.m_itemInfoPosX = (this.m_itemInfoPosX + (_local_6.back_mc.width + _local_4));
 			this.m_killTypesHolder.addChild(_local_6);
 		}
-		;
+
 	}
 
 	private function setupKillTypeHolder():void {
 		if (this.m_killTypesHolder != null) {
 			return;
 		}
-		;
+
 		this.m_killTypesHolder = new Sprite();
 	}
 
@@ -413,7 +413,7 @@ public dynamic class ModalDialogItemDetails extends ModalDialogContainerBase {
 		if (this.m_scrollingContainer.getContentHeight() < this.m_scrollHeight) {
 			this.m_scrollingContainer.y = (_local_1 - this.m_scrollingContainer.getContentHeight());
 		}
-		;
+
 		this.m_view.headerClip.y = (this.m_scrollingContainer.y - (this.m_view.headerClip.height + 15));
 	}
 
@@ -421,7 +421,7 @@ public dynamic class ModalDialogItemDetails extends ModalDialogContainerBase {
 		if (_arg_1.buttonprompts) {
 			this.m_backButton = _arg_1.buttonprompts[0];
 		}
-		;
+
 		this.updateButtonPromptsInternal();
 	}
 
@@ -457,7 +457,7 @@ public dynamic class ModalDialogItemDetails extends ModalDialogContainerBase {
 			this.m_view.removeChild(this.m_scrollingContainer);
 			this.m_scrollingContainer = null;
 		}
-		;
+
 		var _local_1:Number = 30;
 		this.m_scrollingContainer = new ModalScrollingContainer((this.m_scrollWidth + _local_1), this.m_scrollHeight, _local_1, true, "targetobjectives");
 		this.m_view.addChild(this.m_scrollingContainer);
@@ -475,7 +475,7 @@ public dynamic class ModalDialogItemDetails extends ModalDialogContainerBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

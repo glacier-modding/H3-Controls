@@ -50,7 +50,7 @@ public class MissionRewardBar {
 		if (_arg_1 != null) {
 			this.m_levelPointsAccum = _arg_1;
 		}
-		;
+
 	}
 
 	public function onUnregister():void {
@@ -99,7 +99,7 @@ public class MissionRewardBar {
 		if (!this.m_levelPointsAccum) {
 			return (1);
 		}
-		;
+
 		var _local_2:int = this.m_levelPointsAccum.length;
 		var _local_3:Number = 0;
 		var _local_4:int;
@@ -109,16 +109,16 @@ public class MissionRewardBar {
 			} else {
 				break;
 			}
-			;
+
 			_local_4++;
 		}
-		;
+
 		var _local_5:Number = (_arg_1 - this.m_levelPointsAccum[_local_3]);
 		var _local_6:Number = 0;
 		if (_local_3 < (_local_2 - 1)) {
 			_local_6 = (_local_5 / (this.m_levelPointsAccum[(_local_3 + 1)] - this.m_levelPointsAccum[_local_3]));
 		}
-		;
+
 		return ((_local_3 + 1) + _local_6);
 	}
 
@@ -127,7 +127,7 @@ public class MissionRewardBar {
 		if (_arg_1 >= this.m_levelPointsAccum[_local_2]) {
 			return (true);
 		}
-		;
+
 		return (false);
 	}
 
@@ -139,7 +139,7 @@ public class MissionRewardBar {
 				} else {
 					Animate.legacyTo(_arg_2, _arg_3, {"scaleY": 1}, _arg_4);
 				}
-				;
+
 				return;
 			case this.ANIMATION_DIR_OUT:
 				if (_arg_5) {
@@ -147,12 +147,12 @@ public class MissionRewardBar {
 				} else {
 					Animate.legacyTo(_arg_2, _arg_3, {"scaleY": 0}, _arg_4);
 				}
-				;
+
 				return;
 			default:
 				Log.info(Log.ChannelCommon, this, ("MissionRewardBar --> unhandled case in animateMasteryBar(): " + _arg_1));
 		}
-		;
+
 	}
 
 	private function onMasteryBarInComplete(_arg_1:*):void {
@@ -166,7 +166,7 @@ public class MissionRewardBar {
 		if (this.m_levelMaxed) {
 			return;
 		}
-		;
+
 		this.m_view.xpnum_txt.visible = true;
 		this.m_view.xpnum_txt.alpha = 0;
 		this.m_view.xpnum_txt.x = (this.m_view.xpnum_txt.x - 15);
@@ -185,7 +185,7 @@ public class MissionRewardBar {
 			this.m_last_barScale = this.m_barRatio;
 			Animate.legacyTo(this.m_view.masteryBarFillMc, 0.3, {"scaleX": this.m_barRatio}, Animate.ExpoOut);
 		}
-		;
+
 		this.updateXPFields();
 		this.m_view.mastery_txt.visible = true;
 		this.m_view.mastery_txt.alpha = 0;
@@ -228,12 +228,12 @@ public class MissionRewardBar {
 							Animate.legacyTo(m_view.masteryBarFillMc, 0.2, {"scaleX": m_barRatio}, Animate.ExpoIn);
 						});
 					}
-					;
+
 				}
-				;
+
 				m_last_barScale = m_barRatio;
 			}
-			;
+
 			updateXPFields();
 		});
 	}
@@ -261,7 +261,7 @@ public class MissionRewardBar {
 				}, Animate.ExpoOut);
 			});
 		}
-		;
+
 		this.m_last_level = this.m_displayLevel;
 		if (this.m_startXPDisp > this.m_levelPointsAccum[(this.m_levelPointsAccum.length - 1)]) {
 			MenuUtils.setupText(this.m_view.xpnum_txt, "", 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyDark);
@@ -271,11 +271,11 @@ public class MissionRewardBar {
 				pointsToNextLevel = Localization.get("UI_MENU_PAGE_REWARD_POINTS_TO_NEXT_LEVEL").replace("{p}", points);
 				MenuUtils.setupText(this.m_view.xpnum_txt, pointsToNextLevel, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyDark);
 			}
-			;
+
 			this.textFieldAutosize(this.m_view.xpnum_txt);
 			this.m_view.xpnum_txt.x = ((this.m_view.masteryBarFrameMc.x + this.m_view.masteryBarFrameMc.width) - this.m_view.xpnum_txt.width);
 		}
-		;
+
 	}
 
 	private function playSound(_arg_1:String):void {
@@ -294,7 +294,7 @@ public class MissionRewardBar {
 		} catch (error:Error) {
 			trace(("[TextFieldAutosize] " + error));
 		}
-		;
+
 	}
 
 

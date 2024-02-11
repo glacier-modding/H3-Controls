@@ -23,7 +23,7 @@ public dynamic class SearchSelectedTagScrollingListContainer extends ScrollingLi
 
 	private var m_groupHeader:ContractSearchTagGroupHeaderView = null;
 	private var m_background:Sprite = null;
-	private var m_emptyElements:Array = new Array();
+	private var m_emptyElements:Array = [];
 	private var m_elementHeight:Number = 0;
 	private var m_emptyElementFillCount:Number = 1;
 
@@ -36,11 +36,11 @@ public dynamic class SearchSelectedTagScrollingListContainer extends ScrollingLi
 		if (_arg_1.elementnrows != undefined) {
 			this.m_elementHeight = (_arg_1.elementnrows * MenuConstants.GridUnitHeight);
 		}
-		;
+
 		if (_arg_1.emptyelementfillcount != undefined) {
 			this.m_emptyElementFillCount = Math.max(_arg_1.emptyelementfillcount, 0);
 		}
-		;
+
 		this.setupGroupHeader(_arg_1);
 		this.setupBackground();
 		var _local_3:int = ((_arg_1.emptycount != undefined) ? _arg_1.emptycount : 5);
@@ -58,7 +58,7 @@ public dynamic class SearchSelectedTagScrollingListContainer extends ScrollingLi
 		if (m_children.length > 0) {
 			_local_1 = m_children[0];
 		}
-		;
+
 		var _local_2:Rectangle = _local_1.getVisualBounds(this);
 		var _local_3:int = Math.max((m_children.length + this.m_emptyElementFillCount), this.m_emptyElements.length);
 		_local_2.height = (_local_3 * this.m_elementHeight);
@@ -78,7 +78,7 @@ public dynamic class SearchSelectedTagScrollingListContainer extends ScrollingLi
 		if (_arg_1.icon) {
 			MenuUtils.setupIcon(this.m_groupHeader.icon, _arg_1.icon, MenuConstants.COLOR_WHITE, true, false);
 		}
-		;
+
 	}
 
 	private function setupBackground():void {
@@ -103,7 +103,7 @@ public dynamic class SearchSelectedTagScrollingListContainer extends ScrollingLi
 			getContainer().addChild(_local_3);
 			_local_2++;
 		}
-		;
+
 	}
 
 	private function repositionAllElements():void {
@@ -119,7 +119,7 @@ public dynamic class SearchSelectedTagScrollingListContainer extends ScrollingLi
 			m_children[_local_5].y = (_local_2 + (m_yOffset * MenuConstants.GridUnitHeight));
 			_local_5++;
 		}
-		;
+
 		var _local_6:int;
 		while (_local_6 < this.m_emptyElements.length) {
 			this.m_emptyElements[_local_6].visible = false;
@@ -130,10 +130,10 @@ public dynamic class SearchSelectedTagScrollingListContainer extends ScrollingLi
 				this.m_emptyElements[_local_6].x = (_local_1 + (m_xOffset * MenuConstants.GridUnitWidth));
 				this.m_emptyElements[_local_6].y = (_local_2 + (m_yOffset * MenuConstants.GridUnitHeight));
 			}
-			;
+
 			_local_6++;
 		}
-		;
+
 	}
 
 

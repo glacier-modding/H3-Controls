@@ -38,7 +38,7 @@ public dynamic class SubCategoryElement extends CategoryElementBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -69,9 +69,9 @@ public dynamic class SubCategoryElement extends CategoryElementBase {
 			} else {
 				MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function textfieldAutosize(tf:TextField, direction:String = "left"):void {
@@ -84,7 +84,7 @@ public dynamic class SubCategoryElement extends CategoryElementBase {
 		} catch (error:Error) {
 			trace(this, "[TextFieldAutosize]", error);
 		}
-		;
+
 	}
 
 

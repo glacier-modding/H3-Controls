@@ -46,15 +46,15 @@ public dynamic class DummyStatisticsViewer extends MenuElementBase {
 		if (this.m_radarChart) {
 			this.m_radarChart.onUnregister();
 		}
-		;
+
 		if (this.m_barChart) {
 			this.m_barChart.onUnregister();
 		}
-		;
+
 		if (this.m_lineChart) {
 			this.m_lineChart.onUnregister();
 		}
-		;
+
 		super.onUnregister();
 	}
 

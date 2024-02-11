@@ -43,19 +43,19 @@ public class ScrollingList extends BaseControl {
 				_local_5 = Math.max(_local_5, (this.m_sizeX - this.m_container.width));
 				_local_5 = Math.min(_local_5, 0);
 			}
-			;
+
 			if (this.m_container.height > this.m_sizeY) {
 				_local_6 = ((this.m_sizeY / 2) - _local_4);
 				_local_6 = Math.max(_local_6, (this.m_sizeY - this.m_container.height));
 				_local_6 = Math.min(_local_6, 0);
 			}
-			;
+
 			Animate.legacyTo(this.m_container, 0.5, {
 				"x": _local_5,
 				"y": _local_6
 			}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 	override public function onSetSize(_arg_1:Number, _arg_2:Number):void {

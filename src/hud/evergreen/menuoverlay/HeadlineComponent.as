@@ -79,7 +79,7 @@ public class HeadlineComponent extends Sprite implements IMenuOverlayComponent {
 					m_background.visible = false;
 				});
 			}
-			;
+
 		} else {
 			y = 0;
 			dyGapLastUsed = 0;
@@ -90,7 +90,7 @@ public class HeadlineComponent extends Sprite implements IMenuOverlayComponent {
 				dyGapLastUsed = (PXPADDING * MicroRow.MICROICONSCALE);
 				y = (y - dyGapLastUsed);
 			}
-			;
+
 			if (this.m_isTitleRowVisible) {
 				this.m_microRow.x = (this.m_titleRow.dxIconOffset + 4);
 				y = (y - TitleRow.PXICONSIZE);
@@ -99,11 +99,11 @@ public class HeadlineComponent extends Sprite implements IMenuOverlayComponent {
 				} else {
 					Animate.to(this.m_titleRow, 0.1, 0, {"y": y}, Animate.SineOut);
 				}
-				;
+
 				dyGapLastUsed = PXPADDING;
 				y = (y - dyGapLastUsed);
 			}
-			;
+
 			y = (y + dyGapLastUsed);
 			this.m_background.visible = true;
 			Animate.to(this.m_background, 0.1, 0, {"width": (Math.max(this.m_titleRow.dxTotalWidth, (this.m_microRow.x + this.m_microRow.dxTotalWidth)) + (2 * PXPADDING))}, Animate.SineOut);
@@ -117,9 +117,9 @@ public class HeadlineComponent extends Sprite implements IMenuOverlayComponent {
 					"height": dyBackgroundHeight
 				}, Animate.SineOut);
 			}
-			;
+
 		}
-		;
+
 	}
 
 
@@ -190,7 +190,7 @@ class TitleRow extends Sprite {
 			this.m_title_txt.visible = true;
 			this.m_title_txt.text = _arg_1.lstrTitle.toUpperCase();
 		}
-		;
+
 		if ((((_arg_1 == null) || (_arg_1.lstrHeader == null)) || (_arg_1.lstrHeader == ""))) {
 			this.m_header_txt.visible = false;
 			this.m_header_txt.text = "";
@@ -198,14 +198,14 @@ class TitleRow extends Sprite {
 			this.m_header_txt.visible = true;
 			this.m_header_txt.text = _arg_1.lstrHeader.toUpperCase();
 		}
-		;
+
 		if ((((_arg_1 == null) || (_arg_1.icon == null)) || (_arg_1.icon == ""))) {
 			this.m_icon.visible = false;
 		} else {
 			this.m_icon.visible = true;
 			MenuUtils.setupIcon(this.m_icon, _arg_1.icon, MenuConstants.COLOR_WHITE, false, false, 0xFFFFFF, 0, 0, true);
 		}
-		;
+
 		if ((((!(this.m_title_txt.visible)) && (!(this.m_header_txt.visible))) && (!(this.m_icon.visible)))) {
 			this.visible = false;
 		} else {
@@ -219,9 +219,9 @@ class TitleRow extends Sprite {
 			} else {
 				this.m_title_txt.y = ((PXICONSIZE / 2) - (this.m_title_txt.textHeight / 2));
 			}
-			;
+
 		}
-		;
+
 	}
 
 
@@ -304,11 +304,11 @@ class MicroRow extends Sprite {
 		while (this.m_labels.numChildren > _local_4) {
 			this.m_labels.removeChildAt((this.m_labels.numChildren - 1));
 		}
-		;
+
 		while (this.m_labels.numChildren < _local_4) {
 			this.m_labels.addChild(new MicroLabel());
 		}
-		;
+
 		var _local_5:int;
 		while (_local_5 < _local_4) {
 			_local_8 = MicroLabel(this.m_labels.getChildAt(_local_5));
@@ -317,18 +317,18 @@ class MicroRow extends Sprite {
 			this.m_dxTotalWidth = ((this.m_labels.x + (_local_8.x + _local_8.width)) + _local_2);
 			_local_5++;
 		}
-		;
+
 		this.m_microicons.x = this.m_dxTotalWidth;
 		var _local_6:int = this.m_microicons.numChildren;
 		var _local_7:int = (((_arg_1 == null) || (_arg_1.microicons == null)) ? 0 : _arg_1.microicons.length);
 		while (this.m_microicons.numChildren > _local_7) {
 			this.m_microicons.removeChildAt((this.m_microicons.numChildren - 1));
 		}
-		;
+
 		while (this.m_microicons.numChildren < _local_7) {
 			this.m_microicons.addChild(new iconsAll76x76View());
 		}
-		;
+
 		_local_5 = 0;
 		while (_local_5 < _local_7) {
 			_local_9 = iconsAll76x76View(this.m_microicons.getChildAt(_local_5));
@@ -344,15 +344,15 @@ class MicroRow extends Sprite {
 					"scaleY": 1
 				}, Animate.SineOut);
 			}
-			;
+
 			_local_5++;
 		}
-		;
+
 		if (_local_7 > 0) {
 			_local_2 = PXPADDING;
 			this.m_dxTotalWidth = (this.m_dxTotalWidth + _local_2);
 		}
-		;
+
 		if ((((_arg_1 == null) || (_arg_1.lstrMicroMessage == null)) || (_arg_1.lstrMicroMessage == ""))) {
 			this.m_micromessage_txt.visible = false;
 			this.m_micromessage_txt.htmlText = "";
@@ -363,7 +363,7 @@ class MicroRow extends Sprite {
 			_local_2 = PXPADDING;
 			this.m_dxTotalWidth = (this.m_dxTotalWidth + (this.m_micromessage_txt.textWidth + _local_2));
 		}
-		;
+
 		this.m_dxTotalWidth = (this.m_dxTotalWidth - _local_2);
 		this.visible = ((_local_7 > 0) || (this.m_micromessage_txt.visible));
 	}

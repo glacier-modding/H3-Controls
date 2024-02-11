@@ -36,7 +36,7 @@ public dynamic class ControllerLayoutSniper extends MenuElementBase {
 		if (_local_2 == "key") {
 			return;
 		}
-		;
+
 		for each (_local_3 in [{
 			"clip": this.m_view.label0,
 			"lstr": Localization.get("EUI_TEXT_BINDING_AIM")
@@ -79,9 +79,9 @@ public dynamic class ControllerLayoutSniper extends MenuElementBase {
 				_local_3.clip.visible = (!(_local_3.hideIt));
 				MenuUtils.setupText(_local_3.clip.label_txt, _local_3.lstr, this.m_labelFontSize, this.m_labelFontType, this.m_labelFontColor);
 			}
-			;
+
 		}
-		;
+
 		for each (_local_4 in [{
 			"clip": this.m_view.alt_control_instruction0,
 			"lstr": Localization.get("EUI_TEXT_BINDING_HOLD"),
@@ -107,16 +107,16 @@ public dynamic class ControllerLayoutSniper extends MenuElementBase {
 				MenuUtils.setupTextUpper(_local_4.clip.alt_label_txt, _local_4.lstr, this.m_altLabelFontSize, this.m_altLabelFontType, this.m_altLabelFontColor);
 				_local_4.clip.alt_label_txt.autoSize = _local_4.autoSize;
 			}
-			;
+
 		}
-		;
+
 		this.setBgColorAndSize([this.m_view.alt_control_instruction0, this.m_view.alt_control_instruction11_02, this.m_view.alt_control_instruction13, this.m_view.alt_control_instruction14]);
 		if (ControllerLayout.isHoldModeForInstinctActivation()) {
 			this.m_view.alt_control_instruction13.y = (this.m_view.label13.y + 28);
 		} else {
 			this.m_view.alt_control_instruction13.y = (this.m_view.label12.y - 20);
 		}
-		;
+
 	}
 
 	private function setBgColorAndSize(_arg_1:Array):void {
@@ -126,9 +126,9 @@ public dynamic class ControllerLayoutSniper extends MenuElementBase {
 				_local_2.alt_label_bg_mc.width = (_local_2.alt_label_txt.width + 5);
 				MenuUtils.setColor(_local_2.alt_label_bg_mc, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -136,7 +136,7 @@ public dynamic class ControllerLayoutSniper extends MenuElementBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

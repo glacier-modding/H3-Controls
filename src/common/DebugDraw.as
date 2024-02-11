@@ -25,7 +25,7 @@ public class DebugDraw {
 			Log.xerror(Log.ChannelDebug, "DebugDraw.treeByClassNames: root is null");
 			return;
 		}
-		;
+
 		generateColorTable();
 		var frameCounter:OnFrameCountAction = new OnFrameCountAction(root, 100, continousUpdate, function ():void {
 			treeBy(root, function (_arg_1:DisplayObject):void {
@@ -37,10 +37,10 @@ public class DebugDraw {
 						displayObject(_arg_1);
 						return;
 					}
-					;
+
 					_local_3++;
 				}
-				;
+
 			});
 		});
 	}
@@ -50,14 +50,14 @@ public class DebugDraw {
 			Log.xerror(Log.ChannelDebug, "DebugDraw.treeByMarkedNodes: root is null");
 			return;
 		}
-		;
+
 		generateColorTable();
 		var frameCounter:OnFrameCountAction = new OnFrameCountAction(root, 100, continousUpdate, function ():void {
 			treeBy(root, function (_arg_1:DisplayObject):void {
 				if (_arg_1.hasOwnProperty(DEBUG_NODE_MARK)) {
 					displayObject(_arg_1);
 				}
-				;
+
 			});
 		});
 	}
@@ -67,14 +67,14 @@ public class DebugDraw {
 			Log.xerror(Log.ChannelDebug, "DebugDraw.treeAllSprites: root is null");
 			return;
 		}
-		;
+
 		generateColorTable();
 		var frameCounter:OnFrameCountAction = new OnFrameCountAction(root, 100, continousUpdate, function ():void {
 			treeBy(root, function (_arg_1:DisplayObject):void {
 				if ((_arg_1 is Sprite)) {
 					displayObject(_arg_1);
 				}
-				;
+
 			});
 		});
 	}
@@ -84,7 +84,7 @@ public class DebugDraw {
 			Log.xerror(Log.ChannelDebug, "DebugDraw.treeByCustomView: root is null");
 			return;
 		}
-		;
+
 		generateColorTable();
 		var frameCounter:OnFrameCountAction = new OnFrameCountAction(root, 100, continousUpdate, function ():void {
 			treeBy(root, function (_arg_1:DisplayObject):void {
@@ -95,7 +95,7 @@ public class DebugDraw {
 					displayObject(_arg_1);
 					return;
 				}
-				;
+
 				var _local_3:* = _arg_1;
 				var _local_4:* = "";
 				_local_4 = getQualifiedSuperclassName(_arg_1);
@@ -105,13 +105,13 @@ public class DebugDraw {
 						displayObject(_arg_1);
 						return;
 					}
-					;
+
 					_local_5 = (getDefinitionByName(_local_4) as Class);
 					if (_local_5.prototype == null) break;
 					_local_4 = getQualifiedSuperclassName(_local_5.prototype);
 					if (_local_4 == null) break;
 				}
-				;
+
 			});
 		});
 	}
@@ -124,10 +124,10 @@ public class DebugDraw {
 					Log.xinfo(Log.ChannelDebug, ((("DebugDraw.treeBy: cleanup - removing debug node (" + getQualifiedClassName(_arg_1)) + ") from parent ") + _arg_1.parent));
 					_arg_1.parent.removeChild(_arg_1);
 				}
-				;
+
 			});
 		}
-		;
+
 		walkTreeActionDF(rootNode, nodeAction);
 	}
 
@@ -136,7 +136,7 @@ public class DebugDraw {
 			_arg_2 = ms_colorTable[ms_colorTableIndex];
 			updateColorTableIndex();
 		}
-		;
+
 		var _local_3:Sprite = new Sprite();
 		_local_3.name = DEBUG_NODE_NAME;
 		_local_3.graphics.beginFill(_arg_2, 0.2);
@@ -165,16 +165,16 @@ public class DebugDraw {
 					_local_3.push(_local_6.getChildAt(_local_7));
 					_local_7++;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		while (_local_4.length > 0) {
 			_local_5 = _local_4.pop();
 			(_arg_2(_local_5));
 		}
-		;
+
 	}
 
 	private static function generateColorTable():void {
@@ -186,7 +186,7 @@ public class DebugDraw {
 		if (ms_colorTable != null) {
 			return;
 		}
-		;
+
 		ms_colorTable = [];
 		var _local_1:int = 32;
 		while (_local_1 <= 0xFF) {
@@ -199,15 +199,15 @@ public class DebugDraw {
 				ms_colorTable.push(_local_6);
 				_local_2++;
 			}
-			;
+
 			if (((_local_1 < 0xFF) && ((_local_1 * 2) > 0xFF))) {
 				_local_1 = 0xFF;
 			} else {
 				_local_1 = (_local_1 * 2);
 			}
-			;
+
 		}
-		;
+
 		ms_colorTable.reverse();
 	}
 
@@ -216,7 +216,7 @@ public class DebugDraw {
 		if (ms_colorTableIndex >= ms_colorTable.length) {
 			ms_colorTableIndex = 0;
 		}
-		;
+
 	}
 
 
@@ -252,7 +252,7 @@ class OnFrameCountAction {
 			Log.xinfo(Log.ChannelDebug, "OnFrameCountAction one shot");
 			this.m_func();
 		}
-		;
+
 	}
 
 	/*private*/
@@ -260,14 +260,14 @@ class OnFrameCountAction {
 		if (this.m_removed) {
 			return;
 		}
-		;
+
 		this.m_currentFrameCount++;
 		if (this.m_currentFrameCount >= this.m_onNthFrame) {
 			this.m_currentFrameCount = 0;
 			Log.xinfo(Log.ChannelDebug, "OnFrameCountAction calling update");
 			this.m_func();
 		}
-		;
+
 	}
 
 	/*private*/

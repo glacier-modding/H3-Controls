@@ -129,27 +129,27 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 		if (_arg_1 == "cancel") {
 			_local_2 = 0;
 		}
-		;
+
 		if (_arg_1 == "accept") {
 			_local_2 = 1;
 		}
-		;
+
 		if (_arg_1 == "action-x") {
 			_local_2 = 2;
 		}
-		;
+
 		if (_arg_1 == "action-y") {
 			_local_2 = 5;
 		}
-		;
+
 		if (_arg_1 == "r") {
 			_local_2 = 4;
 		}
-		;
+
 		if (_local_2 >= 0) {
 			sendEventWithValue("onInputAction", _local_2);
 		}
-		;
+
 	}
 
 	public function updateButtonPrompts():void {
@@ -180,7 +180,7 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 		if (_arg_1 == this.m_backgroundImageRid) {
 			return;
 		}
-		;
+
 		this.m_backgroundImageRid = _arg_1;
 		this.m_backgroundImage.cancel();
 		this.m_backgroundImage.loadImage(this.m_backgroundImageRid, this.onLoadSuccess, this.onLoadFailed);
@@ -194,17 +194,17 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 			this.m_playerInventoryContainer.clearChildren();
 			this.createInventory(_arg_1.playerInventory, this.m_playerInventoryContainer, true);
 		}
-		;
+
 		if (_local_3) {
 			this.m_worldInventoryContainer.clearChildren();
 			this.createInventory(_arg_1.worldInventory, this.m_worldInventoryContainer, false);
 		}
-		;
+
 		if (((_local_2) && (_local_3))) {
 			this.m_playerInventoryContainer.getContainer().y = this.m_scrollFocusYPos;
 			this.m_worldInventoryContainer.getContainer().y = this.m_scrollFocusYPos;
 		}
-		;
+
 	}
 
 	private function createInventory(_arg_1:Object, _arg_2:ListContainer, _arg_3:Boolean):void {
@@ -229,7 +229,7 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 				_local_6 = this.createEmptyElement(_local_4);
 				_arg_2.addChild2(_local_6);
 			}
-			;
+
 			_local_10 = _arg_1.slots[_local_9];
 			_local_11 = null;
 			if (_arg_3) {
@@ -238,17 +238,17 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 				_local_11.x = -25;
 				MenuUtils.setupText(_local_11, _local_10.label, 24, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorGreyUltraLight);
 			}
-			;
+
 			_local_12 = _local_10.items;
 			_local_13 = _local_12.length;
 			if (_local_13 <= 0) {
-				_local_7 = new Object();
+				_local_7 = {};
 				_local_7.label = "";
 				_local_7.uniqueId = _local_10.uniqueId;
 				_local_7.parentSlot = _local_10.label;
 				_local_12.push(_local_7);
 			}
-			;
+
 			_local_14 = 0;
 			_local_15 = 0;
 			_local_16 = 0;
@@ -257,14 +257,14 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 					_local_6 = this.createEmptyElement(_local_5);
 					_arg_2.addChild2(_local_6);
 				}
-				;
+
 				_local_17 = _local_10.items[_local_16];
 				_local_6 = this.createElement("hud.InventoryItemIcon", _local_17);
 				if (_local_16 == 0) {
 					if (_local_11 != null) {
 						_local_6.addChild(_local_11);
 					}
-					;
+
 					_local_18 = ((InventoryItemIcon.ITEM_SIZE_HEIGHT * _local_12.length) + (_local_5 * (_local_12.length - 1)));
 					_local_19 = new InventoryGroupLine();
 					_local_19.x = -10;
@@ -272,14 +272,14 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 					_local_19.y = (_local_18 * 0.5);
 					_local_6.addChild(_local_19);
 				}
-				;
+
 				_arg_2.addChild2(_local_6);
 				_local_16++;
 			}
-			;
+
 			_local_9++;
 		}
-		;
+
 	}
 
 	public function updateNode(_arg_1:Object):void {
@@ -292,7 +292,7 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 			Log.info(Log.ChannelDebug, this, "updateNode target not found");
 			return;
 		}
-		;
+
 		_local_3.onSetData(_arg_1);
 		var _local_4:InventoryItemIcon = (this.m_selectedItem as InventoryItemIcon);
 		if (((!(_local_4 == null)) && (_local_4 == _local_3))) {
@@ -300,10 +300,10 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 			if (_local_4.m_itemCount > 1) {
 				_local_5 = (((_local_5 + " (") + _local_4.m_itemCount) + ")");
 			}
-			;
+
 			MenuUtils.setupText(this.m_itemName, _local_5, 24, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorGreyUltraLight);
 		}
-		;
+
 	}
 
 	public function setMoveItem(_arg_1:int, _arg_2:int):void {
@@ -313,12 +313,12 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 			trace("setMoveItem target not found");
 			return;
 		}
-		;
+
 		trace("setMoveItem found target");
 		if (this.m_highlightedItem != null) {
 			this.m_highlightedItem.onSetHighlighted(false);
 		}
-		;
+
 		_local_3.onSetHighlighted(true);
 		this.m_highlightedItem = _local_3;
 	}
@@ -328,7 +328,7 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 			this.m_highlightedItem.onSetHighlighted(false);
 			this.m_highlightedItem = null;
 		}
-		;
+
 	}
 
 	public function setSelected(_arg_1:int, _arg_2:int):void {
@@ -338,7 +338,7 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 			trace("setSelected target not found");
 			return;
 		}
-		;
+
 		trace("setSelected found target");
 		this.handleSelectionChanged((_local_3 as MenuElementTileBase));
 	}
@@ -349,17 +349,17 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 		this.m_allChildren[_arg_2.uniqueId] = _local_4;
 		if (_arg_2.mouse) {
 		}
-		;
+
 		var _local_5:MenuElementBase = (_local_4 as MenuElementBase);
 		if (_local_5 != null) {
 			_local_5.onSetData(_arg_2);
 		}
-		;
+
 		return (_local_4);
 	}
 
 	public function createEmptyElement(_arg_1:Number):Sprite {
-		var _local_2:Object = new Object();
+		var _local_2:Object = {};
 		_local_2.width = 220;
 		_local_2.height = _arg_1;
 		var _local_3:Sprite = this.createElement("hud.EmptySpace", _local_2);
@@ -376,7 +376,7 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 		if (this.previousSelectedItem) {
 			this.previousSelectedItem.setItemSelected(false);
 		}
-		;
+
 		this.previousSelectedItem = _arg_1;
 		if (_arg_1) {
 			trace(("new selection: " + _arg_1));
@@ -387,10 +387,10 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 				if (_local_2.m_itemCount > 1) {
 					_local_5 = (((_local_5 + " (") + _local_2.m_itemCount) + ")");
 				}
-				;
+
 				MenuUtils.setupText(this.m_itemName, _local_5, 24, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorGreyUltraLight);
 			}
-			;
+
 			_local_3 = MenuConstants.ScrollTime;
 			_local_4 = (_arg_1.m_parent as ListContainer);
 			if (_local_4) {
@@ -400,11 +400,11 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 				} else {
 					Animate.legacyTo(_local_4.getContainer(), _local_3, {"y": _local_6}, Animate.ExpoOut);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		this.m_selectedItem = _arg_1;
 	}
 
@@ -438,7 +438,7 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 			}, false, 0, false);
 			elementBase.setEngineCallbacks(sendEvent, sendEventWithValue);
 		}
-		;
+
 	}
 
 	override public function onSetSize(_arg_1:Number, _arg_2:Number):void {
@@ -450,7 +450,7 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 	}
 
 	private function createSlotContainer(_arg_1:Number, _arg_2:Number, _arg_3:Number, _arg_4:Number):ListContainer {
-		var _local_5:Object = new Object();
+		var _local_5:Object = {};
 		_local_5.sizeY = 1;
 		_local_5.width = _arg_1;
 		_local_5.height = _arg_2;
@@ -475,31 +475,31 @@ public class InventoryPage extends BaseControl implements IButtonPromptOwner {
 	}
 
 	private function getDebugData():Object {
-		var _local_1:Object = new Object();
-		var _local_2:Object = new Object();
-		var _local_3:Object = new Object();
+		var _local_1:Object = {};
+		var _local_2:Object = {};
+		var _local_3:Object = {};
 		_local_3.label = "Pocket";
-		var _local_4:Object = new Object();
+		var _local_4:Object = {};
 		_local_4.label = "Right Hand";
-		var _local_5:Object = new Object();
+		var _local_5:Object = {};
 		_local_5.label = "Left Hand";
-		var _local_6:Object = new Object();
+		var _local_6:Object = {};
 		_local_6.label = "Pistol Holster";
-		var _local_7:Object = new Object();
+		var _local_7:Object = {};
 		_local_7.label = "crowbar";
-		var _local_8:Object = new Object();
+		var _local_8:Object = {};
 		_local_8.label = "screwdriver";
-		var _local_9:Object = new Object();
+		var _local_9:Object = {};
 		_local_9.label = "hammer";
 		_local_9.uniqueId = 2;
-		var _local_10:Object = new Object();
+		var _local_10:Object = {};
 		_local_10.label = "pistol";
-		_local_3.items = new Array(_local_7, _local_8, _local_7, _local_8);
+		_local_3.items = [_local_7, _local_8, _local_7, _local_8];
 		_local_4.items = new Array(_local_9);
 		_local_4.uniqueId = 1;
-		_local_5.items = new Array();
+		_local_5.items = [];
 		_local_6.items = new Array(_local_10);
-		_local_2.slots = new Array(_local_4, _local_5, _local_6, _local_3);
+		_local_2.slots = [_local_4, _local_5, _local_6, _local_3];
 		_local_1.playerInventory = _local_2;
 		_local_1.worldInventory = _local_2;
 		return (_local_1);

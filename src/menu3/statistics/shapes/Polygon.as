@@ -35,11 +35,11 @@ public class Polygon extends Sprite {
 			} else {
 				graphics.moveTo(_local_10, _local_11);
 			}
-			;
+
 			_local_8++;
 			_local_12 = (_local_12 + _local_7);
 		}
-		;
+
 		graphics.endFill();
 	}
 

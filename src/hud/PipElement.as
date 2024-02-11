@@ -53,7 +53,7 @@ public class PipElement extends BaseControl {
 				this.m_view.messageMc.bgGradient.gotoAndStop(1);
 				this.m_view.messageMc.bgMc.gotoAndStop(1);
 			}
-			;
+
 			MenuUtils.setupTextUpper(this.m_view.messageMc.labelTxt, _arg_1, 18, MenuConstants.FONT_TYPE_MEDIUM, ((_arg_2 == 1) ? MenuConstants.FontColorGreyUltraDark : MenuConstants.FontColorGreyUltraLight));
 			this.m_view.messageMc.labelTxt.setTextFormat(this.m_labelTxtTextFormat);
 			this.m_view.messageMc.bgMc.height = (23 + ((this.m_view.messageMc.labelTxt.numLines - 1) * 19));
@@ -63,9 +63,9 @@ public class PipElement extends BaseControl {
 			if (this.m_pipShown) {
 				this.hidePipMessage();
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function showPipMessage():void {

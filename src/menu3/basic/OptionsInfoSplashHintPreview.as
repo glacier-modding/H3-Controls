@@ -59,7 +59,7 @@ public dynamic class OptionsInfoSplashHintPreview extends OptionsInfoPreview {
 			});
 			this.m_shContent.show();
 		}
-		;
+
 	}
 
 	override protected function onPreviewBackgroundImageLoaded():void {

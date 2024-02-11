@@ -87,7 +87,7 @@ public class Reticle extends BaseControl {
 				this.m_view.gotoAndStop("NONE");
 				this.m_view.center_mc.alpha = 0;
 		}
-		;
+
 	}
 
 	public function setAccuracy(_arg_1:Number):void {
@@ -127,7 +127,7 @@ public class Reticle extends BaseControl {
 				this.moveMarkers(_arg_1, 0, _local_2, 1, 0, -1, 0);
 				return;
 		}
-		;
+
 	}
 
 	private function moveMarkers(_arg_1:Number, _arg_2:Number, _arg_3:Number, ..._args):void {
@@ -140,7 +140,7 @@ public class Reticle extends BaseControl {
 			_local_6.alpha = this.baseAlpha;
 			_local_5++;
 		}
-		;
+
 	}
 
 	private function moveCircle(_arg_1:Number, _arg_2:Number):void {
@@ -170,7 +170,7 @@ public class Reticle extends BaseControl {
 			this.m_view.hitKill_mc.scaleX = (this.m_view.hitKill_mc.scaleY = 0.75);
 			Animate.delay(this.m_view.hitKill_mc, 0.7, this.hideMarker, this.m_view.hitKill_mc);
 		}
-		;
+
 	}
 
 	private function hideMarker(_arg_1:MovieClip):void {

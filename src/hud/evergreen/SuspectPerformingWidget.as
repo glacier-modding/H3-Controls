@@ -103,7 +103,7 @@ public class SuspectPerformingWidget extends BaseControl {
 			this.currentState = _arg_1;
 			this.animateTransition(this.currentState, this.currentIcon);
 		}
-		;
+
 	}
 
 	private function setIcon(_arg_1:String):void {
@@ -111,7 +111,7 @@ public class SuspectPerformingWidget extends BaseControl {
 			this.currentIcon = _arg_1;
 			this.animateTransition(this.currentState, this.currentIcon);
 		}
-		;
+
 	}
 
 	private function animateTransition(newState:String, newIcon:String):void {
@@ -148,7 +148,7 @@ public class SuspectPerformingWidget extends BaseControl {
 		} else {
 			this.m_view.distance_txt.visible = false;
 		}
-		;
+
 	}
 
 	[PROPERTY(CONSTRAINT="MinValue(0) MaxValue(1)", HELPTEXT="Show progress on icon - for timer on suspect escaping")]
@@ -164,16 +164,16 @@ public class SuspectPerformingWidget extends BaseControl {
 				this.m_view.icon_mc.gotoAndStop(this.currentIcon);
 				this.meterShowing = false;
 			}
-			;
+
 		}
-		;
+
 		if (this.meterShowing) {
 			Animate.to(this.m_view.back_mc.fill_mc, 0.5, 0, {
 				"scaleX": 1,
 				"scaleY": _arg_1
 			}, Animate.SineOut);
 		}
-		;
+
 	}
 
 

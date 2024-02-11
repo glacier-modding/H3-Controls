@@ -59,7 +59,7 @@ public class InteractionIndicator extends BaseControl {
 			this.m_nFontSizeCurrent = _local_2;
 			this.setupTextFields();
 		}
-		;
+
 		this.updateScale();
 		if (_arg_1.m_eState == STATE_AVAILABLE) {
 			this.m_promptImage.alpha = ((_arg_1.m_bNoActionAvailable) ? 0.33 : 1);
@@ -78,9 +78,9 @@ public class InteractionIndicator extends BaseControl {
 					this.m_view.tap_mc.visible = false;
 					this.m_view.hold_mc.visible = false;
 				}
-				;
+
 			}
-			;
+
 			this.showActionButton(_arg_1.m_nIconId, _arg_1.m_sLabel, _arg_1.m_sDescription, _arg_1.m_sGlyph, _arg_1.m_bIllegalItem, _arg_1.m_bIllegal, _arg_1.m_bSuspiciousItem, _arg_1.m_bIsTxtDirReversed);
 			this.m_view.collapsedEmpty_mc.alpha = 0;
 			this.m_view.collapsedFull_mc.alpha = 0;
@@ -89,7 +89,7 @@ public class InteractionIndicator extends BaseControl {
 			if (ControlsMain.isVrModeActive()) {
 				this.m_view.alpha = 0.6;
 			}
-			;
+
 		} else {
 			if (((_arg_1.m_eState == STATE_COLLAPSED) || (_arg_1.m_eState == STATE_NOTAVAILABLE))) {
 				this.m_promptImage.visible = false;
@@ -108,13 +108,13 @@ public class InteractionIndicator extends BaseControl {
 						this.m_view.collapsedFull_mc.alpha = 0;
 						this.m_view.collapsedEmpty_mc.alpha = 0.4;
 					}
-					;
+
 				}
-				;
+
 				if (ControlsMain.isVrModeActive()) {
 					this.m_view.alpha = 1;
 				}
-				;
+
 			} else {
 				if (_arg_1.m_eState == STATE_ACTIVATING) {
 					this.showActionButton(_arg_1.m_nIconId, _arg_1.m_sLabel, _arg_1.m_sDescription, _arg_1.m_sGlyph, _arg_1.m_bIllegalItem, _arg_1.m_bIllegal, _arg_1.m_bSuspiciousItem, _arg_1.m_bIsTxtDirReversed);
@@ -129,21 +129,21 @@ public class InteractionIndicator extends BaseControl {
 							this.m_view.hold_mc.gotoAndStop((Math.ceil((_arg_1.m_fProgress * 60)) + this.m_holdAnimFrameOffset));
 							this.m_currentProgress = _arg_1.m_fProgress;
 						}
-						;
+
 					} else {
 						this.m_view.hold_mc.visible = false;
 					}
-					;
+
 					if (ControlsMain.isVrModeActive()) {
 						this.m_view.alpha = 0.6;
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function setScaleFactor3D(_arg_1:Number):void {
@@ -170,14 +170,14 @@ public class InteractionIndicator extends BaseControl {
 					_local_13 = 67;
 					_local_14 = ((this.m_view.hold_mc.visible) ? 44 : 40);
 				}
-				;
+
 			}
-			;
+
 			this.m_view.illegalIcon_mc.scaleX = (this.m_view.illegalIcon_mc.scaleY = _local_12);
 			this.m_view.prompt_mc.x = ((_arg_8) ? -(_local_13) : _local_13);
 			this.m_view.illegalIcon_mc.x = ((_arg_8) ? -(_local_14) : _local_14);
 		}
-		;
+
 		this.m_view.prompt_mc.label_txt.autoSize = ((_arg_8) ? TextFieldAutoSize.LEFT : TextFieldAutoSize.RIGHT);
 		this.m_view.prompt_mc.desc_txt.autoSize = ((_arg_8) ? TextFieldAutoSize.LEFT : TextFieldAutoSize.RIGHT);
 		this.m_promptImage.platform = ControlsMain.getControllerType();
@@ -187,13 +187,13 @@ public class InteractionIndicator extends BaseControl {
 		} else {
 			this.m_promptImage.customKey = _arg_4;
 		}
-		;
+
 		var _local_9:String = _arg_2.toUpperCase();
 		if (_local_9 != this.m_sLabelCurrent) {
 			this.m_view.prompt_mc.label_txt.htmlText = _local_9;
 			this.m_sLabelCurrent = _local_9;
 		}
-		;
+
 		_arg_3 = StringUtil.trim(_arg_3);
 		var _local_10:Object = MenuConstants.InteractionIndicatorFontSpecs[this.m_nFontSizeCurrent];
 		if (((_arg_3) && (_arg_3.length > 0))) {
@@ -203,7 +203,7 @@ public class InteractionIndicator extends BaseControl {
 				this.m_view.prompt_mc.desc_txt.htmlText = _local_15;
 				this.m_sDescriptionCurrent = _local_15;
 			}
-			;
+
 			this.m_view.prompt_mc.label_txt.y = _local_10.yOffsetLabel;
 			this.m_view.prompt_mc.desc_txt.y = _local_10.yOffsetDesc;
 		} else {
@@ -212,7 +212,7 @@ public class InteractionIndicator extends BaseControl {
 			this.m_sDescriptionCurrent = "";
 			this.m_view.prompt_mc.label_txt.y = _local_10.yOffsetLabelSolo;
 		}
-		;
+
 		if (_arg_2 == "") {
 			this.m_view.illegalIcon_mc.visible = false;
 		} else {
@@ -226,11 +226,11 @@ public class InteractionIndicator extends BaseControl {
 				} else {
 					this.m_view.illegalIcon_mc.visible = false;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		var _local_11:int = ((this.m_view.hold_mc.visible) ? -3 : -7);
 		if (_arg_8) {
 			this.m_view.prompt_mc.label_txt.x = (-(_local_11) - this.m_view.prompt_mc.label_txt.width);
@@ -239,7 +239,7 @@ public class InteractionIndicator extends BaseControl {
 			this.m_view.prompt_mc.label_txt.x = _local_11;
 			this.m_view.prompt_mc.desc_txt.x = _local_11;
 		}
-		;
+
 	}
 
 	override public function onSetViewport(_arg_1:Number, _arg_2:Number, _arg_3:Number):void {

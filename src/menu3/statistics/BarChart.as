@@ -48,7 +48,7 @@ public class BarChart extends Sprite {
 			if (_local_3 == 0) {
 				_local_3 = 0.01;
 			}
-			;
+
 			_local_4 = (this.m_barHeightMAX * _local_3);
 			_local_1 = this.drawBar(this.m_barWidth, _local_4, ((this.m_shapeData.playerIndex == _local_6) ? MenuConstants.COLOR_RED : MenuConstants.COLOR_WHITE));
 			_local_1.x = _local_2;
@@ -59,7 +59,7 @@ public class BarChart extends Sprite {
 			_local_5 = (_local_5 + 0.02);
 			_local_6++;
 		}
-		;
+
 		var _local_7:BarChartLabel = new BarChartLabel("Overview of where you are located compared to the global scores", 400);
 		_local_7.y = 50;
 		this.m_chartContainer.addChild(_local_7);

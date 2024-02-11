@@ -40,7 +40,7 @@ public class TargetTimerElement extends BaseControl {
 			this.m_initialSeconds = _local_5;
 			this.m_initialScaleFactor = (258 / _local_5);
 		}
-		;
+
 		this.m_view.timer.valuebar.width = (this.m_initialScaleFactor * _local_5);
 	}
 
@@ -56,11 +56,11 @@ public class TargetTimerElement extends BaseControl {
 					this.m_initialNumberOfNPCs = numberOfNpcsLeft;
 					Animate.fromTo(this.m_view.npcs, 1, 0, {"frames": 1}, {"frames": this.m_initialNumberOfNPCs}, Animate.ExpoIn);
 				}
-				;
+
 				if (numberOfNpcsLeft == this.m_prevNumberOfNPCs) {
 					return;
 				}
-				;
+
 				if (numberOfNpcsLeft != this.m_initialNumberOfNPCs) {
 					if (counterData.counterExtraData.TargetEscaped) {
 						this.m_view.npcs[("n_" + (numberOfNpcsLeft + 1))].gotoAndStop("escaped");
@@ -70,15 +70,15 @@ public class TargetTimerElement extends BaseControl {
 							m_view.npcs[("n_" + (numberOfNpcsLeft + 1))].gotoAndStop("dead");
 						});
 					}
-					;
+
 				}
-				;
+
 				this.m_prevNumberOfNPCs = numberOfNpcsLeft;
 			}
-			;
+
 			i++;
 		}
-		;
+
 	}
 
 	public function hideObjectives():void {

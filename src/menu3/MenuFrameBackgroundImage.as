@@ -45,7 +45,7 @@ public class MenuFrameBackgroundImage extends Sprite {
 		if (this.m_bgImages.length > 0) {
 			Animate.fromTo(this.m_bgImages[0].m_bitmap, _arg_1, 0, {"alpha": 0.95}, {"alpha": 1}, Animate.Linear);
 		}
-		;
+
 	}
 
 	public function setBackgroundData(_arg_1:Object):void {
@@ -66,10 +66,10 @@ public class MenuFrameBackgroundImage extends Sprite {
 				this.m_bgImages[0].m_bitmap.alpha = 0;
 				this.m_bgImages[0].m_bitmap.alpha = 1;
 			}
-			;
+
 			return;
 		}
-		;
+
 		this.m_currentData = _arg_1;
 		var _local_2:int;
 		while (_local_2 < this.m_imageLoaders.length) {
@@ -78,15 +78,15 @@ public class MenuFrameBackgroundImage extends Sprite {
 				this.m_imageLoaders[_local_2].cancelIfLoading();
 				this.m_imageLoaders[_local_2] = null;
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 		if (this.m_currentData.m_imgResourceIds.length == 0) {
 			this.removeImages();
 			return;
 		}
-		;
+
 		this.m_imageLoaders[0] = new MenuImageLoader();
 		this.m_imageLoaders[0].center = false;
 		this.m_imageLoaders[0].loadImage(this.m_currentData.m_imgResourceIds[0], this.loadMainImageSuccess, this.loadMainImageFailed);
@@ -120,7 +120,7 @@ public class MenuFrameBackgroundImage extends Sprite {
 				_arg_1.onUnregister();
 			}, prevBgImage);
 		}
-		;
+
 		this.m_bgImages.length = 0;
 		this.createBackgroundImages(bitmapData);
 		targetScale = 1.02;
@@ -146,14 +146,14 @@ public class MenuFrameBackgroundImage extends Sprite {
 					"y": 0
 				}, Animate.ExpoOut);
 			}
-			;
+
 		}
-		;
+
 		if (((this.m_bgImages.length > 0) && (this.m_currentData.m_imgResourceIds.length > 1))) {
 			Log.xinfo(Log.ChannelDebug, "delay loadAdditionalFrames");
 			Animate.delay(this.m_bgImages[0].m_root, blendInAnimationDuration, this.loadAdditionalFrames);
 		}
-		;
+
 	}
 
 	private function removeImages():void {
@@ -164,7 +164,7 @@ public class MenuFrameBackgroundImage extends Sprite {
 			_local_1.setParent(null);
 			_local_1.onUnregister();
 		}
-		;
+
 		this.m_bgImages.length = 0;
 	}
 
@@ -173,14 +173,14 @@ public class MenuFrameBackgroundImage extends Sprite {
 		if (this.m_currentData.m_imgResourceIds.length <= 1) {
 			return;
 		}
-		;
+
 		var _local_1:int = Math.min(this.m_imageLoaders.length, this.m_currentData.m_imgResourceIds.length);
 		this.m_imagesNeeded = (_local_1 - 1);
 		Log.xinfo(Log.ChannelDebug, ((("loadAdditionalFrames frameCount=" + _local_1) + " m_imagesNeeded=") + this.m_imagesNeeded));
 		if (this.m_imagesNeeded <= 0) {
 			return;
 		}
-		;
+
 		var _local_2:int = 1;
 		while (_local_2 < _local_1) {
 			this.m_imageLoaders[_local_2] = new MenuImageLoader();
@@ -188,7 +188,7 @@ public class MenuFrameBackgroundImage extends Sprite {
 			this.m_imageLoaders[_local_2].loadImage(this.m_currentData.m_imgResourceIds[_local_2], this.loadImageSuccess, this.loadImageFailed);
 			_local_2++;
 		}
-		;
+
 	}
 
 	private function loadImageSuccess():void {
@@ -197,7 +197,7 @@ public class MenuFrameBackgroundImage extends Sprite {
 		if (this.m_imagesNeeded <= 0) {
 			this.prepareFrames();
 		}
-		;
+
 	}
 
 	private function loadImageFailed():void {
@@ -217,7 +217,7 @@ public class MenuFrameBackgroundImage extends Sprite {
 			this.m_imageLoaders[_local_1] = null;
 			_local_1++;
 		}
-		;
+
 		this.m_activeFrame = 0;
 		this.triggerFrameAnimation();
 	}
@@ -243,11 +243,11 @@ public class MenuFrameBackgroundImage extends Sprite {
 					Animate.to(this.m_bgImages[_local_2].m_bitmap, _local_3, 0, {"alpha": 0}, Animate.ExpoOut);
 					Animate.delay(this.m_bgImages[_local_2].m_bitmap, _local_4, this.triggerFrameAnimation);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function randomNumber(_arg_1:Number, _arg_2:Number):Number {
@@ -276,7 +276,7 @@ public class MenuFrameBackgroundImage extends Sprite {
 		} else {
 			_local_4 = MenuUtils.getFillAspectScale(_arg_2, _arg_3, (MenuConstants.BaseWidth + (2 * this.m_overflow)), (MenuConstants.BaseHeight + (2 * this.m_overflow)));
 		}
-		;
+
 		_arg_1.scaleX = _local_4;
 		_arg_1.scaleY = _local_4;
 		var _local_5:Number = (_arg_2 * _local_4);
@@ -308,7 +308,7 @@ class BackgroundImageData {
 	public static const FRAME_MODE_SLOWBLEND:String = "slowblend";
 	public static const FRAME_MODE_DEFAULT:String = FRAME_MODE_NONE;//"none"
 
-	public var m_imgResourceIds:Array = new Array();
+	public var m_imgResourceIds:Array = [];
 	public var m_scaleFull:Boolean = true;
 	public var m_offsetX:int = 0;
 	public var m_offsetY:int = 0;
@@ -320,16 +320,16 @@ class BackgroundImageData {
 		if (((((!(this.m_imgResourceIds.length == _arg_1.m_imgResourceIds.length)) || (!(this.m_scaleFull == _arg_1.m_scaleFull))) || (!(this.m_offsetX == _arg_1.m_offsetX))) || (!(this.m_offsetY == _arg_1.m_offsetY)))) {
 			return (false);
 		}
-		;
+
 		var _local_2:int;
 		while (_local_2 < this.m_imgResourceIds.length) {
 			if (this.m_imgResourceIds[_local_2] != _arg_1.m_imgResourceIds[_local_2]) {
 				return (false);
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 		return (true);
 	}
 
@@ -342,9 +342,9 @@ class BackgroundImageData {
 			if (_arg_1.image != null) {
 				this.m_imgResourceIds.push(_arg_1.image);
 			}
-			;
+
 		}
-		;
+
 		this.m_scaleFull = ((_arg_1.scaleFull != null) ? _arg_1.scaleFull : true);
 		this.m_offsetX = ((_arg_1.m_offsetX != null) ? _arg_1.m_offsetX : 0);
 		this.m_offsetY = ((_arg_1.m_offsetY != null) ? _arg_1.m_offsetY : 0);
@@ -357,7 +357,7 @@ class BackgroundImageData {
 		if (_arg_1.length > 0) {
 			this.m_imgResourceIds.push(_arg_1);
 		}
-		;
+
 		this.m_scaleFull = _arg_2;
 		this.m_offsetX = _arg_3;
 		this.m_offsetY = _arg_4;
@@ -396,9 +396,9 @@ class BackgroundImage {
 				_arg_1 = this.m_root.parent;
 				_arg_1.removeChild(this.m_root);
 			}
-			;
+
 		}
-		;
+
 	}
 
 

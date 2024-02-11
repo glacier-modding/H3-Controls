@@ -38,7 +38,7 @@ public class VideoLoader extends MovieClip {
 		this.m_video = new Video();
 		this.m_video.attachNetStream(_local_1);
 		addChild(this.m_video);
-		var _local_2:Object = new Object();
+		var _local_2:Object = {};
 		_local_2.onMetaData = this.onMetaData;
 		_local_2.onSubtitle = this.onSubtitles;
 		this.m_netStream.client = _local_2;
@@ -52,11 +52,11 @@ public class VideoLoader extends MovieClip {
 		if (this.m_TrackIndex != -1) {
 			this.m_netStream.subtitleTrack = this.m_TrackIndex;
 		}
-		;
+
 		if (this.m_metadataCallback != null) {
 			this.m_metadataCallback(_arg_1);
 		}
-		;
+
 	}
 
 	public function onSubtitles(_arg_1:String, _arg_2:String = ""):void {
@@ -64,7 +64,7 @@ public class VideoLoader extends MovieClip {
 		if (this.m_subCallback != null) {
 			this.m_subCallback(_arg_1, _arg_2);
 		}
-		;
+
 	}
 
 	public function setSubCallback(_arg_1:Function):void {
@@ -101,7 +101,7 @@ public class VideoLoader extends MovieClip {
 		if (((!(this.m_netStream)) || (!(this.m_netStream.time)))) {
 			return (-1);
 		}
-		;
+
 		return (this.m_netStream.time);
 	}
 
@@ -113,7 +113,7 @@ public class VideoLoader extends MovieClip {
 			Log.info(Log.ChannelVideo, this, "Video Loader netstream resumed");
 			this.m_netStream.resume();
 		}
-		;
+
 	}
 
 	public function setLoop(_arg_1:Boolean):void {
@@ -152,14 +152,14 @@ public class VideoLoader extends MovieClip {
 			this.m_startCallback();
 			this.m_startCallback = null;
 		}
-		;
+
 	}
 
 	private function stopStream():void {
 		if (this.m_clearOnStop) {
 			this.m_video.clear();
 		}
-		;
+
 		this.m_netStream.close();
 		this.m_duration = 0;
 		Log.info(Log.ChannelVideo, this, "Video Loader netstream stop");
@@ -170,7 +170,7 @@ public class VideoLoader extends MovieClip {
 			this.m_stopCallback();
 			this.m_stopCallback = null;
 		}
-		;
+
 	}
 
 	private function netStatusHandler(_arg_1:NetStatusEvent):void {
@@ -183,13 +183,13 @@ public class VideoLoader extends MovieClip {
 				if (this.m_clearOnStop) {
 					this.m_video.clear();
 				}
-				;
+
 				this.sendStop();
 				return;
 			case "NetStream.Play.StreamNotFound":
 				return;
 		}
-		;
+
 	}
 
 	private function onRemoved(_arg_1:Event):void {

@@ -54,7 +54,7 @@ public class ModalScrollingContainer extends Sprite {
 			this.m_listGradientT = new ModalDialogScrollingListGradientView();
 			this.m_listGradientB = new ModalDialogScrollingListGradientView();
 		}
-		;
+
 		this.m_listGradientT.width = (this.m_listGradientB.width = (this.m_listWidth - this.m_scrollBarSafeWidth));
 		this.m_listGradientT.height = (this.m_listGradientB.height = this.m_scrollDist);
 		this.m_listGradientT.y = -1;
@@ -67,7 +67,7 @@ public class ModalScrollingContainer extends Sprite {
 		this.m_scrollBar.visible = false;
 		MenuUtils.setColor(this.m_scrollBar.indicator, MenuConstants.COLOR_RED, true, MenuConstants.MenuElementSelectedAlpha);
 		MenuUtils.setColor(this.m_scrollBar.indicatorbg, MenuConstants.COLOR_MENU_BUTTON_TILE_DESELECTED, true, MenuConstants.MenuElementBackgroundAlpha);
-		this.m_entries = new Array();
+		this.m_entries = [];
 		this.m_currentIndex = 0;
 		this.m_container = new Sprite();
 		addChild(this.m_container);
@@ -84,7 +84,7 @@ public class ModalScrollingContainer extends Sprite {
 		if (this.m_isMouseDragActive) {
 			this.handleDragEnd(new MouseEvent(MouseEvent.MOUSE_UP));
 		}
-		;
+
 		removeEventListener(MouseEvent.MOUSE_DOWN, this.handleMouseDown);
 	}
 
@@ -112,14 +112,14 @@ public class ModalScrollingContainer extends Sprite {
 				_arg_1.y = (this.m_totalHeight + ((_local_7 - _local_6) / 2));
 				this.m_totalHeight = (this.m_totalHeight + _local_7);
 			}
-			;
+
 			_local_8 = (this.m_totalHeight > this.m_visibleArea);
 			this.m_scrollBar.visible = _local_8;
 			this.setScrollPosition(this.getScrollPosition(), false, true);
 			if ((((_local_8) && (this.m_useMask)) && (this.m_mask == null))) {
 				this.createMask();
 			}
-			;
+
 			this.m_clickArea.graphics.clear();
 			this.m_clickArea.graphics.beginFill(113407, 0);
 			this.m_clickArea.graphics.moveTo(0, 0);
@@ -127,7 +127,7 @@ public class ModalScrollingContainer extends Sprite {
 			this.m_clickArea.graphics.lineTo(this.m_listWidth, this.m_totalHeight);
 			this.m_clickArea.graphics.lineTo(0, this.m_totalHeight);
 		}
-		;
+
 	}
 
 	public function setEntrySelected(_arg_1:int, _arg_2:Boolean):void {
@@ -143,12 +143,12 @@ public class ModalScrollingContainer extends Sprite {
 				if (_local_4 < (((_local_3.y + _local_3.height) + this.margin) - this.m_visibleArea)) {
 					_local_4 = (((_local_3.y + _local_3.height) + this.margin) - this.m_visibleArea);
 				}
-				;
+
 			}
-			;
+
 			this.setScrollPosition(_local_4, true, true);
 		}
-		;
+
 	}
 
 	public function onEntryPressed(_arg_1:int, _arg_2:Boolean = false):void {
@@ -168,7 +168,7 @@ public class ModalScrollingContainer extends Sprite {
 		if (_local_4 <= 0) {
 			return;
 		}
-		;
+
 		var _local_5:Number = ((_arg_3) ? (this.m_scrollDist / 2) : 0);
 		if (_arg_1 < _local_5) {
 			_arg_1 = 0;
@@ -176,9 +176,9 @@ public class ModalScrollingContainer extends Sprite {
 			if (_arg_1 > (_local_4 - _local_5)) {
 				_arg_1 = _local_4;
 			}
-			;
+
 		}
-		;
+
 		this.showListGradientTop((_arg_1 > 5));
 		this.showListGradientBottom((_arg_1 < (_local_4 - 5)));
 		if (_arg_2) {
@@ -187,7 +187,7 @@ public class ModalScrollingContainer extends Sprite {
 			Animate.kill(this.m_container);
 			this.m_container.y = -(_arg_1);
 		}
-		;
+
 		this.m_scrollBar.indicatorbg.height = this.m_visibleArea;
 		var _local_6:Number = ((this.m_visibleArea / this.m_totalHeight) * 100);
 		this.m_scrollBar.indicator.height = ((_local_6 * this.m_visibleArea) / 100);
@@ -198,7 +198,7 @@ public class ModalScrollingContainer extends Sprite {
 			Animate.kill(this.m_scrollBar.indicator);
 			this.m_scrollBar.indicator.y = _local_7;
 		}
-		;
+
 		this.updateScrollDargAndClickArea();
 	}
 
@@ -229,10 +229,10 @@ public class ModalScrollingContainer extends Sprite {
 			if (_local_2 != null) {
 				_local_2.antiAliasType = AntiAliasType.ADVANCED;
 			}
-			;
+
 			_local_1++;
 		}
-		;
+
 	}
 
 	private function showListGradientTop(_arg_1:Boolean):void {
@@ -242,7 +242,7 @@ public class ModalScrollingContainer extends Sprite {
 		} else {
 			Animate.legacyTo(this.m_listGradientT, MenuConstants.HiliteTime, {"alpha": 0}, Animate.Linear);
 		}
-		;
+
 	}
 
 	private function showListGradientBottom(_arg_1:Boolean):void {
@@ -252,14 +252,14 @@ public class ModalScrollingContainer extends Sprite {
 		} else {
 			Animate.legacyTo(this.m_listGradientB, MenuConstants.HiliteTime, {"alpha": 0}, Animate.Linear);
 		}
-		;
+
 	}
 
 	private function createMask():void {
 		if (this.m_mask != null) {
 			return;
 		}
-		;
+
 		this.m_mask = new Sprite();
 		addChild(this.m_mask);
 		this.mask = this.m_mask;
@@ -278,7 +278,7 @@ public class ModalScrollingContainer extends Sprite {
 		if (!this.m_scrollBar.visible) {
 			return;
 		}
-		;
+
 		var _local_2:Point = new Point(_arg_1.stageX, _arg_1.stageY);
 		var _local_3:Point = globalToLocal(_local_2);
 		var _local_4:Boolean;
@@ -293,9 +293,9 @@ public class ModalScrollingContainer extends Sprite {
 				this.setScrollPosition((this.getScrollPosition() + _local_6), false, true);
 				return;
 			}
-			;
+
 		}
-		;
+
 		if (_local_4) {
 			this.m_isMouseDragActive = true;
 			stage.addEventListener(MouseEvent.MOUSE_MOVE, this.handleDragMouseMove, true);
@@ -304,7 +304,7 @@ public class ModalScrollingContainer extends Sprite {
 			this.m_mouseDragPos = _local_2;
 			return;
 		}
-		;
+
 	}
 
 	private function handleDragMouseMove(_arg_1:MouseEvent):void {

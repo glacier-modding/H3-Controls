@@ -41,7 +41,7 @@ public class MapReticle extends BaseControl {
 			_local_7.x = ((_local_6.x + (_local_6.width / 2)) + _local_2.mouseX);
 			_local_7.y = ((_local_6.y + (_local_6.height / 2)) + _local_2.mouseY);
 		}
-		;
+
 		var _local_8:int = -1;
 		var _local_9:Number = 0x3B9ACA00;
 		var _local_10:Number = 0x3B9ACA00;
@@ -63,22 +63,22 @@ public class MapReticle extends BaseControl {
 							_local_11 = (this.m_view.finder.x - (_local_15.x + (_local_15.width / 2)));
 							_local_12 = (this.m_view.finder.y - (_local_15.y + (_local_15.height / 2)));
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			_local_13++;
 		}
-		;
+
 		if (_local_8 == -1) {
 			if (this.m_found) {
 				this.m_view.finder.gotoAndStop(1);
 				this.m_found = false;
 			}
-			;
+
 			if (((_local_4) && (_arg_1.isMapHandlingInput))) {
 				this.m_view.finder.x = (this.m_view.finder.x + this.m_view.finder.mouseX);
 				this.m_view.finder.y = (this.m_view.finder.y + this.m_view.finder.mouseY);
@@ -86,13 +86,13 @@ public class MapReticle extends BaseControl {
 				this.m_view.finder.x = (this.m_view.finder.x - (this.m_view.finder.x / 5));
 				this.m_view.finder.y = (this.m_view.finder.y - (this.m_view.finder.y / 5));
 			}
-			;
+
 		} else {
 			if (!this.m_found) {
 				this.m_view.finder.gotoAndPlay(2);
 				this.m_found = true;
 			}
-			;
+
 			if (_local_4) {
 				this.m_view.finder.x = (this.m_view.finder.x - _local_11);
 				this.m_view.finder.y = (this.m_view.finder.y - _local_12);
@@ -100,9 +100,9 @@ public class MapReticle extends BaseControl {
 				this.m_view.finder.x = (this.m_view.finder.x - (_local_11 / 3));
 				this.m_view.finder.y = (this.m_view.finder.y - (_local_12 / 3));
 			}
-			;
+
 		}
-		;
+
 		if (_local_4) {
 			this.m_view.finder.visible = ((this.m_found) || (!(_local_5)));
 			this.m_view.reticle.visible = (!(_local_5));
@@ -110,7 +110,7 @@ public class MapReticle extends BaseControl {
 			this.m_view.finder.visible = true;
 			this.m_view.reticle.visible = true;
 		}
-		;
+
 		return (_local_8);
 	}
 

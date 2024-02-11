@@ -241,7 +241,7 @@ public class Layout extends Sprite { // Layout extends Sprite so that it can be 
 			// Cache a reference to the relativeToH Sprite, if valid.
 			var relativeH:String = ld.relativeToH;
 			var relHObject:Sprite = (relativeH != null) ? _parent.getChildByName(relativeH) as Sprite : null;
-			;
+
 
 			// Cache a reference to the relativeToV Sprite, if valid.
 			var relativeV:String = ld.relativeToV;
@@ -525,7 +525,7 @@ public class Layout extends Sprite { // Layout extends Sprite so that it can be 
 		// Cache a reference to the relativeToH Sprite, if valid.
 		var relativeH:String = ld.relativeToH;
 		var relHObject:Sprite = (relativeH != null) ? _parent.getChildByName(relativeH) as Sprite : null;
-		;
+
 
 		// Cache a reference to the relativeToV Sprite, if valid.
 		var relativeV:String = ld.relativeToV;

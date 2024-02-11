@@ -23,7 +23,7 @@ public class BaseControl extends Sprite {
 		if (_local_1) {
 			addEventListener(Event.ENTER_FRAME, this.onEnterFrameHandler);
 		}
-		;
+
 	}
 
 	public function onEnterFrameHandler():void {
@@ -31,7 +31,7 @@ public class BaseControl extends Sprite {
 		if (((((!(this.m_bounds.x == _local_1.x)) || (!(this.m_bounds.y == _local_1.y))) || (!(this.m_bounds.width == _local_1.width))) || (!(this.m_bounds.height == _local_1.height)))) {
 			this.m_bounds = _local_1;
 		}
-		;
+
 	}
 
 	public function onAttached():void {
@@ -50,17 +50,17 @@ public class BaseControl extends Sprite {
 			BaseControlEditorDebug.unsetSelectionWidget(this.m_editorSelectionWidget);
 			this.m_editorSelectionWidget = null;
 		}
-		;
+
 		if (this.m_editorSelectionArrowWidget != null) {
 			BaseControlEditorDebug.unsetSelectionArrowWidget(this.m_editorSelectionArrowWidget);
 			this.m_editorSelectionArrowWidget = null;
 		}
-		;
+
 		if (_arg_1) {
 			this.m_editorSelectionWidget = BaseControlEditorDebug.setSelectionWidget(this, _arg_2, _arg_3, _arg_4, _arg_5, _arg_6, _arg_7);
 			this.m_editorSelectionArrowWidget = BaseControlEditorDebug.setSelectionArrowWidget(this, _arg_2, _arg_3, _arg_4, _arg_5, _arg_6, _arg_7);
 		}
-		;
+
 	}
 
 	public function onEditorContainerSelected(_arg_1:Boolean, _arg_2:Number, _arg_3:Number, _arg_4:Number, _arg_5:Number, _arg_6:Number, _arg_7:Number):void {
@@ -68,11 +68,11 @@ public class BaseControl extends Sprite {
 			BaseControlEditorDebug.unsetContainerWidget(this.m_editorContainerWidget);
 			this.m_editorContainerWidget = null;
 		}
-		;
+
 		if (_arg_1) {
 			this.m_editorContainerWidget = BaseControlEditorDebug.setContainerWidget(this, _arg_2, _arg_3, _arg_4, _arg_5, _arg_6, _arg_7);
 		}
-		;
+
 	}
 
 	public function clearMatrix3D():void {
@@ -105,28 +105,28 @@ public class BaseControl extends Sprite {
 		if (this.CallEntity != null) {
 			this.CallEntity(1, (_arg_1 as String));
 		}
-		;
+
 	}
 
 	protected function sendEventWithValue(_arg_1:String, _arg_2:*):void {
 		if (this.CallEntity != null) {
 			this.CallEntity(2, _arg_1, _arg_2);
 		}
-		;
+
 	}
 
 	protected function sendEvent(_arg_1:String):void {
 		if (this.CallEntity != null) {
 			this.CallEntity(2, _arg_1);
 		}
-		;
+
 	}
 
 	protected function getProperty(_arg_1:String):* {
 		if (this.CallEntity != null) {
 			return (this.CallEntity(3, _arg_1));
 		}
-		;
+
 		return (null);
 	}
 
@@ -134,7 +134,7 @@ public class BaseControl extends Sprite {
 		if (this.CallEntity != null) {
 			this.CallEntity(4, _arg_1.x, _arg_1.y, _arg_1.width, _arg_1.height);
 		}
-		;
+
 	}
 
 

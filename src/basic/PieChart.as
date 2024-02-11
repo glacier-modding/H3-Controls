@@ -28,7 +28,7 @@ public class PieChart extends Sprite {
 		if (Math.abs(_arg_3) > 360) {
 			_arg_3 = 360;
 		}
-		;
+
 		_local_9 = Math.ceil((Math.abs(_arg_3) / 45));
 		_local_6 = (_arg_3 / _local_9);
 		_local_6 = ((_local_6 / 180) * this.PI);
@@ -47,7 +47,7 @@ public class PieChart extends Sprite {
 			_arg_1.graphics.curveTo(_local_14, _local_15, _local_12, _local_13);
 			_local_16++;
 		}
-		;
+
 		_arg_1.graphics.lineTo(0, 0);
 		_arg_1.graphics.endFill();
 	}

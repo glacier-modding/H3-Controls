@@ -75,33 +75,33 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 		if (this.m_firstTimeOnly) {
 			this.m_titleWidthMAX = (this.m_view.tileDarkBg.width - (this.m_edgePadding * 2));
 		}
-		;
+
 		if (_arg_1.toggle) {
 			this.m_optionType = this.OPTION_TOGGLE;
 			if (this.m_firstTimeOnly) {
 				this.m_view.optionsIndicator.gotoAndStop("Toggle");
 			}
-			;
+
 			_local_3 = ((_arg_1.oldTechUpdate != null) ? _arg_1.oldTechUpdate : false);
 			_local_4 = ((_arg_1.value == true) || (_arg_1.value == 1));
 			if (_arg_1.invertToggle === true) {
 				_local_4 = (!(_local_4));
 			}
-			;
+
 			if (_local_4) {
 				if (_local_3) {
 					_arg_1.displayValue = String((("[" + Localization.get("UI_AID_VALUE_ON")) + "]"));
 				}
-				;
+
 				this.m_view.optionsIndicator.toggleIndicator.gotoAndStop(2);
 			} else {
 				if (_local_3) {
 					_arg_1.displayValue = String((("[" + Localization.get("UI_AID_VALUE_OFF")) + "]"));
 				}
-				;
+
 				this.m_view.optionsIndicator.toggleIndicator.gotoAndStop(1);
 			}
-			;
+
 		} else {
 			if (_arg_1.slider) {
 				this.m_optionType = this.OPTION_SLIDER;
@@ -109,7 +109,7 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 				if (this.m_firstTimeOnly) {
 					this.m_view.optionsIndicator.gotoAndStop("Slider");
 				}
-				;
+
 				if (((this.m_sliderRange == null) || (this.m_sliderClickRange == null))) {
 					_local_6 = this.m_view.optionsIndicator.slideIndicator.getBounds(this.m_view);
 					this.m_sliderRange = new Rectangle(_local_6.x, _local_6.y, MenuConstants.OptionsListElementSliderWidth, MenuConstants.OptionsListElementSliderHeight);
@@ -117,7 +117,7 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 					this.m_sliderClickRange = this.m_sliderRange.clone();
 					this.m_sliderClickRange.inflate(20, 20);
 				}
-				;
+
 				_local_5 = _arg_1.value;
 				if (_arg_1.sliderconfig) {
 					_arg_1.propertyValue = _arg_1.displayValue;
@@ -126,7 +126,7 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 					_local_5 = (((_arg_1.propertyValue - _local_7) / (_local_8 - _local_7)) * 100);
 					_arg_1.value = _local_5;
 				}
-				;
+
 				this.m_view.optionsIndicator.slideIndicator.gotoAndStop(_local_5);
 				if (_arg_1.formattedValue != undefined) {
 					_arg_1.displayValue = (("[" + String(_arg_1.formattedValue).toUpperCase()) + "]");
@@ -136,17 +136,17 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 					} else {
 						_arg_1.displayValue = String((("[" + MenuUtils.formatNumber(Number(_arg_1.propertyValue), true, 2)) + "]"));
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (this.m_firstTimeOnly) {
 			this.setupTextField(this.m_view.title, _arg_1.title);
 		}
-		;
+
 		this.setupTextField(this.m_view.value, _arg_1.displayValue);
 		this.setTextfieldWidths();
 		this.m_isTextScrollingEnabled = ((_arg_1.force_scroll) ? true : false);
@@ -164,16 +164,16 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 				MenuUtils.addDropShadowFilter(this.m_view.value);
 				this.m_view.tileSelect.alpha = 0;
 			}
-			;
+
 			this.m_view.optionsIndicator.alpha = 0.25;
 			if (this.m_isTextScrollingEnabled) {
 				this.callTextTicker(true);
 			}
-			;
+
 		} else {
 			this.m_view.optionsIndicator.alpha = 1;
 		}
-		;
+
 		this.m_firstTimeOnly = false;
 	}
 
@@ -183,11 +183,11 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 		if (_arg_1 == this.m_view.title) {
 			this.m_textTickerUtilTitle.addTextTicker(this.m_view.title, this.m_view.title.htmlText);
 		}
-		;
+
 		if (_arg_1 == this.m_view.value) {
 			this.m_textTickerUtilValue.addTextTicker(this.m_view.value, this.m_view.value.htmlText);
 		}
-		;
+
 		MenuUtils.truncateTextfield(_arg_1, 1, null, CommonUtils.changeFontToGlobalIfNeeded(_arg_1));
 	}
 
@@ -217,7 +217,7 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 			default:
 				trace(((("unhandled case in " + this) + " setTextfieldWidths() : ") + this.m_optionType));
 		}
-		;
+
 		this.m_view.title.width = _local_1;
 		this.m_view.value.width = _local_2;
 		this.m_view.value.x = ((this.m_view.tileDarkBg.width - this.m_view.value.width) - this.m_edgePadding);
@@ -238,16 +238,16 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 			if (((!(this.getData().direction == "horizontal")) && (!(this.getData().direction == "horizontalWrap")))) {
 				_arg_1.x = 32;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function setItemHover(_arg_1:Boolean):void {
 		if (((m_isSelected) || (m_isGroupSelected))) {
 			return;
 		}
-		;
+
 		var _local_2:int = ((_arg_1) ? this.STATE_HOVER : this.STATE_DEFAULT);
 		this.setSelectedAnimationState(_local_2);
 	}
@@ -260,9 +260,9 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 			if (m_isGroupSelected) {
 				_local_1 = this.STATE_GROUP_SELECTED;
 			}
-			;
+
 		}
-		;
+
 		this.setSelectedAnimationState(_local_1);
 	}
 
@@ -270,12 +270,12 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (this.m_selectable == false) {
 			this.callTextTicker(false);
 			return;
 		}
-		;
+
 		if (_arg_1 == this.STATE_SELECTED) {
 			if (this.m_pressable) {
 				this.changeTextColor(MenuConstants.COLOR_WHITE);
@@ -284,7 +284,7 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 				this.changeTextColor(MenuConstants.COLOR_GREY);
 				MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 			}
-			;
+
 			MenuUtils.removeDropShadowFilter(this.m_view.title);
 			MenuUtils.removeDropShadowFilter(this.m_view.value);
 			this.callTextTicker(true);
@@ -296,7 +296,7 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 				} else {
 					MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_SOLID_BACKGROUND, true, 0);
 				}
-				;
+
 				MenuUtils.removeDropShadowFilter(this.m_view.title);
 				MenuUtils.removeDropShadowFilter(this.m_view.value);
 				this.callTextTicker(true);
@@ -309,7 +309,7 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 						this.changeTextColor(MenuConstants.COLOR_GREY);
 						MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 					}
-					;
+
 					MenuUtils.removeDropShadowFilter(this.m_view.title);
 					MenuUtils.removeDropShadowFilter(this.m_view.value);
 					this.callTextTicker(true);
@@ -319,7 +319,7 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 					} else {
 						this.changeTextColor(MenuConstants.COLOR_GREY);
 					}
-					;
+
 					if (this.m_solidStyle) {
 						MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_SOLID_BACKGROUND, false);
 						MenuUtils.removeDropShadowFilter(this.m_view.title);
@@ -330,14 +330,14 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 						MenuUtils.addDropShadowFilter(this.m_view.value);
 						this.m_view.tileSelect.alpha = 0;
 					}
-					;
+
 					this.callTextTicker(false);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -350,7 +350,7 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	override public function handleMouseDown(_arg_1:Function, _arg_2:MouseEvent):void {
@@ -364,9 +364,9 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 					_local_5 = (this["_nodedata"]["id"] as int);
 					(_arg_1("onElementClick", _local_5));
 				}
-				;
+
 			}
-			;
+
 			_local_3 = new Point(_arg_2.stageX, _arg_2.stageY);
 			_local_4 = this.m_view.globalToLocal(_local_3);
 			if (this.m_sliderClickRange.containsPoint(_local_4)) {
@@ -376,9 +376,9 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 				this.setMouseDragActive(true);
 				return;
 			}
-			;
+
 		}
-		;
+
 		super.handleMouseDown(_arg_1, _arg_2);
 	}
 
@@ -386,7 +386,7 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 		if (!this.m_sliderDragActive) {
 			return;
 		}
-		;
+
 		_arg_1.stopImmediatePropagation();
 		var _local_2:Point = new Point(_arg_1.stageX, _arg_1.stageY);
 		var _local_3:Point = this.m_view.globalToLocal(_local_2);
@@ -409,12 +409,12 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 		if (this.m_selectable) {
 			if (this["_nodedata"]) {
 				_local_3 = (this["_nodedata"]["id"] as int);
-				_local_4 = new Array(_local_3, false);
+				_local_4 = [_local_3, false];
 				(_arg_1("onElementHover", _local_4));
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function handleMouseOver(_arg_1:Function, _arg_2:MouseEvent):void {
@@ -422,7 +422,7 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 			_arg_2.stopImmediatePropagation();
 			return;
 		}
-		;
+
 		super.handleMouseOver(_arg_1, _arg_2);
 	}
 
@@ -437,14 +437,14 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 		if (this.m_sliderDragActive == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_sliderDragActive = _arg_1;
 		if (this.m_sliderDragActive) {
 			addEventListener(MouseEvent.MOUSE_MOVE, this.handleMouseMove, false, 0, false);
 		} else {
 			removeEventListener(MouseEvent.MOUSE_MOVE, this.handleMouseMove, false);
 		}
-		;
+
 	}
 
 	private function sendDragValueToEngine(_arg_1:Function, _arg_2:Number):void {
@@ -452,10 +452,10 @@ public dynamic class OptionsListElementBase extends CollapsableListContainer {
 		var _local_3:int;
 		if (this["_nodedata"]) {
 			_local_3 = (this["_nodedata"]["id"] as int);
-			_local_4 = new Array(_local_3, _arg_2);
+			_local_4 = [_local_3, _arg_2];
 			(_arg_1("onPreferenceSetValue", _local_4));
 		}
-		;
+
 	}
 
 

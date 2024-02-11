@@ -58,30 +58,30 @@ public dynamic class ItemTileTall extends MenuElementTileBase {
 			if (!this.m_countDownTimer) {
 				this.m_countDownTimer = new CountDownTimer();
 			}
-			;
+
 			if (this.m_countDownTimer.validateTimeStamp(_arg_1.playableSince)) {
 				this.m_playableSince = _arg_1.playableSince;
 				this.m_timed = true;
 			} else {
 				this.m_countDownTimer = null;
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.playableUntil) {
 			if (!this.m_countDownTimer) {
 				this.m_countDownTimer = new CountDownTimer();
 			}
-			;
+
 			if (this.m_countDownTimer.validateTimeStamp(_arg_1.playableUntil)) {
 				this.m_playableUntil = _arg_1.playableUntil;
 				this.m_timed = true;
 			} else {
 				this.m_countDownTimer = null;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_playableSince) {
 			this.m_locked = true;
 			this.m_lockedIndicator = new LockedIndicatorView();
@@ -91,13 +91,13 @@ public dynamic class ItemTileTall extends MenuElementTileBase {
 			if (this.m_playableUntil) {
 				this.showTimer(this.m_playableUntil, Localization.get("UI_DIALOG_TARGET_ESCAPES"));
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.image) {
 			this.loadImage(_arg_1.image);
 		}
-		;
+
 	}
 
 	override public function getView():Sprite {
@@ -117,14 +117,14 @@ public dynamic class ItemTileTall extends MenuElementTileBase {
 		if (!this.m_textTicker) {
 			this.m_textTicker = new textTicker();
 		}
-		;
+
 		if (_arg_1) {
 			this.m_textTicker.startTextTicker(this.m_view.title, this.m_textObj.title);
 		} else {
 			this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 			MenuUtils.truncateTextfield(this.m_view.title, 1, MenuConstants.FontColorWhite);
 		}
-		;
+
 	}
 
 	private function changeTextColor(_arg_1:uint, _arg_2:uint):void {
@@ -143,7 +143,7 @@ public dynamic class ItemTileTall extends MenuElementTileBase {
 			this.m_view.image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new MenuImageLoader(ControlsMain.isVrModeActive());
 		this.m_view.image.addChild(this.m_loader);
 		this.m_loader.center = true;
@@ -156,7 +156,7 @@ public dynamic class ItemTileTall extends MenuElementTileBase {
 				m_view.image.width = MenuConstants.MenuTileTallWidth;
 				m_view.image.scaleY = m_view.image.scaleX;
 			}
-			;
+
 		});
 	}
 
@@ -164,13 +164,13 @@ public dynamic class ItemTileTall extends MenuElementTileBase {
 		if (!this.m_countDownTimer) {
 			this.m_countDownTimer = new CountDownTimer();
 		}
-		;
+
 		if (!this.m_timeindicator) {
 			this.m_timeindicator = new TimeIndicatorSmallView();
 			this.m_timeindicator.y = (this.m_view.tileBg.height - MenuConstants.ValueIndicatorYOffset);
 			addChild(this.m_timeindicator);
 		}
-		;
+
 		MenuUtils.setupText(this.m_timeindicator.header, _arg_2, 18, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 		MenuUtils.truncateTextfield(this.m_timeindicator.header, 1, MenuConstants.FontColorWhite);
 		this.m_countDownTimer.startCountDown(this.m_timeindicator.title, _arg_1, this);
@@ -184,12 +184,12 @@ public dynamic class ItemTileTall extends MenuElementTileBase {
 			if (this.m_playableUntil) {
 				this.showTimer(this.m_playableUntil, Localization.get("UI_DIALOG_TARGET_ESCAPES"));
 			}
-			;
+
 		} else {
 			this.m_timed = false;
 			removeChild(this.m_timeindicator);
 		}
-		;
+
 	}
 
 	override protected function handleSelectionChange():void {
@@ -197,7 +197,7 @@ public dynamic class ItemTileTall extends MenuElementTileBase {
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (m_isSelected) {
 			setPopOutScale(this.m_view, true);
 			Animate.to(this.m_view.dropShadow, 0.3, 0, {"alpha": 1}, Animate.ExpoOut);
@@ -205,7 +205,7 @@ public dynamic class ItemTileTall extends MenuElementTileBase {
 				MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_RED, true, MenuConstants.MenuElementSelectedAlpha);
 				MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_RED, false, true, MenuConstants.COLOR_WHITE, 1, 0, true);
 			}
-			;
+
 		} else {
 			setPopOutScale(this.m_view, false);
 			Animate.kill(this.m_view.dropShadow);
@@ -214,9 +214,9 @@ public dynamic class ItemTileTall extends MenuElementTileBase {
 				MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 				MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_WHITE, true, false);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -226,32 +226,32 @@ public dynamic class ItemTileTall extends MenuElementTileBase {
 				this.m_countDownTimer.stopCountDown();
 				this.m_countDownTimer = null;
 			}
-			;
+
 			if (this.m_loader != null) {
 				this.m_loader.cancelIfLoading();
 				this.m_view.image.removeChild(this.m_loader);
 				this.m_loader = null;
 			}
-			;
+
 			if (this.m_timeindicator) {
 				removeChild(this.m_timeindicator);
 				this.m_timeindicator = null;
 			}
-			;
+
 			if (this.m_lockedIndicator) {
 				removeChild(this.m_lockedIndicator);
 				this.m_lockedIndicator = null;
 			}
-			;
+
 			if (this.m_textTicker) {
 				this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 				this.m_textTicker = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 

@@ -13,7 +13,7 @@ import scaleform.gfx.Extensions;
 public class AttentionIndicator extends BaseControl {
 
 	private var m_hContainer:Sprite = new Sprite();
-	private var m_aWedges:Array = new Array();
+	private var m_aWedges:Array = [];
 	private var i:int;
 
 	public function AttentionIndicator() {
@@ -33,7 +33,7 @@ public class AttentionIndicator extends BaseControl {
 			this.m_aWedges.push(_local_2);
 			this.m_hContainer.addChild(_local_2);
 		}
-		;
+
 	}
 
 	override public function onSetSize(_arg_1:Number, _arg_2:Number):void {
@@ -41,7 +41,7 @@ public class AttentionIndicator extends BaseControl {
 		if (!ControlsMain.isVrModeActive()) {
 			_local_3 = (Extensions.visibleRect.height / 1080);
 		}
-		;
+
 		this.m_hContainer.scaleX = (this.m_hContainer.scaleY = _local_3);
 	}
 

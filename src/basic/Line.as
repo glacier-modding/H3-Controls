@@ -20,7 +20,7 @@ public class Line extends BaseControl {
 		if (this.m_isHorizontal == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_isHorizontal = _arg_1;
 		this.drawLine();
 	}
@@ -29,7 +29,7 @@ public class Line extends BaseControl {
 		if (this.m_isDotted == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_isDotted = _arg_1;
 		this.drawLine();
 	}
@@ -40,11 +40,11 @@ public class Line extends BaseControl {
 			if (this.m_color == _local_2) {
 				return;
 			}
-			;
+
 			this.m_color = _local_2;
 			this.drawLine();
 		}
-		;
+
 	}
 
 	override public function onSetSize(_arg_1:Number, _arg_2:Number):void {
@@ -57,13 +57,13 @@ public class Line extends BaseControl {
 		if (this.m_view != null) {
 			removeChild(this.m_view);
 		}
-		;
+
 		if (this.m_isDotted) {
 			this.m_view = new DottedLine(((this.m_isHorizontal) ? this.m_sizeX : this.m_sizeY), this.m_color, ((this.m_isHorizontal) ? "horizontal" : "vertical"), ((this.m_isHorizontal) ? this.m_sizeY : this.m_sizeX), ((this.m_isHorizontal) ? this.m_sizeY : this.m_sizeX));
 		} else {
 			this.m_view = new SolidLine(((this.m_isHorizontal) ? this.m_sizeX : this.m_sizeY), this.m_color, ((this.m_isHorizontal) ? this.m_sizeY : this.m_sizeX), ((this.m_isHorizontal) ? "horizontal" : "vertical"));
 		}
-		;
+
 		addChild(this.m_view);
 	}
 

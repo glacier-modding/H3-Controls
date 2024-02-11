@@ -22,7 +22,7 @@ public dynamic class ItemHeadlineElement extends MenuElementBase {
 	private static const PADDING:Number = 7;
 
 	private var m_view:ItemHeadlineElementView;
-	private var m_textObj:Object = new Object();
+	private var m_textObj:Object = {};
 	private var m_textTicker:textTicker;
 	private var m_perkElements:Array = [];
 	private var m_evergreenRarityLabel:DisplayObject;
@@ -39,12 +39,12 @@ public dynamic class ItemHeadlineElement extends MenuElementBase {
 		if (_local_2 == null) {
 			_local_2 = _arg_1.icon;
 		}
-		;
+
 		if (_local_2 != null) {
 			this.m_view.typeIcon.visible = true;
 			MenuUtils.setupIcon(this.m_view.typeIcon, _local_2, MenuConstants.COLOR_GREY_ULTRA_DARK, false, true, MenuConstants.COLOR_WHITE, 1, 0, true);
 		}
-		;
+
 		this.m_view.rarityIcon.visible = false;
 		addChild(this.m_view);
 	}
@@ -53,19 +53,19 @@ public dynamic class ItemHeadlineElement extends MenuElementBase {
 		if (((_arg_1.typeicon) || (_arg_1.icon))) {
 			this.m_view.typeIcon.visible = true;
 		}
-		;
+
 		var _local_2:Number = (this.m_view.rarityIcon.x - (this.m_view.rarityIcon.width / 2));
 		var _local_3:Number = this.m_view.rarityIcon.y;
 		var _local_4:Array = _arg_1.perks;
 		if (((_local_4 == null) || (_local_4[0] == "NONE"))) {
 			_local_4 = [];
 		}
-		;
+
 		if (_arg_1.currentContractType == "evergreen") {
 			if (_arg_1.evergreenCapacityCost > 0) {
 				_local_4.unshift(("evergreen_gearcost_" + _arg_1.evergreenCapacityCost.toString()));
 			}
-			;
+
 			if (((!(_arg_1.evergreenRarity == null)) && (EvergreenUtils.isValidRarityLabel(_arg_1.evergreenRarity)))) {
 				this.m_evergreenRarityLabel = EvergreenUtils.createRarityLabel(_arg_1.evergreenRarity);
 				this.m_evergreenRarityLabel.height = 30;
@@ -75,9 +75,9 @@ public dynamic class ItemHeadlineElement extends MenuElementBase {
 				this.m_view.addChild(this.m_evergreenRarityLabel);
 				_local_2 = (_local_2 + (this.m_evergreenRarityLabel.width + PADDING));
 			}
-			;
+
 		}
-		;
+
 		_local_2 = this.setupPerks(_local_2, _local_3, _local_4);
 		this.setupTextFields(_arg_1.header, _arg_1.title);
 	}
@@ -98,7 +98,7 @@ public dynamic class ItemHeadlineElement extends MenuElementBase {
 			this.m_view.addChild(_local_5);
 			_local_6++;
 		}
-		;
+
 		return (_arg_1);
 	}
 
@@ -116,14 +116,14 @@ public dynamic class ItemHeadlineElement extends MenuElementBase {
 		if (!this.m_textTicker) {
 			this.m_textTicker = new textTicker();
 		}
-		;
+
 		if (_arg_1) {
 			this.m_textTicker.startTextTickerHtml(this.m_view.title, this.m_textObj.title);
 		} else {
 			this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 			MenuUtils.truncateTextfield(this.m_view.title, 1, null);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -133,12 +133,12 @@ public dynamic class ItemHeadlineElement extends MenuElementBase {
 				this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 				this.m_textTicker = null;
 			}
-			;
+
 			if (this.m_evergreenRarityLabel != null) {
 				this.m_view.removeChild(this.m_evergreenRarityLabel);
 				this.m_evergreenRarityLabel = null;
 			}
-			;
+
 			if (this.m_perkElements.length > 0) {
 				_local_1 = 0;
 				while (_local_1 < this.m_perkElements.length) {
@@ -146,14 +146,14 @@ public dynamic class ItemHeadlineElement extends MenuElementBase {
 					this.m_perkElements[_local_1] = null;
 					_local_1++;
 				}
-				;
+
 				this.m_perkElements = [];
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

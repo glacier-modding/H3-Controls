@@ -55,9 +55,9 @@ public class VersusScoreElement extends BaseControl {
 							MenuUtils.setupText(this.m_playerScoreElement.nameLabel, _local_2[_local_3].playername, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 							this.m_playerScoreElement.nameLabel.autoSize = TextFieldAutoSize.RIGHT;
 						}
-						;
+
 					}
-					;
+
 					this.updatePlayerScore(_local_2[_local_3].score);
 				} else {
 					this.m_opponentScoreElement.visible = true;
@@ -66,26 +66,26 @@ public class VersusScoreElement extends BaseControl {
 							MenuUtils.setupText(this.m_opponentScoreElement.nameLabel, _local_2[_local_3].playername, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 							this.m_opponentScoreElement.nameLabel.autoSize = TextFieldAutoSize.LEFT;
 						}
-						;
+
 					}
-					;
+
 					this.updateOpponentScore(_local_2[_local_3].score);
 				}
-				;
+
 				_local_3++;
 			}
-			;
+
 			_local_4 = ((this.m_playerScoreElement.nameLabel.width >= this.m_opponentScoreElement.nameLabel.width) ? this.m_playerScoreElement.nameLabel.width : this.m_opponentScoreElement.nameLabel.width);
 			this.m_playerScoreElement.bgMc.width = (this.m_opponentScoreElement.bgMc.width = (100 + _local_4));
 		}
-		;
+
 	}
 
 	private function updatePlayerScore(_arg_1:Number):void {
 		if (_arg_1 == this.m_currentPlayerScore) {
 			return;
 		}
-		;
+
 		MenuUtils.setupText(this.m_playerScoreElement.scoreMc.scoreLabel, _arg_1.toString(), 43, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorWhite);
 		if (_arg_1 > 0) {
 			Animate.fromTo(this.m_playerScoreElement.scoreMc, 0.2, 0, {
@@ -96,7 +96,7 @@ public class VersusScoreElement extends BaseControl {
 				"scaleY": 1
 			}, Animate.ExpoOut);
 		}
-		;
+
 		this.m_currentPlayerScore = _arg_1;
 	}
 
@@ -104,7 +104,7 @@ public class VersusScoreElement extends BaseControl {
 		if (_arg_1 == this.m_currentOpponentScore) {
 			return;
 		}
-		;
+
 		MenuUtils.setupText(this.m_opponentScoreElement.scoreMc.scoreLabel, _arg_1.toString(), 43, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorWhite);
 		if (_arg_1 > 0) {
 			Animate.fromTo(this.m_opponentScoreElement.scoreMc, 0.2, 0, {
@@ -115,7 +115,7 @@ public class VersusScoreElement extends BaseControl {
 				"scaleY": 1
 			}, Animate.ExpoOut);
 		}
-		;
+
 		this.m_currentOpponentScore = _arg_1;
 	}
 
@@ -136,14 +136,14 @@ public class VersusScoreElement extends BaseControl {
 				} else {
 					this.m_unnoticedKillElement.update(_local_3);
 				}
-				;
+
 			} else {
 				this.m_unnoticedKillElement.hide();
 				this.m_initPreScoreTimeUpdate = true;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function playSound(_arg_1:String):void {

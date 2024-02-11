@@ -74,7 +74,7 @@ public dynamic class ScrollingCreditsListContainer extends ScrollingListContaine
 			this.m_bChildrenChanged = false;
 			this.collectAllCreditsElements(this, this.m_elements);
 		}
-		;
+
 		var _local_2:int = getTimer();
 		var _local_3:Number = ((_local_2 - this.m_lastFrameTime) * 0.001);
 		this.m_lastFrameTime = _local_2;
@@ -82,15 +82,15 @@ public dynamic class ScrollingCreditsListContainer extends ScrollingListContaine
 		if (this.m_currentScrollSpeed < this.SCROLL_SPEED_RANGE.x) {
 			this.m_currentScrollSpeed = this.SCROLL_SPEED_RANGE.x;
 		}
-		;
+
 		if (this.m_currentScrollSpeed > this.SCROLL_SPEED_RANGE.y) {
 			this.m_currentScrollSpeed = this.SCROLL_SPEED_RANGE.y;
 		}
-		;
+
 		if (((this.m_currentScrollDirection == 0) && (Math.abs(this.m_currentScrollSpeed) < this.SCROLL_SPEED_EPSILON))) {
 			this.m_currentScrollSpeed = 0;
 		}
-		;
+
 		this.m_currentScrollDirection = 0;
 		var _local_4:Sprite = getContainer();
 		this.m_scrollPos = (this.m_scrollPos - (_local_3 * this.m_currentScrollSpeed));
@@ -98,18 +98,18 @@ public dynamic class ScrollingCreditsListContainer extends ScrollingListContaine
 			trace(((this.m_scrollPos + " < ") + -(this.m_height)));
 			this.m_scrollPos = this.m_initialPosition;
 		}
-		;
+
 		if (this.m_scrollPos > this.m_initialPosition) {
 			this.m_scrollPos = -(this.m_height);
 		}
-		;
+
 		var _local_5:Number = (Math.round((this.m_scrollPos * 20)) * 0.05);
 		_local_4.y = (_local_5 + 0.001);
 		if (this.m_counter > 0) {
 			this.m_counter--;
 			return;
 		}
-		;
+
 		this.m_counter = 5;
 		this.detectElementsVisibility();
 	}
@@ -122,32 +122,32 @@ public dynamic class ScrollingCreditsListContainer extends ScrollingListContaine
 				if (this.trySetVisible(this.m_elements[_local_1])) {
 					this.m_visibleElements.push(_local_1);
 				}
-				;
+
 				_local_1++;
 			}
-			;
+
 			return;
 		}
-		;
+
 		_local_1 = ((this.m_visibleElements[0] > 0) ? (this.m_visibleElements[0] - 1) : (this.m_elements.length - 1));
 		if (this.trySetVisible(this.m_elements[_local_1])) {
 			this.m_visibleElements.splice(0, 0, _local_1);
 		}
-		;
+
 		_local_1 = ((this.m_visibleElements[(this.m_visibleElements.length - 1)] < (this.m_elements.length - 1)) ? (this.m_visibleElements[(this.m_visibleElements.length - 1)] + 1) : 0);
 		if (this.trySetVisible(this.m_elements[_local_1])) {
 			this.m_visibleElements.push(_local_1);
 		}
-		;
+
 		_local_1 = (this.m_visibleElements.length - 1);
 		while (_local_1 >= 0) {
 			if (!this.trySetVisible(this.m_elements[this.m_visibleElements[_local_1]])) {
 				this.m_visibleElements.splice(_local_1, 1);
 			}
-			;
+
 			_local_1--;
 		}
-		;
+
 	}
 
 	private function trySetVisible(_arg_1:Credits):Boolean {
@@ -160,7 +160,7 @@ public dynamic class ScrollingCreditsListContainer extends ScrollingListContaine
 		if (_local_7 != _arg_1.visible) {
 			_arg_1.setCreditsVisible(_local_7);
 		}
-		;
+
 		return (_local_7);
 	}
 
@@ -176,7 +176,7 @@ public dynamic class ScrollingCreditsListContainer extends ScrollingListContaine
 		if (this.m_elements.length > 0) {
 			return;
 		}
-		;
+
 		this.m_scrollPos = getContainer().y;
 		this.createClickArea();
 	}
@@ -201,12 +201,12 @@ public dynamic class ScrollingCreditsListContainer extends ScrollingListContaine
 				} else {
 					trace("Non-credits child found in ScrollingCreditsListContainer");
 				}
-				;
+
 			}
-			;
+
 			_local_3++;
 		}
-		;
+
 		recalculateTotalBounds();
 	}
 
@@ -228,7 +228,7 @@ public dynamic class ScrollingCreditsListContainer extends ScrollingListContaine
 		if (_arg_2.delta == 0) {
 			return;
 		}
-		;
+
 		_arg_2.stopImmediatePropagation();
 		var _local_3:int = ((_arg_2.delta > 0) ? -1 : 1);
 		this.onScroll(_local_3);

@@ -65,9 +65,9 @@ public dynamic class ThumbnailPrevNextHandles implements IConfigurableMenuResour
 				this.m_PreviousScope.visible = this.m_pageHasPrevious;
 				this.m_NextScope.visible = this.m_pageHasNext;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function onUnregister():void {
@@ -76,13 +76,13 @@ public dynamic class ThumbnailPrevNextHandles implements IConfigurableMenuResour
 			this.m_thumbnailScrollingList.removeChild(this.m_PreviousScope);
 			this.m_PreviousScope = null;
 		}
-		;
+
 		if (this.m_NextScope != null) {
 			Animate.kill(this.m_NextScope);
 			this.m_thumbnailScrollingList.removeChild(this.m_NextScope);
 			this.m_NextScope = null;
 		}
-		;
+
 	}
 
 	private function setPrevNextIcon(_arg_1:Sprite, _arg_2:String):void {
@@ -91,7 +91,7 @@ public dynamic class ThumbnailPrevNextHandles implements IConfigurableMenuResour
 		if (_local_3.visible) {
 			MenuUtils.setupIcon(_local_3, _arg_2, MenuConstants.COLOR_GREY_MEDIUM, false, true, MenuConstants.COLOR_GREY);
 		}
-		;
+
 	}
 
 	public function onSetFocusAfterChildren(_arg_1:Rectangle, _arg_2:Rectangle, _arg_3:Number):void {
@@ -104,28 +104,28 @@ public dynamic class ThumbnailPrevNextHandles implements IConfigurableMenuResour
 			this.setPrevNextIcon(this.m_PreviousScope, this.m_pagePreviousIcon);
 			this.m_PreviousScope.x = (_local_5 - PreviousNextScopeOffset);
 		}
-		;
+
 		this.m_PreviousScope.visible = _local_6;
 		if (this.m_PreviousScope.visible) {
 			_local_9 = ((_local_5 - PreviousNextScopeOffset) - _arg_1.x);
 			Animate.kill(this.m_PreviousScope);
 			Animate.legacyTo(this.m_PreviousScope, _arg_3, {"x": _local_9}, Animate.ExpoOut);
 		}
-		;
+
 		var _local_7:int = 10;
 		var _local_8:Boolean = (((this.m_pageHasNext) && (_local_4)) && (this.m_thumbnailScrollingList.focusedElementIndex > (this.m_thumbnailScrollingList.m_children.length - _local_7)));
 		if (((_local_8) && (!(this.m_NextScope.visible)))) {
 			this.setPrevNextIcon(this.m_NextScope, this.m_pageNextIcon);
 			this.m_NextScope.x = (((_local_5 + _arg_2.width) + MenuConstants.GridUnitWidth) + PreviousNextScopeOffset);
 		}
-		;
+
 		this.m_NextScope.visible = _local_8;
 		if (this.m_NextScope.visible) {
 			_local_10 = ((((_local_5 + _arg_2.width) + MenuConstants.GridUnitWidth) + PreviousNextScopeOffset) - _arg_1.x);
 			Animate.kill(this.m_NextScope);
 			Animate.legacyTo(this.m_NextScope, _arg_3, {"x": _local_10}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 	public function handleMouseUp(_arg_1:Function, _arg_2:MouseEvent):Boolean {
@@ -139,13 +139,13 @@ public dynamic class ThumbnailPrevNextHandles implements IConfigurableMenuResour
 				if (this.m_thumbnailScrollingList.hasValidContent()) {
 					this.m_thumbnailScrollingList.selectChildWithMouseEvent(0);
 				}
-				;
+
 				this.sendEventWithId(_arg_1, "onElementPrev");
 				return (true);
 			}
-			;
+
 		}
-		;
+
 		if (this.m_NextScope.visible) {
 			_local_5 = this.m_NextScope.getBounds(this.m_thumbnailScrollingList);
 			if (_local_5.containsPoint(_local_4)) {
@@ -153,13 +153,13 @@ public dynamic class ThumbnailPrevNextHandles implements IConfigurableMenuResour
 				if (this.m_thumbnailScrollingList.hasValidContent()) {
 					this.m_thumbnailScrollingList.selectChildWithMouseEvent((this.m_thumbnailScrollingList.m_children.length - 1));
 				}
-				;
+
 				this.sendEventWithId(_arg_1, "onElementNext");
 				return (true);
 			}
-			;
+
 		}
-		;
+
 		return (false);
 	}
 
@@ -169,7 +169,7 @@ public dynamic class ThumbnailPrevNextHandles implements IConfigurableMenuResour
 			_local_3 = (this.m_thumbnailScrollingList["_nodedata"]["id"] as int);
 			(_arg_1(_arg_2, _local_3));
 		}
-		;
+
 	}
 
 

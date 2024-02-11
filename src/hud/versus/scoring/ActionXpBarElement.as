@@ -26,7 +26,7 @@ public class ActionXpBarElement extends NotificationListener {
 		this.m_container = new Sprite();
 		this.m_container.y = (this.m_elementYOffset * 20);
 		addChild(this.m_container);
-		this.m_yposArray = new Array();
+		this.m_yposArray = [];
 	}
 
 	override public function ShowNotification(_arg_1:String, _arg_2:String, _arg_3:Object):void {
@@ -73,7 +73,7 @@ public class ActionXpBarElement extends NotificationListener {
 			default:
 				_local_9 = "common";
 		}
-		;
+
 		var _local_10:int = (this.m_yposArray[(this.m_yposArray.length - 1)] + this.m_elementYOffset);
 		this.m_yposArray.push((_local_10 + ((_arg_3.additionaldescription != null) ? 26 : 0)));
 		_local_4.y = (_local_10 - (this.m_elementYOffset * 20));
@@ -98,7 +98,7 @@ public class ActionXpBarElement extends NotificationListener {
 		if (this.m_yposArray.length >= 2) {
 			Animate.offset(this.m_container, 0.2, 0, {"y": -(this.m_elementYOffset)}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 	private function endAnimation(_arg_1:Object):void {
@@ -115,7 +115,7 @@ public class ActionXpBarElement extends NotificationListener {
 		if (_arg_1.xpgain > 0) {
 			Animate.fromTo(_arg_1.element.value, _local_2, 0, {"intAnimation": "0"}, {"intAnimation": String(_arg_1.xpgain)}, Animate.ExpoOut);
 		}
-		;
+
 		var _local_3:Number = (_arg_1.element.bg.scaleX + 0.6);
 		var _local_4:Number = 0;
 		if (_arg_1.awesomeness == "common") {
@@ -142,17 +142,17 @@ public class ActionXpBarElement extends NotificationListener {
 								this.playSound("ScoreFail");
 								MenuUtils.setTintColor(_arg_1.element.bg, MenuUtils.TINT_COLOR_MAGENTA_DARK, false);
 							}
-							;
+
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (!_arg_1.isRepeated) {
 			_arg_1.element.bg.alpha = _local_4;
 			Animate.to(_arg_1.element.bg, 0.8, 0, {
@@ -160,7 +160,7 @@ public class ActionXpBarElement extends NotificationListener {
 				"alpha": 0
 			}, Animate.ExpoOut);
 		}
-		;
+
 		Animate.offset(_arg_1.element, 0.4, (0.8 + (_arg_1.elementindex * 0.1)), {"y": (_arg_1.elementindex * -(this.m_elementYOffset))}, Animate.ExpoIn, this.finishAnimation, _arg_1.element);
 	}
 
@@ -170,7 +170,7 @@ public class ActionXpBarElement extends NotificationListener {
 		if (this.m_yposArray.length == 0) {
 			this.m_container.y = (this.m_elementYOffset * 20);
 		}
-		;
+
 		this.m_container.removeChild(_arg_1);
 		_arg_1 = null;
 	}

@@ -52,7 +52,7 @@ public dynamic class OptionsInfoWeaponHudPreview extends OptionsInfoPreview {
 			_local_5.align = TextFormatAlign.CENTER;
 			_local_4.setTextFormat(_local_5);
 		}
-		;
+
 		this.m_weaponHolstered.x = 280;
 		this.m_weaponHolstered.y = 335;
 		this.m_weaponEquipped.x = 600;
@@ -81,7 +81,7 @@ public dynamic class OptionsInfoWeaponHudPreview extends OptionsInfoPreview {
 			this.m_weaponHolstered.onSetData(this.makeData(_local_2, true));
 			this.m_weaponEquipped.onSetData(this.makeData(_local_2, false));
 		}
-		;
+
 	}
 
 	private function makeData(_arg_1:Number, _arg_2:Boolean):Object {

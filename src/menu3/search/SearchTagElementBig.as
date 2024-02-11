@@ -44,20 +44,20 @@ public dynamic class SearchTagElementBig extends SearchElementBase {
 		if (((!(_arg_1.titletab01 == null)) || (!(_arg_1.titletab02 == null)))) {
 			_arg_1.title = null;
 		}
-		;
+
 		super.onSetData(_arg_1);
 		if (_arg_1.titletab01 != null) {
 			setupTextField(this.Tab01TextField, _arg_1.titletab01);
 		}
-		;
+
 		if (_arg_1.titletab02 != null) {
 			setupTextField(this.Tab02TextField, _arg_1.titletab02);
 		}
-		;
+
 		if (_arg_1.tabposition != null) {
 			setTabPositionBetweenTextFields(this.Tab01TextField, this.Tab02TextField, _arg_1.tabposition);
 		}
-		;
+
 		this.m_isElementActive = false;
 		if (_arg_1.hasOwnProperty("active")) {
 			this.m_isElementActive = _arg_1.active;
@@ -65,14 +65,14 @@ public dynamic class SearchTagElementBig extends SearchElementBase {
 			if (getNodeProp(this, "pressable") == false) {
 				this.m_isElementActive = true;
 			}
-			;
+
 		}
-		;
+
 		this.m_isElementDisabled = false;
 		if (_arg_1.hasOwnProperty("disabled")) {
 			this.m_isElementDisabled = _arg_1.disabled;
 		}
-		;
+
 		this.updateState();
 	}
 
@@ -97,9 +97,9 @@ public dynamic class SearchTagElementBig extends SearchElementBase {
 			} else {
 				setState(((m_isSelected) ? STATE_SELECT : STATE_NONE));
 			}
-			;
+
 		}
-		;
+
 	}
 
 

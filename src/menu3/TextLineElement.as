@@ -61,29 +61,29 @@ public dynamic class TextLineElement extends MenuElementBase {
 				vars = ((vars) || ({}));
 				vars.x = (this.m_textfieldAnimTargetX = xoffset);
 			}
-			;
+
 			if (yoffset != this.m_textfieldAnimTargetY) {
 				vars = ((vars) || ({}));
 				vars.y = (this.m_textfieldAnimTargetY = yoffset);
 			}
-			;
+
 			if (alpha != this.m_textfieldAnimTargetAlpha) {
 				vars = ((vars) || ({}));
 				vars.alpha = (this.m_textfieldAnimTargetAlpha = alpha);
 			}
-			;
+
 			if (vars) {
 				if (vars.alpha != null) {
 					this.m_textfield.visible = true;
 				}
-				;
+
 				Animate.to(this.m_textfield, 0.2, 0, vars, Animate.Linear, function ():void {
 					m_textfield.visible = (!(m_textfield.alpha == 0));
 				});
 			}
-			;
+
 		}
-		;
+
 		var isTextUpdated:Boolean;
 		var title:String = ((data.title != null) ? data.title : "");
 		var maxtextwidth:Number = ((data.maxtextwidth != null) ? data.maxtextwidth : 250);
@@ -94,27 +94,27 @@ public dynamic class TextLineElement extends MenuElementBase {
 			this.m_title = title;
 			isTextUpdated = true;
 		}
-		;
+
 		if (maxtextwidth != this.m_maxtextwidth) {
 			this.m_maxtextwidth = maxtextwidth;
 			isTextUpdated = true;
 		}
-		;
+
 		if (fontcolor != this.m_fontcolor) {
 			this.m_fontcolor = fontcolor;
 			isTextUpdated = true;
 		}
-		;
+
 		if (fontsize != this.m_fontsize) {
 			this.m_fontsize = fontsize;
 			isTextUpdated = true;
 		}
-		;
+
 		if (fonttype != this.m_fonttype) {
 			this.m_fonttype = fonttype;
 			isTextUpdated = true;
 		}
-		;
+
 		if (isTextUpdated) {
 			this.m_textfield.width = this.m_maxtextwidth;
 			MenuUtils.setupText(this.m_textfield, this.m_title, this.m_fontsize, this.m_fonttype, this.m_fontcolor);
@@ -128,7 +128,7 @@ public dynamic class TextLineElement extends MenuElementBase {
 			this.m_textfield.autoSize = ((isTextTooLong) ? TextFieldAutoSize.NONE : TextFieldAutoSize.LEFT);
 			this.m_textTickerUtil.callTextTicker(true, this.m_textfield.textColor);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -136,7 +136,7 @@ public dynamic class TextLineElement extends MenuElementBase {
 			this.m_textTickerUtil.onUnregister();
 			this.m_textTickerUtil = null;
 		}
-		;
+
 		removeChild(this.m_textfield);
 		this.m_textfield = null;
 		super.onUnregister();

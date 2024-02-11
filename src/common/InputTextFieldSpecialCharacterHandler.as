@@ -37,7 +37,7 @@ public class InputTextFieldSpecialCharacterHandler {
 			this.m_inputTextField.removeEventListener(Event.CHANGE, this.onTextInputChange, false);
 			this.m_inputTextField.removeEventListener(KeyboardEvent.KEY_DOWN, this.onKeyDown, false);
 		}
-		;
+
 	}
 
 	private function onKeyDown(_arg_1:KeyboardEvent):void {
@@ -48,7 +48,7 @@ public class InputTextFieldSpecialCharacterHandler {
 			this.m_previousSelectionBegin = this.m_inputTextField.selectionBeginIndex;
 			this.m_previousSelectionEnd = this.m_inputTextField.selectionEndIndex;
 		}
-		;
+
 	}
 
 	private function onTextInputChange(_arg_1:Event):void {
@@ -61,7 +61,7 @@ public class InputTextFieldSpecialCharacterHandler {
 		if (!this.m_selectAllCharacterInputTriggered) {
 			return;
 		}
-		;
+
 		this.m_selectAllCharacterInputTriggered = false;
 		var _local_1:String = this.m_inputTextField.text;
 		var _local_2:int = (this.m_previousSelectionEnd - this.m_previousSelectionBegin);
@@ -77,7 +77,7 @@ public class InputTextFieldSpecialCharacterHandler {
 			this.m_inputTextField.text = this.m_previousText;
 			this.m_inputTextField.setSelection(this.m_previousSelectionBegin, this.m_previousSelectionBegin);
 		}
-		;
+
 	}
 
 

@@ -34,7 +34,7 @@ public class MissionEndGhostFlare extends Sprite {
 				"speedyInit": _arg_7
 			});
 		}
-		;
+
 	}
 
 	private function pulsateClipInitialIn(_arg_1:Object):void {
@@ -43,7 +43,7 @@ public class MissionEndGhostFlare extends Sprite {
 		} else {
 			Animate.to(_arg_1.clip, ((Math.random() + 1) * _arg_1.speed), 0, {"alpha": 0.4}, Animate.Linear, this.pulsateClipOut, _arg_1);
 		}
-		;
+
 	}
 
 	private function pulsateClipOut(_arg_1:Object):void {
@@ -70,7 +70,7 @@ public class MissionEndGhostFlare extends Sprite {
 		if (_arg_1 == 1) {
 			return (1);
 		}
-		;
+
 		return (_arg_1 + (MenuUtils.getRandomInRange(-20, 20) / 100));
 	}
 

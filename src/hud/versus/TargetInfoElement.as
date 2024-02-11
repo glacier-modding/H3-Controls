@@ -38,12 +38,12 @@ public class TargetInfoElement extends BaseControl {
 			this.resetToInitialState();
 			return;
 		}
-		;
+
 		this.m_headerString = ((_arg_1.isKiller == true) ? Localization.get("UI_HUD_VS_NEXT_TARGET_TIMER") : Localization.get("UI_HUD_VS_KILL_TARGET_TIMER"));
 		if (_arg_1.isDuelStart == true) {
 			this.m_headerString = "";
 		}
-		;
+
 		this.m_counterString = _arg_1.nextTargetTime.toString();
 		this.updateHeader();
 		if (this.m_animateIn) {
@@ -53,7 +53,7 @@ public class TargetInfoElement extends BaseControl {
 		} else {
 			this.animateCount();
 		}
-		;
+
 	}
 
 	private function animateIn():void {

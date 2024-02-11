@@ -71,12 +71,12 @@ public class WeaponAmmoVRWidget extends BaseControl {
 			this.m_reload_mc = new ReloadView();
 			this.m_containerOffsetLegal.addChild(this.m_reload_mc);
 		}
-		;
+
 		if (((!(_arg_1)) && (!(this.m_reload_mc == null)))) {
 			this.m_containerOffsetLegal.removeChild(this.m_reload_mc);
 			this.m_reload_mc = null;
 		}
-		;
+
 	}
 
 	public function showFirearm(_arg_1:int, _arg_2:int, _arg_3:int, _arg_4:Boolean, _arg_5:uint):void {
@@ -94,13 +94,13 @@ public class WeaponAmmoVRWidget extends BaseControl {
 				} else {
 					this.m_ammoTotal_txt.visible = false;
 				}
-				;
+
 				this.m_ammoTotal_txt.x = (this.m_ammoCurrent_txt.textWidth + DX_PADDING_BETWEEN_AMMO_COUNTERS);
 			} else {
 				this.m_ammoCurrent_txt.visible = false;
 				this.m_ammoTotal_txt.visible = false;
 			}
-			;
+
 			this.applyMirrorOffsets();
 			if (this.m_reload_mc) {
 				_local_6 = ReloadView.WARNLEVEL_NONE;
@@ -111,16 +111,16 @@ public class WeaponAmmoVRWidget extends BaseControl {
 						if (_arg_1 == 0) {
 							_local_6 = ReloadView.WARNLEVEL_RED;
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 				this.m_reload_mc.setWarnLevel(_local_6);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function showMelee(_arg_1:int):void {
@@ -131,7 +131,7 @@ public class WeaponAmmoVRWidget extends BaseControl {
 		} else {
 			this.m_containerOffsetLegal.visible = false;
 		}
-		;
+
 	}
 
 	public function changeLegalState(_arg_1:int):void {
@@ -155,14 +155,14 @@ public class WeaponAmmoVRWidget extends BaseControl {
 			this.m_containerOffsetLegal.x = 0;
 			this.m_illegalIcon_mc.alpha = 0;
 		}
-		;
+
 	}
 
 	public function setRightSide(_arg_1:Boolean):void {
 		if (this.m_isRightSide == _arg_1) {
 			return;
 		}
-		;
+
 		if (_arg_1) {
 			this.m_container.x = this.m_dxFlipOffset;
 			this.m_container.alpha = 0;
@@ -176,7 +176,7 @@ public class WeaponAmmoVRWidget extends BaseControl {
 			this.m_containerOffsetLegal.scaleX = -1;
 			Animate.to(this.m_container, 0.5, 0, {"alpha": 1}, Animate.SineOut);
 		}
-		;
+
 		this.m_isRightSide = _arg_1;
 		this.applyMirrorOffsets();
 	}
@@ -192,20 +192,20 @@ public class WeaponAmmoVRWidget extends BaseControl {
 			if (this.m_reload_mc != null) {
 				this.m_reload_mc.x = 0;
 			}
-			;
+
 		} else {
 			_local_1 = this.m_ammoCurrent_txt.width;
 			if (this.m_ammoTotal_txt.visible) {
 				_local_1 = (_local_1 + (this.m_ammoTotal_txt.width + DX_PADDING_BETWEEN_AMMO_COUNTERS));
 			}
-			;
+
 			this.m_containerAmmoText.x = -(_local_1);
 			if (this.m_reload_mc != null) {
 				this.m_reload_mc.x = -(this.m_reload_mc.width);
 			}
-			;
+
 		}
-		;
+
 	}
 
 
@@ -271,7 +271,7 @@ class ReloadView extends Sprite {
 		if (this.m_level == _arg_1) {
 			return;
 		}
-		;
+
 		Animate.kill(this);
 		switch (_arg_1) {
 			case WARNLEVEL_YELLOW:
@@ -293,7 +293,7 @@ class ReloadView extends Sprite {
 			default:
 				this.visible = false;
 		}
-		;
+
 		this.m_level = _arg_1;
 	}
 

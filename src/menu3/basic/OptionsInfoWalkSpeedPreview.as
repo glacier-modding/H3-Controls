@@ -61,7 +61,7 @@ public dynamic class OptionsInfoWalkSpeedPreview extends OptionsInfoHoldTogglePr
 					};
 					break;
 			}
-			;
+
 			m_walkSpeedIcon.onSetData(_local_1);
 		}, 150);
 	}

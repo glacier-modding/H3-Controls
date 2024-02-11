@@ -17,7 +17,7 @@ public class FreeDlcIndicator extends IndicatorBase {
 			default:
 				m_indicatorView = new NewIndicatorSmallView();
 		}
-		;
+
 		MenuUtils.setColor(m_indicatorView.bg, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 		MenuUtils.setColor(m_indicatorView.extraInfoBg, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 		m_indicatorView.y = MenuConstants.NewIndicatorYOffset;
@@ -28,7 +28,7 @@ public class FreeDlcIndicator extends IndicatorBase {
 		if (((_arg_2.freedlc_header == null) || (_arg_2.freedlc_header.length == 0))) {
 			return;
 		}
-		;
+
 		super.onSetData(_arg_1, _arg_2);
 		var _local_3:String = _arg_2.freedlc_header;
 		MenuUtils.setupText(m_indicatorView.titlelarge, _local_3, 38, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
@@ -39,7 +39,7 @@ public class FreeDlcIndicator extends IndicatorBase {
 		if (_arg_2.freedlc_icon != undefined) {
 			_local_5 = _arg_2.freedlc_icon;
 		}
-		;
+
 		MenuUtils.setupIcon(m_indicatorView.icon, _local_5, MenuConstants.COLOR_WHITE, true, false);
 		m_indicatorView.bigIcon.visible = false;
 		if (((!(_arg_2.freedlc_extrainfo == null)) && (_arg_2.freedlc_extrainfo.length > 0))) {
@@ -53,7 +53,7 @@ public class FreeDlcIndicator extends IndicatorBase {
 			m_indicatorView.extraInfo.visible = false;
 			m_indicatorView.extraInfoBg.visible = false;
 		}
-		;
+
 	}
 
 

@@ -49,9 +49,9 @@ public class ButtonPromptsComponent extends Sprite implements IMenuOverlayCompon
 			if (_local_2.actiontype == "lb_rb") {
 				_local_2.actiontype = ["lb", "rb"];
 			}
-			;
+
 		}
-		;
+
 		this.m_dataLastReceived = _arg_1;
 		this.updatePrompts();
 	}
@@ -68,11 +68,11 @@ public class ButtonPromptsComponent extends Sprite implements IMenuOverlayCompon
 				_local_4 = (_local_4 - 36);
 				_local_1.getChildAt(++_local_3).x = (_local_1.getChildAt(_local_3).x + _local_4);
 			}
-			;
+
 			_local_2++;
 			_local_3++;
 		}
-		;
+
 		this.updateLayout();
 	}
 

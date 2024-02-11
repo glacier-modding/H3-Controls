@@ -46,20 +46,20 @@ public class PhotoModeWidget extends BaseControl {
 		while (_local_1.length < _local_2) {
 			_local_1.push(this.acquirePhotoModeEntry());
 		}
-		;
+
 		while (_local_1.length > 0) {
 			this.releasePhotoModeEntry(_local_1.pop());
 		}
-		;
+
 		var _local_3:int = 34;
 		while (_local_1.length < _local_3) {
 			_local_1.push(this.acquirePrompt());
 		}
-		;
+
 		while (_local_1.length > 0) {
 			this.releasePrompt(_local_1.pop());
 		}
-		;
+
 		var _local_4:int = 4;
 		var _local_5:String = ControlsMain.getControllerType();
 		while (_local_1.length < _local_4) {
@@ -67,23 +67,23 @@ public class PhotoModeWidget extends BaseControl {
 			_local_6.platform = _local_5;
 			_local_1.push(_local_6);
 		}
-		;
+
 		while (_local_1.length > 0) {
 			this.releaseButtonPromptImage(_local_1.pop());
 		}
-		;
+
 	}
 
 	public function onSetData(_arg_1:Object):void {
 		if (_arg_1 == null) {
 			return;
 		}
-		;
+
 		if (!_arg_1.bIsVisible) {
 			this.m_view.visible = false;
 			return;
 		}
-		;
+
 		this.m_view.visible = true;
 		this.adjustNumVisibleEntries(_arg_1.aMenuEntries.length);
 		this.feedDataToEntries(_arg_1.aMenuEntries);
@@ -98,11 +98,11 @@ public class PhotoModeWidget extends BaseControl {
 			_local_2.y = (-(DY_HEIGHT_ENTRY + DY_GAP_BETWEEN_ENTRIES) * this.m_entriesVisible.length);
 			this.m_entriesVisible.unshift(_local_2);
 		}
-		;
+
 		while (_arg_1 < this.m_entriesVisible.length) {
 			this.releasePhotoModeEntry(this.m_entriesVisible.shift());
 		}
-		;
+
 		this.m_view.bg_mc.height = ((this.m_entriesVisible.length > 0) ? (DY_HEIGHT_BGMARGIN + ((DY_HEIGHT_ENTRY + DY_GAP_BETWEEN_ENTRIES) * this.m_entriesVisible.length)) : DY_HEIGHT_BG_COLLAPSED);
 		this.m_view.bg_mc.y = -(this.m_view.bg_mc.height);
 	}
@@ -113,18 +113,18 @@ public class PhotoModeWidget extends BaseControl {
 			this.m_entriesVisible[_local_2].onSetData(_arg_1[_local_2]);
 			_local_2++;
 		}
-		;
+
 	}
 
 	private function adjustNumVisiblePrompts(_arg_1:uint):void {
 		while (_arg_1 > this.m_promptsVisible.length) {
 			this.m_promptsVisible.push(this.acquirePrompt());
 		}
-		;
+
 		while (_arg_1 < this.m_promptsVisible.length) {
 			this.releasePrompt(this.m_promptsVisible.pop());
 		}
-		;
+
 	}
 
 	private function feedDataToPrompts(_arg_1:String, _arg_2:Array):void {
@@ -142,18 +142,18 @@ public class PhotoModeWidget extends BaseControl {
 			while (_local_6.images.length < _local_7.length) {
 				_local_6.images.push(this.acquireButtonPromptImage());
 			}
-			;
+
 			while (_local_6.images.length > _local_7.length) {
 				this.releaseButtonPromptImage(_local_6.images.pop());
 			}
-			;
+
 			_local_8 = 0;
 			while (_local_8 < _local_7.length) {
 				_local_9 = _local_6.images[_local_8];
 				if (_local_9.platform != _arg_1) {
 					_local_9.platform = _arg_1;
 				}
-				;
+
 				_local_9.alpha = _local_5;
 				if ((_local_7[_local_8] is Number)) {
 					_local_9.button = _local_7[_local_8];
@@ -161,27 +161,27 @@ public class PhotoModeWidget extends BaseControl {
 					if ((_local_7[_local_8] is String)) {
 						_local_9.customKey = _local_7[_local_8];
 					}
-					;
+
 				}
-				;
+
 				_local_9.x = (_local_3 + (_local_9.width / 2));
 				_local_3 = (_local_3 + (_local_9.width + 2));
 				_local_8++;
 			}
-			;
+
 			_local_6.labelTextField.text = _arg_2[_local_4].sLabel;
 			_local_6.labelTextField.alpha = _local_5;
 			_local_6.labelTextField.x = (_local_3 + DX_GAP_BETWEEN_PROMPTIMAGE);
 			_local_3 = (_local_3 + ((DX_GAP_BETWEEN_PROMPTIMAGE + _local_6.labelTextField.width) + DX_GAP_BETWEEN_PROMPTS));
 			_local_4++;
 		}
-		;
+
 		if (_local_3 > 535) {
 			this.m_view.bg_mc.width = _local_3;
 		} else {
 			this.m_view.bg_mc.width = 535;
 		}
-		;
+
 	}
 
 	public function triggerTestHUD():void {
@@ -242,7 +242,7 @@ public class PhotoModeWidget extends BaseControl {
 			_local_1 = new PhotoModeEntry();
 			this.m_view.entryholder_mc.addChild(_local_1);
 		}
-		;
+
 		return (_local_1);
 	}
 
@@ -260,7 +260,7 @@ public class PhotoModeWidget extends BaseControl {
 			_local_1 = new PromptData();
 			this.m_view.addChild(_local_1.labelTextField);
 		}
-		;
+
 		return (_local_1);
 	}
 
@@ -268,7 +268,7 @@ public class PhotoModeWidget extends BaseControl {
 		while (_arg_1.images.length > 0) {
 			this.releaseButtonPromptImage(_arg_1.images.pop());
 		}
-		;
+
 		_arg_1.labelTextField.visible = false;
 		this.m_promptsAvailable.push(_arg_1);
 	}
@@ -284,7 +284,7 @@ public class PhotoModeWidget extends BaseControl {
 			_local_1.scaleX = (_local_1.scaleY = 0.6);
 			this.m_view.addChild(_local_1);
 		}
-		;
+
 		return (_local_1);
 	}
 

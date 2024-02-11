@@ -21,7 +21,7 @@ public class LocationIntelWidget extends BaseControl {
 		if (this.m_padding == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_padding = _arg_1;
 		this.destroyView();
 		this.onSetData(this.m_data);
@@ -33,19 +33,19 @@ public class LocationIntelWidget extends BaseControl {
 			this.m_view.visible = false;
 			addChild(this.m_view);
 		}
-		;
+
 		this.m_data = _arg_1;
 		if (this.m_data != null) {
 			this.m_view.onSetData(this.m_data);
 		}
-		;
+
 	}
 
 	override public function onSetSize(_arg_1:Number, _arg_2:Number):void {
 		if (this.m_sizeX != _arg_1) {
 			this.destroyView();
 		}
-		;
+
 		this.m_sizeX = _arg_1;
 		this.m_sizeY = _arg_2;
 		this.onSetData(this.m_data);
@@ -55,7 +55,7 @@ public class LocationIntelWidget extends BaseControl {
 		if (this.m_view == null) {
 			return;
 		}
-		;
+
 		removeChild(this.m_view);
 		this.m_view = null;
 	}

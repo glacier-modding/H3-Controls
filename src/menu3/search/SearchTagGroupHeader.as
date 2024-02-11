@@ -26,12 +26,12 @@ public dynamic class SearchTagGroupHeader extends SearchElementBase {
 		if (_arg_1.width != null) {
 			this.updateWidth(_arg_1.width);
 		}
-		;
+
 		super.onSetData(_arg_1);
 		if (_arg_1.icon) {
 			MenuUtils.setupIcon(this.Icon, _arg_1.icon, MenuConstants.COLOR_WHITE, true, false);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {

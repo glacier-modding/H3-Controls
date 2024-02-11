@@ -56,19 +56,19 @@ public dynamic class LoadingScreenObjectiveTile extends Sprite {
 		} else {
 			MenuUtils.setColorFilter(this.m_view.imagesmall);
 		}
-		;
+
 		MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 		MenuUtils.setColor(this.m_view.conditionsBg, MenuConstants.COLOR_MENU_SOLID_BACKGROUND);
 		if (this.m_useZoomedImage == true) {
 			this.m_view.conditionsBg.visible = false;
 		}
-		;
+
 		this.m_iconLabel = _arg_1.icon;
 		MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_WHITE, true, false);
 		if (_arg_1.contracttype != undefined) {
 			this.m_contractType = _arg_1.contracttype;
 		}
-		;
+
 		this.setupTextFields(_arg_1.header, _arg_1.title);
 		if (_arg_1.displayaskill) {
 			this.setConditions(ObjectiveUtil.prepareConditions([], false));
@@ -76,13 +76,13 @@ public dynamic class LoadingScreenObjectiveTile extends Sprite {
 			if (_arg_1.conditions) {
 				this.setConditions(ObjectiveUtil.prepareConditions(_arg_1.conditions, false));
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.image) {
 			this.loadImage(_arg_1.image);
 		}
-		;
+
 	}
 
 	private function setConditions(_arg_1:Array):void {
@@ -108,22 +108,22 @@ public dynamic class LoadingScreenObjectiveTile extends Sprite {
 						MenuUtils.setupText(_local_5.description, _arg_1[_local_4].summary, 18, MenuConstants.FONT_TYPE_NORMAL, ((this.m_isLocked) ? MenuConstants.FontColorGrey : MenuConstants.FontColorWhite));
 						MenuUtils.truncateTextfield(_local_5.description, 7, ((this.m_isLocked) ? MenuConstants.FontColorGrey : MenuConstants.FontColorWhite));
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			if (this.m_useZoomedImage) {
 				MenuUtils.setupIcon(_local_5.valueIcon, _arg_1[_local_4].icon, ((this.m_isLocked) ? MenuConstants.COLOR_GREY : MenuConstants.COLOR_WHITE), true, true, MenuConstants.COLOR_MENU_TABS_BACKGROUND, MenuConstants.MenuElementBackgroundAlpha);
 			} else {
 				MenuUtils.setupIcon(_local_5.valueIcon, _arg_1[_local_4].icon, ((this.m_isLocked) ? MenuConstants.COLOR_GREY : MenuConstants.COLOR_WHITE), true, false);
 			}
-			;
+
 			if (((_arg_1[_local_4].type == null) && (_arg_1.length == 1))) {
 				if (_arg_1[_local_4].header) {
 					MenuUtils.setupText(_local_5.header, _arg_1[_local_4].header, 18, MenuConstants.FONT_TYPE_NORMAL, ((this.m_isLocked) ? MenuConstants.FontColorGrey : MenuConstants.FontColorWhite));
 				}
-				;
+
 				if (_arg_1[_local_4].title) {
 					MenuUtils.setupText(_local_5.title, _arg_1[_local_4].title, 24, MenuConstants.FONT_TYPE_MEDIUM, ((this.m_isLocked) ? MenuConstants.FontColorGrey : MenuConstants.FontColorWhite));
 					_local_5.title.autoSize = "left";
@@ -132,23 +132,23 @@ public dynamic class LoadingScreenObjectiveTile extends Sprite {
 					_local_5.title.wordWrap = true;
 					MenuUtils.truncateTextfield(_local_5.title, 3, ((this.m_isLocked) ? MenuConstants.FontColorGrey : MenuConstants.FontColorWhite));
 				}
-				;
+
 			}
-			;
+
 			_local_5.alpha = 0;
 			this.m_conditionsContainer.push(_local_5);
 			if (this.m_useZoomedImage) {
 				MenuUtils.addDropShadowFilter(_local_5);
 			}
-			;
+
 			this.m_view.indicator.addChild(_local_5);
 			if (((_arg_1[_local_4].type == this.CONDITION_TYPE_KILL) || (_arg_1[_local_4].type == this.CONDITION_TYPE_DEFAULTKILL))) {
 				_local_2 = (_local_2 - (MenuConstants.ValueIndicatorHeight + 14));
 			}
-			;
+
 			_local_4++;
 		}
-		;
+
 		this.showConditions();
 	}
 
@@ -165,10 +165,10 @@ public dynamic class LoadingScreenObjectiveTile extends Sprite {
 				this.m_conditionsContainer[_local_2].title.alpha = 1;
 				this.m_conditionsContainer[_local_2].method.alpha = 1;
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 	}
 
 	private function setupTextFields(_arg_1:String, _arg_2:String):void {
@@ -188,17 +188,17 @@ public dynamic class LoadingScreenObjectiveTile extends Sprite {
 			} else {
 				this.m_view.imagesmall.removeChild(this.m_loader);
 			}
-			;
+
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new LoadingScreenImageLoader();
 		if (this.m_useZoomedImage) {
 			this.m_view.image.addChild(this.m_loader);
 		} else {
 			this.m_view.imagesmall.addChild(this.m_loader);
 		}
-		;
+
 		this.m_loader.center = true;
 		this.m_loader.loadImage(imagePath, function ():void {
 			if (m_useZoomedImage) {
@@ -209,7 +209,7 @@ public dynamic class LoadingScreenObjectiveTile extends Sprite {
 					m_view.image.width = MenuConstants.MenuTileTallWidth;
 					m_view.image.scaleY = m_view.image.scaleX;
 				}
-				;
+
 			} else {
 				m_view.imagesmall.cacheAsBitmap = true;
 				m_view.imagesmall.height = MenuConstants.MenuTileSmallHeight;
@@ -218,9 +218,9 @@ public dynamic class LoadingScreenObjectiveTile extends Sprite {
 					m_view.imagesmall.width = MenuConstants.MenuTileSmallWidth;
 					m_view.imagesmall.scaleY = m_view.imagesmall.scaleX;
 				}
-				;
+
 			}
-			;
+
 		});
 	}
 

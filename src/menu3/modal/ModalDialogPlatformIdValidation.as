@@ -20,11 +20,11 @@ public class ModalDialogPlatformIdValidation extends ModalDialogValidation {
 		if (!super.validate(_arg_1)) {
 			return (false);
 		}
-		;
+
 		if (((_arg_1 == null) || (_arg_1.length == 0))) {
 			return (true);
 		}
-		;
+
 		return (_arg_1.substr(0, 1) == this.m_platformId);
 	}
 

@@ -41,14 +41,14 @@ public class DynamicMarkerElement extends BaseControl {
 			removeChild(this.m_distanceView);
 			this.m_distanceView = null;
 		}
-		;
+
 		if (((!(_arg_1)) && (this.m_distanceView == null))) {
 			this.m_distanceView = new DistanceMarkerElement();
 			addChild(this.m_distanceView);
 			this.m_distanceView.markerHeight = this.m_viewTarget.bg.height;
 			this.m_distanceView.onSetData(this.m_dataForDistance);
 		}
-		;
+
 	}
 
 	public function onSetData(_arg_1:Object):void {
@@ -57,7 +57,7 @@ public class DynamicMarkerElement extends BaseControl {
 		if (this.m_distanceView != null) {
 			this.m_distanceView.onSetData(this.m_dataForDistance);
 		}
-		;
+
 		this.positionIcon(_arg_1.direction);
 	}
 
@@ -85,7 +85,7 @@ public class DynamicMarkerElement extends BaseControl {
 				_local_2 = 90;
 				break;
 		}
-		;
+
 		this.m_iconTarget.rotation = _local_2;
 		this.m_iconMissionObjective.rotation = _local_2;
 	}

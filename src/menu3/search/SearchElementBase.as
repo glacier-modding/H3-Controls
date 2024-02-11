@@ -26,7 +26,7 @@ public dynamic class SearchElementBase extends MenuElementBase {
 	protected const STATE_DISABLED:int = 4;
 
 	protected var m_view:* = null;
-	private var m_textTickerObjs:Array = new Array();
+	private var m_textTickerObjs:Array = [];
 	protected var m_isSelected:Boolean = false;
 
 	public function SearchElementBase(_arg_1:Object) {
@@ -37,7 +37,7 @@ public dynamic class SearchElementBase extends MenuElementBase {
 		} else {
 			Log.error(Log.ChannelDebug, this, "createPrivateView returned null!");
 		}
-		;
+
 		m_mouseMode = MouseUtil.MODE_ONOVER_SELECT_ONUP_CLICK;
 	}
 
@@ -51,7 +51,7 @@ public dynamic class SearchElementBase extends MenuElementBase {
 		if (this.m_isSelected == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_isSelected = _arg_1;
 		Animate.kill(this.m_view.tileHoverMc);
 		if (this.m_isSelected) {
@@ -59,7 +59,7 @@ public dynamic class SearchElementBase extends MenuElementBase {
 		} else {
 			this.callTextTicker(false);
 		}
-		;
+
 		this.updateState();
 	}
 
@@ -69,7 +69,7 @@ public dynamic class SearchElementBase extends MenuElementBase {
 		} else {
 			this.setState(this.STATE_NONE);
 		}
-		;
+
 	}
 
 	protected function createPrivateView():* {
@@ -110,13 +110,13 @@ public dynamic class SearchElementBase extends MenuElementBase {
 						this.m_view.tileSelectMc.visible = false;
 						this.changeTextColor(MenuConstants.COLOR_GREY_MEDIUM);
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	protected function setupTitleTextField(_arg_1:String):void {
@@ -126,7 +126,7 @@ public dynamic class SearchElementBase extends MenuElementBase {
 	protected function setupTextField(_arg_1:TextField, _arg_2:String, _arg_3:String = "#464646"):void {
 		MenuUtils.setupText(_arg_1, _arg_2, 18, MenuConstants.FONT_TYPE_MEDIUM, _arg_3);
 		CommonUtils.changeFontToGlobalIfNeeded(_arg_1);
-		var _local_4:Object = new Object();
+		var _local_4:Object = {};
 		_local_4.title = _arg_1.htmlText;
 		_local_4.textField = _arg_1;
 		_local_4.ticker = new textTicker();
@@ -141,7 +141,7 @@ public dynamic class SearchElementBase extends MenuElementBase {
 			this.m_textTickerObjs[_local_2].ticker.setTextColor(_arg_1);
 			_local_2++;
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -154,13 +154,13 @@ public dynamic class SearchElementBase extends MenuElementBase {
 			_local_2.textField = null;
 			_local_1++;
 		}
-		;
+
 		this.m_textTickerObjs.length = 0;
 		if (this.m_view) {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -176,10 +176,10 @@ public dynamic class SearchElementBase extends MenuElementBase {
 				_local_3.textField.htmlText = _local_3.title;
 				MenuUtils.truncateTextfield(_local_3.textField, 1);
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 	}
 
 

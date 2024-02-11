@@ -75,46 +75,46 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 		if (_arg_1.disabledreason) {
 			this.setupDisabledIndicator(_arg_1.disabledreason.description, _arg_1.disabledreason.icon, true);
 		}
-		;
+
 		if (this.m_suitOverride) {
 			this.setupInfoIndicator(_arg_1.suitoverrideinfo, "info", true);
 		}
-		;
+
 		this.setupTextFields(_arg_1.header, _arg_1.title);
 		this.changeTextColor(((this.m_pressable) ? MenuConstants.COLOR_WHITE : MenuConstants.COLOR_GREY), ((this.m_pressable) ? MenuConstants.COLOR_WHITE : MenuConstants.COLOR_GREY));
 		if (((!(_arg_1.itemcount == undefined)) && (_arg_1.itemcount > 1))) {
 			_local_2 = new ItemCountIndicator(this.m_view.tileBg.width);
 			this.m_indicatorUtil.add(this.EItemCountIndicator, _local_2, this.m_view.indicator, _arg_1);
 		}
-		;
+
 		if (_arg_1.playableSince) {
 			if (!this.m_countDownTimer) {
 				this.m_countDownTimer = new CountDownTimer();
 			}
-			;
+
 			if (this.m_countDownTimer.validateTimeStamp(_arg_1.playableSince)) {
 				this.m_playableSince = _arg_1.playableSince;
 				this.m_timed = true;
 			} else {
 				this.m_countDownTimer = null;
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.playableUntil) {
 			if (!this.m_countDownTimer) {
 				this.m_countDownTimer = new CountDownTimer();
 			}
-			;
+
 			if (this.m_countDownTimer.validateTimeStamp(_arg_1.playableUntil)) {
 				this.m_playableUntil = _arg_1.playableUntil;
 				this.m_timed = true;
 			} else {
 				this.m_countDownTimer = null;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_playableSince) {
 			this.m_locked = true;
 			this.m_lockedIndicator = new LockedIndicatorView();
@@ -124,17 +124,17 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 			if (this.m_playableUntil) {
 				this.showTimer(this.m_playableUntil, Localization.get("UI_DIALOG_TARGET_ESCAPES"));
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.image) {
 			this.loadImage(_arg_1.image);
 			if (this.m_suitOverride) {
 				MenuUtils.setColorFilter(this.m_view.image, "desaturated");
 			}
-			;
+
 		}
-		;
+
 		this.handleSelectionChange();
 	}
 
@@ -147,7 +147,7 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 		if (this.m_disabledIndicator) {
 			this.m_view.indicator.removeChild(this.m_disabledIndicator);
 		}
-		;
+
 		this.m_disabledIndicator = new InfoIndicatorSmallView();
 		this.m_disabledIndicator.alpha = 0;
 		MenuUtils.setColor(this.m_disabledIndicator.darkBg, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, ((_arg_3) ? MenuConstants.MenuElementBackgroundAlpha : 0));
@@ -164,13 +164,13 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 			this.m_disabledIndicator.darkBg.height = (this.m_disabledIndicator.darkBg.height + (_local_8 - _local_4));
 			this.m_disabledIndicator.y = (this.m_disabledIndicator.y - (_local_8 - _local_4));
 		}
-		;
+
 		MenuUtils.setupIcon(this.m_disabledIndicator.valueIcon, _arg_2, MenuConstants.COLOR_WHITE, true, false);
 		if (!_arg_3) {
 			MenuUtils.addDropShadowFilter(this.m_disabledIndicator.title);
 			MenuUtils.addDropShadowFilter(this.m_disabledIndicator.valueIcon);
 		}
-		;
+
 		this.m_view.indicator.addChild(this.m_disabledIndicator);
 	}
 
@@ -179,7 +179,7 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 		if (this.m_infoIndicator) {
 			this.m_view.indicator.removeChild(this.m_infoIndicator);
 		}
-		;
+
 		this.m_infoIndicator = new InfoIndicatorSmallView();
 		this.m_infoIndicator.alpha = 1;
 		MenuUtils.setColor(this.m_infoIndicator.darkBg, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, ((_arg_3) ? MenuConstants.MenuElementBackgroundAlpha : 0));
@@ -190,13 +190,13 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 			this.m_infoIndicator.darkBg.height = (this.m_infoIndicator.darkBg.height + _local_4);
 			this.m_infoIndicator.y = (this.m_infoIndicator.y - _local_4);
 		}
-		;
+
 		MenuUtils.setupIcon(this.m_infoIndicator.valueIcon, _arg_2, MenuConstants.COLOR_WHITE, true, false);
 		if (!_arg_3) {
 			MenuUtils.addDropShadowFilter(this.m_infoIndicator.title);
 			MenuUtils.addDropShadowFilter(this.m_infoIndicator.valueIcon);
 		}
-		;
+
 		this.m_view.indicator.addChild(this.m_infoIndicator);
 	}
 
@@ -213,14 +213,14 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 		if (!this.m_textTicker) {
 			this.m_textTicker = new textTicker();
 		}
-		;
+
 		if (_arg_1) {
 			this.m_textTicker.startTextTicker(this.m_view.title, this.m_textObj.title);
 		} else {
 			this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 			MenuUtils.truncateTextfield(this.m_view.title, 1, MenuConstants.FontColorWhite);
 		}
-		;
+
 	}
 
 	private function changeTextColor(_arg_1:uint, _arg_2:uint):void {
@@ -239,7 +239,7 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 			this.m_view.image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new MenuImageLoader(ControlsMain.isVrModeActive());
 		this.m_view.image.addChild(this.m_loader);
 		this.m_loader.center = true;
@@ -260,7 +260,7 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 					m_view.image.width = MenuConstants.MenuTileSmallWidth;
 					m_view.image.scaleY = m_view.image.scaleX;
 				}
-				;
+
 			} else {
 				_local_1 = (m_view.image.width / m_view.image.height);
 				_local_2 = (m_view.image.height / 2);
@@ -273,7 +273,7 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 				_local_7 = (_local_6 / 2);
 				m_view.image.y = (m_view.image.y + Math.ceil((_local_2 - _local_7)));
 			}
-			;
+
 		});
 	}
 
@@ -281,13 +281,13 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 		if (!this.m_countDownTimer) {
 			this.m_countDownTimer = new CountDownTimer();
 		}
-		;
+
 		if (!this.m_timeindicator) {
 			this.m_timeindicator = new TimeIndicatorSmallView();
 			this.m_timeindicator.y = (this.m_view.tileBg.height - MenuConstants.ValueIndicatorYOffset);
 			addChild(this.m_timeindicator);
 		}
-		;
+
 		MenuUtils.setupText(this.m_timeindicator.header, _arg_2, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 		MenuUtils.truncateTextfield(this.m_timeindicator.header, 1, MenuConstants.FontColorWhite);
 		this.m_countDownTimer.startCountDown(this.m_timeindicator.value, _arg_1, this);
@@ -301,24 +301,24 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 			if (this.m_playableUntil) {
 				this.showTimer(this.m_playableUntil, Localization.get("UI_DIALOG_TARGET_ESCAPES"));
 			}
-			;
+
 		} else {
 			this.m_timed = false;
 			removeChild(this.m_timeindicator);
 		}
-		;
+
 	}
 
 	override protected function handleSelectionChange():void {
 		if (!this.m_view) {
 			return;
 		}
-		;
+
 		Animate.complete(this.m_view);
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (m_isSelected) {
 			setPopOutScale(this.m_view, true);
 			Animate.to(this.m_view.dropShadow, 0.3, 0, {"alpha": 1}, Animate.ExpoOut);
@@ -330,13 +330,13 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 				} else {
 					MenuUtils.setColorFilter(this.m_view.image, "selected");
 				}
-				;
+
 			}
-			;
+
 			if (this.m_disabledIndicator) {
 				this.m_disabledIndicator.alpha = 1;
 			}
-			;
+
 		} else {
 			setPopOutScale(this.m_view, false);
 			Animate.kill(this.m_view.dropShadow);
@@ -349,15 +349,15 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 				} else {
 					MenuUtils.setColorFilter(this.m_view.image);
 				}
-				;
+
 			}
-			;
+
 			if (this.m_disabledIndicator) {
 				this.m_disabledIndicator.alpha = 0;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -368,43 +368,43 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 				this.m_countDownTimer.stopCountDown();
 				this.m_countDownTimer = null;
 			}
-			;
+
 			if (this.m_loader != null) {
 				this.m_loader.cancelIfLoading();
 				this.m_view.image.removeChild(this.m_loader);
 				this.m_loader = null;
 			}
-			;
+
 			if (this.m_indicatorUtil != null) {
 				this.m_indicatorUtil.clearIndicators();
 				this.m_indicatorUtil = null;
 			}
-			;
+
 			if (this.m_timeindicator) {
 				removeChild(this.m_timeindicator);
 				this.m_timeindicator = null;
 			}
-			;
+
 			if (this.m_disabledIndicator) {
 				this.m_view.indicator.removeChild(this.m_disabledIndicator);
 				this.m_disabledIndicator = null;
 			}
-			;
+
 			if (this.m_infoIndicator) {
 				this.m_view.indicator.removeChild(this.m_infoIndicator);
 				this.m_infoIndicator = null;
 			}
-			;
+
 			if (this.m_lockedIndicator) {
 				removeChild(this.m_lockedIndicator);
 				this.m_lockedIndicator = null;
 			}
-			;
+
 			if (this.m_textTicker) {
 				this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 				this.m_textTicker = null;
 			}
-			;
+
 			if (this.m_perkElements.length > 0) {
 				_local_1 = 0;
 				while (_local_1 < this.m_perkElements.length) {
@@ -412,14 +412,14 @@ public dynamic class ItemTileSmall extends MenuElementTileBase {
 					this.m_perkElements[_local_1] = null;
 					_local_1++;
 				}
-				;
+
 				this.m_perkElements = [];
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 

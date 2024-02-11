@@ -20,9 +20,9 @@ public dynamic class AnimationContainerSearchPage extends BaseContainer {
 	private const ANIMATION_MOVE_NAME:String = "move";
 	private const ANIMATION_BLENDOUT_NAME:String = "blendout";
 
-	private var m_moveElements:Array = new Array();
-	private var m_moveElementsStartPositions:Array = new Array();
-	private var m_blendoutElements:Array = new Array();
+	private var m_moveElements:Array = [];
+	private var m_moveElementsStartPositions:Array = [];
+	private var m_blendoutElements:Array = [];
 	private var m_movement:Point;
 	private var m_moveDuration:Number = 0;
 	private var m_blendoutDuration:Number = 0;
@@ -51,12 +51,12 @@ public dynamic class AnimationContainerSearchPage extends BaseContainer {
 		if (_local_3 == null) {
 			return;
 		}
-		;
+
 		var _local_4:Object = _local_3.getData();
 		if (_local_4 == null) {
 			return;
 		}
-		;
+
 		if (("animation" in _local_4)) {
 			if (_local_4["animation"] == this.ANIMATION_MOVE_NAME) {
 				this.m_moveElements.push(_local_3);
@@ -66,11 +66,11 @@ public dynamic class AnimationContainerSearchPage extends BaseContainer {
 				if (_local_4["animation"] == this.ANIMATION_BLENDOUT_NAME) {
 					this.m_blendoutElements.push(_local_3);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function removeChild2(_arg_1:Sprite):void {
@@ -82,21 +82,21 @@ public dynamic class AnimationContainerSearchPage extends BaseContainer {
 				this.m_moveElements.splice(_local_3, 1);
 				this.m_moveElementsStartPositions.splice(_local_3, 1);
 			}
-			;
+
 			_local_3 = this.m_blendoutElements.indexOf(_local_2);
 			if (_local_3 >= 0) {
 				this.m_blendoutElements.splice(_local_3, 1);
 			}
-			;
+
 		}
-		;
+
 		super.removeChild2(_arg_1);
 	}
 
 	public function startAnimation(_arg_1:Boolean):void {
 		Log.info(Log.ChannelAni, this, ("start animation forward=" + _arg_1));
-		var _local_2:Array = new Array();
-		var _local_3:Array = new Array();
+		var _local_2:Array = [];
+		var _local_3:Array = [];
 		_local_2.push(this.startBlendoutAnimation);
 		_local_3.push(this.m_blendoutDuration);
 		_local_2.push(this.startMoveAnimation);
@@ -105,7 +105,7 @@ public dynamic class AnimationContainerSearchPage extends BaseContainer {
 			_local_2 = _local_2.reverse();
 			_local_3 = _local_3.reverse();
 		}
-		;
+
 		this.callAnimation(_local_2, _local_3, _arg_1, 0);
 	}
 
@@ -115,18 +115,18 @@ public dynamic class AnimationContainerSearchPage extends BaseContainer {
 		if ((((animationFunctions == null) || (durations == null)) || (index < 0))) {
 			return;
 		}
-		;
+
 		if (((index >= animationFunctions.length) || (index >= durations.length))) {
 			return;
 		}
-		;
+
 		var animationFunction:Function = animationFunctions[index];
 		var duration:Number = durations[index];
 		Log.info(Log.ChannelAni, this, ((("callAnimation animationFunction=" + animationFunction) + " duration=") + duration));
 		if (animationFunction != null) {
 			(animationFunction(duration, forward));
 		}
-		;
+
 		index = (index + 1);
 		if (index < animationFunctions.length) {
 			Log.info(Log.ChannelAni, this, ("callAnimation queue next animation index=" + index));
@@ -140,7 +140,7 @@ public dynamic class AnimationContainerSearchPage extends BaseContainer {
 				animationFinished(callbackAction);
 			});
 		}
-		;
+
 	}
 
 	private function startBlendoutAnimation(_arg_1:Number, _arg_2:Boolean):void {
@@ -149,7 +149,7 @@ public dynamic class AnimationContainerSearchPage extends BaseContainer {
 			this.startBlendoutAnimationOnElement(this.m_blendoutElements[_local_3], _arg_2, _arg_1);
 			_local_3++;
 		}
-		;
+
 	}
 
 	private function startMoveAnimation(_arg_1:Number, _arg_2:Boolean):void {
@@ -158,7 +158,7 @@ public dynamic class AnimationContainerSearchPage extends BaseContainer {
 			this.startMoveAnimationOnElement(this.m_moveElements[_local_3], this.m_moveElementsStartPositions[_local_3], _arg_2, _arg_1);
 			_local_3++;
 		}
-		;
+
 	}
 
 	private function startBlendoutAnimationOnElement(element:MenuElementBase, forward:Boolean, duration:Number):void {
@@ -166,7 +166,7 @@ public dynamic class AnimationContainerSearchPage extends BaseContainer {
 		if (element == null) {
 			return;
 		}
-		;
+
 		Animate.complete(element);
 		var startAlpha:Number = ((forward) ? 1 : 0);
 		endAlpha = ((forward) ? 0 : 1);
@@ -181,7 +181,7 @@ public dynamic class AnimationContainerSearchPage extends BaseContainer {
 		if (_arg_1 == null) {
 			return;
 		}
-		;
+
 		Animate.complete(_arg_1);
 		var _local_5:Point = _arg_2.clone();
 		_local_5.offset(this.m_movement.x, this.m_movement.y);
@@ -202,10 +202,10 @@ public dynamic class AnimationContainerSearchPage extends BaseContainer {
 		if (((this["_nodedata"]) && (!(m_sendEventWithValue == null)))) {
 			Log.info(Log.ChannelAni, this, ("Animation finished. Call json action: " + _arg_1));
 			_local_2 = (this["_nodedata"]["id"] as int);
-			_local_3 = new Array(_local_2, _arg_1);
+			_local_3 = [_local_2, _arg_1];
 			m_sendEventWithValue("onTriggerAction", _local_3);
 		}
-		;
+
 	}
 
 

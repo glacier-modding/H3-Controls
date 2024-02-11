@@ -35,16 +35,16 @@ public class ItemBreadcrumb extends BaseControl {
 			_local_4 = ((ControlsMain.getDisplaySize() == ControlsMain.DISPLAY_SIZE_SMALL) ? 24 : 12);
 			MenuUtils.setupText(this.m_view.distance_txt, (_local_3.toString() + "m"), _local_4, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 		}
-		;
+
 		var _local_2:Number = 1;
 		if (!ControlsMain.isVrModeActive()) {
 			_local_2 = (Extensions.visibleRect.height / 1080);
 		}
-		;
+
 		if (this.m_scaleMod != _local_2) {
 			this.onSetSize(0, 0);
 		}
-		;
+
 	}
 
 	private function pulsateAttentionOutline(_arg_1:Boolean):void {
@@ -53,7 +53,7 @@ public class ItemBreadcrumb extends BaseControl {
 		if (_arg_1) {
 			this.pulsateAttentionOutlineIn();
 		}
-		;
+
 	}
 
 	private function pulsateAttentionOutlineIn():void {
@@ -79,7 +79,7 @@ public class ItemBreadcrumb extends BaseControl {
 		if (((_arg_1 == true) && (this.m_duration > 0))) {
 			this.pulsateAttentionOutline(true);
 		}
-		;
+
 	}
 
 	public function reset():void {
@@ -96,7 +96,7 @@ public class ItemBreadcrumb extends BaseControl {
 		if (!ControlsMain.isVrModeActive()) {
 			_local_3 = (Extensions.visibleRect.height / 1080);
 		}
-		;
+
 		this.m_scaleMod = (this.m_view.scaleX = (this.m_view.scaleY = _local_3));
 	}
 

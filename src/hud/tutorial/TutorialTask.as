@@ -31,7 +31,7 @@ public class TutorialTask extends BaseControl {
 			this.m_view.scaleX = _local_2;
 			this.m_view.scaleY = _local_2;
 		}
-		;
+
 		this.m_view.header_txt.visible = false;
 		MenuUtils.setupTextUpper(this.m_view.header_txt, ((_arg_1.header) || ("")), 16, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGrey);
 		MenuUtils.setupTextUpper(this.m_view.label_txt, ((_arg_1.title) || ("")), 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
@@ -43,7 +43,7 @@ public class TutorialTask extends BaseControl {
 			this.m_isCentered = _arg_1;
 			this.recenter();
 		}
-		;
+
 	}
 
 	private function recenter():void {
@@ -52,7 +52,7 @@ public class TutorialTask extends BaseControl {
 		} else {
 			this.m_view.x = ((-(this.m_view.scaleX) * (this.m_view.label_txt.x + this.m_view.label_txt.textWidth)) / 2);
 		}
-		;
+
 	}
 
 	public function ShowNotification():void {

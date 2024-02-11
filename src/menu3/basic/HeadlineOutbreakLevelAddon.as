@@ -30,7 +30,7 @@ public dynamic class HeadlineOutbreakLevelAddon extends MenuElementBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	private function showEscalationLevel(_arg_1:Object):void {
@@ -45,14 +45,14 @@ public dynamic class HeadlineOutbreakLevelAddon extends MenuElementBase {
 			if (_local_3 <= (_arg_1.completedlevels + 1)) {
 				_local_5.alpha = 1;
 			}
-			;
+
 			this.m_view.indicator.addChild(_local_5);
 			_local_5.x = _local_2;
 			_local_2 = (_local_2 + MenuConstants.outbreakLevelIconXOffset);
 			_local_3 = (_local_3 + 1);
 			_local_4++;
 		}
-		;
+
 	}
 
 	private function completeAnimations():void {

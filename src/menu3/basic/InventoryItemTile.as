@@ -40,7 +40,7 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 	protected var m_view:*;
 	protected var m_rotationBase:Sprite;
 	private var m_loader:MenuImageLoader;
-	private var m_textObj:Object = new Object();
+	private var m_textObj:Object = {};
 	private var m_pressable:Boolean = true;
 	private var m_isHighlighted:Boolean = false;
 	private var m_isPressable:Boolean = true;
@@ -62,7 +62,7 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 		} else {
 			this.m_view = new InventoryItemTileView();
 		}
-		;
+
 		this.m_view.tileSelect.alpha = 0;
 		this.m_view.tileSelectPulsate.alpha = 0;
 		this.m_view.tileBg.alpha = 0;
@@ -95,30 +95,30 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 			if (_local_5 > 1) {
 				_local_3 = ("x" + _local_5.toString());
 			}
-			;
+
 		}
-		;
+
 		MenuUtils.setupText(this.m_view.countLabel, _local_3, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraLight);
 		this.m_isPressable = true;
 		if (getNodeProp(this, "pressable") == false) {
 			this.m_isPressable = false;
 		}
-		;
+
 		if (getNodeProp(this, "selectable") == false) {
 			m_mouseMode = MouseUtil.MODE_ONOVER_HOVER_ONUP_SELECT;
 		} else {
 			m_mouseMode = MouseUtil.MODE_ONOVER_SELECT_ONUP_CLICK;
 		}
-		;
+
 		if (_arg_1.highlighted != undefined) {
 			this.m_isHighlighted = _arg_1.highlighted;
 		}
-		;
+
 		var _local_4:* = "";
 		if (((!(this.m_itemName == null)) && (this.m_itemName.length > 0))) {
 			_local_4 = _arg_1.icon;
 		}
-		;
+
 		if (this.m_iconRid != _local_4) {
 			this.m_iconRid = _local_4;
 			this.destroyImageLoader();
@@ -131,13 +131,13 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 					this.m_loader.x = (ITEM_SIZE_WIDTH * 0.5);
 					this.m_loader.y = (ITEM_SIZE_HEIGHT * 0.5);
 				}
-				;
+
 				this.m_view.addChild(this.m_loader);
 				this.loadIconImage(this.m_loader, _local_4);
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.enableColor === false) {
 			MenuUtils.setTintColor(this.m_view.tileDarkBg, MenuUtils.TINT_COLOR_GREY);
 			MenuUtils.setTintColor(this.m_view.tileBorder, MenuUtils.TINT_COLOR_GREY);
@@ -145,7 +145,7 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 			MenuUtils.setTintColor(this.m_view.tileDarkBg, MenuUtils.TINT_COLOR_RED);
 			MenuUtils.setTintColor(this.m_view.tileBorder, MenuUtils.TINT_COLOR_RED);
 		}
-		;
+
 		this.m_details.onSetData(_arg_1);
 		this.m_details.visible = false;
 		this.updateRarity(_arg_1.rarity);
@@ -157,7 +157,7 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 		if (((_arg_1 == null) || (_arg_1.length == 0))) {
 			return;
 		}
-		;
+
 		var _local_2:uint = 14409180;
 		if (_arg_1 == "ITEMRARITY_UNCOMMON") {
 			_local_2 = 6222732;
@@ -165,9 +165,9 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 			if (_arg_1 == "ITEMRARITY_RARE") {
 				_local_2 = 7845610;
 			}
-			;
+
 		}
-		;
+
 		var _local_3:Number = 24;
 		var _local_4:Number = ((this.m_isSmallView) ? (ITEM_SIZE_WIDTH + 3) : (ITEM_SIZE_WIDTH - 2));
 		var _local_5:Number = (_local_4 - _local_3);
@@ -190,7 +190,7 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 		if (m_loading) {
 			return;
 		}
-		;
+
 		this.updateStates();
 	}
 
@@ -198,7 +198,7 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 		if (_arg_1 == this.m_isHighlighted) {
 			return;
 		}
-		;
+
 		this.m_isHighlighted = _arg_1;
 		this.updateStates();
 	}
@@ -210,7 +210,7 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 			} else {
 				this.setState(ITEM_STATE_NOT_PRESSABLE);
 			}
-			;
+
 		} else {
 			if (this.m_isHighlighted) {
 				if (m_isSelected) {
@@ -218,18 +218,18 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 				} else {
 					this.setState(ITEM_STATE_HIGHLIGHTED);
 				}
-				;
+
 			} else {
 				if (m_isSelected) {
 					this.setState(ITEM_STATE_SELECTED);
 				} else {
 					this.setState(ITEM_STATE_NORMAL);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function setState(_arg_1:int):void {
@@ -269,15 +269,15 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 							this.m_view.tileSelect.alpha = 0;
 							MenuUtils.pulsate(this.m_view.tileSelectPulsate, false);
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function animateWiggle():void {
@@ -298,12 +298,12 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		if (this.m_details) {
 			this.m_details.onUnregister();
 			removeChild(this.m_details);
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -313,7 +313,7 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 			this.m_view.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 	}
 
 	private function completeAnimations():void {
@@ -334,7 +334,7 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 			max_width = (ITEM_SIZE_WIDTH - BORDER);
 			max_height = (ITEM_SIZE_HEIGHT - BORDER);
 		}
-		;
+
 		imageLoader.rotation = 0;
 		imageLoader.scaleX = (imageLoader.scaleY = 1);
 		imageLoader.loadImage(rid, function ():void {
@@ -344,14 +344,14 @@ public dynamic class InventoryItemTile extends MenuElementTileBase {
 				imageLoader.rotation = 90;
 				_local_2 = true;
 			}
-			;
+
 			imageLoader.width = max_width;
 			imageLoader.scaleY = imageLoader.scaleX;
 			if (imageLoader.height > max_height) {
 				imageLoader.height = max_height;
 				imageLoader.scaleX = imageLoader.scaleY;
 			}
-			;
+
 			_local_1.setTint(0xFFFFFF, 1);
 			imageLoader.transform.colorTransform = _local_1;
 			imageLoader.alpha = 1;

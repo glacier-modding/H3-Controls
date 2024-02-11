@@ -53,7 +53,7 @@ public dynamic class BaseContainer extends MenuElementBase {
 		if (this.m_isSelected == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_isSelected = _arg_1;
 		this.handleSelectionChange();
 	}
@@ -62,7 +62,7 @@ public dynamic class BaseContainer extends MenuElementBase {
 		if (this.m_isGroupSelected == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_isGroupSelected = _arg_1;
 		this.handleSelectionChange();
 	}
@@ -71,7 +71,7 @@ public dynamic class BaseContainer extends MenuElementBase {
 		if (this.m_isChildSelected == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_isChildSelected = _arg_1;
 		this.handleChildSelectionChange();
 	}

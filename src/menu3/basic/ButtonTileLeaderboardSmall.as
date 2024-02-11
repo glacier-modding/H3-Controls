@@ -24,7 +24,7 @@ public dynamic class ButtonTileLeaderboardSmall extends ButtonTileBase {
 		if (getNodeProp(this, "selectable") == false) {
 			m_GroupSelected = true;
 		}
-		;
+
 		setupTextFields(_arg_1.header, _arg_1.title);
 		updateState();
 	}
@@ -33,7 +33,7 @@ public dynamic class ButtonTileLeaderboardSmall extends ButtonTileBase {
 		if (m_view == null) {
 			return (null);
 		}
-		;
+
 		return (m_view.tileBg);
 	}
 
@@ -44,11 +44,11 @@ public dynamic class ButtonTileLeaderboardSmall extends ButtonTileBase {
 				m_textTicker.stopTextTicker(m_view.title, m_textObj.title);
 				m_textTicker = null;
 			}
-			;
+
 			removeChild((m_view as ButtonTileLeaderboardSmallView));
 			m_view = null;
 		}
-		;
+
 	}
 
 

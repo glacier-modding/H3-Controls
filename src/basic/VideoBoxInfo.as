@@ -61,7 +61,7 @@ public class VideoBoxInfo extends Sprite {
 
 	private function configureSkipPrompt():void {
 		Log.info(Log.ChannelVideo, this, ((("Add Prompt " + this.m_skipString) + " platform:") + this.m_platformString));
-		var _local_1:Object = new Object();
+		var _local_1:Object = {};
 		_local_1.buttonprompts = new Array({
 			"actiontype": "cancel",
 			"actionlabel": this.m_skipString,
@@ -85,13 +85,13 @@ public class VideoBoxInfo extends Sprite {
 		if (((this.m_currentState == _arg_1) && (!(_arg_2)))) {
 			return;
 		}
-		;
+
 		this.m_currentState = _arg_1;
 		this.visible = (!(this.m_currentState == STATE_NONE));
 		for (_local_3 in this.m_stateDisplayObjects) {
 			this.m_stateDisplayObjects[_local_3].visible = (_local_3 == this.m_currentState);
 		}
-		;
+
 		this.setLoadProgress(this.m_progress);
 	}
 

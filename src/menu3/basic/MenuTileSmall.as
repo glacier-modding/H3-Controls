@@ -52,20 +52,20 @@ public dynamic class MenuTileSmall extends MenuElementLockableContentBase {
 		if (((!(_local_2)) && (this.m_hadValidAgencyPickupData))) {
 			setAgencyPickup(this.m_view, _arg_1, "small");
 		}
-		;
+
 		this.m_hadValidAgencyPickupData = _local_2;
 		if (_arg_1.image) {
 			this.loadImage(_arg_1.image);
 		}
-		;
+
 		if (_arg_1.availability) {
 			setAvailablity(this.m_view, _arg_1, "small");
 		}
-		;
+
 		if (_local_2) {
 			setAgencyPickup(this.m_view, _arg_1, "small");
 		}
-		;
+
 		if (_arg_1.setassaveslotheader) {
 			_local_3 = false;
 			_local_4 = "";
@@ -77,7 +77,7 @@ public dynamic class MenuTileSmall extends MenuElementLockableContentBase {
 				_local_5 = ((_arg_1.saveslotheaderdata.infotext != undefined) ? _arg_1.saveslotheaderdata.infotext : "");
 				_local_6 = ((_arg_1.saveslotheaderdata.infoicon != undefined) ? _arg_1.saveslotheaderdata.infoicon : "");
 			}
-			;
+
 			this.m_view.tileSelect.alpha = 0;
 			this.m_view.dropShadow.alpha = 0;
 			this.m_view.tileDarkBg.alpha = 1;
@@ -97,12 +97,12 @@ public dynamic class MenuTileSmall extends MenuElementLockableContentBase {
 			if (((_local_5.length > 0) || (_local_4.length > 0))) {
 				this.setupInfoIndicatorWithTitle(_local_4, _local_5, _local_6);
 			}
-			;
+
 		} else {
 			this.setupTextFields(_arg_1.header, _arg_1.title);
 			this.changeTextColor(((this.m_pressable) ? MenuConstants.COLOR_WHITE : MenuConstants.COLOR_GREY), ((this.m_pressable) ? MenuConstants.COLOR_WHITE : MenuConstants.COLOR_GREY));
 		}
-		;
+
 		this.handleSelectionChange();
 	}
 
@@ -111,7 +111,7 @@ public dynamic class MenuTileSmall extends MenuElementLockableContentBase {
 			this.m_view.indicator.removeChild(this.m_infoIndicatorWithTitle);
 			this.m_infoIndicatorWithTitle = null;
 		}
-		;
+
 	}
 
 	private function setupTextFields(_arg_1:String, _arg_2:String):void {
@@ -135,14 +135,14 @@ public dynamic class MenuTileSmall extends MenuElementLockableContentBase {
 		if (this.m_currentImage == imagePath) {
 			return;
 		}
-		;
+
 		this.m_currentImage = imagePath;
 		if (this.m_loader != null) {
 			this.m_loader.cancelIfLoading();
 			this.m_view.image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new MenuImageLoader(ControlsMain.isVrModeActive());
 		this.m_view.image.addChild(this.m_loader);
 		this.m_loader.center = true;
@@ -155,7 +155,7 @@ public dynamic class MenuTileSmall extends MenuElementLockableContentBase {
 				m_view.image.width = MenuConstants.MenuTileSmallWidth;
 				m_view.image.scaleY = m_view.image.scaleX;
 			}
-			;
+
 		});
 	}
 
@@ -172,13 +172,13 @@ public dynamic class MenuTileSmall extends MenuElementLockableContentBase {
 			if (_local_1 != null) {
 				_local_1.setColorInvert(false);
 			}
-			;
+
 		}
-		;
+
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (m_isSelected) {
 			setPopOutScale(this.m_view, true);
 			Animate.to(this.m_view.dropShadow, 0.3, 0, {"alpha": 1}, Animate.ExpoOut);
@@ -190,11 +190,11 @@ public dynamic class MenuTileSmall extends MenuElementLockableContentBase {
 					if (_local_1 != null) {
 						_local_1.setColorInvert(true);
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		} else {
 			setPopOutScale(this.m_view, false);
 			Animate.kill(this.m_view.dropShadow);
@@ -203,9 +203,9 @@ public dynamic class MenuTileSmall extends MenuElementLockableContentBase {
 				MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 				MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_WHITE, true, false);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -217,12 +217,12 @@ public dynamic class MenuTileSmall extends MenuElementLockableContentBase {
 				this.m_view.image.removeChild(this.m_loader);
 				this.m_loader = null;
 			}
-			;
+
 			this.removeIndicators();
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	private function completeAnimations():void {
@@ -231,9 +231,9 @@ public dynamic class MenuTileSmall extends MenuElementLockableContentBase {
 			if (m_infoIndicator != null) {
 				Animate.complete(m_infoIndicator);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function setupInfoIndicatorWithTitle(_arg_1:String, _arg_2:String, _arg_3:String):void {
@@ -264,13 +264,13 @@ public dynamic class MenuTileSmall extends MenuElementLockableContentBase {
 			_local_7 = 5;
 			MenuUtils.truncateTextfield(this.m_infoIndicatorWithTitle.text, _local_5);
 		}
-		;
+
 		if (_arg_3.length > 0) {
 			MenuUtils.setupIcon(this.m_infoIndicatorWithTitle.icon, _arg_3, MenuConstants.COLOR_WHITE, true, false);
 		} else {
 			this.m_infoIndicatorWithTitle.icon.visible = false;
 		}
-		;
+
 		this.m_view.indicator.addChild(this.m_infoIndicatorWithTitle);
 	}
 

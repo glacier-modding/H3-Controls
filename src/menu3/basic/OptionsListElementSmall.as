@@ -56,15 +56,15 @@ public dynamic class OptionsListElementSmall extends CollapsableListContainer {
 				MenuUtils.addDropShadowFilter(this.m_view.title);
 				this.m_view.tileSelect.alpha = 0;
 			}
-			;
+
 			if (this.m_isTextScrollingEnabled) {
 				this.callTextTicker(true);
 			}
-			;
+
 		} else {
 			setItemSelected(m_isSelected);
 		}
-		;
+
 	}
 
 	override public function getView():Sprite {
@@ -92,16 +92,16 @@ public dynamic class OptionsListElementSmall extends CollapsableListContainer {
 			if (((!(this.getData().direction == "horizontal")) && (!(this.getData().direction == "horizontalWrap")))) {
 				_arg_1.x = 32;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function setItemHover(_arg_1:Boolean):void {
 		if (((m_isSelected) || (m_isGroupSelected))) {
 			return;
 		}
-		;
+
 		var _local_2:int = ((_arg_1) ? this.STATE_HOVER : this.STATE_DEFAULT);
 		this.setSelectedAnimationState(_local_2);
 	}
@@ -114,9 +114,9 @@ public dynamic class OptionsListElementSmall extends CollapsableListContainer {
 			if (m_isGroupSelected) {
 				_local_1 = this.STATE_GROUP_SELECTED;
 			}
-			;
+
 		}
-		;
+
 		this.setSelectedAnimationState(_local_1);
 	}
 
@@ -125,11 +125,11 @@ public dynamic class OptionsListElementSmall extends CollapsableListContainer {
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (this.m_selectable == false) {
 			return;
 		}
-		;
+
 		if (_arg_1 == this.STATE_SELECTED) {
 			if (this.m_pressable) {
 				this.changeTextColor(MenuConstants.COLOR_WHITE);
@@ -138,7 +138,7 @@ public dynamic class OptionsListElementSmall extends CollapsableListContainer {
 				this.changeTextColor(MenuConstants.COLOR_GREY);
 				MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 			}
-			;
+
 			MenuUtils.removeDropShadowFilter(this.m_view.title);
 			this.callTextTicker(true);
 		} else {
@@ -156,7 +156,7 @@ public dynamic class OptionsListElementSmall extends CollapsableListContainer {
 						this.changeTextColor(MenuConstants.COLOR_GREY);
 						MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 					}
-					;
+
 					MenuUtils.removeDropShadowFilter(this.m_view.title);
 					this.callTextTicker(true);
 				} else {
@@ -173,16 +173,16 @@ public dynamic class OptionsListElementSmall extends CollapsableListContainer {
 							MenuUtils.addDropShadowFilter(this.m_view.title);
 							this.m_view.tileSelect.alpha = 0;
 						}
-						;
+
 						this.callTextTicker(false);
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -194,7 +194,7 @@ public dynamic class OptionsListElementSmall extends CollapsableListContainer {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

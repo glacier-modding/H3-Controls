@@ -26,7 +26,7 @@ public dynamic class SearchSelectedTagElement extends SearchElementBase {
 		} else {
 			MenuUtils.setupIcon(m_view.iconMc, "failed", MenuConstants.COLOR_WHITE, false, false);
 		}
-		;
+
 		super.onSetData(_arg_1);
 	}
 
@@ -38,7 +38,7 @@ public dynamic class SearchSelectedTagElement extends SearchElementBase {
 		if (this.m_isReadOnly) {
 			return;
 		}
-		;
+
 		super.setItemSelected(_arg_1);
 	}
 
@@ -56,7 +56,7 @@ public dynamic class SearchSelectedTagElement extends SearchElementBase {
 			MenuUtils.setColor(m_view.iconMc, MenuConstants.COLOR_WHITE, false);
 			MenuUtils.setColor(m_view.tileSelectMc, MenuConstants.COLOR_MENU_CONTRACT_SEARCH_GREY, false);
 		}
-		;
+
 	}
 
 	override protected function setupTitleTextField(_arg_1:String):void {

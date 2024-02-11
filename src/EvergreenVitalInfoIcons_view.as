@@ -58,10 +58,10 @@ public dynamic class EvergreenVitalInfoIcons_view extends MovieClip {
 			if (((((!(_local_2 == null)) && (_local_2 is MovieClip)) && (MovieClip(_local_2).hasOwnProperty("containerType"))) && (MovieClip(_local_2).containerType == this.LAYER_PROPERTIES))) {
 				_local_2.executeFrame();
 			}
-			;
+
 			_local_1++;
 		}
-		;
+
 	}
 
 	public function ___onAdded___(_arg_1:Event):* {
@@ -72,7 +72,7 @@ public dynamic class EvergreenVitalInfoIcons_view extends MovieClip {
 		if (!_local_2) {
 			return;
 		}
-		;
+
 		var _local_3:* = _local_2.parent;
 		if (((_local_3) && (_local_3 == this))) {
 			if ((_local_2 is MovieClip)) {
@@ -84,25 +84,25 @@ public dynamic class EvergreenVitalInfoIcons_view extends MovieClip {
 							removeChild(_local_2);
 							break;
 						}
-						;
+
 					}
-					;
+
 					_local_4++;
 				}
-				;
+
 			}
-			;
+
 		} else {
 			if ((_local_2 is MovieClip)) {
 				_local_6 = _arg_1.target.parent;
 				if ((((_local_6 is MovieClip) && (_local_6.containertype == this.LAYER_OBJECT)) && (!(_local_6.parent == null)))) {
 					_local_6.parent[_arg_1.target.name] = _arg_1.target;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	internal function __setProp_bg_EvergreenVitalInfoIcons_view_bg_obj__0():* {
@@ -110,13 +110,13 @@ public dynamic class EvergreenVitalInfoIcons_view extends MovieClip {
 			this.bg["componentInspectorSetting"] = true;
 		} catch (e:Error) {
 		}
-		;
+
 		this.bg.containerType = 2;
 		try {
 			this.bg["componentInspectorSetting"] = false;
 		} catch (e:Error) {
 		}
-		;
+
 	}
 
 	internal function __setProp_bg_prop__EvergreenVitalInfoIcons_view_bg_prop__0():* {
@@ -124,7 +124,7 @@ public dynamic class EvergreenVitalInfoIcons_view extends MovieClip {
 			this.bg_prop_["componentInspectorSetting"] = true;
 		} catch (e:Error) {
 		}
-		;
+
 		this.bg_prop_.containerType = 1;
 		this.bg_prop_.isAttachedToCamera = false;
 		this.bg_prop_.isAttachedToMask = false;
@@ -135,7 +135,7 @@ public dynamic class EvergreenVitalInfoIcons_view extends MovieClip {
 			this.bg_prop_["componentInspectorSetting"] = false;
 		} catch (e:Error) {
 		}
-		;
+
 	}
 
 	internal function frame1():* {

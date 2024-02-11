@@ -125,7 +125,7 @@ public class StatusMarkersVR extends BaseControl {
 		for (_local_3 in this.m_varsWitnessesNone) {
 			this.m_tensionIndicatorMc.unconMc[_local_3] = this.m_varsWitnessesNone[_local_3];
 		}
-		;
+
 		this.m_tensionIndicatorMc.removeChild(this.m_tensionIndicatorMc.bgGradient);
 		this.m_oppNotification = new OpportunityBarView();
 		this.m_oppNotification.name = "oppNotification";
@@ -231,16 +231,16 @@ public class StatusMarkersVR extends BaseControl {
 				this.m_intelNotebookActivationIcon = null;
 				this.m_intelNotebookActivationIcon_hold_mc = null;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function setIntelNotebookActivationProgress(_arg_1:Number):void {
 		if (this.m_intelNotebookActivationIcon_hold_mc != null) {
 			this.m_intelNotebookActivationIcon_hold_mc.gotoAndStop(Math.ceil((_arg_1 * 60)));
 		}
-		;
+
 	}
 
 	public function onSetData(_arg_1:Object):void {
@@ -250,7 +250,7 @@ public class StatusMarkersVR extends BaseControl {
 		if (this.m_state == _local_2) {
 			return;
 		}
-		;
+
 		if (this.m_state != STATE_CLEAR) {
 			this.playSound(((this.m_state == STATE_DEEPTRESPASSING) ? "play_ui_deeptrespass_activate" : "play_ui_trespass_activate"));
 			MenuUtils.removeColor(this.m_trespassingIndicatorMc.bgMc);
@@ -274,7 +274,7 @@ public class StatusMarkersVR extends BaseControl {
 			this.m_trespassingIndicatorMc.pulseMc.scaleX = 1;
 			Animate.to(this.m_trespassingIndicatorMc, 0.5, 0, {"alpha": 1}, Animate.Linear, this.onTrespassingIndicatorPulseClear);
 		}
-		;
+
 		this.updateStatusMarkerPositions();
 	}
 
@@ -311,7 +311,7 @@ public class StatusMarkersVR extends BaseControl {
 			if (_arg_3 >= 1) {
 				_arg_2 = ICON_UNCONSCIOUSWITNESS;
 			}
-			;
+
 			this.m_tensionIndicatorMc.iconMc.gotoAndStop(((_arg_2 > 0) ? _arg_2 : 1));
 			this.m_tensionIndicatorMc.labelTxt.text = _arg_1.toUpperCase();
 			this.m_tensionIndicatorMc.bgMc.height = (23 + ((this.m_tensionIndicatorMc.labelTxt.numLines - 1) * 19));
@@ -327,7 +327,7 @@ public class StatusMarkersVR extends BaseControl {
 			Animate.fromTo(this.m_tensionIndicatorMc, 0.1, 0, {"alpha": 0}, {"alpha": 1}, Animate.Linear, this.onTensionBarAnimStep1, _arg_3);
 			this.m_tensionIndicatorMc.alpha = 0.011;
 		}
-		;
+
 		this.updateStatusMarkerPositions();
 	}
 
@@ -362,7 +362,7 @@ public class StatusMarkersVR extends BaseControl {
 		} else {
 			this.onTensionBarAnimStepFinal();
 		}
-		;
+
 	}
 
 	private function onTensionBarAnimStepFinal():void {
@@ -393,14 +393,14 @@ public class StatusMarkersVR extends BaseControl {
 		if (this.m_isHidden != _local_1) {
 			this.playSound(((this.m_isHidden) ? "play_ui_crowd_blendin" : "play_ui_crowd_blendout"));
 		}
-		;
+
 	}
 
 	public function showIntel(sHeadline:String, showDuration:Number):void {
 		if (!this.m_isObjlikeEnabled) {
 			return;
 		}
-		;
+
 		var prepare:Function = ((this.m_intelNotebookActivationIcon == null) ? function ():void {
 		} : function ():void {
 			m_intelNotebookActivationIcon.alpha = 0;
@@ -424,11 +424,11 @@ public class StatusMarkersVR extends BaseControl {
 		if ((((bNoDupes) && (sIcon == this.m_oppLastIcon)) && (sTask == this.m_oppLastTask))) {
 			return;
 		}
-		;
+
 		if (!this.m_isObjlikeEnabled) {
 			return;
 		}
-		;
+
 		this.m_oppLastIcon = sIcon;
 		this.m_oppLastTask = sTask;
 		var prepare:Function = function ():void {
@@ -450,7 +450,7 @@ public class StatusMarkersVR extends BaseControl {
 		if (!this.m_isObjlikeEnabled) {
 			return;
 		}
-		;
+
 		var prepare:Function = function ():void {
 			var ts:TaskletSequencer = TaskletSequencer.getGlobalInstance();
 			ts.addChunk(function ():void {
@@ -462,7 +462,7 @@ public class StatusMarkersVR extends BaseControl {
 					m_objectiveView.iconAnim_mc.icon_mc.gotoAndStop((((objective.objSuccess) && (!(objective.objFail))) ? 3 : (((!(objective.objSuccess)) && (objective.objFail)) ? 2 : 4)));
 					m_objectiveView.iconAnim_mc.icon_mc.getChildAt(0).alpha = 1;
 				}
-				;
+
 				m_objectiveView.x = (-(30 + m_objectiveView.label_txt.textWidth) / 2);
 			});
 			ts.addChunk(function ():void {
@@ -478,11 +478,11 @@ public class StatusMarkersVR extends BaseControl {
 						} else {
 							m_objectiveView.counterTimer_mc.visible = false;
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			});
 		};
 		var dtLinger:Number = (1.8 + (objective.objTitle.length / 55));
@@ -574,11 +574,11 @@ public class StatusMarkersVR extends BaseControl {
 					_local_3.counterData = _local_2;
 					this.showObjective(_local_3);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function playSound(_arg_1:String):void {
@@ -624,7 +624,7 @@ class ObjlikeQueue {
 			});
 			return;
 		}
-		;
+
 		for each (item in this.m_queue) {
 			if (item.id == id) {
 				item.prepare = prepare;
@@ -634,9 +634,9 @@ class ObjlikeQueue {
 				item.dtLinger = dtLinger;
 				return;
 			}
-			;
+
 		}
-		;
+
 		item = new QueueItem();
 		item.id = id;
 		item.prepare = prepare;
@@ -685,7 +685,7 @@ class ObjlikeQueue {
 				animateAppearance(item.container, item.icon_mc, item.txt, item.dtLinger);
 			});
 		}
-		;
+
 	}
 
 	public function cancel(id:String):void {
@@ -699,10 +699,10 @@ class ObjlikeQueue {
 					this.m_queue.splice(i, 1);
 					return;
 				}
-				;
+
 				i = (i + 1);
 			}
-			;
+
 		} else {
 			Animate.kill(this.m_containerCurrentlyShown);
 			this.m_containerCurrentlyShown.alpha = 0;
@@ -718,9 +718,9 @@ class ObjlikeQueue {
 					animateAppearance(item.container, item.icon_mc, item.txt, item.dtLinger);
 				});
 			}
-			;
+
 		}
-		;
+
 	}
 
 

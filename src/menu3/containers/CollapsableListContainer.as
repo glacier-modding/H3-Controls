@@ -39,7 +39,7 @@ public dynamic class CollapsableListContainer extends ListContainer {
 			this.m_collapsed = true;
 			this.expandCollapseMenu(false);
 		}
-		;
+
 	}
 
 	public function onUncollapsed():void {
@@ -47,7 +47,7 @@ public dynamic class CollapsableListContainer extends ListContainer {
 			this.m_collapsed = false;
 			this.expandCollapseMenu(true);
 		}
-		;
+
 	}
 
 	public function repositionElements(target:Sprite):void {
@@ -67,7 +67,7 @@ public dynamic class CollapsableListContainer extends ListContainer {
 			offsetChild = (offsetChild + (childBounds.height + MenuConstants.CollapsableContainerElementOffsetY));
 			i = (i + 1);
 		}
-		;
+
 	}
 
 	public function expandCollapseMenu(_arg_1:Boolean):void {
@@ -76,7 +76,7 @@ public dynamic class CollapsableListContainer extends ListContainer {
 			m_children[_local_2].visible = _arg_1;
 			_local_2++;
 		}
-		;
+
 		bubbleEvent("onEndChildBoundsChanged", this);
 	}
 
@@ -91,7 +91,7 @@ public dynamic class CollapsableListContainer extends ListContainer {
 			this.m_loading = false;
 			setItemSelected(m_isSelected);
 		}
-		;
+
 	}
 
 	override public function handleEvent(_arg_1:String, _arg_2:Sprite):Boolean {
@@ -100,7 +100,7 @@ public dynamic class CollapsableListContainer extends ListContainer {
 			bubbleEvent("onEndChildBoundsChanged", this);
 			return (true);
 		}
-		;
+
 		return (super.handleEvent(_arg_1, _arg_2));
 	}
 
@@ -110,7 +110,7 @@ public dynamic class CollapsableListContainer extends ListContainer {
 			this.repositionElements(m_children[_local_1]);
 			_local_1++;
 		}
-		;
+
 		this.expandCollapseMenu((!(this.m_collapsed)));
 	}
 
@@ -119,7 +119,7 @@ public dynamic class CollapsableListContainer extends ListContainer {
 		if (stage.focus == this) {
 			stage.focus = null;
 		}
-		;
+
 	}
 
 

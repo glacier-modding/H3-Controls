@@ -27,7 +27,7 @@ public dynamic class ButtonTileSmall extends ButtonTileBase {
 		if (_arg_1.buttonnumber) {
 			MenuUtils.setupText(m_view.buttonnumber, _arg_1.buttonnumber, 50, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorGreyUltraDark);
 		}
-		;
+
 		setupTextFields(_arg_1.header, _arg_1.title);
 		updateState();
 	}
@@ -36,7 +36,7 @@ public dynamic class ButtonTileSmall extends ButtonTileBase {
 		if (m_view == null) {
 			return (null);
 		}
-		;
+
 		return (m_view.tileBg);
 	}
 
@@ -47,11 +47,11 @@ public dynamic class ButtonTileSmall extends ButtonTileBase {
 				m_textTicker.stopTextTicker(m_view.title, m_textObj.title);
 				m_textTicker = null;
 			}
-			;
+
 			removeChild((m_view as ButtonTileSmallView));
 			m_view = null;
 		}
-		;
+
 	}
 
 

@@ -74,22 +74,22 @@ public class LineChart extends Sprite {
 			if (this.m_showGlobal) {
 				this.animateGraph(this.GRAPH_TYPE_GLOBAL);
 			}
-			;
+
 			if (this.m_showPlayer) {
 				this.animateGraph(this.GRAPH_TYPE_PLAYER);
 			}
-			;
+
 		} else {
 			if (this.m_showGlobal) {
 				this.drawGraph(this.GRAPH_TYPE_GLOBAL);
 			}
-			;
+
 			if (this.m_showPlayer) {
 				this.drawGraph(this.GRAPH_TYPE_PLAYER);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function createGraphFrame():void {
@@ -121,9 +121,9 @@ public class LineChart extends Sprite {
 				graphics.lineTo(xPos, -(m_graphHeightMAX));
 				i++;
 			}
-			;
+
 		}
-		;
+
 		var xAxisValueInfo:LineChartLabel = new LineChartLabel("Playthroughs", false, MenuConstants.COLOR_WHITE, LineChartLabel.TEXT_ORIENTATION_RIGHT);
 		xAxisValueInfo.x = graphWidth;
 		xAxisValueInfo.y = 25;
@@ -137,14 +137,14 @@ public class LineChart extends Sprite {
 			playerInfo.y = 35;
 			this.m_labelContainer.addChild(playerInfo);
 		}
-		;
+
 		if (this.m_showGlobal) {
 			globalInfo = new LineChartLabel("Global Average", true, MenuConstants.COLOR_WHITE);
 			globalInfo.x = 6;
 			globalInfo.y = 60;
 			this.m_labelContainer.addChild(globalInfo);
 		}
-		;
+
 	}
 
 	private function createGraphPoints():void {
@@ -160,9 +160,9 @@ public class LineChart extends Sprite {
 				this.m_globalGraph.push(_local_2);
 				_local_1++;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_showPlayer) {
 			this.m_playerGraph = new Vector.<LineChartPoint>();
 			_local_1 = 0;
@@ -172,9 +172,9 @@ public class LineChart extends Sprite {
 				this.m_playerGraph.push(_local_2);
 				_local_1++;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function drawGraph(type:String):void {
@@ -194,12 +194,12 @@ public class LineChart extends Sprite {
 				} else {
 					container.graphics.lineTo(graph[i].point.x, graph[i].point.y);
 				}
-				;
+
 				i++;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function animateGraph(_arg_1:String):void {
@@ -213,9 +213,9 @@ public class LineChart extends Sprite {
 				_local_2 = this.m_playerGraph;
 				this.m_view.addEventListener(Event.ENTER_FRAME, this.updatePlayerGraph);
 			}
-			;
+
 		}
-		;
+
 		var _local_3:Number = 0;
 		var _local_4:int = _local_2.length;
 		var _local_6:int;
@@ -229,7 +229,7 @@ public class LineChart extends Sprite {
 			_local_3 = (_local_3 + 0.01);
 			_local_6++;
 		}
-		;
+
 	}
 
 	private function setAnimationState(_arg_1:String, _arg_2:LineChartPoint, _arg_3:Boolean):void {
@@ -241,9 +241,9 @@ public class LineChart extends Sprite {
 			if (_arg_1 == this.GRAPH_TYPE_PLAYER) {
 				_local_4 = this.m_playerGraph;
 			}
-			;
+
 		}
-		;
+
 		var _local_5:Boolean = true;
 		var _local_6:int = _local_4.length;
 		var _local_7:int;
@@ -252,19 +252,19 @@ public class LineChart extends Sprite {
 				_local_5 = false;
 				return;
 			}
-			;
+
 			_local_7++;
 		}
-		;
+
 		if (_arg_1 == this.GRAPH_TYPE_GLOBAL) {
 			this.m_view.removeEventListener(Event.ENTER_FRAME, this.updateGlobalGraph);
 		} else {
 			if (_arg_1 == this.GRAPH_TYPE_PLAYER) {
 				this.m_view.removeEventListener(Event.ENTER_FRAME, this.updatePlayerGraph);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function updateGlobalGraph(evt:Event):void {
@@ -280,12 +280,12 @@ public class LineChart extends Sprite {
 				} else {
 					graphics.lineTo(m_globalGraph[i].clip.x, m_globalGraph[i].clip.y);
 				}
-				;
+
 				i++;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function updatePlayerGraph(evt:Event):void {
@@ -301,12 +301,12 @@ public class LineChart extends Sprite {
 				} else {
 					graphics.lineTo(m_playerGraph[i].clip.x, m_playerGraph[i].clip.y);
 				}
-				;
+
 				i++;
 			}
-			;
+
 		}
-		;
+
 	}
 
 

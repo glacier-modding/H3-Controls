@@ -28,14 +28,14 @@ public dynamic class NewItemsContainer extends ListContainer {
 
 	private var m_itemNewFlagPropertyName:String;
 	private var m_startDelay:Number = 0;
-	private var m_newItems:Array = new Array();
-	private var m_newItemsBound:Array = new Array();
+	private var m_newItems:Array = [];
+	private var m_newItemsBound:Array = [];
 	private var m_currentAnimationState:int = -1;
 	private var m_lastAnimationState:int = -1;
 	private var m_fadeInAscending:Boolean = false;
 	private var m_animate:Boolean = true;
-	private var m_doMoveAnimationChildIndex:Array = new Array();
-	private var m_originalPositions:Array = new Array();
+	private var m_doMoveAnimationChildIndex:Array = [];
+	private var m_originalPositions:Array = [];
 	private var m_originalContainerPlaceholder:Sprite = null;
 	private var delayCount:Number = 0;
 
@@ -44,19 +44,19 @@ public dynamic class NewItemsContainer extends ListContainer {
 		if (_arg_1.itemNewFlagPropertyName != null) {
 			this.m_itemNewFlagPropertyName = _arg_1.itemNewFlagPropertyName;
 		}
-		;
+
 		if (_arg_1.startDelay != null) {
 			this.m_startDelay = _arg_1.startDelay;
 		}
-		;
+
 		if (_arg_1.fadeInOrder == "ascending") {
 			this.m_fadeInAscending = true;
 		}
-		;
+
 		if (_arg_1.animate != null) {
 			this.m_animate = _arg_1.animate;
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -69,15 +69,15 @@ public dynamic class NewItemsContainer extends ListContainer {
 				Animate.kill(m_children[_local_1]);
 				_local_1++;
 			}
-			;
+
 			_local_1 = 0;
 			while (_local_1 < this.m_newItems.length) {
 				Animate.kill(this.m_newItems[_local_1]);
 				_local_1++;
 			}
-			;
+
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -88,17 +88,17 @@ public dynamic class NewItemsContainer extends ListContainer {
 		if (this.m_animate) {
 			element.alpha = 0;
 		}
-		;
+
 		var menuElement:MenuElementBase = (element as MenuElementBase);
 		if (menuElement == null) {
 			return;
 		}
-		;
+
 		var elementData:Object = menuElement.getData();
 		if (elementData == null) {
 			return;
 		}
-		;
+
 		if (((!(this.m_itemNewFlagPropertyName == null)) && (this.m_itemNewFlagPropertyName.length > 0))) {
 			if ((this.m_itemNewFlagPropertyName in elementData)) {
 				isNew = elementData[this.m_itemNewFlagPropertyName];
@@ -106,13 +106,13 @@ public dynamic class NewItemsContainer extends ListContainer {
 					if (!this.m_animate) {
 						this.onComplete(menuElement);
 					}
-					;
+
 					if (this.m_fadeInAscending) {
 						this.m_newItems.push(menuElement);
 					} else {
 						this.m_newItems.unshift(menuElement);
 					}
-					;
+
 					elementBounds = getMenuElementBounds(menuElement, this, function (_arg_1:MenuElementBase):Boolean {
 						return (_arg_1.visible);
 					});
@@ -121,13 +121,13 @@ public dynamic class NewItemsContainer extends ListContainer {
 					} else {
 						this.m_newItemsBound.unshift(elementBounds);
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function onChildrenChanged():void {
@@ -141,22 +141,22 @@ public dynamic class NewItemsContainer extends ListContainer {
 			} else {
 				this.m_originalContainerPlaceholder.graphics.clear();
 			}
-			;
+
 			this.m_originalContainerPlaceholder.graphics.beginFill(0, 0);
 			this.m_originalContainerPlaceholder.graphics.lineStyle(0, 0, 0);
 			this.m_originalContainerPlaceholder.graphics.drawRect(_local_1.x, _local_1.y, _local_1.width, _local_1.height);
 			if (this.m_currentAnimationState != this.ANI_STATE_START) {
 				this.startAnim();
 			}
-			;
+
 		} else {
 			if (this.m_originalContainerPlaceholder != null) {
 				getView().removeChild(this.m_originalContainerPlaceholder);
 				this.m_originalContainerPlaceholder = null;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function startAnim():void {
@@ -173,7 +173,7 @@ public dynamic class NewItemsContainer extends ListContainer {
 			this.m_currentAnimationState = state;
 			return;
 		}
-		;
+
 		Animate.kill(this);
 		Animate.delay(this, delay, function ():void {
 			m_currentAnimationState = state;
@@ -194,7 +194,7 @@ public dynamic class NewItemsContainer extends ListContainer {
 		if (this.m_currentAnimationState == this.m_lastAnimationState) {
 			return;
 		}
-		;
+
 		this.m_lastAnimationState = this.m_currentAnimationState;
 		if (this.m_currentAnimationState == this.ANI_STATE_START) {
 			this.initializeAnimation();
@@ -213,7 +213,7 @@ public dynamic class NewItemsContainer extends ListContainer {
 						this.startMoveAnimation(_local_7, this.m_originalPositions[_local_6], _local_3);
 						_local_4++;
 					}
-					;
+
 					_local_5 = ((this.m_doMoveAnimationChildIndex.length > 0) ? (_local_3 - 0.25) : 0);
 					this.setAnimationState(this.ANI_STATE_FADE_NEW_ITEMS, _local_5);
 				} else {
@@ -225,22 +225,22 @@ public dynamic class NewItemsContainer extends ListContainer {
 							this.startFadeInAnimation(_local_11, this.m_newItemsBound[_local_9], (_local_8 - 0.2));
 							_local_9++;
 						}
-						;
+
 						_local_10 = ((this.m_newItems.length > 0) ? _local_8 : 0);
 						this.setAnimationState(this.ANI_STATE_STOP, _local_10);
 					} else {
 						if (this.m_currentAnimationState == this.ANI_STATE_STOP) {
 							this.stopAnim();
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function initializeAnimation():void {
@@ -265,20 +265,20 @@ public dynamic class NewItemsContainer extends ListContainer {
 				} else {
 					_local_1.y = (_local_1.y + _local_7.height);
 				}
-				;
+
 			} else {
 				_local_3.alpha = 1;
 			}
-			;
+
 			if (((!(_local_5)) && ((_local_1.x > 0) || (_local_1.y > 0)))) {
 				_local_3.x = (_local_3.x - _local_1.x);
 				_local_3.y = (_local_3.y - _local_1.y);
 				this.m_doMoveAnimationChildIndex.push(_local_2);
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 	}
 
 	private function startMoveAnimation(_arg_1:MenuElementBase, _arg_2:Point, _arg_3:Number):void {

@@ -29,9 +29,9 @@ public class PhotoModeViewfinderScanner extends BaseControl {
 				this.m_view.scanner_mc.alpha = 1;
 				this.m_isShown = true;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_isShown) {
 			this.goScanning(_arg_1);
 			if (((_arg_1 == this.m_maxCount) || (_arg_1 <= this.m_previousScanVal))) {
@@ -39,9 +39,9 @@ public class PhotoModeViewfinderScanner extends BaseControl {
 				this.pulsateLargeRings(false);
 				this.m_isShown = false;
 			}
-			;
+
 		}
-		;
+
 		this.m_previousScanVal = _arg_1;
 	}
 
@@ -49,7 +49,7 @@ public class PhotoModeViewfinderScanner extends BaseControl {
 		if (!this.m_largeRingsIsPulsating) {
 			this.pulsateLargeRings(true);
 		}
-		;
+
 		Animate.to(this.m_view.scanner_mc.large_rings_mc.inner_mc.dots_mc, 0.2, 0, {"frames": (_arg_1 * 10)}, Animate.Linear);
 	}
 
@@ -69,7 +69,7 @@ public class PhotoModeViewfinderScanner extends BaseControl {
 			}, Animate.ExpoOut, this.pulsateLargeRingsOut);
 			Animate.to(this.m_view.scanner_mc.large_rings_mc.inner_mc, 0.4, 0.2, {"alpha": 1}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 	private function pulsateLargeRingsIn():void {
@@ -97,7 +97,7 @@ public class PhotoModeViewfinderScanner extends BaseControl {
 			default:
 				this.m_view.visible = true;
 		}
-		;
+
 	}
 
 

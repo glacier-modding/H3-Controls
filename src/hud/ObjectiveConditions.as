@@ -21,7 +21,7 @@ import scaleform.gfx.Extensions;
 public class ObjectiveConditions extends BaseControl {
 
 	private var m_container:Sprite = new Sprite();
-	private var m_aTargetInfos:Array = new Array();
+	private var m_aTargetInfos:Array = [];
 	private var m_targetInfosActive:int = 0;
 	private var i:int;
 	private var j:int;
@@ -46,7 +46,7 @@ public class ObjectiveConditions extends BaseControl {
 			this.m_container.addChild(_local_1);
 			this.i++;
 		}
-		;
+
 	}
 
 	public function instantiateTargetInfo():TargetInfoContainer {
@@ -62,7 +62,7 @@ public class ObjectiveConditions extends BaseControl {
 			_local_1.m_aObjectiveConditions.push(_local_4);
 			_local_2++;
 		}
-		;
+
 		var _local_3:line = new line();
 		_local_3.width = (this.conditionsXOffset + this.lineXWidthOffset);
 		_local_3.height = 1;
@@ -79,7 +79,7 @@ public class ObjectiveConditions extends BaseControl {
 			_arg_1.m_aObjectiveConditions[_local_3].visible = false;
 			_local_3++;
 		}
-		;
+
 	}
 
 	public function hideAll():void {
@@ -98,7 +98,7 @@ public class ObjectiveConditions extends BaseControl {
 			this.m_aTargetInfos.push(_local_2);
 			this.m_container.addChild(_local_2);
 		}
-		;
+
 		this.i = 0;
 		while (this.i < _arg_1.length) {
 			_local_3 = _arg_1[this.i];
@@ -114,7 +114,7 @@ public class ObjectiveConditions extends BaseControl {
 			if (_local_3.bIsTarget) {
 				_local_5 = "target";
 			}
-			;
+
 			if (_local_3.disguiseName == _local_3.npcName) {
 				_local_4 = {
 					"header": "",
@@ -132,32 +132,32 @@ public class ObjectiveConditions extends BaseControl {
 					"hardCondition": true
 				};
 			}
-			;
+
 			if (_local_3.objectiveConditions) {
 				if (_local_3.bIsTarget) {
 					_local_6 = _local_3.objectiveConditions;
 					if (_local_3.objectiveType == "kill") {
 						_local_6 = ObjectiveUtil.prepareConditions(_local_6, false, false, false);
 					}
-					;
+
 					_local_6.unshift(_local_4);
 					this.addConditions(_local_6, _local_2);
 				} else {
 					this.addConditions([_local_4], _local_2);
 				}
-				;
+
 			} else {
 				this.addConditions([_local_4], _local_2);
 			}
-			;
+
 			this.i++;
 		}
-		;
+
 		while (this.i < this.m_aTargetInfos.length) {
 			this.m_aTargetInfos[this.i].visible = false;
 			this.i++;
 		}
-		;
+
 	}
 
 	private function addConditions(_arg_1:Array, _arg_2:MovieClip):void {
@@ -175,11 +175,11 @@ public class ObjectiveConditions extends BaseControl {
 				} else {
 					MenuUtils.setupIcon(_local_5.valueIcon, _arg_1[_local_4].icon, MenuConstants.COLOR_WHITE, true, false);
 				}
-				;
+
 			} else {
 				MenuUtils.setupIcon(_local_5.valueIcon, _arg_1[_local_4].icon, MenuConstants.COLOR_BLACK, false, true, MenuConstants.COLOR_WHITE);
 			}
-			;
+
 			_local_6 = (((_arg_1[_local_4].hardCondition) || (_arg_1[_local_4].hardcondition)) ? _arg_1[_local_4].header : ((Localization.get("UI_DIALOG_OPTIONAL") + " ") + _arg_1[_local_4].header));
 			MenuUtils.setupText(_local_5.header, _local_6, 18, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorGreyUltraLight);
 			_local_5.header.width = (_local_5.header.textWidth + 10);
@@ -189,16 +189,16 @@ public class ObjectiveConditions extends BaseControl {
 			_local_3 = (_local_3 + (_local_5.valueIcon.height + 10));
 			_local_4++;
 		}
-		;
+
 	}
 
 	public function test(_arg_1:Number):void {
 		var _local_5:Object;
-		var _local_2:Array = new Array();
+		var _local_2:Array = [];
 		var _local_3:Number = 5;
 		var _local_4:Number = 0;
 		while (_local_4 < _local_3) {
-			_local_5 = new Object();
+			_local_5 = {};
 			_local_5.icon = "target";
 			_local_5.targetName = "Mr. Kill Me Mr. Kill Me Mr. Kill Me Mr. Kill Me";
 			_local_5.fX = (_local_4 * _arg_1);
@@ -210,7 +210,7 @@ public class ObjectiveConditions extends BaseControl {
 			_local_2.push(_local_5);
 			_local_4++;
 		}
-		;
+
 		this.onSetData(_local_2);
 	}
 
@@ -220,7 +220,7 @@ public class ObjectiveConditions extends BaseControl {
 		} else {
 			this.scaleFactor = (Extensions.visibleRect.height / 1080);
 		}
-		;
+
 	}
 
 
@@ -231,7 +231,7 @@ import flash.display.MovieClip;
 
 class TargetInfoContainer extends MovieClip {
 
-	public var m_aObjectiveConditions:Array = new Array();
+	public var m_aObjectiveConditions:Array = [];
 	public var bIsTarget:Boolean = false;
 
 

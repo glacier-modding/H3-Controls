@@ -33,7 +33,7 @@ public class AreaIndicator extends BaseControl {
 				m_view.visible = false;
 			});
 		}
-		;
+
 	}
 
 

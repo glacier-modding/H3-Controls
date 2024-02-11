@@ -27,7 +27,7 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 	private var m_loader:MenuImageLoader;
 	private var m_timeSavedIndicator:SavegameIndicatorSmallView;
 	private var m_occupied:Boolean;
-	private var m_textObj:Object = new Object();
+	private var m_textObj:Object = {};
 	private var m_textTicker:textTicker;
 	private var m_pressable:Boolean = true;
 	private var m_available:Boolean = true;
@@ -69,12 +69,12 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 		if (getNodeProp(this, "pressable") == false) {
 			this.m_pressable = false;
 		}
-		;
+
 		this.m_occupied = false;
 		if (data.occupied) {
 			this.m_occupied = true;
 		}
-		;
+
 		this.m_disable = data.disable;
 		this.m_view.difficultyIcon.visible = false;
 		MenuUtils.addDropShadowFilter(this.m_view.difficultyIcon);
@@ -84,7 +84,7 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 				MenuUtils.setupIcon(m_view.difficultyIcon, data.difficultyIcon, MenuConstants.COLOR_WHITE, false, false);
 			});
 		}
-		;
+
 		this.setupTextFields(data.header, data.title);
 		if (this.m_disable) {
 			TaskletSequencer.getGlobalInstance().addChunk(function ():void {
@@ -99,7 +99,7 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 				if (!m_pressable) {
 					m_saveSlotDisabledIndicator.title.width = 275;
 				}
-				;
+
 				m_saveSlotDisabledIndicator.y = (m_view.tileBg.height - MenuConstants.ValueIndicatorYOffset);
 				var _local_1:String = data.disabletext;
 				MenuUtils.setupText(m_saveSlotDisabledIndicator.title, _local_1, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
@@ -111,11 +111,11 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 					if (m_saveSlotDisabledIndicator.title.numLines > 7) {
 						_local_2 = ((7 - 2) * 24);
 					}
-					;
+
 					m_saveSlotDisabledIndicator.darkBg.height = (m_saveSlotDisabledIndicator.darkBg.height + _local_2);
 					m_saveSlotDisabledIndicator.y = (m_saveSlotDisabledIndicator.y - _local_2);
 				}
-				;
+
 				MenuUtils.truncateTextfield(m_saveSlotDisabledIndicator.title, 7);
 				MenuUtils.setupIcon(m_saveSlotDisabledIndicator.valueIcon, "info", MenuConstants.COLOR_WHITE, true, true, MenuConstants.COLOR_BLACK, 0.15);
 			});
@@ -125,13 +125,13 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 				changeTextColor(((m_pressable) ? MenuConstants.COLOR_WHITE : MenuConstants.COLOR_GREY_MEDIUM), ((m_pressable) ? MenuConstants.COLOR_WHITE : MenuConstants.COLOR_GREY_MEDIUM));
 			});
 		}
-		;
+
 		if (data.availability) {
 			TaskletSequencer.getGlobalInstance().addChunk(function ():void {
 				setAvailablity(m_view, data, "small");
 			});
 		}
-		;
+
 		if (((!(data.online)) && (data.occupied))) {
 			TaskletSequencer.getGlobalInstance().addChunk(function ():void {
 				m_saveWasOffline = true;
@@ -146,19 +146,19 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 				m_view.onlinebg.alpha = 1;
 			});
 		}
-		;
+
 		if (((!(data.availability == null)) && (data.availability.available === false))) {
 			this.m_available = false;
 		} else {
 			this.m_available = true;
 		}
-		;
+
 		if (((data.timestamp) && (data.timestampnow))) {
 			TaskletSequencer.getGlobalInstance().addChunk(function ():void {
 				setTimeindicator(data.timestamp, data.timestampnow);
 			});
 		}
-		;
+
 		TaskletSequencer.getGlobalInstance().addChunk(function ():void {
 			showTileInfo(false);
 		});
@@ -167,7 +167,7 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 				loadImage(data.image);
 			});
 		}
-		;
+
 		TaskletSequencer.getGlobalInstance().addChunk(function ():void {
 			handleSelectionChange();
 		});
@@ -189,9 +189,9 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 			} else {
 				_local_9 = DateTimeUtils.formatLocalDateLocalized(_local_3);
 			}
-			;
+
 		}
-		;
+
 		var _local_10:String = DateTimeUtils.formatLocalDateHM(_local_3);
 		this.m_timeSavedIndicator.y = (((this.m_view.tileBg.height - MenuConstants.ValueIndicatorYOffset) + MenuConstants.ValueIndicatorHeight) + MenuConstants.tileGap);
 		MenuUtils.setupText(this.m_timeSavedIndicator.header, _local_9, 18, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
@@ -207,9 +207,9 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 				this.m_view.onlineheader.y = 161;
 				this.m_view.onlinebg.y = 173.5;
 			}
-			;
+
 		}
-		;
+
 		this.m_timeSavedIndicator.visible = true;
 	}
 
@@ -229,16 +229,16 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 						this.m_view.onlineheader.alpha = 1;
 						this.m_view.onlinebg.alpha = 1;
 					}
-					;
+
 				}
-				;
+
 				if (this.m_disable) {
 					this.m_timeSavedIndicator.alpha = 0;
 					this.m_view.onlineheader.alpha = 0;
 					this.m_view.onlinebg.alpha = 0;
 					this.m_saveSlotDisabledIndicator.alpha = 1;
 				}
-				;
+
 				this.m_timeSavedIndicator.y = (this.m_view.tileBg.height - MenuConstants.ValueIndicatorYOffset);
 				this.m_view.onlineheader.y = 161;
 				this.m_view.onlinebg.y = 173.5;
@@ -249,7 +249,7 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 				if (this.m_disable) {
 					this.m_saveSlotDisabledIndicator.alpha = 0;
 				}
-				;
+
 				this.m_timeSavedIndicator.alpha = 1;
 				this.m_timeSavedIndicator.y = (((this.m_view.tileBg.height - MenuConstants.ValueIndicatorYOffset) + MenuConstants.ValueIndicatorHeight) + MenuConstants.tileGap);
 				if (this.m_saveWasOffline) {
@@ -258,9 +258,9 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 					this.m_view.onlineheader.y = 225;
 					this.m_view.onlinebg.y = 237.5;
 				}
-				;
+
 			}
-			;
+
 		} else {
 			this.m_view.tileIcon.alpha = 1;
 			this.m_view.header.alpha = 1;
@@ -274,9 +274,9 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 			if (this.m_disable) {
 				this.m_saveSlotDisabledIndicator.alpha = ((_arg_1) ? 1 : 0);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function getView():Sprite {
@@ -296,14 +296,14 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 		if (!this.m_textTicker) {
 			this.m_textTicker = new textTicker();
 		}
-		;
+
 		if (_arg_1) {
 			this.m_textTicker.startTextTicker(this.m_view.title, this.m_textObj.title);
 		} else {
 			this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 			MenuUtils.truncateTextfield(this.m_view.title, 1);
 		}
-		;
+
 	}
 
 	private function changeTextColor(_arg_1:uint, _arg_2:uint):void {
@@ -315,7 +315,7 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 		if (this.m_imagePath == imagePath) {
 			return;
 		}
-		;
+
 		this.m_imagePath = imagePath;
 		this.m_loader.cancelIfLoading();
 		this.m_loader.visible = true;
@@ -336,7 +336,7 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 		if (m_loading) {
 			return;
 		}
-		;
+
 		this.showTileInfo(m_isSelected);
 		if (m_isSelected) {
 			setPopOutScale(this.m_view, true);
@@ -348,7 +348,7 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 				MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_RED, true, MenuConstants.MenuElementSelectedAlpha);
 				MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_RED, false, true, MenuConstants.COLOR_WHITE, 1, 0, true);
 			}
-			;
+
 		} else {
 			setPopOutScale(this.m_view, false);
 			Animate.kill(this.m_view.dropShadow);
@@ -360,9 +360,9 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 				MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 				MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_WHITE, true, false);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -373,17 +373,17 @@ public dynamic class LoadSaveTileSmall extends MenuElementAvailabilityBase {
 				this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 				this.m_textTicker = null;
 			}
-			;
+
 			if (this.m_loader) {
 				this.m_loader.cancelIfLoading();
 				this.m_view.image.removeChild(this.m_loader);
 				this.m_loader = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	private function completeAnimations():void {

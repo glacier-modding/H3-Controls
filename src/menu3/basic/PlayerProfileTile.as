@@ -43,7 +43,7 @@ public dynamic class PlayerProfileTile extends MenuElementLockableContentBase {
 			MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_GREY_DARK, false);
 			MenuUtils.setColor(this.m_view.tileSelectPulsate, MenuConstants.COLOR_GREY_DARK, false);
 		}
-		;
+
 		MenuUtils.setupText(this.m_view.header, _arg_1.header, 18, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 		MenuUtils.setupText(this.m_view.title, _arg_1.title, 24, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 		MenuUtils.setupText(this.m_view.levelHeader, _arg_1.levelHeader, 24, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorGreyUltraLight);
@@ -54,21 +54,21 @@ public dynamic class PlayerProfileTile extends MenuElementLockableContentBase {
 		if (_arg_1.image) {
 			this.loadImage(_arg_1.image);
 		}
-		;
+
 	}
 
 	private function loadImage(imagePath:String):void {
 		if (this.m_imagePath == imagePath) {
 			return;
 		}
-		;
+
 		this.m_imagePath = imagePath;
 		if (this.m_loader != null) {
 			this.m_loader.cancelIfLoading();
 			this.m_view.image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new MenuImageLoader();
 		this.m_view.image.addChild(this.m_loader);
 		this.m_loader.center = true;
@@ -81,7 +81,7 @@ public dynamic class PlayerProfileTile extends MenuElementLockableContentBase {
 				m_view.image.width = MenuConstants.MenuTileTallWidth;
 				m_view.image.scaleY = m_view.image.scaleX;
 			}
-			;
+
 		});
 	}
 
@@ -96,7 +96,7 @@ public dynamic class PlayerProfileTile extends MenuElementLockableContentBase {
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (m_isSelected) {
 			setPopOutScale(this.m_view, true);
 			Animate.to(this.m_view.dropShadow, 0.3, 0, {"alpha": 1}, Animate.ExpoOut);
@@ -109,7 +109,7 @@ public dynamic class PlayerProfileTile extends MenuElementLockableContentBase {
 			this.m_view.tileSelect.alpha = 0;
 			MenuUtils.pulsate(this.m_view.tileSelectPulsate, false);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -121,11 +121,11 @@ public dynamic class PlayerProfileTile extends MenuElementLockableContentBase {
 				this.m_view.image.removeChild(this.m_loader);
 				this.m_loader = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	private function completeAnimations():void {
@@ -135,7 +135,7 @@ public dynamic class PlayerProfileTile extends MenuElementLockableContentBase {
 		if (m_infoIndicator != null) {
 			Animate.complete(m_infoIndicator);
 		}
-		;
+
 	}
 
 

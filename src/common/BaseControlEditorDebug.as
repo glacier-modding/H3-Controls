@@ -27,11 +27,11 @@ public class BaseControlEditorDebug {
 		if (s_selectionWidget != null) {
 			unsetSelectionWidget(s_selectionWidget);
 		}
-		;
+
 		if (((_arg_1 == null) || (_arg_1.stage == null))) {
 			return (null);
 		}
-		;
+
 		s_selectionWidget = new Sprite();
 		s_selectionWidget.name = "EditorSelectionWidgetNode";
 		drawSelectionWidget(s_selectionWidget, _arg_1, _arg_2, _arg_3, _arg_4, _arg_5, _arg_6, _arg_7);
@@ -44,7 +44,7 @@ public class BaseControlEditorDebug {
 		if (((_arg_1 == null) || (!(s_selectionWidget == _arg_1)))) {
 			return;
 		}
-		;
+
 		s_selectionWidgetStage.removeChild(s_selectionWidget);
 		s_selectionWidget = null;
 		s_selectionWidgetStage = null;
@@ -54,17 +54,17 @@ public class BaseControlEditorDebug {
 		if (s_selectionArrowWidget != null) {
 			unsetSelectionArrowWidget(s_selectionArrowWidget);
 		}
-		;
+
 		if (((_arg_1 == null) || (_arg_1.stage == null))) {
 			return (null);
 		}
-		;
+
 		var _local_8:Number = 0;
 		var _local_9:Rectangle = new Rectangle(_local_8, _local_8, (_arg_1.stage.stageWidth - _local_8), (_arg_1.stage.stageHeight - _local_8));
 		if (isObjectInBounds(_local_9, _arg_1, _arg_2, _arg_3, _arg_4, _arg_5, _arg_6, _arg_7)) {
 			return (null);
 		}
-		;
+
 		s_selectionArrowWidget = new Sprite();
 		s_selectionArrowWidget.name = "EditorSelectionArrowWidgetNode";
 		drawSelectionArrowWidget(s_selectionArrowWidget, _local_9, _arg_1, _arg_2, _arg_3, _arg_4, _arg_5, _arg_6, _arg_7);
@@ -77,7 +77,7 @@ public class BaseControlEditorDebug {
 		if (((_arg_1 == null) || (!(s_selectionArrowWidget == _arg_1)))) {
 			return;
 		}
-		;
+
 		s_selectionArrowWidgetStage.removeChild(s_selectionArrowWidget);
 		s_selectionArrowWidget = null;
 		s_selectionArrowWidgetStage = null;
@@ -87,11 +87,11 @@ public class BaseControlEditorDebug {
 		if (s_containerWidget != null) {
 			unsetContainerWidget(s_containerWidget);
 		}
-		;
+
 		if (((_arg_1 == null) || (_arg_1.stage == null))) {
 			return (null);
 		}
-		;
+
 		s_containerWidget = new Sprite();
 		s_containerWidget.name = "EditorContainerWidgetNode";
 		drawContainerWidget(s_containerWidget, _arg_1, _arg_2, _arg_3, _arg_4, _arg_5, _arg_6, _arg_7);
@@ -104,7 +104,7 @@ public class BaseControlEditorDebug {
 		if (((_arg_1 == null) || (!(s_containerWidget == _arg_1)))) {
 			return;
 		}
-		;
+
 		s_containerWidgetStage.removeChild(s_containerWidget);
 		s_containerWidget = null;
 		s_containerWidgetStage = null;
@@ -130,11 +130,11 @@ public class BaseControlEditorDebug {
 		if (_local_13.x < 0) {
 			_local_14.x = (_local_14.x - _local_14.width);
 		}
-		;
+
 		if (_local_13.y < 0) {
 			_local_14.y = (_local_14.y - _local_14.height);
 		}
-		;
+
 		return (_arg_1.intersects(_local_14));
 	}
 

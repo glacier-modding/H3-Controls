@@ -24,11 +24,11 @@ public dynamic class ItemTileIndicatorSmall extends ItemTileSmall {
 		if (m_isSelected) {
 			return;
 		}
-		;
+
 		if (stage.focus == this) {
 			return;
 		}
-		;
+
 		stage.focus = this;
 		setItemSelected(true);
 		stage.stageFocusRect = false;
@@ -40,7 +40,7 @@ public dynamic class ItemTileIndicatorSmall extends ItemTileSmall {
 		if (((stage) && (stage.focus == this))) {
 			stage.focus = null;
 		}
-		;
+
 		setItemSelected(false);
 	}
 

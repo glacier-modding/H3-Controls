@@ -35,7 +35,7 @@ public dynamic class InventoryItemIcon extends MenuElementTileBase {
 	protected var m_view:InventoryItemIconMC;
 	protected var m_rotationBase:Sprite;
 	private var m_loader:MenuImageLoader;
-	private var m_textObj:Object = new Object();
+	private var m_textObj:Object = {};
 	private var m_pressable:Boolean = true;
 	private var m_isHighlighted:Boolean = false;
 	public var m_itemName:String = "";
@@ -75,7 +75,7 @@ public dynamic class InventoryItemIcon extends MenuElementTileBase {
 		if (((!(this.m_itemName == null)) && (this.m_itemName.length > 0))) {
 			_local_3 = _arg_1.icon;
 		}
-		;
+
 		if (this.m_iconRid != _local_3) {
 			this.m_iconRid = _local_3;
 			this.destroyImageLoader();
@@ -86,9 +86,9 @@ public dynamic class InventoryItemIcon extends MenuElementTileBase {
 				this.m_view.addChild(this.m_loader);
 				this.loadIconImage(this.m_loader, _local_3);
 			}
-			;
+
 		}
-		;
+
 		this.updateStates();
 	}
 
@@ -101,7 +101,7 @@ public dynamic class InventoryItemIcon extends MenuElementTileBase {
 		if (m_loading) {
 			return;
 		}
-		;
+
 		this.updateStates();
 	}
 
@@ -109,7 +109,7 @@ public dynamic class InventoryItemIcon extends MenuElementTileBase {
 		if (_arg_1 == this.m_isHighlighted) {
 			return;
 		}
-		;
+
 		this.m_isHighlighted = _arg_1;
 		this.updateStates();
 	}
@@ -121,16 +121,16 @@ public dynamic class InventoryItemIcon extends MenuElementTileBase {
 			} else {
 				this.setState(ITEM_STATE_HIGHLIGHTED);
 			}
-			;
+
 		} else {
 			if (m_isSelected) {
 				this.setState(ITEM_STATE_SELECTED);
 			} else {
 				this.setState(ITEM_STATE_NORMAL);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function setState(_arg_1:int):void {
@@ -154,11 +154,11 @@ public dynamic class InventoryItemIcon extends MenuElementTileBase {
 					this.m_view.tileSelect.alpha = 0;
 					MenuUtils.pulsate(this.m_view.tileSelectPulsate, false);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function animateWiggle():void {
@@ -179,7 +179,7 @@ public dynamic class InventoryItemIcon extends MenuElementTileBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -189,7 +189,7 @@ public dynamic class InventoryItemIcon extends MenuElementTileBase {
 			this.m_view.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 	}
 
 	private function completeAnimations():void {
@@ -214,14 +214,14 @@ public dynamic class InventoryItemIcon extends MenuElementTileBase {
 				imageLoader.rotation = 90;
 				_local_2 = true;
 			}
-			;
+
 			imageLoader.width = max_width;
 			imageLoader.scaleY = imageLoader.scaleX;
 			if (imageLoader.height > max_height) {
 				imageLoader.height = max_height;
 				imageLoader.scaleX = imageLoader.scaleY;
 			}
-			;
+
 			_local_1.setTint(0xFFFFFF, 1);
 			imageLoader.transform.colorTransform = _local_1;
 			imageLoader.alpha = 1;

@@ -43,41 +43,41 @@ public dynamic class ListElementLeaderboardSmall extends CollapsableListContaine
 		if (getNodeProp(this, "pressable") === false) {
 			this.m_pressable = false;
 		}
-		;
+
 		if (_arg_1.isPlayer) {
 			this.addLine(-0.5);
 		} else {
 			this.addLine(43.5);
 		}
-		;
+
 		var _local_2:String = ((_arg_1.isPlayer) ? MenuConstants.FontColorWhite : MenuConstants.FontColorWhite);
 		this.m_view.vr.visible = (_arg_1.isVR === true);
 		if (_arg_1.infotext) {
 			this.setupTextField(this.m_view.infotext, _arg_1.infotext, _local_2, false);
 			return;
 		}
-		;
+
 		if (_arg_1.rank != undefined) {
 			this.setupTextField(this.m_view.rank, MenuUtils.formatNumber(_arg_1.rank), _local_2, false);
 		}
-		;
+
 		if (_arg_1.player) {
 			if (_arg_1.player2 != null) {
 				this.setupMultipartPlayername(_arg_1.player, _arg_1.player2, _local_2, true);
 			} else {
 				this.setupTextField(this.m_view.playername, _arg_1.player, _local_2, true);
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.country) {
 			this.setupTextField(this.m_view.country, _arg_1.country, _local_2, false);
 		}
-		;
+
 		if (_arg_1.score != undefined) {
 			this.setupTextField(this.m_view.score, MenuUtils.formatNumber(_arg_1.score), _local_2, false);
 		}
-		;
+
 		this.handleSelectionChange();
 	}
 
@@ -88,7 +88,7 @@ public dynamic class ListElementLeaderboardSmall extends CollapsableListContaine
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	private function setupTextField(_arg_1:TextField, _arg_2:String, _arg_3:String, _arg_4:Boolean = true):void {
@@ -99,7 +99,7 @@ public dynamic class ListElementLeaderboardSmall extends CollapsableListContaine
 		} else {
 			MenuUtils.shrinkTextToFit(_arg_1, _arg_1.width, -1);
 		}
-		;
+
 	}
 
 	private function setupMultipartPlayername(_arg_1:String, _arg_2:String, _arg_3:String, _arg_4:Boolean = true):void {
@@ -110,14 +110,14 @@ public dynamic class ListElementLeaderboardSmall extends CollapsableListContaine
 		if (_arg_4) {
 			MenuUtils.truncateMultipartTextfield(this.m_view.playername, _arg_1, _arg_2, MenuConstants.PLAYER_MULTIPLAYER_DELIMITER, MenuConstants.PLAYERNAME_MIN_CHAR_COUNT, _arg_3);
 		}
-		;
+
 		var _local_6:Number = this.m_view.playername.textHeight;
 		MenuUtils.shrinkTextToFit(this.m_view.playername, this.m_view.playername.width, -1);
 		var _local_7:Number = this.m_view.playername.textHeight;
 		if (_local_7 < _local_6) {
 			this.m_view.playername.y = (this.m_view.playername.y + ((_local_6 - _local_7) / 2));
 		}
-		;
+
 	}
 
 	private function changeTextColor(_arg_1:TextField, _arg_2:uint):void {
@@ -137,7 +137,7 @@ public dynamic class ListElementLeaderboardSmall extends CollapsableListContaine
 		super.onAddedAsChild(_arg_1);
 		if (m_parent.getChildElementIndex(this) == 1) {
 		}
-		;
+
 	}
 
 	override public function addChild2(_arg_1:Sprite, _arg_2:int = -1):void {
@@ -146,9 +146,9 @@ public dynamic class ListElementLeaderboardSmall extends CollapsableListContaine
 			if (((!(this.getData().direction == "horizontal")) && (!(this.getData().direction == "horizontalWrap")))) {
 				_arg_1.x = 32;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function getView():Sprite {
@@ -160,13 +160,13 @@ public dynamic class ListElementLeaderboardSmall extends CollapsableListContaine
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (m_isSelected) {
 			Animate.to(this.m_view.tileSelect, MenuConstants.HiliteTime, 0, {"alpha": 1}, Animate.ExpoOut);
 		} else {
 			this.m_view.tileSelect.alpha = 0;
 		}
-		;
+
 	}
 
 

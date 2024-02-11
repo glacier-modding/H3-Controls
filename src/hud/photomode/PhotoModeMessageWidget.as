@@ -55,7 +55,7 @@ public class PhotoModeMessageWidget extends BaseControl {
 			this.m_FAF_viewsActive.push(_local_1);
 			_local_1.startAnimation(this.onFAFAnimationCompleted);
 		}
-		;
+
 	}
 
 	private function onFAFAnimationCompleted(_arg_1:FAFMessageView):void {
@@ -67,15 +67,15 @@ public class PhotoModeMessageWidget extends BaseControl {
 				this.m_FAF_viewsActive.splice(_local_2, 1);
 				break;
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 		if (this.m_FAF_viewsActive.length == 0) {
 			this.m_FAF_yOffsetTotal = 0;
 			this.m_FAF_container.y = 0;
 		}
-		;
+
 	}
 
 	public function clearAllFiredAndForgotten():void {
@@ -88,14 +88,14 @@ public class PhotoModeMessageWidget extends BaseControl {
 			_local_1.y = 0;
 			this.m_FAF_container.releaseView(_local_1);
 		}
-		;
+
 		while (this.m_FAF_viewsActive.length > 0) {
 			_local_1 = this.m_FAF_viewsActive.pop();
 			Animate.kill(_local_1);
 			_local_1.y = 0;
 			this.m_FAF_container.releaseView(_local_1);
 		}
-		;
+
 	}
 
 	public function setSticky(_arg_1:String, _arg_2:String):void {
@@ -108,11 +108,11 @@ public class PhotoModeMessageWidget extends BaseControl {
 				this.m_Sticky_view.fadeOutAnimation(this.onStickyFadeOutCompleted);
 				this.m_Sticky_isFadingOut = true;
 			}
-			;
+
 			this.m_Sticky_htmlPrimaryEnqueued = _arg_1;
 			this.m_Sticky_htmlSecondaryEnqueued = _arg_2;
 		}
-		;
+
 	}
 
 	private function onStickyFadeOutCompleted():void {
@@ -125,20 +125,20 @@ public class PhotoModeMessageWidget extends BaseControl {
 		} else {
 			this.m_Sticky_view.visible = false;
 		}
-		;
+
 	}
 
 	public function clearSticky():void {
 		if (!this.m_Sticky_view.visible) {
 			return;
 		}
-		;
+
 		if (!this.m_Sticky_isFadingOut) {
 			this.m_Sticky_view.fadeOutAnimation(this.onStickyFadeOutCompleted);
 			this.m_Sticky_isFadingOut = true;
 			Animate.to(this.m_FAF_containerStickyOffset, 0.125, 0, {"y": 0}, Animate.SineOut);
 		}
-		;
+
 		this.m_Sticky_htmlPrimaryEnqueued = null;
 		this.m_Sticky_htmlSecondaryEnqueued = null;
 	}
@@ -188,7 +188,7 @@ class MessageView extends Sprite {
 			this.secondary_txt.alpha = 1;
 			this.secondary_txt.visible = true;
 		}
-		;
+
 	}
 
 	public function getTotalTextHeight():Number {
@@ -196,7 +196,7 @@ class MessageView extends Sprite {
 		if (this.secondary_txt.visible) {
 			_local_1 = (_local_1 + this.secondary_txt.height);
 		}
-		;
+
 		return (_local_1);
 	}
 
@@ -216,7 +216,7 @@ class StickyMessageView extends MessageView {
 		if (secondary_txt.visible) {
 			secondary_txt.y = primary_txt.height;
 		}
-		;
+
 		Animate.to(this, 0.125, 0, {
 			"alpha": 1,
 			"scaleX": 1,
@@ -259,7 +259,7 @@ class FAFMessageView extends MessageView {
 			}, Animate.ExpoOut);
 			_local_2 = (_local_2 + 1);
 		}
-		;
+
 		this.bg.width = primary_txt.width;
 		this.bg.height = (primary_txt.height - 3);
 		this.bg.alpha = 1;
@@ -292,7 +292,7 @@ class FAFMessageViewContainer extends Sprite {
 			addChild(_local_3);
 			_local_2++;
 		}
-		;
+
 	}
 
 	public function acquireView():FAFMessageView {
@@ -304,7 +304,7 @@ class FAFMessageViewContainer extends Sprite {
 			_local_1 = new FAFMessageView();
 			addChild(_local_1);
 		}
-		;
+
 		return (_local_1);
 	}
 

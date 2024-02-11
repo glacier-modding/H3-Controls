@@ -71,14 +71,14 @@ public class MenuUtils {
 		if (_arg_2 == null) {
 			_arg_2 = "";
 		}
-		;
+
 		if (ControlsMain.isVrModeActive()) {
 			if (((_arg_4 == MenuConstants.FONT_TYPE_LIGHT) || (_arg_4 == MenuConstants.FONT_TYPE_NORMAL))) {
 				_arg_4 = MenuConstants.FONT_TYPE_MEDIUM;
 			}
-			;
+
 		}
-		;
+
 		if (_arg_6) {
 			_arg_1.htmlText = (_arg_1.htmlText + (((((((('<font face="' + _arg_4) + '" color="') + _arg_5) + '" size="') + _arg_3) + '">') + _arg_2) + "</font>"));
 		} else {
@@ -89,7 +89,7 @@ public class MenuUtils {
 			_local_7.size = _arg_3;
 			_arg_1.defaultTextFormat = _local_7;
 		}
-		;
+
 	}
 
 	public static function setTextColor(_arg_1:TextField, _arg_2:int):void {
@@ -103,7 +103,7 @@ public class MenuUtils {
 		if (_arg_2 == null) {
 			_arg_2 = "";
 		}
-		;
+
 		setupText(_arg_1, _arg_2.toUpperCase(), _arg_3, _arg_4, _arg_5, _arg_6);
 	}
 
@@ -111,7 +111,7 @@ public class MenuUtils {
 		if (_arg_2 == null) {
 			_arg_2 = "";
 		}
-		;
+
 		setupText(_arg_1, _arg_2, _arg_3, _arg_4, _arg_5, _arg_6);
 		CommonUtils.changeFontToGlobalIfNeeded(_arg_1);
 		truncateTextfieldWithCharLimit(_arg_1, 1, MenuConstants.PLAYERNAME_MIN_CHAR_COUNT, _arg_5);
@@ -122,7 +122,7 @@ public class MenuUtils {
 		if (((_arg_1 == "") || (_arg_1 == null))) {
 			return (_arg_1);
 		}
-		;
+
 		var _local_2:XML = new XML((("<p><![CDATA[" + _arg_1) + "]]></p>"));
 		return (_local_2.toXMLString());
 	}
@@ -148,22 +148,22 @@ public class MenuUtils {
 		if (((_arg_2 <= 0) || (_arg_1.length <= 0))) {
 			return (false);
 		}
-		;
+
 		if (_arg_5) {
 			CommonUtils.changeFontToGlobalFont(_arg_1);
 		}
-		;
+
 		var _local_6:TextFormat = _arg_1.getTextFormat();
 		if (((_arg_4) && (!(_arg_4 == "")))) {
 			_local_6.color = MenuConstants.ColorNumber(_arg_4);
 		}
-		;
+
 		var _local_7:Boolean = _arg_1.wordWrap;
 		var _local_8:Boolean = _arg_1.multiline;
 		if (((!(_local_8)) || (_arg_2 == 1))) {
 			_arg_1.wordWrap = true;
 		}
-		;
+
 		_arg_1.multiline = true;
 		var _local_9:Boolean;
 		if (_arg_1.numLines > _arg_2) {
@@ -173,14 +173,14 @@ public class MenuUtils {
 				if (_local_11 < 0) {
 					_local_11 = 0;
 				}
-				;
+
 				_local_12 = _arg_1.text;
 				_local_13 = _local_12.length;
 				if (((s_truncator == null) || (!(s_truncatorLocale == ControlsMain.getActiveLocale())))) {
 					s_truncator = Localization.get("UI_TEXT_TRUNCATOR");
 					s_truncatorLocale = ControlsMain.getActiveLocale();
 				}
-				;
+
 				_local_14 = false;
 				while ((((!(_local_14)) && (_local_11 > 0)) && (_local_13 > _arg_3))) {
 					_arg_1.text = "";
@@ -190,7 +190,7 @@ public class MenuUtils {
 						_local_11--;
 						_local_15 = _local_12.charAt(_local_11);
 					}
-					;
+
 					_local_16 = _local_12.substring(0, (_local_11 + 1));
 					_local_13 = _local_16.length;
 					_local_17 = (_local_16 + s_truncator);
@@ -199,12 +199,12 @@ public class MenuUtils {
 					_local_10 = _arg_1.getLineIndexOfChar((_arg_1.length - 1));
 					_local_14 = (_local_10 < _arg_2);
 				}
-				;
+
 				_local_9 = true;
 			}
-			;
+
 		}
-		;
+
 		_arg_1.wordWrap = _local_7;
 		_arg_1.multiline = _local_8;
 		return (_local_9);
@@ -225,23 +225,23 @@ public class MenuUtils {
 		if (((_arg_2.length <= _arg_5) && (_arg_3.length <= _arg_5))) {
 			return;
 		}
-		;
+
 		var _local_8:int = 1;
 		if (_arg_7) {
 			CommonUtils.changeFontToGlobalFont(_arg_1);
 		}
-		;
+
 		var _local_9:TextFormat = _arg_1.getTextFormat();
 		if (((_arg_6) && (!(_arg_6 == "")))) {
 			_local_9.color = MenuConstants.ColorNumber(_arg_6);
 		}
-		;
+
 		var _local_10:Boolean = _arg_1.wordWrap;
 		var _local_11:Boolean = _arg_1.multiline;
 		if (((!(_local_11)) || (_local_8 == 1))) {
 			_arg_1.wordWrap = true;
 		}
-		;
+
 		_arg_1.multiline = true;
 		if (_arg_1.numLines > _local_8) {
 			_local_12 = _arg_1.getLineIndexOfChar((_arg_1.length - 1));
@@ -250,7 +250,7 @@ public class MenuUtils {
 				if (_local_13 < 0) {
 					_local_13 = 0;
 				}
-				;
+
 				_local_14 = _arg_1.text;
 				_arg_1.text = "";
 				_arg_1.htmlText = _arg_2;
@@ -263,7 +263,7 @@ public class MenuUtils {
 					s_truncator = Localization.get("UI_TEXT_TRUNCATOR");
 					s_truncatorLocale = ControlsMain.getActiveLocale();
 				}
-				;
+
 				_local_17 = false;
 				while ((!(_local_17))) {
 					_local_18 = /\S\s*$/;
@@ -273,7 +273,7 @@ public class MenuUtils {
 						if (_local_21 > 0) {
 							_arg_2 = _arg_2.substring(0, (_local_21 + 1));
 						}
-						;
+
 						_local_15 = (_arg_2 + s_truncator);
 					} else {
 						_arg_3 = _arg_3.substr(0, (_arg_3.length - 1));
@@ -281,10 +281,10 @@ public class MenuUtils {
 						if (_local_22 > 0) {
 							_arg_3 = _arg_3.substring(0, (_local_22 + 1));
 						}
-						;
+
 						_local_16 = (_arg_3 + s_truncator);
 					}
-					;
+
 					_local_19 = ((_local_15 + _arg_4) + _local_16);
 					_local_20 = convertToEscapedHtmlString(_local_19);
 					_arg_1.htmlText = _local_20;
@@ -294,13 +294,13 @@ public class MenuUtils {
 					if (((_arg_2.length <= _arg_5) && (_arg_3.length <= _arg_5))) {
 						_local_17 = true;
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		_arg_1.wordWrap = _local_10;
 		_arg_1.multiline = _local_11;
 	}
@@ -311,32 +311,32 @@ public class MenuUtils {
 		} else {
 			_arg_1.htmlText = _arg_2;
 		}
-		;
+
 		if (((s_truncator == null) || (!(s_truncatorLocale == ControlsMain.getActiveLocale())))) {
 			s_truncator = Localization.get("UI_TEXT_TRUNCATOR");
 			s_truncatorLocale = ControlsMain.getActiveLocale();
 		}
-		;
+
 		var _local_5:int = getLastVisibleCharacter(_arg_1, _arg_3);
 		if (_local_5 == -1) {
 			_arg_1.htmlText = "";
 			return;
 		}
-		;
+
 		var _local_6:String = _arg_1.text;
 		var _local_7:String = _local_6.substr((_local_5 + 1));
 		_local_7 = StringUtil.trim(_local_7);
 		if (_local_7.length <= 0) {
 			return;
 		}
-		;
+
 		var _local_8:String = truncateHTMLText(_arg_2, _local_5, s_truncator, 3);
 		if (_arg_4) {
 			_arg_1.htmlText = (('<font face="$global">' + _local_8) + "</font>");
 		} else {
 			_arg_1.htmlText = _local_8;
 		}
-		;
+
 	}
 
 	public static function truncateHTMLText(htmlString:String, strLength:int, truncateString:String, truncatePadding:int):String {
@@ -358,20 +358,20 @@ public class MenuUtils {
 				if (_local_2) {
 					_local_5 = _arg_1.substring(2, (_arg_1.length - 1));
 				}
-				;
+
 			}
-			;
+
 			var _local_6:Number = 0;
 			if (currentlyOpenTags[_local_5] != undefined) {
 				_local_6 = currentlyOpenTags[_local_5];
 			}
-			;
+
 			if (needsTruncation == false) {
 				strippedString = (strippedString + _arg_1);
 				if (_local_5 == "br") {
 					contentIndex = (contentIndex + 1);
 				}
-				;
+
 				if (_local_3) {
 					currentlyOpenTags[_local_5] = (_local_6 + 1);
 				} else {
@@ -380,23 +380,23 @@ public class MenuUtils {
 						if (currentlyOpenTags[_local_5] <= 0) {
 							delete currentlyOpenTags[_local_5];
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			} else {
 				if (((_local_2) && (_local_6 > 0))) {
 					currentlyOpenTags[_local_5] = (_local_6 - 1);
 					if (currentlyOpenTags[_local_5] <= 0) {
 						delete currentlyOpenTags[_local_5];
 					}
-					;
+
 					strippedString = (strippedString + _arg_1);
 				}
-				;
+
 			}
-			;
+
 		};
 		strLength = (strLength - truncatePadding);
 		var needsTagFinish:Boolean;
@@ -414,12 +414,12 @@ public class MenuUtils {
 				strippedString = (strippedString + truncateString);
 				contentIndex = (contentIndex + 1);
 			}
-			;
+
 			if (needsTagFinish) {
 				(finishTag(currentTag));
 				currentTag = "";
 			}
-			;
+
 			char = htmlString.charAt(i);
 			if (char == "<") {
 				isInsideTag = true;
@@ -427,9 +427,9 @@ public class MenuUtils {
 				if (char == ">") {
 					needsTagFinish = true;
 				}
-				;
+
 			}
-			;
+
 			if (((!(isInsideTag)) && (!(needsTruncation)))) {
 				strippedString = (strippedString + char);
 				contentIndex = (contentIndex + 1);
@@ -437,20 +437,20 @@ public class MenuUtils {
 				if (isInsideTag) {
 					currentTag = (currentTag + char);
 				}
-				;
+
 			}
-			;
+
 			i = (i + 1);
 		}
-		;
+
 		if (!truncateAdded) {
 			strippedString = (strippedString + truncateString);
 		}
-		;
+
 		if (needsTagFinish) {
 			(finishTag(currentTag));
 		}
-		;
+
 		return (strippedString);
 	}
 
@@ -466,7 +466,7 @@ public class MenuUtils {
 			_arg_2.graphics.lineStyle(1, 0);
 			_arg_2.graphics.drawRect(_local_3.x, _local_3.y, _local_3.width, _local_3.height);
 		}
-		;
+
 		var _local_4:int = -1;
 		var _local_5:int = -1;
 		var _local_6:Rectangle;
@@ -486,37 +486,37 @@ public class MenuUtils {
 						if (((_local_6 == null) || (_local_7 > _local_5))) {
 							_local_11 = true;
 						}
-						;
+
 						if (((_local_7 == _local_5) && (_local_12.x > _local_6.x))) {
 							_local_11 = true;
 						}
-						;
+
 					}
-					;
+
 					if (_local_11) {
 						_local_5 = _local_7;
 						_local_4 = _local_10;
 						_local_6 = _local_12;
 					}
-					;
+
 					if (_arg_2 != null) {
 						_arg_2.graphics.lineStyle(1, 0xCCCCCC);
 						_arg_2.graphics.drawRect(_local_12.x, _local_12.y, _local_12.width, _local_12.height);
 					}
-					;
+
 				}
-				;
+
 				_local_10++;
 			}
-			;
+
 			_local_7++;
 		}
-		;
+
 		if (((!(_arg_2 == null)) && (!(_local_6 == null)))) {
 			_arg_2.graphics.lineStyle(1, 0xFF00);
 			_arg_2.graphics.drawRect(_local_6.x, _local_6.y, _local_6.width, _local_6.height);
 		}
-		;
+
 		return (_local_4);
 	}
 
@@ -533,7 +533,7 @@ public class MenuUtils {
 			_local_14.size = _local_12;
 			_arg_1.setTextFormat(_local_14);
 		}
-		;
+
 		return (shrinkTextToFit(_arg_1, _arg_5, _arg_6, _arg_7));
 	}
 
@@ -541,7 +541,7 @@ public class MenuUtils {
 		if (_arg_2 == null) {
 			_arg_2 = "";
 		}
-		;
+
 		return (setupTextAndShrinkToFit(_arg_1, _arg_2.toUpperCase(), _arg_3, _arg_4, _arg_5, _arg_6, _arg_7, _arg_8, _arg_9));
 	}
 
@@ -551,11 +551,11 @@ public class MenuUtils {
 		if (_arg_2 > 0) {
 			_arg_2 = Math.max(1, (_arg_2 - 5));
 		}
-		;
+
 		if (_arg_3 > 0) {
 			_arg_3 = Math.max(1, (_arg_3 - 5));
 		}
-		;
+
 		var _local_7:TextFormat = _arg_1.getTextFormat();
 		var _local_8:TextFormat = new TextFormat();
 		_local_8.size = _local_7.size;
@@ -572,26 +572,26 @@ public class MenuUtils {
 					if (((_arg_5 > 0) && (_arg_1.numLines > _arg_5))) {
 						_local_9 = false;
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			if (!_local_9) {
 				if (_local_10 <= _arg_4) {
 					return (false);
 				}
-				;
+
 				_local_8.size = (_local_10 - 1);
 				if (_arg_6 != 0) {
 					_local_8.leading = ((_local_10 - 1) * _arg_6);
 				}
-				;
+
 				_arg_1.setTextFormat(_local_8);
 			}
-			;
+
 		}
-		;
+
 		return (true);
 	}
 
@@ -609,19 +609,19 @@ public class MenuUtils {
 		if (_local_3 < 10) {
 			_local_5 = (_local_5 + "0");
 		}
-		;
+
 		_local_5 = (_local_5 + _local_3.toString());
 		var _local_6:* = "";
 		if (_local_4 < 10) {
 			_local_6 = (_local_6 + "0");
 		}
-		;
+
 		_local_6 = (_local_6 + _local_4.toFixed(3));
 		var _local_7:String = ((_local_5 + ":") + _local_6);
 		if (_arg_1 < 0) {
 			((_local_7 + "-") + _local_7);
 		}
-		;
+
 		return (_local_7);
 	}
 
@@ -643,7 +643,7 @@ public class MenuUtils {
 		if (_local_5.length < _local_2.length) {
 			return;
 		}
-		;
+
 		var _local_6:* = "";
 		var _local_7:int;
 		var _local_8:int;
@@ -658,26 +658,26 @@ public class MenuUtils {
 					_local_13 = _local_5.substr(_local_10, _local_12);
 					_local_9 = (_local_13.indexOf(_local_4) >= 0);
 				}
-				;
+
 				if (!_local_9) {
 					_local_6 = (_local_6 + _local_5.substr(_local_7, (_local_8 - _local_7)));
 					_local_6 = (_local_6 + _local_3);
 				}
-				;
+
 				_local_7 = (_local_8 + _local_2.length);
 			} else {
 				if (_local_6.length > 0) {
 					_local_6 = (_local_6 + _local_5.substr(_local_7));
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (_local_6.length > 0) {
 			_arg_1.htmlText = _local_6;
 		}
-		;
+
 	}
 
 	public static function centerContained(_arg_1:DisplayObject, _arg_2:Number, _arg_3:Number, _arg_4:Number, _arg_5:Number):void {
@@ -760,38 +760,38 @@ public class MenuUtils {
 		if (((_arg_2 == null) && ((_arg_1 == null) || (_arg_1.buttonprompts == null)))) {
 			return (null);
 		}
-		;
+
 		if (((((!(_arg_1 == null)) && (!(_arg_1.buttonprompts == null))) && (!(_arg_2 == null))) && (!(_arg_2.buttonprompts == null)))) {
 			if (((_arg_1.controllerType == _arg_2.controllerType) && (_arg_1.buttonprompts.length == _arg_2.buttonprompts.length))) {
 				_local_8 = isDataEqual(_arg_1.buttonprompts, _arg_2.buttonprompts);
 				if (_local_8) {
 					return (_arg_2);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		while (_arg_3.numChildren > 0) {
 			_local_6 = (_arg_3.getChildAt(0) as ButtonPromptContainer);
 			if (_local_6 != null) {
 				_local_6.onUnregister();
 			}
-			;
+
 			_arg_3.removeChildAt(0);
 		}
-		;
+
 		if (_arg_1 == null) {
 			return (null);
 		}
-		;
+
 		if (_arg_1.buttonprompts == null) {
 			return (null);
 		}
-		;
+
 		_local_6 = new ButtonPromptContainer(_arg_1, _arg_4, _arg_5);
 		_arg_3.addChild(_local_6);
-		var _local_7:Object = new Object();
+		var _local_7:Object = {};
 		_local_7.buttonprompts = _arg_1.buttonprompts;
 		return (_local_7);
 	}
@@ -808,16 +808,16 @@ public class MenuUtils {
 				_arg_1.icons_cutout.gotoAndStop(_arg_2);
 				_arg_1.icons_cutout.transform.colorTransform = _local_10;
 			}
-			;
+
 			return;
 		}
-		;
+
 		_local_10.color = _arg_3;
 		if (((!(_arg_1.icons_cutout == null)) || (!(_arg_1.icons_cutout == undefined)))) {
 			_arg_1.icons_cutout.visible = false;
 			_arg_1.icons_cutout.gotoAndStop(1);
 		}
-		;
+
 		_arg_1.frame.visible = _arg_4;
 		_arg_1.frame.transform.colorTransform = _local_10;
 		_arg_1.icons.gotoAndStop(_arg_2);
@@ -829,7 +829,7 @@ public class MenuUtils {
 			_local_10.alphaMultiplier = _arg_7;
 			_arg_1.bg.transform.colorTransform = _local_10;
 		}
-		;
+
 	}
 
 	public static function setTintColor(_arg_1:Object, _arg_2:int, _arg_3:Boolean = true):void {
@@ -837,7 +837,7 @@ public class MenuUtils {
 		if (!_arg_3) {
 			_local_4 = _arg_1.alpha;
 		}
-		;
+
 		var _local_5:Color = new Color();
 		_local_5.setTint(MenuConstants.COLOR_GREY_ULTRA_LIGHT, 1);
 		switch (_arg_2) {
@@ -911,12 +911,12 @@ public class MenuUtils {
 				_local_5.setTint(MenuConstants.COLOR_RED, 1);
 				break;
 		}
-		;
+
 		_arg_1.transform.colorTransform = _local_5;
 		if (!_arg_3) {
 			_arg_1.alpha = _local_4;
 		}
-		;
+
 	}
 
 	public static function removeTint(_arg_1:Object):void {
@@ -953,7 +953,7 @@ public class MenuUtils {
 		if (((_local_2 == null) && (ControlsMain.isVrModeActive()))) {
 			return;
 		}
-		;
+
 		_arg_1.filters = [new DropShadowFilter(2, 45, 0, 0.5, 2, 2, 1, 1)];
 	}
 
@@ -970,7 +970,7 @@ public class MenuUtils {
 		if (((_arg_2.length > 0) && (ControlsMain.isVrModeActive()))) {
 			return;
 		}
-		;
+
 		var _local_3:Array = [];
 		var _local_5:int;
 		while (_local_5 < _arg_2.length) {
@@ -978,7 +978,7 @@ public class MenuUtils {
 			_local_3.push(_local_4);
 			_local_5++;
 		}
-		;
+
 		_arg_1.filters = _local_3;
 	}
 
@@ -988,7 +988,7 @@ public class MenuUtils {
 		if (ControlsMain.isVrModeActive()) {
 			return;
 		}
-		;
+
 		var _local_3:Array = [];
 		switch (_arg_2) {
 			case "selected":
@@ -1061,7 +1061,7 @@ public class MenuUtils {
 				_local_4 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DEFAULT);
 				_local_3.push(_local_4);
 		}
-		;
+
 		_arg_1.filters = _local_3;
 	}
 
@@ -1069,11 +1069,11 @@ public class MenuUtils {
 		if (_arg_1 == null) {
 			return;
 		}
-		;
+
 		if (((_arg_2) && (ControlsMain.isVrModeActive()))) {
 			_arg_2 = false;
 		}
-		;
+
 		_arg_1.cacheAsBitmap = _arg_2;
 	}
 
@@ -1084,12 +1084,12 @@ public class MenuUtils {
 			s_decimalSeparator = Localization.get("UI_NUMBER_SEPARATOR_DECIMALS");
 			s_thousandsSeparatorLocale = ControlsMain.getActiveLocale();
 		}
-		;
+
 		var _local_4:int = s_thousandsSeparator.length;
 		if (_local_4 < 1) {
 			return (String(_arg_1));
 		}
-		;
+
 		var _local_5:* = (_arg_1 < 0);
 		_arg_1 = ((_arg_1 < 0) ? -(_arg_1) : _arg_1);
 		var _local_6:Number = _arg_1;
@@ -1101,18 +1101,18 @@ public class MenuUtils {
 			_local_7 = ((_local_7.substr(0, (_local_8 + 1)) + s_thousandsSeparator) + _local_7.substr((_local_8 + 1)));
 			_local_8 = (_local_8 + (3 + _local_4));
 		}
-		;
+
 		if (_arg_3 > 0) {
 			_arg_3 = Math.min(20, _arg_3);
 			_local_9 = _local_6.toFixed(_arg_3);
 			_local_7 = ((_local_7 + s_decimalSeparator) + _local_9.substr(2));
 		}
-		;
+
 		_local_7 = ((_local_5) ? ("-" + _local_7) : _local_7);
 		if (_arg_2) {
 			_local_7 = (('<font face="$global">' + _local_7) + "</font>");
 		}
-		;
+
 		return (_local_7);
 	}
 
@@ -1120,7 +1120,7 @@ public class MenuUtils {
 		if (!_arg_3) {
 			return ((Math.random() * (_arg_2 - _arg_1)) + _arg_1);
 		}
-		;
+
 		return (Math.round(((Math.random() * (_arg_2 - _arg_1)) + _arg_1)));
 	}
 
@@ -1142,7 +1142,7 @@ public class MenuUtils {
 			_local_4[_local_6] = Point.polar(_arg_1, ((((_local_6 / _arg_2) * PI) * 2) + _arg_3));
 			_local_6++;
 		}
-		;
+
 		return (_local_4);
 	}
 
@@ -1167,11 +1167,11 @@ public class MenuUtils {
 		while (_local_3 >= _arg_2) {
 			_local_3 = (_local_3 - _arg_2);
 		}
-		;
+
 		while (_local_3 < -(_arg_2)) {
 			_local_3 = (_local_3 + _arg_2);
 		}
-		;
+
 		return (_local_3);
 	}
 
@@ -1189,7 +1189,7 @@ public class MenuUtils {
 			_arg_1[_local_2] = _arg_1[_local_4];
 			_arg_1[_local_4] = _local_3;
 		}
-		;
+
 		return (_arg_1);
 	}
 
@@ -1205,7 +1205,7 @@ public class MenuUtils {
 			graphics.moveTo(0, 0);
 			graphics.lineTo(0, lineLength);
 		}
-		;
+
 		return (s);
 	}
 
@@ -1217,7 +1217,7 @@ public class MenuUtils {
 				highlitePulsateGo(clip, clip.scaleX, clip.scaleY);
 			});
 		}
-		;
+
 	}
 
 	private static function highlitePulsateGo(clip:Sprite, origScaleX:Number, origScaleY:Number):void {
@@ -1286,7 +1286,7 @@ public class MenuUtils {
 			default:
 				_local_2 = Animate.Linear;
 		}
-		;
+
 		return (_local_2);
 	}
 
@@ -1299,19 +1299,19 @@ public class MenuUtils {
 		if (((_arg_1 == null) || (_arg_2 == null))) {
 			return (_arg_1 == _arg_2);
 		}
-		;
+
 		if (((_arg_1 is Number) && (_arg_2 is Number))) {
 			return (_arg_1 == _arg_2);
 		}
-		;
+
 		if (((_arg_1 is Boolean) && (_arg_2 is Boolean))) {
 			return (_arg_1 == _arg_2);
 		}
-		;
+
 		if (((_arg_1 is String) && (_arg_2 is String))) {
 			return (_arg_1 == _arg_2);
 		}
-		;
+
 		if (((_arg_1 is Array) && (_arg_2 is Array))) {
 			if (_arg_1.length == _arg_2.length) {
 				_local_3 = 0;
@@ -1319,16 +1319,16 @@ public class MenuUtils {
 					if (!isDataEqual(_arg_1[_local_3], _arg_2[_local_3])) {
 						return (false);
 					}
-					;
+
 					_local_3++;
 				}
-				;
+
 				return (true);
 			}
-			;
+
 			return (false);
 		}
-		;
+
 		if (((_arg_1 is Object) && (_arg_2 is Object))) {
 			_local_4 = 0;
 			for (_local_5 in _arg_1) {
@@ -1336,20 +1336,20 @@ public class MenuUtils {
 				if (!isDataEqual(_arg_1[_local_5], _arg_2[_local_5])) {
 					return (false);
 				}
-				;
+
 			}
-			;
+
 			_local_6 = 0;
 			for (_local_7 in _arg_2) {
 				if (++_local_6 > _local_4) {
 					return (false);
 				}
-				;
+
 			}
-			;
+
 			return (_local_4 == _local_6);
 		}
-		;
+
 		return (false);
 	}
 

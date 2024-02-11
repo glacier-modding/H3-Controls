@@ -46,23 +46,23 @@ public class LevelCheckedMapTracker extends BaseMapTracker {
 				_arg_1.alpha = 1;
 				this.setLevelCheckedMapTrackerView(null);
 		}
-		;
+
 	}
 
 	private function setLevelCheckedMapTrackerView(_arg_1:Sprite):void {
 		if (this.m_currentLevelCheckedMapTrackerView == _arg_1) {
 			return;
 		}
-		;
+
 		if (this.m_currentLevelCheckedMapTrackerView != null) {
 			removeChild(this.m_currentLevelCheckedMapTrackerView);
 		}
-		;
+
 		this.m_currentLevelCheckedMapTrackerView = _arg_1;
 		if (this.m_currentLevelCheckedMapTrackerView != null) {
 			addChild(this.m_currentLevelCheckedMapTrackerView);
 		}
-		;
+
 	}
 
 

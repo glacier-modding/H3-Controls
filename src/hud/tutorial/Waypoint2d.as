@@ -17,7 +17,7 @@ public class Waypoint2d extends BaseControl {
 			this.m_view.icon.visible = false;
 			this.m_view.distance.visible = false;
 		}
-		;
+
 	}
 
 	public function onSetData(_arg_1:Object):void {
@@ -31,7 +31,7 @@ public class Waypoint2d extends BaseControl {
 			this.m_view.distance.scaleX = _local_3;
 			this.m_view.distance.scaleY = _local_3;
 		}
-		;
+
 	}
 
 

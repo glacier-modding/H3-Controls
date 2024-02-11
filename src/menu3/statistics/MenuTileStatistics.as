@@ -47,7 +47,7 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 				dequeueNextTile(s_tilesReadyToShow);
 				s_tilesReadyToShow = new Vector.<MenuTileStatistics>(0);
 			}
-			;
+
 		});
 	}
 
@@ -75,7 +75,7 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 			_local_2 = _arg_1.shift();
 			Animate.to(_local_2.m_view.tileContent, 0.05, 0, {"alpha": 1}, Animate.Linear, dequeueNextTile, _arg_1);
 		}
-		;
+
 	}
 
 
@@ -95,12 +95,12 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 		if (!this.m_isAvailable) {
 			this.m_data.completionValue = 0;
 		}
-		;
+
 		this.m_pressable = true;
 		if (getNodeProp(this, "pressable") == false) {
 			this.m_pressable = false;
 		}
-		;
+
 		this.m_iconCollection = new <MovieClip>[this.m_view.tileIcon, this.m_view.tileContent.challengesIcon, this.m_view.tileContent.masteryIcon];
 		this.m_textfieldCollection = new <TextField>[this.m_view.tileHeader, this.m_view.tileTitle, this.m_view.tileContent.completionTitle, this.m_view.tileContent.completionValue, this.m_view.tileContent.challengesTitle, this.m_view.tileContent.masteryTitle];
 		MenuUtils.setupIcon(this.m_view.tileIcon, this.m_data.tileIcon, MenuConstants.COLOR_WHITE, true, false);
@@ -117,13 +117,13 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 				initStatisticBars(m_data.challenges.statistics);
 				initOpportunityBar(m_data.opportunities);
 			}
-			;
+
 		});
 		ts.addChunk(function ():void {
 			if ((((!(m_isInitialized)) || (masteryAvailabilityChanged)) || (availableChanged))) {
 				initMasteryLevelChart(m_data.mastery);
 			}
-			;
+
 		});
 		ts.addChunk(function ():void {
 			if (!m_isCompleted) {
@@ -136,20 +136,20 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 					} else {
 						showTexts(new <TextField>[m_view.tileContent.completionTitle, m_view.tileContent.completionValue], true);
 					}
-					;
+
 				}
-				;
+
 				if (!m_isAvailable) {
 					Animate.kill(m_view.tileContent.completionTitle);
 					Animate.kill(m_view.tileContent.completionValue);
 					m_view.tileContent.completionTitle.alpha = 0;
 					m_view.tileContent.completionValue.alpha = 0;
 				}
-				;
+
 			} else {
 				showTexts(new <TextField>[m_view.tileHeader, m_view.tileTitle, m_view.tileContent.completionTitle, m_view.tileContent.completionValue, m_view.tileContent.challengesTitle, m_view.tileContent.masteryTitle], false);
 			}
-			;
+
 		});
 		self = this;
 		ts.addChunk(function ():void {
@@ -168,7 +168,7 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (m_isSelected) {
 			setPopOutScale(this.m_view, true);
 			Animate.to(this.m_view.dropShadow, 0.3, 0, {"alpha": 1}, Animate.ExpoOut);
@@ -181,7 +181,7 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 			MenuUtils.setColor(this.m_view.tileSelectionHeader, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 			MenuUtils.setupIcon(this.m_view.tileIcon, this.m_data.tileIcon, MenuConstants.COLOR_WHITE, true, false);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -191,19 +191,19 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 				this.m_locationImages.destroy();
 				this.m_locationImages = null;
 			}
-			;
+
 			this.removeStatisticBars();
 			this.removeMasteryLevelChart();
 			this.removeOpportunityBar();
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		var _local_1:int = s_tilesReadyToShow.indexOf(this);
 		if (_local_1 >= 0) {
 			s_tilesReadyToShow.splice(_local_1, 1);
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -215,18 +215,18 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 				Animate.kill(this.m_iconCollection[_local_1]);
 				_local_1++;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_textfieldCollection != null) {
 			_local_1 = 0;
 			while (_local_1 < this.m_textfieldCollection.length) {
 				Animate.kill(this.m_textfieldCollection[_local_1]);
 				_local_1++;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function getAvailabilityAlpha():Number {
@@ -247,12 +247,12 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 				} else {
 					_arg_1[_local_4].alpha = this.getAvailabilityAlpha();
 				}
-				;
+
 			}
-			;
+
 			_local_4++;
 		}
-		;
+
 	}
 
 	private function startTextAnimation(_arg_1:TextField, _arg_2:Number):void {
@@ -261,7 +261,7 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 		} else {
 			Animate.to(_arg_1, 0.75, _arg_2, {"alpha": this.getAvailabilityAlpha()}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 	private function animateIcons(_arg_1:Vector.<MovieClip>):void {
@@ -280,10 +280,10 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 					"scaleY": _local_2
 				}, Animate.ExpoOut);
 			}
-			;
+
 			_local_3++;
 		}
-		;
+
 	}
 
 	private function initImage(_arg_1:Object):void {
@@ -308,7 +308,7 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 		if (this.m_statBars == null) {
 			return;
 		}
-		;
+
 		this.m_view.tileContent.removeChild(this.m_statBars);
 		this.m_statBars.destroy();
 		this.m_statBars = null;
@@ -319,12 +319,12 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 		if ((((_arg_1 == null) || (_arg_1.total == null)) || (_arg_1.completed == null))) {
 			return;
 		}
-		;
+
 		var _local_2:Number = _arg_1.total;
 		if (_local_2 <= 0) {
 			return;
 		}
-		;
+
 		var _local_3:Boolean = this.m_isAvailable;
 		var _local_4:Number = _arg_1.completed;
 		this.m_opportunityBarView = new StatisticBarSmallView();
@@ -341,12 +341,12 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 			this.m_opportunityBar.destroy();
 			this.m_opportunityBar = null;
 		}
-		;
+
 		if (this.m_opportunityBarView != null) {
 			this.m_view.tileContent.removeChild(this.m_opportunityBarView);
 			this.m_opportunityBarView = null;
 		}
-		;
+
 	}
 
 	private function initMasteryLevelChart(_arg_1:Object):void {
@@ -363,14 +363,14 @@ public dynamic class MenuTileStatistics extends MenuElementTileBase {
 			this.m_view.tileContent.noMasteryTitle.text = Localization.get("UI_MENU_PAGE_PROFILE_MASTERY_NOT_AVAILABLE");
 			MenuUtils.setColor(this.m_view.tileContent.noMasteryTitle, MenuConstants.COLOR_GREY);
 		}
-		;
+
 	}
 
 	private function removeMasteryLevelChart():void {
 		if (this.m_masteryLevelChart == null) {
 			return;
 		}
-		;
+
 		this.m_view.tileContent.removeChild(this.m_masteryLevelChart);
 		this.m_masteryLevelChart.destroy();
 		this.m_masteryLevelChart = null;

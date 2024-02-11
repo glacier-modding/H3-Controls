@@ -16,7 +16,7 @@ public class ValueIndicatorBase extends IndicatorBase {
 			default:
 				m_indicatorView = new ValueIndicatorSmallView();
 		}
-		;
+
 		m_indicatorView.y = (_arg_2 - MenuConstants.ValueIndicatorYOffset);
 	}
 

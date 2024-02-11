@@ -33,7 +33,7 @@ public class PhotoModeEntry extends BaseControl {
 			this.m_view.value_txt.alpha = 0.3;
 			this.m_view.type_mc.alpha = 0.3;
 		}
-		;
+
 		this.m_view.title_txt.text = _arg_1.sLabel.toUpperCase();
 		this.m_view.value_txt.text = (("[" + _arg_1.sCurrentValue.toUpperCase()) + "]");
 		switch (_arg_1.eType) {
@@ -49,7 +49,7 @@ public class PhotoModeEntry extends BaseControl {
 				this.m_view.type_mc.gotoAndStop("list");
 				break;
 		}
-		;
+
 		if (_arg_1.bIsHighlighted) {
 			this.m_view.tileSelect.alpha = 1;
 			MenuUtils.removeDropShadowFilter(this.m_view.title_txt);
@@ -59,7 +59,7 @@ public class PhotoModeEntry extends BaseControl {
 			MenuUtils.addDropShadowFilter(this.m_view.title_txt);
 			MenuUtils.addDropShadowFilter(this.m_view.value_txt);
 		}
-		;
+
 	}
 
 

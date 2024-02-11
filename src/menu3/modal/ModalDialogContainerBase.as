@@ -69,14 +69,14 @@ public class ModalDialogContainerBase extends MenuElementBase {
 			if (button.isPressable()) {
 				m_callbackSendEventWithValue("onElementClick", i);
 			}
-			;
+
 		});
 		button.addEventListener(MouseEvent.MOUSE_OVER, function (_arg_1:MouseEvent):void {
 			_arg_1.stopImmediatePropagation();
 			if (button.isPressable()) {
 				m_callbackSendEventWithValue("onElementOver", i);
 			}
-			;
+
 		});
 	}
 
@@ -98,7 +98,7 @@ public class ModalDialogContainerBase extends MenuElementBase {
 	private function handleMouseWheelModal(_arg_1:MouseEvent):void {
 		trace(("ModalDialog mouseEvent: " + _arg_1.type));
 		var _local_2:Number = _arg_1.delta;
-		var _local_3:Array = new Array(-1, _local_2);
+		var _local_3:Array = [-1, _local_2];
 		this.m_callbackSendEventWithValue("onElementScrollVertical", _local_3);
 	}
 

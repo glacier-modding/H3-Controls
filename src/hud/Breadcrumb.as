@@ -46,15 +46,15 @@ public class Breadcrumb extends BaseControl {
 			this.MainText = ((data.maintext) || (""));
 			this.SubText = ((data.subtext) || (""));
 		}
-		;
+
 		if (data.progress) {
 			if (((((((((this.m_icon == "missionobjective") || (this.m_icon == "discovery")) || (this.m_icon == "discovery_a")) || (this.m_icon == "discovery_b")) || (this.m_icon == "discovery_c")) || (this.m_icon == "targetdiscovery")) || (this.m_icon == "location")) || (this.m_icon == "exit"))) {
 				if (this.m_state == 1) {
 					this.m_view.discoveryicon.progression.gotoAndStop(Math.ceil((data.progress * 100)));
 				}
-				;
+
 			}
-			;
+
 			if (this.m_icon == "slappower") {
 				Animate.to(this.m_view.bar_mc.power_mc, 0.2, 0, {"scaleX": Math.min(data.progress, 1)}, Animate.ExpoOut);
 				if (data.progress > 0) {
@@ -64,16 +64,16 @@ public class Breadcrumb extends BaseControl {
 						"scaleY": 1
 					}, Animate.ExpoOut);
 				}
-				;
+
 			}
-			;
+
 		} else {
 			if (((this.m_icon == "slappower") && (data.progress == 0))) {
 				this.m_view.bar_mc.power_mc.scaleX = 0;
 			}
-			;
+
 		}
-		;
+
 		if (data.state != null) {
 			if (((((((this.m_icon == "missionobjective") || (this.m_icon == "discovery")) || (this.m_icon == "discovery_a")) || (this.m_icon == "discovery_b")) || (this.m_icon == "discovery_c")) || (this.m_icon == "targetdiscovery"))) {
 				if (data.state != this.m_state) {
@@ -170,22 +170,22 @@ public class Breadcrumb extends BaseControl {
 												m_view.distance_txt.alpha = 0;
 											});
 										}
-										;
+
 									}
-									;
+
 								}
-								;
+
 							}
-							;
+
 						}
-						;
+
 					}
-					;
+
 					this.m_state = data.state;
 				}
-				;
+
 			}
-			;
+
 			if (((this.m_icon == "location") || (this.m_icon == "exit"))) {
 				if (data.state != this.m_state) {
 					if (data.state == -1) {
@@ -227,27 +227,27 @@ public class Breadcrumb extends BaseControl {
 								this.m_view.discoveryicon.bg.gotoAndStop(2);
 								this.m_view.discoveryicon.bg.alpha = 1;
 							}
-							;
+
 						}
-						;
+
 					}
-					;
+
 					this.m_state = data.state;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		var resolutionScale:Number = 1;
 		if (!ControlsMain.isVrModeActive()) {
 			resolutionScale = (Extensions.visibleRect.height / 1080);
 		}
-		;
+
 		if (this.m_scaleMod != resolutionScale) {
 			this.onSetSize(0, 0);
 		}
-		;
+
 	}
 
 	private function pulsateTargetDiscovery(_arg_1:Boolean, _arg_2:int = 0, _arg_3:Number = 0):void {
@@ -260,7 +260,7 @@ public class Breadcrumb extends BaseControl {
 		if (_arg_1) {
 			this.pulsateTargetDiscoveryCycle(_arg_2, _arg_3);
 		}
-		;
+
 	}
 
 	private function pulsateTargetDiscoveryCycle(cycles:int, speed:Number = 0):void {
@@ -278,7 +278,7 @@ public class Breadcrumb extends BaseControl {
 			}, Animate.ExpoOut);
 			return;
 		}
-		;
+
 		cycles--;
 		this.m_view.discoveryicon.bg.scaleX = (this.m_view.discoveryicon.bg.scaleY = 1.2);
 		Animate.to(this.m_view.discoveryicon.bg, speed, 0, {
@@ -306,7 +306,7 @@ public class Breadcrumb extends BaseControl {
 		if (_arg_1) {
 			this.pulsateScannerTraceIconIn();
 		}
-		;
+
 	}
 
 	private function pulsateScannerTraceIconIn():void {
@@ -324,7 +324,7 @@ public class Breadcrumb extends BaseControl {
 			MenuUtils.setupText(this.m_view.main_txt, _arg_1, 24, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorWhite);
 			this.m_view.main_txt.visible = true;
 		}
-		;
+
 	}
 
 	public function set SubText(_arg_1:String):void {
@@ -334,7 +334,7 @@ public class Breadcrumb extends BaseControl {
 			MenuUtils.setupText(this.m_view.sub_txt, _arg_1, 20, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 			this.m_view.sub_txt.visible = true;
 		}
-		;
+
 	}
 
 	public function set IconType(_arg_1:String):void {
@@ -378,12 +378,12 @@ public class Breadcrumb extends BaseControl {
 					default:
 						this.m_discoverySymbol = "symbol_question";
 				}
-				;
+
 				this.pulsateScannerTraceIcon(false);
 				this.m_view.discoveryicon.bg.alpha = 0.4;
 				this.m_view.discoveryicon.symbol.gotoAndStop(this.m_discoverySymbol);
 			}
-			;
+
 			if (((this.m_icon == "location") || (this.m_icon == "exit"))) {
 				MenuUtils.setColor(this.m_view.discoveryicon.progression, MenuConstants.COLOR_GREEN);
 				switch (_arg_1) {
@@ -396,19 +396,19 @@ public class Breadcrumb extends BaseControl {
 					default:
 						this.m_discoverySymbol = "symbol_question";
 				}
-				;
+
 				this.pulsateScannerTraceIcon(false);
 				this.m_view.discoveryicon.bg.alpha = 1;
 				this.m_view.discoveryicon.symbol.gotoAndStop(this.m_discoverySymbol);
 			}
-			;
+
 			if (this.m_icon == "slappower") {
 				this.m_view.bar_mc.power_mc.scaleX = 0;
 				this.m_view.distance_txt.visible = false;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function pulsateAttentionOutline(_arg_1:Boolean):void {
@@ -417,7 +417,7 @@ public class Breadcrumb extends BaseControl {
 		if (_arg_1) {
 			this.pulsateAttentionOutlineIn();
 		}
-		;
+
 	}
 
 	private function pulsateAttentionOutlineIn():void {
@@ -448,7 +448,7 @@ public class Breadcrumb extends BaseControl {
 			this.m_view.addChild(this.m_attentionOutline);
 			this.pulsateAttentionOutline(true);
 		}
-		;
+
 	}
 
 	public function hideAttentionOutline():void {
@@ -457,7 +457,7 @@ public class Breadcrumb extends BaseControl {
 			this.m_view.removeChild(this.m_attentionOutline);
 			this.m_attentionOutline = null;
 		}
-		;
+
 	}
 
 	public function SetWithinProximity(_arg_1:Boolean):void {
@@ -483,7 +483,7 @@ public class Breadcrumb extends BaseControl {
 		if (!((this.m_noResolutionScale) || (ControlsMain.isVrModeActive()))) {
 			_local_3 = (Extensions.visibleRect.height / 1080);
 		}
-		;
+
 		this.m_scaleMod = (this.m_view.scaleX = (this.m_view.scaleY = _local_3));
 	}
 

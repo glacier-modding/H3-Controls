@@ -44,7 +44,7 @@ public class ThreatMarker extends BaseControl {
 					this.m_fill.alpha = 1;
 					this.m_fill.scaleX = (this.m_fill.scaleY = 1);
 				}
-				;
+
 				this.lastState = "C";
 			} else {
 				if (_arg_1 >= 3) {
@@ -55,14 +55,14 @@ public class ThreatMarker extends BaseControl {
 							"alpha": 0
 						}, Animate.ExpoOut);
 					}
-					;
+
 					this.lastState = "D";
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function animateRing():void {

@@ -60,7 +60,7 @@ public dynamic class OpportunityCompleted extends MenuElementBase {
 		if (CommonUtils.getActiveTextLocaleIndex() == 11) {
 			_local_10 = 0.01;
 		}
-		;
+
 		_local_8 = _local_5.getTextFormat();
 		_local_8.leading = (_local_9 * _local_10);
 		_local_5.setTextFormat(_local_8);
@@ -75,7 +75,7 @@ public dynamic class OpportunityCompleted extends MenuElementBase {
 		if (((imagePath == null) || (imagePath.length == 0))) {
 			return;
 		}
-		;
+
 		this.m_loader = new MenuImageLoader();
 		this.m_loader.center = true;
 		this.m_view.image.addChild(this.m_loader);
@@ -92,7 +92,7 @@ public dynamic class OpportunityCompleted extends MenuElementBase {
 				_local_1.height = (_local_4 / m_view.image.scaleX);
 				_local_1.width = ((_local_4 / m_view.image.scaleY) * _local_2);
 			}
-			;
+
 			playSound("ui_debrief_achievement_mission_story_complete");
 			animateFlicker();
 		}, null);
@@ -104,10 +104,10 @@ public dynamic class OpportunityCompleted extends MenuElementBase {
 			if (this.m_loader.parent != null) {
 				this.m_loader.parent.removeChild(this.m_loader);
 			}
-			;
+
 			this.m_loader = null;
 		}
-		;
+
 	}
 
 	public function playSound(_arg_1:String):void {
@@ -131,7 +131,7 @@ public dynamic class OpportunityCompleted extends MenuElementBase {
 			this.m_flickerCounter = 0;
 			this.animateIn();
 		}
-		;
+
 	}
 
 	private function killAnimations():void {
@@ -140,7 +140,7 @@ public dynamic class OpportunityCompleted extends MenuElementBase {
 			Animate.kill(this.m_view.header);
 			Animate.kill(this.m_view.title);
 		}
-		;
+
 	}
 
 

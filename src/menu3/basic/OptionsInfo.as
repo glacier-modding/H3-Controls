@@ -42,11 +42,11 @@ public dynamic class OptionsInfo extends MenuElementTileBase implements IButtonP
 		if (_arg_1.locaParagraph != null) {
 			_local_2 = Localization.get(_arg_1.locaParagraph);
 		}
-		;
+
 		if (_arg_1.replaceParagraphBreakHeight != null) {
 			_local_2 = _local_2.replace(/<br><br>/gi, (('<br><img width="1" height="' + _arg_1.replaceParagraphBreakHeight) + '">'));
 		}
-		;
+
 		this.m_view.paragraph.height = 725;
 		MenuUtils.setupText(this.m_view.paragraph, _local_2, 20, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 		MenuUtils.truncateTextfield(this.m_view.title, 1);
@@ -62,11 +62,11 @@ public dynamic class OptionsInfo extends MenuElementTileBase implements IButtonP
 					default:
 						trace("unhandled case in : ");
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		var _local_3:* = (_arg_1.updateButtonPrompts === true);
 		if (_local_3 != this.m_isActiveButtonPromptOwner) {
 			this.m_isActiveButtonPromptOwner = _local_3;
@@ -75,9 +75,9 @@ public dynamic class OptionsInfo extends MenuElementTileBase implements IButtonP
 			} else {
 				ButtonPromtUtil.unregisterButtonPromptOwner(this);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function addChild2(_arg_1:Sprite, _arg_2:int = -1):void {
@@ -86,9 +86,9 @@ public dynamic class OptionsInfo extends MenuElementTileBase implements IButtonP
 			if (((!(this.getData().direction == "horizontal")) && (!(this.getData().direction == "horizontalWrap")))) {
 				_arg_1.x = 32;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function updateButtonPrompts():void {
@@ -96,7 +96,7 @@ public dynamic class OptionsInfo extends MenuElementTileBase implements IButtonP
 		if (_local_1 != null) {
 			this.onSetData(_local_1);
 		}
-		;
+
 	}
 
 	private function changeTextColor(_arg_1:uint, _arg_2:TextField):void {
@@ -107,13 +107,13 @@ public dynamic class OptionsInfo extends MenuElementTileBase implements IButtonP
 		if (this.m_isActiveButtonPromptOwner) {
 			ButtonPromtUtil.unregisterButtonPromptOwner(this);
 		}
-		;
+
 		if (this.m_view) {
 			Animate.kill(this.m_view);
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 

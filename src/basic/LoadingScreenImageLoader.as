@@ -26,7 +26,7 @@ public class LoadingScreenImageLoader extends Sprite {
 		if (this.m_imageLoader.isLoading()) {
 			this.m_imageLoader.cancel();
 		}
-		;
+
 	}
 
 	public function loadImage(rid:String, callback:Function = null, failedCallback:Function = null):void {
@@ -34,10 +34,10 @@ public class LoadingScreenImageLoader extends Sprite {
 			if (failedCallback != null) {
 				(failedCallback());
 			}
-			;
+
 			return;
 		}
-		;
+
 		this.m_imageLoader.alpha = 0;
 		this.m_loadIndicator.alpha = 1;
 		this.m_loadIndicator.value.play();
@@ -49,21 +49,21 @@ public class LoadingScreenImageLoader extends Sprite {
 				m_imageLoader.content.x = 0;
 				m_imageLoader.content.y = 0;
 			}
-			;
+
 			m_imageLoader.alpha = 1;
 			m_loadIndicator.alpha = 0;
 			m_loadIndicator.value.stop();
 			if (callback != null) {
 				callback();
 			}
-			;
+
 		}, function ():void {
 			m_loadIndicator.value.stop();
 			MenuUtils.setTintColor(m_loadIndicator, MenuUtils.TINT_COLOR_RED, true);
 			if (failedCallback != null) {
 				failedCallback();
 			}
-			;
+
 		});
 	}
 

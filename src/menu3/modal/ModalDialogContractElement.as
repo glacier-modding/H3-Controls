@@ -46,7 +46,7 @@ public dynamic class ModalDialogContractElement extends Sprite implements ModalD
 			removeChild(this.m_modalDialogContractView);
 			this.m_modalDialogContractView = null;
 		}
-		;
+
 	}
 
 	public function setData(_arg_1:Object):void {
@@ -57,23 +57,23 @@ public dynamic class ModalDialogContractElement extends Sprite implements ModalD
 		} else {
 			this.setupContractTextFields(_arg_1.name, _arg_1.description);
 		}
-		;
+
 		MenuUtils.setupIcon(this.m_modalDialogContractView.icon, _arg_1.icon, MenuConstants.COLOR_WHITE, true, false);
 		this.m_modalDialogContractView.tileIcon.visible = false;
 		if (_arg_1.image) {
 			this.loadContractImage(_arg_1.image);
 		}
-		;
+
 		if (_arg_1.locked) {
 			this.m_modalDialogContractView.tileIcon.visible = true;
 			MenuUtils.setupIcon(this.m_modalDialogContractView.tileIcon, "locked", MenuConstants.COLOR_WHITE, true, false);
 		}
-		;
+
 		CompletionStatusIndicatorUtil.removeIndicator(this);
 		if (((_arg_1.completionstate) && (_arg_1.completionstate.length > 0))) {
 			CompletionStatusIndicatorUtil.addIndicator(this, _arg_1.completionstate, CompletionStatusIndicatorUtil.StatusIndicatorOffset, (CompletionStatusIndicatorUtil.StatusIndicatorOffset + StatusIndicatorAdditionOffsetY));
 		}
-		;
+
 		if (((!(_arg_1.addedSuccessfullyToPlaylist == undefined)) && (_arg_1.addedSuccessfullyToPlaylist == true))) {
 			_local_3 = new ModalDialogContractAddedToPlaylistView();
 			_local_3.x = 351;
@@ -84,7 +84,7 @@ public dynamic class ModalDialogContractElement extends Sprite implements ModalD
 			_local_3.icon.visible = false;
 			this.m_modalDialogContractView.addChild(_local_3);
 		}
-		;
+
 		this.m_isInPlaylist = (_arg_1.isInPlaylist === true);
 	}
 
@@ -110,7 +110,7 @@ public dynamic class ModalDialogContractElement extends Sprite implements ModalD
 		if (this.m_modalDialogContractView.title.numLines > 4) {
 			_local_9 = 2;
 		}
-		;
+
 		this.m_modalDialogContractView.title.y = (CONTRACT_FOUND_TITLE_INITIAL_Y - ((this.m_modalDialogContractView.title.numLines - _local_9) * 31));
 		this.m_modalDialogContractView.icon.y = (CONTRACT_FOUND_ICON_INITIAL_Y - ((this.m_modalDialogContractView.title.numLines - _local_9) * 31));
 	}
@@ -137,7 +137,7 @@ public dynamic class ModalDialogContractElement extends Sprite implements ModalD
 		if (this.m_modalDialogContractView.title.numLines > 4) {
 			_local_3 = 2;
 		}
-		;
+
 		this.m_modalDialogContractView.title.y = (this.m_modalDialogContractView.title.y - ((this.m_modalDialogContractView.title.numLines - _local_3) * 31));
 		this.m_modalDialogContractView.icon.y = (this.m_modalDialogContractView.icon.y - ((this.m_modalDialogContractView.title.numLines - _local_3) * 31));
 		var _local_4:int = 7;
@@ -157,13 +157,13 @@ public dynamic class ModalDialogContractElement extends Sprite implements ModalD
 			default:
 				_local_4 = 7;
 		}
-		;
+
 		MenuUtils.truncateTextfield(this.m_modalDialogContractView.creator, _local_4, null, CommonUtils.changeFontToGlobalIfNeeded(this.m_modalDialogContractView.creator));
 		var _local_5:int = 1;
 		if (this.m_modalDialogContractView.creator.numLines > _local_4) {
 			_local_5 = 2;
 		}
-		;
+
 		var _local_6:Number = ((this.m_modalDialogContractView.creator.numLines - _local_5) * 24);
 		this.m_modalDialogContractView.title.y = (this.m_modalDialogContractView.title.y - _local_6);
 		this.m_modalDialogContractView.icon.y = (this.m_modalDialogContractView.icon.y - _local_6);
@@ -187,9 +187,9 @@ public dynamic class ModalDialogContractElement extends Sprite implements ModalD
 			if (m_isInPlaylist) {
 				_local_4 = (11 + m_modalDialogContractView.image.height);
 				m_inPlaylistIndicator = new InPlaylistIndicator(m_modalDialogContractView.image.width, _local_4);
-				m_inPlaylistIndicator.onSetData(m_modalDialogContractView, new Object());
+				m_inPlaylistIndicator.onSetData(m_modalDialogContractView, {});
 			}
-			;
+
 		});
 	}
 
@@ -197,12 +197,12 @@ public dynamic class ModalDialogContractElement extends Sprite implements ModalD
 		if (this.m_contractImageLoader == null) {
 			return;
 		}
-		;
+
 		if (this.m_inPlaylistIndicator != null) {
 			this.m_inPlaylistIndicator.onUnregister();
 			this.m_inPlaylistIndicator = null;
 		}
-		;
+
 		this.m_contractImageLoader.cancelIfLoading();
 		this.m_modalDialogContractView.image.removeChild(this.m_contractImageLoader);
 		this.m_contractImageLoader = null;

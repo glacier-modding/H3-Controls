@@ -23,7 +23,7 @@ public dynamic class QuestItemDetailTile extends MenuElementBase {
 		if (this.m_view) {
 			removeChild(this.m_view);
 		}
-		;
+
 		Log.debugData(this, _arg_1);
 		this.m_view = new QuestItemDetailsView();
 		this.m_textObj = {};
@@ -37,12 +37,12 @@ public dynamic class QuestItemDetailTile extends MenuElementBase {
 			this.m_textTickerTitle.stopTextTicker(this.m_view.Header.title, this.m_textObj.title);
 			this.m_textTickerTitle = null;
 		}
-		;
+
 		if (this.m_view) {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	private function setupHeader(_arg_1:String, _arg_2:String, _arg_3:String, _arg_4:Boolean):void {
@@ -59,7 +59,7 @@ public dynamic class QuestItemDetailTile extends MenuElementBase {
 			_local_2 = 22;
 			this.m_view.Body.description.width = 1000;
 		}
-		;
+
 		MenuUtils.setupText(this.m_view.Body.description, _arg_1, _local_2, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorWhite);
 	}
 
@@ -67,14 +67,14 @@ public dynamic class QuestItemDetailTile extends MenuElementBase {
 		if (!this.m_textTickerTitle) {
 			this.m_textTickerTitle = new textTicker();
 		}
-		;
+
 		if (_arg_1) {
 			this.m_textTickerTitle.startTextTicker(this.m_view.Header.title, this.m_textObj.title);
 		} else {
 			this.m_textTickerTitle.stopTextTicker(this.m_view.Header.title, this.m_textObj.title);
 			MenuUtils.truncateTextfield(this.m_view.Header.title, 1, MenuConstants.FontColorWhite);
 		}
-		;
+
 	}
 
 

@@ -33,13 +33,13 @@ public class ButtonPrompt extends Sprite {
 				mouseCallback(data.actiontype);
 			}, false, 0, false);
 		}
-		;
+
 		prompt.addChild(this.m_buttonPromptImage);
 		prompt.x = xOffset;
 		if (tabsnavigation) {
 			prompt.y = 10;
 		}
-		;
+
 		prompt.header.autoSize = TextFieldAutoSize.LEFT;
 		MenuUtils.setupText(prompt.header, data.actionlabel, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 		if (calculateWidth == false) {
@@ -49,7 +49,7 @@ public class ButtonPrompt extends Sprite {
 			this.setPromptPositions(prompt, this.m_buttonPromptImage, buttonPromptWidth);
 			this.m_promptWidth = this.getPromptWidth(prompt, buttonPromptWidth);
 		}
-		;
+
 		if (((tabsnavigation) && (data.actiontype == "lb"))) {
 			prompt.indicator.arrowleft.visible = true;
 			prompt.indicator.arrowright.visible = false;
@@ -69,31 +69,31 @@ public class ButtonPrompt extends Sprite {
 				if (data.hideIndicator === false) {
 					prompt.indicator.visible = true;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (data.hidePrompt) {
 			prompt.visible = false;
 		}
-		;
+
 		if (data.transparentPrompt) {
 			this.m_buttonPromptImage.alpha = 1;
 			prompt.alpha = 0.4;
 			prompt.indicator.visible = true;
 			prompt.visible = true;
 		}
-		;
+
 		if (data.disabledPrompt) {
 			prompt.alpha = 0.2;
 		}
-		;
+
 		addChild(prompt);
 		if (!calculateWidth) {
 			this.m_promptWidth = this.width;
 		}
-		;
+
 	}
 
 	public static function shouldSkipPrompt(_arg_1:Object):Boolean {
@@ -102,7 +102,7 @@ public class ButtonPrompt extends Sprite {
 		if (_arg_1 == null) {
 			return (false);
 		}
-		;
+
 		var _local_2:Object = _arg_1.customplatform;
 		if (_local_2 != null) {
 			_local_3 = ((_arg_1.platform) || (ControlsMain.getControllerType()));
@@ -111,11 +111,11 @@ public class ButtonPrompt extends Sprite {
 				if (_local_2.hide === true) {
 					return (true);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		return (false);
 	}
 
@@ -123,7 +123,7 @@ public class ButtonPrompt extends Sprite {
 		if (((!(_arg_1 == null)) && (!(_arg_1.platform == null)))) {
 			return (_arg_1.platform);
 		}
-		;
+
 		return (ControlsMain.getControllerType());
 	}
 
@@ -150,7 +150,7 @@ public class ButtonPrompt extends Sprite {
 		if (this.m_buttonPromptImage != null) {
 			ButtonPromptImage.ReleaseInstance(this.m_buttonPromptImage);
 		}
-		;
+
 	}
 
 	private function setupSymbol(_arg_1:Object, _arg_2:ButtonPromptImage):void {
@@ -163,19 +163,19 @@ public class ButtonPrompt extends Sprite {
 			} else {
 				Log.xerror(Log.ChannelButtonPrompt, "neither actionglyph nor actiontype were specified");
 			}
-			;
+
 		}
-		;
+
 		var _local_3:Object = _arg_1.customplatform;
 		if (_local_3 == null) {
 			if ((((CommonUtils.getPlatformString() == CommonUtils.PLATFORM_STADIA) && (_arg_2.platform == CommonUtils.CONTROLLER_TYPE_KEY)) && (_arg_1.actiontype == "cancel"))) {
-				_local_3 = new Object();
+				_local_3 = {};
 				_local_3.platform = CommonUtils.CONTROLLER_TYPE_KEY;
 				_local_3.actiontype = "kb_tab";
 			}
-			;
+
 		}
-		;
+
 		if (_local_3 != null) {
 			_local_4 = (_local_3.platform as String);
 			if (((!(_local_4 == null)) && (_local_4 == _arg_2.platform))) {
@@ -187,18 +187,18 @@ public class ButtonPrompt extends Sprite {
 					} else {
 						Log.xerror(Log.ChannelButtonPrompt, "data.customplatform specified, but property 'actiontype' or 'actionglyph' not set");
 					}
-					;
+
 				}
-				;
+
 			} else {
 				if (((_local_4 == null) || (_local_4.length == 0))) {
 					Log.xerror(Log.ChannelButtonPrompt, "data.customplatform specified, but property 'platform' not set");
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 

@@ -112,7 +112,7 @@ public class AnimateLegacy {
 		var isIntAnimation:Boolean;
 		var wrapped:Function;
 		var animationCalls:Array = [];
-		var combinedKeys:Object = new Object();
+		var combinedKeys:Object = {};
 		collectKeys(varsFrom, combinedKeys);
 		collectKeys(varsTo, combinedKeys);
 		for (key in combinedKeys) {
@@ -130,14 +130,14 @@ public class AnimateLegacy {
 					if (((((offset) && (varsFrom == null)) && (!(varsTo == null))) && (!(varsTo[key] == null)))) {
 						anim.targetValue = (anim.initValue + anim.targetValue);
 					}
-					;
+
 					animationCalls.push(anim);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		count = animationCalls.length;
 		i = 0;
 		while (i < animationCalls.length) {
@@ -149,7 +149,7 @@ public class AnimateLegacy {
 				wrapped = wrapCallback.apply(Animate, [callback, target].concat(args));
 				finalCallback = wrapped;
 			}
-			;
+
 			propID = (callAnim["propID"] as int);
 			initValue = (callAnim["initValue"] as Number);
 			targetValue = (callAnim["targetValue"] as Number);
@@ -159,10 +159,10 @@ public class AnimateLegacy {
 			} else {
 				ExternalInterface.call("StartAnimation", target, finalCallback, initValue, targetValue, duration, startDelay, propID, easing);
 			}
-			;
+
 			i = (i + 1);
 		}
-		;
+
 	}
 
 	private static function wrapCallback(callback:Function, thisObject:Object, ...args):Function {
@@ -171,7 +171,7 @@ public class AnimateLegacy {
 			return (function ():void {
 			});
 		}
-		;
+
 		if (((!(args == null)) && (args.length > 0))) {
 			wrapped = function ():void {
 				callback.apply(thisObject, args);
@@ -181,7 +181,7 @@ public class AnimateLegacy {
 				callback.apply(thisObject);
 			};
 		}
-		;
+
 		return (wrapped);
 	}
 
@@ -189,23 +189,23 @@ public class AnimateLegacy {
 		if (_arg_2 == "frames") {
 			return (PropertiesMap["frames"]);
 		}
-		;
+
 		if (_arg_2 == "width") {
 			return (PropertiesMap["scaleX"]);
 		}
-		;
+
 		if (_arg_2 == "height") {
 			return (PropertiesMap["scaleY"]);
 		}
-		;
+
 		if (((_arg_2 == "intAnimation") && (_arg_1 is TextField))) {
 			return (PropertiesMap["intAnimation"]);
 		}
-		;
+
 		if (_arg_1[_arg_2] != null) {
 			return (PropertiesMap[_arg_2]);
 		}
-		;
+
 		return (null);
 	}
 
@@ -215,19 +215,19 @@ public class AnimateLegacy {
 			_local_3 = (_arg_1 as MovieClip);
 			return (_local_3.currentFrame);
 		}
-		;
+
 		if (_arg_2 == "width") {
 			return (_arg_1.scaleX);
 		}
-		;
+
 		if (_arg_2 == "height") {
 			return (_arg_1.scaleY);
 		}
-		;
+
 		if (_arg_1[_arg_2] != null) {
 			return (_arg_1[_arg_2] as Number);
 		}
-		;
+
 		return (null);
 	}
 
@@ -235,11 +235,11 @@ public class AnimateLegacy {
 		if (_arg_2 == "width") {
 			return (_arg_1.scaleX * (_arg_3 / _arg_1.width));
 		}
-		;
+
 		if (_arg_2 == "height") {
 			return (_arg_1.scaleY * (_arg_3 / _arg_1.height));
 		}
-		;
+
 		return (_arg_3);
 	}
 
@@ -247,7 +247,7 @@ public class AnimateLegacy {
 		if (((!(_arg_3 == null)) && (!(_arg_3[_arg_2] == null)))) {
 			return (convertArgsToAnimValue(_arg_1, _arg_2, _arg_3[_arg_2]));
 		}
-		;
+
 		return (getInitialValueFromTarget(_arg_1, _arg_2));
 	}
 
@@ -256,11 +256,11 @@ public class AnimateLegacy {
 		if (((_arg_1 == null) || (_arg_2 == null))) {
 			return;
 		}
-		;
+
 		for (_local_3 in _arg_1) {
 			_arg_2[_local_3] = true;
 		}
-		;
+
 	}
 
 

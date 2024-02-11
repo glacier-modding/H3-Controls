@@ -42,7 +42,7 @@ public dynamic class MenuLayer extends MenuElementBase {
 		if (this.m_addedToStage) {
 			this.placeChild();
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -56,7 +56,7 @@ public dynamic class MenuLayer extends MenuElementBase {
 		if (this.m_element != null) {
 			this.placeChild();
 		}
-		;
+
 	}
 
 	private function placeChild():void {
@@ -64,7 +64,7 @@ public dynamic class MenuLayer extends MenuElementBase {
 		if (this.m_anchorBound == null) {
 			return;
 		}
-		;
+
 		var _local_1:Point = this.m_element.parent.globalToLocal(new Point(this.m_anchorBound.x, this.m_anchorBound.y));
 		var _local_2:Point = this.m_element.parent.globalToLocal(new Point((this.m_anchorBound.x + this.m_anchorBound.width), (this.m_anchorBound.y + this.m_anchorBound.height)));
 		this.m_element.y = _local_1.y;
@@ -74,7 +74,7 @@ public dynamic class MenuLayer extends MenuElementBase {
 		} else {
 			this.m_element.x = (_local_2.x + this.m_spaceX);
 		}
-		;
+
 	}
 
 

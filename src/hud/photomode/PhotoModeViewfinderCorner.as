@@ -38,7 +38,7 @@ public class PhotoModeViewfinderCorner extends BaseControl {
 				this.m_view.visible = true;
 				this.m_view.cameraitem_corner_mc.visible = true;
 		}
-		;
+
 	}
 
 

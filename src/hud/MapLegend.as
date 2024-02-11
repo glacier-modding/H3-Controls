@@ -50,7 +50,7 @@ public class MapLegend extends BaseControl {
 			this.m_rowByControlName[_arg_1] = _local_2;
 			this.m_container.addChild(_local_2);
 		}
-		;
+
 		return (_local_2);
 	}
 
@@ -63,7 +63,7 @@ public class MapLegend extends BaseControl {
 			this.m_container.visible = false;
 			return;
 		}
-		;
+
 		TaskletSequencer.getGlobalInstance().addChunk(function ():void {
 			var _local_2:MapLegendRow;
 			var _local_3:Object;
@@ -74,14 +74,14 @@ public class MapLegend extends BaseControl {
 			for each (_local_2 in m_rowByControlName) {
 				_local_2.visible = false;
 			}
-			;
+
 			for each (_local_3 in data.LegendTrackers) {
 				_local_2 = getOrCreateRow(_local_3.ControlName);
 				_local_2.visible = true;
 				_local_2.y = _local_1;
 				_local_1 = (_local_1 + _local_2.dyTotal);
 			}
-			;
+
 			_local_1 = (_local_1 + 10);
 			m_background_mc.back_mc.height = _local_1;
 		});
@@ -130,20 +130,20 @@ class MapLegendRow extends Sprite {
 			} else {
 				_local_3 = _local_6.split(";");
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1 == "hud.maptrackers.PlayerHeroMapTracker") {
 			_local_2.scaleX = (_local_2.scaleY = 0.7);
 			_local_2.x = -7;
 		} else {
 			_local_2.scaleX = (_local_2.scaleY = 0.769);
 		}
-		;
+
 		for each (_local_4 in _local_3) {
 			this.addMapLegendListItemView(_local_4, _local_2);
 		}
-		;
+
 	}
 
 	/*private*/
@@ -162,7 +162,7 @@ class MapLegendRow extends Sprite {
 			_local_3.y = this.dyTotal;
 			this.dyTotal = (this.dyTotal + Y_SPACING);
 		}
-		;
+
 		addChild(_local_3);
 	}
 

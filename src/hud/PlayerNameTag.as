@@ -49,7 +49,7 @@ public class PlayerNameTag extends BaseControl {
 		} else {
 			this.m_teamColor.visible = false;
 		}
-		;
+
 	}
 
 	public function set DisplayTeamColor(_arg_1:Boolean):void {
@@ -77,7 +77,7 @@ public class PlayerNameTag extends BaseControl {
 			this.m_view.visible = false;
 			return;
 		}
-		;
+
 		this.m_view.visible = true;
 		MenuUtils.setupText(this.m_view.profilename, _arg_1, 22, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGrey);
 		CommonUtils.changeFontToGlobalIfNeeded(this.m_view.profilename);

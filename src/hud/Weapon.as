@@ -40,9 +40,9 @@ public class Weapon extends BaseControl {
 	private var m_currentAmmoInStore:Number;
 	private var m_currentAmmoInClip:Number;
 	private var m_currentAmmoType:Number;
-	private var m_lastWeaponData:Object = new Object();
-	private var m_lastBackData:Object = new Object();
-	private var m_lastLeftHandData:Object = new Object();
+	private var m_lastWeaponData:Object = {};
+	private var m_lastBackData:Object = {};
+	private var m_lastLeftHandData:Object = {};
 	private var m_primaryLegalState:int = 0;
 	private var m_secondaryLegalState:int = 0;
 	private var m_leftHandLegalState:int = 0;
@@ -80,7 +80,7 @@ public class Weapon extends BaseControl {
 			this.m_view.imageHolderPri_mc.x = -245;
 			this.m_view.iconPri_mc.x = ((this.m_view.ammoDisplayContainer.x - (this.m_view.iconPri_mc.width / 2)) - 10);
 		}
-		;
+
 		this.m_secondaryLoader = new ImageLoader();
 		this.m_secondaryLoader.visible = false;
 		this.m_view.imageHolderSec_mc.addChild(this.m_secondaryLoader);
@@ -107,7 +107,7 @@ public class Weapon extends BaseControl {
 		if (_arg_1.weaponStatus.bIsContainer) {
 			return;
 		}
-		;
+
 		var _local_2:Object = _arg_1.weaponStatus;
 		var _local_3:Object = _arg_1.itemOnBackStatus;
 		var _local_4:Object = _arg_1.itemLeftHandStatus;
@@ -123,7 +123,7 @@ public class Weapon extends BaseControl {
 			if (((_local_5) || (!(_local_2.bHolstered == this.m_lastWeaponData.bHolstered)))) {
 				this.setWeaponIcon(_local_2.icon);
 			}
-			;
+
 			_local_8 = false;
 			if (_local_2.bHolstered != this.m_lastWeaponData.bHolstered) {
 				if (_local_2.bHolstered) {
@@ -131,25 +131,25 @@ public class Weapon extends BaseControl {
 					if (!this.m_lastWeaponData.bIsFirearm) {
 						_local_8 = true;
 					}
-					;
+
 				} else {
 					this.unholsterWeapon();
 				}
-				;
+
 			}
-			;
+
 			if (_local_8) {
 				this.m_view.ammoDisplayContainer.visible = false;
 			} else {
 				Animate.legacyTo(this.m_view.ammoDisplayContainer, 0.5, {"alpha": ((_local_2.bHolstered) ? 0 : 1)}, Animate.ExpoOut);
 			}
-			;
+
 			if (_local_2.bIsFirearm) {
 				this.setWeaponAmmoInfo(_local_2.nAmmoRemaining, _local_2.nAmmoTotal, _local_2.nAmmoInClip, _local_2.nWeaponType, _arg_1.nDisplayMode, _local_2.bCanReload, _local_2.bIsReloading, _local_2.fReloadDuration);
 			} else {
 				this.setWeaponAmmoInfo(-1, _local_2.nAmmoRemaining, -1, _local_2.nWeaponType, _arg_1.nDisplayMode, _local_2.bCanReload, _local_2.bIsReloading);
 			}
-			;
+
 			if (((((!(_local_2.bIllegal == this.m_lastWeaponData.bIllegal)) || (!(_local_2.bSuspicious == this.m_lastWeaponData.bSuspicious))) || (!(_local_2.bHolstered == this.m_lastWeaponData.bHolstered))) || (_local_5))) {
 				_local_9 = false;
 				if (_local_2.bIllegal) {
@@ -162,9 +162,9 @@ public class Weapon extends BaseControl {
 						} else {
 							this.m_primaryLegalState = LEGALSTATE_CLEAR;
 						}
-						;
+
 					}
-					;
+
 				} else {
 					if (_local_2.bSuspicious) {
 						if (!_local_2.bHolstered) {
@@ -176,24 +176,24 @@ public class Weapon extends BaseControl {
 							} else {
 								this.m_primaryLegalState = LEGALSTATE_CLEAR;
 							}
-							;
+
 						}
-						;
+
 					} else {
 						this.m_primaryLegalState = LEGALSTATE_CLEAR;
 					}
-					;
+
 				}
-				;
+
 				this.updatePrimaryImageVisibility(_local_9, this.m_primaryLegalState);
 				if (((!(this.m_primaryLegalState == this.m_previousPrimaryLegalState)) || (!(this.m_previousIsPrimaryHolsteredOnBack == _local_9)))) {
 					this.setStateIcon(this.m_view.iconPri_mc, 0.46, this.m_primaryLegalState, ((_local_9) && (ControlsMain.isVrModeActive())));
 					this.m_previousPrimaryLegalState = this.m_primaryLegalState;
 					this.m_previousIsPrimaryHolsteredOnBack = _local_9;
 				}
-				;
+
 			}
-			;
+
 		} else {
 			this.m_primaryWeaponHolstered = false;
 			this.pulsateReloadMc(0, false);
@@ -207,13 +207,13 @@ public class Weapon extends BaseControl {
 			this.m_primaryLoader.visible = false;
 			this.m_primaryIsShown = false;
 		}
-		;
+
 		if ((((_local_3.bHasItemToShow) && (!(_local_2.icon == _local_3.icon))) && (_arg_1.bShowHolstered))) {
 			this.m_secondaryIsShown = true;
 			if (_local_6) {
 				this.setSecondaryIcon(_local_3.icon);
 			}
-			;
+
 			if ((((!(_local_3.bIllegal == this.m_lastBackData.bIllegal)) || (!(_local_3.bSuspicious == this.m_lastBackData.bSuspicious))) || (_local_6))) {
 				if (((_local_3.bIllegal) && (_arg_1.bShowHolstered))) {
 					this.m_secondaryLegalState = LEGALSTATE_ILLEGAL;
@@ -223,13 +223,13 @@ public class Weapon extends BaseControl {
 					} else {
 						this.m_secondaryLegalState = LEGALSTATE_CLEAR;
 					}
-					;
+
 				}
-				;
+
 				this.setStateIcon(this.m_view.iconSec_mc, 0.23, this.m_secondaryLegalState, ControlsMain.isVrModeActive());
 				this.m_secondaryLoader.visible = true;
 			}
-			;
+
 		} else {
 			if (this.m_lastBackData.bHasItemToShow) {
 				this.m_secondaryLoader.visible = false;
@@ -242,15 +242,15 @@ public class Weapon extends BaseControl {
 				_local_3.bHasItemToShow = false;
 				this.m_secondaryIsShown = false;
 			}
-			;
+
 		}
-		;
+
 		if (((_local_4.bHasItemToShow) && (_local_4.bIllegal))) {
 			this.m_leftHandIsShown = true;
 			if (_local_7) {
 				this.setLeftHandIcon(_local_4.icon);
 			}
-			;
+
 			if ((((!(_local_4.bIllegal == this.m_lastLeftHandData.bIllegal)) || (!(_local_4.bSuspicious == this.m_lastLeftHandData.bSuspicious))) || (_local_7))) {
 				if (_local_4.bIllegal) {
 					this.m_leftHandLegalState = LEGALSTATE_ILLEGAL;
@@ -260,13 +260,13 @@ public class Weapon extends BaseControl {
 					} else {
 						this.m_leftHandLegalState = LEGALSTATE_CLEAR;
 					}
-					;
+
 				}
-				;
+
 				this.setStateIcon(this.m_view.iconLeftHand_mc, 0.23, this.m_leftHandLegalState);
 				this.m_leftHandLoader.visible = true;
 			}
-			;
+
 		} else {
 			if (this.m_lastLeftHandData.bHasItemToShow) {
 				this.m_leftHandLoader.visible = false;
@@ -279,21 +279,21 @@ public class Weapon extends BaseControl {
 				this.m_lastLeftHandData.bHasItemToShow = false;
 				this.m_leftHandIsShown = false;
 			}
-			;
+
 		}
-		;
+
 		if (_local_2.bHasItemToShow) {
 			this.m_lastWeaponData = _local_2;
 		}
-		;
+
 		if (_local_3.bHasItemToShow) {
 			this.m_lastBackData = _local_3;
 		}
-		;
+
 		if (_local_4.bHasItemToShow) {
 			this.m_lastLeftHandData = _local_4;
 		}
-		;
+
 	}
 
 	private function unholsterWeapon():void {
@@ -317,7 +317,7 @@ public class Weapon extends BaseControl {
 		} else {
 			this.m_view.imageHolderPri_mc.alpha = 0;
 		}
-		;
+
 	}
 
 	private function setWeaponIcon(_arg_1:String):void {
@@ -325,7 +325,7 @@ public class Weapon extends BaseControl {
 			this.loadPrimaryImage(_arg_1);
 			this.m_currentPrimaryImage = _arg_1;
 		}
-		;
+
 	}
 
 	private function setSecondaryIcon(_arg_1:String):void {
@@ -333,7 +333,7 @@ public class Weapon extends BaseControl {
 			this.loadSecondaryImage(_arg_1);
 			this.m_currentSecondaryImage = _arg_1;
 		}
-		;
+
 	}
 
 	private function setLeftHandIcon(_arg_1:String):void {
@@ -341,7 +341,7 @@ public class Weapon extends BaseControl {
 			this.loadLeftHandImage(_arg_1);
 			this.m_currentLeftHandImage = _arg_1;
 		}
-		;
+
 	}
 
 	public function setWeaponAmmo(_arg_1:Number):void {
@@ -352,14 +352,14 @@ public class Weapon extends BaseControl {
 			if (this.m_primaryWeaponHolstered) {
 				return;
 			}
-			;
+
 			if (this.m_isReloading != bIsReloading) {
 				this.m_isReloading = bIsReloading;
 				if (this.m_isReloading) {
 				}
-				;
+
 			}
-			;
+
 			this.m_reloadClipShownWhileHolster = false;
 			this.m_finalWeaponWasDropped = false;
 			this.m_view.reloadHolder.reload_mc.visible = false;
@@ -375,7 +375,7 @@ public class Weapon extends BaseControl {
 				if (!ControlsMain.isVrModeActive()) {
 					this.m_view.ammoDisplayContainer.x = (((((120 - this.m_primaryLoader.width) / 2) - 120) - (this.m_view.ammoDisplayContainer.ammoDisplay.ammoTotal_txt.x + this.m_view.ammoDisplayContainer.ammoDisplay.ammoTotal_txt.textWidth)) - 16);
 				}
-				;
+
 			} else {
 				if (((nAmmoRemaining >= 0) && (nAmmoTotal >= 0))) {
 					this.m_view.ammoDisplayContainer.ammoDisplay.visible = true;
@@ -387,12 +387,12 @@ public class Weapon extends BaseControl {
 					} else {
 						MenuUtils.setupText(this.m_view.ammoDisplayContainer.ammoDisplay.ammoTotal_txt, "", 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraLight);
 					}
-					;
+
 					this.m_view.ammoDisplayContainer.ammoDisplay.ammoTotal_txt.x = (this.m_view.ammoDisplayContainer.ammoDisplay.ammoCurrent_txt.textWidth + 2);
 					if (!ControlsMain.isVrModeActive()) {
 						this.m_view.ammoDisplayContainer.x = (((((120 - this.m_primaryLoader.width) / 2) - 120) - (this.m_view.ammoDisplayContainer.ammoDisplay.ammoTotal_txt.x + this.m_view.ammoDisplayContainer.ammoDisplay.ammoTotal_txt.textWidth)) - 16);
 					}
-					;
+
 					if (nAmmoTotal > 0) {
 						if (((nAmmoRemaining == 1) && (!(nAmmoInClip == 1)))) {
 							if (ControlsMain.isVrModeActive()) {
@@ -404,7 +404,7 @@ public class Weapon extends BaseControl {
 									pulsateReloadMc(0.3, true);
 								});
 							}
-							;
+
 						} else {
 							if (nAmmoRemaining == 0) {
 								if (ControlsMain.isVrModeActive()) {
@@ -418,26 +418,26 @@ public class Weapon extends BaseControl {
 										pulsateReloadMc(0.3, true);
 									});
 								}
-								;
+
 							}
-							;
+
 						}
-						;
+
 					}
-					;
+
 				} else {
 					this.m_view.ammoDisplayContainer.ammoDisplay.ammoCurrent_txt.visible = false;
 					this.m_view.ammoDisplayContainer.ammoDisplay.ammoTotal_txt.visible = false;
 				}
-				;
+
 			}
-			;
+
 			this.m_currentAmmoInGun = nAmmoRemaining;
 			this.m_currentAmmoInStore = nAmmoTotal;
 			this.m_currentAmmoInClip = nAmmoInClip;
 			this.m_currentAmmoType = nWeaponType;
 		}
-		;
+
 	}
 
 	private function pulsateReloadMc(_arg_1:Number, _arg_2:Boolean):void {
@@ -451,7 +451,7 @@ public class Weapon extends BaseControl {
 		} else {
 			MenuUtils.setTintColor(this.m_view.reloadHolder.reload_mc.reload_txt, MenuUtils.TINT_COLOR_ULTRA_DARK_GREY, false);
 		}
-		;
+
 		this.m_view.reloadHolder.reload_mc.bg.alpha = 1;
 		if (_arg_2) {
 			this.m_reloadAnimIsRunning = true;
@@ -459,13 +459,13 @@ public class Weapon extends BaseControl {
 				if (this.m_sniperModeIsEntered) {
 					this.m_view.reloadHolder.alpha = 0;
 				}
-				;
+
 				MenuUtils.setTintColor(this.m_view.reloadHolder.reload_mc.bg, MenuUtils.TINT_COLOR_MAGENTA_DARK, false);
 			}
-			;
+
 			Animate.delay(this, _arg_1, this.pulsateFadeIn, _arg_1);
 		}
-		;
+
 	}
 
 	private function pulsateFadeIn(_arg_1:Number):void {
@@ -474,7 +474,7 @@ public class Weapon extends BaseControl {
 		} else {
 			MenuUtils.setTintColor(this.m_view.reloadHolder.reload_mc.reload_txt, MenuUtils.TINT_COLOR_YELLOW_LIGHT, false);
 		}
-		;
+
 		this.m_view.reloadHolder.reload_mc.bg.alpha = 0;
 		Animate.delay(this, _arg_1, this.pulsateFadeOut, _arg_1);
 	}
@@ -485,7 +485,7 @@ public class Weapon extends BaseControl {
 		} else {
 			MenuUtils.setTintColor(this.m_view.reloadHolder.reload_mc.reload_txt, MenuUtils.TINT_COLOR_ULTRA_DARK_GREY, false);
 		}
-		;
+
 		this.m_view.reloadHolder.reload_mc.bg.alpha = 1;
 		Animate.delay(this, _arg_1, this.pulsateFadeIn, _arg_1);
 	}
@@ -502,7 +502,7 @@ public class Weapon extends BaseControl {
 			} else {
 				_arg_1.gotoAndStop("susarmed");
 			}
-			;
+
 			_arg_1.scaleX = (_arg_1.scaleY = (_arg_2 * 1.25));
 			Animate.legacyTo(_arg_1, 0.3, {
 				"scaleX": _arg_2,
@@ -512,9 +512,9 @@ public class Weapon extends BaseControl {
 			if (_arg_4) {
 				this.pulsateStateIcon_StepA(_arg_1, _arg_2);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function pulsateStateIcon_StepA(_arg_1:MovieClip, _arg_2:Number):void {
@@ -550,7 +550,7 @@ public class Weapon extends BaseControl {
 		if (ControlsMain.isVrModeActive()) {
 			_local_5 = 0;
 		}
-		;
+
 		if (_arg_1) {
 			Animate.legacyTo(_arg_2, 0.3, {"alpha": _local_4}, Animate.ExpoOut);
 			_local_3.setTint(0xFFFFFF, 1);
@@ -563,13 +563,13 @@ public class Weapon extends BaseControl {
 				_local_7.strength = 20;
 				_arg_2.filters = [_local_7];
 			}
-			;
+
 		} else {
 			_local_3.setTint(0xFFFFFF, 1);
 			_arg_2.filters = [];
 			Animate.legacyTo(_arg_2, 0.3, {"alpha": _local_5}, Animate.ExpoOut);
 		}
-		;
+
 		_arg_2.transform.colorTransform = _local_3;
 	}
 
@@ -585,7 +585,7 @@ public class Weapon extends BaseControl {
 			this.m_view.imageHolderPri_mc.removeChild(this.m_primaryLoader);
 			this.m_primaryLoader = null;
 		}
-		;
+
 		this.m_primaryLoader = new ImageLoader();
 		this.m_view.imageHolderPri_mc.addChild(this.m_primaryLoader);
 		maxWidth = 190;
@@ -595,7 +595,7 @@ public class Weapon extends BaseControl {
 		if (ControlsMain.isVrModeActive()) {
 			appliedHeight = 95;
 		}
-		;
+
 		this.m_primaryLoader.rotation = 0;
 		this.m_primaryLoader.scaleX = (this.m_primaryLoader.scaleY = 1);
 		this.m_primaryLoader.loadImage(imagePath, function ():void {
@@ -604,25 +604,25 @@ public class Weapon extends BaseControl {
 				m_primaryLoader.rotation = -90;
 				_local_1 = true;
 			}
-			;
+
 			m_primaryLoader.width = reducedWidth;
 			m_primaryLoader.scaleY = m_primaryLoader.scaleX;
 			if (m_primaryLoader.height > appliedHeight) {
 				m_primaryLoader.height = appliedHeight;
 				m_primaryLoader.scaleX = m_primaryLoader.scaleY;
 			}
-			;
+
 			m_primaryLoader.x = (((maxWidth / 2) - m_primaryLoader.width) - ((reducedWidth - m_primaryLoader.width) / 2));
 			if (_local_1) {
 				m_primaryLoader.y = ((m_primaryLoader.height / 2) + ((maxHeight - m_primaryLoader.height) / 2));
 			} else {
 				m_primaryLoader.y = ((m_primaryLoader.height / -2) + ((maxHeight - m_primaryLoader.height) / 2));
 			}
-			;
+
 			if (!ControlsMain.isVrModeActive()) {
 				m_view.ammoDisplayContainer.x = (((((120 - m_primaryLoader.width) / 2) - 120) - (m_view.ammoDisplayContainer.ammoDisplay.ammoTotal_txt.x + m_view.ammoDisplayContainer.ammoDisplay.ammoTotal_txt.textWidth)) - 16);
 			}
-			;
+
 			m_view.ammoDisplayContainer.ammoDisplay.visible = true;
 		});
 	}
@@ -637,7 +637,7 @@ public class Weapon extends BaseControl {
 			this.m_view.imageHolderSec_mc.removeChild(this.m_secondaryLoader);
 			this.m_secondaryLoader = null;
 		}
-		;
+
 		this.m_secondaryLoader = new ImageLoader();
 		this.m_view.imageHolderSec_mc.addChild(this.m_secondaryLoader);
 		maxWidth = 70;
@@ -646,7 +646,7 @@ public class Weapon extends BaseControl {
 		if (ControlsMain.isVrModeActive()) {
 			appliedHeight = 70;
 		}
-		;
+
 		this.m_secondaryLoader.rotation = 0;
 		this.m_secondaryLoader.scaleX = (this.m_secondaryLoader.scaleY = 1);
 		this.m_secondaryLoader.loadImage(imagePath, function ():void {
@@ -655,26 +655,26 @@ public class Weapon extends BaseControl {
 				m_secondaryLoader.rotation = -90;
 				_local_1 = true;
 			}
-			;
+
 			m_secondaryLoader.width = maxWidth;
 			m_secondaryLoader.scaleY = m_secondaryLoader.scaleX;
 			if (m_secondaryLoader.height > appliedHeight) {
 				m_secondaryLoader.height = appliedHeight;
 				m_secondaryLoader.scaleX = m_secondaryLoader.scaleY;
 			}
-			;
+
 			m_secondaryLoader.x = (-(m_secondaryLoader.width) - 4);
 			var _local_2:Number = m_secondaryLoader.height;
 			if (ControlsMain.isVrModeActive()) {
 				_local_2 = maxHeight;
 			}
-			;
+
 			if (_local_1) {
 				m_secondaryLoader.y = _local_2;
 			} else {
 				m_secondaryLoader.y = -(_local_2);
 			}
-			;
+
 		});
 	}
 
@@ -687,7 +687,7 @@ public class Weapon extends BaseControl {
 			this.m_view.imageHolderLeftHand_mc.removeChild(this.m_leftHandLoader);
 			this.m_leftHandLoader = null;
 		}
-		;
+
 		this.m_leftHandLoader = new ImageLoader();
 		this.m_view.imageHolderLeftHand_mc.addChild(this.m_leftHandLoader);
 		maxWidth = 50;
@@ -700,21 +700,21 @@ public class Weapon extends BaseControl {
 				m_leftHandLoader.rotation = -90;
 				_local_1 = true;
 			}
-			;
+
 			m_leftHandLoader.width = maxWidth;
 			m_leftHandLoader.scaleY = m_leftHandLoader.scaleX;
 			if (m_leftHandLoader.height > maxHeight) {
 				m_leftHandLoader.height = maxHeight;
 				m_leftHandLoader.scaleX = m_leftHandLoader.scaleY;
 			}
-			;
+
 			m_leftHandLoader.x = (-(m_leftHandLoader.width) - 4);
 			if (_local_1) {
 				m_leftHandLoader.y = (m_leftHandLoader.height - 5);
 			} else {
 				m_leftHandLoader.y = (m_leftHandLoader.height - 45);
 			}
-			;
+
 		});
 	}
 
@@ -723,12 +723,12 @@ public class Weapon extends BaseControl {
 			this.m_view.imageHolderPri_mc.visible = true;
 			return;
 		}
-		;
+
 		if (!_arg_1) {
 			this.m_view.imageHolderPri_mc.visible = false;
 			return;
 		}
-		;
+
 		this.m_view.imageHolderPri_mc.visible = (!(_arg_2 == LEGALSTATE_CLEAR));
 	}
 
@@ -736,11 +736,11 @@ public class Weapon extends BaseControl {
 		if (ControlsMain.isVrModeActive()) {
 			return;
 		}
-		;
+
 		if ((((this.m_primaryIsShown) || (this.m_secondaryIsShown)) || (this.m_leftHandIsShown))) {
 			this.m_weaponBackground.visible = true;
 		}
-		;
+
 	}
 
 	public function hideWeaponBackdrop():void {
@@ -752,7 +752,7 @@ public class Weapon extends BaseControl {
 		if ((((this.m_primaryIsShown) || (this.m_secondaryIsShown)) || (this.m_leftHandIsShown))) {
 			Animate.to(this.m_view, 0.2, 0, {"alpha": 0.3}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 	public function unsetActionSelectionMode():void {
@@ -760,7 +760,7 @@ public class Weapon extends BaseControl {
 		if ((((this.m_primaryIsShown) || (this.m_secondaryIsShown)) || (this.m_leftHandIsShown))) {
 			Animate.to(this.m_view, 0.2, 0, {"alpha": 1}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 	private function xAlignSecondary():void {
@@ -773,7 +773,7 @@ public class Weapon extends BaseControl {
 		if (((this.m_reloadAnimIsRunning) && (this.m_reloadUrgent))) {
 			this.m_view.reloadHolder.alpha = 0;
 		}
-		;
+
 	}
 
 	public function ExitSniperMode():void {
@@ -793,7 +793,7 @@ public class Weapon extends BaseControl {
 		if (ControlsMain.isVrModeActive()) {
 			return;
 		}
-		;
+
 		this.m_fScaleAccum = 1;
 		var _local_3:DisplayObject = this;
 		do {
@@ -809,11 +809,11 @@ public class Weapon extends BaseControl {
 					_local_6.blurX = (_local_6.blurY = _local_7);
 					_local_4.filters = _local_5;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 

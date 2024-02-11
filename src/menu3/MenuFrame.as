@@ -196,7 +196,7 @@ public class MenuFrame extends BaseControl {
 		this.m_pageContent.x = MenuConstants.menuXOffset;
 		this.m_pageContent.y = (MenuConstants.tileGap + MenuConstants.TabsLineUpperYPos);
 		this.m_view.addChild(this.m_pageContent);
-		var _local_4:Object = new Object();
+		var _local_4:Object = {};
 		_local_4.name = "ProfileData";
 		this.m_profileElement = new ProfileElement(_local_4);
 		this.m_profileElement.name = "m_profileElement";
@@ -206,7 +206,7 @@ public class MenuFrame extends BaseControl {
 		this.m_profileElement.visible = (!(this.m_disableProfileIndicator));
 		this.m_profileElement.setState(ProfileElement.STATE_OFFLINE);
 		this.m_view.addChild(this.m_profileElement);
-		var _local_5:Object = new Object();
+		var _local_5:Object = {};
 		_local_5.name = "MultiplayerProfileData";
 		this.m_multiplayerProfileElement = new ProfileElement(_local_5);
 		this.m_multiplayerProfileElement.name = "m_multiplayerProfileElement";
@@ -255,21 +255,21 @@ public class MenuFrame extends BaseControl {
 			} else {
 				this.m_masteryElement.visible = false;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function prepareMasteryData(_arg_1:Object):Object {
 		var _local_2:Object = _arg_1;
 		if (_local_2 == null) {
-			_local_2 = new Object();
+			_local_2 = {};
 		}
-		;
+
 		if ((name in _local_2)) {
 			return (_local_2);
 		}
-		;
+
 		_local_2.name = "MasteryData";
 		return (_local_2);
 	}
@@ -293,7 +293,7 @@ public class MenuFrame extends BaseControl {
 				m_profileLevel = data.profileLevel;
 				m_profileElement.alpha = 1;
 			}
-			;
+
 			m_profileElement.setProfileName(m_profileName);
 			m_profileElement.setProfileLevel(m_profileLevel);
 			var _local_1:* = "";
@@ -304,7 +304,7 @@ public class MenuFrame extends BaseControl {
 				_local_1 = data.connectedProfiles[0];
 				_local_2 = data.connectedProfileLevels[0];
 			}
-			;
+
 			m_multiplayerProfileElement.setProfileName(_local_1);
 			m_multiplayerProfileElement.setProfileLevel(_local_2);
 			updateIndicatorPosAndVisibility();
@@ -318,7 +318,7 @@ public class MenuFrame extends BaseControl {
 		if (_arg_1) {
 			this.m_profileElement.setState(ProfileElement.STATE_UNDEFINED);
 		}
-		;
+
 		this.m_profileElement.setState(_local_2);
 	}
 
@@ -339,7 +339,7 @@ public class MenuFrame extends BaseControl {
 			this.m_historyBar.alpha = 0;
 			return;
 		}
-		;
+
 		var _local_3:String = Localization.get("UI_TEXT_SEPARATOR");
 		MenuUtils.setupText(_local_2, _arg_1, 28, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGrey);
 		CommonUtils.changeFontToGlobalIfNeeded(_local_2);
@@ -363,11 +363,11 @@ public class MenuFrame extends BaseControl {
 		if (this.m_masteryElement != null) {
 			this.m_masteryElement.refreshLoca();
 		}
-		;
+
 		if (this.m_horizGradientOverlay != null) {
 			Animate.fromTo(this.m_horizGradientOverlay, MenuConstants.PageOpenTime, 0, {"alpha": 0}, {"alpha": 1}, Animate.Linear);
 		}
-		;
+
 	}
 
 	public function onClosePage(_arg_1:Boolean):void {
@@ -377,7 +377,7 @@ public class MenuFrame extends BaseControl {
 			Animate.kill(this.m_horizGradientOverlay);
 			this.m_horizGradientOverlay.alpha = 0;
 		}
-		;
+
 	}
 
 	public function hideGameVersion():void {
@@ -397,15 +397,15 @@ public class MenuFrame extends BaseControl {
 			if (_arg_1.buildid) {
 				this.m_versionIndicator.gameversion.appendText(((" (ID" + _arg_1.buildid) + ")"));
 			}
-			;
+
 		}
-		;
+
 		this.m_versionIndicator.gameversion.textColor = MenuConstants.COLOR_WHITE;
 		if (_arg_1.serverversion) {
 			this.m_versionIndicator.serverversion.text = ((Localization.get("UI_MENU_PAGE_SETTINGS_SERVERVERSION") + ": ") + _arg_1.serverversion);
 			this.m_versionIndicator.serverversion.textColor = MenuConstants.COLOR_WHITE;
 		}
-		;
+
 	}
 
 	public function setButtonPrompts(data:Object):void {
@@ -421,27 +421,27 @@ public class MenuFrame extends BaseControl {
 		if (_arg_1 == "cancel") {
 			_local_2 = 0;
 		}
-		;
+
 		if (_arg_1 == "accept") {
 			_local_2 = 1;
 		}
-		;
+
 		if (_arg_1 == "action-x") {
 			_local_2 = 2;
 		}
-		;
+
 		if (_arg_1 == "action-y") {
 			_local_2 = 3;
 		}
-		;
+
 		if (_arg_1 == "r") {
 			_local_2 = 4;
 		}
-		;
+
 		if (_local_2 >= 0) {
 			sendEventWithValue("onInputAction", _local_2);
 		}
-		;
+
 	}
 
 	public function showButtonPromts(_arg_1:Boolean):void {
@@ -455,7 +455,7 @@ public class MenuFrame extends BaseControl {
 		} else {
 			Animate.legacyTo(this.m_pageContent, MenuConstants.PageOpenTime, {"alpha": 0}, Animate.Linear);
 		}
-		;
+
 	}
 
 	public function set showOverlay(_arg_1:Boolean):void {
@@ -476,7 +476,7 @@ public class MenuFrame extends BaseControl {
 		} else {
 			Animate.legacyTo(this.m_darkBackdrop, MenuConstants.PageOpenTime, {"alpha": 0}, Animate.Linear);
 		}
-		;
+
 	}
 
 	public function set showDarkBackdropLevelEnd(_arg_1:Boolean):void {
@@ -486,7 +486,7 @@ public class MenuFrame extends BaseControl {
 		} else {
 			Animate.legacyTo(this.m_darkBackdropLevelEnd, MenuConstants.PageOpenTime, {"alpha": 0}, Animate.Linear);
 		}
-		;
+
 	}
 
 	public function set showFailedBackdrop(_arg_1:Boolean):void {
@@ -497,7 +497,7 @@ public class MenuFrame extends BaseControl {
 		} else {
 			Animate.legacyTo(this.m_failedBackdrop, MenuConstants.PageOpenTime, {"alpha": 0}, Animate.Linear);
 		}
-		;
+
 	}
 
 	public function set showRedBackdrop(_arg_1:Boolean):void {
@@ -511,7 +511,7 @@ public class MenuFrame extends BaseControl {
 		} else {
 			Animate.legacyTo(this.m_greyGradientBackdropLevelEnd, MenuConstants.PageOpenTime, {"alpha": 0}, Animate.Linear);
 		}
-		;
+
 	}
 
 	public function set showTabsLines(_arg_1:Boolean):void {
@@ -536,7 +536,7 @@ public class MenuFrame extends BaseControl {
 			Animate.legacyTo(this.m_greyBackground, MenuConstants.PageOpenTime, {"alpha": 0}, Animate.Linear);
 			Animate.legacyTo(this.m_backgroundOverlay, MenuConstants.PageOpenTime, {"alpha": 0}, Animate.Linear);
 		}
-		;
+
 	}
 
 	public function showMenuPageContent(_arg_1:Boolean):void {
@@ -590,7 +590,7 @@ public class MenuFrame extends BaseControl {
 		} else {
 			Animate.legacyTo(this.m_menuFullOverlay, MenuConstants.PageOpenTime, {"alpha": 0}, Animate.Linear);
 		}
-		;
+
 	}
 
 	public function set showHorizGradientOverlay(_arg_1:Boolean):void {
@@ -606,9 +606,9 @@ public class MenuFrame extends BaseControl {
 				MenuUtils.centerFillAspectFull(this.m_horizGradientOverlay, 100, 100, this.m_width, this.m_height);
 				this.redrawHorizGradientOverlay();
 			}
-			;
+
 		}
-		;
+
 	}
 
 	[PROPERTY(CONSTRAINT="Editors(Slider) MinValue(-1) MaxValue(1) DecimalPlaces(2)")]
@@ -641,7 +641,7 @@ public class MenuFrame extends BaseControl {
 		if (isNaN(this.m_HorizGradientOverlay_color)) {
 			this.m_HorizGradientOverlay_color = 0;
 		}
-		;
+
 		this.redrawHorizGradientOverlay();
 	}
 
@@ -654,7 +654,7 @@ public class MenuFrame extends BaseControl {
 		if (this.m_horizGradientOverlay == null) {
 			return;
 		}
-		;
+
 		var g:Graphics = this.m_horizGradientOverlay.graphics;
 		g.clear();
 		var matr:Matrix = new Matrix();
@@ -712,7 +712,7 @@ public class MenuFrame extends BaseControl {
 		} else {
 			this.m_greyBackground.graphics.drawRect(0, 0, MenuConstants.BaseWidth, MenuConstants.BaseHeight);
 		}
-		;
+
 	}
 
 	private function drawUserLine(_arg_1:Number, _arg_2:Number):void {
@@ -735,7 +735,7 @@ public class MenuFrame extends BaseControl {
 			this.m_backgroundContainer.z = 0;
 			this.m_backgroundContainer.transform.matrix3D = null;
 		}
-		;
+
 		MenuUtils.centerFill(this.m_backgroundOverlay, MenuConstants.BaseWidth, MenuConstants.BaseHeight, _arg_1, _arg_2);
 		MenuUtils.centerFill(this.m_menuBackgroundInGame, MenuConstants.BaseWidth, MenuConstants.BaseHeight, _arg_1, _arg_2);
 		MenuUtils.centerFill(this.m_greyGradientBackdropLevelEnd, MenuConstants.BaseWidth, MenuConstants.BaseHeight, _arg_1, _arg_2);
@@ -748,14 +748,14 @@ public class MenuFrame extends BaseControl {
 			MenuUtils.centerFillAspectFull(this.m_horizGradientOverlay, 100, 100, _arg_1, _arg_2);
 			this.redrawHorizGradientOverlay();
 		}
-		;
+
 		if (ControlsMain.isVrModeActive()) {
 			this.m_backgroundLayer.z = MenuUtils.toPixel(-0.4);
 		} else {
 			this.m_backgroundLayer.z = 0;
 			this.m_backgroundLayer.transform.matrix3D = null;
 		}
-		;
+
 		MenuUtils.centerFillAspectHeight(this.m_backgroundLayer, MenuConstants.BaseWidth, MenuConstants.BaseHeight, _arg_1, _arg_2);
 		MenuUtils.centerFillAspect(this.m_container, MenuConstants.BaseWidth, MenuConstants.BaseHeight, _arg_1, _arg_2);
 		MenuUtils.centerFillAspect(this.m_foreground, MenuConstants.BaseWidth, MenuConstants.BaseHeight, _arg_1, _arg_2);
@@ -774,7 +774,7 @@ public class MenuFrame extends BaseControl {
 			this.m_profileElement.scaleY = 1;
 			this.m_masteryElement.alpha = 1;
 		}
-		;
+
 		var _local_3:Object = {
 			"sizeX": _arg_1,
 			"sizeY": _arg_2,
@@ -807,7 +807,7 @@ public class MenuFrame extends BaseControl {
 		if (this.m_isUiInputActive == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_isUiInputActive = _arg_1;
 		this.checkMouseState();
 	}
@@ -816,7 +816,7 @@ public class MenuFrame extends BaseControl {
 		if (this.m_isMouseActive == _arg_1) {
 			return;
 		}
-		;
+
 		this.m_isMouseActive = _arg_1;
 		this.checkMouseState();
 	}
@@ -834,14 +834,14 @@ public class MenuFrame extends BaseControl {
 		if (((!(this.m_isMouseActive)) || (!(this.m_isUiInputActive)))) {
 			return;
 		}
-		;
+
 		var _local_1:Point = new Point(stage.mouseX, stage.mouseY);
 		var _local_2:Array = stage.getObjectsUnderPoint(_local_1);
 		if (((_local_2 == null) || (_local_2.length <= 0))) {
 			return;
 		}
-		;
-		var _local_3:Array = new Array();
+
+		var _local_3:Array = [];
 		while (_local_2.length > 0) {
 			_local_4 = (_local_2.pop() as DisplayObject);
 			if (_local_4 != null) {
@@ -851,7 +851,7 @@ public class MenuFrame extends BaseControl {
 					_local_5 = (_local_6 as MenuElementBase);
 					_local_6 = _local_6.parent;
 				}
-				;
+
 				if (_local_5 != null) {
 					_local_7 = false;
 					_local_8 = 0;
@@ -859,21 +859,21 @@ public class MenuFrame extends BaseControl {
 						if (_local_3[_local_8] == _local_5) {
 							_local_7 = true;
 						}
-						;
+
 						_local_8++;
 					}
-					;
+
 					if (!_local_7) {
 						_local_5.triggerMouseRollOver();
 						_local_3.unshift(_local_5);
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 

@@ -67,18 +67,18 @@ public dynamic class ControllerLayout extends MenuElementBase {
 			this.setVrControls(false);
 			return;
 		}
-		;
+
 		if (_local_2 == CommonUtils.CONTROLLER_TYPE_OCULUSVR) {
 			CommonUtils.gotoFrameLabelAndStop(this.m_view, _local_2);
 			this.setVrControls(true);
 			return;
 		}
-		;
+
 		CommonUtils.gotoFrameLabelAndStop(this.m_view, _local_2);
 		if (((_local_2 == CommonUtils.CONTROLLER_TYPE_KEY) || (_local_2 == CommonUtils.CONTROLLER_TYPE_OPENVR))) {
 			return;
 		}
-		;
+
 		this.setRegularControls(_arg_1);
 	}
 
@@ -159,9 +159,9 @@ public dynamic class ControllerLayout extends MenuElementBase {
 			if (_local_2.clip != null) {
 				MenuUtils.setupText(_local_2.clip.label_txt, _local_2.lstr, this.m_labelFontSize, this.m_labelFontType, this.m_labelFontColor);
 			}
-			;
+
 		}
-		;
+
 		for each (_local_3 in [{
 			"clip": this.m_view.alt_control_instruction0,
 			"lstr": Localization.get("UI_VR_TEXT_BINDING_HOLD")
@@ -199,9 +199,9 @@ public dynamic class ControllerLayout extends MenuElementBase {
 				_local_3.clip.visible = (!(_local_3.hideIt));
 				MenuUtils.setupTextUpper(_local_3.clip.alt_label_txt, _local_3.lstr, this.m_altLabelFontSize, this.m_altLabelFontType, this.m_altLabelFontColor);
 			}
-			;
+
 		}
-		;
+
 		this.setBgColorAndSize([this.m_view.alt_control_instruction0, this.m_view.alt_control_instruction1, this.m_view.alt_control_instruction3, this.m_view.alt_control_instruction13, this.m_view.alt_control_instruction19, this.m_view.alt_control_instruction20, this.m_view.alt_control_instruction21, this.m_view.alt_control_instruction22, this.m_view.alt_control_instruction23, this.m_view.alt_control_instruction24]);
 		this.checkOverlaps();
 		_local_4 = new TextField();
@@ -296,12 +296,12 @@ public dynamic class ControllerLayout extends MenuElementBase {
 				if (_local_2.anchor != null) {
 					_local_2.clip.y = (_local_2.anchor.y - 23);
 				}
-				;
+
 				MenuUtils.setupTextUpper(_local_2.clip.alt_label_txt, _local_2.lstr, this.m_altLabelFontSize, this.m_altLabelFontType, this.m_altLabelFontColor);
 			}
-			;
+
 		}
-		;
+
 		this.setBgColorAndSize([this.m_view.alt_control_instruction0, this.m_view.alt_control_instruction1, this.m_view.alt_control_instruction3, this.m_view.alt_control_instruction6, this.m_view.alt_control_instruction13, this.m_view.alt_control_instruction15, this.m_view.alt_control_instruction17, this.m_view.alt_control_instruction19, this.m_view.alt_control_instruction21, this.m_view.alt_control_instruction22]);
 		this.checkOverlaps();
 	}
@@ -314,9 +314,9 @@ public dynamic class ControllerLayout extends MenuElementBase {
 				_local_2.alt_label_bg_mc.width = (_local_2.alt_label_txt.width + 5);
 				MenuUtils.setColor(_local_2.alt_label_bg_mc, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function checkOverlaps():void {
@@ -352,15 +352,15 @@ public dynamic class ControllerLayout extends MenuElementBase {
 							_local_8.width = (_local_8.width + _local_9);
 							_local_2.push(new SizedItem(_local_7, _local_8));
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		var _local_6:Number = 1;
 		for each (_local_4 in _local_1) {
 			for each (_local_5 in _local_2) {
@@ -368,19 +368,19 @@ public dynamic class ControllerLayout extends MenuElementBase {
 					_local_12 = ((_local_5.mc.x - _local_4.mc.x) / (_local_4.rect.width + _local_5.rect.width));
 					_local_6 = Math.min(_local_6, _local_12);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		for each (_local_4 in _local_1) {
 			_local_4.mc.scaleX = (_local_4.mc.scaleX * _local_6);
 		}
-		;
+
 		for each (_local_5 in _local_2) {
 			_local_5.mc.scaleX = (_local_5.mc.scaleX * _local_6);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -388,7 +388,7 @@ public dynamic class ControllerLayout extends MenuElementBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

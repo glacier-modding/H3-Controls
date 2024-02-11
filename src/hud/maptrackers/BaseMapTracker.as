@@ -24,16 +24,16 @@ public class BaseMapTracker extends BaseControl {
 		if (this.m_mainView == _arg_1) {
 			return;
 		}
-		;
+
 		if (this.m_mainView != null) {
 			removeChild(this.m_mainView);
 		}
-		;
+
 		this.m_mainView = _arg_1;
 		if (this.m_mainView != null) {
 			addChild(this.m_mainView);
 		}
-		;
+
 	}
 
 	public function getTextForLegend():String {

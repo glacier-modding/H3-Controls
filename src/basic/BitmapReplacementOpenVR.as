@@ -165,7 +165,7 @@ public class BitmapReplacementOpenVR {
 			case GAMEPADBUTTONID_ButtonSelect:
 				return (bitmapData_ButtonStart);
 		}
-		;
+
 		return (null);
 	}
 
@@ -173,7 +173,7 @@ public class BitmapReplacementOpenVR {
 		if ((((s_componentByButtonID == null) || (_arg_1 < 0)) || (_arg_1 >= s_componentByButtonID.length))) {
 			return (null);
 		}
-		;
+
 		return (s_componentByButtonID[_arg_1]);
 	}
 
@@ -183,9 +183,9 @@ public class BitmapReplacementOpenVR {
 			if (_local_3.name == _arg_2) {
 				return (true);
 			}
-			;
+
 		}
-		;
+
 		return (false);
 	}
 
@@ -207,7 +207,7 @@ public class BitmapReplacementOpenVR {
 			while (s_componentByButtonID.length <= _local_2.idSource) {
 				s_componentByButtonID.push(null);
 			}
-			;
+
 			s_componentByButtonID[_local_2.idSource] = new Component(_local_2.component.idArchetype, _local_2.component.direction, _local_2.component.label);
 			_local_3 = getBitmapDataForGamepadButtonID(_local_2.idSource);
 			if (_local_3 != null) {
@@ -225,9 +225,9 @@ public class BitmapReplacementOpenVR {
 					} else {
 						_local_6.visible = false;
 					}
-					;
+
 				}
-				;
+
 				if (_local_7 != null) {
 					_local_7.text = _local_4.label;
 					if (_local_7.textWidth > PX_TEMPLATE_LABELTEXT_MAX_WIDTH) {
@@ -240,36 +240,36 @@ public class BitmapReplacementOpenVR {
 						_local_7.x = (_local_12 - (_local_7.width / 2));
 						_local_7.y = (_local_13 - (_local_7.height / 2));
 					}
-					;
+
 				}
-				;
+
 				if (_local_8 != null) {
 					if (_local_8.north_mc != null) {
 						_local_8.north_mc.visible = (!((_local_4.direction & PRESSDIRECTION_North) == 0));
 					}
-					;
+
 					if (_local_8.south_mc != null) {
 						_local_8.south_mc.visible = (!((_local_4.direction & PRESSDIRECTION_South) == 0));
 					}
-					;
+
 					if (_local_8.east_mc != null) {
 						_local_8.east_mc.visible = (!((_local_4.direction & PRESSDIRECTION_East) == 0));
 					}
-					;
+
 					if (_local_8.west_mc != null) {
 						_local_8.west_mc.visible = (!((_local_4.direction & PRESSDIRECTION_West) == 0));
 					}
-					;
+
 				}
-				;
+
 				_local_9 = new Matrix();
 				_local_9.scale((PX_BITMAP_SIZE / PX_TEMPLATE_SIZE), (PX_BITMAP_SIZE / PX_TEMPLATE_SIZE));
 				_local_9.translate((PX_BITMAP_SIZE / 2), (PX_BITMAP_SIZE / 2));
 				_local_3.draw(_local_5, _local_9, null, null, null, true);
 			}
-			;
+
 		}
-		;
+
 	}
 
 

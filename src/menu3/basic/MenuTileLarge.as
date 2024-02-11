@@ -56,11 +56,11 @@ public dynamic class MenuTileLarge extends MenuElementLockableContentBase {
 		if (_arg_1.image) {
 			this.loadImage(_arg_1.image);
 		}
-		;
+
 		if (_arg_1.availability) {
 			setAvailablity(this.m_view, _arg_1, "large");
 		}
-		;
+
 		if (_arg_1.video) {
 			this.m_videoIndicator = new VideoCutsceneIndicatorView();
 			this.m_videoIndicator.x = (this.m_view.tileBg.width >> 1);
@@ -68,11 +68,11 @@ public dynamic class MenuTileLarge extends MenuElementLockableContentBase {
 			this.m_videoIndicator.bg.alpha = 0.8;
 			this.m_view.addChild(this.m_videoIndicator);
 		}
-		;
+
 		if (_arg_1.profileStatistics) {
 			this.showStatistics(_arg_1.profile, _arg_1.profileStatistics);
 		}
-		;
+
 		this.handleSelectionChange();
 	}
 
@@ -90,7 +90,7 @@ public dynamic class MenuTileLarge extends MenuElementLockableContentBase {
 			this.m_view.briefing.y = (this.m_origBriefingY - this.BIG_HEADER_Y_OFFSET);
 			this.m_view.briefing.height = (this.m_origBriefingHeight + this.BIG_HEADER_Y_OFFSET);
 		}
-		;
+
 		MenuUtils.setupTextUpper(this.m_view.briefingheader, _arg_3, 48, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 		MenuUtils.shrinkTextToFit(this.m_view.briefingheader, this.m_view.briefingheader.width, -1);
 		MenuUtils.setupText(this.m_view.briefing, _arg_4, 21, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
@@ -112,14 +112,14 @@ public dynamic class MenuTileLarge extends MenuElementLockableContentBase {
 		if (this.m_currentImage == imagePath) {
 			return;
 		}
-		;
+
 		this.m_currentImage = imagePath;
 		if (this.m_loader != null) {
 			this.m_loader.cancelIfLoading();
 			this.m_view.image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new MenuImageLoader(ControlsMain.isVrModeActive());
 		this.m_view.image.addChild(this.m_loader);
 		this.m_loader.center = true;
@@ -132,7 +132,7 @@ public dynamic class MenuTileLarge extends MenuElementLockableContentBase {
 				m_view.image.width = MenuConstants.MenuTileLargeWidth;
 				m_view.image.scaleY = m_view.image.scaleX;
 			}
-			;
+
 		});
 	}
 
@@ -162,9 +162,9 @@ public dynamic class MenuTileLarge extends MenuElementLockableContentBase {
 				this.m_timeindicatorInfo.push(_local_3);
 				_local_4++;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override protected function handleSelectionChange():void {
@@ -173,7 +173,7 @@ public dynamic class MenuTileLarge extends MenuElementLockableContentBase {
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (m_isSelected) {
 			setPopOutScale(this.m_view, true);
 			Animate.to(this.m_view.dropShadow, 0.3, 0, {"alpha": 1}, Animate.ExpoOut);
@@ -181,7 +181,7 @@ public dynamic class MenuTileLarge extends MenuElementLockableContentBase {
 				MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_RED, true, MenuConstants.MenuElementSelectedAlpha);
 				MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_RED, false, true, MenuConstants.COLOR_WHITE, 1, 0, true);
 			}
-			;
+
 		} else {
 			setPopOutScale(this.m_view, false);
 			Animate.kill(this.m_view.dropShadow);
@@ -190,9 +190,9 @@ public dynamic class MenuTileLarge extends MenuElementLockableContentBase {
 				MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, MenuConstants.MenuElementBackgroundAlpha);
 				MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_WHITE, true, false);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -204,11 +204,11 @@ public dynamic class MenuTileLarge extends MenuElementLockableContentBase {
 				this.m_view.image.removeChild(this.m_loader);
 				this.m_loader = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	private function completeAnimations():void {
@@ -216,7 +216,7 @@ public dynamic class MenuTileLarge extends MenuElementLockableContentBase {
 		if (m_infoIndicator != null) {
 			Animate.complete(m_infoIndicator);
 		}
-		;
+
 	}
 
 

@@ -47,7 +47,7 @@ public class ObjectivesElement extends BaseControl {
 		while (this.m_objectivesHolder.numChildren > 0) {
 			this.m_objectivesHolder.removeChildAt(0);
 		}
-		;
+
 		this.addObjectives(_arg_1);
 		this.updateHeights();
 	}
@@ -57,11 +57,11 @@ public class ObjectivesElement extends BaseControl {
 		if (_arg_1.primary.length > 0) {
 			this.addObjLines(_arg_1.primary);
 		}
-		;
+
 		if (_arg_1.secondary.length > 0) {
 			this.addObjLines(_arg_1.secondary);
 		}
-		;
+
 	}
 
 	private function addObjLines(_arg_1:Array):void {
@@ -72,10 +72,10 @@ public class ObjectivesElement extends BaseControl {
 			} else {
 				this.addObjective(_arg_1[_local_2].objTitle, this.m_startX, this.m_objectivesPosY, _arg_1[_local_2].objType, _arg_1[_local_2].objSuccess, _arg_1[_local_2].objFail, _arg_1[_local_2].objChanged, _arg_1[_local_2].timerData, _arg_1[_local_2].counterData);
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 	}
 
 	private function addObjective(_arg_1:String, _arg_2:Number, _arg_3:Number, _arg_4:Number, _arg_5:Boolean, _arg_6:Boolean, _arg_7:Boolean, _arg_8:Object, _arg_9:Object):void {
@@ -89,29 +89,29 @@ public class ObjectivesElement extends BaseControl {
 			_local_10.icons.gotoAndStop(1);
 			_local_10.icons.typeicons.gotoAndStop((_arg_4 + 1));
 		}
-		;
+
 		if (((_arg_5) && (!(_arg_6)))) {
 			_local_11 = MenuConstants.FontColorGreyMedium;
 			_local_10.icons.gotoAndStop(3);
 		}
-		;
+
 		if (((!(_arg_5)) && (_arg_6))) {
 			_local_11 = MenuConstants.FontColorGreyMedium;
 			_local_10.icons.gotoAndStop(2);
 		}
-		;
+
 		if (((_arg_5) && (_arg_6))) {
 			_local_11 = MenuConstants.FontColorGreyMedium;
 			_local_10.icons.gotoAndStop(4);
 		}
-		;
+
 		if (_arg_7) {
 			_local_10.x = (_arg_2 + 150);
 			Animate.legacyTo(_local_10, 1, {"x": _arg_2}, Animate.ExpoOut);
 		} else {
 			_local_10.x = _arg_2;
 		}
-		;
+
 		_local_10.y = _arg_3;
 		MenuUtils.setupText(_local_10.objective_txt, _arg_1, 18, MenuConstants.FONT_TYPE_MEDIUM, _local_11);
 		this.m_objectivesPosY = (this.m_objectivesPosY + ((_local_10.objective_txt.numLines * LABEL_TEXT_LEADING) + OBJ_MARGIN_HEIGHT));
@@ -136,7 +136,7 @@ public class ObjectivesElement extends BaseControl {
 		} else {
 			_local_3.x = _arg_2;
 		}
-		;
+
 		_local_3.y = this.m_objectivesPosY;
 		MenuUtils.setupText(_local_3.objective_txt, _arg_1.objTitle, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 		var _local_4:TextFormat = _local_3.objective_txt.getTextFormat();
@@ -168,7 +168,7 @@ public class ObjectivesElement extends BaseControl {
 		if (!this.m_objectivesHolder.visible) {
 			this.m_objectivesPosY = this.m_startY;
 		}
-		;
+
 	}
 
 

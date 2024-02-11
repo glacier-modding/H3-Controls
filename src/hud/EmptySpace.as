@@ -9,7 +9,7 @@ import menu3.MenuElementBase;
 public dynamic class EmptySpace extends MenuElementBase {
 
 	public function EmptySpace(_arg_1:Object) {
-		var _local_2:Object = new Object();
+		var _local_2:Object = {};
 		super(_local_2);
 		var _local_3:InventorySlotSpace = new InventorySlotSpace();
 		_local_3.width = _arg_1.width;

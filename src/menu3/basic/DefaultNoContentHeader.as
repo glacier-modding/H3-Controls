@@ -30,24 +30,24 @@ public dynamic class DefaultNoContentHeader extends HeadlineElement {
 		if (!_arg_1.typeicon) {
 			_arg_1.typeicon = "info";
 		}
-		;
+
 		super.onSetData(_arg_1);
 		if (_arg_1.absolute_x) {
 			this.m_absoluteX = _arg_1.absolute_x;
 		} else {
 			this.m_absoluteX = MenuConstants.HeadlineElementXPos;
 		}
-		;
+
 		if (_arg_1.absolute_y) {
 			this.m_absoluteY = _arg_1.absolute_y;
 		} else {
 			this.m_absoluteY = MenuConstants.HeadlineElementYPos;
 		}
-		;
+
 		if (((!(isNaN(_arg_1.sizeX))) && (!(isNaN(_arg_1.sizeY))))) {
 			this.m_screenSize = new Point(_arg_1.sizeX, _arg_1.sizeY);
 		}
-		;
+
 		this.m_needsUpdate = true;
 		this.updatePosition();
 	}
@@ -57,7 +57,7 @@ public dynamic class DefaultNoContentHeader extends HeadlineElement {
 		if (hasEventListener(Event.ADDED_TO_STAGE)) {
 			removeEventListener(Event.ADDED_TO_STAGE, this.addedToStageHandler, false);
 		}
-		;
+
 	}
 
 	private function addedToStageHandler():void {
@@ -73,7 +73,7 @@ public dynamic class DefaultNoContentHeader extends HeadlineElement {
 		if (!this.m_needsUpdate) {
 			return;
 		}
-		;
+
 		var _local_1:DisplayObject = this;
 		var _local_2:DisplayObject;
 		while (((!(_local_1 == null)) && (_local_2 == null))) {
@@ -83,9 +83,9 @@ public dynamic class DefaultNoContentHeader extends HeadlineElement {
 			} else {
 				_local_1 = _local_1.parent;
 			}
-			;
+
 		}
-		;
+
 		if (_local_2 != null) {
 			_local_4 = this.getBounds(this);
 			_local_5 = this.getBounds(_local_2);
@@ -94,7 +94,7 @@ public dynamic class DefaultNoContentHeader extends HeadlineElement {
 			_local_6.y = (this.m_absoluteY - (_local_5.y - _local_4.y));
 			this.m_needsUpdate = false;
 		}
-		;
+
 	}
 
 

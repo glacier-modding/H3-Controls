@@ -19,7 +19,7 @@ public dynamic class OpportunityItemDetails extends MenuElementBase {
 		if (this.m_view) {
 			removeChild(this.m_view);
 		}
-		;
+
 		this.m_view = new OpportunityItemDetailsView();
 		this.m_view.Body.description.height = 332;
 		this.setupHeader(_arg_1.header, _arg_1.title, _arg_1.icon, _arg_1.completed);
@@ -32,7 +32,7 @@ public dynamic class OpportunityItemDetails extends MenuElementBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	private function setupHeader(_arg_1:String, _arg_2:String, _arg_3:String, _arg_4:Boolean):void {

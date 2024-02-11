@@ -52,7 +52,7 @@ public dynamic class RecommendedInfoTile extends MenuElementTileBase {
 		super.onSetData(_arg_1);
 		if (getNodeProp(this, "pressable") == false) {
 		}
-		;
+
 		MenuUtils.setupTextAndShrinkToFitUpper(this.m_view.descriptionHeader, _arg_1.descriptionHeader, 36, MenuConstants.FONT_TYPE_MEDIUM, 280, -1, 18, MenuConstants.FontColorWhite);
 		MenuUtils.setupText(this.m_view.descriptionBody, _arg_1.descriptionBody, 18, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 		if (_arg_1.showUnlock === true) {
@@ -65,7 +65,7 @@ public dynamic class RecommendedInfoTile extends MenuElementTileBase {
 			this.m_view.tileIcon.visible = false;
 			this.m_footerLine.visible = false;
 		}
-		;
+
 		this.handleSelectionChange();
 	}
 
@@ -74,7 +74,7 @@ public dynamic class RecommendedInfoTile extends MenuElementTileBase {
 		if (m_loading) {
 			return;
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -83,7 +83,7 @@ public dynamic class RecommendedInfoTile extends MenuElementTileBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	private function completeAnimations():void {

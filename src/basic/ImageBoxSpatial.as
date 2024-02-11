@@ -47,13 +47,13 @@ public class ImageBoxSpatial extends BaseControl {
 		if (((this.m_isRegistered) && (this.m_rid == _arg_1))) {
 			return;
 		}
-		;
+
 		this.unloadImage();
 		this.m_rid = _arg_1;
 		if (this.m_rid == null) {
 			return;
 		}
-		;
+
 		var _local_2:ImageLoaderCache = ImageLoaderCache.getGlobalInstance();
 		this.m_isRegistered = true;
 		_local_2.registerLoadImage(this.m_rid, this.onSuccess, null);
@@ -66,7 +66,7 @@ public class ImageBoxSpatial extends BaseControl {
 			_local_1.unregisterLoadImage(this.m_rid, this.onSuccess, null);
 			this.m_isRegistered = false;
 		}
-		;
+
 		this.m_loader.bitmapData = null;
 	}
 
@@ -81,7 +81,7 @@ public class ImageBoxSpatial extends BaseControl {
 			this.m_loader.x = (-(this.m_loader.width) / 2);
 			this.m_loader.y = (-(this.m_loader.height) / 2);
 		}
-		;
+
 	}
 
 	private function applyJustification():void {
@@ -91,29 +91,29 @@ public class ImageBoxSpatial extends BaseControl {
 			this.m_txtFormat.align = "right";
 			this.m_view.txt_info.x = (this.m_loader.x - this.m_view.txt_info.width);
 		}
-		;
+
 		if (_local_1 == 1) {
 			this.m_txtFormat.align = "center";
 			this.m_view.txt_info.x = ((this.m_loader.x + (this.m_loader.width / 2)) - (this.m_view.txt_info.width / 2));
 		}
-		;
+
 		if (_local_1 == 2) {
 			this.m_txtFormat.align = "left";
 			this.m_view.txt_info.x = (this.m_loader.x + this.m_loader.width);
 		}
-		;
+
 		if (_local_2 == 0) {
 			this.m_view.txt_info.y = (this.m_loader.y - this.m_view.txt_info.textHeight);
 		}
-		;
+
 		if (_local_2 == 1) {
 			this.m_view.txt_info.y = (-(this.m_view.txt_info.textHeight) / 2);
 		}
-		;
+
 		if (_local_2 == 2) {
 			this.m_view.txt_info.y = (this.m_loader.y + this.m_loader.height);
 		}
-		;
+
 		this.m_view.txt_info.setTextFormat(this.m_txtFormat);
 	}
 
@@ -126,7 +126,7 @@ public class ImageBoxSpatial extends BaseControl {
 			if (_local_2) {
 				this.loadImage(_local_2);
 			}
-			;
+
 		} else {
 			if (_arg_1.id == "distance") {
 				_local_3 = ((ControlsMain.getDisplaySize() == ControlsMain.DISPLAY_SIZE_SMALL) ? 24 : 12);
@@ -136,9 +136,9 @@ public class ImageBoxSpatial extends BaseControl {
 				this.m_view.txt_info.text = (_local_4.toString() + "m");
 				this.m_view.txt_info.setTextFormat(this.m_txtFormat);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function set CenterImage(_arg_1:Boolean):void {

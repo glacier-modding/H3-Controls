@@ -371,7 +371,7 @@ public class TileList extends CoreList {
 			return;
 		}
 		if (index >= startIndex && index < startIndex + (_totalRows * _totalColumns)) {
-			return;
+
 		} else if (index < startIndex) {
 			scrollPosition = (index / factor >> 0);
 		} else {

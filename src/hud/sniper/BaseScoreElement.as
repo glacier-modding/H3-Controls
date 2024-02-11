@@ -15,8 +15,8 @@ public class BaseScoreElement extends BaseControl {
 
 	private var m_view:BaseScoreElementView;
 	private var m_previousScore:int = 0;
-	private var m_scoreStackArray:Array = new Array();
-	private var m_scoreAnimatingArray:Array = new Array();
+	private var m_scoreStackArray:Array = [];
+	private var m_scoreAnimatingArray:Array = [];
 	private var m_scoreStackCount:int = 1;
 
 	public function BaseScoreElement() {
@@ -50,15 +50,15 @@ public class BaseScoreElement extends BaseControl {
 						if (_local_5 > 3000) {
 							_local_6 = 2;
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		this.m_scoreStackArray.push({
 			"theClip": _local_3,
 			"previousScore": this.m_previousScore,
@@ -93,7 +93,7 @@ public class BaseScoreElement extends BaseControl {
 			this.m_view.scorecontainer.removeChild(oldScoreObject.theClip);
 			oldScoreObject.theClip = null;
 		}
-		;
+
 		var previousScoreString:String = String(scoreObject.previousScore);
 		var currentScoreString:String = String(scoreObject.currentScore);
 		currentScore = scoreObject.currentScore;
@@ -118,7 +118,7 @@ public class BaseScoreElement extends BaseControl {
 		} else {
 			this.m_scoreStackArray.shift();
 		}
-		;
+
 	}
 
 	public function hideText():void {

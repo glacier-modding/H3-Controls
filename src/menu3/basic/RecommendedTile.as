@@ -51,7 +51,7 @@ public dynamic class RecommendedTile extends MenuElementLockableContentBase {
 		if (_arg_1.image) {
 			this.loadImage(_arg_1.image);
 		}
-		;
+
 		MenuUtils.removeColor(this.m_view.tileIcon);
 		MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_WHITE, true, false);
 		this.handleSelectionChange();
@@ -69,14 +69,14 @@ public dynamic class RecommendedTile extends MenuElementLockableContentBase {
 		if (this.m_imagePath == imagePath) {
 			return;
 		}
-		;
+
 		this.m_imagePath = imagePath;
 		if (this.m_loader != null) {
 			this.m_loader.cancelIfLoading();
 			this.m_view.image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new MenuImageLoader();
 		this.m_view.image.addChild(this.m_loader);
 		this.m_loader.center = true;
@@ -89,7 +89,7 @@ public dynamic class RecommendedTile extends MenuElementLockableContentBase {
 				m_view.image.width = MenuConstants.MenuTileTallWidth;
 				m_view.image.scaleY = m_view.image.scaleX;
 			}
-			;
+
 		});
 	}
 
@@ -99,7 +99,7 @@ public dynamic class RecommendedTile extends MenuElementLockableContentBase {
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (m_isSelected) {
 			setPopOutScale(this.m_view, true);
 			Animate.to(this.m_view.dropShadow, 0.3, 0, {"alpha": 1}, Animate.ExpoOut);
@@ -108,7 +108,7 @@ public dynamic class RecommendedTile extends MenuElementLockableContentBase {
 				MenuUtils.setColor(this.m_view.tileSelect, MenuConstants.COLOR_RED, true, MenuConstants.MenuElementSelectedAlpha);
 				MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_RED, false, true, MenuConstants.COLOR_WHITE, 1, 0, true);
 			}
-			;
+
 			this.callTextTicker(true);
 		} else {
 			setPopOutScale(this.m_view, false);
@@ -123,12 +123,12 @@ public dynamic class RecommendedTile extends MenuElementLockableContentBase {
 				} else {
 					MenuUtils.setupIcon(this.m_view.tileIcon, this.m_iconLabel, MenuConstants.COLOR_WHITE, true, false);
 				}
-				;
+
 			}
-			;
+
 			this.callTextTicker(false);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -140,11 +140,11 @@ public dynamic class RecommendedTile extends MenuElementLockableContentBase {
 				this.m_view.image.removeChild(this.m_loader);
 				this.m_loader = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 

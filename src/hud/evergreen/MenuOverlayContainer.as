@@ -64,7 +64,7 @@ public class MenuOverlayContainer extends BaseControl {
 		for each (_local_1 in this.m_componentByName) {
 			_local_1.onControlLayoutChanged();
 		}
-		;
+
 	}
 
 	override public function onSetSize(_arg_1:Number, _arg_2:Number):void {
@@ -109,7 +109,7 @@ public class MenuOverlayContainer extends BaseControl {
 			((_local_3.isLeftAligned()) ? this.m_slideContainerL : this.m_slideContainerR).addChild(_local_3);
 			_local_3.onUsableSizeChanged((this.m_xRight - this.m_xLeft), this.m_yTop, this.m_yBottom);
 		}
-		;
+
 		_local_3.onSetData(_arg_2);
 	}
 
@@ -145,11 +145,11 @@ public class MenuOverlayContainer extends BaseControl {
 			this.m_slideContainerR.graphics.moveTo(0, -9999);
 			this.m_slideContainerR.graphics.lineTo(0, 9999);
 		}
-		;
+
 		for each (_local_4 in this.m_componentByName) {
 			_local_4.onUsableSizeChanged((this.m_xRight - this.m_xLeft), this.m_yTop, this.m_yBottom);
 		}
-		;
+
 	}
 
 

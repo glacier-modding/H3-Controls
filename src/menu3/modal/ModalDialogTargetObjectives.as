@@ -139,22 +139,22 @@ public class ModalDialogTargetObjectives extends ModalDialogContainerBase {
 				descriptionText = data.description;
 				this.m_hasDescription = true;
 			}
-			;
+
 		}
-		;
+
 		if (((this.m_briefingFocus) && (!(this.m_hasDescription)))) {
 			descriptionText = data.objective.conditions[0].summary;
 			this.m_hasDescription = true;
 		}
-		;
+
 		if (descriptionText != null) {
 			this.createDescriptionText(descriptionText);
 		}
-		;
+
 		if (this.m_useConditions) {
 			this.m_showingConditions = true;
 		}
-		;
+
 		this.m_targetLoader = new MenuImageLoader();
 		this.m_weaponLoader = new MenuImageLoader();
 		this.m_disguiseLoader = new MenuImageLoader();
@@ -175,7 +175,7 @@ public class ModalDialogTargetObjectives extends ModalDialogContainerBase {
 		} else {
 			this.m_view.targetIcon.visible = false;
 		}
-		;
+
 		var allConditionsAreAny:Boolean = true;
 		if (data.objective.displayaskill) {
 			this.setConditions(ObjectiveUtil.prepareConditions([]));
@@ -185,18 +185,18 @@ public class ModalDialogTargetObjectives extends ModalDialogContainerBase {
 				if (nonAnyConditions.length > 0) {
 					allConditionsAreAny = false;
 				}
-				;
+
 				this.setConditions(ObjectiveUtil.prepareConditions(data.objective.conditions));
 			}
-			;
+
 		}
-		;
+
 		if ((((this.m_showingConditions) && (preferDescription)) && (allConditionsAreAny))) {
 			this.m_showingConditions = false;
 		}
-		;
+
 		this.updateContent();
-		var obj:Object = new Object();
+		var obj:Object = {};
 		obj.buttonprompts = data.displaybuttons;
 		this.setButtonPrompts(obj);
 	}
@@ -212,7 +212,7 @@ public class ModalDialogTargetObjectives extends ModalDialogContainerBase {
 			Animate.kill(_local_2.icon);
 			Animate.kill(_local_2);
 		}
-		;
+
 		_local_3 = this.m_conditionTitle;
 		_local_4 = this.m_conditionIcon;
 		if ((((this.m_showingConditions) && (this.m_hasConditions)) && (!(this.m_briefingFocus)))) {
@@ -229,7 +229,7 @@ public class ModalDialogTargetObjectives extends ModalDialogContainerBase {
 				Animate.delay(_local_2, _local_1, this.showCondition, _local_2, _local_1);
 				_local_1 = (_local_1 + 0.05);
 			}
-			;
+
 		} else {
 			if (this.m_hasDescription) {
 				_local_3 = this.m_objectiveTitle;
@@ -239,18 +239,18 @@ public class ModalDialogTargetObjectives extends ModalDialogContainerBase {
 						_local_3 = this.m_infoTitle;
 						_local_4 = this.m_infoIcon;
 					}
-					;
+
 				}
-				;
+
 				this.m_scrollingContainer.visible = true;
 				for each (_local_2 in this.m_conditions) {
 					_local_2.visible = false;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		MenuUtils.setupText(this.m_view.infoLabel, _local_3, 28, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 		MenuUtils.shrinkTextToFit(this.m_view.infoLabel, (this.m_scrollWidth - (this.m_view.infoLabel.x - this.m_scrollPosX)), -1);
 		MenuUtils.setupIcon(this.m_view.infoIcon, _local_4, MenuConstants.COLOR_WHITE, true, false);
@@ -285,19 +285,19 @@ public class ModalDialogTargetObjectives extends ModalDialogContainerBase {
 					if (_arg_1[_local_4].type == this.CONDITION_TYPE_CUSTOM_KILL) {
 						this.setConditionImages(_arg_1[_local_4], _local_5);
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			this.m_view.addChild(_local_5);
 			if (((_arg_1[_local_4].type == this.CONDITION_TYPE_KILL) || (_arg_1[_local_4].type == this.CONDITION_TYPE_DEFAULT_KILL))) {
 				_local_2 = (_local_2 + (this.CONDITION_IMAGE_WIDTH + (this.m_scrollWidth - (this.CONDITION_IMAGE_WIDTH * 2))));
 			}
-			;
+
 			_local_4++;
 		}
-		;
+
 	}
 
 	private function setConditionImages(condition:Object, conditionView:ModalKillCondition):void {
@@ -337,14 +337,14 @@ public class ModalDialogTargetObjectives extends ModalDialogContainerBase {
 			this.m_selectButton = _arg_1.buttonprompts[0];
 			this.m_backButton = _arg_1.buttonprompts[1];
 		}
-		;
+
 		this.updateButtonPrompts();
 	}
 
 	override public function updateButtonPrompts():void {
 		this.m_view.buttonPrompts.removeChildren();
 		this.m_view.selectButtonPrompt.removeChildren();
-		var _local_1:Object = new Object();
+		var _local_1:Object = {};
 		_local_1.buttonprompts = [this.m_backButton];
 		addMouseEventListeners(this.m_view.buttonPrompts, 1);
 		MenuUtils.parsePrompts(_local_1, null, this.m_view.buttonPrompts);
@@ -354,7 +354,7 @@ public class ModalDialogTargetObjectives extends ModalDialogContainerBase {
 		} else {
 			addMouseEventListeners(this.m_view.selectButtonPrompt, 0);
 		}
-		;
+
 		MenuUtils.parsePrompts(_local_1, null, this.m_view.selectButtonPrompt);
 	}
 
@@ -364,7 +364,7 @@ public class ModalDialogTargetObjectives extends ModalDialogContainerBase {
 			this.m_showingConditions = (!(this.m_showingConditions));
 			this.updateContent();
 		}
-		;
+
 	}
 
 	private function getImageLoader(_arg_1:String):MenuImageLoader {
@@ -376,7 +376,7 @@ public class ModalDialogTargetObjectives extends ModalDialogContainerBase {
 			default:
 				return (this.m_objectiveLoader);
 		}
-		;
+
 	}
 
 	private function getDefaultImage(_arg_1:String):String {
@@ -388,7 +388,7 @@ public class ModalDialogTargetObjectives extends ModalDialogContainerBase {
 			default:
 				return (this.m_killWithAnything);
 		}
-		;
+
 	}
 
 	private function createDescriptionText(_arg_1:String):void {
@@ -408,7 +408,7 @@ public class ModalDialogTargetObjectives extends ModalDialogContainerBase {
 			this.m_view.removeChild(this.m_scrollingContainer);
 			this.m_scrollingContainer = null;
 		}
-		;
+
 		var _local_1:Number = 30;
 		this.m_scrollingContainer = new ModalScrollingContainer((this.m_scrollWidth + _local_1), this.m_scrollHeight, _local_1, true, "targetobjectives");
 		this.m_view.addChild(this.m_scrollingContainer);

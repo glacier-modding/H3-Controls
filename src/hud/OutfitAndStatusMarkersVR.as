@@ -142,7 +142,7 @@ public class OutfitAndStatusMarkersVR extends BaseControl {
 			Animate.kill(this.m_Outfit_txtName);
 			Animate.kill(this.m_Outfit_txtName2);
 		}
-		;
+
 	}
 
 	private function applyOutfitName(_arg_1:String):void {
@@ -155,16 +155,16 @@ public class OutfitAndStatusMarkersVR extends BaseControl {
 				Animate.kill(this.m_Outfit_txtName);
 				Animate.kill(this.m_Outfit_txtName2);
 			}
-			;
+
 		} else {
 			this.m_Outfit_txtName2.visible = true;
 			this.m_Outfit_txtName2.text = _arg_1;
 			if (this.m_isPlayerLookingAtHand) {
 				this.resetAndStartTextTicker();
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function resetTextTicker():void {
@@ -180,7 +180,7 @@ public class OutfitAndStatusMarkersVR extends BaseControl {
 		if (!this.m_Outfit_txtName2.visible) {
 			return;
 		}
-		;
+
 		if (this.m_isPlayerLookingAtHand) {
 			_local_1 = this.m_Outfit_txtName.width;
 			_local_2 = (DX_GAP_TEXTTICKER + _local_1);
@@ -200,7 +200,7 @@ public class OutfitAndStatusMarkersVR extends BaseControl {
 				"x": -(_local_1 + DX_GAP_TEXTTICKER)
 			}, Animate.Linear, this.loopTextTicker, this.m_Outfit_txtName2);
 		}
-		;
+
 	}
 
 	private function loopTextTicker(_arg_1:TextField):void {
@@ -222,7 +222,7 @@ public class OutfitAndStatusMarkersVR extends BaseControl {
 		} else {
 			this.m_Outfit_image.height = (this.m_mask_pxHeight * this.m_hitmanSuitCrop_fScale);
 		}
-		;
+
 		this.m_Outfit_image.scaleX = this.m_Outfit_image.scaleY;
 		this.m_Outfit_image.x = (-(this.m_Outfit_image.width) / 2);
 		this.m_Outfit_image.y = (-(this.m_mask_pxHeight) / 2);
@@ -347,7 +347,7 @@ class StatusMarkerViewLean extends Sprite {
 		} else {
 			this.m_trespassingIndicatorMc.visible = false;
 		}
-		;
+
 	}
 
 	public function hiddenInCrowd(_arg_1:Boolean):void {
@@ -375,9 +375,9 @@ class StatusMarkerViewLean extends Sprite {
 				this.m_informationBarLVA.visible = false;
 				this.m_gradientOverlayLVA.visible = false;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function setTensionMessage(_arg_1:String, _arg_2:int, _arg_3:int):void {
@@ -397,13 +397,13 @@ class StatusMarkerViewLean extends Sprite {
 					this.m_tensionIndicatorMc.unconMc.bgMc.width = (29 + (_local_4.length * 12));
 					this.m_tensionIndicatorMc.unconMc.bgMc.height = this.m_tensionIndicatorMc.bgMc.height;
 				}
-				;
+
 			}
-			;
+
 			this.m_tensionIndicatorMc.visible = true;
 			this.m_tensionIndicatorMc.unconMc.visible = (_arg_3 >= 2);
 		}
-		;
+
 	}
 
 

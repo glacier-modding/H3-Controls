@@ -46,11 +46,11 @@ public class EconomyWidget extends BaseControl {
 				} else {
 					this.startNotificationAnimation(_local_2, _arg_1);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		this.m_mercesPrev = _arg_1;
 	}
 
@@ -65,7 +65,7 @@ public class EconomyWidget extends BaseControl {
 			this.updateMoney(mercesAfter);
 			this.animateIcon();
 		}
-		;
+
 		MenuUtils.setTextColor(this.m_view.notification_txt, ((diffMerces > 0) ? MenuConstants.COLOR_GREEN : MenuConstants.COLOR_RED));
 		this.m_view.notification_txt.htmlText = (((((diffMerces > 0) ? "+" : "") + MenuUtils.formatNumber(diffMerces, false)) + " ") + this.m_lstrMerces);
 		var yTop:Number = ((this.m_view.money_txt.y + this.m_view.money_txt.height) - this.m_view.notification_txt.height);
@@ -92,14 +92,14 @@ public class EconomyWidget extends BaseControl {
 				updateMoney(mercesAfter);
 				animateIcon();
 			}
-			;
+
 			if (m_notificationsPending.length == 0) {
 				m_isNotificationAnimating = false;
 			} else {
 				_local_1 = m_notificationsPending.shift();
 				startNotificationAnimation(_local_1.diffMerces, _local_1.mercesAfter);
 			}
-			;
+
 		});
 	}
 

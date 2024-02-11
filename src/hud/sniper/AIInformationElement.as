@@ -36,9 +36,9 @@ public class AIInformationElement extends BaseControl {
 			if (_arg_2.length > 0) {
 				_local_3 = (_local_3 + " : ");
 			}
-			;
+
 		}
-		;
+
 		_local_3 = (_local_3 + _arg_2);
 		this.onSetData(_local_3);
 	}
@@ -85,7 +85,7 @@ public class AIInformationElement extends BaseControl {
 				this.m_view.icons.gotoAndStop(4);
 				break;
 		}
-		;
+
 		MenuUtils.setupText(this.m_view.info_txt, _arg_1, 18, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorWhite);
 		this.m_view.bg.width = ((45 + this.m_view.info_txt.textWidth) + 12);
 		this.m_view.overlay.width = this.m_view.bg.width;

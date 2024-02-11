@@ -67,7 +67,7 @@ public class BriefingSequenceTextBlock extends BaseControl {
 		if (this.m_textRightAligned) {
 			_local_3.align = "right";
 		}
-		;
+
 		this.m_theTextField = new TextField();
 		this.m_theTextField.alpha = 0;
 		this.m_theTextField.autoSize = "left";
@@ -88,7 +88,7 @@ public class BriefingSequenceTextBlock extends BaseControl {
 		if (!_local_9) {
 			_local_9 = 0;
 		}
-		;
+
 		var _local_10:int = 5;
 		_local_3.leading = ((_local_5.leading - _local_9) + _local_10);
 		this.m_theTextField.setTextFormat(_local_3);
@@ -100,7 +100,7 @@ public class BriefingSequenceTextBlock extends BaseControl {
 		if (!_local_9) {
 			_local_9 = 0;
 		}
-		;
+
 		var _local_11:int = 3;
 		var _local_12:int = Math.ceil((this.m_fontSize * 0.23));
 		this.m_theTextField.x = -(_local_11);
@@ -108,7 +108,7 @@ public class BriefingSequenceTextBlock extends BaseControl {
 		if (this.m_appendUpwards) {
 			this.m_theTextField.y = (-((_local_8 * this.m_theTextField.numLines) + (_local_9 * (this.m_theTextField.numLines - 1))) - _local_12);
 		}
-		;
+
 		this.m_textContainer.addChild(this.m_theTextField);
 		if (((this.m_icon) && (!(this.m_icon == "")))) {
 			this.m_iconView = new iconsAll76x76View();
@@ -120,12 +120,12 @@ public class BriefingSequenceTextBlock extends BaseControl {
 			this.m_theTextField.x = 63;
 			this.m_theTextField.width = (this.m_theTextField.width - 63);
 		}
-		;
+
 		if (this.m_showRegPoint) {
 			_local_13 = new DotIndicatorView();
 			this.m_textContainer.addChild(_local_13);
 		}
-		;
+
 		Animate.delay(this, _arg_2, this.startSequence, _arg_1);
 	}
 
@@ -143,7 +143,7 @@ public class BriefingSequenceTextBlock extends BaseControl {
 			this.pushFlickerValues(flickerInDurations);
 			this.startFlicker(flickerInDurations);
 		}
-		;
+
 		if (this.m_flickerOut) {
 			flickerOutDurations = new Vector.<Number>();
 			this.pushFlickerValues(flickerOutDurations);
@@ -153,10 +153,10 @@ public class BriefingSequenceTextBlock extends BaseControl {
 				flickerOutTotalDuration = (flickerOutTotalDuration + flickerOutDurations[i]);
 				i = (i + 1);
 			}
-			;
+
 			Animate.delay(this, (baseduration - flickerOutTotalDuration), this.startFlicker, flickerOutDurations);
 		}
-		;
+
 		Animate.to(this.m_textContainer, this.m_animateInDuration, 0, {
 			"x": (this.m_unitWidth * this.m_animateInEndRow),
 			"y": (this.m_unitHeight * this.m_animateInEndCol)
@@ -179,9 +179,9 @@ public class BriefingSequenceTextBlock extends BaseControl {
 			if (this.m_theTextField.alpha == 0) {
 				this.m_theTextField.alpha = (this.getRandomRange(2, 10) / 10);
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.length >= 1) {
 			Animate.delay(this.m_theTextField, _arg_1.pop(), this.startFlicker, _arg_1);
 		} else {
@@ -193,11 +193,11 @@ public class BriefingSequenceTextBlock extends BaseControl {
 					this.m_theTextField.alpha = 0;
 					this.m_flickerOut = false;
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function getRandomRange(_arg_1:Number, _arg_2:Number):Number {
@@ -211,7 +211,7 @@ public class BriefingSequenceTextBlock extends BaseControl {
 			_arg_1.push((this.getRandomRange(2, 20) / 300));
 			_local_3++;
 		}
-		;
+
 	}
 
 	override public function getContainer():Sprite {
@@ -247,7 +247,7 @@ public class BriefingSequenceTextBlock extends BaseControl {
 			default:
 				this.m_fontStyle = MenuConstants.FONT_TYPE_NORMAL;
 		}
-		;
+
 	}
 
 	public function set FontSize(_arg_1:int):void {

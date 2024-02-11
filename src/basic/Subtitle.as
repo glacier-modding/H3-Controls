@@ -59,7 +59,7 @@ public class Subtitle extends BaseControl {
 			this.m_arrowR_mc.filters = [];
 			this.m_icon2DSpeaker_mc.filters = [];
 		}
-		;
+
 		this.updateViewportLockBits(LOCKBIT_None);
 		this.m_characterName_txt.alpha = 1;
 		this.m_icon2DSpeaker_mc.alpha = 0;
@@ -72,7 +72,7 @@ public class Subtitle extends BaseControl {
 		if (_arg_1 < 0.5) {
 			return ((2 * _arg_1) * _arg_1);
 		}
-		;
+
 		_local_2 = ((2 * _arg_1) - 2);
 		return (1 - ((0.5 * _local_2) * _local_2));
 	}
@@ -110,27 +110,27 @@ public class Subtitle extends BaseControl {
 		} else {
 			_local_2 = (_arg_1 as String);
 		}
-		;
+
 		if (("fontsize" in _arg_1)) {
 			this.m_fontSize = _arg_1.fontsize;
 		}
-		;
+
 		if (("pctBGAlpha" in _arg_1)) {
 			this.m_fBGAlpha = (_arg_1.pctBGAlpha / 100);
 		}
-		;
+
 		if (("align" in _arg_1)) {
 			this.m_alignToBottom = (_arg_1.align == "bottom");
 		} else {
 			this.m_alignToBottom = true;
 		}
-		;
+
 		this.m_fontSize = Math.max(this.m_fontSize, MIN_FONT_SIZE);
 		this.m_fontSize = Math.min(this.m_fontSize, MAX_FONT_SIZE);
 		if (("characterName" in _arg_1)) {
 			_local_3 = _arg_1.characterName;
 		}
-		;
+
 		_local_3 = ((_local_3 == null) ? "" : StringUtil.trim(_local_3.replace(/_+/g, " ")));
 		if (_local_3 == "") {
 			this.m_characterName_txt.visible = false;
@@ -138,7 +138,7 @@ public class Subtitle extends BaseControl {
 			this.m_characterName_txt.visible = true;
 			_local_2 = _local_2.replace(/^[-‒–—―⸺⸻] */, "");
 		}
-		;
+
 		if (_local_2 == "") {
 			this.m_view.visible = false;
 		} else {
@@ -149,14 +149,14 @@ public class Subtitle extends BaseControl {
 				this.m_characterName_txt.autoSize = TextFieldAutoSize.LEFT;
 				MenuUtils.setupText(this.m_characterName_txt, (_local_3 + ":"), this.m_fontSize, "$medium", "#ebeb92");
 			}
-			;
+
 			if (((!(_arg_1.icon2DSpeaker is String)) || (_arg_1.icon2DSpeaker == ""))) {
 				this.m_icon2DSpeaker_mc.visible = false;
 			} else {
 				this.m_icon2DSpeaker_mc.visible = true;
 				this.m_icon2DSpeaker_mc.gotoAndStop(_arg_1.icon2DSpeaker);
 			}
-			;
+
 			this.m_view.visible = true;
 			this.updateSpeakerIndicatorLayout();
 			this.updateDarkBack();
@@ -164,15 +164,15 @@ public class Subtitle extends BaseControl {
 				this.m_view.alpha = 0;
 				Animate.to(this.m_view, 0, 0.05, {"alpha": 1}, Animate.Linear);
 			}
-			;
+
 		}
-		;
+
 		if (this.m_alignToBottom) {
 			this.m_view.y = -(this.m_sub_txt.textHeight);
 		} else {
 			this.m_view.y = 0;
 		}
-		;
+
 	}
 
 	public function updateViewportLockBits(_arg_1:int):void {
@@ -189,7 +189,7 @@ public class Subtitle extends BaseControl {
 		if (this.m_characterName_txt.visible) {
 			_local_2 = (this.m_characterName_txt.textWidth + _local_1);
 		}
-		;
+
 		this.m_sub_txt.x = ((_local_2 / 2) * (1 - this.m_icon2DSpeaker_mc.alpha));
 		_local_3 = (this.m_sub_txt.x + (this.m_sub_txt.width / 2));
 		var _local_4:Number = (this.m_sub_txt.y + (this.m_sub_txt.height / 2));
@@ -211,12 +211,12 @@ public class Subtitle extends BaseControl {
 			this.m_icon2DSpeaker_mc.x = ((_local_5 - _local_8) - this.m_sub_txt.x);
 			this.m_icon2DSpeaker_mc.y = _local_4;
 		}
-		;
+
 		if (this.m_characterName_txt.visible) {
 			this.m_characterName_txt.x = ((_local_3 - (this.m_sub_txt.getLineMetrics(0).width / 2)) - _local_2);
 			this.m_characterName_txt.y = this.m_sub_txt.y;
 		}
-		;
+
 	}
 
 	private function updateDarkBack():void {
@@ -224,12 +224,12 @@ public class Subtitle extends BaseControl {
 		if (this.m_view == null) {
 			return;
 		}
-		;
+
 		if (this.m_fBGAlpha == 0) {
 			this.m_view.box_mc.visible = false;
 			return;
 		}
-		;
+
 		var _local_1:Number = 50;
 		var _local_2:Number = 15;
 		var _local_3:Number = 45;

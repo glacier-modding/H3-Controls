@@ -75,17 +75,17 @@ public class EvergreenUtils {
 						_local_5.autoSize = TextFieldAutoSize.LEFT;
 						break;
 				}
-				;
+
 			}
-			;
+
 			_local_6 = (_local_4 as DisplayObjectContainer);
 			if (_local_6 != null) {
 				disableMaskingInTextFields(_local_6);
 			}
-			;
+
 			_local_3++;
 		}
-		;
+
 	}
 
 	public static function isValidRarityLabel(_arg_1:int):Boolean {
@@ -98,7 +98,7 @@ public class EvergreenUtils {
 			default:
 				return (false);
 		}
-		;
+
 	}
 
 	public static function createRarityLabel(_arg_1:int, _arg_2:Boolean = true):DisplayObject {
@@ -124,7 +124,7 @@ public class EvergreenUtils {
 			default:
 				_local_4.text = "???";
 		}
-		;
+
 		_local_4.x = (-(_local_4.width) / 2);
 		_local_4.y = ((-(_local_4.height) / 2) + 1);
 		var _local_5:uint;
@@ -142,7 +142,7 @@ public class EvergreenUtils {
 				_local_5 = LABELBGCOLOR[LABELPURPOSE_ITEMRARITY_LEGENDARY];
 				break;
 		}
-		;
+
 		var _local_6:Number = 25;
 		_local_3.graphics.beginFill(_local_5);
 		_local_3.graphics.drawRoundRect((-(_local_4.width + _local_6) / 2), (-52 / 2), (_local_4.width + _local_6), 52, ((_arg_2) ? 10 : 0));

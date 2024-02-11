@@ -55,7 +55,7 @@ public dynamic class PlayerProfileListElementHeader extends MenuElementTileBase 
 		if (this.m_dottedLineContainer) {
 			return;
 		}
-		;
+
 		this.m_dottedLineContainer = new Sprite();
 		this.m_dottedLineContainer.x = 14;
 		this.m_dottedLineContainer.y = this.m_view.tileBg.height;
@@ -73,7 +73,7 @@ public dynamic class PlayerProfileListElementHeader extends MenuElementTileBase 
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

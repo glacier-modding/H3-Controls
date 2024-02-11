@@ -75,7 +75,7 @@ public dynamic class MapInfoTile extends MenuElementBase {
 		if (ControlsMain.isVrModeActive()) {
 			this.z = -(MenuConstants.VRNotebookMapZOffset);
 		}
-		;
+
 	}
 
 	override public function onSetData(_arg_1:Object):void {
@@ -105,7 +105,7 @@ public dynamic class MapInfoTile extends MenuElementBase {
 				_local_3 = MenuConstants.COLOR_TURQUOISE;
 				break;
 		}
-		;
+
 		MenuUtils.setupIcon(this.m_view.tileIcon, _arg_1.icon, _local_2, false, true, _local_3);
 		MenuUtils.setupTextUpper(this.m_view.header, _arg_1.header, 18, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 		MenuUtils.truncateTextfield(this.m_view.header, 1, null, CommonUtils.changeFontToGlobalIfNeeded(this.m_view.header));
@@ -114,20 +114,20 @@ public dynamic class MapInfoTile extends MenuElementBase {
 		if (_arg_1.contracttype != undefined) {
 			this.m_contractType = _arg_1.contracttype;
 		}
-		;
+
 		if (_arg_1.location) {
 			this.setLocation(_arg_1.location, ((_arg_1.conditions) ? true : false));
 		}
-		;
+
 		if (_arg_1.displayaskill) {
 			this.setConditions(ObjectiveUtil.prepareConditions([]));
 		} else {
 			if (_arg_1.conditions) {
 				this.setConditions(ObjectiveUtil.prepareConditions(_arg_1.conditions));
 			}
-			;
+
 		}
-		;
+
 		var _local_4:int;
 		var _local_5:int;
 		while (_local_5 < m_children.length) {
@@ -135,12 +135,12 @@ public dynamic class MapInfoTile extends MenuElementBase {
 			_local_4 = (_local_4 + m_children[_local_5].getView().height);
 			_local_5++;
 		}
-		;
+
 		this.setIndex(_arg_1);
 		if (_arg_1.image) {
 			this.loadImage(_arg_1.image);
 		}
-		;
+
 	}
 
 	public function hideInfo():void {
@@ -156,7 +156,7 @@ public dynamic class MapInfoTile extends MenuElementBase {
 			this.setupToggleField(_arg_1.elementindex, _arg_1.elementcount);
 			this.m_toggleField.alpha = 1;
 		}
-		;
+
 	}
 
 	private function setLocation(_arg_1:Object, _arg_2:Boolean):void {
@@ -199,29 +199,29 @@ public dynamic class MapInfoTile extends MenuElementBase {
 						MenuUtils.setupText(_local_6.description, _arg_1[_local_5].summary, 18, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 						MenuUtils.truncateTextfield(_local_6.description, 7, null, CommonUtils.changeFontToGlobalIfNeeded(_local_6.description));
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			this.m_view.indicator.addChild(_local_6);
 			if ((((_arg_1[_local_5].type == this.CONDITION_TYPE_CUSTOMKILL) || (_arg_1[_local_5].type == this.CONDITION_TYPE_SETPIECE)) || (_arg_1[_local_5].type == this.CONDITION_TYPE_GAMECHANGER))) {
 				if (_local_6.description.numLines > 2) {
 					_local_3 = (_local_3 + ((_local_6.description.height - MenuConstants.ValueIndicatorHeight) + 12));
 				}
-				;
+
 			}
-			;
+
 			this.m_view.indicatorbg.height = (this.m_initialIndicatorBgHeight + (_local_3 - (_local_2 + 4)));
 			this.m_view.tileBg.height = (this.m_initialTileBgHeight + (_local_3 - _local_2));
 			this.m_view.tileBg.y = ((this.m_initialTileBgHeight >> 1) + ((_local_3 - (_local_2 + 4)) >> 1));
 			if (((_arg_1[_local_5].type == this.CONDITION_TYPE_KILL) || (_arg_1[_local_5].type == this.CONDITION_TYPE_DEFAULTKILL))) {
 				_local_3 = (_local_3 + (MenuConstants.ValueIndicatorHeight + ((20 - _local_2) - 2)));
 			}
-			;
+
 			_local_5++;
 		}
-		;
+
 	}
 
 	private function loadImage(imagePath:String):void {
@@ -230,7 +230,7 @@ public dynamic class MapInfoTile extends MenuElementBase {
 			this.m_view.image.removeChild(this.m_loader);
 			this.m_loader = null;
 		}
-		;
+
 		this.m_loader = new MenuImageLoader();
 		this.m_view.image.addChild(this.m_loader);
 		this.m_loader.center = true;
@@ -290,25 +290,25 @@ public dynamic class MapInfoTile extends MenuElementBase {
 					this.m_indicatorTextObjArray[_local_1].textticker = null;
 					_local_1++;
 				}
-				;
+
 				this.m_indicatorTextObjArray = [];
 			}
-			;
+
 			if (this.m_toggleField) {
 				Animate.complete(this.m_toggleField.toggleIconLeft);
 				Animate.complete(this.m_toggleField.toggleIconRight);
 			}
-			;
+
 			if (this.m_loader) {
 				this.m_loader.cancelIfLoading();
 				this.m_view.image.removeChild(this.m_loader);
 				this.m_loader = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	override public function handleMouseUp(_arg_1:Function, _arg_2:MouseEvent):void {
@@ -317,12 +317,12 @@ public dynamic class MapInfoTile extends MenuElementBase {
 		if (stage.focus == this) {
 			return;
 		}
-		;
+
 		if (this["_nodedata"]) {
 			_local_3 = (this["_nodedata"]["id"] as int);
 			(_arg_1("onElementSelect", _local_3));
 		}
-		;
+
 	}
 
 	override public function handleMouseDown(_arg_1:Function, _arg_2:MouseEvent):void {
@@ -335,7 +335,7 @@ public dynamic class MapInfoTile extends MenuElementBase {
 			_local_2 = (this["_nodedata"]["id"] as int);
 			this.m_sendEventWithValue("onElementPrev", _local_2);
 		}
-		;
+
 	}
 
 	private function handleToggleIconRightMouseUp(_arg_1:MouseEvent):void {
@@ -344,7 +344,7 @@ public dynamic class MapInfoTile extends MenuElementBase {
 			_local_2 = (this["_nodedata"]["id"] as int);
 			this.m_sendEventWithValue("onElementNext", _local_2);
 		}
-		;
+
 	}
 
 

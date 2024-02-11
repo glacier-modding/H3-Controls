@@ -25,7 +25,7 @@ public dynamic class SimpleButtonTile extends MenuElementTileBase {
 	protected var m_view:SimpleButtonTileView;
 	protected var m_iconName:String;
 	protected var m_textTicker:textTicker;
-	protected var m_textObj:Object = new Object();
+	protected var m_textObj:Object = {};
 	protected var m_title:String;
 	protected var m_currentState:int = 0;
 	protected var m_isDisabled:Boolean = false;
@@ -52,7 +52,7 @@ public dynamic class SimpleButtonTile extends MenuElementTileBase {
 		if (getNodeProp(this, "pressable") == false) {
 			this.m_pressable = false;
 		}
-		;
+
 		this.m_isDisabled = (_arg_1.disabled === true);
 		this.m_iconName = _arg_1.icon;
 		var _local_2:String;
@@ -63,9 +63,9 @@ public dynamic class SimpleButtonTile extends MenuElementTileBase {
 				this.m_iconName = "arrowright";
 				_local_2 = this.getUnavailableInfo(_arg_1.availability.unavailable_reason, _arg_1.availability.percentage_complete);
 			}
-			;
+
 		}
-		;
+
 		this.m_showIcon = (!(this.m_iconName == null));
 		this.m_view.tileIcon.visible = this.m_showIcon;
 		this.m_view.title.visible = false;
@@ -79,7 +79,7 @@ public dynamic class SimpleButtonTile extends MenuElementTileBase {
 			this.m_textfieldTitle = this.m_view.title;
 			this.m_textfieldHeader = this.m_view.header;
 		}
-		;
+
 		this.m_textfieldTitle.visible = true;
 		this.m_textfieldHeader.visible = true;
 		var _local_3:String = ((_local_2 != null) ? _local_2 : _arg_1.header);
@@ -97,7 +97,7 @@ public dynamic class SimpleButtonTile extends MenuElementTileBase {
 		if (m_isSelected == _arg_1) {
 			return;
 		}
-		;
+
 		m_isSelected = _arg_1;
 		this.handleSelectionChange();
 	}
@@ -115,7 +115,7 @@ public dynamic class SimpleButtonTile extends MenuElementTileBase {
 		if (m_loading) {
 			return;
 		}
-		;
+
 		this.callTextTicker(m_isSelected);
 		if (_arg_2 == this.STATE_SELECTED) {
 			_arg_1.alpha = 1;
@@ -124,15 +124,15 @@ public dynamic class SimpleButtonTile extends MenuElementTileBase {
 				if (this.m_showIcon) {
 					MenuUtils.setupIcon(_arg_1.tileIcon, this.m_iconName, MenuConstants.COLOR_RED, false, true, MenuConstants.COLOR_WHITE, 1, 0, true);
 				}
-				;
+
 			} else {
 				MenuUtils.setColor(_arg_1.tileSelect, MenuConstants.COLOR_MENU_TABS_BACKGROUND, true, ((this.m_isDisabled) ? 0.25 : MenuConstants.MenuElementBackgroundAlpha));
 				if (this.m_showIcon) {
 					MenuUtils.setupIcon(_arg_1.tileIcon, this.m_iconName, MenuConstants.COLOR_GREY, true, false);
 				}
-				;
+
 			}
-			;
+
 		} else {
 			_arg_1.alpha = (((this.m_isDisabled) || (this.m_isAvailable)) ? 1 : 0.5);
 			_arg_1.tileSelect.alpha = 0;
@@ -140,34 +140,34 @@ public dynamic class SimpleButtonTile extends MenuElementTileBase {
 				if (this.m_showIcon) {
 					MenuUtils.setupIcon(_arg_1.tileIcon, this.m_iconName, MenuConstants.COLOR_WHITE, true, false);
 				}
-				;
+
 			} else {
 				if (this.m_showIcon) {
 					MenuUtils.setupIcon(_arg_1.tileIcon, this.m_iconName, MenuConstants.COLOR_GREY, true, false);
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	protected function callTextTicker(_arg_1:Boolean):void {
 		if (!this.m_textfieldTitle) {
 			return;
 		}
-		;
+
 		if (!this.m_textTicker) {
 			this.m_textTicker = new textTicker();
 		}
-		;
+
 		if (_arg_1) {
 			this.m_textTicker.startTextTicker(this.m_textfieldTitle, this.m_textObj.title);
 		} else {
 			this.m_textTicker.stopTextTicker(this.m_textfieldTitle, this.m_textObj.title);
 			MenuUtils.truncateTextfield(this.m_textfieldTitle, 1, MenuConstants.FontColorWhite);
 		}
-		;
+
 	}
 
 	private function changeTextColor(_arg_1:uint, _arg_2:uint):void {
@@ -204,7 +204,7 @@ public dynamic class SimpleButtonTile extends MenuElementTileBase {
 			default:
 				_local_3 = Localization.get("UI_DIALOG_DLC_UNKNOWN");
 		}
-		;
+
 		return (_local_3);
 	}
 
@@ -216,11 +216,11 @@ public dynamic class SimpleButtonTile extends MenuElementTileBase {
 				this.m_textTicker.stopTextTicker(this.m_textfieldTitle, this.m_textObj.title);
 				this.m_textTicker = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	protected function completeAnimations():void {

@@ -37,53 +37,53 @@ public dynamic class ThumbnailItemTileState implements IItemTileState {
 		if (this.m_view.hasOwnProperty("selectedIcon")) {
 			this.m_selectedIcon = this.m_view["selectedIcon"];
 		}
-		;
+
 		if (this.m_view.hasOwnProperty("selectedIcon2")) {
 			this.m_selectedIcon2 = this.m_view["selectedIcon2"];
 		}
-		;
+
 		if (this.m_view.hasOwnProperty("tileSelect")) {
 			this.m_tileSelect = this.m_view["tileSelect"];
 		}
-		;
+
 		if (this.m_view.hasOwnProperty("tileSelectPulsate")) {
 			this.m_tileSelectPulsate = this.m_view["tileSelectPulsate"];
 		}
-		;
+
 		if (this.m_view.hasOwnProperty("image")) {
 			this.m_image = this.m_view["image"];
 		}
-		;
+
 		if (this.m_view.hasOwnProperty("imageMask")) {
 			this.m_image_width = this.m_view["imageMask"].width;
 			this.m_image_height = this.m_view["imageMask"].height;
 		}
-		;
+
 		if (this.m_view.hasOwnProperty("icon")) {
 			this.m_icon = this.m_view["icon"];
 		}
-		;
+
 		if (this.m_view.hasOwnProperty("icon2")) {
 			this.m_icon2 = this.m_view["icon2"];
 		}
-		;
+
 		if (this.m_view.hasOwnProperty("tileBg")) {
 			this.m_tileBg = this.m_view["tileBg"];
 			this.m_tileBg.alpha = 0;
 		}
-		;
+
 		if (this.m_view.hasOwnProperty("tileDarkBg")) {
 			this.m_tileDarkBg = this.m_view["tileDarkBg"];
 			this.m_tileDarkBg.alpha = DarkBgAlpha;
 		}
-		;
+
 	}
 
 	public function onSetData(_arg_1:Object):void {
 		if (this.m_tileSelectPulsate != null) {
 			this.m_tileSelectPulsate.alpha = 0;
 		}
-		;
+
 		this.setupIcons(_arg_1.icon);
 		this.setupIcons2(_arg_1.icon2);
 		switch (_arg_1.opportunitystate) {
@@ -105,7 +105,7 @@ public dynamic class ThumbnailItemTileState implements IItemTileState {
 			default:
 				MenuUtils.setColorFilter(this.m_image, "available");
 		}
-		;
+
 		this.m_desaturateNotComplete = ((_arg_1.hasOwnProperty("desaturateNotComplete")) && (_arg_1.desaturateNotComplete));
 		this.m_isCompleted = _arg_1.completed;
 	}
@@ -114,7 +114,7 @@ public dynamic class ThumbnailItemTileState implements IItemTileState {
 		if (this.m_view == null) {
 			return;
 		}
-		;
+
 		this.unloadImage();
 		this.m_selectedIcon = null;
 		this.m_tileSelect = null;
@@ -122,7 +122,7 @@ public dynamic class ThumbnailItemTileState implements IItemTileState {
 			MenuUtils.pulsate(this.m_tileSelectPulsate, false);
 			this.m_tileSelectPulsate = null;
 		}
-		;
+
 		this.m_icon = null;
 		this.m_tileBg = null;
 		this.m_tileDarkBg = null;
@@ -133,22 +133,22 @@ public dynamic class ThumbnailItemTileState implements IItemTileState {
 		if (this.m_tileSelect != null) {
 			this.m_tileSelect.visible = true;
 		}
-		;
+
 		if (this.m_tileSelectPulsate != null) {
 			MenuUtils.pulsate(this.m_tileSelectPulsate, true);
 		}
-		;
+
 	}
 
 	public function hideTileSelect():void {
 		if (this.m_tileSelect != null) {
 			this.m_tileSelect.visible = false;
 		}
-		;
+
 		if (this.m_tileSelectPulsate != null) {
 			MenuUtils.pulsate(this.m_tileSelectPulsate, false);
 		}
-		;
+
 	}
 
 	public function hideTitleAndHeader():void {
@@ -166,9 +166,9 @@ public dynamic class ThumbnailItemTileState implements IItemTileState {
 			} else {
 				this.m_selectedIcon.visible = false;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_icon != null) {
 			if (((!(_arg_1 == null)) && (_arg_1.length > 0))) {
 				this.m_icon.visible = true;
@@ -176,9 +176,9 @@ public dynamic class ThumbnailItemTileState implements IItemTileState {
 			} else {
 				this.m_icon.visible = false;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function setupIcons2(_arg_1:String):void {
@@ -189,9 +189,9 @@ public dynamic class ThumbnailItemTileState implements IItemTileState {
 			} else {
 				this.m_selectedIcon2.visible = false;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_icon2 != null) {
 			if (((!(_arg_1 == null)) && (_arg_1.length > 0))) {
 				this.m_icon2.visible = true;
@@ -199,9 +199,9 @@ public dynamic class ThumbnailItemTileState implements IItemTileState {
 			} else {
 				this.m_icon2.visible = false;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function setImageFrom(_arg_1:BitmapData):void {
@@ -210,7 +210,7 @@ public dynamic class ThumbnailItemTileState implements IItemTileState {
 		if (this.m_image == null) {
 			return;
 		}
-		;
+
 		this.unloadImage();
 		if (_arg_1 != null) {
 			_local_2 = new Bitmap(_arg_1);
@@ -220,9 +220,9 @@ public dynamic class ThumbnailItemTileState implements IItemTileState {
 				} else {
 					MenuUtils.setColorFilter(this.m_image);
 				}
-				;
+
 			}
-			;
+
 			_local_2.smoothing = true;
 			this.m_image.addChild(_local_2);
 			_local_3 = (_local_2.width / _local_2.height);
@@ -233,20 +233,20 @@ public dynamic class ThumbnailItemTileState implements IItemTileState {
 				this.m_image.width = (this.m_image_height * _local_3);
 				this.m_image.x = ((this.m_image_width - this.m_image.width) / 2);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function unloadImage():void {
 		if (this.m_image == null) {
 			return;
 		}
-		;
+
 		while (this.m_image.numChildren > 0) {
 			this.m_image.removeChildAt(0);
 		}
-		;
+
 	}
 
 

@@ -18,7 +18,7 @@ public dynamic class ListContainerWithBigHeader extends ListContainerWithHeader 
 	private var m_currentState:int = -1;
 	private var m_originalViewPositionX:Number = 0;
 	private var m_originalViewPositionRightX:Number = 0;
-	private var m_textObj:Object = new Object();
+	private var m_textObj:Object = {};
 	private var m_textTicker:textTicker;
 
 	public function ListContainerWithBigHeader(_arg_1:Object) {
@@ -32,9 +32,9 @@ public dynamic class ListContainerWithBigHeader extends ListContainerWithHeader 
 				this.m_originalViewPositionX = m_headLineVerticalView.title.x;
 				this.m_originalViewPositionRightX = (m_headLineVerticalView.title.x + m_headLineVerticalView.title.width);
 			}
-			;
+
 		}
-		;
+
 		this.updateStates();
 	}
 
@@ -58,7 +58,7 @@ public dynamic class ListContainerWithBigHeader extends ListContainerWithHeader 
 		} else {
 			this.setState(this.STATE_NORMAL);
 		}
-		;
+
 	}
 
 	private function setState(_arg_1:int):void {
@@ -66,7 +66,7 @@ public dynamic class ListContainerWithBigHeader extends ListContainerWithHeader 
 			this.m_currentState = _arg_1;
 			this.updateVisualState(this.m_currentState);
 		}
-		;
+
 	}
 
 	private function updateVisualState(_arg_1:int):void {
@@ -90,21 +90,21 @@ public dynamic class ListContainerWithBigHeader extends ListContainerWithHeader 
 			m_headLineVerticalView.detail.alpha = 0;
 			this.callTextTicker(false);
 		}
-		;
+
 	}
 
 	protected function callTextTicker(_arg_1:Boolean):void {
 		if (!this.m_textTicker) {
 			this.m_textTicker = new textTicker();
 		}
-		;
+
 		if (_arg_1) {
 			this.m_textTicker.startTextTickerHtml(m_headLineVerticalView.detail, this.m_textObj.detail, null, 2000);
 		} else {
 			this.m_textTicker.stopTextTicker(m_headLineVerticalView.detail, this.m_textObj.detail);
 			MenuUtils.truncateTextfield(m_headLineVerticalView.detail, 1);
 		}
-		;
+
 	}
 
 

@@ -33,7 +33,7 @@ public dynamic class PlanningMapMaskContainer extends BaseContainer {
 		if (ControlsMain.isVrModeActive()) {
 			this.z = MenuConstants.VRNotebookMapZOffset;
 		}
-		;
+
 	}
 
 	private function onAddedToStage(_arg_1:Event):void {
@@ -50,7 +50,7 @@ public dynamic class PlanningMapMaskContainer extends BaseContainer {
 		if (m_sendEvent != null) {
 			m_sendEvent("onDragEnd");
 		}
-		;
+
 	}
 
 	private function scaleMask(_arg_1:Number, _arg_2:Number):void {
@@ -85,13 +85,13 @@ public dynamic class PlanningMapMaskContainer extends BaseContainer {
 		if (stage.focus == this) {
 			return;
 		}
-		;
+
 		if (this["_nodedata"]) {
 			_local_3 = (this["_nodedata"]["id"] as int);
 			(_arg_1("onElementSelect", _local_3));
 			(_arg_1("onElementClick", _local_3));
 		}
-		;
+
 	}
 
 	override public function handleMouseUp(_arg_1:Function, _arg_2:MouseEvent):void {
@@ -104,7 +104,7 @@ public dynamic class PlanningMapMaskContainer extends BaseContainer {
 		if (m_sendEvent != null) {
 			m_sendEvent("onDragEnd");
 		}
-		;
+
 	}
 
 

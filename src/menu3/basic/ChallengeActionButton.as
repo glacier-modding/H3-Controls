@@ -23,7 +23,7 @@ public dynamic class ChallengeActionButton extends MenuElementTileBase {
 	private var m_view:ChallengeActionButtonView;
 	private var m_icon:String;
 	protected var m_textTicker:textTicker;
-	protected var m_textObj:Object = new Object();
+	protected var m_textObj:Object = {};
 	private var m_iconCrossOutState:int = 0;
 
 	public function ChallengeActionButton(_arg_1:Object) {
@@ -68,9 +68,9 @@ public dynamic class ChallengeActionButton extends MenuElementTileBase {
 			} else {
 				this.m_view.tileIcon.rotation = 0;
 			}
-			;
+
 		}
-		;
+
 		this.m_iconCrossOutState = ((_arg_1.crossouticon) ? this.ICON_CROSSED_OUT : this.ICON_NORMAL);
 	}
 
@@ -80,11 +80,11 @@ public dynamic class ChallengeActionButton extends MenuElementTileBase {
 				this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 				this.m_textTicker = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 		super.onUnregister();
 	}
 
@@ -101,16 +101,16 @@ public dynamic class ChallengeActionButton extends MenuElementTileBase {
 			if (!this.m_textTicker) {
 				this.m_textTicker = new textTicker();
 			}
-			;
+
 			this.m_textTicker.startTextTicker(this.m_view.title, this.m_textObj.title);
 		} else {
 			if (this.m_textTicker) {
 				this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 				MenuUtils.truncateTextfield(this.m_view.title, 1, null);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function changeTextColor(_arg_1:uint):void {
@@ -119,7 +119,7 @@ public dynamic class ChallengeActionButton extends MenuElementTileBase {
 		if (!this.m_textTicker) {
 			this.m_textTicker = new textTicker();
 		}
-		;
+
 		this.m_textTicker.setTextColor(_arg_1);
 	}
 
@@ -141,7 +141,7 @@ public dynamic class ChallengeActionButton extends MenuElementTileBase {
 			MenuUtils.setColor(this.m_view.crossOutIcon, MenuConstants.COLOR_WHITE, false);
 			this.callTextTicker(false);
 		}
-		;
+
 	}
 
 

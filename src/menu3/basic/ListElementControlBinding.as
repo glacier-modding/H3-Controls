@@ -25,7 +25,7 @@ import flash.display.DisplayObject;
 public dynamic class ListElementControlBinding extends CollapsableListContainer {
 
 	private var m_view:ListElementControlBindingView;
-	private var m_textObj:Object = new Object();
+	private var m_textObj:Object = {};
 	private var m_textTicker:textTicker;
 	private var m_font:String;
 
@@ -47,12 +47,12 @@ public dynamic class ListElementControlBinding extends CollapsableListContainer 
 			MenuUtils.setTintColor(this.m_view.tileSelect, MenuUtils.TINT_COLOR_GREY, false);
 			MenuUtils.setTintColor(this.m_view.tileSelectPulsate, MenuUtils.TINT_COLOR_GREY, false);
 		}
-		;
+
 		if (getNodeProp(this, "selectable") == false) {
 			MenuUtils.setTintColor(this.m_view.tileDarkBg, MenuUtils.TINT_COLOR_GREY, false);
 			this.changeTextColor(this.m_view.title, MenuConstants.COLOR_GREY_DARK);
 		}
-		;
+
 	}
 
 	override public function getView():Sprite {
@@ -65,7 +65,7 @@ public dynamic class ListElementControlBinding extends CollapsableListContainer 
 		if (m_isSelected) {
 			this.changeTextColor(this.m_view.title, MenuConstants.COLOR_WHITE);
 		}
-		;
+
 		MenuUtils.truncateTextfield(this.m_view.title, 1);
 		CommonUtils.changeFontToGlobalIfNeeded(this.m_view.title);
 		this.callTextTicker(true);
@@ -75,14 +75,14 @@ public dynamic class ListElementControlBinding extends CollapsableListContainer 
 		if (!this.m_textTicker) {
 			this.m_textTicker = new textTicker();
 		}
-		;
+
 		if (_arg_1) {
 			this.m_textTicker.startTextTicker(this.m_view.title, this.m_textObj.title, CommonUtils.changeFontToGlobalIfNeeded);
 		} else {
 			this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 			MenuUtils.truncateTextfield(this.m_view.title, 1);
 		}
-		;
+
 	}
 
 	private function changeTextColor(_arg_1:TextField, _arg_2:uint):void {
@@ -90,7 +90,7 @@ public dynamic class ListElementControlBinding extends CollapsableListContainer 
 		if (!this.m_textTicker) {
 			this.m_textTicker = new textTicker();
 		}
-		;
+
 		this.m_textTicker.setTextColor(_arg_2);
 	}
 
@@ -100,9 +100,9 @@ public dynamic class ListElementControlBinding extends CollapsableListContainer 
 			if (((!(this.getData().direction == "horizontal")) && (!(this.getData().direction == "horizontalWrap")))) {
 				_arg_1.x = 32;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	override protected function handleSelectionChange():void {
@@ -112,7 +112,7 @@ public dynamic class ListElementControlBinding extends CollapsableListContainer 
 		if (m_loading) {
 			return;
 		}
-		;
+
 		if (m_isSelected) {
 			Animate.legacyTo(this.m_view.tileSelect, MenuConstants.HiliteTime, {"alpha": 1}, Animate.Linear);
 			this.m_view.tileSelected.alpha = 0;
@@ -125,7 +125,7 @@ public dynamic class ListElementControlBinding extends CollapsableListContainer 
 			this.callTextTicker(false);
 			this.changeTextColor(this.m_view.title, MenuConstants.COLOR_WHITE);
 		}
-		;
+
 	}
 
 	private function setItemTint(_arg_1:Object, _arg_2:int, _arg_3:Boolean = true):void {
@@ -133,14 +133,14 @@ public dynamic class ListElementControlBinding extends CollapsableListContainer 
 		if (!_arg_3) {
 			_local_4 = _arg_1.alpha;
 		}
-		;
+
 		var _local_5:Color = new Color();
 		_local_5.setTint(MenuConstants.COLOR_GREY_ULTRA_LIGHT, 1);
 		DisplayObject(_arg_1).transform.colorTransform = _local_5;
 		if (!_arg_3) {
 			_arg_1.alpha = _local_4;
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {
@@ -153,11 +153,11 @@ public dynamic class ListElementControlBinding extends CollapsableListContainer 
 				this.m_textTicker.stopTextTicker(this.m_view.title, this.m_textObj.title);
 				this.m_textTicker = null;
 			}
-			;
+
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 

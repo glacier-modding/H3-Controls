@@ -38,7 +38,7 @@ public dynamic class OptionsInfoNpcIconsPreview extends OptionsInfoPreview {
 				_local_2.gotoAndStop("attentive");
 				_local_2.witnessIcon.visible = false;
 			}
-			;
+
 			this.m_indicator1.x = 395;
 			this.m_indicator1.y = 204;
 			this.m_indicator2.x = 119;
@@ -49,7 +49,7 @@ public dynamic class OptionsInfoNpcIconsPreview extends OptionsInfoPreview {
 			this.m_indicator4.y = 14;
 			this.m_indicator1.anim_mc.alpha = 0.75;
 		}
-		;
+
 	}
 
 

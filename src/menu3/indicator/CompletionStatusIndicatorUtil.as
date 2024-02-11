@@ -18,11 +18,11 @@ public class CompletionStatusIndicatorUtil {
 		if (!_arg_1.hasOwnProperty("completionStatusIndicator")) {
 			return;
 		}
-		;
+
 		if (_arg_1.completionStatusIndicator == null) {
 			return;
 		}
-		;
+
 		_arg_1.removeChild(_arg_1.completionStatusIndicator);
 		_arg_1.completionStatusIndicator = null;
 	}

@@ -31,7 +31,7 @@ public class MaskCircular extends BaseControl {
 			trace(("MaskCircular sets maskee: " + this.m_maskee));
 			this.m_maskee.mask = this.m_view;
 		}
-		;
+
 	}
 
 	override public function onSetSize(_arg_1:Number, _arg_2:Number):void {

@@ -32,15 +32,15 @@ public dynamic class IndicatorHandler {
 				this.m_prevIndicator = new Sprite();
 				this.addIndicators(this.m_prevIndicator, _arg_2.previousindicator, this.handleMouseUpPrevIndicator);
 			}
-			;
+
 			if (((_arg_2.hasOwnProperty("hasmorepages")) && (_arg_2.hasmorepages))) {
 				Log.info("IndicatorHandler", this, "has more pages - trying to add next indicators");
 				this.m_nextIndicator = new Sprite();
 				this.addIndicators(this.m_nextIndicator, _arg_2.nextindicator, this.handleMouseUpNextIndicator, this.m_container.getScrollBounds().width);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function setEngineCallback(_arg_1:Function):void {
@@ -51,17 +51,17 @@ public dynamic class IndicatorHandler {
 		if (!this.m_container) {
 			return;
 		}
-		;
+
 		if (this.m_prevIndicator) {
 			this.destroyIndicator(this.m_prevIndicator, this.handleMouseUpPrevIndicator);
 			this.m_prevIndicator = null;
 		}
-		;
+
 		if (this.m_nextIndicator) {
 			this.destroyIndicator(this.m_nextIndicator, this.handleMouseUpNextIndicator);
 			this.m_nextIndicator = null;
 		}
-		;
+
 		this.m_container = null;
 	}
 
@@ -75,7 +75,7 @@ public dynamic class IndicatorHandler {
 			_local_3.onUnregister();
 			_arg_1.removeChildAt(0);
 		}
-		;
+
 		this.m_container.removeChild(_arg_1);
 	}
 
@@ -88,7 +88,7 @@ public dynamic class IndicatorHandler {
 			Log.error("IndicatorHandler", this.m_container, "indicator data is invalid");
 			return;
 		}
-		;
+
 		var _local_5:Number = 0;
 		if ((_arg_2 is Array)) {
 			_local_7 = (_arg_2 as Array);
@@ -100,22 +100,22 @@ public dynamic class IndicatorHandler {
 				_local_5 = _local_6.width;
 				_local_9++;
 			}
-			;
+
 		} else {
 			_local_6 = this.addIndicator(_arg_1, _arg_2, 0, _arg_3);
 			_local_5 = _local_6.width;
 			if (_local_6.height < MenuConstants.MenuTileLargeHeight) {
 				_local_6 = this.addIndicator(_arg_1, _arg_2, (_local_6.height + 1), _arg_3);
 			}
-			;
+
 		}
-		;
+
 		if (_arg_4 == 0) {
 			_arg_1.x = (_arg_1.x - (_local_5 + 1));
 		} else {
 			_arg_1.x = (_arg_1.x + _arg_4);
 		}
-		;
+
 		this.m_container.addChild(_arg_1);
 		Log.info("IndicatorHandler", this.m_container, ("added indicators at " + _arg_4));
 	}
@@ -126,7 +126,7 @@ public dynamic class IndicatorHandler {
 			Log.error("IndicatorHandler", this.m_container, "Could not read 'view' from indicator handler");
 			return (new Sprite());
 		}
-		;
+
 		var _local_6:Object = _arg_2.data;
 		var _local_7:MenuElementBase = (new _local_5(_local_6) as MenuElementBase);
 		_local_7.onSetData(_local_6);
@@ -156,14 +156,14 @@ public dynamic class IndicatorHandler {
 		if (this.m_container["_nodedata"]) {
 			if (this.m_sendEventWithValue != null) {
 				_local_2 = (this.m_container["_nodedata"]["id"] as int);
-				_local_3 = new Array(_local_2, _arg_1);
+				_local_3 = [_local_2, _arg_1];
 				this.m_sendEventWithValue("onTriggerPaginate", _local_3);
 			} else {
 				Log.error("IndicatorHandler", this.m_container, "Callback handling not set-up properly!");
 			}
-			;
+
 		}
-		;
+
 	}
 
 

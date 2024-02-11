@@ -43,14 +43,14 @@ public class BriefingSequenceTimer {
 			this.countTimer.removeEventListener(TimerEvent.TIMER, this.countTimerFunctions[0]);
 			this.countTimer.removeEventListener(TimerEvent.TIMER_COMPLETE, this.countTimerFunctions[1]);
 		}
-		;
+
 		this.m_millisecondsLeft = this.getRemainingMilliseconds(_arg_2);
 		MenuUtils.setupText(_arg_1, this.formatDurationHHMMSS(this.m_millisecondsLeft), this.m_fontSize, this.m_fontStyle, ((this.m_fontColorBlack) ? MenuConstants.FontColorBlack : MenuConstants.FontColorGreyUltraLight));
 		this.countTimer = new Timer(1000, Math.ceil((this.m_millisecondsLeft / 1000)));
 		this.countTimer.start();
 		var _local_7:Function = this.timerHandler(_arg_1);
 		var _local_8:Function = this.completeHandler(_arg_1);
-		this.countTimerFunctions = new Array(_local_7, _local_8);
+		this.countTimerFunctions = [_local_7, _local_8];
 		this.countTimer.addEventListener(TimerEvent.TIMER, _local_7);
 		this.countTimer.addEventListener(TimerEvent.TIMER_COMPLETE, _local_8);
 	}
@@ -80,7 +80,7 @@ public class BriefingSequenceTimer {
 			this.countTimer.removeEventListener(TimerEvent.TIMER_COMPLETE, this.countTimerFunctions[1]);
 			this.countTimerFunctions = [];
 		}
-		;
+
 	}
 
 	private function getRemainingMilliseconds(_arg_1:String):Number {
@@ -89,7 +89,7 @@ public class BriefingSequenceTimer {
 		if ((_local_3 - _local_2) <= 0) {
 			return (0);
 		}
-		;
+
 		return (_local_3 - _local_2);
 	}
 

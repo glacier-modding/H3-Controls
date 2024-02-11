@@ -87,7 +87,7 @@ public dynamic class ActionRewardsDetail extends MenuElementBase {
 				if (_local_3.XPGain != undefined) {
 					_local_4 = _local_3.XPGain;
 				}
-				;
+
 				if (_local_3.IsActionReward === true) {
 					if (_local_4 > 0) {
 						if (this.hasCategoryTag(_local_3, "infiltration")) {
@@ -101,45 +101,45 @@ public dynamic class ActionRewardsDetail extends MenuElementBase {
 								this.m_missionRewards.push(_local_3);
 								this.m_actionXPGainMission = (this.m_actionXPGainMission + _local_4);
 							}
-							;
+
 						}
-						;
+
 						this.m_actionXPGain = (this.m_actionXPGain + _local_4);
 					}
-					;
+
 				} else {
 					if (_local_4 > 0) {
 						this.m_challengeRewards.push(_local_3);
 						this.m_challengeXPGain = (this.m_challengeXPGain + _local_4);
 						this.m_actionXPGain = (this.m_actionXPGain + _local_4);
 					}
-					;
+
 				}
-				;
+
 				_local_2++;
 			}
-			;
+
 		}
-		;
+
 		MenuUtils.setupTextUpper(this.m_headerMc.title, Localization.get("UI_MENU_MISSION_END_SCOREDETAIL_XP_TITLE"), 46, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 		MenuUtils.setupText(this.m_headerMc.value, this.formatXpNumber(this.m_actionXPGain), 46, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 		this.m_fScaleTextMult = 1;
 		if (this.m_actionXPGainInfiltration > 0) {
 			this.setupActionCategory(this.m_infiltrationCategoryMc, Localization.get("UI_MENU_ACTIONREWARD_CATEGORY_INFILTRATION_TITLE"), this.m_actionXPGainInfiltration, this.m_infiltrationRewards);
 		}
-		;
+
 		if (this.m_actionXPGainElimination > 0) {
 			this.setupActionCategory(this.m_eliminationCategoryMc, Localization.get("UI_MENU_ACTIONREWARD_CATEGORY_ELIMINATION_TITLE"), this.m_actionXPGainElimination, this.m_eliminationRewards);
 		}
-		;
+
 		if (this.m_actionXPGainMission > 0) {
 			this.setupActionCategory(this.m_missionCategoryMc, Localization.get("UI_MENU_ACTIONREWARD_CATEGORY_MISSON_TITLE"), this.m_actionXPGainMission, this.m_missionRewards);
 		}
-		;
+
 		if (this.m_challengeXPGain > 0) {
 			this.setupActionCategory(this.m_challengeCategoryMc, Localization.get("UI_MENU_PAGE_PLANNING_CHALLENGES"), this.m_challengeXPGain, this.m_challengeRewards);
 		}
-		;
+
 		this.rescaleTextInActionCategory(this.m_infiltrationCategoryMc);
 		this.rescaleTextInActionCategory(this.m_eliminationCategoryMc);
 		this.rescaleTextInActionCategory(this.m_missionCategoryMc);
@@ -155,7 +155,7 @@ public dynamic class ActionRewardsDetail extends MenuElementBase {
 		if (((_arg_4 == null) || (_arg_4.length == 0))) {
 			return;
 		}
-		;
+
 		var _local_5:Number = 0;
 		var _local_6:Number = 36;
 		var _local_8:int = Math.min(_arg_4.length, this.CATEGORY_ELEMENTS_MAX);
@@ -167,22 +167,22 @@ public dynamic class ActionRewardsDetail extends MenuElementBase {
 			if (_local_9 < (_local_8 - 1)) {
 				this.addDottedLine(2, 32, _local_7);
 			}
-			;
+
 			MenuUtils.setupText(_local_7.title, Localization.get(_arg_4[_local_9].ChallengeName), 16, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 			MenuUtils.setupText(_local_7.value, this.formatXpNumber(_arg_4[_local_9].XPGain), 16, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 			if ((WIDTH_CATEGORY_TITLE - DX_PADDING) < _local_7.title.textWidth) {
 				this.m_fScaleTextMult = Math.min(this.m_fScaleTextMult, ((WIDTH_CATEGORY_TITLE - DX_PADDING) / _local_7.title.textWidth));
 			}
-			;
+
 			if ((WIDTH_CATEGORY_VALUE - DX_PADDING) < _local_7.value.textWidth) {
 				this.m_fScaleTextMult = Math.min(this.m_fScaleTextMult, ((WIDTH_CATEGORY_VALUE - DX_PADDING) / _local_7.value.textWidth));
 			}
-			;
+
 			_arg_1.addChild(_local_7);
 			_local_6 = (_local_6 + 32);
 			_local_9++;
 		}
-		;
+
 	}
 
 	private function rescaleTextInActionCategory(_arg_1:MovieClip):void {
@@ -199,10 +199,10 @@ public dynamic class ActionRewardsDetail extends MenuElementBase {
 				_local_3.value.width = (WIDTH_CATEGORY_VALUE / this.m_fScaleTextMult);
 				_local_3.value.x = (WIDTH_CATEGORY - WIDTH_CATEGORY_VALUE);
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 	}
 
 	private function repositionAndShow():void {
@@ -223,11 +223,11 @@ public dynamic class ActionRewardsDetail extends MenuElementBase {
 			Animate.addFrom(this.m_infiltrationCategoryMc, 0.3, 0.1, {"x": (this.m_infiltrationCategoryMc.x - 20)}, Animate.ExpoOut);
 			_local_1 = true;
 		}
-		;
+
 		if (_local_1) {
 			_local_3 = (_local_3 + (_local_5 + _local_6));
 		}
-		;
+
 		if (this.m_eliminationCategoryMc.visible == true) {
 			this.m_eliminationCategoryMc.x = _local_3;
 			this.m_eliminationCategoryMc.y = _local_4;
@@ -235,7 +235,7 @@ public dynamic class ActionRewardsDetail extends MenuElementBase {
 			Animate.addFrom(this.m_eliminationCategoryMc, 0.3, 0.15, {"x": (this.m_eliminationCategoryMc.x - 20)}, Animate.ExpoOut);
 			_local_2 = true;
 		}
-		;
+
 		if (this.m_missionCategoryMc.visible == true) {
 			this.m_missionCategoryMc.x = _local_3;
 			if (this.m_eliminationCategoryMc.visible == true) {
@@ -243,23 +243,23 @@ public dynamic class ActionRewardsDetail extends MenuElementBase {
 			} else {
 				this.m_missionCategoryMc.y = _local_4;
 			}
-			;
+
 			Animate.fromTo(this.m_missionCategoryMc, 0.2, 0.2, {"alpha": 0}, {"alpha": 1}, Animate.ExpoOut);
 			Animate.addFrom(this.m_missionCategoryMc, 0.3, 0.2, {"x": (this.m_missionCategoryMc.x - 20)}, Animate.ExpoOut);
 			_local_2 = true;
 		}
-		;
+
 		if (_local_2) {
 			_local_3 = (_local_3 + (_local_5 + _local_6));
 		}
-		;
+
 		if (this.m_challengeCategoryMc.visible == true) {
 			this.m_challengeCategoryMc.x = _local_3;
 			this.m_challengeCategoryMc.y = _local_4;
 			Animate.fromTo(this.m_challengeCategoryMc, 0.2, 0.25, {"alpha": 0}, {"alpha": 1}, Animate.ExpoOut);
 			Animate.addFrom(this.m_challengeCategoryMc, 0.3, 0.25, {"x": (this.m_challengeCategoryMc.x - 20)}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 	private function hasCategoryTag(_arg_1:Object, _arg_2:String):Boolean {
@@ -267,16 +267,16 @@ public dynamic class ActionRewardsDetail extends MenuElementBase {
 		if (((_local_3 == null) || (_local_3.length == 0))) {
 			return (false);
 		}
-		;
+
 		var _local_4:int;
 		while (_local_4 < _local_3.length) {
 			if (_local_3[_local_4] === _arg_2) {
 				return (true);
 			}
-			;
+
 			_local_4++;
 		}
-		;
+
 		return (false);
 	}
 

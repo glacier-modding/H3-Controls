@@ -26,7 +26,7 @@ public dynamic class ModalDialogGeneric extends ModalDialogFrameInformation {
 		if (!_arg_1.hasOwnProperty("dialogWidth")) {
 			_arg_1.dialogWidth = ModalDialogGeneric.FRAME_WIDTH;
 		}
-		;
+
 		_arg_1.dialogHeight = ModalDialogGeneric.FRAME_HEIGHT_MIN;
 		super(_arg_1);
 		this.createView();
@@ -62,7 +62,7 @@ public dynamic class ModalDialogGeneric extends ModalDialogFrameInformation {
 			_local_7 = (_local_7 - (_local_5 - this.m_viewTitle.y));
 			_local_5 = this.m_viewTitle.y;
 		}
-		;
+
 		createAndAddScrollContainer(_local_4, _local_5, (m_dialogWidth - _local_4), (_local_2 - _local_7), _local_6);
 		super.onSetData(_arg_1);
 		setupDescription(this.m_viewDescription, _arg_1);
@@ -71,7 +71,7 @@ public dynamic class ModalDialogGeneric extends ModalDialogFrameInformation {
 			this.m_viewDescription.y = 0;
 			m_scrollingContainer.append(this.m_viewDescription, false, this.m_viewDescription.height, false);
 		}
-		;
+
 		setupInformation(_arg_1);
 		var _local_8:Number = (Math.ceil(m_scrollingContainer.getContentHeight()) + _local_7);
 		m_dialogHeight = updateDialogHeight(_local_8, _local_3, _local_2);

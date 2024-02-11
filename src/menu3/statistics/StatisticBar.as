@@ -45,9 +45,9 @@ public class StatisticBar {
 				this.m_bar.value.text = "";
 				this.m_bar.title.alpha = 0.5;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function show(_arg_1:Number):void {
@@ -58,11 +58,11 @@ public class StatisticBar {
 			if (this.m_showValues) {
 				Animate.delay(this.m_bar.fill, (_arg_1 + 0.05), this.delayCallbackFill, this.m_bar.fill, (this.m_completed / this.m_total));
 			}
-			;
+
 		} else {
 			Animate.to(this.m_bar.bg, 0.2, 0, {"alpha": 0.4}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 	private function delayCallbackTf(_arg_1:TextField):void {

@@ -60,7 +60,7 @@ public class WeaponOnBackVRWidget extends BaseControl {
 			this.m_imgWeapon.height = this.m_pxImageHeight;
 			this.m_imgWeapon.scaleX = this.m_imgWeapon.scaleY;
 		}
-		;
+
 		this.m_imgWeapon.x = ((this.m_pxImageWidth / -2) - (this.m_imgWeapon.width / 2));
 		this.m_container.y = this.m_pxImageHeight;
 	}
@@ -104,7 +104,7 @@ class LegalStatePulseView extends WeaponView_illegalIcon {
 			this.visible = true;
 			this.gotoAndStop(((_arg_1 == LEGALSTATE_SUSPICIOUS) ? "susarmed" : "visarmed"));
 		}
-		;
+
 	}
 
 
@@ -129,7 +129,7 @@ class WeaponOnBackPulseView extends WeaponView_WeaponOnBackBlink {
 			this.visible = false;
 			this.stop();
 		}
-		;
+
 	}
 
 

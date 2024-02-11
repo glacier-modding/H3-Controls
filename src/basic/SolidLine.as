@@ -27,9 +27,9 @@ public class SolidLine extends Shape {
 			if (_arg_4 == TYPE_VERTICAL) {
 				this.drawVertical();
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function drawHorizontal():void {

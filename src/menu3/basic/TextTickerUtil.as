@@ -12,7 +12,7 @@ import common.menu.MenuUtils;
 
 public class TextTickerUtil {
 
-	private var m_textTickerConfigurations:Array = new Array();
+	private var m_textTickerConfigurations:Array = [];
 
 
 	public function addTextTicker(_arg_1:TextField, _arg_2:String, _arg_3:String = null, _arg_4:int = -1):void {
@@ -60,25 +60,25 @@ public class TextTickerUtil {
 					_local_4.textticker.stopTextTicker(_local_4.indicatortextfield, _local_4.title);
 					MenuUtils.truncateTextfield(_local_4.indicatortextfield, 1);
 				}
-				;
+
 			} else {
 				if (_arg_1) {
 					_local_4.textticker.startTextTicker(_local_4.indicatortextfield, _local_4.title);
 					if (((_local_4.textfieldcolor) && (!(_local_4.textfieldcolor == -1)))) {
 						_local_4.indicatortextfield.textColor = _local_4.textfieldcolor;
 					}
-					;
+
 					if (((_arg_2) && (!(_arg_2 == -1)))) {
 						_local_4.indicatortextfield.textColor = _arg_2;
 					}
-					;
+
 				} else {
 					_local_4.textticker.stopTextTicker(_local_4.indicatortextfield, _local_4.title);
 					if (((!(_local_4.fontcolor == null)) && (_local_4.fontcolor.length > 0))) {
 						if (((_local_4.textfieldcolor) && (!(_local_4.textfieldcolor == -1)))) {
 							_local_4.indicatortextfield.textColor = _local_4.textfieldcolor;
 						}
-						;
+
 						MenuUtils.truncateTextfield(_local_4.indicatortextfield, 1, _local_4.fontcolor);
 					} else {
 						if (((_arg_2) && (!(_arg_2 == -1)))) {
@@ -87,29 +87,29 @@ public class TextTickerUtil {
 						} else {
 							MenuUtils.truncateTextfield(_local_4.indicatortextfield, 1);
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			_local_3++;
 		}
-		;
+
 	}
 
 	public function clearOnly():void {
-		this.m_textTickerConfigurations = new Array();
+		this.m_textTickerConfigurations = [];
 	}
 
 	public function resetTextTickers():void {
 		if (this.m_textTickerConfigurations.length == 0) {
 			return;
 		}
-		;
+
 		this.stopTextTickers();
-		this.m_textTickerConfigurations = new Array();
+		this.m_textTickerConfigurations = [];
 	}
 
 	public function onUnregister():void {
@@ -124,7 +124,7 @@ public class TextTickerUtil {
 			_local_2.textticker.stopTextTicker(_local_2.indicatortextfield, _local_2.title);
 			_local_1++;
 		}
-		;
+
 	}
 
 

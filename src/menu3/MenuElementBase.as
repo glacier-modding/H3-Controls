@@ -47,7 +47,7 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 		if (_arg_1["_nodedata"]) {
 			return (_arg_1["_nodedata"][_arg_2]);
 		}
-		;
+
 		return (undefined);
 	}
 
@@ -55,7 +55,7 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 		if (_arg_1["_nodedata"]) {
 			return (_arg_1["_nodedata"]["id"]);
 		}
-		;
+
 		return (-1);
 	}
 
@@ -69,7 +69,7 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 		if (this.m_children.length >= 1) {
 			_local_1 = true;
 		}
-		;
+
 		return (_local_1);
 	}
 
@@ -87,18 +87,18 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 			if (_local_2 >= 0) {
 				this.m_mouseMode = _local_2;
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.mousewheelmode != null) {
 			Log.info(Log.ChannelMouse, this, ("Setting mouse wheel mode from data to " + _arg_1.mousewheelmode));
 			_local_3 = MouseUtil.getWheelModeFromName(_arg_1.mousewheelmode);
 			if (_local_3 >= 0) {
 				this.m_mouseWheelMode = _local_3;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function onUnregister():void {
@@ -145,7 +145,7 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 		} else {
 			this.x = ((_local_1.col * MenuConstants.GridUnitWidth) || (0));
 		}
-		;
+
 	}
 
 	private function updatePosY():void {
@@ -155,7 +155,7 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 		} else {
 			this.y = ((_local_1.row * MenuConstants.GridUnitHeight) || (0));
 		}
-		;
+
 	}
 
 	public function setWidth(_arg_1:Number):void {
@@ -182,7 +182,7 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 		while (this.getContainer().numChildren > 0) {
 			this.getContainer().removeChildAt(0);
 		}
-		;
+
 	}
 
 	public function addChild2(_arg_1:Sprite, _arg_2:int = -1):void {
@@ -195,21 +195,21 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 			this.m_children.splice(_arg_2, 0, _arg_1);
 			this.getContainer().addChildAt(_arg_1, _arg_2);
 		}
-		;
+
 		var _local_4:MenuElementBase = (_arg_1 as MenuElementBase);
 		if (_local_4) {
 			_local_4.m_parent = this;
 			_local_4.onAddedAsChild(_local_4);
 		}
-		;
+
 		if (_local_3 >= 0) {
 			if (_arg_2 == _local_3) {
 				_local_3++;
 			}
-			;
+
 			this.setFocusChild(_local_3);
 		}
-		;
+
 	}
 
 	public function replaceChild2(_arg_1:Sprite, _arg_2:Sprite):void {
@@ -220,17 +220,17 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 			this.removeChild2(_arg_1);
 			this.addChild2(_arg_2, _local_4);
 		}
-		;
+
 		var _local_5:MenuElementBase = (_arg_2 as MenuElementBase);
 		if (_local_5) {
 			_local_5.m_parent = this;
 			_local_5.onAddedAsChild(_local_5);
 		}
-		;
+
 		if (((_local_3 >= 0) && (!(_local_3 == _local_4)))) {
 			this.setFocusChild(_local_3);
 		}
-		;
+
 	}
 
 	public function removeChild2(_arg_1:Sprite):void {
@@ -241,15 +241,15 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 			this.m_children.splice(_local_3, 1);
 			this.getContainer().removeChild(_arg_1);
 		}
-		;
+
 		if (((_local_2 >= 0) && (!(_local_2 == _local_3)))) {
 			if (_local_3 < _local_2) {
 				_local_2--;
 			}
-			;
+
 			this.setFocusChild(_local_2);
 		}
-		;
+
 	}
 
 	public function reorderChildren(_arg_1:Array):void {
@@ -270,22 +270,22 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 					if (this.m_focusIndex == _local_6) {
 						this.m_focusIndex = _local_3;
 					}
-					;
+
 					this.getContainer().setChildIndex(_local_5, _local_3);
 				}
-				;
+
 				_local_3++;
 			} else {
 				Log.error(Log.ChannelCommon, this, "reorderChildren: child not found");
 			}
-			;
+
 			_local_4++;
 		}
-		;
+
 		if (_local_2 >= 0) {
 			this.setFocusChild(_local_2);
 		}
-		;
+
 	}
 
 	public function onAddedAsChild(_arg_1:MenuElementBase):void {
@@ -314,7 +314,7 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 		while ((((_local_3) && (_local_4 == null)) && ((!(_local_3["handleEvent"])) || (!(_local_3["handleEvent"](_arg_1, _arg_2)))))) {
 			_local_3 = _local_3.m_parent;
 		}
-		;
+
 	}
 
 	public function getVisualBounds(_arg_1:MenuElementBase):Rectangle {
@@ -322,7 +322,7 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 		if (_local_2 == null) {
 			return (new Rectangle());
 		}
-		;
+
 		return (_local_2.getBounds(_arg_1));
 	}
 
@@ -331,7 +331,7 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 		if (!_arg_1) {
 			return (new Rectangle());
 		}
-		;
+
 		var _local_4:Rectangle = _arg_1.getVisualBounds(_arg_2);
 		var _local_5:int;
 		while (_local_5 < _arg_1.m_children.length) {
@@ -339,10 +339,10 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 			if (!((!(_arg_3 == null)) && (!(_arg_3(_local_6))))) {
 				_local_4 = _local_4.union(this.getMenuElementBounds(_local_6, _arg_2, _arg_3));
 			}
-			;
+
 			_local_5++;
 		}
-		;
+
 		return (_local_4);
 	}
 
@@ -356,7 +356,7 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 			this.visible = _local_2;
 			dispatchEvent(new VisibilityChangedEvent(VisibilityChangedEvent.VISIBILITY_CHANGED, _local_2));
 		}
-		;
+
 	}
 
 	private function getNodeData():Object {
@@ -413,24 +413,24 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 			if (_local_7 != null) {
 				_local_5 = _local_7;
 			}
-			;
+
 			if (((!(_local_3 == null)) && (!(_local_5 == null)))) {
 				if (_arg_1) {
 					_local_3.setFocusChildElement(_local_5);
 				} else {
 					_local_3.unsetFocusChildElement(_local_5);
 				}
-				;
+
 				if (!_local_2) {
 					return;
 				}
-				;
+
 			}
-			;
+
 			_local_4 = _local_6;
 			_local_6 = _local_4.parent;
 		}
-		;
+
 	}
 
 	public function setFocusChildElement(_arg_1:Sprite):void {
@@ -438,14 +438,14 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 		if (_local_2 >= 0) {
 			this.setFocusChild(_local_2);
 		}
-		;
+
 	}
 
 	public function unsetFocusChildElement(_arg_1:Sprite):void {
 		if (((this.m_focusIndex >= 0) && (this.getContainer().getChildAt((this.getContainer().numChildren - 1)) == _arg_1))) {
 			this.unsetFocusChild();
 		}
-		;
+
 	}
 
 	private function setFocusChild(_arg_1:int):void {
@@ -453,14 +453,14 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 		if (((_arg_1 < 0) && (_arg_1 >= this.getContainer().numChildren))) {
 			return;
 		}
-		;
+
 		var _local_2:Sprite = (this.getContainer().getChildAt(_arg_1) as Sprite);
 		if (_local_2 != null) {
 			this.getContainer().setChildIndex(_local_2, (this.getContainer().numChildren - 1));
 			this.getContainer().addChildAt(this.m_focusPlaceholder, _arg_1);
 			this.m_focusIndex = _arg_1;
 		}
-		;
+
 	}
 
 	private function unsetFocusChild():void {
@@ -471,9 +471,9 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 				this.getContainer().removeChildAt(this.m_focusIndex);
 				this.getContainer().setChildIndex(_local_1, this.m_focusIndex);
 			}
-			;
+
 		}
-		;
+
 		this.m_focusIndex = -1;
 	}
 
@@ -481,7 +481,7 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 		if (this.m_activePopOutScaleViewElement == null) {
 			return;
 		}
-		;
+
 		this.m_activePopOutScaleViewElementPaused = this.m_activePopOutScaleViewElement;
 		this.setPopOutScale(this.m_activePopOutScaleViewElement, false, false);
 	}
@@ -490,7 +490,7 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 		if (this.m_activePopOutScaleViewElementPaused == null) {
 			return;
 		}
-		;
+
 		this.setPopOutScale(this.m_activePopOutScaleViewElementPaused, true, false);
 		this.m_activePopOutScaleViewElementPaused = null;
 	}
@@ -500,21 +500,21 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 		if (isQueuedOrActive == active) {
 			return;
 		}
-		;
+
 		if (!active) {
 			if (this.m_isPopOutScaleActive) {
 				this.setPopOutScale_internal(viewElement, active, animate);
 				return;
 			}
-			;
+
 			if (this.m_isPopOutScaleQueued) {
 				Animate.kill(viewElement);
 				this.m_isPopOutScaleQueued = false;
 				return;
 			}
-			;
+
 		}
-		;
+
 		this.m_isPopOutScaleQueued = true;
 		Animate.delay(viewElement, 0.1, function ():void {
 			m_isPopOutScaleQueued = false;
@@ -538,7 +538,7 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 		if (this.m_isPopOutScaleActive == active) {
 			return;
 		}
-		;
+
 		this.m_activePopOutScaleViewElement = ((active) ? viewElement : null);
 		this.setFocus(active);
 		this.m_isPopOutScaleActive = active;
@@ -568,7 +568,7 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 					viewElement.y = animationVarsVr.y;
 					viewElement.z = animationVarsVr.z;
 				}
-				;
+
 			} else {
 				POPOUT_GAIN_MAX_WIDTH = 28;
 				POPOUT_GAIN_MAX_HEIGHT = 24;
@@ -581,9 +581,9 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 					viewElement.x = animationVars.x;
 					viewElement.y = animationVars.y;
 				}
-				;
+
 			}
-			;
+
 		} else {
 			Animate.kill(viewElement);
 			viewElement.scaleX = this.m_popOutOriginalScale.x;
@@ -592,7 +592,7 @@ public dynamic class MenuElementBase extends Sprite implements AnimationContaine
 			viewElement.y = this.m_popOutOriginalPos.y;
 			viewElement.z = 0;
 		}
-		;
+
 	}
 
 

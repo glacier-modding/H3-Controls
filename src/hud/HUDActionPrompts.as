@@ -53,7 +53,7 @@ public class HUDActionPrompts extends BaseControl {
 			if (_local_3 <= 3) {
 				_local_4.prompt.button = _local_3;
 			}
-			;
+
 			_local_4.visible = false;
 			_local_5 = (_local_3 == 3);
 			_local_4.prompt_mc.label_txt.width = 500;
@@ -69,14 +69,14 @@ public class HUDActionPrompts extends BaseControl {
 			MenuUtils.setupText(_local_4.prompt_mc.desc_txt, "", _local_8.fontSizeDesc, MenuConstants.FONT_TYPE_NORMAL, MenuConstants.FontColorWhite);
 			_local_3++;
 		}
-		;
+
 	}
 
 	private function setupFontSize(_arg_1:int, _arg_2:int):void {
 		if (this.m_buttonFontSize[_arg_1] == _arg_2) {
 			return;
 		}
-		;
+
 		this.m_buttonFontSize[_arg_1] = _arg_2;
 		var _local_3:MovieClip = this.m_buttonClips[_arg_1];
 		var _local_4:Object = MenuConstants.InteractionIndicatorFontSpecs[_arg_2];
@@ -97,7 +97,7 @@ public class HUDActionPrompts extends BaseControl {
 			this.m_buttonClips[_local_3].y = (_local_2 + (_local_4 * ((_arg_1) ? 1 : -1)));
 			_local_3++;
 		}
-		;
+
 	}
 
 	public function onSetData(_arg_1:Object):void {
@@ -126,19 +126,19 @@ public class HUDActionPrompts extends BaseControl {
 				if (_local_2 == null) {
 					_local_2 = ControlsMain.getControllerType();
 				}
-				;
+
 				_local_10 = (_local_6 == 3);
 				this.showActionButton(_local_7, _local_8, _local_10, _local_2);
 			}
-			;
+
 			_local_6++;
 		}
-		;
+
 		if (_local_4 != null) {
 			this.m_view.scaleX = _local_4.fScaleGroup;
 			this.m_view.scaleY = _local_4.fScaleGroup;
 		}
-		;
+
 	}
 
 	private function showActionButton(_arg_1:MovieClip, _arg_2:Object, _arg_3:Boolean, _arg_4:String):void {
@@ -158,12 +158,12 @@ public class HUDActionPrompts extends BaseControl {
 		if (_arg_2.m_bShowWarning) {
 			_local_8 = true;
 		}
-		;
+
 		if (_local_5 == this.INVISIBLE_ICON_INDEX) {
 			_arg_1.visible = false;
 			return;
 		}
-		;
+
 		var _local_15:Object = MenuConstants.InteractionIndicatorFontSpecs[((_arg_2.m_nFontSize) ? _arg_2.m_nFontSize : MenuConstants.INTERACTIONPROMPTSIZE_DEFAULT)];
 		var _local_16:int = (((_local_8) || (_local_9)) ? 81 : 1);
 		if (((_local_8) || (_local_9))) {
@@ -180,16 +180,16 @@ public class HUDActionPrompts extends BaseControl {
 					_local_18 = 67;
 					_local_19 = ((_arg_1.hold_mc.visible) ? 44 : 40);
 				}
-				;
+
 			}
-			;
+
 			_arg_1.illegalIcon_mc.x = ((_arg_3) ? -(_local_19) : _local_19);
 			_arg_1.illegalIcon_mc.scaleX = (_arg_1.illegalIcon_mc.scaleY = _local_17);
 			_arg_1.prompt_mc.x = ((_arg_3) ? -(_local_18) : _local_18);
 		} else {
 			_arg_1.prompt_mc.x = ((_arg_3) ? -28 : 28);
 		}
-		;
+
 		_arg_1.prompt.alpha = ((_local_11) ? 0.33 : 1);
 		_arg_1.prompt_mc.label_txt.htmlText = _local_6.toUpperCase();
 		_local_7 = StringUtil.trim(_local_7);
@@ -203,7 +203,7 @@ public class HUDActionPrompts extends BaseControl {
 			_arg_1.prompt_mc.desc_txt.text = "";
 			_arg_1.prompt_mc.label_txt.y = _local_15.yOffsetLabelSolo;
 		}
-		;
+
 		if (_local_9) {
 			_arg_1.illegalIcon_mc.visible = true;
 			_arg_1.illegalIcon_mc.gotoAndStop("susarmed");
@@ -214,9 +214,9 @@ public class HUDActionPrompts extends BaseControl {
 			} else {
 				_arg_1.illegalIcon_mc.visible = false;
 			}
-			;
+
 		}
-		;
+
 		_arg_1.prompt.scaleX = (_arg_1.prompt.scaleY = ((_arg_4 == "key") ? 0.8 : 1));
 		if (_local_5 == -1) {
 			_arg_1.prompt.customKey = _local_13;
@@ -224,14 +224,14 @@ public class HUDActionPrompts extends BaseControl {
 			_arg_1.prompt.platform = _arg_4;
 			_arg_1.prompt.button = _local_5;
 		}
-		;
+
 		if (((_local_12 == 2) || (_local_12 == 3))) {
 			if (_local_10 > 0) {
 				_arg_1.hold_mc.gotoAndStop((Math.ceil((_local_10 * 60)) + _local_16));
 			} else {
 				_arg_1.hold_mc.gotoAndStop(_local_16);
 			}
-			;
+
 			_arg_1.hold_mc.visible = true;
 			_arg_1.tap_mc.visible = false;
 		} else {
@@ -242,9 +242,9 @@ public class HUDActionPrompts extends BaseControl {
 				_arg_1.tap_mc.visible = false;
 				_arg_1.hold_mc.visible = false;
 			}
-			;
+
 		}
-		;
+
 		if (_arg_1.hold_mc.visible) {
 			_arg_1.prompt_mc.label_txt.x = ((_arg_3) ? (1 - _arg_1.prompt_mc.label_txt.textWidth) : -3);
 			_arg_1.prompt_mc.desc_txt.x = ((_arg_3) ? (1 - _arg_1.prompt_mc.desc_txt.textWidth) : -3);
@@ -252,7 +252,7 @@ public class HUDActionPrompts extends BaseControl {
 			_arg_1.prompt_mc.label_txt.x = ((_arg_3) ? (5 - _arg_1.prompt_mc.label_txt.textWidth) : -7);
 			_arg_1.prompt_mc.desc_txt.x = ((_arg_3) ? (5 - _arg_1.prompt_mc.desc_txt.textWidth) : -7);
 		}
-		;
+
 	}
 
 	private function getButtonClip(_arg_1:int):MovieClip {

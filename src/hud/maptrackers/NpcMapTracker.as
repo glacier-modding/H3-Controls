@@ -54,19 +54,19 @@ public class NpcMapTracker extends LevelCheckedMapTracker {
 						default:
 							setMainView(m_view_npc_general_threat);
 					}
-					;
+
 					applyLevelCheckResult(m_mainView, 0);
 				}
-				;
+
 			}
-			;
+
 		};
 		if (ControlsMain.isVrModeActive()) {
 			TaskletSequencer.getGlobalInstance().addChunk(funcSetData);
 		} else {
 			(funcSetData());
 		}
-		;
+
 	}
 
 	override public function getTextForLegend():String {

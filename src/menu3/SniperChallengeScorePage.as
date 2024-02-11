@@ -34,7 +34,7 @@ public dynamic class SniperChallengeScorePage extends MenuElementBase {
 	private var m_bgBottom:Sprite = new Sprite();
 	private var m_bgList:Sprite = new Sprite();
 	private var m_posY:Number = 0;
-	private var m_elements:Array = new Array();
+	private var m_elements:Array = [];
 
 	public function SniperChallengeScorePage(_arg_1:Object) {
 		super(_arg_1);
@@ -60,15 +60,15 @@ public dynamic class SniperChallengeScorePage extends MenuElementBase {
 				for (_local_13 in _arg_1[_local_2][_local_12]) {
 					trace(((((((("SniperChallengeScorePage | onSetData | " + _local_2) + " | ") + _local_12) + " | ") + _local_13) + ": ") + _arg_1[_local_2][_local_12][_local_13]));
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if ((((_arg_1.loading) || (_arg_1.SniperChallengeScore == undefined)) || (_arg_1.SniperChallengeScore.Score == undefined))) {
 			return;
 		}
-		;
+
 		var _local_4:PaymentLine = PaymentLine.createLine("SCORE");
 		_local_4.m_isHeadline = true;
 		this.addPaymentLine(_local_4);
@@ -125,9 +125,9 @@ public dynamic class SniperChallengeScorePage extends MenuElementBase {
 			if (this.m_posY > 0) {
 				this.m_posY = (this.m_posY + this.LINE_HEIGHT);
 			}
-			;
+
 		}
-		;
+
 		var _local_2:TextField = this.createTextField();
 		MenuUtils.setupText(_local_2, _arg_1.m_title);
 		var _local_3:TextField = this.createTextField();
@@ -146,7 +146,7 @@ public dynamic class SniperChallengeScorePage extends MenuElementBase {
 		} else {
 			this.m_posY = (this.m_posY + this.LINE_HEIGHT);
 		}
-		;
+
 		this.m_listView.addChild(_arg_1.m_container);
 		this.m_elements.push(_arg_1);
 	}
@@ -163,7 +163,7 @@ public dynamic class SniperChallengeScorePage extends MenuElementBase {
 		for each (_local_1 in this.m_elements) {
 			this.m_listView.removeChild(_local_1.m_container);
 		}
-		;
+
 		this.m_elements.length = 0;
 		this.m_posY = 0;
 		this.clearBackground();
@@ -183,11 +183,11 @@ public dynamic class SniperChallengeScorePage extends MenuElementBase {
 				_local_4 = _local_2.m_intValue;
 				Animate.addFromTo(_local_2.m_valueTextField, 0.45, _local_3, {"intAnimation": 0}, {"intAnimation": _local_4}, Animate.SineOut);
 			}
-			;
+
 			Animate.delay(_local_2.m_container, _local_3, this.playSound, "ScoreRating");
 			_local_1++;
 		}
-		;
+
 	}
 
 	private function completeAnimations():void {
@@ -196,7 +196,7 @@ public dynamic class SniperChallengeScorePage extends MenuElementBase {
 			Animate.kill(this.m_elements[_local_1]);
 			_local_1++;
 		}
-		;
+
 	}
 
 	private function drawBackground():void {
@@ -231,19 +231,19 @@ public dynamic class SniperChallengeScorePage extends MenuElementBase {
 		if (_local_3 < 10) {
 			_local_5 = (_local_5 + "0");
 		}
-		;
+
 		_local_5 = (_local_5 + _local_3.toString());
 		var _local_6:* = "";
 		if (_local_4 < 10) {
 			_local_6 = (_local_6 + "0");
 		}
-		;
+
 		_local_6 = (_local_6 + _local_4.toFixed(3));
 		var _local_7:String = ((_local_5 + ":") + _local_6);
 		if (_arg_1 < 0) {
 			((_local_7 + "-") + _local_7);
 		}
-		;
+
 		return (_local_7);
 	}
 

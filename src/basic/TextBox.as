@@ -98,7 +98,7 @@ public class TextBox extends BaseControl {
 		if (_local_2 == this.m_fontSize) {
 			return;
 		}
-		;
+
 		this.m_fontSize = _local_2;
 		this.applyFormat();
 	}
@@ -109,7 +109,7 @@ public class TextBox extends BaseControl {
 			this.m_fontColor = ("#" + _arg_1);
 			this.applyFormat();
 		}
-		;
+
 	}
 
 	public function SetColor(_arg_1:String):void {
@@ -129,7 +129,7 @@ public class TextBox extends BaseControl {
 		if (!isNaN(_local_2)) {
 			this.m_textfield.backgroundColor = _local_2;
 		}
-		;
+
 	}
 
 	override public function onSetSize(_arg_1:Number, _arg_2:Number):void {
@@ -143,17 +143,17 @@ public class TextBox extends BaseControl {
 		} else {
 			MenuUtils.setupText(this.m_textfield, this.m_text, this.m_fontSize, this.m_font, this.m_fontColor);
 		}
-		;
+
 		if (this.m_checkForGlobalFont) {
 			CommonUtils.changeFontToGlobalIfNeeded(this.m_textfield);
 		}
-		;
+
 		if (this.m_shrinkToFit) {
 			this.applyShrinkToFit();
 		} else {
 			this.m_textfield.setTextFormat(this.m_textformat);
 		}
-		;
+
 	}
 
 	private function applyShrinkToFit():void {
@@ -174,11 +174,11 @@ public class TextBox extends BaseControl {
 			} else {
 				this.Text = _local_2.toString();
 			}
-			;
+
 		} else {
 			this.Text = _arg_1.toString();
 		}
-		;
+
 	}
 
 

@@ -15,7 +15,7 @@ public class IndicatorUtil {
 		if ((_arg_1 in this.m_indicators)) {
 			return (this.m_indicators[_arg_1]);
 		}
-		;
+
 		return (null);
 	}
 
@@ -29,7 +29,7 @@ public class IndicatorUtil {
 		for each (_local_1 in this.m_indicators) {
 			_local_1.onUnregister();
 		}
-		;
+
 		this.m_indicators = new Dictionary();
 	}
 
@@ -38,7 +38,7 @@ public class IndicatorUtil {
 		for each (_local_2 in this.m_indicators) {
 			_local_2.callTextTicker(_arg_1);
 		}
-		;
+
 	}
 
 

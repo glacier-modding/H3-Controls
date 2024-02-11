@@ -59,7 +59,7 @@ public class LoadingTips extends BaseControl {
 			MenuUtils.setupText(this.m_view.tips.title, _local_2, 22, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 			this.startDeltaAnim();
 		}
-		;
+
 	}
 
 	public function startDeltaAnim():void {
@@ -80,14 +80,14 @@ public class LoadingTips extends BaseControl {
 					this.m_view.tips.title.y = 19;
 					this.m_view.tips.y = -54;
 				}
-				;
+
 			}
-			;
+
 			this.m_animated = true;
 			this.m_view.addEventListener(Event.ENTER_FRAME, this.updateDeltaAnim);
 			this.m_prevFrame = getTimer();
 		}
-		;
+
 	}
 
 	public function stopDeltaAnim():void {
@@ -97,7 +97,7 @@ public class LoadingTips extends BaseControl {
 			this.m_frameFactor = 0;
 			this.m_frame = 0;
 		}
-		;
+
 	}
 
 	private function updateDeltaAnim(_arg_1:Event):void {
@@ -111,7 +111,7 @@ public class LoadingTips extends BaseControl {
 			this.m_view.removeEventListener(Event.ENTER_FRAME, this.updateDeltaAnim);
 			this.m_frame = this.m_totalFrames;
 		}
-		;
+
 		this.m_view.tips.alpha = (this.m_frame / this.m_totalFrames);
 	}
 

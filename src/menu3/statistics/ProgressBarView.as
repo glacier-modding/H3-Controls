@@ -120,7 +120,7 @@ public dynamic class ProgressBarView extends MenuElementBase {
 			this.m_shapeFrame.graphics.lineStyle(this.FRAME_THICKNESS, 0xFFFFFF, 1, false, LineScaleMode.NONE, CapsStyle.NONE, JointStyle.MITER, 1.4142);
 			this.m_shapeFrame.graphics.drawRect((this.FRAME_THICKNESS / 2), (this.FRAME_THICKNESS / 2), (this.m_width - this.FRAME_THICKNESS), (this.m_height - this.FRAME_THICKNESS));
 		}
-		;
+
 		this.m_shapeFill.x = (this.m_xoffset + (this.FRAME_THICKNESS / 2));
 		this.m_shapeFill.y = ((this.m_yoffset + (this.FRAME_THICKNESS / 2)) + _local_4);
 		this.m_shapeFill.height = (this.m_height - this.FRAME_THICKNESS);
@@ -129,24 +129,24 @@ public dynamic class ProgressBarView extends MenuElementBase {
 		if (_local_6 < this.ALMOST_ZERO_WIDTH) {
 			_local_6 = this.ALMOST_ZERO_WIDTH;
 		}
-		;
+
 		if (_local_6 > _local_5) {
 			_local_6 = _local_5;
 		}
-		;
+
 		if (this.m_once) {
 			this.m_shapeFill.width = _local_6;
 			this.m_once = false;
 		} else {
 			Animate.to(this.m_shapeFill, 0.2, 0, {"width": _local_6}, Animate.Linear);
 		}
-		;
+
 		var _local_7:int = ((_arg_1.fillcolorname == null) ? this.m_fillcolor : MenuConstants.GetColorByName(_arg_1.fillcolorname));
 		if (_local_7 != this.m_fillcolor) {
 			this.m_fillcolor = _local_7;
 			createRectFill1x1(this.m_shapeFill, this.m_fillcolor);
 		}
-		;
+
 	}
 
 	override public function onUnregister():void {

@@ -32,7 +32,7 @@ public dynamic class PopupBackground extends MenuElementBase {
 		if (this.m_addedToStage) {
 			this.drawBackground();
 		}
-		;
+
 	}
 
 	protected function onAddedToStage(_arg_1:Event):void {
@@ -74,7 +74,7 @@ public dynamic class PopupBackground extends MenuElementBase {
 		} else {
 			this.m_background.graphics.drawRect(-(MenuConstants.BaseWidth), -(MenuConstants.BaseHeight), (3 * MenuConstants.BaseWidth), (3 * MenuConstants.BaseHeight));
 		}
-		;
+
 		this.m_background.graphics.endFill();
 	}
 

@@ -37,7 +37,7 @@ public class EvergreenSpycameraGridlines extends BaseControl {
 			default:
 				this.m_view.visible = false;
 		}
-		;
+
 	}
 
 	override public function onSetSize(_arg_1:Number, _arg_2:Number):void {
@@ -59,7 +59,7 @@ public class EvergreenSpycameraGridlines extends BaseControl {
 			this.m_view.addChild(_local_9);
 			_local_7++;
 		}
-		;
+
 		var _local_8:uint;
 		while (_local_8 <= _local_4) {
 			_local_10 = new spyCameraGridline();
@@ -71,7 +71,7 @@ public class EvergreenSpycameraGridlines extends BaseControl {
 			this.m_view.addChild(_local_10);
 			_local_8++;
 		}
-		;
+
 	}
 
 

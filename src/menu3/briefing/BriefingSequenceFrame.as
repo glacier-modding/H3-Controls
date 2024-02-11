@@ -102,11 +102,11 @@ public class BriefingSequenceFrame extends BaseControl {
 		if (this.m_showGrid) {
 			this.showAlignmentGrid();
 		}
-		;
+
 		if (this.m_showBackground) {
 			this.showBackground();
 		}
-		;
+
 	}
 
 	override public function onSetSize(_arg_1:Number, _arg_2:Number):void {

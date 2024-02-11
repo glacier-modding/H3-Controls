@@ -361,7 +361,7 @@ public class TextInput extends UIComponent {
 		if (details.value == InputValue.KEY_DOWN || details.value == InputValue.KEY_HOLD) {
 			return;
 		} // unhandled
-		return; //LM: Below needs testing.
+		 //LM: Below needs testing.
 
 		// LM: I think this is to ensure that the textField has focus to handle key events when only the component is focused. Might be unnecessary.
 		// if (stage.focus != null) { return; }

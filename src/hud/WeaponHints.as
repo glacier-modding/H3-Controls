@@ -16,7 +16,7 @@ public class WeaponHints extends BaseControl {
 	private var m_view:WeaponHintsView;
 	private var m_reloadFlashTimes:int = 0;
 	private var m_reloadUrgent:Boolean;
-	private var m_lastWeaponData:Object = new Object();
+	private var m_lastWeaponData:Object = {};
 	private var m_wasHolstered:Boolean;
 	private var m_reloadAnimCalled:Boolean;
 	private var m_reloadAnimIsRunning:Boolean;
@@ -27,7 +27,7 @@ public class WeaponHints extends BaseControl {
 		if (ControlsMain.isVrModeActive()) {
 			return;
 		}
-		;
+
 		this.m_view = new WeaponHintsView();
 		MenuUtils.setupText(this.m_view.reloadHolder.reload_mc.reload_txt, Localization.get("EUI_TEXT_BUTTON_RELOAD"), 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraDark);
 		CommonUtils.changeFontToGlobalIfNeeded(this.m_view.reloadHolder.reload_mc.reload_txt);
@@ -41,7 +41,7 @@ public class WeaponHints extends BaseControl {
 		if (ControlsMain.isVrModeActive()) {
 			return;
 		}
-		;
+
 		this.m_view.visible = ((_arg_1.nDisplayMode == 2) ? true : false);
 		var _local_2:Object = _arg_1.weaponStatus;
 		if (_local_2.bHasItemToShow) {
@@ -59,30 +59,30 @@ public class WeaponHints extends BaseControl {
 							if (this.m_wasHolstered) {
 								this.setWeaponAmmoInfo(_local_2.nAmmoRemaining, _local_2.nAmmoTotal, _local_2.nAmmoInClip, _local_2.nWeaponType, _local_2.bCanReload, _local_2.bIsReloading);
 							}
-							;
+
 						}
-						;
+
 					}
-					;
+
 					if (((((_local_2.nWeaponType == 4) && (_local_2.bIsReloading)) && (!(this.m_reloadTimerAnimCalled))) && (_local_2.fReloadDuration > 0))) {
 						this.runReloadTimer(_local_2.fReloadDuration, _local_2.nAmmoInClip, _local_2.nAmmoRemaining, _local_2.nCurrentAmmoType, true);
 					} else {
 						if ((((_local_2.nWeaponType == 4) && (_local_2.fTimeBetweenBullets > 0)) && (this.m_sniperModeIsEntered))) {
 							this.runBulletChamberingTimer(_local_2.fTimeBetweenBullets, _local_2.nAmmoInClip, _local_2.nAmmoRemaining, _local_2.nCurrentAmmoType, true);
 						}
-						;
+
 					}
-					;
+
 					if (this.m_wasHolstered) {
 						this.m_wasHolstered = false;
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		this.m_lastWeaponData = _local_2;
 	}
 
@@ -110,17 +110,17 @@ public class WeaponHints extends BaseControl {
 								this.m_reloadUrgent = true;
 								this.pulsateReloadMc(0.15, true);
 							}
-							;
+
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function pulsateReloadMc(_arg_1:Number, _arg_2:Boolean):void {
@@ -134,7 +134,7 @@ public class WeaponHints extends BaseControl {
 		} else {
 			MenuUtils.setTintColor(this.m_view.reloadHolder.reload_mc.reload_txt, MenuUtils.TINT_COLOR_ULTRA_DARK_GREY, false);
 		}
-		;
+
 		this.m_view.reloadHolder.reload_mc.bg.alpha = 1;
 		this.m_reloadFlashTimes = 6;
 		if (_arg_2) {
@@ -142,10 +142,10 @@ public class WeaponHints extends BaseControl {
 			if (this.m_reloadUrgent) {
 				MenuUtils.setTintColor(this.m_view.reloadHolder.reload_mc.bg, MenuUtils.TINT_COLOR_MAGENTA_DARK, false);
 			}
-			;
+
 			Animate.delay(this, _arg_1, this.pulsateFadeIn, _arg_1);
 		}
-		;
+
 	}
 
 	private function pulsateFadeIn(_arg_1:Number):void {
@@ -157,15 +157,15 @@ public class WeaponHints extends BaseControl {
 				this.m_view.reloadHolder.reload_mc.visible = false;
 				return;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_reloadUrgent) {
 			MenuUtils.setTintColor(this.m_view.reloadHolder.reload_mc.reload_txt, MenuUtils.TINT_COLOR_MAGENTA_DARK, false);
 		} else {
 			MenuUtils.setTintColor(this.m_view.reloadHolder.reload_mc.reload_txt, MenuUtils.TINT_COLOR_YELLOW_LIGHT, false);
 		}
-		;
+
 		this.m_view.reloadHolder.reload_mc.bg.alpha = 0;
 		Animate.delay(this, _arg_1, this.pulsateFadeOut, _arg_1);
 		this.m_reloadFlashTimes--;
@@ -180,15 +180,15 @@ public class WeaponHints extends BaseControl {
 				this.m_view.reloadHolder.reload_mc.visible = false;
 				return;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_reloadUrgent) {
 			MenuUtils.setTintColor(this.m_view.reloadHolder.reload_mc.reload_txt, MenuUtils.TINT_COLOR_WHITE, false);
 		} else {
 			MenuUtils.setTintColor(this.m_view.reloadHolder.reload_mc.reload_txt, MenuUtils.TINT_COLOR_ULTRA_DARK_GREY, false);
 		}
-		;
+
 		this.m_view.reloadHolder.reload_mc.bg.alpha = 1;
 		Animate.delay(this, _arg_1, this.pulsateFadeIn, _arg_1);
 		this.m_reloadFlashTimes--;
@@ -208,7 +208,7 @@ public class WeaponHints extends BaseControl {
 				this.pulsateReloadMc(0, false);
 				this.m_reloadUrgent = false;
 			}
-			;
+
 			this.m_reloadTimerAnimCalled = true;
 			nAmmoTypeFrameOffset = 0;
 			this.m_view.reloadTimerMc.bulletActiveMc.gotoAndStop(1);
@@ -220,9 +220,9 @@ public class WeaponHints extends BaseControl {
 					this.m_view.reloadTimerMc.bulletActiveMc.gotoAndStop(3);
 					nAmmoTypeFrameOffset = 28;
 				}
-				;
+
 			}
-			;
+
 			this.m_view.reloadTimerMc.alpha = 1;
 			this.m_view.reloadTimerMc.bar.scaleX = 0;
 			this.m_view.reloadTimerMc.bulletActiveMc.y = 23;
@@ -240,7 +240,7 @@ public class WeaponHints extends BaseControl {
 				m_reloadTimerAnimCalled = false;
 			});
 		}
-		;
+
 	}
 
 	private function runBulletChamberingTimer(duration:Number, nAmmoInClip:int, nAmmoRemaining:int, nCurrentAmmoType:int, start:Boolean):void {
@@ -255,7 +255,7 @@ public class WeaponHints extends BaseControl {
 			if (((nAmmoRemaining < 1) || (nAmmoInClip == nAmmoRemaining))) {
 				return;
 			}
-			;
+
 			nAmmoTypeFrameOffset = 0;
 			this.m_view.bulletChamberingTimerMc.bulletActiveMc.gotoAndStop(1);
 			if (nCurrentAmmoType == 1) {
@@ -266,9 +266,9 @@ public class WeaponHints extends BaseControl {
 					this.m_view.bulletChamberingTimerMc.bulletActiveMc.gotoAndStop(3);
 					nAmmoTypeFrameOffset = 28;
 				}
-				;
+
 			}
-			;
+
 			this.m_view.bulletChamberingTimerMc.alpha = 1;
 			this.m_view.bulletChamberingTimerMc.bar.scaleX = 0;
 			this.m_view.bulletChamberingTimerMc.bulletActiveMc.y = 23;
@@ -283,14 +283,14 @@ public class WeaponHints extends BaseControl {
 				Animate.to(m_view.bulletChamberingTimerMc, 0.2, 0, {"alpha": 0}, Animate.ExpoOut);
 			});
 		}
-		;
+
 	}
 
 	public function EnterSniperMode():void {
 		if (ControlsMain.isVrModeActive()) {
 			return;
 		}
-		;
+
 		this.m_sniperModeIsEntered = true;
 		if (((this.m_reloadAnimCalled) && (this.m_reloadUrgent))) {
 			if (this.m_reloadAnimIsRunning) {
@@ -302,23 +302,23 @@ public class WeaponHints extends BaseControl {
 					pulsateReloadMc(0.15, true);
 				});
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function ExitSniperMode():void {
 		if (ControlsMain.isVrModeActive()) {
 			return;
 		}
-		;
+
 		this.m_sniperModeIsEntered = false;
 		this.runBulletChamberingTimer(0, 0, 0, 0, false);
 		if (this.m_reloadAnimCalled) {
 			this.m_view.reloadHolder.reload_mc.visible = false;
 			this.pulsateReloadMc(0, false);
 		}
-		;
+
 	}
 
 

@@ -31,9 +31,9 @@ public class DottedLine extends Shape {
 			if (_arg_3 == TYPE_VERTICAL) {
 				this.drawVertical();
 			}
-			;
+
 		}
-		;
+
 	}
 
 	private function drawHorizontal():void {

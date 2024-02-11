@@ -28,7 +28,7 @@ public class TutorialBar extends BaseControl {
 			this.m_view.scaleX = _local_2;
 			this.m_view.scaleY = _local_2;
 		}
-		;
+
 		MenuUtils.setupText(this.m_view.label_txt, ((_arg_1.title) || ("")), 16, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraLight);
 	}
 
@@ -38,7 +38,7 @@ public class TutorialBar extends BaseControl {
 		if (this.m_view.box_mc.height < 64) {
 			this.m_view.box_mc.height = 64;
 		}
-		;
+
 		this.m_view.icon_mc.scaleX = (this.m_view.icon_mc.scaleY = 1.3);
 		this.m_view.icon_mc.alpha = 0.5;
 		Animate.legacyTo(this.m_view.icon_mc, 0.7, {
@@ -51,7 +51,7 @@ public class TutorialBar extends BaseControl {
 		if (this.m_view.box_mc.height > 60) {
 			_local_1 = (60 - this.m_view.box_mc.height);
 		}
-		;
+
 		this.m_view.y = (_local_1 + 20);
 		Animate.legacyTo(this.m_view, 0.5, {
 			"alpha": 1,

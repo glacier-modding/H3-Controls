@@ -38,7 +38,7 @@ public class CountDownTimer {
 			this.countTimer.removeEventListener(TimerEvent.TIMER, this.countTimerFunctions[0]);
 			this.countTimer.removeEventListener(TimerEvent.TIMER_COMPLETE, this.countTimerFunctions[1]);
 		}
-		;
+
 		this.m_millisecondsLeft = this.getRemainingMilliseconds(_arg_2);
 		MenuUtils.setupTextUpper(_arg_1, this.formatDurationHHMMSS(this.m_millisecondsLeft), _arg_4, MenuConstants.FONT_TYPE_MEDIUM, _arg_5);
 		var _local_6:Number = Math.ceil((this.m_millisecondsLeft / 1000));
@@ -46,12 +46,12 @@ public class CountDownTimer {
 			Log.warning(Log.ChannelDebug, this, "startCountDown: Timer not started, because the time period is too big. Only int.MAX_VALUE seconds are supported (or 69.8 years)");
 			return;
 		}
-		;
+
 		this.countTimer = new Timer(1000, _local_6);
 		this.countTimer.start();
 		var _local_7:Function = this.timerHandler(_arg_1, _arg_4, _arg_5);
 		var _local_8:Function = this.completeHandler(_arg_1, _arg_4, _arg_5);
-		this.countTimerFunctions = new Array(_local_7, _local_8);
+		this.countTimerFunctions = [_local_7, _local_8];
 		this.countTimer.addEventListener(TimerEvent.TIMER, _local_7);
 		this.countTimer.addEventListener(TimerEvent.TIMER_COMPLETE, _local_8);
 	}
@@ -81,7 +81,7 @@ public class CountDownTimer {
 			this.countTimer.removeEventListener(TimerEvent.TIMER_COMPLETE, this.countTimerFunctions[1]);
 			this.countTimerFunctions = [];
 		}
-		;
+
 	}
 
 	private function getRemainingMilliseconds(_arg_1:String):Number {
@@ -90,7 +90,7 @@ public class CountDownTimer {
 		if ((_local_3 - _local_2) <= 0) {
 			return (0);
 		}
-		;
+
 		return (_local_3 - _local_2);
 	}
 

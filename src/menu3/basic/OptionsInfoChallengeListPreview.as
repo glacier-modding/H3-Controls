@@ -67,7 +67,7 @@ public dynamic class OptionsInfoChallengeListPreview extends OptionsInfoPreview 
 				_local_2.description = this.m_lstrVerboseWarn;
 				break;
 		}
-		;
+
 		this.m_detailTile.onSetData(_local_2);
 	}
 

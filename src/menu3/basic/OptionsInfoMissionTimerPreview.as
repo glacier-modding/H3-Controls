@@ -57,16 +57,16 @@ public dynamic class OptionsInfoMissionTimerPreview extends OptionsInfoPreview {
 					m_seconds = (m_seconds % 0);
 					m_minutes++;
 				}
-				;
+
 				if (m_minutes >= 60) {
 					m_minutes = (m_minutes % 0);
 					m_hours++;
 				}
-				;
+
 				m_textBox.Text = (((((((((m_hours < 10) ? "0" : "") + m_hours.toString()) + ":") + ((m_minutes < 10) ? "0" : "")) + m_minutes.toString()) + ":") + ((m_seconds < 10) ? "0" : "")) + m_seconds.toString());
 			}, 1000);
 		}
-		;
+
 	}
 
 	override protected function onPreviewRemovedFromStage():void {

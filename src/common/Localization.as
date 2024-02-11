@@ -14,7 +14,7 @@ public class Localization {
 			Log.xerror(Log.ChannelCommon, "Localization.get Error: key = null");
 			return ("");
 		}
-		;
+
 		return (ExternalInterface.call("LocalizationGet", _arg_1));
 	}
 

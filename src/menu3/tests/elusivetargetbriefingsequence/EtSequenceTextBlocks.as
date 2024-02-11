@@ -34,7 +34,7 @@ public class EtSequenceTextBlocks {
 		if (_arg_1.playableUntil) {
 			_arg_3.startCountDownTimer(_arg_1.playableUntil, _local_5, 148);
 		}
-		;
+
 	}
 
 

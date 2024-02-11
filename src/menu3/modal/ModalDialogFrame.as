@@ -31,12 +31,12 @@ public class ModalDialogFrame extends ModalDialogContainerBase {
 
 	override public function onSetData(_arg_1:Object):void {
 		super.onSetData(_arg_1);
-		this.m_selectableElements = new Array();
+		this.m_selectableElements = [];
 		this.m_submitValidators.length = 0;
 		if (_arg_1.fixedheight) {
 			this.m_fixedHeight = _arg_1.fixedheight;
 		}
-		;
+
 	}
 
 	override public function setButtonData(_arg_1:Array):void {
@@ -46,7 +46,7 @@ public class ModalDialogFrame extends ModalDialogContainerBase {
 		if (_local_3 > 0) {
 			this.m_dialogHeight = _local_3;
 		}
-		;
+
 		this.updateSubmitEnabled();
 	}
 
@@ -55,7 +55,7 @@ public class ModalDialogFrame extends ModalDialogContainerBase {
 		if (this.m_selectableElements.length > _arg_1) {
 			this.m_selectableElements[_arg_1].onPressed();
 		}
-		;
+
 	}
 
 	protected function onPressed():void {
@@ -74,7 +74,7 @@ public class ModalDialogFrame extends ModalDialogContainerBase {
 		if (this.m_selectableElements.length > _arg_1) {
 			this.m_selectableElements[_arg_1].setItemSelected(_arg_2);
 		}
-		;
+
 	}
 
 	protected function setItemSelected(_arg_1:Boolean):void {
@@ -91,7 +91,7 @@ public class ModalDialogFrame extends ModalDialogContainerBase {
 			_local_4 = Math.min(_local_4, _arg_3);
 			Log.xinfo(Log.ChannelModal, ("dialogHeight height: " + _local_4));
 		}
-		;
+
 		return (_local_4);
 	}
 
@@ -111,7 +111,7 @@ public class ModalDialogFrame extends ModalDialogContainerBase {
 			_local_1 = ((_local_1) && (this.m_submitValidators[_local_2].isSubmitValid()));
 			_local_2++;
 		}
-		;
+
 		return (_local_1);
 	}
 
@@ -122,7 +122,7 @@ public class ModalDialogFrame extends ModalDialogContainerBase {
 		} else {
 			Log.xinfo(Log.ChannelModal, "no submit button to update");
 		}
-		;
+
 		m_callbackSendEventWithValue("onSubmitAllowedChanged", _arg_1);
 	}
 
@@ -135,7 +135,7 @@ public class ModalDialogFrame extends ModalDialogContainerBase {
 			Log.xinfo(Log.ChannelModal, "ModalDialogFrame: no button data found");
 			return (-1);
 		}
-		;
+
 		var _local_3:int;
 		while (_local_3 < _arg_1.length) {
 			_local_5 = _arg_1[_local_3];
@@ -149,7 +149,7 @@ public class ModalDialogFrame extends ModalDialogContainerBase {
 			} else {
 				_local_6 = new ModalDialogGenericButton(_local_5);
 			}
-			;
+
 			_local_6.onSetData(_local_5);
 			_local_6.x = -(MenuConstants.tileBorder);
 			_local_6.y = _arg_2;
@@ -165,21 +165,21 @@ public class ModalDialogFrame extends ModalDialogContainerBase {
 					if (_local_5.type == "cancel") {
 						this.m_cancelButtonIndex = _local_3;
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 			_local_3++;
 		}
-		;
+
 		this.m_buttonCount = _arg_1.length;
 		var _local_4:int = (this.m_selectableElements.length - this.m_buttonCount);
 		while (_local_4 < this.m_selectableElements.length) {
 			this.m_selectableElements[_local_4].onCreationDone();
 			_local_4++;
 		}
-		;
+
 		return (_arg_2);
 	}
 

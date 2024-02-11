@@ -51,7 +51,7 @@ public class GlobalLoadindicator extends BaseControl {
 		if (!this.m_hasSetBarcodeScale) {
 			this.resizeBarcodes(false);
 		}
-		;
+
 		this.m_view.loadindicator.icon.visible = ((_arg_1.discrete) ? false : true);
 		this.m_view.loadindicator.progressbar.visible = ((_arg_1.discrete) ? false : true);
 		this.m_view.loadindicator.header.visible = ((_arg_1.discrete) ? false : true);
@@ -59,7 +59,7 @@ public class GlobalLoadindicator extends BaseControl {
 			this.m_view.loadindicator.loadbarbg.gotoAndStop(((_arg_1.discrete) ? 2 : 1));
 			this.m_originalBackgroundWidth = this.m_view.loadindicator.loadbarbg.width;
 		}
-		;
+
 		this.m_view.loadindicator.loadbarbg.x = ((_arg_1.discrete) ? -13 : -53);
 		MenuUtils.setupIcon(this.m_view.loadindicator.icon, _arg_1.icon, MenuConstants.COLOR_WHITE, false, true, MenuConstants.COLOR_WHITE, 1, 0, true);
 		this.setText(_arg_1.header);
@@ -87,7 +87,7 @@ public class GlobalLoadindicator extends BaseControl {
 		if (_arg_1 == null) {
 			_arg_1 = "";
 		}
-		;
+
 		MenuUtils.setupTextUpper(this.m_view.loadindicator.header, _arg_1, 18, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 		CommonUtils.changeFontToGlobalIfNeeded(this.m_view.loadindicator.header);
 		var _local_4:Boolean = MenuUtils.setupTextAndShrinkToFitUpper(this.m_view.loadindicator.header, _arg_1, 18, MenuConstants.FONT_TYPE_MEDIUM, this.m_view.loadindicator.header.width, _local_2, _local_3, MenuConstants.FontColorWhite);
@@ -95,7 +95,7 @@ public class GlobalLoadindicator extends BaseControl {
 			this.m_view.loadindicator.header.multiline = true;
 			this.m_view.loadindicator.header.wordWrap = true;
 		}
-		;
+
 	}
 
 	override public function onSetVisible(_arg_1:Boolean):void {
@@ -118,7 +118,7 @@ public class GlobalLoadindicator extends BaseControl {
 		if (this.m_animated) {
 			return;
 		}
-		;
+
 		this.m_animated = true;
 		this.m_prevFrame = getTimer();
 		if (this.m_discrete) {
@@ -126,7 +126,7 @@ public class GlobalLoadindicator extends BaseControl {
 		} else {
 			this.m_view.gotoAndPlay(2);
 		}
-		;
+
 	}
 
 	public function stopAnim():void {
@@ -134,12 +134,12 @@ public class GlobalLoadindicator extends BaseControl {
 		if (!this.m_animated) {
 			return;
 		}
-		;
+
 		this.m_animated = false;
 		if (this.m_discrete) {
 			this.m_view.alpha = 0;
 		}
-		;
+
 		this.m_view.gotoAndPlay(21);
 	}
 
@@ -150,7 +150,7 @@ public class GlobalLoadindicator extends BaseControl {
 		if (((startFrame < 161) || (startFrame == endFrame))) {
 			startFrame = 161;
 		}
-		;
+
 		var numFrames:Number = (endFrame - startFrame);
 		var dur:Number = ((endFrame - startFrame) / this.m_fpsToReach);
 		view = this;
@@ -158,7 +158,7 @@ public class GlobalLoadindicator extends BaseControl {
 			if (view.m_animated) {
 				pushBarcodeAnim();
 			}
-			;
+
 		});
 	}
 
@@ -175,7 +175,7 @@ public class GlobalLoadindicator extends BaseControl {
 		if (this.m_frame > this.m_totalFrames) {
 			this.m_frameFactor = 0;
 		}
-		;
+
 		this.m_view.loadindicator.barcodes.gotoAndStop((161 + this.m_frame));
 	}
 
@@ -184,7 +184,7 @@ public class GlobalLoadindicator extends BaseControl {
 			this.resizeBarcodes(true);
 			this.m_hasSetBarcodeScale = true;
 		}
-		;
+
 		this.m_view.loadindicator.progressbar.bar.visible = true;
 		this.m_view.loadindicator.progressbar.bg.visible = true;
 		this.m_view.loadindicator.progressbar.visible = true;
@@ -205,7 +205,7 @@ public class GlobalLoadindicator extends BaseControl {
 			this.m_view.loadindicator.barcodes.y = 37;
 			this.m_view.loadindicator.barcodes.scaleY = 0.813;
 		}
-		;
+
 	}
 
 	override public function onSetSize(_arg_1:Number, _arg_2:Number):void {
@@ -213,13 +213,13 @@ public class GlobalLoadindicator extends BaseControl {
 		if (this.m_bootFlowMode) {
 			return;
 		}
-		;
+
 		if (ControlsMain.isVrModeActive()) {
 			this.m_view.loadindicator.loadbarbg.width = 230;
 		} else {
 			this.m_view.loadindicator.loadbarbg.width = this.m_originalBackgroundWidth;
 		}
-		;
+
 	}
 
 

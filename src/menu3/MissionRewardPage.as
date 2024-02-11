@@ -83,20 +83,20 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 		super.onSetData(_arg_1);
 		var _local_2:Object = _arg_1.LocationProgression;
 		if (_local_2 == null) {
-			_local_2 = new Object();
+			_local_2 = {};
 		}
-		;
+
 		var _local_3:Object = _arg_1.ProfileProgression;
 		if (_local_3 == null) {
-			_local_3 = new Object();
+			_local_3 = {};
 		}
-		;
+
 		if (_local_2.HideProgression != undefined) {
 			this.m_showXP = (!(_local_2.HideProgression));
 		} else {
 			this.m_showXP = true;
 		}
-		;
+
 		this.m_view.visible = true;
 		MenuUtils.setupText(this.m_view.titleMc.label_txt, Localization.get("UI_MENU_PAGE_DEBRIEFING_SUCCESS"), 71, MenuConstants.FONT_TYPE_BOLD, MenuConstants.FontColorGreyDark);
 		this.m_view.typeMc.visible = false;
@@ -107,7 +107,7 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 		if (_arg_1.loading) {
 			return;
 		}
-		;
+
 		Animate.legacyTo(this.m_view.titleMask, 0.5, {"x": 0}, Animate.ExpoIn);
 		this.m_loadImageQue = [];
 		if (_local_2.LevelInfo != undefined) {
@@ -117,15 +117,15 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 				this.m_locationMasteryBar.animateShowBar();
 				this.m_profileMasteryBar.animateShowBar();
 			}
-			;
+
 		}
-		;
+
 		if (((_arg_1.OpportunityRewards) && (_arg_1.OpportunityRewards.length > 0))) {
 			this.addOpportunityTiles(_arg_1.OpportunityRewards);
 		}
-		;
-		var _local_4:Array = new Array();
-		var _local_5:Array = new Array();
+
+		var _local_4:Array = [];
+		var _local_5:Array = [];
 		if (((_arg_1.Challenges) && (_arg_1.Challenges.length > 0))) {
 			_local_17 = 0;
 			while (_local_17 < _arg_1.Challenges.length) {
@@ -135,51 +135,51 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 				} else {
 					_local_4.push(_local_18);
 				}
-				;
+
 				_local_17++;
 			}
-			;
+
 		}
-		;
+
 		if (((!(_local_4 == null)) && (_local_4.length > 0))) {
 			this.addChallengeTiles(_local_4);
 		}
-		;
+
 		if (((!(_local_5 == null)) && (_local_5.length > 0))) {
 			this.addActionRewardTiles(_local_5);
 		}
-		;
+
 		if (((_arg_1.Drops) && (_arg_1.Drops.length > 0))) {
 			this.addDropsTiles(_arg_1.Drops);
 		}
-		;
+
 		var _local_6:int;
 		while (_local_6 < Math.min(this.IMAGE_REQUEST_MAX, this.m_loadImageQue.length)) {
 			this.loadImageFromQue();
 			_local_6++;
 		}
-		;
+
 		this.m_opportunityCountEnd = 0;
 		this.m_opportunityCountMax = 0;
 		if (_arg_1.OpportunityStatistics != undefined) {
 			this.m_opportunityCountEnd = _arg_1.OpportunityStatistics.Completed;
 			this.m_opportunityCountMax = _arg_1.OpportunityStatistics.Count;
 		}
-		;
+
 		this.m_locationChallengeCountEnd = 0;
 		this.m_locationChallengeCountMax = 0;
 		if (_arg_1.ChallengeCompletion != undefined) {
 			this.m_locationChallengeCountEnd = _arg_1.ChallengeCompletion.CompletedChallengesCount;
 			this.m_locationChallengeCountMax = _arg_1.ChallengeCompletion.ChallengesCount;
 		}
-		;
+
 		this.m_contractChallengeCountEnd = 0;
 		this.m_contractChallengeCountMax = 0;
 		if (_arg_1.ContractChallengeCompletion != undefined) {
 			this.m_contractChallengeCountEnd = _arg_1.ContractChallengeCompletion.CompletedChallengesCount;
 			this.m_contractChallengeCountMax = _arg_1.ContractChallengeCompletion.ChallengesCount;
 		}
-		;
+
 		var _local_7:Number = 0;
 		var _local_8:int;
 		if (this.m_challengeTiles != null) {
@@ -188,28 +188,28 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 				if (this.m_challengeTiles[_local_19].XPGain != undefined) {
 					_local_7 = (_local_7 + this.m_challengeTiles[_local_19].XPGain);
 				}
-				;
+
 				if (!this.m_challengeTiles[_local_19].IsGlobal) {
 					_local_8++;
 				}
-				;
+
 				_local_19++;
 			}
-			;
+
 		}
-		;
+
 		if (this.m_actionRewardTiles != null) {
 			_local_20 = 0;
 			while (_local_20 < this.m_actionRewardTiles.length) {
 				if (this.m_actionRewardTiles[_local_20].XPGain != undefined) {
 					_local_7 = (_local_7 + this.m_actionRewardTiles[_local_20].XPGain);
 				}
-				;
+
 				_local_20++;
 			}
-			;
+
 		}
-		;
+
 		this.m_locationChallengeCount = Math.max((this.m_locationChallengeCountEnd - _local_8), 0);
 		this.m_contractChallengeCount = Math.max((this.m_contractChallengeCountEnd - _local_8), 0);
 		var _local_9:int = ((this.m_opportunityTiles != null) ? this.m_opportunityTiles.length : 0);
@@ -219,40 +219,40 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 		if (_local_2.XP != undefined) {
 			_local_10 = _local_2.XP;
 		}
-		;
+
 		var _local_11:Number = 0;
 		if (_local_2.XPGain != undefined) {
 			_local_11 = _local_2.XPGain;
 		}
-		;
+
 		if (_local_10 > 0) {
 			_local_21 = this.m_locationMasteryBar.isLevelMaxed(_local_10);
 			if (((!(_local_21)) || (_local_11 >= _local_7))) {
 				_local_11 = _local_7;
 			}
-			;
+
 		}
-		;
+
 		var _local_12:Number = Math.max((_local_10 - _local_11), 0);
 		this.m_locationMasteryBar.setXpValues(_local_12, _local_10, Localization.get("UI_MENU_PAGE_PROFILE_LOCATION_MASTERY"));
 		var _local_13:Number = 0;
 		if (_local_3.XP != undefined) {
 			_local_13 = _local_3.XP;
 		}
-		;
+
 		var _local_14:Number = 0;
 		if (_local_3.XPGain != undefined) {
 			_local_14 = _local_3.XPGain;
 		}
-		;
+
 		if (_local_13 > 0) {
 			_local_22 = this.m_profileMasteryBar.isLevelMaxed(_local_13);
 			if (((!(_local_22)) || (_local_14 >= _local_7))) {
 				_local_14 = _local_7;
 			}
-			;
+
 		}
-		;
+
 		var _local_15:Number = Math.max((_local_13 - _local_14), 0);
 		this.m_profileMasteryBar.setXpValues(_local_15, _local_13, Localization.get("UI_MENU_PAGE_PROFILE_PLAYER_MASTERY"));
 	}
@@ -267,14 +267,14 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 			_local_3 = ((((Localization.get("UI_MENU_PAGE_PROFILE_STATISTICS_CATEGORY_PROFILE_COMPLETEDOPPORTUNITIES") + " ") + String(this.m_opportunityCount)) + "/") + String(this.m_opportunityCountMax));
 			MenuUtils.setupText(this.m_view.opportunityTxt, _local_3, 28, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyDark);
 		}
-		;
+
 	}
 
 	private function getImagePath(_arg_1:Object):String {
 		if (((_arg_1.image) && (_arg_1.image.length > 0))) {
 			return (_arg_1.image);
 		}
-		;
+
 		return (null);
 	}
 
@@ -299,12 +299,12 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 					"path": _local_6
 				});
 			}
-			;
+
 			_arg_1[_local_3].view = _local_5;
 			_local_2.addChild(_local_5);
 			_local_3++;
 		}
-		;
+
 		return (_local_2);
 	}
 
@@ -352,7 +352,7 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 				}, Animate.ExpoIn);
 			});
 		}
-		;
+
 	}
 
 	private function checkTileVertical(_arg_1:Object):void {
@@ -365,7 +365,7 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 			if (this.m_rowCount == 0) {
 				Animate.legacyTo(this.m_view.typeMc, 0.3, {"y": (this.m_view.typeMc.y - this.TILE_HEIGHT)}, Animate.ExpoOut);
 			}
-			;
+
 			_local_3 = (this.m_verticalTiles.length - 1);
 			while (_local_3 >= 0) {
 				_local_4 = 0;
@@ -374,13 +374,13 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 					_local_2 = (_local_2 + 0.015);
 					_local_4++;
 				}
-				;
+
 				_local_3--;
 			}
-			;
+
 			this.m_rowCount++;
 		}
-		;
+
 		this.m_horizontalTiles.unshift((_arg_1.view as MissionRewardItem));
 		if (this.m_horizontalTiles.length > 1) {
 			_local_3 = 1;
@@ -388,9 +388,9 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 				Animate.legacyTo(this.m_horizontalTiles[_local_3], 0.3, {"x": (this.TILE_WIDTH * _local_3)}, Animate.ExpoOut);
 				_local_3++;
 			}
-			;
+
 		}
-		;
+
 		Animate.delay(_arg_1.view, _local_2, _arg_1.view.animateIn, null);
 	}
 
@@ -401,7 +401,7 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 		} else {
 			Animate.legacyTo(_arg_1, 0.15, {"y": _local_3}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 	private function animateSingleTile(tile:Object, type:String, header:String):void {
@@ -434,7 +434,7 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 			this.animateChallengeTiles(0);
 			return;
 		}
-		;
+
 		this.m_opportunityTilesContainer.visible = true;
 		this.m_view.typeMc.visible = true;
 		MenuUtils.setupText(this.m_view.typeMc.label_txt, Localization.get("UI_MENU_PAGE_PROFILE_STATISTICS_CATEGORY_PROFILE_COMPLETEDOPPORTUNITIES"), 45, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyDark);
@@ -457,7 +457,7 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 				Animate.delay(m_view, 0.2, animateChallengeTiles, 0);
 			});
 		}
-		;
+
 	}
 
 	public function animateChallengeTiles(currentTileNum:int):void {
@@ -466,7 +466,7 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 			this.animateActionRewardTiles(0);
 			return;
 		}
-		;
+
 		this.m_challengeTilesContainer.visible = true;
 		this.m_view.typeMc.visible = true;
 		MenuUtils.setupText(this.m_view.typeMc.label_txt, Localization.get("UI_MENU_PAGE_PROFILE_STATISTICS_CATEGORY_PROFILE_COMPLETEDCHALLENGES"), 45, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyDark);
@@ -476,13 +476,13 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 			if (currentChallengeTile.XPGain) {
 				Animate.delay(this.m_view.rewardDetailsMc.xpMc, 0.3, this.updateXP, currentChallengeTile.XPGain);
 			}
-			;
+
 			if (!currentChallengeTile.IsGlobal) {
 				this.m_contractChallengeCount = Math.min((this.m_contractChallengeCount + 1), this.m_contractChallengeCountEnd);
 				this.m_locationChallengeCount = Math.min((this.m_locationChallengeCount + 1), this.m_locationChallengeCountEnd);
 				Animate.delay(this.m_view.rewardDetailsMc.xpMc, 0.3, this.updateChallengeCountText, null);
 			}
-			;
+
 			this.playSound("ShowChallenge");
 			Animate.delay(this.m_view, this.TILE_ANIMATION_DELAY, this.animateChallengeTiles, (currentTileNum + 1));
 		} else {
@@ -499,7 +499,7 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 				Animate.delay(m_view, 0.2, animateActionRewardTiles, 0);
 			});
 		}
-		;
+
 	}
 
 	public function animateActionRewardTiles(currentTileNum:int):void {
@@ -510,7 +510,7 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 			this.m_profileMasteryBar.showXPLeft();
 			return;
 		}
-		;
+
 		this.m_actionRewardTilesContainer.visible = true;
 		this.m_view.typeMc.visible = true;
 		MenuUtils.setupText(this.m_view.typeMc.label_txt, Localization.get("UI_MENU_ACTIONREWARD_CATEGORY_TITLE"), 45, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyDark);
@@ -520,7 +520,7 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 			if (currentActionRewardTile.XPGain) {
 				Animate.delay(this.m_view.rewardDetailsMc.xpMc, 0.3, this.updateXP, currentActionRewardTile.XPGain);
 			}
-			;
+
 			this.playSound("ShowChallenge");
 			Animate.delay(this.m_view, this.TILE_ANIMATION_DELAY, this.animateActionRewardTiles, (currentTileNum + 1));
 		} else {
@@ -539,10 +539,10 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 					_local_1 = 0.2;
 					Animate.delay(m_view, _local_1, animateDropTiles, 0);
 				}
-				;
+
 			});
 		}
-		;
+
 	}
 
 	public function animateDropTiles(_arg_1:int):void {
@@ -551,7 +551,7 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 			this.m_animationComplete = true;
 			return;
 		}
-		;
+
 		this.m_dropTilesContainer.visible = true;
 		this.m_view.rewardDetailsMc.visible = true;
 		this.m_view.rewardDetailsMc.alpha = 1;
@@ -567,7 +567,7 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 			Animate.kill(this.m_view);
 			this.m_animationComplete = true;
 		}
-		;
+
 	}
 
 	private function loadImageFromQue():void {
@@ -576,7 +576,7 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 			_local_1 = this.m_loadImageQue.shift();
 			_local_1.view.loadImage(_local_1.path, this.loadImageFromQue, this.loadImageFromQue);
 		}
-		;
+
 	}
 
 	public function playSound(_arg_1:String):void {
@@ -595,17 +595,17 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 				this.m_locationMasteryBar.onUnregister();
 				this.m_locationMasteryBar = null;
 			}
-			;
+
 			if (this.m_profileMasteryBar != null) {
 				this.m_profileMasteryBar.onUnregister();
 				this.m_profileMasteryBar = null;
 			}
-			;
+
 			trace("MissionRewardPage, onUnregister, rewardDetails:", this.m_view.rewardDetailsMc);
 			if (this.m_view.rewardDetailsMc) {
 				Animate.kill(this.m_view.rewardDetailsMc);
 			}
-			;
+
 			trace("MissionRewardPage, onUnregister, opportunityTilesContainer:", this.m_opportunityTilesContainer);
 			trace("MissionRewardPage, onUnregister, opportunityTiles:", this.m_opportunityTiles);
 			this.clearTiles(this.m_opportunityTilesContainer, this.m_opportunityTiles);
@@ -629,7 +629,7 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 			removeChild(this.m_view);
 			this.m_view = null;
 		}
-		;
+
 	}
 
 	private function clearTiles(_arg_1:Sprite, _arg_2:Array):void {
@@ -643,13 +643,13 @@ public dynamic class MissionRewardPage extends MenuElementBase {
 					Animate.kill(_local_4.view);
 					_arg_1.removeChild(_local_4.view);
 				}
-				;
+
 				_local_3++;
 			}
-			;
+
 			this.m_view.removeChild(_arg_1);
 		}
-		;
+
 	}
 
 

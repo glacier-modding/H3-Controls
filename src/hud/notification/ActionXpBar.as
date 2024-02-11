@@ -33,22 +33,22 @@ public class ActionXpBar extends NotificationListener {
 		if (!ControlsMain.isVrModeActive()) {
 			this.m_VR_YOffsetFactor = 0;
 		}
-		;
+
 		this.m_container = new Sprite();
 		this.m_container.y = (this.m_elementYOffset * 20);
 		addChild(this.m_container);
 		this.m_container.x = -2;
-		this.m_yposArray = new Array();
+		this.m_yposArray = [];
 		var _local_1:uint = 3;
 		var _local_2:Vector.<ActionXpBarView> = new Vector.<ActionXpBarView>();
 		while (_local_2.length < _local_1) {
 			_local_2.push(this.acquireElement());
 		}
-		;
+
 		while (_local_2.length > 0) {
 			this.releaseElement(_local_2.pop());
 		}
-		;
+
 	}
 
 	override public function ShowNotification(_arg_1:String, _arg_2:String, _arg_3:Object):void {
@@ -96,7 +96,7 @@ public class ActionXpBar extends NotificationListener {
 			default:
 				_local_9 = "common";
 		}
-		;
+
 		var _local_10:int = (this.m_yposArray[(this.m_yposArray.length - 1)] + this.m_elementYOffset);
 		this.m_yposArray.push((_local_10 + ((_arg_3.additionaldescription != null) ? 26 : 0)));
 		_local_4.y = (_local_10 - (this.m_elementYOffset * (20 + this.m_VR_YOffsetFactor)));
@@ -119,7 +119,7 @@ public class ActionXpBar extends NotificationListener {
 		if (this.m_yposArray.length >= 2) {
 			Animate.offset(this.m_container, 0.2, 0, {"y": -(this.m_elementYOffset)}, Animate.ExpoOut);
 		}
-		;
+
 	}
 
 	private function endAnimation(actionXpElementData:Object):void {
@@ -138,7 +138,7 @@ public class ActionXpBar extends NotificationListener {
 				actionXpElementData.element.value.text = ((String(actionXpElementData.xpgain) + " ") + m_strPerformanceMasteryXP);
 			});
 		}
-		;
+
 		var scaleFactorX:Number = (actionXpElementData.element.bg.scaleX + 0.6);
 		var bgAlpha:Number = 0;
 		if (actionXpElementData.awesomeness == "common") {
@@ -165,17 +165,17 @@ public class ActionXpBar extends NotificationListener {
 								this.playSound("ScoreFail");
 								MenuUtils.setTintColor(actionXpElementData.element.bg, MenuUtils.TINT_COLOR_MAGENTA_DARK, false);
 							}
-							;
+
 						}
-						;
+
 					}
-					;
+
 				}
-				;
+
 			}
-			;
+
 		}
-		;
+
 		if (!actionXpElementData.isRepeated) {
 			actionXpElementData.element.bg.alpha = bgAlpha;
 			Animate.to(actionXpElementData.element.bg, 0.8, 0, {
@@ -183,7 +183,7 @@ public class ActionXpBar extends NotificationListener {
 				"alpha": 0
 			}, Animate.ExpoOut);
 		}
-		;
+
 		Animate.offset(actionXpElementData.element, 0.4, (0.8 + (actionXpElementData.elementindex * 0.1)), {"y": (actionXpElementData.elementindex * (this.m_elementYOffset * -4))}, Animate.ExpoIn, this.finishAnimation, actionXpElementData.element);
 	}
 
@@ -193,7 +193,7 @@ public class ActionXpBar extends NotificationListener {
 		if (this.m_yposArray.length == 0) {
 			this.m_container.y = (this.m_elementYOffset * 20);
 		}
-		;
+
 		this.releaseElement(_arg_1);
 	}
 
@@ -201,7 +201,7 @@ public class ActionXpBar extends NotificationListener {
 		if (!this.m_soundEnabled) {
 			return;
 		}
-		;
+
 		ExternalInterface.call("PlaySound", _arg_1);
 	}
 
@@ -225,7 +225,7 @@ public class ActionXpBar extends NotificationListener {
 			this.ShowNotification("Wuss", "MMMMMMMM MMMMMMMM", ((_local_4) ? _local_1 : _local_2));
 			_local_3++;
 		}
-		;
+
 	}
 
 	private function acquireElement():ActionXpBarView {
@@ -242,7 +242,7 @@ public class ActionXpBar extends NotificationListener {
 			MenuUtils.setupText(_local_1.value, "", 18, MenuConstants.FONT_TYPE_MEDIUM);
 			this.m_container.addChild(_local_1);
 		}
-		;
+
 		return (_local_1);
 	}
 

@@ -28,7 +28,7 @@ public class ObjectUtils {
 		for (_local_3 in _arg_1) {
 			_local_2[_local_3] = _arg_1[_local_3];
 		}
-		;
+
 		return (_local_2);
 	}
 
@@ -42,7 +42,7 @@ public class ObjectUtils {
 			trace(("[ERROR] ObjectUtil.compare() - " + e.message));
 			return (false);
 		}
-		;
+
 		return (value1 === value2);
 	}
 

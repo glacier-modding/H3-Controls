@@ -145,9 +145,9 @@ public class FaceTheCameraVR extends BaseControl {
 				this.m_widgetContainer.removeChild(this.m_cameraWidget);
 				this.m_cameraWidget = null;
 			}
-			;
+
 		}
-		;
+
 		this.updateCameraWidget();
 	}
 
@@ -171,9 +171,9 @@ public class FaceTheCameraVR extends BaseControl {
 				this.removeChild(this.m_textWidget);
 				this.m_textWidget = null;
 			}
-			;
+
 		}
-		;
+
 		this.updateTextWidget();
 	}
 
@@ -189,12 +189,12 @@ public class FaceTheCameraVR extends BaseControl {
 					this.m_widgetContainer.removeChild(this.m_arrowStripWidget[_local_2]);
 					_local_2++;
 				}
-				;
+
 				this.m_arrowStripWidget = null;
 			}
-			;
+
 		}
-		;
+
 		this.updateArrowStripWidget();
 	}
 
@@ -208,9 +208,9 @@ public class FaceTheCameraVR extends BaseControl {
 			if (((!(_arg_1)) && (_local_2))) {
 				removeChild(_local_2);
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function moveRearPlaneToZPosition(_arg_1:Number):void {
@@ -226,7 +226,7 @@ public class FaceTheCameraVR extends BaseControl {
 		if (this.m_textWidget) {
 			Animate.to(this.m_textWidget, this.m_rearPlane_MoveAnimDuration, 0, {"z": _arg_1}, Animate.SineOut);
 		}
-		;
+
 		if (this.m_arrowStripWidget) {
 			_local_2 = 0;
 			while (_local_2 < this.m_arrowStripWidget.length) {
@@ -241,16 +241,16 @@ public class FaceTheCameraVR extends BaseControl {
 				if (_local_3) {
 					_local_9 = (_local_9 * -1);
 				}
-				;
+
 				Animate.to(this.m_arrowStripWidget[_local_2], this.m_rearPlane_MoveAnimDuration, 0, {
 					"x": _local_9,
 					"z": _arg_1
 				}, Animate.SineOut);
 				_local_2++;
 			}
-			;
+
 		}
-		;
+
 	}
 
 	public function fadeIn():void {
@@ -267,7 +267,7 @@ public class FaceTheCameraVR extends BaseControl {
 		if (!this.m_cameraWidget) {
 			return;
 		}
-		;
+
 		var _local_1:Number = (W2P * 0.2);
 		var _local_2:Number = (W2P * 0.04);
 		var _local_3:Number = (W2P * 0.01);
@@ -299,23 +299,23 @@ public class FaceTheCameraVR extends BaseControl {
 		if (!this.m_arrowStripWidget) {
 			return;
 		}
-		;
+
 		if (this.m_arrowStripWidget_NumArrows < 0) {
 			this.m_arrowStripWidget_NumArrows = 0;
 		}
-		;
+
 		while (this.m_arrowStripWidget.length < (2 * this.m_arrowStripWidget_NumArrows)) {
 			_local_1 = new Shape();
 			this.m_arrowStripWidget.push(_local_1);
 			this.m_widgetContainer.addChild(_local_1);
 		}
-		;
+
 		while (this.m_arrowStripWidget.length > (2 * this.m_arrowStripWidget_NumArrows)) {
 			_local_1 = this.m_arrowStripWidget.pop();
 			Animate.kill(_local_1);
 			this.m_widgetContainer.removeChild(_local_1);
 		}
-		;
+
 		var _local_2:int;
 		while (_local_2 < this.m_arrowStripWidget.length) {
 			_local_1 = this.m_arrowStripWidget[_local_2];
@@ -338,17 +338,17 @@ public class FaceTheCameraVR extends BaseControl {
 				_local_1.x = (_local_1.x * -1);
 				_local_1.rotationY = (180 - _local_1.rotationY);
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 	}
 
 	private function updateTextWidget():void {
 		if (!this.m_textWidget) {
 			return;
 		}
-		;
+
 		this.m_textWidget.width = this.m_textWidget_Width;
 		this.m_textWidget.scaleY = this.m_textWidget.scaleX;
 	}

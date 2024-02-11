@@ -61,19 +61,19 @@ public class CampaignActivatorPage extends BaseControl {
 		if (this.m_view.labelLeader_txt != null) {
 			this.m_view.labelLeader_txt.text = this.m_lstrLeader.toUpperCase();
 		}
-		;
+
 		if (this.m_view.labelTargets_txt != null) {
 			this.m_view.labelTargets_txt.text = this.m_lstrTargets.toUpperCase();
 		}
-		;
+
 		if (this.m_view.labelCampProgress_txt != null) {
 			this.m_view.labelCampProgress_txt.text = this.m_lstrCampProgress.toUpperCase();
 		}
-		;
+
 		if (this.m_view.iconHolder_mc != null) {
 			this.m_view.iconHolder_mc.addChild(this.m_iconLoader);
 		}
-		;
+
 		var _local_2:int;
 		while (true) {
 			_local_3 = this.m_view[(("flavour" + _local_2) + "_mc")];
@@ -85,10 +85,10 @@ public class CampaignActivatorPage extends BaseControl {
 			} else {
 				_local_3.iconHolder_mc.removeChildren();
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 		_arg_1 = 0;
 		while (true) {
 			_local_5 = this.m_view[(("territory" + _arg_1) + "_mc")];
@@ -101,25 +101,25 @@ public class CampaignActivatorPage extends BaseControl {
 			} else {
 				_local_5.iconHolder_mc.removeChildren();
 			}
-			;
+
 			_arg_1++;
 		}
-		;
+
 	}
 
 	public function onSetData(_arg_1:Object):void {
 		if (this.m_view.currentFrame == Page_OuterCover) {
 			this.applyData_OuterCover(_arg_1);
 		}
-		;
+
 		if (this.m_view.currentFrame == Page_InnerLeft) {
 			this.applyData_InnerLeft(_arg_1);
 		}
-		;
+
 		if (this.m_view.currentFrame == Page_InnerRight) {
 			this.applyData_InnerRight(_arg_1);
 		}
-		;
+
 	}
 
 	private function applyData_OuterCover(data:Object):void {
@@ -165,7 +165,7 @@ public class CampaignActivatorPage extends BaseControl {
 		for each (territory in data.territories) {
 			isCampaignAvailable = ((isCampaignAvailable) && (territory.isEntitlementAvailable));
 		}
-		;
+
 		if (isCampaignAvailable) {
 			this.m_view.notAvailable_mc.visible = false;
 		} else {
@@ -180,7 +180,7 @@ public class CampaignActivatorPage extends BaseControl {
 			g.beginFill(0xDDDDDD, 1);
 			g.drawRect((-(dxMaxTextWidth) / 2), notAvailable_txt.y, dxMaxTextWidth, ((getAccess_txt.y + getAccess_txt.height) - notAvailable_txt.y));
 		}
-		;
+
 	}
 
 	private function applyData_InnerLeft(_arg_1:Object):void {
@@ -207,10 +207,10 @@ public class CampaignActivatorPage extends BaseControl {
 			} else {
 				_local_3.visible = false;
 			}
-			;
+
 			_local_2++;
 		}
-		;
+
 	}
 
 	private function applyData_InnerRight(data:Object):void {
@@ -232,7 +232,7 @@ public class CampaignActivatorPage extends BaseControl {
 			mapDots_mc.getChildAt(i).visible = false;
 			i = (i + 1);
 		}
-		;
+
 		this.m_view.miniProgress_mc.gotoAndStop(data.nDifficultyRank);
 		data.territories.sortOn("lstrDestinationFullName");
 		i = 0;
@@ -250,12 +250,12 @@ public class CampaignActivatorPage extends BaseControl {
 				if (mapDot != null) {
 					mapDot.visible = true;
 				}
-				;
+
 			}
-			;
+
 			i = (i + 1);
 		}
-		;
+
 	}
 
 
