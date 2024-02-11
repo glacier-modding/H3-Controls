@@ -138,13 +138,6 @@ public dynamic class EvergreenVitalInfoIcons_view extends MovieClip {
 
 	}
 
-	internal function frame1():* {
-		this.back_mc = MovieClip(getChildByName("bg")).back_mc;
-		this.___applyLayerZdepthAndEffects___();
-		addEventListener(Event.ADDED, this.___onAdded___);
-		stop();
-	}
-
 
 }
 }//package 
