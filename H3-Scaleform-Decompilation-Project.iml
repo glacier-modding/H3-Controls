@@ -2,7 +2,7 @@
 <module type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="Basic">
     <configurations>
-      <configuration name="Basic" main-class="basic_Main" output-file="Basic.swf" output-folder="$MODULE_DIR$/bin" skip-build="true">
+      <configuration name="Basic" main-class="basic_Main" output-file="Basic.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="32.0">
           <entries>
             <entry library-name="flash" library-level="project">
@@ -40,7 +40,7 @@
         <packaging-android />
         <packaging-ios />
       </configuration>
-      <configuration name="ControlsMain" main-class="ControlsMain" output-file="ControlsMain.swf" output-folder="$MODULE_DIR$/bin" skip-build="true">
+      <configuration name="ControlsMain" main-class="ControlsMain" output-file="ControlsMain.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="32.0">
           <entries>
             <entry library-name="flash" library-level="project">
@@ -54,7 +54,7 @@
         <packaging-android />
         <packaging-ios />
       </configuration>
-      <configuration name="Hud" main-class="hud_Main" output-file="Hud.swf" output-folder="$MODULE_DIR$/bin" skip-build="true">
+      <configuration name="Hud" main-class="hud_Main" output-file="Hud.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="32.0">
           <entries>
             <entry library-name="flash" library-level="project">
@@ -71,7 +71,7 @@
         <packaging-android />
         <packaging-ios />
       </configuration>
-      <configuration name="Menu3" main-class="menu3_Main" output-file="Menu3.swf" output-folder="$MODULE_DIR$/bin" skip-build="true">
+      <configuration name="Menu3" main-class="menu3_Main" output-file="Menu3.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="32.0">
           <entries>
             <entry library-name="flash" library-level="project">
