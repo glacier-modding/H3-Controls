@@ -1,221 +1,218 @@
-package menu3.basic
-{
-	import basic.DottedLine;
-	import common.CommonUtils;
-	import common.Localization;
-	import common.menu.MenuConstants;
-	import common.menu.MenuUtils;
-	import flash.display.Sprite;
-	import menu3.MenuElementBase;
-	import mx.utils.StringUtil;
-	
-	public dynamic class HeadlineElement extends MenuElementBase
-	{
-		
-		private var m_view:HeadlineElementView;
-		
-		private var m_isPopupModeActive:Boolean = false;
-		
-		private var m_fontColor:String;
-		
-		private var m_dottedLineContainer:Sprite;
-		
-		private var m_textTickerUtil:TextTickerUtil;
-		
-		public function HeadlineElement(param1:Object)
-		{
-			this.m_textTickerUtil = new TextTickerUtil();
-			super(param1);
-			this.m_view = new HeadlineElementView();
-			MenuUtils.addDropShadowFilter(this.m_view.typeIcon);
-			MenuUtils.addDropShadowFilter(this.m_view.headerlarge);
-			MenuUtils.addDropShadowFilter(this.m_view.titlelarge);
-			MenuUtils.addDropShadowFilter(this.m_view.creatorname);
-			MenuUtils.addDropShadowFilter(this.m_view.header);
-			MenuUtils.addDropShadowFilter(this.m_view.title);
-			MenuUtils.addDropShadowFilter(this.m_view.titlemultiline);
-			this.m_view.typeIcon.visible = false;
-			addChild(this.m_view);
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
+
+//menu3.basic.HeadlineElement
+
+package menu3.basic {
+import menu3.MenuElementBase;
+
+import flash.display.Sprite;
+
+import common.menu.MenuUtils;
+
+import basic.DottedLine;
+
+import common.menu.MenuConstants;
+import common.Localization;
+import common.CommonUtils;
+
+import mx.utils.StringUtil;
+
+public dynamic class HeadlineElement extends MenuElementBase {
+
+	private var m_view:HeadlineElementView;
+	private var m_isPopupModeActive:Boolean = false;
+	private var m_fontColor:String;
+	private var m_dottedLineContainer:Sprite;
+	private var m_textTickerUtil:TextTickerUtil = new TextTickerUtil();
+
+	public function HeadlineElement(_arg_1:Object) {
+		super(_arg_1);
+		this.m_view = new HeadlineElementView();
+		MenuUtils.addDropShadowFilter(this.m_view.typeIcon);
+		MenuUtils.addDropShadowFilter(this.m_view.headerlarge);
+		MenuUtils.addDropShadowFilter(this.m_view.titlelarge);
+		MenuUtils.addDropShadowFilter(this.m_view.creatorname);
+		MenuUtils.addDropShadowFilter(this.m_view.header);
+		MenuUtils.addDropShadowFilter(this.m_view.title);
+		MenuUtils.addDropShadowFilter(this.m_view.titlemultiline);
+		this.m_view.typeIcon.visible = false;
+		addChild(this.m_view);
+	}
+
+	protected function getRootView():HeadlineElementView {
+		return (this.m_view);
+	}
+
+	override public function onSetData(_arg_1:Object):void {
+		var _local_5:DottedLine;
+		var _local_6:String;
+		this.m_isPopupModeActive = (!(_arg_1.popupMode === false));
+		this.m_fontColor = ((this.m_isPopupModeActive) ? MenuConstants.FontColorWhite : MenuConstants.FontColorGreyDark);
+		if (_arg_1.useDottedLine === true) {
+			this.m_dottedLineContainer = new Sprite();
+			this.m_dottedLineContainer.x = 0;
+			this.m_dottedLineContainer.y = -15;
+			_local_5 = new DottedLine((MenuConstants.GridUnitWidth * 10), MenuConstants.COLOR_WHITE, DottedLine.TYPE_HORIZONTAL, 1, 2);
+			this.m_dottedLineContainer.addChild(_local_5);
+			this.m_view.addChild(this.m_dottedLineContainer);
 		}
-		
-		protected function getRootView():HeadlineElementView
-		{
-			return this.m_view;
+		;
+		var _local_2:String = this.getHeaderString(_arg_1);
+		var _local_3:String = this.getTitleString(_arg_1);
+		if (_arg_1.largetitle) {
+			this.setupLargeTextField(_local_2, _local_3);
+		} else {
+			_local_6 = _arg_1.typeicon;
+			if (_local_6 == null) {
+				_local_6 = _arg_1.icon;
+			}
+			;
+			if (_local_6 != null) {
+				this.m_view.typeIcon.visible = true;
+				MenuUtils.setupIcon(this.m_view.typeIcon, _local_6, MenuConstants.COLOR_GREY_ULTRA_DARK, false, true, MenuConstants.COLOR_WHITE, 1, 0, true);
+			}
+			;
+			this.setupTextFields(_local_2, _local_3, _arg_1.multilinetitle);
 		}
-		
-		override public function onSetData(param1:Object):void
-		{
-			var _loc5_:DottedLine = null;
-			var _loc6_:String = null;
-			this.m_isPopupModeActive = param1.popupMode !== false;
-			this.m_fontColor = this.m_isPopupModeActive ? MenuConstants.FontColorWhite : MenuConstants.FontColorGreyDark;
-			if (param1.useDottedLine === true)
-			{
-				this.m_dottedLineContainer = new Sprite();
-				this.m_dottedLineContainer.x = 0;
-				this.m_dottedLineContainer.y = -15;
-				_loc5_ = new DottedLine(MenuConstants.GridUnitWidth * 10, MenuConstants.COLOR_WHITE, DottedLine.TYPE_HORIZONTAL, 1, 2);
-				this.m_dottedLineContainer.addChild(_loc5_);
-				this.m_view.addChild(this.m_dottedLineContainer);
-			}
-			var _loc2_:String = this.getHeaderString(param1);
-			var _loc3_:String = this.getTitleString(param1);
-			if (param1.largetitle)
-			{
-				this.setupLargeTextField(_loc2_, _loc3_);
-			}
-			else
-			{
-				if ((_loc6_ = String(param1.typeicon)) == null)
-				{
-					_loc6_ = String(param1.icon);
-				}
-				if (_loc6_ != null)
-				{
-					this.m_view.typeIcon.visible = true;
-					MenuUtils.setupIcon(this.m_view.typeIcon, _loc6_, MenuConstants.COLOR_GREY_ULTRA_DARK, false, true, MenuConstants.COLOR_WHITE, 1, 0, true);
-				}
-				this.setupTextFields(_loc2_, _loc3_, param1.multilinetitle);
-			}
-			var _loc4_:String = "";
-			if (param1.creatorname)
-			{
-				_loc4_ = String(param1.creatorname);
-			}
-			if (param1.publicid)
-			{
-				_loc4_ += " " + Localization.get("UI_DIALOG_SLASH") + " " + param1.publicid;
-			}
-			if (_loc4_ != "")
-			{
-				MenuUtils.setupText(this.m_view.creatorname, Localization.get("UI_AUTHOR_BY") + " " + _loc4_, 24, MenuConstants.FONT_TYPE_MEDIUM, this.m_fontColor);
-				MenuUtils.truncateTextfield(this.m_view.creatorname, 1, MenuConstants.FontColorGreyDark);
-				CommonUtils.changeFontToGlobalIfNeeded(this.m_view.creatorname);
-			}
+		;
+		var _local_4:* = "";
+		if (_arg_1.creatorname) {
+			_local_4 = _arg_1.creatorname;
 		}
-		
-		private function getHeaderString(param1:Object):String
-		{
-			var _loc4_:String = null;
-			var _loc5_:int = 0;
-			var _loc6_:int = 0;
-			var _loc7_:String = null;
-			var _loc2_:* = "";
-			var _loc3_:Array = param1.header as Array;
-			if (_loc3_ != null && _loc3_.length > 0)
-			{
-				_loc4_ = Localization.get("UI_TEXT_PERIOD");
-				_loc5_ = int(_loc3_.length);
-				_loc6_ = 0;
-				while (_loc6_ < _loc5_)
-				{
-					if ((_loc7_ = _loc3_[_loc6_] as String) != null)
-					{
-						if ((_loc7_ = StringUtil.trim(_loc7_)).length != 0)
-						{
-							if (_loc4_.length > 0)
-							{
-								if (_loc7_.charAt(_loc7_.length - 1) != _loc4_.charAt(0))
-								{
-									_loc7_ += _loc4_;
-								}
+		;
+		if (_arg_1.publicid) {
+			_local_4 = (_local_4 + (((" " + Localization.get("UI_DIALOG_SLASH")) + " ") + _arg_1.publicid));
+		}
+		;
+		if (_local_4 != "") {
+			MenuUtils.setupText(this.m_view.creatorname, ((Localization.get("UI_AUTHOR_BY") + " ") + _local_4), 24, MenuConstants.FONT_TYPE_MEDIUM, this.m_fontColor);
+			MenuUtils.truncateTextfield(this.m_view.creatorname, 1, MenuConstants.FontColorGreyDark);
+			CommonUtils.changeFontToGlobalIfNeeded(this.m_view.creatorname);
+		}
+		;
+	}
+
+	private function getHeaderString(_arg_1:Object):String {
+		var _local_4:String;
+		var _local_5:int;
+		var _local_6:int;
+		var _local_7:String;
+		var _local_2:* = "";
+		var _local_3:Array = (_arg_1.header as Array);
+		if (((!(_local_3 == null)) && (_local_3.length > 0))) {
+			_local_4 = Localization.get("UI_TEXT_PERIOD");
+			_local_5 = _local_3.length;
+			_local_6 = 0;
+			while (_local_6 < _local_5) {
+				_local_7 = (_local_3[_local_6] as String);
+				if (_local_7 != null) {
+					_local_7 = StringUtil.trim(_local_7);
+					if (_local_7.length != 0) {
+						if (_local_4.length > 0) {
+							if (_local_7.charAt((_local_7.length - 1)) != _local_4.charAt(0)) {
+								_local_7 = (_local_7 + _local_4);
 							}
-							if (_loc2_.length > 0)
-							{
-								_loc2_ += " ";
-							}
-							_loc2_ += _loc7_;
+							;
 						}
+						;
+						if (_local_2.length > 0) {
+							_local_2 = (_local_2 + " ");
+						}
+						;
+						_local_2 = (_local_2 + _local_7);
 					}
-					_loc6_++;
+					;
 				}
+				;
+				_local_6++;
 			}
-			if (_loc2_.length == 0)
-			{
-				_loc2_ = String(param1.header);
-			}
-			return _loc2_;
+			;
 		}
-		
-		private function getTitleString(param1:Object):String
-		{
-			if (param1.title != undefined)
-			{
-				return param1.title;
-			}
-			if (param1.player != undefined)
-			{
-				if (param1.player2 != undefined)
-				{
-					return param1.player + MenuConstants.PLAYER_MULTIPLAYER_DELIMITER + param1.player2;
-				}
-				return param1.player;
-			}
-			return "";
+		;
+		if (_local_2.length == 0) {
+			_local_2 = _arg_1.header;
 		}
-		
-		private function setupLargeTextField(param1:String = "", param2:String = ""):void
-		{
-			this.m_view.creatorname.x = -2;
-			this.m_view.headerlarge.visible = true;
-			this.m_view.titlelarge.visible = true;
-			MenuUtils.setupTextUpper(this.m_view.headerlarge, param1, 24, MenuConstants.FONT_TYPE_MEDIUM, this.m_fontColor);
-			MenuUtils.setupTextUpper(this.m_view.titlelarge, param2, 54, MenuConstants.FONT_TYPE_BOLD, this.m_fontColor);
-			this.m_textTickerUtil.addTextTickerHtml(this.m_view.headerlarge);
-			this.m_textTickerUtil.addTextTickerHtml(this.m_view.titlelarge);
-			MenuUtils.truncateTextfield(this.m_view.headerlarge, 1, null, CommonUtils.changeFontToGlobalIfNeeded(this.m_view.headerlarge));
-			MenuUtils.truncateTextfield(this.m_view.titlelarge, 1, null, CommonUtils.changeFontToGlobalIfNeeded(this.m_view.titlelarge));
+		;
+		return (_local_2);
+	}
+
+	private function getTitleString(_arg_1:Object):String {
+		if (_arg_1.title != undefined) {
+			return (_arg_1.title);
+		}
+		;
+		if (_arg_1.player != undefined) {
+			if (_arg_1.player2 != undefined) {
+				return ((_arg_1.player + MenuConstants.PLAYER_MULTIPLAYER_DELIMITER) + _arg_1.player2);
+			}
+			;
+			return (_arg_1.player);
+		}
+		;
+		return ("");
+	}
+
+	private function setupLargeTextField(_arg_1:String = "", _arg_2:String = ""):void {
+		this.m_view.creatorname.x = -2;
+		this.m_view.headerlarge.visible = true;
+		this.m_view.titlelarge.visible = true;
+		MenuUtils.setupTextUpper(this.m_view.headerlarge, _arg_1, 24, MenuConstants.FONT_TYPE_MEDIUM, this.m_fontColor);
+		MenuUtils.setupTextUpper(this.m_view.titlelarge, _arg_2, 54, MenuConstants.FONT_TYPE_BOLD, this.m_fontColor);
+		this.m_textTickerUtil.addTextTickerHtml(this.m_view.headerlarge);
+		this.m_textTickerUtil.addTextTickerHtml(this.m_view.titlelarge);
+		MenuUtils.truncateTextfield(this.m_view.headerlarge, 1, null, CommonUtils.changeFontToGlobalIfNeeded(this.m_view.headerlarge));
+		MenuUtils.truncateTextfield(this.m_view.titlelarge, 1, null, CommonUtils.changeFontToGlobalIfNeeded(this.m_view.titlelarge));
+		this.m_textTickerUtil.callTextTicker(true);
+	}
+
+	private function setupTextFields(_arg_1:String, _arg_2:String, _arg_3:Boolean):void {
+		this.m_view.creatorname.x = 92;
+		if (_arg_1 == null) {
+			_arg_1 = "";
+		}
+		;
+		if (_arg_2 == null) {
+			_arg_2 = "";
+		}
+		;
+		if (_arg_3) {
+			this.m_view.titlemultiline.visible = true;
+			this.m_view.header.visible = false;
+			this.m_view.title.visible = false;
+			MenuUtils.setupTextUpper(this.m_view.titlemultiline, _arg_2, 36, MenuConstants.FONT_TYPE_MEDIUM, this.m_fontColor);
+			CommonUtils.changeFontToGlobalIfNeeded(this.m_view.titlemultiline);
+			this.m_view.header.visible = (this.m_view.titlemultiline.numLines == 1);
+			MenuUtils.truncateHTMLField(this.m_view.titlemultiline, this.m_view.titlemultiline.htmlText);
+		} else {
+			this.m_view.titlemultiline.visible = false;
+			this.m_view.header.visible = true;
+			this.m_view.title.visible = true;
+			MenuUtils.setupTextUpper(this.m_view.header, _arg_1, 24, MenuConstants.FONT_TYPE_MEDIUM, this.m_fontColor);
+			MenuUtils.setupTextUpper(this.m_view.title, _arg_2, 54, MenuConstants.FONT_TYPE_BOLD, this.m_fontColor);
+			CommonUtils.changeFontToGlobalIfNeeded(this.m_view.header);
+			CommonUtils.changeFontToGlobalIfNeeded(this.m_view.title);
+			this.m_textTickerUtil.addTextTickerHtml(this.m_view.header);
+			this.m_textTickerUtil.addTextTickerHtml(this.m_view.title);
+			MenuUtils.truncateTextfield(this.m_view.header, 1, null);
+			MenuUtils.truncateTextfield(this.m_view.title, 1, null);
 			this.m_textTickerUtil.callTextTicker(true);
 		}
-		
-		private function setupTextFields(param1:String, param2:String, param3:Boolean):void
-		{
-			this.m_view.creatorname.x = 92;
-			if (param1 == null)
-			{
-				param1 = "";
-			}
-			if (param2 == null)
-			{
-				param2 = "";
-			}
-			if (param3)
-			{
-				this.m_view.titlemultiline.visible = true;
-				this.m_view.header.visible = false;
-				this.m_view.title.visible = false;
-				MenuUtils.setupTextUpper(this.m_view.titlemultiline, param2, 36, MenuConstants.FONT_TYPE_MEDIUM, this.m_fontColor);
-				CommonUtils.changeFontToGlobalIfNeeded(this.m_view.titlemultiline);
-				this.m_view.header.visible = this.m_view.titlemultiline.numLines == 1;
-				MenuUtils.truncateHTMLField(this.m_view.titlemultiline, this.m_view.titlemultiline.htmlText);
-			}
-			else
-			{
-				this.m_view.titlemultiline.visible = false;
-				this.m_view.header.visible = true;
-				this.m_view.title.visible = true;
-				MenuUtils.setupTextUpper(this.m_view.header, param1, 24, MenuConstants.FONT_TYPE_MEDIUM, this.m_fontColor);
-				MenuUtils.setupTextUpper(this.m_view.title, param2, 54, MenuConstants.FONT_TYPE_BOLD, this.m_fontColor);
-				CommonUtils.changeFontToGlobalIfNeeded(this.m_view.header);
-				CommonUtils.changeFontToGlobalIfNeeded(this.m_view.title);
-				this.m_textTickerUtil.addTextTickerHtml(this.m_view.header);
-				this.m_textTickerUtil.addTextTickerHtml(this.m_view.title);
-				MenuUtils.truncateTextfield(this.m_view.header, 1, null);
-				MenuUtils.truncateTextfield(this.m_view.title, 1, null);
-				this.m_textTickerUtil.callTextTicker(true);
-			}
-		}
-		
-		override public function onUnregister():void
-		{
-			if (this.m_view == null)
-			{
-				return;
-			}
-			this.m_textTickerUtil.onUnregister();
-			this.m_textTickerUtil = null;
-			removeChild(this.m_view);
-			this.m_view = null;
-		}
+		;
 	}
+
+	override public function onUnregister():void {
+		if (this.m_view == null) {
+			return;
+		}
+		;
+		this.m_textTickerUtil.onUnregister();
+		this.m_textTickerUtil = null;
+		removeChild(this.m_view);
+		this.m_view = null;
+	}
+
+
 }
+}//package menu3.basic
+

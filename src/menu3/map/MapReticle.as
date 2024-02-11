@@ -1,150 +1,141 @@
-package menu3.map
-{
-   import common.BaseControl;
-   import common.menu.MenuUtils;
-   import flash.display.Sprite;
-   import flash.geom.Point;
-   import flash.geom.Rectangle;
-   
-   public class MapReticle extends BaseControl
-   {
-       
-      
-      private var m_view:MapReticleView;
-      
-      private var m_found:Boolean;
-      
-      public function MapReticle()
-      {
-         super();
-         this.m_view = new MapReticleView();
-         MenuUtils.addDropShadowFilter(this.m_view.reticle);
-         MenuUtils.addDropShadowFilter(this.m_view.finder);
-         addChild(this.m_view);
-      }
-      
-      public function scaledHitTest(param1:Object) : int
-      {
-         var _loc14_:Sprite = null;
-         var _loc15_:Rectangle = null;
-         var _loc16_:Number = NaN;
-         var _loc17_:Number = NaN;
-         var _loc2_:Sprite = this.m_view.reticle as Sprite;
-         var _loc3_:Number = param1.hitTestSize as Number;
-         var _loc4_:Boolean = param1.isUsingMouse as Boolean;
-         var _loc5_:Boolean = Boolean(param1.isMapHandlingInput);
-         var _loc6_:Rectangle = _loc2_.getBounds(this);
-         var _loc7_:Point = new Point();
-         if(!_loc4_)
-         {
-            _loc7_.x = _loc6_.x + _loc6_.width / 2;
-            _loc7_.y = _loc6_.y + _loc6_.height / 2;
-         }
-         else
-         {
-            _loc7_.x = _loc6_.x + _loc6_.width / 2 + _loc2_.mouseX;
-            _loc7_.y = _loc6_.y + _loc6_.height / 2 + _loc2_.mouseY;
-         }
-         var _loc8_:int = -1;
-         var _loc9_:Number = 1000000000;
-         var _loc10_:Number = 1000000000;
-         var _loc11_:Number = this.m_view.finder.x;
-         var _loc12_:Number = this.m_view.finder.y;
-         var _loc13_:int = 0;
-         while(_loc13_ < param1.subjects.length)
-         {
-            if(param1.subjects[_loc13_] != null)
-            {
-               if((_loc14_ = param1.subjects[_loc13_].getBoundsView() as Sprite) != null)
-               {
-                  _loc15_ = _loc14_.getBounds(this);
-                  if((_loc16_ = this.distancePointRect(_loc7_,_loc15_)) < _loc3_)
-                  {
-                     if((_loc17_ = this.distancePointRectCenter(_loc7_,_loc15_)) < _loc10_)
-                     {
-                        _loc9_ = _loc16_;
-                        _loc10_ = _loc17_;
-                        _loc8_ = _loc13_;
-                        _loc11_ = this.m_view.finder.x - (_loc15_.x + _loc15_.width / 2);
-                        _loc12_ = this.m_view.finder.y - (_loc15_.y + _loc15_.height / 2);
-                     }
-                  }
-               }
-            }
-            _loc13_++;
-         }
-         if(_loc8_ == -1)
-         {
-            if(this.m_found)
-            {
-               this.m_view.finder.gotoAndStop(1);
-               this.m_found = false;
-            }
-            if(_loc4_ && Boolean(param1.isMapHandlingInput))
-            {
-               this.m_view.finder.x += this.m_view.finder.mouseX;
-               this.m_view.finder.y += this.m_view.finder.mouseY;
-            }
-            else
-            {
-               this.m_view.finder.x -= this.m_view.finder.x / 5;
-               this.m_view.finder.y -= this.m_view.finder.y / 5;
-            }
-         }
-         else
-         {
-            if(!this.m_found)
-            {
-               this.m_view.finder.gotoAndPlay(2);
-               this.m_found = true;
-            }
-            if(_loc4_)
-            {
-               this.m_view.finder.x -= _loc11_;
-               this.m_view.finder.y -= _loc12_;
-            }
-            else
-            {
-               this.m_view.finder.x -= _loc11_ / 3;
-               this.m_view.finder.y -= _loc12_ / 3;
-            }
-         }
-         if(_loc4_)
-         {
-            this.m_view.finder.visible = this.m_found || !_loc5_;
-            this.m_view.reticle.visible = !_loc5_;
-         }
-         else
-         {
-            this.m_view.finder.visible = true;
-            this.m_view.reticle.visible = true;
-         }
-         return _loc8_;
-      }
-      
-      private function distancePointRectCenter(param1:Point, param2:Rectangle) : Number
-      {
-         var _loc3_:Point = new Point();
-         _loc3_.x = param2.x + param2.width / 2;
-         _loc3_.y = param2.y + param2.height / 2;
-         return this.distanceFromPointToRectCenter(param1,_loc3_);
-      }
-      
-      private function distanceFromPointToRectCenter(param1:Point, param2:Point) : Number
-      {
-         return Math.sqrt(Math.pow(param1.x - param2.x,2) + Math.pow(param1.y - param2.y,2));
-      }
-      
-      private function distancePointRect(param1:Point, param2:Rectangle) : Number
-      {
-         return this.distanceFromPointToRect(param1.x,param1.y,param2.x,param2.y,param2.width,param2.height);
-      }
-      
-      private function distanceFromPointToRect(param1:Number, param2:Number, param3:Number, param4:Number, param5:Number, param6:Number) : Number
-      {
-         var _loc7_:Number = Math.max(Math.min(param1,param3 + param5),param3);
-         var _loc8_:Number = Math.max(Math.min(param2,param4 + param6),param4);
-         return Math.sqrt((param1 - _loc7_) * (param1 - _loc7_) + (param2 - _loc8_) * (param2 - _loc8_));
-      }
-   }
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
+
+//menu3.map.MapReticle
+
+package menu3.map {
+import common.BaseControl;
+import common.menu.MenuUtils;
+
+import flash.display.Sprite;
+import flash.geom.Rectangle;
+import flash.geom.Point;
+
+public class MapReticle extends BaseControl {
+
+	private var m_view:MapReticleView;
+	private var m_found:Boolean;
+
+	public function MapReticle() {
+		this.m_view = new MapReticleView();
+		MenuUtils.addDropShadowFilter(this.m_view.reticle);
+		MenuUtils.addDropShadowFilter(this.m_view.finder);
+		addChild(this.m_view);
+	}
+
+	public function scaledHitTest(_arg_1:Object):int {
+		var _local_14:Sprite;
+		var _local_15:Rectangle;
+		var _local_16:Number;
+		var _local_17:Number;
+		var _local_2:Sprite = (this.m_view.reticle as Sprite);
+		var _local_3:Number = (_arg_1.hitTestSize as Number);
+		var _local_4:Boolean = (_arg_1.isUsingMouse as Boolean);
+		var _local_5:Boolean = _arg_1.isMapHandlingInput;
+		var _local_6:Rectangle = _local_2.getBounds(this);
+		var _local_7:Point = new Point();
+		if (!_local_4) {
+			_local_7.x = (_local_6.x + (_local_6.width / 2));
+			_local_7.y = (_local_6.y + (_local_6.height / 2));
+		} else {
+			_local_7.x = ((_local_6.x + (_local_6.width / 2)) + _local_2.mouseX);
+			_local_7.y = ((_local_6.y + (_local_6.height / 2)) + _local_2.mouseY);
+		}
+		;
+		var _local_8:int = -1;
+		var _local_9:Number = 0x3B9ACA00;
+		var _local_10:Number = 0x3B9ACA00;
+		var _local_11:Number = this.m_view.finder.x;
+		var _local_12:Number = this.m_view.finder.y;
+		var _local_13:int;
+		while (_local_13 < _arg_1.subjects.length) {
+			if (_arg_1.subjects[_local_13] != null) {
+				_local_14 = (_arg_1.subjects[_local_13].getBoundsView() as Sprite);
+				if (_local_14 != null) {
+					_local_15 = _local_14.getBounds(this);
+					_local_16 = this.distancePointRect(_local_7, _local_15);
+					if (_local_16 < _local_3) {
+						_local_17 = this.distancePointRectCenter(_local_7, _local_15);
+						if (_local_17 < _local_10) {
+							_local_9 = _local_16;
+							_local_10 = _local_17;
+							_local_8 = _local_13;
+							_local_11 = (this.m_view.finder.x - (_local_15.x + (_local_15.width / 2)));
+							_local_12 = (this.m_view.finder.y - (_local_15.y + (_local_15.height / 2)));
+						}
+						;
+					}
+					;
+				}
+				;
+			}
+			;
+			_local_13++;
+		}
+		;
+		if (_local_8 == -1) {
+			if (this.m_found) {
+				this.m_view.finder.gotoAndStop(1);
+				this.m_found = false;
+			}
+			;
+			if (((_local_4) && (_arg_1.isMapHandlingInput))) {
+				this.m_view.finder.x = (this.m_view.finder.x + this.m_view.finder.mouseX);
+				this.m_view.finder.y = (this.m_view.finder.y + this.m_view.finder.mouseY);
+			} else {
+				this.m_view.finder.x = (this.m_view.finder.x - (this.m_view.finder.x / 5));
+				this.m_view.finder.y = (this.m_view.finder.y - (this.m_view.finder.y / 5));
+			}
+			;
+		} else {
+			if (!this.m_found) {
+				this.m_view.finder.gotoAndPlay(2);
+				this.m_found = true;
+			}
+			;
+			if (_local_4) {
+				this.m_view.finder.x = (this.m_view.finder.x - _local_11);
+				this.m_view.finder.y = (this.m_view.finder.y - _local_12);
+			} else {
+				this.m_view.finder.x = (this.m_view.finder.x - (_local_11 / 3));
+				this.m_view.finder.y = (this.m_view.finder.y - (_local_12 / 3));
+			}
+			;
+		}
+		;
+		if (_local_4) {
+			this.m_view.finder.visible = ((this.m_found) || (!(_local_5)));
+			this.m_view.reticle.visible = (!(_local_5));
+		} else {
+			this.m_view.finder.visible = true;
+			this.m_view.reticle.visible = true;
+		}
+		;
+		return (_local_8);
+	}
+
+	private function distancePointRectCenter(_arg_1:Point, _arg_2:Rectangle):Number {
+		var _local_3:Point = new Point();
+		_local_3.x = (_arg_2.x + (_arg_2.width / 2));
+		_local_3.y = (_arg_2.y + (_arg_2.height / 2));
+		return (this.distanceFromPointToRectCenter(_arg_1, _local_3));
+	}
+
+	private function distanceFromPointToRectCenter(_arg_1:Point, _arg_2:Point):Number {
+		return (Math.sqrt((Math.pow((_arg_1.x - _arg_2.x), 2) + Math.pow((_arg_1.y - _arg_2.y), 2))));
+	}
+
+	private function distancePointRect(_arg_1:Point, _arg_2:Rectangle):Number {
+		return (this.distanceFromPointToRect(_arg_1.x, _arg_1.y, _arg_2.x, _arg_2.y, _arg_2.width, _arg_2.height));
+	}
+
+	private function distanceFromPointToRect(_arg_1:Number, _arg_2:Number, _arg_3:Number, _arg_4:Number, _arg_5:Number, _arg_6:Number):Number {
+		var _local_7:Number = Math.max(Math.min(_arg_1, (_arg_3 + _arg_5)), _arg_3);
+		var _local_8:Number = Math.max(Math.min(_arg_2, (_arg_4 + _arg_6)), _arg_4);
+		return (Math.sqrt((((_arg_1 - _local_7) * (_arg_1 - _local_7)) + ((_arg_2 - _local_8) * (_arg_2 - _local_8)))));
+	}
+
+
 }
+}//package menu3.map
+

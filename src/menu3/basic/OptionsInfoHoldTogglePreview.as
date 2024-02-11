@@ -1,233 +1,300 @@
-package menu3.basic
-{
-	import common.menu.MenuConstants;
-	import flash.display.Sprite;
-	import flash.filters.BitmapFilterQuality;
-	import flash.filters.DropShadowFilter;
-	import hud.InteractionIndicator;
-	
-	public dynamic class OptionsInfoHoldTogglePreview extends OptionsInfoSlideshowPreview
-	{
-		
-		private var m_buttonsContainer:Sprite;
-		
-		private var m_triggersPerIndicator:Vector.<Vector.<Trigger>>;
-		
-		public function OptionsInfoHoldTogglePreview(param1:Object)
-		{
-			this.m_buttonsContainer = new Sprite();
-			this.m_triggersPerIndicator = new Vector.<Vector.<Trigger>>(0);
-			super(param1);
-			this.m_buttonsContainer.name = "m_buttonsContainer";
-			this.m_buttonsContainer.x = 0;
-			this.m_buttonsContainer.y = 352;
-			getPreviewContentContainer().addChild(this.m_buttonsContainer);
-			if (!ControlsMain.isVrModeActive())
-			{
-				this.m_buttonsContainer.filters = [new DropShadowFilter(2, 90, 0, 1, 8, 8, 1, BitmapFilterQuality.HIGH, false, false, false)];
-			}
-			this.onSetData(param1);
-		}
-		
-		override public function onSetData(param1:Object):void
-		{
-			var _loc5_:InteractionIndicator = null;
-			super.onSetData(param1);
-			var _loc2_:Number = OptionsInfoPreview.PX_PREVIEW_BACKGROUND_WIDTH;
-			var _loc3_:int = int(param1.previewData.prompts.length);
-			this.m_triggersPerIndicator.length = _loc3_;
-			var _loc4_:int = 0;
-			while (_loc4_ < _loc3_)
-			{
-				if (this.m_buttonsContainer.numChildren > _loc4_)
-				{
-					_loc5_ = InteractionIndicator(this.m_buttonsContainer.getChildAt(_loc4_));
-				}
-				else
-				{
-					_loc5_ = new InteractionIndicator();
-					this.m_buttonsContainer.addChild(_loc5_);
-				}
-				_loc5_.onSetData({"m_eState": InteractionIndicator.STATE_AVAILABLE, "m_eTypeId": InteractionIndicator.TYPE_PRESS, "m_nIconId": param1.previewData.prompts[_loc4_].interactionData.m_nIconId, "m_sGlyph": param1.previewData.prompts[_loc4_].interactionData.m_sGlyph, "m_fProgress": 0, "m_sLabel": "", "m_sDescription": "", "m_nFontSize": MenuConstants.INTERACTIONPROMPTSIZE_SMALL});
-				this.m_triggersPerIndicator[_loc4_] = Trigger.parseArray(param1.previewData.prompts[_loc4_].triggers);
-				_loc5_.x = (_loc4_ + 1) * _loc2_ / (_loc3_ + 1);
-				_loc5_.y = 40;
-				_loc5_.scaleX = 1.25;
-				_loc5_.scaleY = 1.25;
-				_loc4_++;
-			}
-			while (this.m_buttonsContainer.numChildren > _loc3_)
-			{
-				this.m_buttonsContainer.removeChildAt(_loc3_);
-			}
-		}
-		
-		override protected function onPreviewSlideshowEnteredFrameLabel(param1:String):void
-		{
-			var _loc4_:Trigger = null;
-			super.onPreviewSlideshowEnteredFrameLabel(param1);
-			var _loc2_:int = int(this.m_triggersPerIndicator.length);
-			var _loc3_:int = 0;
-			while (_loc3_ < _loc2_)
-			{
-				for each (_loc4_ in this.m_triggersPerIndicator[_loc3_])
-				{
-					if (_loc4_.frameLabel == param1)
-					{
-						if (_loc4_.when == Trigger.When_OnEntered || _loc4_.when == Trigger.When_OnEnteredFwd && dirCurrent == Dir_Forward || _loc4_.when == Trigger.When_OnEnteredBwd && dirCurrent == Dir_Backward)
-						{
-							_loc4_.runOnIndicator(InteractionIndicator(this.m_buttonsContainer.getChildAt(_loc3_)));
-						}
-					}
-				}
-				_loc3_++;
-			}
-		}
-		
-		override protected function onPreviewSlideshowExitedFrameLabel(param1:String):void
-		{
-			var _loc4_:Trigger = null;
-			super.onPreviewSlideshowExitedFrameLabel(param1);
-			var _loc2_:int = int(this.m_triggersPerIndicator.length);
-			var _loc3_:int = 0;
-			while (_loc3_ < _loc2_)
-			{
-				for each (_loc4_ in this.m_triggersPerIndicator[_loc3_])
-				{
-					if (_loc4_.frameLabel == param1)
-					{
-						if (_loc4_.when == Trigger.When_OnExited || _loc4_.when == Trigger.When_OnExitedFwd && dirCurrent == Dir_Forward || _loc4_.when == Trigger.When_OnExitedBwd && dirCurrent == Dir_Backward)
-						{
-							_loc4_.runOnIndicator(InteractionIndicator(this.m_buttonsContainer.getChildAt(_loc3_)));
-						}
-					}
-				}
-				_loc3_++;
-			}
-		}
-	}
-}
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
 
-import common.Animate;
-import flash.display.DisplayObject;
-import flash.display.DisplayObjectContainer;
+//menu3.basic.OptionsInfoHoldTogglePreview
+
+package menu3.basic {
+import flash.display.Sprite;
+
+import __AS3__.vec.Vector;
+
+import flash.filters.DropShadowFilter;
+import flash.filters.BitmapFilterQuality;
+
 import hud.InteractionIndicator;
 
-class Trigger
-{
-	
-	public static const When_OnEntered:int = 0;
-	
-	public static const When_OnExited:int = 1;
-	
-	public static const When_OnEnteredFwd:int = 2;
-	
-	public static const When_OnEnteredBwd:int = 3;
-	
-	public static const When_OnExitedFwd:int = 4;
-	
-	public static const When_OnExitedBwd:int = 5;
-	
-	public static const What_AnimatePress:int = 0;
-	
-	public static const What_AnimateHoldOn:int = 1;
-	
-	public static const What_AnimateHoldOff:int = 2;
-	
-	public static const What_AnimateHoldOffSubtle:int = 3;
-	
-	public var frameLabel:String;
-	
-	public var when:int;
-	
-	public var what:int;
-	
-	public function Trigger()
-	{
-		super();
+import common.menu.MenuConstants;
+
+import __AS3__.vec.*;
+
+public dynamic class OptionsInfoHoldTogglePreview extends OptionsInfoSlideshowPreview {
+
+	private var m_buttonsContainer:Sprite = new Sprite();
+	private var m_triggersPerIndicator:Vector.<Vector.<Trigger>> = new Vector.<Vector.<Trigger>>(0);
+
+	public function OptionsInfoHoldTogglePreview(_arg_1:Object) {
+		super(_arg_1);
+		this.m_buttonsContainer.name = "m_buttonsContainer";
+		this.m_buttonsContainer.x = 0;
+		this.m_buttonsContainer.y = 352;
+		getPreviewContentContainer().addChild(this.m_buttonsContainer);
+		if (!ControlsMain.isVrModeActive()) {
+			this.m_buttonsContainer.filters = [new DropShadowFilter(2, 90, 0, 1, 8, 8, 1, BitmapFilterQuality.HIGH, false, false, false)];
+		}
+		;
+		this.onSetData(_arg_1);
 	}
-	
-	public static function parseArray(param1:Array):Vector.<Trigger>
-	{
-		var _loc3_:Object = null;
-		var _loc4_:Trigger = null;
-		var _loc2_:Vector.<Trigger> = new Vector.<Trigger>(0);
-		for each (_loc3_ in param1)
-		{
-			(_loc4_ = new Trigger()).frameLabel = _loc3_.frameLabel;
-			if (!_loc4_.frameLabel)
-			{
+
+	override public function onSetData(_arg_1:Object):void {
+		var _local_5:InteractionIndicator;
+		super.onSetData(_arg_1);
+		var _local_2:Number = OptionsInfoPreview.PX_PREVIEW_BACKGROUND_WIDTH;
+		var _local_3:int = _arg_1.previewData.prompts.length;
+		this.m_triggersPerIndicator.length = _local_3;
+		var _local_4:int;
+		while (_local_4 < _local_3) {
+			if (this.m_buttonsContainer.numChildren > _local_4) {
+				_local_5 = InteractionIndicator(this.m_buttonsContainer.getChildAt(_local_4));
+			} else {
+				_local_5 = new InteractionIndicator();
+				this.m_buttonsContainer.addChild(_local_5);
+			}
+			;
+			_local_5.onSetData({
+				"m_eState": InteractionIndicator.STATE_AVAILABLE,
+				"m_eTypeId": InteractionIndicator.TYPE_PRESS,
+				"m_nIconId": _arg_1.previewData.prompts[_local_4].interactionData.m_nIconId,
+				"m_sGlyph": _arg_1.previewData.prompts[_local_4].interactionData.m_sGlyph,
+				"m_fProgress": 0,
+				"m_sLabel": "",
+				"m_sDescription": "",
+				"m_nFontSize": MenuConstants.INTERACTIONPROMPTSIZE_SMALL
+			});
+			this.m_triggersPerIndicator[_local_4] = Trigger.parseArray(_arg_1.previewData.prompts[_local_4].triggers);
+			_local_5.x = (((_local_4 + 1) * _local_2) / (_local_3 + 1));
+			_local_5.y = 40;
+			_local_5.scaleX = 1.25;
+			_local_5.scaleY = 1.25;
+			_local_4++;
+		}
+		;
+		while (this.m_buttonsContainer.numChildren > _local_3) {
+			this.m_buttonsContainer.removeChildAt(_local_3);
+		}
+		;
+	}
+
+	override protected function onPreviewSlideshowEnteredFrameLabel(_arg_1:String):void {
+		var _local_4:Trigger;
+		super.onPreviewSlideshowEnteredFrameLabel(_arg_1);
+		var _local_2:int = this.m_triggersPerIndicator.length;
+		var _local_3:int;
+		while (_local_3 < _local_2) {
+			for each (_local_4 in this.m_triggersPerIndicator[_local_3]) {
+				if (_local_4.frameLabel == _arg_1) {
+					if ((((_local_4.when == Trigger.When_OnEntered) || ((_local_4.when == Trigger.When_OnEnteredFwd) && (dirCurrent == Dir_Forward))) || ((_local_4.when == Trigger.When_OnEnteredBwd) && (dirCurrent == Dir_Backward)))) {
+						_local_4.runOnIndicator(InteractionIndicator(this.m_buttonsContainer.getChildAt(_local_3)));
+					}
+					;
+				}
+				;
+			}
+			;
+			_local_3++;
+		}
+		;
+	}
+
+	override protected function onPreviewSlideshowExitedFrameLabel(_arg_1:String):void {
+		var _local_4:Trigger;
+		super.onPreviewSlideshowExitedFrameLabel(_arg_1);
+		var _local_2:int = this.m_triggersPerIndicator.length;
+		var _local_3:int;
+		while (_local_3 < _local_2) {
+			for each (_local_4 in this.m_triggersPerIndicator[_local_3]) {
+				if (_local_4.frameLabel == _arg_1) {
+					if ((((_local_4.when == Trigger.When_OnExited) || ((_local_4.when == Trigger.When_OnExitedFwd) && (dirCurrent == Dir_Forward))) || ((_local_4.when == Trigger.When_OnExitedBwd) && (dirCurrent == Dir_Backward)))) {
+						_local_4.runOnIndicator(InteractionIndicator(this.m_buttonsContainer.getChildAt(_local_3)));
+					}
+					;
+				}
+				;
+			}
+			;
+			_local_3++;
+		}
+		;
+	}
+
+
+}
+}//package menu3.basic
+
+import __AS3__.vec.Vector;
+
+import flash.display.DisplayObjectContainer;
+import flash.display.DisplayObject;
+
+import common.Animate;
+
+import hud.InteractionIndicator;
+
+import __AS3__.vec.*;
+
+class Trigger {
+
+	public static const When_OnEntered:int = 0;
+	public static const When_OnExited:int = 1;
+	public static const When_OnEnteredFwd:int = 2;
+	public static const When_OnEnteredBwd:int = 3;
+	public static const When_OnExitedFwd:int = 4;
+	public static const When_OnExitedBwd:int = 5;
+	public static const What_AnimatePress:int = 0;
+	public static const What_AnimateHoldOn:int = 1;
+	public static const What_AnimateHoldOff:int = 2;
+	public static const What_AnimateHoldOffSubtle:int = 3;
+
+	public var frameLabel:String;
+	public var when:int;
+	public var what:int;
+
+
+	public static function parseArray(_arg_1:Array):Vector.<Trigger> {
+		var _local_3:Object;
+		var _local_4:Trigger;
+		var _local_2:Vector.<Trigger> = new Vector.<Trigger>(0);
+		for each (_local_3 in _arg_1) {
+			_local_4 = new (Trigger)();
+			_local_4.frameLabel = _local_3.frameLabel;
+			if (!_local_4.frameLabel) {
 				trace("error: missing triggerData.frameLabel");
 			}
-			switch (_loc3_.when)
-			{
-			case "OnEntered": 
-				_loc4_.when = When_OnEntered;
-				break;
-			case "OnExited": 
-				_loc4_.when = When_OnExited;
-				break;
-			case "OnEnteredFwd": 
-				_loc4_.when = When_OnEnteredFwd;
-				break;
-			case "OnEnteredBwd": 
-				_loc4_.when = When_OnEnteredBwd;
-				break;
-			case "OnExitedFwd": 
-				_loc4_.when = When_OnExitedFwd;
-				break;
-			case "OnExitedBwd": 
-				_loc4_.when = When_OnExitedBwd;
-				break;
-			default: 
-				trace("error: unrecognized triggerData.when: " + _loc3_.when);
+			;
+			switch (_local_3.when) {
+				case "OnEntered":
+					_local_4.when = When_OnEntered;
+					break;
+				case "OnExited":
+					_local_4.when = When_OnExited;
+					break;
+				case "OnEnteredFwd":
+					_local_4.when = When_OnEnteredFwd;
+					break;
+				case "OnEnteredBwd":
+					_local_4.when = When_OnEnteredBwd;
+					break;
+				case "OnExitedFwd":
+					_local_4.when = When_OnExitedFwd;
+					break;
+				case "OnExitedBwd":
+					_local_4.when = When_OnExitedBwd;
+					break;
+				default:
+					trace(("error: unrecognized triggerData.when: " + _local_3.when));
 			}
-			switch (_loc3_.what)
-			{
-			case "AnimatePress": 
-				_loc4_.what = What_AnimatePress;
-				break;
-			case "AnimateHoldOn": 
-				_loc4_.what = What_AnimateHoldOn;
-				break;
-			case "AnimateHoldOff": 
-				_loc4_.what = What_AnimateHoldOff;
-				break;
-			case "AnimateHoldOffSubtle": 
-				_loc4_.what = What_AnimateHoldOffSubtle;
-				break;
-			default: 
-				trace("error: unrecognized triggerData.what: " + _loc3_.what);
-				break;
+			;
+			switch (_local_3.what) {
+				case "AnimatePress":
+					_local_4.what = What_AnimatePress;
+					break;
+				case "AnimateHoldOn":
+					_local_4.what = What_AnimateHoldOn;
+					break;
+				case "AnimateHoldOff":
+					_local_4.what = What_AnimateHoldOff;
+					break;
+				case "AnimateHoldOffSubtle":
+					_local_4.what = What_AnimateHoldOffSubtle;
+					break;
+				default:
+					trace(("error: unrecognized triggerData.what: " + _local_3.what));
 			}
-			_loc2_.push(_loc4_);
+			;
+			_local_2.push(_local_4);
 		}
-		return _loc2_;
+		;
+		return (_local_2);
 	}
-	
-	public function runOnIndicator(param1:InteractionIndicator):void
-	{
-		var _loc2_:InteractionIndicatorView = InteractionIndicatorView(param1.getContainer().getChildAt(0));
-		var _loc3_:DisplayObjectContainer = _loc2_.hold_mc;
-		var _loc4_:DisplayObject = _loc2_.promptHolder_mc.getChildAt(0);
-		_loc3_.visible = true;
-		_loc3_.getChildAt(0).alpha = 1;
-		switch (this.what)
-		{
-		case What_AnimatePress: 
-			_loc3_.alpha = 0;
-			Animate.fromTo(_loc3_, 0.5, 0.1, {"scaleX": 0.8, "scaleY": 0.8, "alpha": 1}, {"scaleX": 2.5, "scaleY": 2.5, "alpha": 0}, Animate.ExpoOut);
-			Animate.fromTo(_loc4_, 0.1, 0, {"scaleX": 1, "scaleY": 1}, {"scaleX": 0.8, "scaleY": 0.8}, Animate.Linear, Animate.to, _loc4_, 0.2, 0, {"scaleX": 1, "scaleY": 1}, Animate.SineOut);
-			break;
-		case What_AnimateHoldOn: 
-			_loc3_.alpha = 0;
-			Animate.fromTo(_loc3_, 0.2, 0, {"scaleX": 2, "scaleY": 2, "alpha": 0}, {"scaleX": 0.9, "scaleY": 0.9, "alpha": 1}, Animate.SineOut, Animate.fromTo, _loc3_, 3, 0, {"scaleX": 0.9, "scaleY": 0.9, "alpha": 0.85}, {"scaleX": 0.8, "scaleY": 0.8, "alpha": 0.85}, Animate.Linear);
-			Animate.fromTo(_loc4_, 0.1, 0, {"scaleX": 1, "scaleY": 1}, {"scaleX": 0.8, "scaleY": 0.8}, Animate.Linear);
-			break;
-		case What_AnimateHoldOff: 
-		case What_AnimateHoldOffSubtle: 
-			Animate.fromTo(_loc3_, 0.5, 0, this.what != What_AnimateHoldOffSubtle ? {"scaleX": 0.9, "scaleY": 0.9, "alpha": 1} : {"scaleX": 0.9, "scaleY": 0.9, "alpha": 0.85}, this.what != What_AnimateHoldOffSubtle ? {"scaleX": 2.5, "scaleY": 2.5, "alpha": 0} : {"scaleX": 1.5, "scaleY": 1.5, "alpha": 0}, Animate.ExpoOut);
-			Animate.fromTo(_loc4_, 0.1, 0, {"scaleX": 0.8, "scaleY": 0.8}, {"scaleX": 1, "scaleY": 1}, Animate.Linear);
+
+
+	public function runOnIndicator(_arg_1:InteractionIndicator):void {
+		var _local_2:InteractionIndicatorView = InteractionIndicatorView(_arg_1.getContainer().getChildAt(0));
+		var _local_3:DisplayObjectContainer = _local_2.hold_mc;
+		var _local_4:DisplayObject = _local_2.promptHolder_mc.getChildAt(0);
+		_local_3.visible = true;
+		_local_3.getChildAt(0).alpha = 1;
+		switch (this.what) {
+			case What_AnimatePress:
+				_local_3.alpha = 0;
+				Animate.fromTo(_local_3, 0.5, 0.1, {
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"alpha": 1
+				}, {
+					"scaleX": 2.5,
+					"scaleY": 2.5,
+					"alpha": 0
+				}, Animate.ExpoOut);
+				Animate.fromTo(_local_4, 0.1, 0, {
+					"scaleX": 1,
+					"scaleY": 1
+				}, {
+					"scaleX": 0.8,
+					"scaleY": 0.8
+				}, Animate.Linear, Animate.to, _local_4, 0.2, 0, {
+					"scaleX": 1,
+					"scaleY": 1
+				}, Animate.SineOut);
+				return;
+			case What_AnimateHoldOn:
+				_local_3.alpha = 0;
+				Animate.fromTo(_local_3, 0.2, 0, {
+					"scaleX": 2,
+					"scaleY": 2,
+					"alpha": 0
+				}, {
+					"scaleX": 0.9,
+					"scaleY": 0.9,
+					"alpha": 1
+				}, Animate.SineOut, Animate.fromTo, _local_3, 3, 0, {
+					"scaleX": 0.9,
+					"scaleY": 0.9,
+					"alpha": 0.85
+				}, {
+					"scaleX": 0.8,
+					"scaleY": 0.8,
+					"alpha": 0.85
+				}, Animate.Linear);
+				Animate.fromTo(_local_4, 0.1, 0, {
+					"scaleX": 1,
+					"scaleY": 1
+				}, {
+					"scaleX": 0.8,
+					"scaleY": 0.8
+				}, Animate.Linear);
+				return;
+			case What_AnimateHoldOff:
+			case What_AnimateHoldOffSubtle:
+				Animate.fromTo(_local_3, 0.5, 0, ((this.what != What_AnimateHoldOffSubtle) ? {
+					"scaleX": 0.9,
+					"scaleY": 0.9,
+					"alpha": 1
+				} : {
+					"scaleX": 0.9,
+					"scaleY": 0.9,
+					"alpha": 0.85
+				}), ((this.what != What_AnimateHoldOffSubtle) ? {
+					"scaleX": 2.5,
+					"scaleY": 2.5,
+					"alpha": 0
+				} : {
+					"scaleX": 1.5,
+					"scaleY": 1.5,
+					"alpha": 0
+				}), Animate.ExpoOut);
+				Animate.fromTo(_local_4, 0.1, 0, {
+					"scaleX": 0.8,
+					"scaleY": 0.8
+				}, {
+					"scaleX": 1,
+					"scaleY": 1
+				}, Animate.Linear);
+				return;
 		}
+		;
 	}
+
+
 }
+
+

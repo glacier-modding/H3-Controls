@@ -1,142 +1,133 @@
-package menu3.basic
-{
-   import common.menu.MenuUtils;
-   import common.menu.textTicker;
-   import flash.text.TextField;
-   
-   public class TextTickerUtil
-   {
-       
-      
-      private var m_textTickerConfigurations:Array;
-      
-      public function TextTickerUtil()
-      {
-         this.m_textTickerConfigurations = new Array();
-         super();
-      }
-      
-      public function addTextTicker(param1:TextField, param2:String, param3:String = null, param4:int = -1) : void
-      {
-         var _loc5_:textTicker = new textTicker();
-         this.m_textTickerConfigurations.push({
-            "indicatortextfield":param1,
-            "title":param2,
-            "textticker":_loc5_,
-            "fontcolor":param3,
-            "textfieldcolor":param4
-         });
-      }
-      
-      public function addTextTickerHtmlWithTitle(param1:TextField, param2:String, param3:Number = 0) : void
-      {
-         var _loc4_:textTicker = new textTicker();
-         this.m_textTickerConfigurations.push({
-            "indicatortextfield":param1,
-            "title":param2,
-            "textticker":_loc4_,
-            "resetdelay":param3,
-            "isHtmlTicker":true
-         });
-      }
-      
-      public function addTextTickerHtml(param1:TextField, param2:Number = 0) : void
-      {
-         var _loc3_:textTicker = new textTicker();
-         this.m_textTickerConfigurations.push({
-            "indicatortextfield":param1,
-            "title":param1.htmlText,
-            "textticker":_loc3_,
-            "resetdelay":param2,
-            "isHtmlTicker":true
-         });
-      }
-      
-      public function callTextTicker(param1:Boolean, param2:int = -1) : void
-      {
-         var _loc4_:Object = null;
-         var _loc3_:int = 0;
-         while(_loc3_ < this.m_textTickerConfigurations.length)
-         {
-            if((_loc4_ = this.m_textTickerConfigurations[_loc3_]).isHtmlTicker === true)
-            {
-               if(param1)
-               {
-                  _loc4_.textticker.startTextTickerHtml(_loc4_.indicatortextfield,_loc4_.title,null,_loc4_.resetdelay);
-               }
-               else
-               {
-                  _loc4_.textticker.stopTextTicker(_loc4_.indicatortextfield,_loc4_.title);
-                  MenuUtils.truncateTextfield(_loc4_.indicatortextfield,1);
-               }
-            }
-            else if(param1)
-            {
-               _loc4_.textticker.startTextTicker(_loc4_.indicatortextfield,_loc4_.title);
-               if(Boolean(_loc4_.textfieldcolor) && _loc4_.textfieldcolor != -1)
-               {
-                  _loc4_.indicatortextfield.textColor = _loc4_.textfieldcolor;
-               }
-               if(Boolean(param2) && param2 != -1)
-               {
-                  _loc4_.indicatortextfield.textColor = param2;
-               }
-            }
-            else
-            {
-               _loc4_.textticker.stopTextTicker(_loc4_.indicatortextfield,_loc4_.title);
-               if(_loc4_.fontcolor != null && _loc4_.fontcolor.length > 0)
-               {
-                  if(Boolean(_loc4_.textfieldcolor) && _loc4_.textfieldcolor != -1)
-                  {
-                     _loc4_.indicatortextfield.textColor = _loc4_.textfieldcolor;
-                  }
-                  MenuUtils.truncateTextfield(_loc4_.indicatortextfield,1,_loc4_.fontcolor);
-               }
-               else if(Boolean(param2) && param2 != -1)
-               {
-                  _loc4_.indicatortextfield.textColor = param2;
-                  MenuUtils.truncateTextfield(_loc4_.indicatortextfield,1,null);
-               }
-               else
-               {
-                  MenuUtils.truncateTextfield(_loc4_.indicatortextfield,1);
-               }
-            }
-            _loc3_++;
-         }
-      }
-      
-      public function clearOnly() : void
-      {
-         this.m_textTickerConfigurations = new Array();
-      }
-      
-      public function resetTextTickers() : void
-      {
-         if(this.m_textTickerConfigurations.length == 0)
-         {
-            return;
-         }
-         this.stopTextTickers();
-         this.m_textTickerConfigurations = new Array();
-      }
-      
-      public function onUnregister() : void
-      {
-         this.resetTextTickers();
-      }
-      
-      public function stopTextTickers() : void
-      {
-         var _loc2_:Object = null;
-         var _loc1_:int = 0;
-         while(_loc1_ < this.m_textTickerConfigurations.length)
-         {
-            _loc2_ = this.m_textTickerConfigurations[_loc1_];
-            _loc2_.textticker.stopTextTicker(_loc2_.indicatortextfield,_loc2_.title);
-            _loc1_++;
-         }
-      }
-   }
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
+
+//menu3.basic.TextTickerUtil
+
+package menu3.basic {
+import common.menu.textTicker;
+
+import flash.text.TextField;
+
+import common.menu.MenuUtils;
+
+public class TextTickerUtil {
+
+	private var m_textTickerConfigurations:Array = new Array();
+
+
+	public function addTextTicker(_arg_1:TextField, _arg_2:String, _arg_3:String = null, _arg_4:int = -1):void {
+		var _local_5:textTicker = new textTicker();
+		this.m_textTickerConfigurations.push({
+			"indicatortextfield": _arg_1,
+			"title": _arg_2,
+			"textticker": _local_5,
+			"fontcolor": _arg_3,
+			"textfieldcolor": _arg_4
+		});
+	}
+
+	public function addTextTickerHtmlWithTitle(_arg_1:TextField, _arg_2:String, _arg_3:Number = 0):void {
+		var _local_4:textTicker = new textTicker();
+		this.m_textTickerConfigurations.push({
+			"indicatortextfield": _arg_1,
+			"title": _arg_2,
+			"textticker": _local_4,
+			"resetdelay": _arg_3,
+			"isHtmlTicker": true
+		});
+	}
+
+	public function addTextTickerHtml(_arg_1:TextField, _arg_2:Number = 0):void {
+		var _local_3:textTicker = new textTicker();
+		this.m_textTickerConfigurations.push({
+			"indicatortextfield": _arg_1,
+			"title": _arg_1.htmlText,
+			"textticker": _local_3,
+			"resetdelay": _arg_2,
+			"isHtmlTicker": true
+		});
+	}
+
+	public function callTextTicker(_arg_1:Boolean, _arg_2:int = -1):void {
+		var _local_4:Object;
+		var _local_3:int;
+		while (_local_3 < this.m_textTickerConfigurations.length) {
+			_local_4 = this.m_textTickerConfigurations[_local_3];
+			if (_local_4.isHtmlTicker === true) {
+				if (_arg_1) {
+					_local_4.textticker.startTextTickerHtml(_local_4.indicatortextfield, _local_4.title, null, _local_4.resetdelay);
+				} else {
+					_local_4.textticker.stopTextTicker(_local_4.indicatortextfield, _local_4.title);
+					MenuUtils.truncateTextfield(_local_4.indicatortextfield, 1);
+				}
+				;
+			} else {
+				if (_arg_1) {
+					_local_4.textticker.startTextTicker(_local_4.indicatortextfield, _local_4.title);
+					if (((_local_4.textfieldcolor) && (!(_local_4.textfieldcolor == -1)))) {
+						_local_4.indicatortextfield.textColor = _local_4.textfieldcolor;
+					}
+					;
+					if (((_arg_2) && (!(_arg_2 == -1)))) {
+						_local_4.indicatortextfield.textColor = _arg_2;
+					}
+					;
+				} else {
+					_local_4.textticker.stopTextTicker(_local_4.indicatortextfield, _local_4.title);
+					if (((!(_local_4.fontcolor == null)) && (_local_4.fontcolor.length > 0))) {
+						if (((_local_4.textfieldcolor) && (!(_local_4.textfieldcolor == -1)))) {
+							_local_4.indicatortextfield.textColor = _local_4.textfieldcolor;
+						}
+						;
+						MenuUtils.truncateTextfield(_local_4.indicatortextfield, 1, _local_4.fontcolor);
+					} else {
+						if (((_arg_2) && (!(_arg_2 == -1)))) {
+							_local_4.indicatortextfield.textColor = _arg_2;
+							MenuUtils.truncateTextfield(_local_4.indicatortextfield, 1, null);
+						} else {
+							MenuUtils.truncateTextfield(_local_4.indicatortextfield, 1);
+						}
+						;
+					}
+					;
+				}
+				;
+			}
+			;
+			_local_3++;
+		}
+		;
+	}
+
+	public function clearOnly():void {
+		this.m_textTickerConfigurations = new Array();
+	}
+
+	public function resetTextTickers():void {
+		if (this.m_textTickerConfigurations.length == 0) {
+			return;
+		}
+		;
+		this.stopTextTickers();
+		this.m_textTickerConfigurations = new Array();
+	}
+
+	public function onUnregister():void {
+		this.resetTextTickers();
+	}
+
+	public function stopTextTickers():void {
+		var _local_2:Object;
+		var _local_1:int;
+		while (_local_1 < this.m_textTickerConfigurations.length) {
+			_local_2 = this.m_textTickerConfigurations[_local_1];
+			_local_2.textticker.stopTextTicker(_local_2.indicatortextfield, _local_2.title);
+			_local_1++;
+		}
+		;
+	}
+
+
 }
+}//package menu3.basic
+

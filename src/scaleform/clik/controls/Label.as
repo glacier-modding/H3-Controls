@@ -42,329 +42,293 @@
 
 /**************************************************************************
 
-   Filename    :   Label.as
+ Filename    :   Label.as
 
-   Copyright   :   Copyright 2011 Autodesk, Inc. All Rights reserved.
+ Copyright   :   Copyright 2011 Autodesk, Inc. All Rights reserved.
 
-   Use of this software is subject to the terms of the Autodesk license
-   agreement provided at the time of installation or download, or which
-   otherwise accompanies this software in either electronic or hard copy form.
+ Use of this software is subject to the terms of the Autodesk license
+ agreement provided at the time of installation or download, or which
+ otherwise accompanies this software in either electronic or hard copy form.
 
  **************************************************************************/
 
-package scaleform.clik.controls
-{
-	import flash.display.DisplayObject;
-	import flash.display.MovieClip;
-	import flash.events.Event;
-	import flash.events.MouseEvent;
-	import flash.text.TextField;
-	import flash.text.TextFieldAutoSize;
-	
-	import scaleform.gfx.FocusEventEx;
-	import scaleform.gfx.MouseEventEx;
-	
-	import scaleform.clik.constants.ConstrainMode;
-	import scaleform.clik.constants.InvalidationType;
-	import scaleform.clik.core.UIComponent;
-	import scaleform.clik.events.InputEvent;
-	import scaleform.clik.events.ButtonEvent;
-	import scaleform.clik.events.ComponentEvent;
-	import scaleform.clik.data.DataProvider;
-	import scaleform.clik.interfaces.IDataProvider;
-	import scaleform.clik.constants.ControllerType;
-	import scaleform.clik.ui.InputDetails;
-	import scaleform.clik.constants.InputValue;
-	import scaleform.clik.constants.NavigationCode;
-	import scaleform.clik.utils.ConstrainedElement;
-	import scaleform.clik.utils.Constraints;
-	
-	[Event(name = "change", type = "flash.events.Event")]
-	
-	public class Label extends UIComponent
-	{
-		
-		// Constants:
-		
-		// Public Properties:
-		/** True if constraints are disabled for the component. Setting the disableConstraintsproperty to {@code disableConstraints=true} will remove constraints from the textfield. This is useful for components with timeline based textfield size tweens, since constraints break them due to a Flash quirk. */
-		public var constraintsDisabled:Boolean = false;
-		
-		// Protected Properties:
-		protected var _text:String;
-		protected var _autoSize:String = TextFieldAutoSize.NONE;
-		protected var isHtml:Boolean;
-		
-		protected var state:String = "default";
-		protected var _newFrame:String;
-		
-		// UI Elements:
-		/** A reference to the textField instance used to display the selected item's label. Note that when state changes are made, the textField instance may change, so changes made to it externally may be lost. */
-		public var textField:TextField;
-		
-		// Initialization:
-		public function Label()
-		{
-			super();
+package scaleform.clik.controls {
+import flash.display.DisplayObject;
+import flash.display.MovieClip;
+import flash.events.Event;
+import flash.events.MouseEvent;
+import flash.text.TextField;
+import flash.text.TextFieldAutoSize;
+
+import scaleform.gfx.FocusEventEx;
+import scaleform.gfx.MouseEventEx;
+
+import scaleform.clik.constants.ConstrainMode;
+import scaleform.clik.constants.InvalidationType;
+import scaleform.clik.core.UIComponent;
+import scaleform.clik.events.InputEvent;
+import scaleform.clik.events.ButtonEvent;
+import scaleform.clik.events.ComponentEvent;
+import scaleform.clik.data.DataProvider;
+import scaleform.clik.interfaces.IDataProvider;
+import scaleform.clik.constants.ControllerType;
+import scaleform.clik.ui.InputDetails;
+import scaleform.clik.constants.InputValue;
+import scaleform.clik.constants.NavigationCode;
+import scaleform.clik.utils.ConstrainedElement;
+import scaleform.clik.utils.Constraints;
+
+[Event(name="change", type="flash.events.Event")]
+
+public class Label extends UIComponent {
+
+	// Constants:
+
+	// Public Properties:
+	/** True if constraints are disabled for the component. Setting the disableConstraintsproperty to {@code disableConstraints=true} will remove constraints from the textfield. This is useful for components with timeline based textfield size tweens, since constraints break them due to a Flash quirk. */
+	public var constraintsDisabled:Boolean = false;
+
+	// Protected Properties:
+	protected var _text:String;
+	protected var _autoSize:String = TextFieldAutoSize.NONE;
+	protected var isHtml:Boolean;
+
+	protected var state:String = "default";
+	protected var _newFrame:String;
+
+	// UI Elements:
+	/** A reference to the textField instance used to display the selected item's label. Note that when state changes are made, the textField instance may change, so changes made to it externally may be lost. */
+	public var textField:TextField;
+
+	// Initialization:
+	public function Label() {
+		super();
+	}
+
+	override protected function preInitialize():void {
+		if (!constraintsDisabled) {
+			constraints = new Constraints(this, ConstrainMode.COUNTER_SCALE);
 		}
-		
-		override protected function preInitialize():void
-		{
-			if (!constraintsDisabled)
-			{
-				constraints = new Constraints(this, ConstrainMode.COUNTER_SCALE);
-			}
+	}
+
+	override protected function initialize():void {
+		super.initialize();
+	}
+
+	// Public getter / setters:
+	[Inspectable(defaultValue="true")]
+	override public function get enabled():Boolean {
+		return super.enabled;
+	}
+
+	override public function set enabled(value:Boolean):void {
+		if (value == super.enabled) {
+			return;
 		}
-		
-		override protected function initialize():void
-		{
-			super.initialize();
+		super.enabled = value;
+		mouseEnabled = mouseChildren = value;
+		setState(defaultState);
+	}
+
+	/**
+	 * The text to be displayed by the Label component. This property assumes that localization has been
+	 * handled externally.
+	 * @see #htmlText For formatted text, use the {@code htmlText} property.
+	 */
+	[Inspectable(name="text")]
+	public function get text():String {
+		return _text;
+	}
+
+	public function set text(value:String):void {
+		if (value == null) {
+			value = "";
 		}
-		
-		// Public getter / setters:
-		[Inspectable(defaultValue = "true")]
-		override public function get enabled():Boolean  { return super.enabled; }
-		
-		override public function set enabled(value:Boolean):void
-		{
-			if (value == super.enabled)
-			{
-				return;
-			}
-			super.enabled = value;
-			mouseEnabled = mouseChildren = value;
-			setState(defaultState);
+		isHtml = false;
+		_text = value;
+		invalidateData();
+	}
+
+	/**
+	 * The html text to be displayed by the label component.  This property assumes that localization has
+	 * been handled externally.
+	 * @see #text For plain text use {@code text} property.
+	 */
+	public function get htmlText():String {
+		return _text;
+	}
+
+	public function set htmlText(value:String):void {
+		if (value == null) {
+			value = "";
 		}
-		
-		/**
-		 * The text to be displayed by the Label component. This property assumes that localization has been
-		 * handled externally.
-		 * @see #htmlText For formatted text, use the {@code htmlText} property.
-		 */
-		[Inspectable(name = "text")]
-		public function get text():String  { return _text; }
-		
-		public function set text(value:String):void
-		{
-			if (value == null)
-			{
-				value = "";
-			}
-			isHtml = false;
-			_text = value;
-			invalidateData();
+		isHtml = true;
+		_text = value;
+		invalidateData();
+	}
+
+	/**
+	 * Determines if the component will scale to fit the text that it contains. Setting the {@code autoSize}
+	 * property to TextFieldAutoSize.NONE ("none") will leave its current size unchanged.
+	 */
+	[Inspectable(defaultValue="none", enumeration="none,left,right,center")]
+	public function get autoSize():String {
+		return _autoSize;
+	}
+
+	public function set autoSize(value:String):void {
+		if (value == _autoSize) {
+			return;
 		}
-		
-		/**
-		 * The html text to be displayed by the label component.  This property assumes that localization has
-		 * been handled externally.
-		 * @see #text For plain text use {@code text} property.
-		 */
-		public function get htmlText():String  { return _text; }
-		
-		public function set htmlText(value:String):void
-		{
-			if (value == null)
-			{
-				value = "";
-			}
-			isHtml = true;
-			_text = value;
-			invalidateData();
+		_autoSize = value;
+		invalidateData();
+	}
+
+	public function get length():uint {
+		return textField.length;
+	}
+
+	public function get defaultState():String {
+		return (!enabled ? "disabled" : (focused ? "focused" : "default"));
+	}
+
+	// Public Methods:
+	/** Append a String to the existing text within the Label. */
+	public function appendText(value:String):void {
+		_text += value;
+		isHtml = false;
+		invalidateData();
+	}
+
+	/**
+	 * Append an HTML-formatted String to the existing text within the Label. Note that the Label will be
+	 * automatically set to display HTML text.
+	 */
+	public function appendHtml(value:String):void {
+		_text += value;
+		isHtml = true;
+		invalidateData();
+	}
+
+	/** @exclude */
+	override public function toString():String {
+		return "[CLIK Label " + name + "]";
+	}
+
+	// Protected Methods:
+	override protected function configUI():void {
+		super.configUI();
+		if (!constraintsDisabled) {
+			constraints.addElement("textField", textField, Constraints.ALL);
 		}
-		
-		/**
-		 * Determines if the component will scale to fit the text that it contains. Setting the {@code autoSize}
-		 * property to TextFieldAutoSize.NONE ("none") will leave its current size unchanged.
-		 */
-		[Inspectable(defaultValue = "none", enumeration = "none,left,right,center")]
-		public function get autoSize():String  { return _autoSize; }
-		
-		public function set autoSize(value:String):void
-		{
-			if (value == _autoSize)
-			{
-				return;
-			}
-			_autoSize = value;
-			invalidateData();
+
+		focusable = false;
+		// setState(defaultState, "default"); // NFM: Not sure if this is required for a Label.
+	}
+
+	protected function calculateWidth():Number {
+		if (constraints == null || textField == null) {
+			return actualWidth;
 		}
-		
-		public function get length():uint  { return textField.length; }
-		
-		public function get defaultState():String
-		{
-			return (!enabled ? "disabled" : (focused ? "focused" : "default"));
+
+		if (!constraintsDisabled) {
+			var element:ConstrainedElement = constraints.getElement("textField");
 		}
-		
-		// Public Methods:
-		/** Append a String to the existing text within the Label. */
-		public function appendText(value:String):void
-		{
-			_text += value;
-			isHtml = false;
-			invalidateData();
+
+		var w:Number = Math.ceil(textField.textWidth + element.left + element.right + 5); // We add 5 pixels to accommodate Flash's poor measurement of anti-aliased fonts.
+		return w;
+	}
+
+	protected function alignForAutoSize():void {
+		if (!initialized || _autoSize == TextFieldAutoSize.NONE || textField == null) {
+			return;
 		}
-		
-		/**
-		 * Append an HTML-formatted String to the existing text within the Label. Note that the Label will be
-		 * automatically set to display HTML text.
-		 */
-		public function appendHtml(value:String):void
-		{
-			_text += value;
-			isHtml = true;
-			invalidateData();
-		}
-		
-		/** @exclude */
-		override public function toString():String
-		{
-			return "[CLIK Label " + name + "]";
-		}
-		
-		// Protected Methods:
-		override protected function configUI():void
-		{
-			super.configUI();
-			if (!constraintsDisabled)
-			{
-				constraints.addElement("textField", textField, Constraints.ALL);
-			}
-			
-			focusable = false;
-			// setState(defaultState, "default"); // NFM: Not sure if this is required for a Label.
-		}
-		
-		protected function calculateWidth():Number
-		{
-			if (constraints == null || textField == null)
-			{
-				return actualWidth;
-			}
-			
-			if (!constraintsDisabled)
-			{
-				var element:ConstrainedElement = constraints.getElement("textField");
-			}
-			
-			var w:Number = Math.ceil(textField.textWidth + element.left + element.right + 5); // We add 5 pixels to accommodate Flash's poor measurement of anti-aliased fonts.
-			return w;
-		}
-		
-		protected function alignForAutoSize():void
-		{
-			if (!initialized || _autoSize == TextFieldAutoSize.NONE || textField == null)
-			{
-				return;
-			}
-			
-			var oldWidth:Number = _width;
-			var newWidth:Number = _width = calculateWidth();
-			
-			switch (_autoSize)
-			{
-			case TextFieldAutoSize.RIGHT: 
+
+		var oldWidth:Number = _width;
+		var newWidth:Number = _width = calculateWidth();
+
+		switch (_autoSize) {
+			case TextFieldAutoSize.RIGHT:
 				var oldRight:Number = x + oldWidth;
 				x = oldRight - newWidth;
 				break;
-			case TextFieldAutoSize.CENTER: 
+			case TextFieldAutoSize.CENTER:
 				var oldCenter:Number = x + oldWidth * 0.5;
 				x = oldCenter - newWidth * 0.5;
 				break;
-			}
 		}
-		
-		override protected function draw():void
-		{
-			// State is invalid, and has been set (is not the default)
-			if (isInvalid(InvalidationType.STATE))
-			{
-				if (_newFrame)
-				{
-					gotoAndPlay(_newFrame);
-					_newFrame = null;
-				}
-				
-				updateAfterStateChange();
-				dispatchEventAndSound(new ComponentEvent(ComponentEvent.STATE_CHANGE));
-				invalidate(InvalidationType.SIZE);
+	}
+
+	override protected function draw():void {
+		// State is invalid, and has been set (is not the default)
+		if (isInvalid(InvalidationType.STATE)) {
+			if (_newFrame) {
+				gotoAndPlay(_newFrame);
+				_newFrame = null;
 			}
-			if (isInvalid(InvalidationType.DATA))
-			{
-				updateText();
-				if (autoSize != TextFieldAutoSize.NONE)
-				{
-					alignForAutoSize();
-					invalidateSize();
-				}
-			}
-			
-			// Resize and update constraints
-			if (isInvalid(InvalidationType.SIZE))
-			{
-				setActualSize(_width, _height);
-				if (!constraintsDisabled)
-				{
-					constraints.update(_width, _height);
-				}
-			}
-		}
-		
-		protected function updateText():void
-		{
-			if (_text != null && textField != null)
-			{
-				if (isHtml)
-				{
-					textField.htmlText = _text;
-				}
-				else
-				{
-					textField.text = _text;
-				}
-			}
-		}
-		
-		protected function updateAfterStateChange():void
-		{
-			if (!initialized)
-			{
-				return;
-			}
-			if (constraints != null && !constraintsDisabled)
-			{
-				constraints.updateElement("textField", textField); // Update references in Constraints 
-			}
-			
-			updateText();
+
+			updateAfterStateChange();
 			dispatchEventAndSound(new ComponentEvent(ComponentEvent.STATE_CHANGE));
+			invalidate(InvalidationType.SIZE);
 		}
-		
-		protected function setState(... states:Array):void
-		{
-			if (states.length == 1)
-			{
-				var onlyState:String = states[0].toString();
-				if (state != onlyState && _labelHash[onlyState])
-				{
-					state = _newFrame = onlyState;
-					invalidateState();
-				}
-				return;
+		if (isInvalid(InvalidationType.DATA)) {
+			updateText();
+			if (autoSize != TextFieldAutoSize.NONE) {
+				alignForAutoSize();
+				invalidateSize();
 			}
-			
-			var l:uint = states.length;
-			for (var i:uint = 0; i < l; i++)
-			{
-				var thisState:String = states[i].toString();
-				if (_labelHash[thisState])
-				{
-					state = _newFrame = thisState;
-					invalidateState();
-					break;
-				}
+		}
+
+		// Resize and update constraints
+		if (isInvalid(InvalidationType.SIZE)) {
+			setActualSize(_width, _height);
+			if (!constraintsDisabled) {
+				constraints.update(_width, _height);
 			}
 		}
 	}
+
+	protected function updateText():void {
+		if (_text != null && textField != null) {
+			if (isHtml) {
+				textField.htmlText = _text;
+			} else {
+				textField.text = _text;
+			}
+		}
+	}
+
+	protected function updateAfterStateChange():void {
+		if (!initialized) {
+			return;
+		}
+		if (constraints != null && !constraintsDisabled) {
+			constraints.updateElement("textField", textField); // Update references in Constraints
+		}
+
+		updateText();
+		dispatchEventAndSound(new ComponentEvent(ComponentEvent.STATE_CHANGE));
+	}
+
+	protected function setState(...states:Array):void {
+		if (states.length == 1) {
+			var onlyState:String = states[0].toString();
+			if (state != onlyState && _labelHash[onlyState]) {
+				state = _newFrame = onlyState;
+				invalidateState();
+			}
+			return;
+		}
+
+		var l:uint = states.length;
+		for (var i:uint = 0; i < l; i++) {
+			var thisState:String = states[i].toString();
+			if (_labelHash[thisState]) {
+				state = _newFrame = thisState;
+				invalidateState();
+				break;
+			}
+		}
+	}
+}
 }

@@ -1,68 +1,65 @@
-package menu3.missionend
-{
-   public class LevelInfo
-   {
-       
-      
-      private var m_levelPointsAccum:Array;
-      
-      private var m_levelPointsOffset:int = 0;
-      
-      public function LevelInfo()
-      {
-         super();
-      }
-      
-      public function init(param1:Array, param2:int) : void
-      {
-         if(param1 != null)
-         {
-            this.m_levelPointsAccum = param1;
-            this.m_levelPointsOffset = param2;
-         }
-      }
-      
-      public function getLevelFromList(param1:Number) : Number
-      {
-         if(!this.m_levelPointsAccum)
-         {
-            return 1;
-         }
-         var _loc2_:Number = 0;
-         var _loc3_:int = 0;
-         while(_loc3_ < this.m_levelPointsAccum.length)
-         {
-            if(param1 <= this.m_levelPointsAccum[_loc3_])
-            {
-               break;
-            }
-            _loc2_ = _loc3_ + this.m_levelPointsOffset;
-            _loc3_++;
-         }
-         var _loc4_:int = this.m_levelPointsOffset + this.m_levelPointsAccum.length;
-         var _loc5_:int = _loc2_ - this.m_levelPointsOffset;
-         var _loc6_:Number = param1 - this.m_levelPointsAccum[_loc5_];
-         var _loc7_:Number = 0;
-         if(_loc2_ < _loc4_ - 1)
-         {
-            _loc7_ = _loc6_ / (this.m_levelPointsAccum[_loc5_ + 1] - this.m_levelPointsAccum[_loc5_]);
-         }
-         return _loc2_ + 1 + _loc7_;
-      }
-      
-      public function isLevelMaxed(param1:Number) : Boolean
-      {
-         var _loc2_:int = int(this.m_levelPointsAccum.length - 1);
-         if(param1 >= this.m_levelPointsAccum[_loc2_])
-         {
-            return true;
-         }
-         return false;
-      }
-      
-      public function getMaxLevel() : int
-      {
-         return this.m_levelPointsAccum.length;
-      }
-   }
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
+
+//menu3.missionend.LevelInfo
+
+package menu3.missionend {
+public class LevelInfo {
+
+	private var m_levelPointsAccum:Array;
+	private var m_levelPointsOffset:int = 0;
+
+
+	public function init(_arg_1:Array, _arg_2:int):void {
+		if (_arg_1 != null) {
+			this.m_levelPointsAccum = _arg_1;
+			this.m_levelPointsOffset = _arg_2;
+		}
+		;
+	}
+
+	public function getLevelFromList(_arg_1:Number):Number {
+		if (!this.m_levelPointsAccum) {
+			return (1);
+		}
+		;
+		var _local_2:Number = 0;
+		var _local_3:int;
+		while (_local_3 < this.m_levelPointsAccum.length) {
+			if (_arg_1 > this.m_levelPointsAccum[_local_3]) {
+				_local_2 = (_local_3 + this.m_levelPointsOffset);
+			} else {
+				break;
+			}
+			;
+			_local_3++;
+		}
+		;
+		var _local_4:int = (this.m_levelPointsOffset + this.m_levelPointsAccum.length);
+		var _local_5:int = (_local_2 - this.m_levelPointsOffset);
+		var _local_6:Number = (_arg_1 - this.m_levelPointsAccum[_local_5]);
+		var _local_7:Number = 0;
+		if (_local_2 < (_local_4 - 1)) {
+			_local_7 = (_local_6 / (this.m_levelPointsAccum[(_local_5 + 1)] - this.m_levelPointsAccum[_local_5]));
+		}
+		;
+		return ((_local_2 + 1) + _local_7);
+	}
+
+	public function isLevelMaxed(_arg_1:Number):Boolean {
+		var _local_2:int = (this.m_levelPointsAccum.length - 1);
+		if (_arg_1 >= this.m_levelPointsAccum[_local_2]) {
+			return (true);
+		}
+		;
+		return (false);
+	}
+
+	public function getMaxLevel():int {
+		return (this.m_levelPointsAccum.length);
+	}
+
+
 }
+}//package menu3.missionend
+

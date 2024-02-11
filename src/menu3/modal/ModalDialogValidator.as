@@ -1,86 +1,87 @@
-package menu3.modal
-{
-   import common.Log;
-   
-   public class ModalDialogValidator
-   {
-       
-      
-      private var m_validators:Array;
-      
-      public function ModalDialogValidator(param1:Array)
-      {
-         var _loc2_:Object = null;
-         var _loc3_:String = null;
-         var _loc4_:ModalDialogValidation = null;
-         var _loc5_:Object = null;
-         var _loc6_:String = null;
-         this.m_validators = [];
-         super();
-         if(param1 == null)
-         {
-            Log.info(Log.ChannelModal,this,"No validation data - dialog Validation disabled");
-            return;
-         }
-         Log.info(Log.ChannelModal,this,"Found a validation array");
-         for each(_loc2_ in param1)
-         {
-            _loc3_ = String(_loc2_.type);
-            if(_loc3_ == null || _loc3_.length == 0)
-            {
-               _loc3_ = "regex";
-            }
-            _loc4_ = null;
-            switch(_loc3_)
-            {
-               case "regex":
-                  if((_loc5_ = _loc2_.regEx) != null && _loc5_.source != undefined && _loc5_.flags != undefined)
-                  {
-                     _loc4_ = new ModalDialogRegexValidation(_loc2_,_loc5_);
-                  }
-                  else
-                  {
-                     Log.xerror(Log.ChannelModal,"regex validator definition not valid");
-                     Log.debugData(this,_loc2_);
-                  }
-                  break;
-               case "platformid":
-                  if((_loc6_ = String(_loc2_.platformid)) != null)
-                  {
-                     _loc4_ = new ModalDialogPlatformIdValidation(_loc2_,_loc6_);
-                  }
-                  else
-                  {
-                     Log.xerror(Log.ChannelModal,"platformid validator definition not valid");
-                     Log.debugData(this,_loc2_);
-                  }
-            }
-            if(_loc4_ != null)
-            {
-               this.m_validators.push(_loc4_);
-            }
-         }
-      }
-      
-      public function validate(param1:String) : ModalDialogValidation
-      {
-         var _loc3_:ModalDialogValidation = null;
-         var _loc2_:ModalDialogValidation = null;
-         for each(_loc3_ in this.m_validators)
-         {
-            if(!_loc3_.validate(param1))
-            {
-               if(_loc2_ == null || _loc2_.getLevel() < _loc3_.getLevel())
-               {
-                  _loc2_ = _loc3_;
-               }
-            }
-         }
-         if(_loc2_ != null)
-         {
-            Log.xinfo(Log.ChannelModal,"returning validator that failed on \'" + param1 + "\' level=" + _loc2_.getLevel() + " message=\'" + _loc2_.getMessage() + "\'");
-         }
-         return _loc2_;
-      }
-   }
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
+
+//menu3.modal.ModalDialogValidator
+
+package menu3.modal {
+import common.Log;
+
+public class ModalDialogValidator {
+
+	private var m_validators:Array = [];
+
+	public function ModalDialogValidator(_arg_1:Array) {
+		var _local_2:Object;
+		var _local_3:String;
+		var _local_4:ModalDialogValidation;
+		var _local_5:Object;
+		var _local_6:String;
+		super();
+		if (_arg_1 == null) {
+			Log.info(Log.ChannelModal, this, "No validation data - dialog Validation disabled");
+			return;
+		}
+		;
+		Log.info(Log.ChannelModal, this, "Found a validation array");
+		for each (_local_2 in _arg_1) {
+			_local_3 = _local_2.type;
+			if (((_local_3 == null) || (_local_3.length == 0))) {
+				_local_3 = "regex";
+			}
+			;
+			_local_4 = null;
+			switch (_local_3) {
+				case "regex":
+					_local_5 = _local_2.regEx;
+					if ((((!(_local_5 == null)) && (!(_local_5.source == undefined))) && (!(_local_5.flags == undefined)))) {
+						_local_4 = new ModalDialogRegexValidation(_local_2, _local_5);
+					} else {
+						Log.xerror(Log.ChannelModal, "regex validator definition not valid");
+						Log.debugData(this, _local_2);
+					}
+					;
+					break;
+				case "platformid":
+					_local_6 = _local_2.platformid;
+					if (_local_6 != null) {
+						_local_4 = new ModalDialogPlatformIdValidation(_local_2, _local_6);
+					} else {
+						Log.xerror(Log.ChannelModal, "platformid validator definition not valid");
+						Log.debugData(this, _local_2);
+					}
+					;
+					break;
+			}
+			;
+			if (_local_4 != null) {
+				this.m_validators.push(_local_4);
+			}
+			;
+		}
+		;
+	}
+
+	public function validate(_arg_1:String):ModalDialogValidation {
+		var _local_3:ModalDialogValidation;
+		var _local_2:ModalDialogValidation;
+		for each (_local_3 in this.m_validators) {
+			if (!_local_3.validate(_arg_1)) {
+				if (((_local_2 == null) || (_local_2.getLevel() < _local_3.getLevel()))) {
+					_local_2 = _local_3;
+				}
+				;
+			}
+			;
+		}
+		;
+		if (_local_2 != null) {
+			Log.xinfo(Log.ChannelModal, (((((("returning validator that failed on '" + _arg_1) + "' level=") + _local_2.getLevel()) + " message='") + _local_2.getMessage()) + "'"));
+		}
+		;
+		return (_local_2);
+	}
+
+
 }
+}//package menu3.modal
+

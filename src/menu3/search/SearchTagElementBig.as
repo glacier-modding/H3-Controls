@@ -1,111 +1,108 @@
-package menu3.search
-{
-   import common.Log;
-   import flash.text.TextField;
-   
-   public dynamic class SearchTagElementBig extends SearchElementBase
-   {
-       
-      
-      private var m_isElementActive:Boolean = false;
-      
-      private var m_isElementDisabled:Boolean = false;
-      
-      public function SearchTagElementBig(param1:Object)
-      {
-         super(param1);
-      }
-      
-      public static function setTabPositionBetweenTextFields(param1:TextField, param2:TextField, param3:Number) : void
-      {
-         var _loc4_:Number = param2.x - (param1.width + param1.x);
-         var _loc5_:Number = param3 - _loc4_ - param1.x;
-         var _loc6_:Number = param3;
-         var _loc7_:Number = param2.x - _loc6_ + param2.width;
-         param1.width = _loc5_;
-         param2.x = _loc6_;
-         param2.width = _loc7_;
-      }
-      
-      override protected function createPrivateView() : *
-      {
-         return new ContractSearchTagElementBigView();
-      }
-      
-      protected function get Tab01TextField() : TextField
-      {
-         return getPrivateView().tab01_txt;
-      }
-      
-      protected function get Tab02TextField() : TextField
-      {
-         return getPrivateView().tab02_txt;
-      }
-      
-      override public function onSetData(param1:Object) : void
-      {
-         if(param1.titletab01 != null || param1.titletab02 != null)
-         {
-            param1.title = null;
-         }
-         super.onSetData(param1);
-         if(param1.titletab01 != null)
-         {
-            setupTextField(this.Tab01TextField,param1.titletab01);
-         }
-         if(param1.titletab02 != null)
-         {
-            setupTextField(this.Tab02TextField,param1.titletab02);
-         }
-         if(param1.tabposition != null)
-         {
-            setTabPositionBetweenTextFields(this.Tab01TextField,this.Tab02TextField,param1.tabposition);
-         }
-         this.m_isElementActive = false;
-         if(param1.hasOwnProperty("active"))
-         {
-            this.m_isElementActive = param1.active;
-         }
-         else if(getNodeProp(this,"pressable") == false)
-         {
-            this.m_isElementActive = true;
-         }
-         this.m_isElementDisabled = false;
-         if(param1.hasOwnProperty("disabled"))
-         {
-            this.m_isElementDisabled = param1.disabled;
-         }
-         this.updateState();
-      }
-      
-      public function onAcceptPressed() : void
-      {
-         Log.info(Log.ChannelDebug,this,"onAcceptPressed");
-         this.m_isElementActive = true;
-         this.updateState();
-      }
-      
-      public function onCancelPressed() : void
-      {
-         Log.info(Log.ChannelDebug,this,"onCancelPressed");
-         this.m_isElementActive = false;
-         this.updateState();
-      }
-      
-      override protected function updateState() : void
-      {
-         if(this.m_isElementDisabled)
-         {
-            setState(STATE_DISABLED);
-         }
-         else if(this.m_isElementActive)
-         {
-            setState(m_isSelected ? STATE_ACTIVE_SELECT : STATE_ACTIVE);
-         }
-         else
-         {
-            setState(m_isSelected ? STATE_SELECT : STATE_NONE);
-         }
-      }
-   }
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
+
+//menu3.search.SearchTagElementBig
+
+package menu3.search {
+import flash.text.TextField;
+
+import common.Log;
+
+public dynamic class SearchTagElementBig extends SearchElementBase {
+
+	private var m_isElementActive:Boolean = false;
+	private var m_isElementDisabled:Boolean = false;
+
+	public function SearchTagElementBig(_arg_1:Object) {
+		super(_arg_1);
+	}
+
+	public static function setTabPositionBetweenTextFields(_arg_1:TextField, _arg_2:TextField, _arg_3:Number):void {
+		var _local_4:Number = (_arg_2.x - (_arg_1.width + _arg_1.x));
+		var _local_5:Number = ((_arg_3 - _local_4) - _arg_1.x);
+		var _local_6:Number = _arg_3;
+		var _local_7:Number = ((_arg_2.x - _local_6) + _arg_2.width);
+		_arg_1.width = _local_5;
+		_arg_2.x = _local_6;
+		_arg_2.width = _local_7;
+	}
+
+
+	override protected function createPrivateView():* {
+		return (new ContractSearchTagElementBigView());
+	}
+
+	protected function get Tab01TextField():TextField {
+		return (getPrivateView().tab01_txt);
+	}
+
+	protected function get Tab02TextField():TextField {
+		return (getPrivateView().tab02_txt);
+	}
+
+	override public function onSetData(_arg_1:Object):void {
+		if (((!(_arg_1.titletab01 == null)) || (!(_arg_1.titletab02 == null)))) {
+			_arg_1.title = null;
+		}
+		;
+		super.onSetData(_arg_1);
+		if (_arg_1.titletab01 != null) {
+			setupTextField(this.Tab01TextField, _arg_1.titletab01);
+		}
+		;
+		if (_arg_1.titletab02 != null) {
+			setupTextField(this.Tab02TextField, _arg_1.titletab02);
+		}
+		;
+		if (_arg_1.tabposition != null) {
+			setTabPositionBetweenTextFields(this.Tab01TextField, this.Tab02TextField, _arg_1.tabposition);
+		}
+		;
+		this.m_isElementActive = false;
+		if (_arg_1.hasOwnProperty("active")) {
+			this.m_isElementActive = _arg_1.active;
+		} else {
+			if (getNodeProp(this, "pressable") == false) {
+				this.m_isElementActive = true;
+			}
+			;
+		}
+		;
+		this.m_isElementDisabled = false;
+		if (_arg_1.hasOwnProperty("disabled")) {
+			this.m_isElementDisabled = _arg_1.disabled;
+		}
+		;
+		this.updateState();
+	}
+
+	public function onAcceptPressed():void {
+		Log.info(Log.ChannelDebug, this, "onAcceptPressed");
+		this.m_isElementActive = true;
+		this.updateState();
+	}
+
+	public function onCancelPressed():void {
+		Log.info(Log.ChannelDebug, this, "onCancelPressed");
+		this.m_isElementActive = false;
+		this.updateState();
+	}
+
+	override protected function updateState():void {
+		if (this.m_isElementDisabled) {
+			setState(STATE_DISABLED);
+		} else {
+			if (this.m_isElementActive) {
+				setState(((m_isSelected) ? STATE_ACTIVE_SELECT : STATE_ACTIVE));
+			} else {
+				setState(((m_isSelected) ? STATE_SELECT : STATE_NONE));
+			}
+			;
+		}
+		;
+	}
+
+
 }
+}//package menu3.search
+

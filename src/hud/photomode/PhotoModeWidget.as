@@ -1,303 +1,325 @@
-package hud.photomode
-{
-	import basic.ButtonPromptImage;
-	import common.BaseControl;
-	import common.menu.MenuUtils;
-	
-	public class PhotoModeWidget extends BaseControl
-	{
-		
-		public static const VIEWFINDERSTYLE_NONE:int = 0;
-		
-		public static const VIEWFINDERSTYLE_CAMERAITEM:int = 1;
-		
-		public static const VIEWFINDERSTYLE_PHOTOOPP:int = 2;
-		
-		public static const VIEWFINDERSTYLE_SPYCAM:int = 3;
-		
-		private static const DY_HEIGHT_ENTRY:int = 21;
-		
-		private static const DY_GAP_BETWEEN_ENTRIES:int = 1;
-		
-		private static const DY_HEIGHT_BGMARGIN:int = 68;
-		
-		private static const DY_HEIGHT_BG_COLLAPSED:int = 37;
-		
-		private static const DX_GAP_BETWEEN_PROMPTIMAGE:int = 6;
-		
-		private static const DX_GAP_BETWEEN_PROMPTS:int = 24;
-		
-		private var m_view:PhotoModeWidgetView;
-		
-		private var m_entriesVisible:Vector.<PhotoModeEntry>;
-		
-		private var m_promptsVisible:Vector.<PromptData>;
-		
-		private var m_entriesAvailable:Vector.<PhotoModeEntry>;
-		
-		private var m_promptsAvailable:Vector.<PromptData>;
-		
-		private var m_buttonPromptImagesAvailable:Vector.<ButtonPromptImage>;
-		
-		public function PhotoModeWidget()
-		{
-			var _loc6_:ButtonPromptImage = null;
-			this.m_entriesVisible = new Vector.<PhotoModeEntry>();
-			this.m_promptsVisible = new Vector.<PromptData>();
-			this.m_entriesAvailable = new Vector.<PhotoModeEntry>();
-			this.m_promptsAvailable = new Vector.<PromptData>();
-			this.m_buttonPromptImagesAvailable = new Vector.<ButtonPromptImage>();
-			super();
-			this.m_view = new PhotoModeWidgetView();
-			addChild(this.m_view);
-			this.m_view.visible = false;
-			this.m_view.bg_mc.alpha = 0.4;
-			var _loc1_:Array = [];
-			var _loc2_:int = 4;
-			while (_loc1_.length < _loc2_)
-			{
-				_loc1_.push(this.acquirePhotoModeEntry());
-			}
-			while (_loc1_.length > 0)
-			{
-				this.releasePhotoModeEntry(_loc1_.pop());
-			}
-			var _loc3_:int = 34;
-			while (_loc1_.length < _loc3_)
-			{
-				_loc1_.push(this.acquirePrompt());
-			}
-			while (_loc1_.length > 0)
-			{
-				this.releasePrompt(_loc1_.pop());
-			}
-			var _loc4_:int = 4;
-			var _loc5_:String = ControlsMain.getControllerType();
-			while (_loc1_.length < _loc4_)
-			{
-				(_loc6_ = this.acquireButtonPromptImage()).platform = _loc5_;
-				_loc1_.push(_loc6_);
-			}
-			while (_loc1_.length > 0)
-			{
-				this.releaseButtonPromptImage(_loc1_.pop());
-			}
-		}
-		
-		public function onSetData(param1:Object):void
-		{
-			if (param1 == null)
-			{
-				return;
-			}
-			if (!param1.bIsVisible)
-			{
-				this.m_view.visible = false;
-				return;
-			}
-			this.m_view.visible = true;
-			this.adjustNumVisibleEntries(param1.aMenuEntries.length);
-			this.feedDataToEntries(param1.aMenuEntries);
-			this.adjustNumVisiblePrompts(param1.aPrompts.length);
-			this.feedDataToPrompts(param1.sInputPlatform, param1.aPrompts);
-		}
-		
-		private function adjustNumVisibleEntries(param1:uint):void
-		{
-			var _loc2_:PhotoModeEntry = null;
-			while (param1 > this.m_entriesVisible.length)
-			{
-				_loc2_ = this.acquirePhotoModeEntry();
-				_loc2_.y = -(DY_HEIGHT_ENTRY + DY_GAP_BETWEEN_ENTRIES) * this.m_entriesVisible.length;
-				this.m_entriesVisible.unshift(_loc2_);
-			}
-			while (param1 < this.m_entriesVisible.length)
-			{
-				this.releasePhotoModeEntry(this.m_entriesVisible.shift());
-			}
-			this.m_view.bg_mc.height = this.m_entriesVisible.length > 0 ? DY_HEIGHT_BGMARGIN + (DY_HEIGHT_ENTRY + DY_GAP_BETWEEN_ENTRIES) * this.m_entriesVisible.length : DY_HEIGHT_BG_COLLAPSED;
-			this.m_view.bg_mc.y = -this.m_view.bg_mc.height;
-		}
-		
-		private function feedDataToEntries(param1:Array):void
-		{
-			var _loc2_:int = 0;
-			while (_loc2_ < param1.length)
-			{
-				this.m_entriesVisible[_loc2_].onSetData(param1[_loc2_]);
-				_loc2_++;
-			}
-		}
-		
-		private function adjustNumVisiblePrompts(param1:uint):void
-		{
-			while (param1 > this.m_promptsVisible.length)
-			{
-				this.m_promptsVisible.push(this.acquirePrompt());
-			}
-			while (param1 < this.m_promptsVisible.length)
-			{
-				this.releasePrompt(this.m_promptsVisible.pop());
-			}
-		}
-		
-		private function feedDataToPrompts(param1:String, param2:Array):void
-		{
-			var _loc5_:Number = NaN;
-			var _loc6_:PromptData = null;
-			var _loc7_:Array = null;
-			var _loc8_:int = 0;
-			var _loc9_:ButtonPromptImage = null;
-			var _loc3_:Number = 10;
-			var _loc4_:int = 0;
-			while (_loc4_ < param2.length)
-			{
-				_loc5_ = !!param2[_loc4_].bIsEnabled ? 1 : 0.3;
-				_loc6_ = this.m_promptsVisible[_loc4_];
-				_loc7_ = param2[_loc4_].aIcons;
-				while (_loc6_.images.length < _loc7_.length)
-				{
-					_loc6_.images.push(this.acquireButtonPromptImage());
-				}
-				while (_loc6_.images.length > _loc7_.length)
-				{
-					this.releaseButtonPromptImage(_loc6_.images.pop());
-				}
-				_loc8_ = 0;
-				while (_loc8_ < _loc7_.length)
-				{
-					if ((_loc9_ = _loc6_.images[_loc8_]).platform != param1)
-					{
-						_loc9_.platform = param1;
-					}
-					_loc9_.alpha = _loc5_;
-					if (_loc7_[_loc8_] is Number)
-					{
-						_loc9_.button = _loc7_[_loc8_];
-					}
-					else if (_loc7_[_loc8_] is String)
-					{
-						_loc9_.customKey = _loc7_[_loc8_];
-					}
-					_loc9_.x = _loc3_ + _loc9_.width / 2;
-					_loc3_ += _loc9_.width + 2;
-					_loc8_++;
-				}
-				_loc6_.labelTextField.text = param2[_loc4_].sLabel;
-				_loc6_.labelTextField.alpha = _loc5_;
-				_loc6_.labelTextField.x = _loc3_ + DX_GAP_BETWEEN_PROMPTIMAGE;
-				_loc3_ += DX_GAP_BETWEEN_PROMPTIMAGE + _loc6_.labelTextField.width + DX_GAP_BETWEEN_PROMPTS;
-				_loc4_++;
-			}
-			if (_loc3_ > 535)
-			{
-				this.m_view.bg_mc.width = _loc3_;
-			}
-			else
-			{
-				this.m_view.bg_mc.width = 535;
-			}
-		}
-		
-		public function triggerTestHUD():void
-		{
-			this.onSetData({"bIsVisible": true, "aMenuEntries": [{"eType": PhotoModeEntry.TYPE_TOGGLE, "sLabel": "Selfie cam", "bIsEnabled": MenuUtils.getRandomBoolean(), "bIsHighlighted": MenuUtils.getRandomBoolean(), "bIsToggledOn": MenuUtils.getRandomBoolean(), "sCurrentValue": "maybe"}, {"eType": PhotoModeEntry.TYPE_SLIDER, "sLabel": "DOF", "bIsEnabled": MenuUtils.getRandomBoolean(), "bIsHighlighted": MenuUtils.getRandomBoolean(), "fSliderPerc": MenuUtils.getRandomInRange(0, 100, true), "sCurrentValue": "xx%"}, {"eType": PhotoModeEntry.TYPE_LIST, "sLabel": "Filter", "bIsEnabled": MenuUtils.getRandomBoolean(), "bIsHighlighted": MenuUtils.getRandomBoolean(), "sCurrentValue": "Sepia"}], "sInputPlatform": ["xboxone", "ps4", "key", "pc"][MenuUtils.getRandomInRange(0, 3, true)], "aPrompts": MenuUtils.shuffleArray([{"bIsEnabled": true, "aIcons": [5, 7, 6, 8], "sLabel": "Navigate"}, {"bIsEnabled": true, "aIcons": [10], "sLabel": "Take Photo"}, {"bIsEnabled": true, "aIcons": [1], "sLabel": "Accept"}, {"bIsEnabled": true, "aIcons": [4], "sLabel": "Cancel"}, {"bIsEnabled": true, "aIcons": [], "sLabel": "Nothin\'"}]).slice(MenuUtils.getRandomInRange(0, 5, true))});
-		}
-		
-		private function acquirePhotoModeEntry():PhotoModeEntry
-		{
-			var _loc1_:PhotoModeEntry = null;
-			if (this.m_entriesAvailable.length > 0)
-			{
-				_loc1_ = this.m_entriesAvailable.pop();
-				_loc1_.visible = true;
-			}
-			else
-			{
-				_loc1_ = new PhotoModeEntry();
-				this.m_view.entryholder_mc.addChild(_loc1_);
-			}
-			return _loc1_;
-		}
-		
-		private function releasePhotoModeEntry(param1:PhotoModeEntry):void
-		{
-			param1.visible = false;
-			this.m_entriesAvailable.push(param1);
-		}
-		
-		private function acquirePrompt():PromptData
-		{
-			var _loc1_:PromptData = null;
-			if (this.m_promptsAvailable.length > 0)
-			{
-				_loc1_ = this.m_promptsAvailable.pop();
-				_loc1_.labelTextField.visible = true;
-			}
-			else
-			{
-				_loc1_ = new PromptData();
-				this.m_view.addChild(_loc1_.labelTextField);
-			}
-			return _loc1_;
-		}
-		
-		private function releasePrompt(param1:PromptData):void
-		{
-			while (param1.images.length > 0)
-			{
-				this.releaseButtonPromptImage(param1.images.pop());
-			}
-			param1.labelTextField.visible = false;
-			this.m_promptsAvailable.push(param1);
-		}
-		
-		private function acquireButtonPromptImage():ButtonPromptImage
-		{
-			var _loc1_:ButtonPromptImage = null;
-			if (this.m_buttonPromptImagesAvailable.length > 0)
-			{
-				_loc1_ = this.m_buttonPromptImagesAvailable.pop();
-				_loc1_.visible = true;
-			}
-			else
-			{
-				_loc1_ = new ButtonPromptImage();
-				_loc1_.y = -19;
-				_loc1_.scaleX = _loc1_.scaleY = 0.6;
-				this.m_view.addChild(_loc1_);
-			}
-			return _loc1_;
-		}
-		
-		private function releaseButtonPromptImage(param1:ButtonPromptImage):void
-		{
-			param1.visible = false;
-			this.m_buttonPromptImagesAvailable.push(param1);
-		}
-	}
-}
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
+
+//hud.photomode.PhotoModeWidget
+
+package hud.photomode {
+import common.BaseControl;
+
+import __AS3__.vec.Vector;
 
 import basic.ButtonPromptImage;
-import common.menu.MenuConstants;
+
 import common.menu.MenuUtils;
+
+import __AS3__.vec.*;
+
+public class PhotoModeWidget extends BaseControl {
+
+	public static const VIEWFINDERSTYLE_NONE:int = 0;
+	public static const VIEWFINDERSTYLE_CAMERAITEM:int = 1;
+	public static const VIEWFINDERSTYLE_PHOTOOPP:int = 2;
+	public static const VIEWFINDERSTYLE_SPYCAM:int = 3;
+	private static const DY_HEIGHT_ENTRY:int = 21;
+	private static const DY_GAP_BETWEEN_ENTRIES:int = 1;
+	private static const DY_HEIGHT_BGMARGIN:int = 68;
+	private static const DY_HEIGHT_BG_COLLAPSED:int = 37;
+	private static const DX_GAP_BETWEEN_PROMPTIMAGE:int = 6;
+	private static const DX_GAP_BETWEEN_PROMPTS:int = 24;
+
+	private var m_view:PhotoModeWidgetView;
+	private var m_entriesVisible:Vector.<PhotoModeEntry> = new Vector.<PhotoModeEntry>();
+	private var m_promptsVisible:Vector.<PromptData> = new Vector.<PromptData>();
+	private var m_entriesAvailable:Vector.<PhotoModeEntry> = new Vector.<PhotoModeEntry>();
+	private var m_promptsAvailable:Vector.<PromptData> = new Vector.<PromptData>();
+	private var m_buttonPromptImagesAvailable:Vector.<ButtonPromptImage> = new Vector.<ButtonPromptImage>();
+
+	public function PhotoModeWidget() {
+		var _local_6:ButtonPromptImage;
+		super();
+		this.m_view = new PhotoModeWidgetView();
+		addChild(this.m_view);
+		this.m_view.visible = false;
+		this.m_view.bg_mc.alpha = 0.4;
+		var _local_1:Array = [];
+		var _local_2:int = 4;
+		while (_local_1.length < _local_2) {
+			_local_1.push(this.acquirePhotoModeEntry());
+		}
+		;
+		while (_local_1.length > 0) {
+			this.releasePhotoModeEntry(_local_1.pop());
+		}
+		;
+		var _local_3:int = 34;
+		while (_local_1.length < _local_3) {
+			_local_1.push(this.acquirePrompt());
+		}
+		;
+		while (_local_1.length > 0) {
+			this.releasePrompt(_local_1.pop());
+		}
+		;
+		var _local_4:int = 4;
+		var _local_5:String = ControlsMain.getControllerType();
+		while (_local_1.length < _local_4) {
+			_local_6 = this.acquireButtonPromptImage();
+			_local_6.platform = _local_5;
+			_local_1.push(_local_6);
+		}
+		;
+		while (_local_1.length > 0) {
+			this.releaseButtonPromptImage(_local_1.pop());
+		}
+		;
+	}
+
+	public function onSetData(_arg_1:Object):void {
+		if (_arg_1 == null) {
+			return;
+		}
+		;
+		if (!_arg_1.bIsVisible) {
+			this.m_view.visible = false;
+			return;
+		}
+		;
+		this.m_view.visible = true;
+		this.adjustNumVisibleEntries(_arg_1.aMenuEntries.length);
+		this.feedDataToEntries(_arg_1.aMenuEntries);
+		this.adjustNumVisiblePrompts(_arg_1.aPrompts.length);
+		this.feedDataToPrompts(_arg_1.sInputPlatform, _arg_1.aPrompts);
+	}
+
+	private function adjustNumVisibleEntries(_arg_1:uint):void {
+		var _local_2:PhotoModeEntry;
+		while (_arg_1 > this.m_entriesVisible.length) {
+			_local_2 = this.acquirePhotoModeEntry();
+			_local_2.y = (-(DY_HEIGHT_ENTRY + DY_GAP_BETWEEN_ENTRIES) * this.m_entriesVisible.length);
+			this.m_entriesVisible.unshift(_local_2);
+		}
+		;
+		while (_arg_1 < this.m_entriesVisible.length) {
+			this.releasePhotoModeEntry(this.m_entriesVisible.shift());
+		}
+		;
+		this.m_view.bg_mc.height = ((this.m_entriesVisible.length > 0) ? (DY_HEIGHT_BGMARGIN + ((DY_HEIGHT_ENTRY + DY_GAP_BETWEEN_ENTRIES) * this.m_entriesVisible.length)) : DY_HEIGHT_BG_COLLAPSED);
+		this.m_view.bg_mc.y = -(this.m_view.bg_mc.height);
+	}
+
+	private function feedDataToEntries(_arg_1:Array):void {
+		var _local_2:int;
+		while (_local_2 < _arg_1.length) {
+			this.m_entriesVisible[_local_2].onSetData(_arg_1[_local_2]);
+			_local_2++;
+		}
+		;
+	}
+
+	private function adjustNumVisiblePrompts(_arg_1:uint):void {
+		while (_arg_1 > this.m_promptsVisible.length) {
+			this.m_promptsVisible.push(this.acquirePrompt());
+		}
+		;
+		while (_arg_1 < this.m_promptsVisible.length) {
+			this.releasePrompt(this.m_promptsVisible.pop());
+		}
+		;
+	}
+
+	private function feedDataToPrompts(_arg_1:String, _arg_2:Array):void {
+		var _local_5:Number;
+		var _local_6:PromptData;
+		var _local_7:Array;
+		var _local_8:int;
+		var _local_9:ButtonPromptImage;
+		var _local_3:Number = 10;
+		var _local_4:int;
+		while (_local_4 < _arg_2.length) {
+			_local_5 = ((_arg_2[_local_4].bIsEnabled) ? 1 : 0.3);
+			_local_6 = this.m_promptsVisible[_local_4];
+			_local_7 = _arg_2[_local_4].aIcons;
+			while (_local_6.images.length < _local_7.length) {
+				_local_6.images.push(this.acquireButtonPromptImage());
+			}
+			;
+			while (_local_6.images.length > _local_7.length) {
+				this.releaseButtonPromptImage(_local_6.images.pop());
+			}
+			;
+			_local_8 = 0;
+			while (_local_8 < _local_7.length) {
+				_local_9 = _local_6.images[_local_8];
+				if (_local_9.platform != _arg_1) {
+					_local_9.platform = _arg_1;
+				}
+				;
+				_local_9.alpha = _local_5;
+				if ((_local_7[_local_8] is Number)) {
+					_local_9.button = _local_7[_local_8];
+				} else {
+					if ((_local_7[_local_8] is String)) {
+						_local_9.customKey = _local_7[_local_8];
+					}
+					;
+				}
+				;
+				_local_9.x = (_local_3 + (_local_9.width / 2));
+				_local_3 = (_local_3 + (_local_9.width + 2));
+				_local_8++;
+			}
+			;
+			_local_6.labelTextField.text = _arg_2[_local_4].sLabel;
+			_local_6.labelTextField.alpha = _local_5;
+			_local_6.labelTextField.x = (_local_3 + DX_GAP_BETWEEN_PROMPTIMAGE);
+			_local_3 = (_local_3 + ((DX_GAP_BETWEEN_PROMPTIMAGE + _local_6.labelTextField.width) + DX_GAP_BETWEEN_PROMPTS));
+			_local_4++;
+		}
+		;
+		if (_local_3 > 535) {
+			this.m_view.bg_mc.width = _local_3;
+		} else {
+			this.m_view.bg_mc.width = 535;
+		}
+		;
+	}
+
+	public function triggerTestHUD():void {
+		this.onSetData({
+			"bIsVisible": true,
+			"aMenuEntries": [{
+				"eType": PhotoModeEntry.TYPE_TOGGLE,
+				"sLabel": "Selfie cam",
+				"bIsEnabled": MenuUtils.getRandomBoolean(),
+				"bIsHighlighted": MenuUtils.getRandomBoolean(),
+				"bIsToggledOn": MenuUtils.getRandomBoolean(),
+				"sCurrentValue": "maybe"
+			}, {
+				"eType": PhotoModeEntry.TYPE_SLIDER,
+				"sLabel": "DOF",
+				"bIsEnabled": MenuUtils.getRandomBoolean(),
+				"bIsHighlighted": MenuUtils.getRandomBoolean(),
+				"fSliderPerc": MenuUtils.getRandomInRange(0, 100, true),
+				"sCurrentValue": "xx%"
+			}, {
+				"eType": PhotoModeEntry.TYPE_LIST,
+				"sLabel": "Filter",
+				"bIsEnabled": MenuUtils.getRandomBoolean(),
+				"bIsHighlighted": MenuUtils.getRandomBoolean(),
+				"sCurrentValue": "Sepia"
+			}],
+			"sInputPlatform": ["xboxone", "ps4", "key", "pc"][MenuUtils.getRandomInRange(0, 3, true)],
+			"aPrompts": MenuUtils.shuffleArray([{
+				"bIsEnabled": true,
+				"aIcons": [5, 7, 6, 8],
+				"sLabel": "Navigate"
+			}, {
+				"bIsEnabled": true,
+				"aIcons": [10],
+				"sLabel": "Take Photo"
+			}, {
+				"bIsEnabled": true,
+				"aIcons": [1],
+				"sLabel": "Accept"
+			}, {
+				"bIsEnabled": true,
+				"aIcons": [4],
+				"sLabel": "Cancel"
+			}, {
+				"bIsEnabled": true,
+				"aIcons": [],
+				"sLabel": "Nothin'"
+			}]).slice(MenuUtils.getRandomInRange(0, 5, true))
+		});
+	}
+
+	private function acquirePhotoModeEntry():PhotoModeEntry {
+		var _local_1:PhotoModeEntry;
+		if (this.m_entriesAvailable.length > 0) {
+			_local_1 = this.m_entriesAvailable.pop();
+			_local_1.visible = true;
+		} else {
+			_local_1 = new PhotoModeEntry();
+			this.m_view.entryholder_mc.addChild(_local_1);
+		}
+		;
+		return (_local_1);
+	}
+
+	private function releasePhotoModeEntry(_arg_1:PhotoModeEntry):void {
+		_arg_1.visible = false;
+		this.m_entriesAvailable.push(_arg_1);
+	}
+
+	private function acquirePrompt():PromptData {
+		var _local_1:PromptData;
+		if (this.m_promptsAvailable.length > 0) {
+			_local_1 = this.m_promptsAvailable.pop();
+			_local_1.labelTextField.visible = true;
+		} else {
+			_local_1 = new PromptData();
+			this.m_view.addChild(_local_1.labelTextField);
+		}
+		;
+		return (_local_1);
+	}
+
+	private function releasePrompt(_arg_1:PromptData):void {
+		while (_arg_1.images.length > 0) {
+			this.releaseButtonPromptImage(_arg_1.images.pop());
+		}
+		;
+		_arg_1.labelTextField.visible = false;
+		this.m_promptsAvailable.push(_arg_1);
+	}
+
+	private function acquireButtonPromptImage():ButtonPromptImage {
+		var _local_1:ButtonPromptImage;
+		if (this.m_buttonPromptImagesAvailable.length > 0) {
+			_local_1 = this.m_buttonPromptImagesAvailable.pop();
+			_local_1.visible = true;
+		} else {
+			_local_1 = new ButtonPromptImage();
+			_local_1.y = -19;
+			_local_1.scaleX = (_local_1.scaleY = 0.6);
+			this.m_view.addChild(_local_1);
+		}
+		;
+		return (_local_1);
+	}
+
+	private function releaseButtonPromptImage(_arg_1:ButtonPromptImage):void {
+		_arg_1.visible = false;
+		this.m_buttonPromptImagesAvailable.push(_arg_1);
+	}
+
+
+}
+}//package hud.photomode
+
+import __AS3__.vec.Vector;
+
+import basic.ButtonPromptImage;
+
 import flash.text.TextField;
 import flash.text.TextFieldAutoSize;
 
-class PromptData
-{
-	
-	public var images:Vector.<ButtonPromptImage>;
-	
-	public var labelTextField:TextField;
-	
-	public function PromptData()
-	{
-		this.images = new Vector.<ButtonPromptImage>();
-		this.labelTextField = new TextField();
-		super();
+import common.menu.MenuUtils;
+import common.menu.MenuConstants;
+
+import __AS3__.vec.*;
+
+class PromptData {
+
+	public var images:Vector.<ButtonPromptImage> = new Vector.<ButtonPromptImage>();
+	public var labelTextField:TextField = new TextField();
+
+	public function PromptData() {
 		this.labelTextField.autoSize = TextFieldAutoSize.LEFT;
 		this.labelTextField.y = -30;
 		MenuUtils.setupText(this.labelTextField, "", 16, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorWhite);
 	}
+
 }
+
+

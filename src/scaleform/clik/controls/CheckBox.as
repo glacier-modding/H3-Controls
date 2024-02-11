@@ -3,7 +3,7 @@
  *
  * <p><b>Inspectable Properties</b></p>
  * <p>
- * Since it derives from the Button control, the CheckBox contains the same inspectable properties as the Button 
+ * Since it derives from the Button control, the CheckBox contains the same inspectable properties as the Button
  * with the omission of the toggle and disableFocus properties.
  * <ul>
  *  <li><i>autoSize</i>: Determines if the button will scale to fit the text that it contains and which direction to align the resized button. Setting the autoSize property to TextFieldAutoSize.NONE ("none") will leave its current size unchanged.</li>
@@ -18,8 +18,8 @@
  *
  * <p><b>States</b></p>
  * <p>
- * Due to its toggle property, the CheckBox requires another set of keyframes to denote the selected state. These 
- * states include 
+ * Due to its toggle property, the CheckBox requires another set of keyframes to denote the selected state. These
+ * states include
  * <ul>
  *      <li>an up or default state.</li>
  *      <li>an over state when the mouse cursor is over the component, or when it is focused.</li>
@@ -31,7 +31,7 @@
  *      <li>a selected_disabled state.</li>
  * </ul>
  * </p>
- * 
+ *
  * These are the minimal set of keyframes that should be in a CheckBox. The extended set of states and keyframes supported by the Button component, and consequently the CheckBox component, are described in the Getting Started with CLIK Buttons document.
  *
  * <p><b>Events</b></p>
@@ -59,58 +59,65 @@
 
 /**************************************************************************
 
-Filename    :   CheckBox.as
+ Filename    :   CheckBox.as
 
-Copyright   :   Copyright 2012 Autodesk, Inc. All Rights reserved.
+ Copyright   :   Copyright 2012 Autodesk, Inc. All Rights reserved.
 
-Use of this software is subject to the terms of the Autodesk license
-agreement provided at the time of installation or download, or which
-otherwise accompanies this software in either electronic or hard copy form.
+ Use of this software is subject to the terms of the Autodesk license
+ agreement provided at the time of installation or download, or which
+ otherwise accompanies this software in either electronic or hard copy form.
 
-**************************************************************************/
+ **************************************************************************/
 
-package scaleform.clik.controls 
-{
-    import scaleform.clik.controls.Button;
-    
-    public class CheckBox extends Button 
-    {
-    // Constants:
-        
-    // Public Properties:
-        
-    // Protected Properties:
-        
-    // Initialization:
-        public function CheckBox() {
-            super();
-        }
-        
-        /** @private */
-        override protected function initialize():void {
-            super.initialize();
-            _toggle = true;
-        }
-        
-    // Public Getter / Setters:
-        // Override inspectables from base class
-        /** @private */
-        override public function get autoRepeat():Boolean { return false; }
-        /** @private */
-        override public function set autoRepeat(value:Boolean):void  { }
-        /** @private */
-        override public function get toggle():Boolean { return true; }
-        /** @private */
-        override public function set toggle(value:Boolean):void {}
-        
-    // Public Methods:
-        /** @private */
-        override public function toString():String {
-            return "[CLIK CheckBox " + name + "]";
-        }
-        
-    // Protected Methods:
-        
-    }
-    
+package scaleform.clik.controls {
+import scaleform.clik.controls.Button;
+
+public class CheckBox extends Button {
+	// Constants:
+
+	// Public Properties:
+
+	// Protected Properties:
+
+	// Initialization:
+	public function CheckBox() {
+		super();
+	}
+
+	/** @private */
+	override protected function initialize():void {
+		super.initialize();
+		_toggle = true;
+	}
+
+	// Public Getter / Setters:
+	// Override inspectables from base class
+	/** @private */
+	override public function get autoRepeat():Boolean {
+		return false;
+	}
+
+	/** @private */
+	override public function set autoRepeat(value:Boolean):void {
+	}
+
+	/** @private */
+	override public function get toggle():Boolean {
+		return true;
+	}
+
+	/** @private */
+	override public function set toggle(value:Boolean):void {
+	}
+
+	// Public Methods:
+	/** @private */
+	override public function toString():String {
+		return "[CLIK CheckBox " + name + "]";
+	}
+
+	// Protected Methods:
+
+}
+
 }

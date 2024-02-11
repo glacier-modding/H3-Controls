@@ -1,39 +1,41 @@
-package menu3
-{
-	import common.BaseControl;
-	import common.menu.MenuConstants;
-	import flash.display.Sprite;
-	import flash.geom.Point;
-	import flash.geom.Rectangle;
-	
-	public class MenuBackground extends BaseControl
-	{
-		
-		private var m_ingameBackgroundContainer:Sprite;
-		
-		public function MenuBackground()
-		{
-			super();
-		}
-		
-		public function drawIngameBackground():void
-		{
-			this.m_ingameBackgroundContainer = new Sprite();
-			addChild(this.m_ingameBackgroundContainer);
-			var _loc1_:Sprite = new Sprite();
-			_loc1_.graphics.clear();
-			_loc1_.graphics.beginFill(MenuConstants.COLOR_END_SCREEN_BACKGROUND, MenuConstants.MenuFrameEndScreenBackgroundAlpha);
-			_loc1_.graphics.drawRect(0, 0, MenuConstants.BaseWidth, MenuConstants.BaseHeight);
-			_loc1_.graphics.endFill();
-			this.m_ingameBackgroundContainer.addChild(_loc1_);
-		}
-		
-		public function showBokeh(param1:Rectangle, param2:int, param3:int, param4:Number, param5:Number):void
-		{
-		}
-		
-		public function showLensFlare(param1:Point, param2:Number, param3:Number, param4:Number):void
-		{
-		}
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
+
+//menu3.MenuBackground
+
+package menu3 {
+import common.BaseControl;
+
+import flash.display.Sprite;
+
+import common.menu.MenuConstants;
+
+import flash.geom.Rectangle;
+import flash.geom.Point;
+
+public class MenuBackground extends BaseControl {
+
+	private var m_ingameBackgroundContainer:Sprite;
+
+
+	public function drawIngameBackground():void {
+		this.m_ingameBackgroundContainer = new Sprite();
+		addChild(this.m_ingameBackgroundContainer);
+		var _local_1:Sprite = new Sprite();
+		_local_1.graphics.clear();
+		_local_1.graphics.beginFill(MenuConstants.COLOR_END_SCREEN_BACKGROUND, MenuConstants.MenuFrameEndScreenBackgroundAlpha);
+		_local_1.graphics.drawRect(0, 0, MenuConstants.BaseWidth, MenuConstants.BaseHeight);
+		_local_1.graphics.endFill();
+		this.m_ingameBackgroundContainer.addChild(_local_1);
 	}
+
+	public function showBokeh(_arg_1:Rectangle, _arg_2:int, _arg_3:int, _arg_4:Number, _arg_5:Number):void {
+	}
+
+	public function showLensFlare(_arg_1:Point, _arg_2:Number, _arg_3:Number, _arg_4:Number):void {
+	}
+
+
 }
+}//package menu3
+

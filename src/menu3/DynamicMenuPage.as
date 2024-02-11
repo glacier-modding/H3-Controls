@@ -1,646 +1,561 @@
-package menu3
-{
-	import common.BaseControl;
-	import common.Localization;
-	import common.Log;
-	import common.TaskletSequencer;
-	import common.menu.MenuConstants;
-	import flash.display.Sprite;
-	import flash.events.Event;
-	import flash.events.MouseEvent;
-	import flash.geom.Rectangle;
-	import flash.utils.getDefinitionByName;
-	
-	public class DynamicMenuPage extends BaseControl
-	{
-		
-		private var m_width:Number;
-		
-		private var m_height:Number;
-		
-		private var m_safeAreaRatio:Number = 1;
-		
-		private var m_container:Sprite;
-		
-		private var m_allChildren:Object;
-		
-		private var m_pageIndicator:PageIndicator;
-		
-		private var m_taskletSequencer:TaskletSequencer;
-		
-		public function DynamicMenuPage()
-		{
-			this.m_allChildren = {};
-			super();
-			addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage, true, 0, true);
-			this.m_pageIndicator = new PageIndicator(1018);
-			this.m_pageIndicator.x = 43;
-			this.m_pageIndicator.y = 154;
-			this.m_pageIndicator.visible = false;
-			addChild(this.m_pageIndicator);
-			this.m_container = new Sprite();
-			addChild(this.m_container);
-			this.m_taskletSequencer = TaskletSequencer.getGlobalInstance();
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
+
+//menu3.DynamicMenuPage
+
+package menu3 {
+import common.BaseControl;
+
+import flash.display.Sprite;
+
+import common.TaskletSequencer;
+
+import flash.events.Event;
+
+import common.menu.MenuConstants;
+import common.Log;
+
+import flash.utils.getDefinitionByName;
+import flash.events.MouseEvent;
+
+import common.Localization;
+
+public class DynamicMenuPage extends BaseControl {
+
+	private var m_width:Number;
+	private var m_height:Number;
+	private var m_safeAreaRatio:Number = 1;
+	private var m_container:Sprite;
+	private var m_allChildren:Object = {};
+	private var m_pageIndicator:PageIndicator;
+	private var m_taskletSequencer:TaskletSequencer;
+
+	public function DynamicMenuPage() {
+		addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage, true, 0, true);
+		this.m_pageIndicator = new PageIndicator(1018);
+		this.m_pageIndicator.x = 43;
+		this.m_pageIndicator.y = 154;
+		this.m_pageIndicator.visible = false;
+		addChild(this.m_pageIndicator);
+		this.m_container = new Sprite();
+		addChild(this.m_container);
+		this.m_taskletSequencer = TaskletSequencer.getGlobalInstance();
+	}
+
+	override public function getContainer():Sprite {
+		return (this.m_container);
+	}
+
+	private function onAddedToStage(_arg_1:Event):void {
+		removeEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage, true);
+		stage.addEventListener(ScreenResizeEvent.SCREEN_RESIZED, this.screenResizeEventHandler, true, 0, true);
+	}
+
+	public function screenResizeEventHandler(_arg_1:ScreenResizeEvent):void {
+		var _local_2:Object = _arg_1.screenSize;
+		this.m_width = _local_2.sizeX;
+		this.m_height = _local_2.sizeY;
+		this.m_safeAreaRatio = _local_2.safeAreaRatio;
+	}
+
+	public function getBaseWidth():Number {
+		return (MenuConstants.BaseWidth);
+	}
+
+	public function getBaseHeight():Number {
+		return (MenuConstants.BaseHeight);
+	}
+
+	public function getGridUnitWidth():Number {
+		return (MenuConstants.GridUnitWidth);
+	}
+
+	public function getGridUnitHeight():Number {
+		return (MenuConstants.GridUnitHeight);
+	}
+
+	private function createElement(_arg_1:String, _arg_2:Object):Sprite {
+		var _local_3:Object = ((_arg_2.data) || ({}));
+		if (_arg_2.ncols) {
+			_local_3.width = (_arg_2.ncols * MenuConstants.GridUnitWidth);
 		}
-		
-		override public function getContainer():Sprite
-		{
-			return this.m_container;
+		;
+		if (_arg_2.nrows) {
+			_local_3.height = (_arg_2.nrows * MenuConstants.GridUnitHeight);
 		}
-		
-		private function onAddedToStage(param1:Event):void
-		{
-			removeEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage, true);
-			stage.addEventListener(ScreenResizeEvent.SCREEN_RESIZED, this.screenResizeEventHandler, true, 0, true);
+		;
+		if (_arg_2.width) {
+			_local_3.width = _arg_2.width;
 		}
-		
-		public function screenResizeEventHandler(param1:ScreenResizeEvent):void
-		{
-			var _loc2_:Object = param1.screenSize;
-			this.m_width = _loc2_.sizeX;
-			this.m_height = _loc2_.sizeY;
-			this.m_safeAreaRatio = _loc2_.safeAreaRatio;
+		;
+		if (_arg_2.height) {
+			_local_3.height = _arg_2.height;
 		}
-		
-		public function getBaseWidth():Number
-		{
-			return MenuConstants.BaseWidth;
+		;
+		_local_3.sizeX = this.m_width;
+		_local_3.sizeY = this.m_height;
+		_local_3.safeAreaRatio = this.m_safeAreaRatio;
+		if (_arg_1.indexOf("menu2") >= 0) {
+			Log.error("DynamicMenuPage", this, (("menu2 is not supported anymore: " + _arg_1) + " !!!!1!1!11!!!!"));
+			_arg_1 = _arg_1.replace("menu2", "menu3");
 		}
-		
-		public function getBaseHeight():Number
-		{
-			return MenuConstants.BaseHeight;
+		;
+		var _local_4:Class = (getDefinitionByName(_arg_1) as Class);
+		var _local_5:Sprite = new _local_4(_local_3);
+		this.m_allChildren[_arg_2.id] = _local_5;
+		_local_3.id = _arg_2.id;
+		_local_5["_nodedata"] = _arg_2;
+		return (_local_5);
+	}
+
+	private function parseElementStructure(elementSprite:Sprite, node:Object):void {
+		var elementBase:MenuElementBase;
+		var i:int;
+		var changed:Function;
+		var childData:Object;
+		var childHandling:Function;
+		if (node.x) {
+			elementSprite.x = node.x;
+		} else {
+			elementSprite.x = ((node.col * MenuConstants.GridUnitWidth) || (0));
 		}
-		
-		public function getGridUnitWidth():Number
-		{
-			return MenuConstants.GridUnitWidth;
+		;
+		if (node.y) {
+			elementSprite.y = node.y;
+		} else {
+			elementSprite.y = ((node.row * MenuConstants.GridUnitHeight) || (0));
 		}
-		
-		public function getGridUnitHeight():Number
-		{
-			return MenuConstants.GridUnitHeight;
+		;
+		elementSprite.rotationX = ((node.rotationX) || (0));
+		elementSprite.rotationY = ((node.rotationY) || (0));
+		elementSprite.rotationZ = ((node.rotationZ) || (0));
+		elementBase = (elementSprite as MenuElementBase);
+		if (node.mouse) {
+			elementBase.addEventListener(MouseEvent.MOUSE_UP, function (_arg_1:MouseEvent):void {
+				elementBase.handleMouseUp(sendEventWithValue, _arg_1);
+			}, false, 0, false);
+			elementBase.addEventListener(MouseEvent.MOUSE_DOWN, function (_arg_1:MouseEvent):void {
+				elementBase.handleMouseDown(sendEventWithValue, _arg_1);
+			}, false, 0, false);
+			elementBase.addEventListener(MouseEvent.MOUSE_OVER, function (_arg_1:MouseEvent):void {
+				elementBase.handleMouseOver(sendEventWithValue, _arg_1);
+			}, false, 0, false);
+			elementBase.addEventListener(MouseEvent.MOUSE_OUT, function (_arg_1:MouseEvent):void {
+				elementBase.handleMouseOut(sendEventWithValue, _arg_1);
+			}, false, 0, false);
+			elementBase.addEventListener(MouseEvent.MOUSE_WHEEL, function (_arg_1:MouseEvent):void {
+				elementBase.handleMouseWheel(sendEventWithValue, _arg_1);
+			}, false, 0, false);
+			elementBase.addEventListener(MouseEvent.ROLL_OVER, function (_arg_1:MouseEvent):void {
+				elementBase.handleMouseRollOver(sendEventWithValue, _arg_1);
+			}, false, 0, false);
+			elementBase.addEventListener(MouseEvent.ROLL_OUT, function (_arg_1:MouseEvent):void {
+				elementBase.handleMouseRollOut(sendEventWithValue, _arg_1);
+			}, false, 0, false);
+			elementBase.setEngineCallbacks(sendEvent, sendEventWithValue);
 		}
-		
-		private function createElement(param1:String, param2:Object):Sprite
-		{
-			var _loc3_:Object = param2.data || {};
-			if (param2.ncols)
-			{
-				_loc3_.width = param2.ncols * MenuConstants.GridUnitWidth;
-			}
-			if (param2.nrows)
-			{
-				_loc3_.height = param2.nrows * MenuConstants.GridUnitHeight;
-			}
-			if (param2.width)
-			{
-				_loc3_.width = param2.width;
-			}
-			if (param2.height)
-			{
-				_loc3_.height = param2.height;
-			}
-			_loc3_.sizeX = this.m_width;
-			_loc3_.sizeY = this.m_height;
-			_loc3_.safeAreaRatio = this.m_safeAreaRatio;
-			if (param1.indexOf("menu2") >= 0)
-			{
-				Log.error("DynamicMenuPage", this, "menu2 is not supported anymore: " + param1 + " !!!!1!1!11!!!!");
-				param1 = param1.replace("menu2", "menu3");
-			}
-			var _loc4_:Class;
-			var _loc5_:Sprite = new (_loc4_ = getDefinitionByName(param1) as Class)(_loc3_);
-			this.m_allChildren[param2.id] = _loc5_;
-			_loc3_.id = param2.id;
-			_loc5_["_nodedata"] = param2;
-			return _loc5_;
-		}
-		
-		private function parseElementStructure(param1:Sprite, param2:Object):void
-		{
-			var children:Array;
-			var applyDataFunc:Function;
-			var elementBase:MenuElementBase = null;
-			var i:int = 0;
-			var changed:Function = null;
-			var childData:Object = null;
-			var childHandling:Function = null;
-			var elementSprite:Sprite = param1;
-			var node:Object = param2;
-			if (node.x)
-			{
-				elementSprite.x = node.x;
-			}
-			else
-			{
-				elementSprite.x = node.col * MenuConstants.GridUnitWidth || 0;
-			}
-			if (node.y)
-			{
-				elementSprite.y = node.y;
-			}
-			else
-			{
-				elementSprite.y = node.row * MenuConstants.GridUnitHeight || 0;
-			}
-			elementSprite.rotationX = Number(node.rotationX) || 0;
-			elementSprite.rotationY = Number(node.rotationY) || 0;
-			elementSprite.rotationZ = Number(node.rotationZ) || 0;
-			elementBase = elementSprite as MenuElementBase;
-			if (node.mouse)
-			{
-				elementBase.addEventListener(MouseEvent.MOUSE_UP, function(param1:MouseEvent):void
-				{
-					elementBase.handleMouseUp(sendEventWithValue, param1);
-				}, false, 0, false);
-				elementBase.addEventListener(MouseEvent.MOUSE_DOWN, function(param1:MouseEvent):void
-				{
-					elementBase.handleMouseDown(sendEventWithValue, param1);
-				}, false, 0, false);
-				elementBase.addEventListener(MouseEvent.MOUSE_OVER, function(param1:MouseEvent):void
-				{
-					elementBase.handleMouseOver(sendEventWithValue, param1);
-				}, false, 0, false);
-				elementBase.addEventListener(MouseEvent.MOUSE_OUT, function(param1:MouseEvent):void
-				{
-					elementBase.handleMouseOut(sendEventWithValue, param1);
-				}, false, 0, false);
-				elementBase.addEventListener(MouseEvent.MOUSE_WHEEL, function(param1:MouseEvent):void
-				{
-					elementBase.handleMouseWheel(sendEventWithValue, param1);
-				}, false, 0, false);
-				elementBase.addEventListener(MouseEvent.ROLL_OVER, function(param1:MouseEvent):void
-				{
-					elementBase.handleMouseRollOver(sendEventWithValue, param1);
-				}, false, 0, false);
-				elementBase.addEventListener(MouseEvent.ROLL_OUT, function(param1:MouseEvent):void
-				{
-					elementBase.handleMouseRollOut(sendEventWithValue, param1);
-				}, false, 0, false);
-				elementBase.setEngineCallbacks(sendEvent, sendEventWithValue);
-			}
-			children = node.children;
-			if (Boolean(children) && Boolean(elementBase))
-			{
-				i = 0;
-				while (i < children.length)
-				{
-					childData = children[i];
-					if (childData != null)
-					{
-						childHandling = this.parseElementChildStructure(elementBase, childData);
-						this.m_taskletSequencer.addChunk(childHandling);
-					}
-					i++;
+		;
+		var children:Array = node.children;
+		if (((children) && (elementBase))) {
+			i = 0;
+			while (i < children.length) {
+				childData = children[i];
+				if (childData != null) {
+					childHandling = this.parseElementChildStructure(elementBase, childData);
+					this.m_taskletSequencer.addChunk(childHandling);
 				}
-				changed = function():void
-				{
-					elementBase.onChildrenChanged();
+				;
+				i = (i + 1);
+			}
+			;
+			changed = function ():void {
+				elementBase.onChildrenChanged();
+			};
+			this.m_taskletSequencer.addChunk(changed);
+		}
+		;
+		var applyDataFunc:Function = function ():void {
+			var _local_1:Object;
+			applyData(elementSprite);
+			if (((!(elementBase == null)) && (node.ismenusystemnode === true))) {
+				if (node.visible != null) {
+					_local_1 = new Object();
+					_local_1["visible"] = (!(node.visible === false));
+					elementBase.setVisible(_local_1);
+				}
+				;
+			}
+			;
+		};
+		this.m_taskletSequencer.addChunk(applyDataFunc);
+	}
+
+	private function parseElementChildStructure(elementBase:MenuElementBase, childData:Object):Function {
+		var childHandling:Function = function ():void {
+			var child:Sprite;
+			var childHandlingAdd:Function;
+			child = processElement(childData);
+			if (child != null) {
+				childHandlingAdd = function ():void {
+					elementBase.addChild2(child);
 				};
-				this.m_taskletSequencer.addChunk(changed);
+				m_taskletSequencer.addChunk(childHandlingAdd);
 			}
-			applyDataFunc = function():void
-			{
-				var _loc1_:Object = null;
-				applyData(elementSprite);
-				if (elementBase != null && node.ismenusystemnode === true)
-				{
-					if (node.visible != null)
-					{
-						_loc1_ = new Object();
-						_loc1_["visible"] = node.visible !== false;
-						elementBase.setVisible(_loc1_);
-					}
-				}
+			;
+		};
+		return (childHandling);
+	}
+
+	private function applyData(_arg_1:Sprite):void {
+		if (_arg_1["onSetData"]) {
+			var _local_2:* = _arg_1;
+			(_local_2["onSetData"](((_arg_1["_nodedata"]["data"]) || ({}))));
+		}
+		;
+	}
+
+	private function processElement(_arg_1:Object):Sprite {
+		if (!_arg_1.view) {
+			return (null);
+		}
+		;
+		var _local_2:Sprite = this.createElement(_arg_1.view, _arg_1);
+		if (!_local_2) {
+			return (null);
+		}
+		;
+		this.parseElementStructure(_local_2, _arg_1);
+		return (_local_2);
+	}
+
+	public function callOnChild(id:int, method:String, ...args):void {
+		var func:Function = function ():void {
+			var _local_1:Object = m_allChildren[id];
+			if (((_local_1) && (_local_1[method]))) {
+				_local_1[method].apply(_local_1, args);
+			}
+			;
+		};
+		this.m_taskletSequencer.addChunk(func);
+	}
+
+	public function getElementBounds(_arg_1:int):Object {
+		var _local_2:Object = this.m_allChildren[_arg_1];
+		if (_local_2 == null) {
+			return (null);
+		}
+		;
+		return (_local_2.getView().getBounds(stage));
+	}
+
+	public function getBestElementForSelection(_arg_1:int, _arg_2:int, _arg_3:Number, _arg_4:Number):int {
+		var _local_9:int;
+		Log.xinfo(Log.ChannelContainer, ((((((("getBestElementForSelection: parentID:" + _arg_1) + " selectedId:") + _arg_2) + " inputX:") + _arg_3) + " inputY:") + _arg_4));
+		var _local_5:int = -1;
+		var _local_6:MenuElementBase = this.m_allChildren[_arg_1];
+		var _local_7:MenuElementBase = this.m_allChildren[_arg_2];
+		if (((_local_6 == null) || (_local_7 == null))) {
+			return (_local_5);
+		}
+		;
+		var _local_8:MenuElementBase = LeafNavigationUtil.getBestElementForSelection(_local_6, _local_6, _local_7, _arg_3, _arg_4);
+		if (_local_8 != null) {
+			_local_9 = MenuElementBase.getId(_local_8);
+			if (_local_9 >= 0) {
+				Log.xinfo(Log.ChannelContainer, ("getBestElementForSelection: bestElement:" + _local_9));
+				return (_local_9);
+			}
+			;
+		}
+		;
+		Log.xinfo(Log.ChannelContainer, "getBestElementForSelection: no best element found.");
+		return (_local_5);
+	}
+
+	private function unregisterChildren(_arg_1:Object):void {
+		var _local_4:int;
+		var _local_5:int;
+		var _local_6:Object;
+		var _local_2:Function = _arg_1["getContainer"];
+		if (_local_2 == null) {
+			return;
+		}
+		;
+		var _local_3:Object = _local_2();
+		if (((_local_3) && (_local_3.numChildren))) {
+			_local_4 = (_local_3.numChildren as int);
+			_local_5 = 0;
+			while (_local_5 < _local_4) {
+				_local_6 = _local_3.getChildAt(_local_5);
+				this.unregister(_local_6);
+				_local_5++;
+			}
+			;
+		}
+		;
+	}
+
+	private function unregister(obj:Object):void {
+		var id:int;
+		var funcUnregisterChildren:Function;
+		var menuElement:MenuElementBase;
+		var funcMenuElementUnregister:Function;
+		if (obj["_nodedata"]) {
+			id = (obj["_nodedata"]["id"] as int);
+			delete this.m_allChildren[id];
+			funcUnregisterChildren = function ():void {
+				unregisterChildren(obj);
 			};
-			this.m_taskletSequencer.addChunk(applyDataFunc);
-		}
-		
-		private function parseElementChildStructure(param1:MenuElementBase, param2:Object):Function
-		{
-			var elementBase:MenuElementBase = param1;
-			var childData:Object = param2;
-			var childHandling:Function = function():void
-			{
-				var child:Sprite = null;
-				var childHandlingAdd:Function = null;
-				child = processElement(childData);
-				if (child != null)
-				{
-					childHandlingAdd = function():void
-					{
-						elementBase.addChild2(child);
-					};
-					m_taskletSequencer.addChunk(childHandlingAdd);
-				}
-			};
-			return childHandling;
-		}
-		
-		private function applyData(param1:Sprite):void
-		{
-			if (param1["onSetData"])
-			{
-				param1["onSetData"](param1["_nodedata"]["data"] || {});
+			this.m_taskletSequencer.addChunk(funcUnregisterChildren);
+			menuElement = (obj as MenuElementBase);
+			if (menuElement) {
+				funcMenuElementUnregister = function ():void {
+					menuElement.onUnregister();
+					menuElement.clearChildren();
+				};
+				this.m_taskletSequencer.addChunk(funcMenuElementUnregister);
 			}
+			;
 		}
-		
-		private function processElement(param1:Object):Sprite
-		{
-			if (!param1.view)
-			{
-				return null;
-			}
-			var _loc2_:Sprite = this.createElement(param1.view, param1);
-			if (!_loc2_)
-			{
-				return null;
-			}
-			this.parseElementStructure(_loc2_, param1);
-			return _loc2_;
-		}
-		
-		public function callOnChild(param1:int, param2:String, ... rest):void
-		{
-			var id:int = param1;
-			var method:String = param2;
-			var args:Array = rest;
-			var func:Function = function():void
-			{
-				var _loc1_:Object = m_allChildren[id];
-				if (Boolean(_loc1_) && Boolean(_loc1_[method]))
-				{
-					_loc1_[method].apply(_loc1_, args);
-				}
-			};
-			this.m_taskletSequencer.addChunk(func);
-		}
-		
-		public function getElementBounds(param1:int):Object
-		{
-			var _loc2_:Object = this.m_allChildren[param1];
-			if (_loc2_ == null)
-			{
-				return null;
-			}
-			return _loc2_.getView().getBounds(stage);
-		}
-		
-		public function getBestElementForSelection(parentID:int, selectedId:int, inputX:Number, inputY:Number):int
-		{
-			var bestElement:int = 0;
-			Log.xinfo(Log.ChannelContainer, "getBestElementForSelection: parentID:" + parentID + " selectedId:" + selectedId + " inputX:" + inputX + " inputY:" + inputY);
-			var _loc5_:int = -1;
-			var _loc6_:MenuElementBase = this.m_allChildren[parentID];
-			var _loc7_:MenuElementBase = this.m_allChildren[selectedId];
-			if (_loc6_ == null || _loc7_ == null)
-			{
-				return _loc5_;
-			}
-			var _loc8_:MenuElementBase;
-			if ((_loc8_ = LeafNavigationUtil.getBestElementForSelection(_loc6_, _loc6_, _loc7_, inputX, inputY)) != null)
-			{
-				if ((bestElement = MenuElementBase.getId(_loc8_)) >= 0)
-				{
-					Log.xinfo(Log.ChannelContainer, "getBestElementForSelection: bestElement:" + bestElement);
-					return bestElement;
-				}
-			}
-			Log.xinfo(Log.ChannelContainer, "getBestElementForSelection: no best element found.");
-			return _loc5_;
-		}
-		
-		private function unregisterChildren(param1:Object):void
-		{
-			var _loc4_:int = 0;
-			var _loc5_:int = 0;
-			var _loc6_:Object = null;
-			var _loc2_:Function = param1["getContainer"];
-			if (_loc2_ == null)
-			{
+		;
+	}
+
+	public function assignViewToStructure(parentId:int, view:BaseControl):void {
+		var func:Function = function ():void {
+			var _local_1:MenuElementBase = m_allChildren[parentId];
+			if (!_local_1) {
 				return;
 			}
-			var _loc3_:Object = _loc2_();
-			if (Boolean(_loc3_) && Boolean(_loc3_.numChildren))
-			{
-				_loc4_ = _loc3_.numChildren as int;
-				_loc5_ = 0;
-				while (_loc5_ < _loc4_)
-				{
-					_loc6_ = _loc3_.getChildAt(_loc5_);
-					this.unregister(_loc6_);
-					_loc5_++;
+			;
+			var _local_2:Sprite = (view as Sprite);
+			var _local_3:uint;
+			while (_local_3 < getContainer().numChildren) {
+				if (getContainer().getChildAt(_local_3) == _local_2) {
+					getContainer().removeChildAt(_local_3);
+					break;
 				}
+				;
+				_local_3++;
 			}
-		}
-		
-		private function unregister(param1:Object):void
-		{
-			var id:int = 0;
-			var funcUnregisterChildren:Function = null;
-			var menuElement:MenuElementBase = null;
-			var funcMenuElementUnregister:Function = null;
-			var obj:Object = param1;
-			if (obj["_nodedata"])
-			{
-				id = obj["_nodedata"]["id"] as int;
-				delete this.m_allChildren[id];
-				funcUnregisterChildren = function():void
-				{
-					unregisterChildren(obj);
-				};
-				this.m_taskletSequencer.addChunk(funcUnregisterChildren);
-				menuElement = obj as MenuElementBase;
-				if (menuElement)
-				{
-					funcMenuElementUnregister = function():void
-					{
-						menuElement.onUnregister();
-						menuElement.clearChildren();
-					};
-					this.m_taskletSequencer.addChunk(funcMenuElementUnregister);
-				}
+			;
+			_local_1.addChild2(view, 0);
+			_local_1.onChildrenChanged();
+		};
+		this.m_taskletSequencer.addChunk(func);
+	}
+
+	public function addChildNode(parentId:int, childData:Object, index:int = -1):void {
+		var func:Function = function ():void {
+			var node:MenuElementBase;
+			var child:Sprite;
+			node = m_allChildren[parentId];
+			if (!node) {
+				return;
 			}
-		}
-		
-		public function assignViewToStructure(param1:int, param2:BaseControl):void
-		{
-			var parentId:int = param1;
-			var view:BaseControl = param2;
-			var func:Function = function():void
-			{
-				var _loc1_:MenuElementBase = m_allChildren[parentId];
-				if (!_loc1_)
-				{
-					return;
-				}
-				var _loc2_:Sprite = view as Sprite;
-				var _loc3_:uint = 0;
-				while (_loc3_ < getContainer().numChildren)
-				{
-					if (getContainer().getChildAt(_loc3_) == _loc2_)
-					{
-						getContainer().removeChildAt(_loc3_);
-						break;
-					}
-					_loc3_++;
-				}
-				_loc1_.addChild2(view, 0);
-				_loc1_.onChildrenChanged();
+			;
+			child = processElement(childData);
+			var funcChildrenChanged:Function = function ():void {
+				node.addChild2(child, index);
+				node.onChildrenChanged();
 			};
-			this.m_taskletSequencer.addChunk(func);
-		}
-		
-		public function addChildNode(param1:int, param2:Object, param3:int = -1):void
-		{
-			var parentId:int = param1;
-			var childData:Object = param2;
-			var index:int = param3;
-			var func:Function = function():void
-			{
-				var funcChildrenChanged:Function;
-				var node:MenuElementBase = null;
-				var child:Sprite = null;
-				node = m_allChildren[parentId];
-				if (!node)
-				{
+			m_taskletSequencer.addChunk(funcChildrenChanged);
+		};
+		this.m_taskletSequencer.addChunk(func);
+	}
+
+	public function removeChildNode(childNodeId:int):void {
+		var func:Function = function ():void {
+			trace(("removeChildNode: " + childNodeId));
+			var _local_1:MenuElementBase = m_allChildren[childNodeId];
+			if (!_local_1) {
+				return;
+			}
+			;
+			var _local_2:MenuElementBase = _local_1.m_parent;
+			if (_local_2 != null) {
+				_local_2.removeChild2(_local_1);
+				_local_2.onChildrenChanged();
+			}
+			;
+			unregister(_local_1);
+		};
+		this.m_taskletSequencer.addChunk(func);
+	}
+
+	public function reorderChildNodes(parentId:int, childNodeIds:Array):void {
+		var func:Function = function ():void {
+			var _local_4:int;
+			var _local_5:MenuElementBase;
+			trace(((("reorderChildNodes: parentId: " + parentId) + " childNodeIds count: ") + childNodeIds.length));
+			var _local_1:MenuElementBase = m_allChildren[parentId];
+			if (!_local_1) {
+				return;
+			}
+			;
+			var _local_2:Array = new Array();
+			var _local_3:int;
+			while (_local_3 < childNodeIds.length) {
+				_local_4 = childNodeIds[_local_3];
+				_local_5 = m_allChildren[_local_4];
+				if (_local_5 != null) {
+					_local_2.push(_local_5);
+				}
+				;
+				_local_3++;
+			}
+			;
+			if (_local_2.length > 0) {
+				_local_1.reorderChildren(_local_2);
+			}
+			;
+		};
+		this.m_taskletSequencer.addChunk(func);
+	}
+
+	public function reorderNode(nodeId:int):void {
+		var func:Function = function ():void {
+			var _local_1:MenuElementBase = m_allChildren[nodeId];
+			if (!_local_1) {
+				return;
+			}
+			;
+			var _local_2:Object = _local_1.parent;
+			if (!_local_2) {
+				return;
+			}
+			;
+			_local_2.setChildIndex(_local_1, (_local_2.numChildren - 1));
+		};
+		this.m_taskletSequencer.addChunk(func);
+	}
+
+	public function reloadData(nodeId:int, nodeData:Object):void {
+		var func:Function = function ():void {
+			var _local_1:Sprite = m_allChildren[nodeId];
+			if (!_local_1) {
+				return;
+			}
+			;
+			_local_1["_nodedata"] = nodeData;
+			applyData(_local_1);
+		};
+		this.m_taskletSequencer.addChunk(func);
+	}
+
+	public function reloadNode(nodeId:int, nodeData:Object):void {
+		var func:Function = function ():void {
+			var elementSprite:Sprite;
+			var menuElement:MenuElementBase;
+			elementSprite = m_allChildren[nodeId];
+			if (!elementSprite) {
+				return;
+			}
+			;
+			unregisterChildren(elementSprite);
+			menuElement = (m_allChildren[nodeId] as MenuElementBase);
+			if (!menuElement) {
+				return;
+			}
+			;
+			var funcClearMenuElement:Function = function ():void {
+				var persistentReloadData:Object;
+				var menuElementParent:MenuElementBase;
+				var child:Sprite;
+				var data:Object;
+				var funcReplace:Function;
+				persistentReloadData = menuElement.getPersistentReloadData();
+				menuElement.clearChildren();
+				menuElement.onUnregister();
+				menuElementParent = menuElement.m_parent;
+				if (!menuElementParent) {
+					data = {};
+					data["root"] = nodeData;
+					onSetData(data);
 					return;
 				}
-				child = processElement(childData);
-				funcChildrenChanged = function():void
-				{
-					node.addChild2(child, index);
-					node.onChildrenChanged();
+				;
+				child = processElement(nodeData);
+				if (child) {
+					funcReplace = function ():void {
+						var _local_1:MenuElementBase = (child as MenuElementBase);
+						if (_local_1 != null) {
+							_local_1.onPersistentReloadData(persistentReloadData);
+						}
+						;
+						menuElementParent.replaceChild2(elementSprite, child);
+					};
+					m_taskletSequencer.addChunk(funcReplace);
+				}
+				;
+				var funcChildrenChanged:Function = function ():void {
+					menuElementParent.onChildrenChanged();
 				};
 				m_taskletSequencer.addChunk(funcChildrenChanged);
 			};
-			this.m_taskletSequencer.addChunk(func);
-		}
-		
-		public function removeChildNode(param1:int):void
-		{
-			var childNodeId:int = param1;
-			var func:Function = function():void
-			{
-				trace("removeChildNode: " + childNodeId);
-				var _loc1_:MenuElementBase = m_allChildren[childNodeId];
-				if (!_loc1_)
-				{
-					return;
-				}
-				var _loc2_:MenuElementBase = _loc1_.m_parent;
-				if (_loc2_ != null)
-				{
-					_loc2_.removeChild2(_loc1_);
-					_loc2_.onChildrenChanged();
-				}
-				unregister(_loc1_);
-			};
-			this.m_taskletSequencer.addChunk(func);
-		}
-		
-		public function reorderChildNodes(param1:int, param2:Array):void
-		{
-			var parentId:int = param1;
-			var childNodeIds:Array = param2;
-			var func:Function = function():void
-			{
-				var _loc4_:int = 0;
-				var _loc5_:MenuElementBase = null;
-				trace("reorderChildNodes: parentId: " + parentId + " childNodeIds count: " + childNodeIds.length);
-				var _loc1_:MenuElementBase = m_allChildren[parentId];
-				if (!_loc1_)
-				{
-					return;
-				}
-				var _loc2_:Array = new Array();
-				var _loc3_:int = 0;
-				while (_loc3_ < childNodeIds.length)
-				{
-					_loc4_ = int(childNodeIds[_loc3_]);
-					if ((_loc5_ = m_allChildren[_loc4_]) != null)
-					{
-						_loc2_.push(_loc5_);
-					}
-					_loc3_++;
-				}
-				if (_loc2_.length > 0)
-				{
-					_loc1_.reorderChildren(_loc2_);
-				}
-			};
-			this.m_taskletSequencer.addChunk(func);
-		}
-		
-		public function reorderNode(param1:int):void
-		{
-			var nodeId:int = param1;
-			var func:Function = function():void
-			{
-				var _loc1_:MenuElementBase = m_allChildren[nodeId];
-				if (!_loc1_)
-				{
-					return;
-				}
-				var _loc2_:Object = _loc1_.parent;
-				if (!_loc2_)
-				{
-					return;
-				}
-				_loc2_.setChildIndex(_loc1_, _loc2_.numChildren - 1);
-			};
-			this.m_taskletSequencer.addChunk(func);
-		}
-		
-		public function reloadData(param1:int, param2:Object):void
-		{
-			var nodeId:int = param1;
-			var nodeData:Object = param2;
-			var func:Function = function():void
-			{
-				var _loc1_:Sprite = m_allChildren[nodeId];
-				if (!_loc1_)
-				{
-					return;
-				}
-				_loc1_["_nodedata"] = nodeData;
-				applyData(_loc1_);
-			};
-			this.m_taskletSequencer.addChunk(func);
-		}
-		
-		public function reloadNode(param1:int, param2:Object):void
-		{
-			var nodeId:int = param1;
-			var nodeData:Object = param2;
-			var func:Function = function():void
-			{
-				var funcClearMenuElement:Function;
-				var elementSprite:Sprite = null;
-				var menuElement:MenuElementBase = null;
-				elementSprite = m_allChildren[nodeId];
-				if (!elementSprite)
-				{
-					return;
-				}
-				unregisterChildren(elementSprite);
-				menuElement = m_allChildren[nodeId] as MenuElementBase;
-				if (!menuElement)
-				{
-					return;
-				}
-				funcClearMenuElement = function():void
-				{
-					var funcChildrenChanged:Function;
-					var persistentReloadData:Object = null;
-					var menuElementParent:MenuElementBase = null;
-					var child:Sprite = null;
-					var data:Object = null;
-					var funcReplace:Function = null;
-					persistentReloadData = menuElement.getPersistentReloadData();
-					menuElement.clearChildren();
-					menuElement.onUnregister();
-					menuElementParent = menuElement.m_parent;
-					if (!menuElementParent)
-					{
-						data = {};
-						data["root"] = nodeData;
-						onSetData(data);
-						return;
-					}
-					child = processElement(nodeData);
-					if (child)
-					{
-						funcReplace = function():void
-						{
-							var _loc1_:MenuElementBase = child as MenuElementBase;
-							if (_loc1_ != null)
-							{
-								_loc1_.onPersistentReloadData(persistentReloadData);
-							}
-							menuElementParent.replaceChild2(elementSprite, child);
-						};
-						m_taskletSequencer.addChunk(funcReplace);
-					}
-					funcChildrenChanged = function():void
-					{
-						menuElementParent.onChildrenChanged();
-					};
-					m_taskletSequencer.addChunk(funcChildrenChanged);
-				};
-				m_taskletSequencer.addChunk(funcClearMenuElement);
-			};
-			this.m_taskletSequencer.addChunk(func);
-		}
-		
-		public function bubbleEvent(param1:int, param2:String):void
-		{
-			var targetId:int = param1;
-			var eventName:String = param2;
-			var func:Function = function():void
-			{
-				var _loc1_:Object = m_allChildren[targetId];
-				if (!_loc1_)
-				{
-					return;
-				}
-				var _loc2_:Object = _loc1_.parent;
-				while (_loc2_ && _loc2_ != this && (!_loc2_["handleEvent"] || !_loc2_["handleEvent"](eventName, _loc1_)))
-				{
-					_loc2_ = _loc2_.parent;
-				}
-			};
-			this.m_taskletSequencer.addChunk(func);
-		}
-		
-		public function onSetData(param1:Object):void
-		{
-			var data:Object = param1;
-			var func:Function = function():void
-			{
-				var funcProcessElement:Function;
-				if (m_container.numChildren > 0)
-				{
-					while (m_container.numChildren > 0)
-					{
-						unregisterChildren(m_container.getChildAt(0));
-						m_container.removeChildAt(0);
-					}
-				}
-				m_allChildren = {};
-				if (!data.root)
-				{
-					return;
-				}
-				funcProcessElement = function():void
-				{
-					var _loc1_:Sprite = processElement(data.root);
-					if (_loc1_)
-					{
-						m_container.addChild(_loc1_);
-					}
-				};
-				m_taskletSequencer.addChunk(funcProcessElement);
-			};
-			this.m_taskletSequencer.addChunk(func);
-		}
-		
-		public function setPageIndicator(param1:String, param2:int, param3:int):void
-		{
-			this.m_pageIndicator.visible = true;
-			this.m_pageIndicator.setPageIndicator(param3);
-			this.m_pageIndicator.updatePageIndicator(param2, param1, Localization.get("UI_PAGE_INDICATOR"), String(param2 + 1) + " / " + String(param3));
-		}
-		
-		private function debug_printNodes():void
-		{
-			var _loc1_:String = null;
-			var _loc2_:Object = null;
-			for (_loc1_ in this.m_allChildren)
-			{
-				_loc2_ = this.m_allChildren[_loc1_];
-			}
-		}
+			m_taskletSequencer.addChunk(funcClearMenuElement);
+		};
+		this.m_taskletSequencer.addChunk(func);
 	}
+
+	public function bubbleEvent(targetId:int, eventName:String):void {
+		var func:Function = function ():void {
+			var _local_1:Object = m_allChildren[targetId];
+			if (!_local_1) {
+				return;
+			}
+			;
+			var _local_2:Object = _local_1.parent;
+			while ((((_local_2) && (!(_local_2 == this))) && ((!(_local_2["handleEvent"])) || (!(_local_2["handleEvent"](eventName, _local_1)))))) {
+				_local_2 = _local_2.parent;
+			}
+			;
+		};
+		this.m_taskletSequencer.addChunk(func);
+	}
+
+	public function onSetData(data:Object):void {
+		var func:Function = function ():void {
+			if (m_container.numChildren > 0) {
+				while (m_container.numChildren > 0) {
+					unregisterChildren(m_container.getChildAt(0));
+					m_container.removeChildAt(0);
+				}
+				;
+			}
+			;
+			m_allChildren = {};
+			if (!data.root) {
+				return;
+			}
+			;
+			var funcProcessElement:Function = function ():void {
+				var _local_1:Sprite = processElement(data.root);
+				if (_local_1) {
+					m_container.addChild(_local_1);
+				}
+				;
+			};
+			m_taskletSequencer.addChunk(funcProcessElement);
+		};
+		this.m_taskletSequencer.addChunk(func);
+	}
+
+	public function setPageIndicator(_arg_1:String, _arg_2:int, _arg_3:int):void {
+		this.m_pageIndicator.visible = true;
+		this.m_pageIndicator.setPageIndicator(_arg_3);
+		this.m_pageIndicator.updatePageIndicator(_arg_2, _arg_1, Localization.get("UI_PAGE_INDICATOR"), ((String((_arg_2 + 1)) + " / ") + String(_arg_3)));
+	}
+
+	private function debug_printNodes():void {
+		var _local_1:String;
+		var _local_2:Object;
+		for (_local_1 in this.m_allChildren) {
+			_local_2 = this.m_allChildren[_local_1];
+		}
+		;
+	}
+
+
 }
+}//package menu3
+

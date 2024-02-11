@@ -1,76 +1,85 @@
-package hud
-{
-	import basic.ButtonPromptImage;
-	import common.BaseControl;
-	import common.Localization;
-	import common.menu.MenuConstants;
-	import common.menu.MenuUtils;
-	import flash.display.Sprite;
-	
-	public class ButtonPrompts extends BaseControl
-	{
-		
-		private var m_promptsContainer:Sprite;
-		
-		public function ButtonPrompts()
-		{
-			super();
-			this.m_promptsContainer = new Sprite();
-			addChild(this.m_promptsContainer);
-		}
-		
-		public function onSetData(param1:Object):void
-		{
-			var _loc4_:MenuButtonLegendViewHUD = null;
-			var _loc5_:String = null;
-			var _loc6_:Array = null;
-			var _loc7_:int = 0;
-			var _loc8_:* = false;
-			while (this.m_promptsContainer.numChildren > 0)
-			{
-				this.m_promptsContainer.removeChildAt(0);
-			}
-			var _loc2_:Number = 0;
-			var _loc3_:int = 0;
-			while (_loc3_ < param1.buttonprompts.length)
-			{
-				trace(_loc3_);
-				_loc5_ = param1.buttonprompts[_loc3_].actiontype as String;
-				_loc6_ = param1.buttonprompts[_loc3_].actiontype as Array;
-				if (_loc5_ != null)
-				{
-					_loc4_ = this.addPrompt(param1.buttonprompts[_loc3_], _loc2_);
-					_loc2_ += _loc4_.width + 24;
-				}
-				else if (_loc6_ != null)
-				{
-					_loc7_ = 0;
-					while (_loc7_ < _loc6_.length)
-					{
-						_loc8_ = _loc7_ == _loc6_.length - 1;
-						_loc4_ = this.addPrompt({"actiontype": _loc6_[_loc7_], "actionlabel": (_loc8_ ? param1.buttonprompts[_loc3_].actionlabel : "")}, _loc2_);
-						_loc2_ += _loc8_ ? _loc4_.width + 24 : _loc4_.button.width;
-						_loc7_++;
-					}
-				}
-				_loc3_++;
-			}
-		}
-		
-		private function addPrompt(param1:Object, param2:Number):MenuButtonLegendViewHUD
-		{
-			var _loc3_:MenuButtonLegendViewHUD = new MenuButtonLegendViewHUD();
-			var _loc4_:ButtonPromptImage;
-			(_loc4_ = new ButtonPromptImage()).x = 27;
-			_loc4_.y = 49;
-			_loc4_.platform = ControlsMain.getControllerType();
-			_loc4_.action = param1.actiontype;
-			_loc3_.addChild(_loc4_);
-			_loc3_.header.autoSize = "left";
-			MenuUtils.setupText(_loc3_.header, Localization.get(param1.actionlabel), 16, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraLight);
-			_loc3_.x = param2;
-			this.m_promptsContainer.addChild(_loc3_);
-			return _loc3_;
-		}
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
+
+//hud.ButtonPrompts
+
+package hud {
+import common.BaseControl;
+
+import flash.display.Sprite;
+
+import basic.ButtonPromptImage;
+
+import common.menu.MenuUtils;
+import common.Localization;
+import common.menu.MenuConstants;
+
+public class ButtonPrompts extends BaseControl {
+
+	private var m_promptsContainer:Sprite;
+
+	public function ButtonPrompts() {
+		this.m_promptsContainer = new Sprite();
+		addChild(this.m_promptsContainer);
 	}
+
+	public function onSetData(_arg_1:Object):void {
+		var _local_4:MenuButtonLegendViewHUD;
+		var _local_5:String;
+		var _local_6:Array;
+		var _local_7:int;
+		var _local_8:Boolean;
+		while (this.m_promptsContainer.numChildren > 0) {
+			this.m_promptsContainer.removeChildAt(0);
+		}
+		;
+		var _local_2:Number = 0;
+		var _local_3:int;
+		while (_local_3 < _arg_1.buttonprompts.length) {
+			trace(_local_3);
+			_local_5 = (_arg_1.buttonprompts[_local_3].actiontype as String);
+			_local_6 = (_arg_1.buttonprompts[_local_3].actiontype as Array);
+			if (_local_5 != null) {
+				_local_4 = this.addPrompt(_arg_1.buttonprompts[_local_3], _local_2);
+				_local_2 = (_local_2 + (_local_4.width + 24));
+			} else {
+				if (_local_6 != null) {
+					_local_7 = 0;
+					while (_local_7 < _local_6.length) {
+						_local_8 = (_local_7 == (_local_6.length - 1));
+						_local_4 = this.addPrompt({
+							"actiontype": _local_6[_local_7],
+							"actionlabel": ((_local_8) ? _arg_1.buttonprompts[_local_3].actionlabel : "")
+						}, _local_2);
+						_local_2 = (_local_2 + ((_local_8) ? (_local_4.width + 24) : _local_4.button.width));
+						_local_7++;
+					}
+					;
+				}
+				;
+			}
+			;
+			_local_3++;
+		}
+		;
+	}
+
+	private function addPrompt(_arg_1:Object, _arg_2:Number):MenuButtonLegendViewHUD {
+		var _local_3:MenuButtonLegendViewHUD = new MenuButtonLegendViewHUD();
+		var _local_4:ButtonPromptImage = new ButtonPromptImage();
+		_local_4.x = 27;
+		_local_4.y = 49;
+		_local_4.platform = ControlsMain.getControllerType();
+		_local_4.action = _arg_1.actiontype;
+		_local_3.addChild(_local_4);
+		_local_3.header.autoSize = "left";
+		MenuUtils.setupText(_local_3.header, Localization.get(_arg_1.actionlabel), 16, MenuConstants.FONT_TYPE_MEDIUM, MenuConstants.FontColorGreyUltraLight);
+		_local_3.x = _arg_2;
+		this.m_promptsContainer.addChild(_local_3);
+		return (_local_3);
+	}
+
+
 }
+}//package hud
+

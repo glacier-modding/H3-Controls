@@ -1,55 +1,58 @@
-package basic
-{
-	import flash.display.Sprite;
-	
-	public class PieChart extends Sprite
-	{
-		
-		private const PI:Number = 3.141592653589793;
-		
-		public function PieChart()
-		{
-			super();
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
+
+//basic.PieChart
+
+package basic {
+import flash.display.Sprite;
+
+public class PieChart extends Sprite {
+
+	private const PI:Number = 3.14159265358979;
+
+
+	protected function drawSlice(_arg_1:Sprite, _arg_2:Number, _arg_3:Number, _arg_4:uint = 0xFF0000, _arg_5:Number = 0):void {
+		var _local_6:Number;
+		var _local_7:Number;
+		var _local_8:Number;
+		var _local_9:Number;
+		var _local_10:Number;
+		var _local_11:Number;
+		var _local_12:Number;
+		var _local_13:Number;
+		var _local_14:Number;
+		var _local_15:Number;
+		_arg_1.graphics.clear();
+		_arg_1.graphics.beginFill(_arg_4, 1);
+		_arg_1.graphics.moveTo(0, 0);
+		if (Math.abs(_arg_3) > 360) {
+			_arg_3 = 360;
 		}
-		
-		protected function drawSlice(param1:Sprite, param2:Number, param3:Number, param4:uint = 16711680, param5:Number = 0):void
-		{
-			var _loc6_:Number = NaN;
-			var _loc7_:Number = NaN;
-			var _loc8_:Number = NaN;
-			var _loc9_:Number = NaN;
-			var _loc10_:Number = NaN;
-			var _loc11_:Number = NaN;
-			var _loc12_:Number = NaN;
-			var _loc13_:Number = NaN;
-			var _loc14_:Number = NaN;
-			var _loc15_:Number = NaN;
-			param1.graphics.clear();
-			param1.graphics.beginFill(param4, 1);
-			param1.graphics.moveTo(0, 0);
-			if (Math.abs(param3) > 360)
-			{
-				param3 = 360;
-			}
-			_loc9_ = Math.ceil(Math.abs(param3) / 45);
-			_loc6_ = (_loc6_ = param3 / _loc9_) / 180 * this.PI;
-			_loc7_ = param5 / 180 * this.PI;
-			_loc10_ = Math.cos(_loc7_) * param2;
-			_loc11_ = Math.sin(-_loc7_) * param2;
-			param1.graphics.lineTo(_loc10_, _loc11_);
-			var _loc16_:int = 0;
-			while (_loc16_ < _loc9_)
-			{
-				_loc8_ = (_loc7_ += _loc6_) - _loc6_ / 2;
-				_loc12_ = Math.cos(_loc7_) * param2;
-				_loc13_ = Math.sin(_loc7_) * param2;
-				_loc14_ = Math.cos(_loc8_) * (param2 / Math.cos(_loc6_ / 2));
-				_loc15_ = Math.sin(_loc8_) * (param2 / Math.cos(_loc6_ / 2));
-				param1.graphics.curveTo(_loc14_, _loc15_, _loc12_, _loc13_);
-				_loc16_++;
-			}
-			param1.graphics.lineTo(0, 0);
-			param1.graphics.endFill();
+		;
+		_local_9 = Math.ceil((Math.abs(_arg_3) / 45));
+		_local_6 = (_arg_3 / _local_9);
+		_local_6 = ((_local_6 / 180) * this.PI);
+		_local_7 = ((_arg_5 / 180) * this.PI);
+		_local_10 = (Math.cos(_local_7) * _arg_2);
+		_local_11 = (Math.sin(-(_local_7)) * _arg_2);
+		_arg_1.graphics.lineTo(_local_10, _local_11);
+		var _local_16:int;
+		while (_local_16 < _local_9) {
+			_local_7 = (_local_7 + _local_6);
+			_local_8 = (_local_7 - (_local_6 / 2));
+			_local_12 = (Math.cos(_local_7) * _arg_2);
+			_local_13 = (Math.sin(_local_7) * _arg_2);
+			_local_14 = (Math.cos(_local_8) * (_arg_2 / Math.cos((_local_6 / 2))));
+			_local_15 = (Math.sin(_local_8) * (_arg_2 / Math.cos((_local_6 / 2))));
+			_arg_1.graphics.curveTo(_local_14, _local_15, _local_12, _local_13);
+			_local_16++;
 		}
+		;
+		_arg_1.graphics.lineTo(0, 0);
+		_arg_1.graphics.endFill();
 	}
+
+
 }
+}//package basic
+

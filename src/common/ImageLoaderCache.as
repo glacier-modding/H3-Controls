@@ -1,237 +1,223 @@
-package common
-{
-	
-	public class ImageLoaderCache
-	{
-		
-		private static var s_instance:ImageLoaderCache;
-		
-		private var m_imageRegister:Object;
-		
-		public function ImageLoaderCache()
-		{
-			this.m_imageRegister = new Object();
-			super();
-		}
-		
-		public static function getGlobalInstance():ImageLoaderCache
-		{
-			if (s_instance == null)
-			{
-				s_instance = new ImageLoaderCache();
-			}
-			return s_instance;
-		}
-		
-		public function registerLoadImage(param1:String, param2:Function = null, param3:Function = null):void
-		{
-			var _loc4_:ImageLoader_internal;
-			if ((_loc4_ = this.m_imageRegister[param1] as ImageLoader_internal) == null)
-			{
-				(_loc4_ = new ImageLoader_internal()).loadImage(param1);
-				this.m_imageRegister[param1] = _loc4_;
-			}
-			++_loc4_.m_referenceCount;
-			if (_loc4_.isLoading())
-			{
-				if (param2 != null)
-				{
-					_loc4_.m_successCallbacks.push(param2);
-				}
-				if (param3 != null)
-				{
-					_loc4_.m_failedCallbacks.push(param3);
-				}
-			}
-			else if (_loc4_.m_failed)
-			{
-				if (param3 != null)
-				{
-					param3();
-				}
-			}
-			else if (param2 != null)
-			{
-				param2(_loc4_.m_bitmapData);
-			}
-		}
-		
-		public function unregisterLoadImage(param1:String, param2:Function = null, param3:Function = null):void
-		{
-			var _loc5_:int = 0;
-			var _loc6_:int = 0;
-			var _loc4_:ImageLoader_internal;
-			--(_loc4_ = this.m_imageRegister[param1] as ImageLoader_internal).m_referenceCount;
-			if (_loc4_.m_referenceCount <= 0)
-			{
-				_loc4_.cancelAndClearImage();
-				this.m_imageRegister[param1] = null;
-				return;
-			}
-			if (_loc4_.isLoading())
-			{
-				if (param2 != null)
-				{
-					_loc5_ = _loc4_.m_successCallbacks.indexOf(param2);
-					_loc4_.m_successCallbacks.splice(_loc5_, 1);
-				}
-				if (param3 != null)
-				{
-					_loc6_ = _loc4_.m_failedCallbacks.indexOf(param3);
-					_loc4_.m_failedCallbacks.splice(_loc6_, 1);
-				}
-			}
-		}
-	}
-}
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
 
-import flash.display.Bitmap;
-import flash.display.BitmapData;
-import flash.display.DisplayObject;
+//common.ImageLoaderCache
+
+package common {
+public class ImageLoaderCache {
+
+	private static var s_instance:ImageLoaderCache;
+
+	private var m_imageRegister:Object = new Object();
+
+
+	public static function getGlobalInstance():ImageLoaderCache {
+		if (s_instance == null) {
+			s_instance = new (ImageLoaderCache)();
+		}
+		;
+		return (s_instance);
+	}
+
+
+	public function registerLoadImage(_arg_1:String, _arg_2:Function = null, _arg_3:Function = null):void {
+		var _local_4:ImageLoader_internal = (this.m_imageRegister[_arg_1] as ImageLoader_internal);
+		if (_local_4 == null) {
+			_local_4 = new ImageLoader_internal();
+			_local_4.loadImage(_arg_1);
+			this.m_imageRegister[_arg_1] = _local_4;
+		}
+		;
+		_local_4.m_referenceCount++;
+		if (_local_4.isLoading()) {
+			if (_arg_2 != null) {
+				_local_4.m_successCallbacks.push(_arg_2);
+			}
+			;
+			if (_arg_3 != null) {
+				_local_4.m_failedCallbacks.push(_arg_3);
+			}
+			;
+		} else {
+			if (_local_4.m_failed) {
+				if (_arg_3 != null) {
+					(_arg_3());
+				}
+				;
+			} else {
+				if (_arg_2 != null) {
+					(_arg_2(_local_4.m_bitmapData));
+				}
+				;
+			}
+			;
+		}
+		;
+	}
+
+	public function unregisterLoadImage(_arg_1:String, _arg_2:Function = null, _arg_3:Function = null):void {
+		var _local_5:int;
+		var _local_6:int;
+		var _local_4:ImageLoader_internal = (this.m_imageRegister[_arg_1] as ImageLoader_internal);
+		_local_4.m_referenceCount--;
+		if (_local_4.m_referenceCount <= 0) {
+			_local_4.cancelAndClearImage();
+			this.m_imageRegister[_arg_1] = null;
+			return;
+		}
+		;
+		if (_local_4.isLoading()) {
+			if (_arg_2 != null) {
+				_local_5 = _local_4.m_successCallbacks.indexOf(_arg_2);
+				_local_4.m_successCallbacks.splice(_local_5, 1);
+			}
+			;
+			if (_arg_3 != null) {
+				_local_6 = _local_4.m_failedCallbacks.indexOf(_arg_3);
+				_local_4.m_failedCallbacks.splice(_local_6, 1);
+			}
+			;
+		}
+		;
+	}
+
+
+}
+}//package common
+
 import flash.display.Loader;
-import flash.events.Event;
-import flash.events.IOErrorEvent;
+
+import __AS3__.vec.Vector;
+
+import flash.display.BitmapData;
 import flash.external.ExternalInterface;
 import flash.net.URLRequest;
+import flash.display.Bitmap;
+import flash.display.DisplayObject;
+import flash.events.Event;
+import flash.events.IOErrorEvent;
 
-class ImageLoader_internal extends Loader
-{
-	
+import __AS3__.vec.*;
+
+class ImageLoader_internal extends Loader {
+
 	public var m_referenceCount:int = 0;
-	
-	public var m_successCallbacks:Vector.<Function>;
-	
-	public var m_failedCallbacks:Vector.<Function>;
-	
-	private var m_isLoading:Boolean = false;
-	
+	public var m_successCallbacks:Vector.<Function> = new Vector.<Function>();
+	public var m_failedCallbacks:Vector.<Function> = new Vector.<Function>();
+	/*private*/
+	var m_isLoading:Boolean = false;
 	public var m_failed:Boolean = false;
-	
 	public var m_bitmapData:BitmapData = null;
-	
-	private var m_rid:String;
-	
-	private var m_toLoadUrl:String = null;
-	
-	public function ImageLoader_internal()
-	{
-		this.m_successCallbacks = new Vector.<Function>();
-		this.m_failedCallbacks = new Vector.<Function>();
-		super();
+	/*private*/
+	var m_rid:String;
+	/*private*/
+	var m_toLoadUrl:String = null;
+
+
+	public function isLoading():Boolean {
+		return (this.m_isLoading);
 	}
-	
-	public function isLoading():Boolean
-	{
-		return this.m_isLoading;
-	}
-	
-	public function loadImage(param1:String):void
-	{
-		if (this.m_isLoading)
-		{
+
+	public function loadImage(_arg_1:String):void {
+		if (this.m_isLoading) {
 			this.cancel();
 		}
+		;
 		this.ClearImage();
 		this.m_failed = false;
 		this.m_isLoading = true;
-		this.triggerRequestAsyncLoad(param1);
+		this.triggerRequestAsyncLoad(_arg_1);
 	}
-	
-	private function callCallbacks():void
-	{
-		var _loc1_:Function = null;
-		for each (_loc1_ in this.m_successCallbacks)
-		{
-			_loc1_(this.m_bitmapData);
+
+	/*private*/
+	function callCallbacks():void {
+		var _local_1:Function;
+		for each (_local_1 in this.m_successCallbacks) {
+			(_local_1(this.m_bitmapData));
 		}
+		;
 		this.m_successCallbacks.length = 0;
 		this.m_failedCallbacks.length = 0;
 	}
-	
-	private function callFailedCallbacks():void
-	{
-		var _loc1_:Function = null;
-		for each (_loc1_ in this.m_failedCallbacks)
-		{
-			_loc1_();
+
+	/*private*/
+	function callFailedCallbacks():void {
+		var _local_1:Function;
+		for each (_local_1 in this.m_failedCallbacks) {
+			(_local_1());
 		}
+		;
 		this.m_successCallbacks.length = 0;
 		this.m_failedCallbacks.length = 0;
 	}
-	
-	private function triggerRequestAsyncLoad(param1:String):void
-	{
-		this.m_toLoadUrl = "img://" + param1;
+
+	/*private*/
+	function triggerRequestAsyncLoad(_arg_1:String):void {
+		this.m_toLoadUrl = ("img://" + _arg_1);
 		ExternalInterface.call("RequestAsyncLoad", this.m_toLoadUrl, this);
 	}
-	
-	public function cancel():void
-	{
-		if (this.m_isLoading)
-		{
+
+	public function cancel():void {
+		if (this.m_isLoading) {
 			this.close();
 			this.ClearImage();
 			this.closeRequest();
 			this.callFailedCallbacks();
 		}
+		;
 	}
-	
-	public function cancelAndClearImage():void
-	{
-		if (this.m_isLoading)
-		{
+
+	public function cancelAndClearImage():void {
+		if (this.m_isLoading) {
 			this.cancel();
-		}
-		else
-		{
+		} else {
 			this.ClearImage();
 		}
+		;
 	}
-	
-	public function onResourceReady(param1:String):void
-	{
-		if (this.m_toLoadUrl != param1)
-		{
+
+	public function onResourceReady(_arg_1:String):void {
+		if (this.m_toLoadUrl != _arg_1) {
 			return;
 		}
+		;
 		this.RegisterLoaderListeners();
-		var _loc2_:URLRequest = new URLRequest(param1);
-		this.load(_loc2_);
+		var _local_2:URLRequest = new URLRequest(_arg_1);
+		this.load(_local_2);
 	}
-	
-	public function onResourceFailed(param1:String):void
-	{
-		if (this.m_toLoadUrl != param1)
-		{
+
+	public function onResourceFailed(_arg_1:String):void {
+		if (this.m_toLoadUrl != _arg_1) {
 			return;
 		}
+		;
 		this.m_failed = true;
 		this.closeRequest();
 		this.callFailedCallbacks();
 	}
-	
-	private function onLoadingComplete(param1:Event):void
-	{
-		var _loc3_:Bitmap = null;
+
+	/*private*/
+	function onLoadingComplete(_arg_1:Event):void {
+		var _local_3:Bitmap;
 		this.closeRequest();
-		var _loc2_:DisplayObject = content;
-		if (_loc2_ is Bitmap)
-		{
-			_loc3_ = _loc2_ as Bitmap;
-			this.m_bitmapData = _loc3_.bitmapData;
+		var _local_2:DisplayObject = content;
+		if ((_local_2 is Bitmap)) {
+			_local_3 = (_local_2 as Bitmap);
+			this.m_bitmapData = _local_3.bitmapData;
 		}
+		;
 		this.callCallbacks();
 	}
-	
-	private function onLoadFailed(param1:IOErrorEvent):void
-	{
+
+	/*private*/
+	function onLoadFailed(_arg_1:IOErrorEvent):void {
 		this.m_failed = true;
 		this.closeRequest();
 		this.callFailedCallbacks();
 	}
-	
-	private function closeRequest():void
-	{
+
+	/*private*/
+	function closeRequest():void {
 		this.m_rid = null;
 		this.m_toLoadUrl = null;
 		this.m_isLoading = false;
@@ -239,22 +225,26 @@ class ImageLoader_internal extends Loader
 		ExternalInterface.call("CloseAsyncRequest", this);
 		this.UnregisterLoaderListeners();
 	}
-	
-	private function RegisterLoaderListeners():void
-	{
+
+	/*private*/
+	function RegisterLoaderListeners():void {
 		this.contentLoaderInfo.addEventListener(Event.COMPLETE, this.onLoadingComplete);
 		this.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, this.onLoadFailed);
 	}
-	
-	private function UnregisterLoaderListeners():void
-	{
+
+	/*private*/
+	function UnregisterLoaderListeners():void {
 		this.contentLoaderInfo.removeEventListener(Event.COMPLETE, this.onLoadingComplete);
 		this.contentLoaderInfo.removeEventListener(IOErrorEvent.IO_ERROR, this.onLoadFailed);
 	}
-	
-	private function ClearImage():void
-	{
+
+	/*private*/
+	function ClearImage():void {
 		this.m_bitmapData = null;
 		this.unload();
 	}
+
+
 }
+
+

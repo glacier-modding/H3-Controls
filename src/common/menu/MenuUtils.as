@@ -1,1433 +1,1359 @@
-package common.menu
-{
-	import basic.ButtonPromptContainer;
-	import common.Animate;
-	import common.CommonUtils;
-	import common.Localization;
-	import fl.motion.Color;
-	import flash.display.DisplayObject;
-	import flash.display.DisplayObjectContainer;
-	import flash.display.MovieClip;
-	import flash.display.Sprite;
-	import flash.filters.ColorMatrixFilter;
-	import flash.filters.DropShadowFilter;
-	import flash.geom.ColorTransform;
-	import flash.geom.Point;
-	import flash.geom.Rectangle;
-	import flash.text.TextField;
-	import flash.text.TextFormat;
-	import flash.utils.Dictionary;
-	import mx.utils.StringUtil;
-	
-	public class MenuUtils
-	{
-		
-		private static const PI:Number = Math.PI;
-		
-		private static var s_truncator:String;
-		
-		private static var s_truncatorLocale:String = "";
-		
-		private static var s_thousandsSeparator:String;
-		
-		private static var s_thousandsSeparatorLocale:String = "";
-		
-		private static var s_decimalSeparator:String = ".";
-		
-		private static const m_matchHtmlLineBreaks:RegExp = /(?i)\s*<br[^>]*>\s*/g;
-		
-		public static const TINT_COLOR_BLACK:int = 0;
-		
-		public static const TINT_COLOR_GREY:int = 1;
-		
-		public static const TINT_COLOR_LIGHT_GREY:int = 2;
-		
-		public static const TINT_COLOR_NEARLY_WHITE:int = 3;
-		
-		public static const TINT_COLOR_WHITE:int = 4;
-		
-		public static const TINT_COLOR_RED:int = 5;
-		
-		public static const TINT_COLOR_LIGHT_RED:int = 6;
-		
-		public static const TINT_COLOR_DARKER_GREY:int = 7;
-		
-		public static const TINT_COLOR_MEDIUM_GREY:int = 8;
-		
-		public static const TINT_COLOR_REAL_RED:int = 9;
-		
-		public static const TINT_COLOR_ULTRA_DARK_GREY:int = 10;
-		
-		public static const TINT_COLOR_MEDIUM_GREY_3:int = 11;
-		
-		public static const TINT_COLOR_GREY_DARK_2:int = 12;
-		
-		public static const TINT_COLOR_GREY_DARK_3:int = 13;
-		
-		public static const TINT_COLOR_GREEN:int = 14;
-		
-		public static const TINT_COLOR_GREEN_LIGHT:int = 15;
-		
-		public static const TINT_COLOR_COLOR_GREY_GOTY:int = 16;
-		
-		public static const TINT_COLOR_MEDIUM_GREY_GOTY:int = 17;
-		
-		public static const TINT_COLOR_SUPER_LIGHT_GREY:int = 18;
-		
-		public static const TINT_COLOR_GREYBG:int = 19;
-		
-		public static const TINT_COLOR_YELLOW:int = 20;
-		
-		public static const TINT_COLOR_YELLOW_LIGHT:int = 21;
-		
-		public static const TINT_COLOR_MAGENTA_DARK:int = 22;
-		
-		private static const MENU_METER_TO_PIXEL:Number = 1 / 0.00364583;
-		
-		public function MenuUtils()
-		{
-			super();
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
+
+//common.menu.MenuUtils
+
+package common.menu {
+import flash.text.TextFormat;
+import flash.text.TextField;
+
+import common.CommonUtils;
+import common.Localization;
+
+import mx.utils.StringUtil;
+
+import flash.display.Sprite;
+import flash.utils.Dictionary;
+import flash.geom.Rectangle;
+import flash.display.DisplayObject;
+import flash.display.MovieClip;
+
+import basic.ButtonPromptContainer;
+
+import flash.geom.ColorTransform;
+
+import fl.motion.Color;
+
+import flash.filters.DropShadowFilter;
+import flash.filters.ColorMatrixFilter;
+import flash.display.DisplayObjectContainer;
+import flash.geom.Point;
+
+import common.Animate;
+
+public class MenuUtils {
+
+	private static const PI:Number = Math.PI;//3.14159265358979
+	private static var s_truncator:String;
+	private static var s_truncatorLocale:String = "";
+	private static var s_thousandsSeparator:String;
+	private static var s_thousandsSeparatorLocale:String = "";
+	private static var s_decimalSeparator:String = ".";
+	private static const m_matchHtmlLineBreaks:RegExp = /(?i)\s*<br[^>]*>\s*/g;
+	public static const TINT_COLOR_BLACK:int = 0;
+	public static const TINT_COLOR_GREY:int = 1;
+	public static const TINT_COLOR_LIGHT_GREY:int = 2;
+	public static const TINT_COLOR_NEARLY_WHITE:int = 3;
+	public static const TINT_COLOR_WHITE:int = 4;
+	public static const TINT_COLOR_RED:int = 5;
+	public static const TINT_COLOR_LIGHT_RED:int = 6;
+	public static const TINT_COLOR_DARKER_GREY:int = 7;
+	public static const TINT_COLOR_MEDIUM_GREY:int = 8;
+	public static const TINT_COLOR_REAL_RED:int = 9;
+	public static const TINT_COLOR_ULTRA_DARK_GREY:int = 10;
+	public static const TINT_COLOR_MEDIUM_GREY_3:int = 11;
+	public static const TINT_COLOR_GREY_DARK_2:int = 12;
+	public static const TINT_COLOR_GREY_DARK_3:int = 13;
+	public static const TINT_COLOR_GREEN:int = 14;
+	public static const TINT_COLOR_GREEN_LIGHT:int = 15;
+	public static const TINT_COLOR_COLOR_GREY_GOTY:int = 16;
+	public static const TINT_COLOR_MEDIUM_GREY_GOTY:int = 17;
+	public static const TINT_COLOR_SUPER_LIGHT_GREY:int = 18;
+	public static const TINT_COLOR_GREYBG:int = 19;
+	public static const TINT_COLOR_YELLOW:int = 20;
+	public static const TINT_COLOR_YELLOW_LIGHT:int = 21;
+	public static const TINT_COLOR_MAGENTA_DARK:int = 22;
+	private static const MENU_METER_TO_PIXEL:Number = (1 / 0.00364583);//274.285965061454
+
+
+	public static function setupText(_arg_1:TextField, _arg_2:String, _arg_3:int = 28, _arg_4:String = "$medium", _arg_5:String = "#ebebeb", _arg_6:Boolean = false):void {
+		var _local_7:TextFormat;
+		if (_arg_2 == null) {
+			_arg_2 = "";
 		}
-		
-		public static function setupText(t:TextField, text:String, textSize:int = 28, fontType:String = "$medium", fontColor:String = "#ebebeb", append:Boolean = false):void
-		{
-			var textFormat:TextFormat = null;
-			if (text == null)
-			{
-				text = "";
+		;
+		if (ControlsMain.isVrModeActive()) {
+			if (((_arg_4 == MenuConstants.FONT_TYPE_LIGHT) || (_arg_4 == MenuConstants.FONT_TYPE_NORMAL))) {
+				_arg_4 = MenuConstants.FONT_TYPE_MEDIUM;
 			}
-			if (ControlsMain.isVrModeActive())
-			{
-				if (fontType == MenuConstants.FONT_TYPE_LIGHT || fontType == MenuConstants.FONT_TYPE_NORMAL)
-				{
-					fontType = MenuConstants.FONT_TYPE_MEDIUM;
+			;
+		}
+		;
+		if (_arg_6) {
+			_arg_1.htmlText = (_arg_1.htmlText + (((((((('<font face="' + _arg_4) + '" color="') + _arg_5) + '" size="') + _arg_3) + '">') + _arg_2) + "</font>"));
+		} else {
+			_arg_1.htmlText = (((((((('<font face="' + _arg_4) + '" color="') + _arg_5) + '" size="') + _arg_3) + '">') + _arg_2) + "</font>");
+			_local_7 = new TextFormat();
+			_local_7.color = MenuConstants.ColorNumber(_arg_5);
+			_local_7.font = _arg_4;
+			_local_7.size = _arg_3;
+			_arg_1.defaultTextFormat = _local_7;
+		}
+		;
+	}
+
+	public static function setTextColor(_arg_1:TextField, _arg_2:int):void {
+		_arg_1.textColor = _arg_2;
+		var _local_3:TextFormat = new TextFormat();
+		_local_3.color = _arg_2;
+		_arg_1.defaultTextFormat = _local_3;
+	}
+
+	public static function setupTextUpper(_arg_1:TextField, _arg_2:String, _arg_3:int = 28, _arg_4:String = "$medium", _arg_5:String = "#ebebeb", _arg_6:Boolean = false):void {
+		if (_arg_2 == null) {
+			_arg_2 = "";
+		}
+		;
+		setupText(_arg_1, _arg_2.toUpperCase(), _arg_3, _arg_4, _arg_5, _arg_6);
+	}
+
+	public static function setupProfileName(_arg_1:TextField, _arg_2:String, _arg_3:int = 28, _arg_4:String = "$medium", _arg_5:String = "#ebebeb", _arg_6:Boolean = false):void {
+		if (_arg_2 == null) {
+			_arg_2 = "";
+		}
+		;
+		setupText(_arg_1, _arg_2, _arg_3, _arg_4, _arg_5, _arg_6);
+		CommonUtils.changeFontToGlobalIfNeeded(_arg_1);
+		truncateTextfieldWithCharLimit(_arg_1, 1, MenuConstants.PLAYERNAME_MIN_CHAR_COUNT, _arg_5);
+		shrinkTextToFit(_arg_1, _arg_1.width, -1);
+	}
+
+	public static function convertToEscapedHtmlString(_arg_1:String):String {
+		if (((_arg_1 == "") || (_arg_1 == null))) {
+			return (_arg_1);
+		}
+		;
+		var _local_2:XML = new XML((("<p><![CDATA[" + _arg_1) + "]]></p>"));
+		return (_local_2.toXMLString());
+	}
+
+	public static function removeHtmlLineBreaks(_arg_1:String):String {
+		m_matchHtmlLineBreaks.lastIndex = 0;
+		return (_arg_1.replace(m_matchHtmlLineBreaks, " "));
+	}
+
+	public static function truncateTextfield(_arg_1:TextField, _arg_2:int, _arg_3:String = "#ebebeb", _arg_4:Boolean = false):Boolean {
+		return (truncateTextfieldWithCharLimit(_arg_1, _arg_2, 0, _arg_3, _arg_4));
+	}
+
+	public static function truncateTextfieldWithCharLimit(_arg_1:TextField, _arg_2:int, _arg_3:int = 0, _arg_4:String = "#ebebeb", _arg_5:Boolean = false):Boolean {
+		var _local_10:int;
+		var _local_11:int;
+		var _local_12:String;
+		var _local_13:int;
+		var _local_14:Boolean;
+		var _local_15:String;
+		var _local_16:String;
+		var _local_17:String;
+		if (((_arg_2 <= 0) || (_arg_1.length <= 0))) {
+			return (false);
+		}
+		;
+		if (_arg_5) {
+			CommonUtils.changeFontToGlobalFont(_arg_1);
+		}
+		;
+		var _local_6:TextFormat = _arg_1.getTextFormat();
+		if (((_arg_4) && (!(_arg_4 == "")))) {
+			_local_6.color = MenuConstants.ColorNumber(_arg_4);
+		}
+		;
+		var _local_7:Boolean = _arg_1.wordWrap;
+		var _local_8:Boolean = _arg_1.multiline;
+		if (((!(_local_8)) || (_arg_2 == 1))) {
+			_arg_1.wordWrap = true;
+		}
+		;
+		_arg_1.multiline = true;
+		var _local_9:Boolean;
+		if (_arg_1.numLines > _arg_2) {
+			_local_10 = _arg_1.getLineIndexOfChar((_arg_1.length - 1));
+			if (_local_10 >= _arg_2) {
+				_local_11 = (_arg_1.getLineOffset(_arg_2) + _arg_1.getLineLength(_arg_2));
+				if (_local_11 < 0) {
+					_local_11 = 0;
 				}
-			}
-			if (append)
-			{
-				t.htmlText += "<font face=\"" + fontType + "\" color=\"" + fontColor + "\" size=\"" + textSize + "\">" + text + "</font>";
-			}
-			else
-			{
-				t.htmlText = "<font face=\"" + fontType + "\" color=\"" + fontColor + "\" size=\"" + textSize + "\">" + text + "</font>";
-				(textFormat = new TextFormat()).color = MenuConstants.ColorNumber(fontColor);
-				textFormat.font = fontType;
-				textFormat.size = textSize;
-				t.defaultTextFormat = textFormat;
-			}
-		}
-		
-		public static function setTextColor(param1:TextField, textColor:int):void
-		{
-			param1.textColor = textColor;
-			var textFormat:TextFormat = new TextFormat();
-			textFormat.color = textColor;
-			param1.defaultTextFormat = textFormat;
-		}
-		
-		public static function setupTextUpper(param1:TextField, text:String, textSize:int = 28, fontType:String = "$medium", fontColor:String = "#ebebeb", append:Boolean = false):void
-		{
-			if (text == null)
-			{
-				text = "";
-			}
-			setupText(param1, text.toUpperCase(), textSize, fontType, fontColor, append);
-		}
-		
-		public static function setupProfileName(param1:TextField, text:String, textSize:int = 28, fontType:String = "$medium", fontColor:String = "#ebebeb", append:Boolean = false):void
-		{
-			if (text == null)
-			{
-				text = "";
-			}
-			setupText(param1, text, textSize, fontType, fontColor, append);
-			CommonUtils.changeFontToGlobalIfNeeded(param1);
-			truncateTextfieldWithCharLimit(param1, 1, MenuConstants.PLAYERNAME_MIN_CHAR_COUNT, fontColor);
-			shrinkTextToFit(param1, param1.width, -1);
-		}
-		
-		public static function convertToEscapedHtmlString(param1:String):String
-		{
-			if (param1 == "" || param1 == null)
-			{
-				return param1;
-			}
-			var _loc2_:XML = new XML("<p><![CDATA[" + param1 + "]]></p>");
-			return _loc2_.toXMLString();
-		}
-		
-		public static function removeHtmlLineBreaks(param1:String):String
-		{
-			m_matchHtmlLineBreaks.lastIndex = 0;
-			return param1.replace(m_matchHtmlLineBreaks, " ");
-		}
-		
-		public static function truncateTextfield(param1:TextField, param2:int, param3:String = "#ebebeb", param4:Boolean = false):Boolean
-		{
-			return truncateTextfieldWithCharLimit(param1, param2, 0, param3, param4);
-		}
-		
-		public static function truncateTextfieldWithCharLimit(param1:TextField, param2:int, param3:int = 0, param4:String = "#ebebeb", param5:Boolean = false):Boolean
-		{
-			var _loc10_:int = 0;
-			var _loc11_:int = 0;
-			var _loc12_:String = null;
-			var _loc13_:int = 0;
-			var _loc14_:* = false;
-			var _loc15_:String = null;
-			var _loc16_:String = null;
-			var _loc17_:String = null;
-			if (param2 <= 0 || param1.length <= 0)
-			{
-				return false;
-			}
-			if (param5)
-			{
-				CommonUtils.changeFontToGlobalFont(param1);
-			}
-			var _loc6_:TextFormat = param1.getTextFormat();
-			if (Boolean(param4) && param4 != "")
-			{
-				_loc6_.color = MenuConstants.ColorNumber(param4);
-			}
-			var _loc7_:Boolean = param1.wordWrap;
-			var _loc8_:Boolean;
-			if (!(_loc8_ = param1.multiline) || param2 == 1)
-			{
-				param1.wordWrap = true;
-			}
-			param1.multiline = true;
-			var _loc9_:Boolean = false;
-			if (param1.numLines > param2)
-			{
-				if ((_loc10_ = param1.getLineIndexOfChar(param1.length - 1)) >= param2)
-				{
-					if ((_loc11_ = param1.getLineOffset(param2) + param1.getLineLength(param2)) < 0)
-					{
-						_loc11_ = 0;
+				;
+				_local_12 = _arg_1.text;
+				_local_13 = _local_12.length;
+				if (((s_truncator == null) || (!(s_truncatorLocale == ControlsMain.getActiveLocale())))) {
+					s_truncator = Localization.get("UI_TEXT_TRUNCATOR");
+					s_truncatorLocale = ControlsMain.getActiveLocale();
+				}
+				;
+				_local_14 = false;
+				while ((((!(_local_14)) && (_local_11 > 0)) && (_local_13 > _arg_3))) {
+					_arg_1.text = "";
+					_local_11--;
+					_local_15 = _local_12.charAt(_local_11);
+					while (((_local_11 > 0) && (((_local_15 == " ") || (_local_15 == "\n")) || (_local_15 == "\r")))) {
+						_local_11--;
+						_local_15 = _local_12.charAt(_local_11);
 					}
-					_loc13_ = (_loc12_ = param1.text).length;
-					if (s_truncator == null || s_truncatorLocale != ControlsMain.getActiveLocale())
-					{
-						s_truncator = Localization.get("UI_TEXT_TRUNCATOR");
-						s_truncatorLocale = ControlsMain.getActiveLocale();
-					}
-					_loc14_ = false;
-					while (!_loc14_ && _loc11_ > 0 && _loc13_ > param3)
-					{
-						param1.text = "";
-						_loc11_--;
-						_loc15_ = _loc12_.charAt(_loc11_);
-						while (_loc11_ > 0 && (_loc15_ == " " || _loc15_ == "\n" || _loc15_ == "\r"))
-						{
-							_loc11_--;
-							_loc15_ = _loc12_.charAt(_loc11_);
+					;
+					_local_16 = _local_12.substring(0, (_local_11 + 1));
+					_local_13 = _local_16.length;
+					_local_17 = (_local_16 + s_truncator);
+					_arg_1.text = _local_17;
+					_arg_1.setTextFormat(_local_6);
+					_local_10 = _arg_1.getLineIndexOfChar((_arg_1.length - 1));
+					_local_14 = (_local_10 < _arg_2);
+				}
+				;
+				_local_9 = true;
+			}
+			;
+		}
+		;
+		_arg_1.wordWrap = _local_7;
+		_arg_1.multiline = _local_8;
+		return (_local_9);
+	}
+
+	public static function truncateMultipartTextfield(_arg_1:TextField, _arg_2:String, _arg_3:String, _arg_4:String, _arg_5:uint = 1, _arg_6:String = "#ebebeb", _arg_7:Boolean = false):void {
+		var _local_12:int;
+		var _local_13:int;
+		var _local_14:String;
+		var _local_15:String;
+		var _local_16:String;
+		var _local_17:Boolean;
+		var _local_18:RegExp;
+		var _local_19:String;
+		var _local_20:String;
+		var _local_21:int;
+		var _local_22:int;
+		if (((_arg_2.length <= _arg_5) && (_arg_3.length <= _arg_5))) {
+			return;
+		}
+		;
+		var _local_8:int = 1;
+		if (_arg_7) {
+			CommonUtils.changeFontToGlobalFont(_arg_1);
+		}
+		;
+		var _local_9:TextFormat = _arg_1.getTextFormat();
+		if (((_arg_6) && (!(_arg_6 == "")))) {
+			_local_9.color = MenuConstants.ColorNumber(_arg_6);
+		}
+		;
+		var _local_10:Boolean = _arg_1.wordWrap;
+		var _local_11:Boolean = _arg_1.multiline;
+		if (((!(_local_11)) || (_local_8 == 1))) {
+			_arg_1.wordWrap = true;
+		}
+		;
+		_arg_1.multiline = true;
+		if (_arg_1.numLines > _local_8) {
+			_local_12 = _arg_1.getLineIndexOfChar((_arg_1.length - 1));
+			if (_local_12 >= _local_8) {
+				_local_13 = (_arg_1.getLineOffset(_local_8) + _arg_1.getLineLength(_local_8));
+				if (_local_13 < 0) {
+					_local_13 = 0;
+				}
+				;
+				_local_14 = _arg_1.text;
+				_arg_1.text = "";
+				_arg_1.htmlText = _arg_2;
+				_arg_2 = _arg_1.text;
+				_arg_1.htmlText = _arg_3;
+				_arg_3 = _arg_1.text;
+				_local_15 = _arg_2;
+				_local_16 = _arg_3;
+				if (((s_truncator == null) || (!(s_truncatorLocale == ControlsMain.getActiveLocale())))) {
+					s_truncator = Localization.get("UI_TEXT_TRUNCATOR");
+					s_truncatorLocale = ControlsMain.getActiveLocale();
+				}
+				;
+				_local_17 = false;
+				while ((!(_local_17))) {
+					_local_18 = /\S\s*$/;
+					if (_arg_2.length > _arg_3.length) {
+						_arg_2 = _arg_2.substr(0, (_arg_2.length - 1));
+						_local_21 = _arg_2.search(_local_18);
+						if (_local_21 > 0) {
+							_arg_2 = _arg_2.substring(0, (_local_21 + 1));
 						}
-						_loc13_ = (_loc16_ = _loc12_.substring(0, _loc11_ + 1)).length;
-						_loc17_ = _loc16_ + s_truncator;
-						param1.text = _loc17_;
-						param1.setTextFormat(_loc6_);
-						_loc14_ = (_loc10_ = param1.getLineIndexOfChar(param1.length - 1)) < param2;
+						;
+						_local_15 = (_arg_2 + s_truncator);
+					} else {
+						_arg_3 = _arg_3.substr(0, (_arg_3.length - 1));
+						_local_22 = _arg_3.search(_local_18);
+						if (_local_22 > 0) {
+							_arg_3 = _arg_3.substring(0, (_local_22 + 1));
+						}
+						;
+						_local_16 = (_arg_3 + s_truncator);
 					}
-					_loc9_ = true;
+					;
+					_local_19 = ((_local_15 + _arg_4) + _local_16);
+					_local_20 = convertToEscapedHtmlString(_local_19);
+					_arg_1.htmlText = _local_20;
+					_arg_1.setTextFormat(_local_9);
+					_local_12 = _arg_1.getLineIndexOfChar((_arg_1.length - 1));
+					_local_17 = (_local_12 < _local_8);
+					if (((_arg_2.length <= _arg_5) && (_arg_3.length <= _arg_5))) {
+						_local_17 = true;
+					}
+					;
 				}
+				;
 			}
-			param1.wordWrap = _loc7_;
-			param1.multiline = _loc8_;
-			return _loc9_;
+			;
 		}
-		
-		public static function truncateMultipartTextfield(param1:TextField, param2:String, param3:String, param4:String, param5:uint = 1, param6:String = "#ebebeb", param7:Boolean = false):void
-		{
-			var _loc12_:int = 0;
-			var _loc13_:int = 0;
-			var _loc14_:String = null;
-			var _loc15_:String = null;
-			var _loc16_:String = null;
-			var _loc17_:* = false;
-			var _loc18_:RegExp = null;
-			var _loc19_:String = null;
-			var _loc20_:String = null;
-			var _loc21_:int = 0;
-			var _loc22_:int = 0;
-			if (param2.length <= param5 && param3.length <= param5)
-			{
-				return;
-			}
-			var _loc8_:int = 1;
-			if (param7)
-			{
-				CommonUtils.changeFontToGlobalFont(param1);
-			}
-			var _loc9_:TextFormat = param1.getTextFormat();
-			if (Boolean(param6) && param6 != "")
-			{
-				_loc9_.color = MenuConstants.ColorNumber(param6);
-			}
-			var _loc10_:Boolean = param1.wordWrap;
-			var _loc11_:Boolean;
-			if (!(_loc11_ = param1.multiline) || _loc8_ == 1)
-			{
-				param1.wordWrap = true;
-			}
-			param1.multiline = true;
-			if (param1.numLines > _loc8_)
-			{
-				if ((_loc12_ = param1.getLineIndexOfChar(param1.length - 1)) >= _loc8_)
-				{
-					if ((_loc13_ = param1.getLineOffset(_loc8_) + param1.getLineLength(_loc8_)) < 0)
-					{
-						_loc13_ = 0;
-					}
-					_loc14_ = param1.text;
-					param1.text = "";
-					param1.htmlText = param2;
-					param2 = param1.text;
-					param1.htmlText = param3;
-					param3 = param1.text;
-					_loc15_ = param2;
-					_loc16_ = param3;
-					if (s_truncator == null || s_truncatorLocale != ControlsMain.getActiveLocale())
-					{
-						s_truncator = Localization.get("UI_TEXT_TRUNCATOR");
-						s_truncatorLocale = ControlsMain.getActiveLocale();
-					}
-					_loc17_ = false;
-					while (!_loc17_)
-					{
-						_loc18_ = /\S\s*$/;
-						if (param2.length > param3.length)
-						{
-							param2 = param2.substr(0, param2.length - 1);
-							if ((_loc21_ = param2.search(_loc18_)) > 0)
-							{
-								param2 = param2.substring(0, _loc21_ + 1);
-							}
-							_loc15_ = param2 + s_truncator;
-						}
-						else
-						{
-							param3 = param3.substr(0, param3.length - 1);
-							if ((_loc22_ = param3.search(_loc18_)) > 0)
-							{
-								param3 = param3.substring(0, _loc22_ + 1);
-							}
-							_loc16_ = param3 + s_truncator;
-						}
-						_loc19_ = _loc15_ + param4 + _loc16_;
-						_loc20_ = convertToEscapedHtmlString(_loc19_);
-						param1.htmlText = _loc20_;
-						param1.setTextFormat(_loc9_);
-						_loc17_ = (_loc12_ = param1.getLineIndexOfChar(param1.length - 1)) < _loc8_;
-						if (param2.length <= param5 && param3.length <= param5)
-						{
-							_loc17_ = true;
-						}
-					}
-				}
-			}
-			param1.wordWrap = _loc10_;
-			param1.multiline = _loc11_;
+		;
+		_arg_1.wordWrap = _local_10;
+		_arg_1.multiline = _local_11;
+	}
+
+	public static function truncateHTMLField(_arg_1:TextField, _arg_2:String, _arg_3:Sprite = null, _arg_4:Boolean = false):void {
+		if (_arg_4) {
+			_arg_1.htmlText = (('<font face="$global">' + _arg_2) + "</font>");
+		} else {
+			_arg_1.htmlText = _arg_2;
 		}
-		
-		public static function truncateHTMLField(param1:TextField, param2:String, param3:Sprite = null, param4:Boolean = false):void
-		{
-			if (param4)
-			{
-				param1.htmlText = "<font face=\"$global\">" + param2 + "</font>";
-			}
-			else
-			{
-				param1.htmlText = param2;
-			}
-			if (s_truncator == null || s_truncatorLocale != ControlsMain.getActiveLocale())
-			{
-				s_truncator = Localization.get("UI_TEXT_TRUNCATOR");
-				s_truncatorLocale = ControlsMain.getActiveLocale();
-			}
-			var _loc5_:int;
-			if ((_loc5_ = getLastVisibleCharacter(param1, param3)) == -1)
-			{
-				param1.htmlText = "";
-				return;
-			}
-			var _loc6_:String;
-			var _loc7_:String = (_loc6_ = param1.text).substr(_loc5_ + 1);
-			if ((_loc7_ = StringUtil.trim(_loc7_)).length <= 0)
-			{
-				return;
-			}
-			var _loc8_:String = truncateHTMLText(param2, _loc5_, s_truncator, 3);
-			if (param4)
-			{
-				param1.htmlText = "<font face=\"$global\">" + _loc8_ + "</font>";
-			}
-			else
-			{
-				param1.htmlText = _loc8_;
-			}
+		;
+		if (((s_truncator == null) || (!(s_truncatorLocale == ControlsMain.getActiveLocale())))) {
+			s_truncator = Localization.get("UI_TEXT_TRUNCATOR");
+			s_truncatorLocale = ControlsMain.getActiveLocale();
 		}
-		
-		public static function truncateHTMLText(param1:String, param2:int, param3:String, param4:int):String
-		{
-			var strippedString:String = null;
-			var currentlyOpenTags:Dictionary = null;
-			var contentIndex:int = 0;
-			var needsTruncation:Boolean = false;
-			var char:String = null;
-			var htmlString:String = param1;
-			var strLength:int = param2;
-			var truncateString:String = param3;
-			var truncatePadding:int = param4;
-			var finishTag:Function = function(param1:String):void
-			{
-				isInsideTag = false;
-				needsTagFinish = false;
-				var _loc2_:* = param1.charAt(1) == "/";
-				var _loc3_:Boolean = !_loc2_ && param1.charAt(param1.length - 2) != "/";
-				var _loc4_:Boolean = !_loc2_ && !_loc3_;
-				var _loc5_:String = "";
-				if (_loc3_)
-				{
-					_loc5_ = param1.substring(1, param1.length - 1);
+		;
+		var _local_5:int = getLastVisibleCharacter(_arg_1, _arg_3);
+		if (_local_5 == -1) {
+			_arg_1.htmlText = "";
+			return;
+		}
+		;
+		var _local_6:String = _arg_1.text;
+		var _local_7:String = _local_6.substr((_local_5 + 1));
+		_local_7 = StringUtil.trim(_local_7);
+		if (_local_7.length <= 0) {
+			return;
+		}
+		;
+		var _local_8:String = truncateHTMLText(_arg_2, _local_5, s_truncator, 3);
+		if (_arg_4) {
+			_arg_1.htmlText = (('<font face="$global">' + _local_8) + "</font>");
+		} else {
+			_arg_1.htmlText = _local_8;
+		}
+		;
+	}
+
+	public static function truncateHTMLText(htmlString:String, strLength:int, truncateString:String, truncatePadding:int):String {
+		var strippedString:String;
+		var currentlyOpenTags:Dictionary;
+		var contentIndex:int;
+		var needsTruncation:Boolean;
+		var char:String;
+		var finishTag:Function = function (_arg_1:String):void {
+			isInsideTag = false;
+			needsTagFinish = false;
+			var _local_2:* = (_arg_1.charAt(1) == "/");
+			var _local_3:Boolean = ((!(_local_2)) && (!(_arg_1.charAt((_arg_1.length - 2)) == "/")));
+			var _local_4:Boolean = ((!(_local_2)) && (!(_local_3)));
+			var _local_5:* = "";
+			if (_local_3) {
+				_local_5 = _arg_1.substring(1, (_arg_1.length - 1));
+			} else {
+				if (_local_2) {
+					_local_5 = _arg_1.substring(2, (_arg_1.length - 1));
 				}
-				else if (_loc2_)
-				{
-					_loc5_ = param1.substring(2, param1.length - 1);
+				;
+			}
+			;
+			var _local_6:Number = 0;
+			if (currentlyOpenTags[_local_5] != undefined) {
+				_local_6 = currentlyOpenTags[_local_5];
+			}
+			;
+			if (needsTruncation == false) {
+				strippedString = (strippedString + _arg_1);
+				if (_local_5 == "br") {
+					contentIndex = (contentIndex + 1);
 				}
-				var _loc6_:Number = 0;
-				if (currentlyOpenTags[_loc5_] != undefined)
-				{
-					_loc6_ = Number(currentlyOpenTags[_loc5_]);
-				}
-				if (needsTruncation == false)
-				{
-					strippedString += param1;
-					if (_loc5_ == "br")
-					{
-						contentIndex += 1;
-					}
-					if (_loc3_)
-					{
-						currentlyOpenTags[_loc5_] = _loc6_ + 1;
-					}
-					else if (_loc2_)
-					{
-						currentlyOpenTags[_loc5_] = _loc6_ - 1;
-						if (currentlyOpenTags[_loc5_] <= 0)
-						{
-							delete currentlyOpenTags[_loc5_];
+				;
+				if (_local_3) {
+					currentlyOpenTags[_local_5] = (_local_6 + 1);
+				} else {
+					if (_local_2) {
+						currentlyOpenTags[_local_5] = (_local_6 - 1);
+						if (currentlyOpenTags[_local_5] <= 0) {
+							delete currentlyOpenTags[_local_5];
 						}
+						;
 					}
+					;
 				}
-				else if (_loc2_ && _loc6_ > 0)
-				{
-					currentlyOpenTags[_loc5_] = _loc6_ - 1;
-					if (currentlyOpenTags[_loc5_] <= 0)
-					{
-						delete currentlyOpenTags[_loc5_];
+				;
+			} else {
+				if (((_local_2) && (_local_6 > 0))) {
+					currentlyOpenTags[_local_5] = (_local_6 - 1);
+					if (currentlyOpenTags[_local_5] <= 0) {
+						delete currentlyOpenTags[_local_5];
 					}
-					strippedString += param1;
+					;
+					strippedString = (strippedString + _arg_1);
 				}
-			};
-			strLength -= truncatePadding;
-			var needsTagFinish:Boolean = false;
-			var isInsideTag:Boolean = false;
-			strippedString = "";
-			var currentTag:String = "";
-			currentlyOpenTags = new Dictionary();
-			var truncateAdded:Boolean = false;
-			contentIndex = 0;
-			var i:int = 0;
-			while (i < htmlString.length)
-			{
-				needsTruncation = contentIndex >= strLength;
-				if (contentIndex == strLength)
-				{
-					truncateAdded = true;
-					strippedString += truncateString;
-					contentIndex += 1;
-				}
-				if (needsTagFinish)
-				{
-					finishTag(currentTag);
-					currentTag = "";
-				}
-				char = htmlString.charAt(i);
-				if (char == "<")
-				{
-					isInsideTag = true;
-				}
-				else if (char == ">")
-				{
+				;
+			}
+			;
+		};
+		strLength = (strLength - truncatePadding);
+		var needsTagFinish:Boolean;
+		var isInsideTag:Boolean;
+		strippedString = "";
+		var currentTag:String = "";
+		currentlyOpenTags = new Dictionary();
+		var truncateAdded:Boolean;
+		contentIndex = 0;
+		var i:int;
+		while (i < htmlString.length) {
+			needsTruncation = (contentIndex >= strLength);
+			if (contentIndex == strLength) {
+				truncateAdded = true;
+				strippedString = (strippedString + truncateString);
+				contentIndex = (contentIndex + 1);
+			}
+			;
+			if (needsTagFinish) {
+				(finishTag(currentTag));
+				currentTag = "";
+			}
+			;
+			char = htmlString.charAt(i);
+			if (char == "<") {
+				isInsideTag = true;
+			} else {
+				if (char == ">") {
 					needsTagFinish = true;
 				}
-				if (!isInsideTag && !needsTruncation)
-				{
-					strippedString += char;
-					contentIndex += 1;
+				;
+			}
+			;
+			if (((!(isInsideTag)) && (!(needsTruncation)))) {
+				strippedString = (strippedString + char);
+				contentIndex = (contentIndex + 1);
+			} else {
+				if (isInsideTag) {
+					currentTag = (currentTag + char);
 				}
-				else if (isInsideTag)
-				{
-					currentTag += char;
-				}
-				i++;
+				;
 			}
-			if (!truncateAdded)
-			{
-				strippedString += truncateString;
-			}
-			if (needsTagFinish)
-			{
-				finishTag(currentTag);
-			}
-			return strippedString;
+			;
+			i = (i + 1);
 		}
-		
-		public static function getLastVisibleCharacter(param1:TextField, param2:Sprite = null):int
-		{
-			var _loc8_:int = 0;
-			var _loc9_:int = 0;
-			var _loc10_:int = 0;
-			var _loc11_:Boolean = false;
-			var _loc12_:Rectangle = null;
-			var _loc3_:Rectangle = param1.getBounds(param1);
-			if (param2 != null)
-			{
-				param2.graphics.clear();
-				param2.graphics.lineStyle(1, 0);
-				param2.graphics.drawRect(_loc3_.x, _loc3_.y, _loc3_.width, _loc3_.height);
-			}
-			var _loc4_:int = -1;
-			var _loc5_:int = -1;
-			var _loc6_:Rectangle = null;
-			var _loc7_:int = 0;
-			while (_loc7_ < param1.numLines)
-			{
-				_loc8_ = param1.getLineOffset(_loc7_);
-				_loc9_ = param1.getLineLength(_loc7_);
-				_loc10_ = _loc8_;
-				while (_loc10_ < _loc8_ + _loc9_)
-				{
-					_loc11_ = false;
-					if ((_loc12_ = param1.getCharBoundaries(_loc10_)) != null)
-					{
-						_loc12_.x += _loc3_.x;
-						_loc12_.y += _loc3_.y;
-						_loc12_.height += 5;
-						if (_loc3_.containsRect(_loc12_))
-						{
-							if (_loc6_ == null || _loc7_ > _loc5_)
-							{
-								_loc11_ = true;
-							}
-							if (_loc7_ == _loc5_ && _loc12_.x > _loc6_.x)
-							{
-								_loc11_ = true;
-							}
+		;
+		if (!truncateAdded) {
+			strippedString = (strippedString + truncateString);
+		}
+		;
+		if (needsTagFinish) {
+			(finishTag(currentTag));
+		}
+		;
+		return (strippedString);
+	}
+
+	public static function getLastVisibleCharacter(_arg_1:TextField, _arg_2:Sprite = null):int {
+		var _local_8:int;
+		var _local_9:int;
+		var _local_10:int;
+		var _local_11:Boolean;
+		var _local_12:Rectangle;
+		var _local_3:Rectangle = _arg_1.getBounds(_arg_1);
+		if (_arg_2 != null) {
+			_arg_2.graphics.clear();
+			_arg_2.graphics.lineStyle(1, 0);
+			_arg_2.graphics.drawRect(_local_3.x, _local_3.y, _local_3.width, _local_3.height);
+		}
+		;
+		var _local_4:int = -1;
+		var _local_5:int = -1;
+		var _local_6:Rectangle;
+		var _local_7:int;
+		while (_local_7 < _arg_1.numLines) {
+			_local_8 = _arg_1.getLineOffset(_local_7);
+			_local_9 = _arg_1.getLineLength(_local_7);
+			_local_10 = _local_8;
+			while (_local_10 < (_local_8 + _local_9)) {
+				_local_11 = false;
+				_local_12 = _arg_1.getCharBoundaries(_local_10);
+				if (_local_12 != null) {
+					_local_12.x = (_local_12.x + _local_3.x);
+					_local_12.y = (_local_12.y + _local_3.y);
+					_local_12.height = (_local_12.height + 5);
+					if (_local_3.containsRect(_local_12)) {
+						if (((_local_6 == null) || (_local_7 > _local_5))) {
+							_local_11 = true;
 						}
-						if (_loc11_)
-						{
-							_loc5_ = _loc7_;
-							_loc4_ = _loc10_;
-							_loc6_ = _loc12_;
+						;
+						if (((_local_7 == _local_5) && (_local_12.x > _local_6.x))) {
+							_local_11 = true;
 						}
-						if (param2 != null)
-						{
-							param2.graphics.lineStyle(1, 13421772);
-							param2.graphics.drawRect(_loc12_.x, _loc12_.y, _loc12_.width, _loc12_.height);
-						}
+						;
 					}
-					_loc10_++;
-				}
-				_loc7_++;
-			}
-			if (param2 != null && _loc6_ != null)
-			{
-				param2.graphics.lineStyle(1, 65280);
-				param2.graphics.drawRect(_loc6_.x, _loc6_.y, _loc6_.width, _loc6_.height);
-			}
-			return _loc4_;
-		}
-		
-		public static function setupTextAndShrinkToFit(param1:TextField, param2:String, param3:int = 28, param4:String = "$medium", param5:Number = 0, param6:Number = 0, param7:Number = 9, param8:String = "#ebebeb", param9:Boolean = false):Boolean
-		{
-			var _loc14_:TextFormat = null;
-			var _loc10_:TextFormat;
-			var _loc11_:String = (_loc10_ = param1.getTextFormat()).font;
-			var _loc12_:int = int(_loc10_.size);
-			var _loc13_:* = param1.text.length > 0;
-			setupText(param1, param2, param3, param4, param8, param9);
-			_loc10_ = param1.getTextFormat();
-			if (_loc13_ && _loc10_.font == _loc11_)
-			{
-				(_loc14_ = new TextFormat()).size = _loc12_;
-				param1.setTextFormat(_loc14_);
-			}
-			return shrinkTextToFit(param1, param5, param6, param7);
-		}
-		
-		public static function setupTextAndShrinkToFitUpper(param1:TextField, param2:String, param3:int = 28, param4:String = "$medium", param5:Number = 0, param6:Number = 0, param7:Number = 9, param8:String = "#ebebeb", param9:Boolean = false):Boolean
-		{
-			if (param2 == null)
-			{
-				param2 = "";
-			}
-			return setupTextAndShrinkToFit(param1, param2.toUpperCase(), param3, param4, param5, param6, param7, param8, param9);
-		}
-		
-		public static function shrinkTextToFit(param1:TextField, param2:Number, param3:Number, param4:Number = 9, param5:int = -1, param6:Number = 0):Boolean
-		{
-			var _loc10_:int = 0;
-			param4 = Math.max(param4, 1);
-			if (param2 > 0)
-			{
-				param2 = Math.max(1, param2 - 5);
-			}
-			if (param3 > 0)
-			{
-				param3 = Math.max(1, param3 - 5);
-			}
-			var _loc7_:TextFormat = param1.getTextFormat();
-			var _loc8_:TextFormat;
-			(_loc8_ = new TextFormat()).size = _loc7_.size;
-			var _loc9_:Boolean = false;
-			while (!_loc9_)
-			{
-				_loc9_ = true;
-				_loc10_ = int(_loc8_.size);
-				if (param2 > 0 && param1.textWidth > param2)
-				{
-					_loc9_ = false;
-				}
-				else if (param3 > 0 && param1.textHeight > param3)
-				{
-					_loc9_ = false;
-				}
-				else if (param5 > 0 && param1.numLines > param5)
-				{
-					_loc9_ = false;
-				}
-				if (!_loc9_)
-				{
-					if (_loc10_ <= param4)
-					{
-						return false;
+					;
+					if (_local_11) {
+						_local_5 = _local_7;
+						_local_4 = _local_10;
+						_local_6 = _local_12;
 					}
-					_loc8_.size = _loc10_ - 1;
-					if (param6 != 0)
-					{
-						_loc8_.leading = (_loc10_ - 1) * param6;
+					;
+					if (_arg_2 != null) {
+						_arg_2.graphics.lineStyle(1, 0xCCCCCC);
+						_arg_2.graphics.drawRect(_local_12.x, _local_12.y, _local_12.width, _local_12.height);
 					}
-					param1.setTextFormat(_loc8_);
+					;
 				}
+				;
+				_local_10++;
 			}
-			return true;
+			;
+			_local_7++;
 		}
-		
-		public static function setBold(param1:Boolean, param2:TextField):void
-		{
-			var _loc3_:TextFormat = param2.getTextFormat();
-			_loc3_.font = param1 ? MenuConstants.FONT_TYPE_BOLD : MenuConstants.FONT_TYPE_NORMAL;
-			param2.setTextFormat(_loc3_);
+		;
+		if (((!(_arg_2 == null)) && (!(_local_6 == null)))) {
+			_arg_2.graphics.lineStyle(1, 0xFF00);
+			_arg_2.graphics.drawRect(_local_6.x, _local_6.y, _local_6.width, _local_6.height);
 		}
-		
-		public static function getTimeString(param1:Number):String
-		{
-			var _loc2_:Number = Math.abs(param1);
-			var _loc3_:int = Math.floor(_loc2_ / 60);
-			var _loc4_:Number = _loc2_ - _loc3_ * 60;
-			var _loc5_:* = "";
-			if (_loc3_ < 10)
-			{
-				_loc5_ += "0";
-			}
-			_loc5_ += _loc3_.toString();
-			var _loc6_:* = "";
-			if (_loc4_ < 10)
-			{
-				_loc6_ += "0";
-			}
-			_loc6_ += _loc4_.toFixed(3);
-			var _loc7_:String = _loc5_ + ":" + _loc6_;
-			if (param1 < 0)
-			{
-				_loc7_ + "-" + _loc7_;
-			}
-			return _loc7_;
+		;
+		return (_local_4);
+	}
+
+	public static function setupTextAndShrinkToFit(_arg_1:TextField, _arg_2:String, _arg_3:int = 28, _arg_4:String = "$medium", _arg_5:Number = 0, _arg_6:Number = 0, _arg_7:Number = 9, _arg_8:String = "#ebebeb", _arg_9:Boolean = false):Boolean {
+		var _local_14:TextFormat;
+		var _local_10:TextFormat = _arg_1.getTextFormat();
+		var _local_11:String = _local_10.font;
+		var _local_12:int = int(_local_10.size);
+		var _local_13:* = (_arg_1.text.length > 0);
+		setupText(_arg_1, _arg_2, _arg_3, _arg_4, _arg_8, _arg_9);
+		_local_10 = _arg_1.getTextFormat();
+		if (((_local_13) && (_local_10.font == _local_11))) {
+			_local_14 = new TextFormat();
+			_local_14.size = _local_12;
+			_arg_1.setTextFormat(_local_14);
 		}
-		
-		public static function removeWhiteSpaces(param1:String, param2:Boolean = false):String
-		{
-			var _loc3_:RegExp = param2 ? /^\s*|\s*$/gim : /[\s\r\n]+/gim;
-			return param1.replace(_loc3_, "");
+		;
+		return (shrinkTextToFit(_arg_1, _arg_5, _arg_6, _arg_7));
+	}
+
+	public static function setupTextAndShrinkToFitUpper(_arg_1:TextField, _arg_2:String, _arg_3:int = 28, _arg_4:String = "$medium", _arg_5:Number = 0, _arg_6:Number = 0, _arg_7:Number = 9, _arg_8:String = "#ebebeb", _arg_9:Boolean = false):Boolean {
+		if (_arg_2 == null) {
+			_arg_2 = "";
 		}
-		
-		public static function useDarkInlineButtonPrompts(param1:TextField):void
-		{
-			var _loc9_:* = false;
-			var _loc10_:int = 0;
-			var _loc11_:int = 0;
-			var _loc12_:int = 0;
-			var _loc13_:String = null;
-			var _loc2_:String = "<IMG SRC=\"btn";
-			var _loc3_:String = "<IMG SRC=\"dark_btn";
-			var _loc4_:String = "key";
-			var _loc5_:String;
-			if ((_loc5_ = param1.htmlText).length < _loc2_.length)
-			{
-				return;
-			}
-			var _loc6_:String = "";
-			var _loc7_:int = 0;
-			var _loc8_:int = 0;
-			while (_loc8_ >= 0)
-			{
-				_loc9_ = false;
-				if ((_loc8_ = _loc5_.indexOf(_loc2_, _loc7_)) >= 0)
-				{
-					_loc10_ = _loc8_ + _loc2_.length;
-					if ((_loc11_ = _loc5_.indexOf("\"", _loc10_)) > _loc10_)
-					{
-						_loc12_ = _loc11_ - _loc10_;
-						_loc9_ = (_loc13_ = _loc5_.substr(_loc10_, _loc12_)).indexOf(_loc4_) >= 0;
+		;
+		return (setupTextAndShrinkToFit(_arg_1, _arg_2.toUpperCase(), _arg_3, _arg_4, _arg_5, _arg_6, _arg_7, _arg_8, _arg_9));
+	}
+
+	public static function shrinkTextToFit(_arg_1:TextField, _arg_2:Number, _arg_3:Number, _arg_4:Number = 9, _arg_5:int = -1, _arg_6:Number = 0):Boolean {
+		var _local_10:int;
+		_arg_4 = Math.max(_arg_4, 1);
+		if (_arg_2 > 0) {
+			_arg_2 = Math.max(1, (_arg_2 - 5));
+		}
+		;
+		if (_arg_3 > 0) {
+			_arg_3 = Math.max(1, (_arg_3 - 5));
+		}
+		;
+		var _local_7:TextFormat = _arg_1.getTextFormat();
+		var _local_8:TextFormat = new TextFormat();
+		_local_8.size = _local_7.size;
+		var _local_9:Boolean;
+		while ((!(_local_9))) {
+			_local_9 = true;
+			_local_10 = int(_local_8.size);
+			if (((_arg_2 > 0) && (_arg_1.textWidth > _arg_2))) {
+				_local_9 = false;
+			} else {
+				if (((_arg_3 > 0) && (_arg_1.textHeight > _arg_3))) {
+					_local_9 = false;
+				} else {
+					if (((_arg_5 > 0) && (_arg_1.numLines > _arg_5))) {
+						_local_9 = false;
 					}
-					if (!_loc9_)
-					{
-						_loc6_ = (_loc6_ += _loc5_.substr(_loc7_, _loc8_ - _loc7_)) + _loc3_;
-					}
-					_loc7_ = _loc8_ + _loc2_.length;
+					;
 				}
-				else if (_loc6_.length > 0)
-				{
-					_loc6_ += _loc5_.substr(_loc7_);
+				;
+			}
+			;
+			if (!_local_9) {
+				if (_local_10 <= _arg_4) {
+					return (false);
 				}
-			}
-			if (_loc6_.length > 0)
-			{
-				param1.htmlText = _loc6_;
-			}
-		}
-		
-		public static function centerContained(param1:DisplayObject, param2:Number, param3:Number, param4:Number, param5:Number):void
-		{
-			var _loc6_:Number = Math.min(1, getFillAspectScale(param2, param3, param4, param5));
-			var _loc7_:Number = param2 * _loc6_;
-			var _loc8_:Number = param3 * _loc6_;
-			param1.scaleX = param1.scaleY = _loc6_;
-			param1.x = (param4 - _loc7_) / 2;
-			param1.y = (param5 - _loc8_) / 2;
-		}
-		
-		public static function centerFill(param1:DisplayObject, param2:Number, param3:Number, param4:Number, param5:Number, param6:Number = 1):void
-		{
-			var _loc7_:Number = param2 * (param4 / param2) * param6;
-			var _loc8_:Number = param3 * (param5 / param3) * param6;
-			param1.scaleX = param4 / param2 * param6;
-			param1.scaleY = param5 / param3 * param6;
-			param1.x = (param4 - _loc7_) / 2;
-			param1.y = (param5 - _loc8_) / 2;
-		}
-		
-		public static function centerFillAspect(param1:DisplayObject, param2:Number, param3:Number, param4:Number, param5:Number):void
-		{
-			var _loc6_:Number = getFillAspectScale(param2, param3, param4, param5);
-			var _loc7_:Number = param2 * _loc6_;
-			var _loc8_:Number = param3 * _loc6_;
-			param1.scaleX = param1.scaleY = _loc6_;
-			param1.x = (param4 - _loc7_) / 2;
-			param1.y = (param5 - _loc8_) / 2;
-		}
-		
-		public static function getFillAspectScale(param1:Number, param2:Number, param3:Number, param4:Number):Number
-		{
-			return Math.min(param3 / param1, param4 / param2);
-		}
-		
-		public static function centerFillAspectFull(param1:DisplayObject, param2:Number, param3:Number, param4:Number, param5:Number, param6:Number = 1):void
-		{
-			var _loc7_:Number = getFillAspectScaleFull(param2, param3, param4, param5) * param6;
-			var _loc8_:Number = param2 * _loc7_;
-			var _loc9_:Number = param3 * _loc7_;
-			param1.scaleX = param1.scaleY = _loc7_;
-			param1.x = (param4 - _loc8_) / 2;
-			param1.y = (param5 - _loc9_) / 2;
-		}
-		
-		public static function getFillAspectScaleFull(param1:Number, param2:Number, param3:Number, param4:Number):Number
-		{
-			return Math.max(param3 / param1, param4 / param2);
-		}
-		
-		public static function centerFillAspectHeight(param1:DisplayObject, param2:Number, param3:Number, param4:Number, param5:Number, param6:Number = 1):void
-		{
-			var _loc7_:Number = param5 / param3 * param6;
-			var _loc8_:Number = param2 * _loc7_;
-			var _loc9_:Number = param3 * _loc7_;
-			param1.scaleX = param1.scaleY = _loc7_;
-			param1.x = (param4 - _loc8_) / 2;
-			param1.y = (param5 - _loc9_) / 2;
-		}
-		
-		public static function setStateIndicatorBgSize(param1:MovieClip, param2:String):void
-		{
-			param1.header.autoSize = "right";
-			param1.header.htmlText = param2;
-			var _loc3_:int = int(param1.indicatorBg.width);
-			param1.indicatorBg.width = _loc3_ + param1.header.width + 3;
-		}
-		
-		public static function scaleProportionalByWidth(param1:DisplayObject, param2:Number):void
-		{
-			scaleProportional(param1, param2, param1.width);
-		}
-		
-		public static function scaleProportionalByHeight(param1:DisplayObject, param2:Number):void
-		{
-			scaleProportional(param1, param2, param1.height);
-		}
-		
-		public static function scaleProportional(param1:DisplayObject, param2:Number, param3:Number):void
-		{
-			var _loc4_:Number = param2 / param3;
-			param1.scaleX *= _loc4_;
-			param1.scaleY *= _loc4_;
-		}
-		
-		public static function parsePrompts(param1:Object, param2:Object, param3:Sprite, param4:Boolean = false, param5:Function = null):Object
-		{
-			var _loc6_:ButtonPromptContainer = null;
-			var _loc8_:Boolean = false;
-			if (param2 == null && (param1 == null || param1.buttonprompts == null))
-			{
-				return null;
-			}
-			if (param1 != null && param1.buttonprompts != null && param2 != null && param2.buttonprompts != null)
-			{
-				if (param1.controllerType == param2.controllerType && param1.buttonprompts.length == param2.buttonprompts.length)
-				{
-					if (_loc8_ = isDataEqual(param1.buttonprompts, param2.buttonprompts))
-					{
-						return param2;
-					}
+				;
+				_local_8.size = (_local_10 - 1);
+				if (_arg_6 != 0) {
+					_local_8.leading = ((_local_10 - 1) * _arg_6);
 				}
+				;
+				_arg_1.setTextFormat(_local_8);
 			}
-			while (param3.numChildren > 0)
-			{
-				if ((_loc6_ = param3.getChildAt(0) as ButtonPromptContainer) != null)
-				{
-					_loc6_.onUnregister();
+			;
+		}
+		;
+		return (true);
+	}
+
+	public static function setBold(_arg_1:Boolean, _arg_2:TextField):void {
+		var _local_3:TextFormat = _arg_2.getTextFormat();
+		_local_3.font = ((_arg_1) ? MenuConstants.FONT_TYPE_BOLD : MenuConstants.FONT_TYPE_NORMAL);
+		_arg_2.setTextFormat(_local_3);
+	}
+
+	public static function getTimeString(_arg_1:Number):String {
+		var _local_2:Number = Math.abs(_arg_1);
+		var _local_3:int = int(Math.floor((_local_2 / 60)));
+		var _local_4:Number = (_local_2 - (_local_3 * 60));
+		var _local_5:* = "";
+		if (_local_3 < 10) {
+			_local_5 = (_local_5 + "0");
+		}
+		;
+		_local_5 = (_local_5 + _local_3.toString());
+		var _local_6:* = "";
+		if (_local_4 < 10) {
+			_local_6 = (_local_6 + "0");
+		}
+		;
+		_local_6 = (_local_6 + _local_4.toFixed(3));
+		var _local_7:String = ((_local_5 + ":") + _local_6);
+		if (_arg_1 < 0) {
+			((_local_7 + "-") + _local_7);
+		}
+		;
+		return (_local_7);
+	}
+
+	public static function removeWhiteSpaces(_arg_1:String, _arg_2:Boolean = false):String {
+		var _local_3:RegExp = ((_arg_2) ? /^\s*|\s*$/gim : /[\s\r\n]+/gim);
+		return (_arg_1.replace(_local_3, ""));
+	}
+
+	public static function useDarkInlineButtonPrompts(_arg_1:TextField):void {
+		var _local_9:Boolean;
+		var _local_10:int;
+		var _local_11:int;
+		var _local_12:int;
+		var _local_13:String;
+		var _local_2:* = '<IMG SRC="btn';
+		var _local_3:* = '<IMG SRC="dark_btn';
+		var _local_4:* = "key";
+		var _local_5:String = _arg_1.htmlText;
+		if (_local_5.length < _local_2.length) {
+			return;
+		}
+		;
+		var _local_6:* = "";
+		var _local_7:int;
+		var _local_8:int;
+		while (_local_8 >= 0) {
+			_local_9 = false;
+			_local_8 = _local_5.indexOf(_local_2, _local_7);
+			if (_local_8 >= 0) {
+				_local_10 = (_local_8 + _local_2.length);
+				_local_11 = _local_5.indexOf('"', _local_10);
+				if (_local_11 > _local_10) {
+					_local_12 = (_local_11 - _local_10);
+					_local_13 = _local_5.substr(_local_10, _local_12);
+					_local_9 = (_local_13.indexOf(_local_4) >= 0);
 				}
-				param3.removeChildAt(0);
-			}
-			if (param1 == null)
-			{
-				return null;
-			}
-			if (param1.buttonprompts == null)
-			{
-				return null;
-			}
-			_loc6_ = new ButtonPromptContainer(param1, param4, param5);
-			param3.addChild(_loc6_);
-			var _loc7_:Object;
-			(_loc7_ = new Object()).buttonprompts = param1.buttonprompts;
-			return _loc7_;
-		}
-		
-		public static function setupIcon(param1:MovieClip, param2:String, param3:uint, param4:Boolean, param5:Boolean, param6:uint = 16777215, param7:Number = 1, param8:Number = 0, param9:Boolean = false):void
-		{
-			var _loc10_:ColorTransform = new ColorTransform();
-			if (param9)
-			{
-				_loc10_.color = param6;
-				if (param1.icons_cutout != null || param1.icons_cutout != undefined)
-				{
-					param1.icons.gotoAndStop(1);
-					param1.frame.visible = false;
-					param1.bg.visible = false;
-					param1.icons_cutout.visible = true;
-					param1.icons_cutout.gotoAndStop(param2);
-					param1.icons_cutout.transform.colorTransform = _loc10_;
+				;
+				if (!_local_9) {
+					_local_6 = (_local_6 + _local_5.substr(_local_7, (_local_8 - _local_7)));
+					_local_6 = (_local_6 + _local_3);
 				}
-				return;
+				;
+				_local_7 = (_local_8 + _local_2.length);
+			} else {
+				if (_local_6.length > 0) {
+					_local_6 = (_local_6 + _local_5.substr(_local_7));
+				}
+				;
 			}
-			_loc10_.color = param3;
-			if (param1.icons_cutout != null || param1.icons_cutout != undefined)
-			{
-				param1.icons_cutout.visible = false;
-				param1.icons_cutout.gotoAndStop(1);
+			;
+		}
+		;
+		if (_local_6.length > 0) {
+			_arg_1.htmlText = _local_6;
+		}
+		;
+	}
+
+	public static function centerContained(_arg_1:DisplayObject, _arg_2:Number, _arg_3:Number, _arg_4:Number, _arg_5:Number):void {
+		var _local_6:Number = Math.min(1, getFillAspectScale(_arg_2, _arg_3, _arg_4, _arg_5));
+		var _local_7:Number = (_arg_2 * _local_6);
+		var _local_8:Number = (_arg_3 * _local_6);
+		_arg_1.scaleX = (_arg_1.scaleY = _local_6);
+		_arg_1.x = ((_arg_4 - _local_7) / 2);
+		_arg_1.y = ((_arg_5 - _local_8) / 2);
+	}
+
+	public static function centerFill(_arg_1:DisplayObject, _arg_2:Number, _arg_3:Number, _arg_4:Number, _arg_5:Number, _arg_6:Number = 1):void {
+		var _local_7:Number = ((_arg_2 * (_arg_4 / _arg_2)) * _arg_6);
+		var _local_8:Number = ((_arg_3 * (_arg_5 / _arg_3)) * _arg_6);
+		_arg_1.scaleX = ((_arg_4 / _arg_2) * _arg_6);
+		_arg_1.scaleY = ((_arg_5 / _arg_3) * _arg_6);
+		_arg_1.x = ((_arg_4 - _local_7) / 2);
+		_arg_1.y = ((_arg_5 - _local_8) / 2);
+	}
+
+	public static function centerFillAspect(_arg_1:DisplayObject, _arg_2:Number, _arg_3:Number, _arg_4:Number, _arg_5:Number):void {
+		var _local_6:Number = getFillAspectScale(_arg_2, _arg_3, _arg_4, _arg_5);
+		var _local_7:Number = (_arg_2 * _local_6);
+		var _local_8:Number = (_arg_3 * _local_6);
+		_arg_1.scaleX = (_arg_1.scaleY = _local_6);
+		_arg_1.x = ((_arg_4 - _local_7) / 2);
+		_arg_1.y = ((_arg_5 - _local_8) / 2);
+	}
+
+	public static function getFillAspectScale(_arg_1:Number, _arg_2:Number, _arg_3:Number, _arg_4:Number):Number {
+		return (Math.min((_arg_3 / _arg_1), (_arg_4 / _arg_2)));
+	}
+
+	public static function centerFillAspectFull(_arg_1:DisplayObject, _arg_2:Number, _arg_3:Number, _arg_4:Number, _arg_5:Number, _arg_6:Number = 1):void {
+		var _local_7:Number = (getFillAspectScaleFull(_arg_2, _arg_3, _arg_4, _arg_5) * _arg_6);
+		var _local_8:Number = (_arg_2 * _local_7);
+		var _local_9:Number = (_arg_3 * _local_7);
+		_arg_1.scaleX = (_arg_1.scaleY = _local_7);
+		_arg_1.x = ((_arg_4 - _local_8) / 2);
+		_arg_1.y = ((_arg_5 - _local_9) / 2);
+	}
+
+	public static function getFillAspectScaleFull(_arg_1:Number, _arg_2:Number, _arg_3:Number, _arg_4:Number):Number {
+		return (Math.max((_arg_3 / _arg_1), (_arg_4 / _arg_2)));
+	}
+
+	public static function centerFillAspectHeight(_arg_1:DisplayObject, _arg_2:Number, _arg_3:Number, _arg_4:Number, _arg_5:Number, _arg_6:Number = 1):void {
+		var _local_7:Number = ((_arg_5 / _arg_3) * _arg_6);
+		var _local_8:Number = (_arg_2 * _local_7);
+		var _local_9:Number = (_arg_3 * _local_7);
+		_arg_1.scaleX = (_arg_1.scaleY = _local_7);
+		_arg_1.x = ((_arg_4 - _local_8) / 2);
+		_arg_1.y = ((_arg_5 - _local_9) / 2);
+	}
+
+	public static function setStateIndicatorBgSize(_arg_1:MovieClip, _arg_2:String):void {
+		_arg_1.header.autoSize = "right";
+		_arg_1.header.htmlText = _arg_2;
+		var _local_3:int = _arg_1.indicatorBg.width;
+		_arg_1.indicatorBg.width = ((_local_3 + _arg_1.header.width) + 3);
+	}
+
+	public static function scaleProportionalByWidth(_arg_1:DisplayObject, _arg_2:Number):void {
+		scaleProportional(_arg_1, _arg_2, _arg_1.width);
+	}
+
+	public static function scaleProportionalByHeight(_arg_1:DisplayObject, _arg_2:Number):void {
+		scaleProportional(_arg_1, _arg_2, _arg_1.height);
+	}
+
+	public static function scaleProportional(_arg_1:DisplayObject, _arg_2:Number, _arg_3:Number):void {
+		var _local_4:Number = (_arg_2 / _arg_3);
+		_arg_1.scaleX = (_arg_1.scaleX * _local_4);
+		_arg_1.scaleY = (_arg_1.scaleY * _local_4);
+	}
+
+	public static function parsePrompts(_arg_1:Object, _arg_2:Object, _arg_3:Sprite, _arg_4:Boolean = false, _arg_5:Function = null):Object {
+		var _local_6:ButtonPromptContainer;
+		var _local_8:Boolean;
+		if (((_arg_2 == null) && ((_arg_1 == null) || (_arg_1.buttonprompts == null)))) {
+			return (null);
+		}
+		;
+		if (((((!(_arg_1 == null)) && (!(_arg_1.buttonprompts == null))) && (!(_arg_2 == null))) && (!(_arg_2.buttonprompts == null)))) {
+			if (((_arg_1.controllerType == _arg_2.controllerType) && (_arg_1.buttonprompts.length == _arg_2.buttonprompts.length))) {
+				_local_8 = isDataEqual(_arg_1.buttonprompts, _arg_2.buttonprompts);
+				if (_local_8) {
+					return (_arg_2);
+				}
+				;
 			}
-			param1.frame.visible = param4;
-			param1.frame.transform.colorTransform = _loc10_;
-			param1.icons.gotoAndStop(param2);
-			param1.icons.transform.colorTransform = _loc10_;
-			param1.bg.visible = param5;
-			param1.bg.rotation = param8;
-			if (param5)
-			{
-				_loc10_.color = param6;
-				_loc10_.alphaMultiplier = param7;
-				param1.bg.transform.colorTransform = _loc10_;
+			;
+		}
+		;
+		while (_arg_3.numChildren > 0) {
+			_local_6 = (_arg_3.getChildAt(0) as ButtonPromptContainer);
+			if (_local_6 != null) {
+				_local_6.onUnregister();
 			}
+			;
+			_arg_3.removeChildAt(0);
 		}
-		
-		public static function setTintColor(param1:Object, tintType:int, param3:Boolean = true):void
-		{
-			var _loc4_:Number = NaN;
-			if (!param3)
-			{
-				_loc4_ = Number(param1.alpha);
+		;
+		if (_arg_1 == null) {
+			return (null);
+		}
+		;
+		if (_arg_1.buttonprompts == null) {
+			return (null);
+		}
+		;
+		_local_6 = new ButtonPromptContainer(_arg_1, _arg_4, _arg_5);
+		_arg_3.addChild(_local_6);
+		var _local_7:Object = new Object();
+		_local_7.buttonprompts = _arg_1.buttonprompts;
+		return (_local_7);
+	}
+
+	public static function setupIcon(_arg_1:MovieClip, _arg_2:String, _arg_3:uint, _arg_4:Boolean, _arg_5:Boolean, _arg_6:uint = 0xFFFFFF, _arg_7:Number = 1, _arg_8:Number = 0, _arg_9:Boolean = false):void {
+		var _local_10:ColorTransform = new ColorTransform();
+		if (_arg_9) {
+			_local_10.color = _arg_6;
+			if (((!(_arg_1.icons_cutout == null)) || (!(_arg_1.icons_cutout == undefined)))) {
+				_arg_1.icons.gotoAndStop(1);
+				_arg_1.frame.visible = false;
+				_arg_1.bg.visible = false;
+				_arg_1.icons_cutout.visible = true;
+				_arg_1.icons_cutout.gotoAndStop(_arg_2);
+				_arg_1.icons_cutout.transform.colorTransform = _local_10;
 			}
-			var colorTint:Color;
-			(colorTint = new Color()).setTint(MenuConstants.COLOR_GREY_ULTRA_LIGHT, 1);
-			switch (tintType)
-			{
-			case TINT_COLOR_BLACK: 
-				colorTint.setTint(MenuConstants.COLOR_BLACK, 1);
-				break;
-			case TINT_COLOR_GREY: 
-				colorTint.setTint(MenuConstants.COLOR_GREY_DARK, 1);
-				break;
-			case TINT_COLOR_LIGHT_GREY: 
-				colorTint.setTint(MenuConstants.COLOR_GREY_LIGHT, 1);
-				break;
-			case TINT_COLOR_NEARLY_WHITE: 
-				colorTint.setTint(MenuConstants.COLOR_GREY_ULTRA_LIGHT, 1);
-				break;
-			case TINT_COLOR_WHITE: 
-				colorTint.setTint(MenuConstants.COLOR_WHITE, 1);
-				break;
-			case TINT_COLOR_RED: 
-				colorTint.setTint(MenuConstants.COLOR_RED, 1);
-				break;
-			case TINT_COLOR_LIGHT_RED: 
-				colorTint.setTint(MenuConstants.COLOR_RED, 1);
-				break;
-			case TINT_COLOR_REAL_RED: 
-				colorTint.setTint(MenuConstants.COLOR_RED, 1);
-				break;
-			case TINT_COLOR_DARKER_GREY: 
-				colorTint.setTint(MenuConstants.COLOR_GREY_ULTRA_DARK, 1);
-				break;
-			case TINT_COLOR_MEDIUM_GREY: 
-				colorTint.setTint(MenuConstants.COLOR_GREY_MEDIUM, 1);
-				break;
-			case TINT_COLOR_ULTRA_DARK_GREY: 
-				colorTint.setTint(MenuConstants.COLOR_GREY_ULTRA_DARK, 1);
-				break;
-			case TINT_COLOR_MEDIUM_GREY_3: 
-				colorTint.setTint(MenuConstants.COLOR_GREY_MEDIUM, 1);
-				break;
-			case TINT_COLOR_GREY_DARK_2: 
-				colorTint.setTint(MenuConstants.COLOR_GREY_DARK, 1);
-				break;
-			case TINT_COLOR_GREY_DARK_3: 
-				colorTint.setTint(MenuConstants.COLOR_GREY_DARK, 1);
-				break;
-			case TINT_COLOR_GREEN: 
-				colorTint.setTint(MenuConstants.COLOR_GREEN, 1);
-				break;
-			case TINT_COLOR_GREEN_LIGHT: 
-				colorTint.setTint(MenuConstants.COLOR_YELLOW, 1);
-				break;
-			case TINT_COLOR_COLOR_GREY_GOTY: 
-				colorTint.setTint(MenuConstants.COLOR_GREY, 1);
-				break;
-			case TINT_COLOR_MEDIUM_GREY_GOTY: 
-				colorTint.setTint(MenuConstants.COLOR_GREY_MEDIUM, 1);
-				break;
-			case TINT_COLOR_SUPER_LIGHT_GREY: 
-				colorTint.setTint(MenuConstants.COLOR_GREY_LIGHT, 1);
-				break;
-			case TINT_COLOR_GREYBG: 
-				colorTint.setTint(MenuConstants.COLOR_GREY_LIGHT, 1);
-				break;
-			case TINT_COLOR_YELLOW: 
-				colorTint.setTint(MenuConstants.COLOR_YELLOW, 1);
-				break;
-			case TINT_COLOR_YELLOW_LIGHT: 
-				colorTint.setTint(MenuConstants.COLOR_YELLOW, 1);
-				break;
-			case TINT_COLOR_MAGENTA_DARK: 
-				colorTint.setTint(MenuConstants.COLOR_RED, 1);
-			}
-			param1.transform.colorTransform = colorTint;
-			if (!param3)
-			{
-				param1.alpha = _loc4_;
-			}
+			;
+			return;
 		}
-		
-		public static function removeTint(param1:Object):void
-		{
-			param1.transform.colorTransform = new Color();
+		;
+		_local_10.color = _arg_3;
+		if (((!(_arg_1.icons_cutout == null)) || (!(_arg_1.icons_cutout == undefined)))) {
+			_arg_1.icons_cutout.visible = false;
+			_arg_1.icons_cutout.gotoAndStop(1);
 		}
-		
-		public static function setColor(param1:DisplayObject, param2:uint, param3:Boolean = true, param4:Number = 1):void
-		{
-			var _loc5_:Number = param1.alpha;
-			var _loc6_:ColorTransform;
-			(_loc6_ = new ColorTransform()).color = param2;
-			_loc6_.alphaMultiplier = param3 ? param4 : _loc5_;
-			param1.transform.colorTransform = _loc6_;
+		;
+		_arg_1.frame.visible = _arg_4;
+		_arg_1.frame.transform.colorTransform = _local_10;
+		_arg_1.icons.gotoAndStop(_arg_2);
+		_arg_1.icons.transform.colorTransform = _local_10;
+		_arg_1.bg.visible = _arg_5;
+		_arg_1.bg.rotation = _arg_8;
+		if (_arg_5) {
+			_local_10.color = _arg_6;
+			_local_10.alphaMultiplier = _arg_7;
+			_arg_1.bg.transform.colorTransform = _local_10;
 		}
-		
-		public static function removeColor(param1:DisplayObject):void
-		{
-			param1.transform.colorTransform = new ColorTransform();
+		;
+	}
+
+	public static function setTintColor(_arg_1:Object, _arg_2:int, _arg_3:Boolean = true):void {
+		var _local_4:Number;
+		if (!_arg_3) {
+			_local_4 = _arg_1.alpha;
 		}
-		
-		public static function getRandomColor():uint
-		{
-			return Math.random() * 16777215;
-		}
-		
-		public static function hexToMatrix(param1:Number, param2:Number, param3:Number):Array
-		{
-			var _loc4_:Array;
-			return (_loc4_ = (_loc4_ = (_loc4_ = (_loc4_ = []).concat([((param1 & 16711680) >>> 16) / 255, 0, 0, 0, param2])).concat([0, ((param1 & 65280) >>> 8) / 255, 0, 0, param2])).concat([0, 0, (param1 & 255) / 255, 0, param2])).concat([0, 0, 0, param3, 0]);
-		}
-		
-		public static function addDropShadowFilter(param1:*):void
-		{
-			var _loc2_:TextField = param1 as TextField;
-			if (_loc2_ == null && ControlsMain.isVrModeActive())
-			{
-				return;
-			}
-			param1.filters = [new DropShadowFilter(2, 45, 0, 0.5, 2, 2, 1, 1)];
-		}
-		
-		public static function removeDropShadowFilter(param1:*):void
-		{
-			removeFilters(param1);
-		}
-		
-		public static function removeFilters(param1:*):void
-		{
-			param1.filters = [];
-		}
-		
-		public static function addColorFilter(param1:DisplayObjectContainer, param2:Array):void
-		{
-			var _loc4_:ColorMatrixFilter = null;
-			if (param2.length > 0 && ControlsMain.isVrModeActive())
-			{
-				return;
-			}
-			var _loc3_:Array = [];
-			var _loc5_:int = 0;
-			while (_loc5_ < param2.length)
-			{
-				_loc4_ = new ColorMatrixFilter(param2[_loc5_]);
-				_loc3_.push(_loc4_);
-				_loc5_++;
-			}
-			param1.filters = _loc3_;
-		}
-		
-		public static function setColorFilter(param1:Sprite, colorFilter:String = ""):void
-		{
-			var _loc4_:ColorMatrixFilter = null;
-			var _loc5_:ColorMatrixFilter = null;
-			if (ControlsMain.isVrModeActive())
-			{
-				return;
-			}
-			var _loc3_:Array = [];
-			switch (colorFilter)
-			{
-			case "selected": 
-				_loc4_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DEFAULT);
-				_loc3_.push(_loc4_);
+		;
+		var _local_5:Color = new Color();
+		_local_5.setTint(MenuConstants.COLOR_GREY_ULTRA_LIGHT, 1);
+		switch (_arg_2) {
+			case TINT_COLOR_BLACK:
+				_local_5.setTint(MenuConstants.COLOR_BLACK, 1);
 				break;
-			case "available": 
-				_loc4_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DEFAULT);
-				_loc3_.push(_loc4_);
+			case TINT_COLOR_GREY:
+				_local_5.setTint(MenuConstants.COLOR_GREY_DARK, 1);
 				break;
-			case "locked": 
-				_loc4_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DEFAULT);
-				_loc3_.push(_loc4_);
+			case TINT_COLOR_LIGHT_GREY:
+				_local_5.setTint(MenuConstants.COLOR_GREY_LIGHT, 1);
 				break;
-			case "masterylocked": 
-				_loc4_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
-				_loc3_.push(_loc4_);
+			case TINT_COLOR_NEARLY_WHITE:
+				_local_5.setTint(MenuConstants.COLOR_GREY_ULTRA_LIGHT, 1);
 				break;
-			case "shop": 
-				_loc5_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
-				_loc3_.push(_loc5_);
+			case TINT_COLOR_WHITE:
+				_local_5.setTint(MenuConstants.COLOR_WHITE, 1);
 				break;
-			case "download": 
-				_loc5_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
-				_loc3_.push(_loc5_);
+			case TINT_COLOR_RED:
+				_local_5.setTint(MenuConstants.COLOR_RED, 1);
 				break;
-			case "update": 
-				_loc5_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
-				_loc3_.push(_loc5_);
+			case TINT_COLOR_LIGHT_RED:
+				_local_5.setTint(MenuConstants.COLOR_RED, 1);
 				break;
-			case "downloading": 
-				_loc5_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
-				_loc3_.push(_loc5_);
+			case TINT_COLOR_REAL_RED:
+				_local_5.setTint(MenuConstants.COLOR_RED, 1);
 				break;
-			case "installing": 
-				_loc5_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
-				_loc3_.push(_loc5_);
+			case TINT_COLOR_DARKER_GREY:
+				_local_5.setTint(MenuConstants.COLOR_GREY_ULTRA_DARK, 1);
 				break;
-			case "completed": 
-				_loc4_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DEFAULT);
-				_loc3_.push(_loc4_);
+			case TINT_COLOR_MEDIUM_GREY:
+				_local_5.setTint(MenuConstants.COLOR_GREY_MEDIUM, 1);
 				break;
-			case "notcompleted": 
-				_loc4_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
-				_loc3_.push(_loc4_);
+			case TINT_COLOR_ULTRA_DARK_GREY:
+				_local_5.setTint(MenuConstants.COLOR_GREY_ULTRA_DARK, 1);
 				break;
-			case "objectivecompleted": 
-				_loc5_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
-				_loc3_.push(_loc5_);
+			case TINT_COLOR_MEDIUM_GREY_3:
+				_local_5.setTint(MenuConstants.COLOR_GREY_MEDIUM, 1);
 				break;
-			case "failed": 
-				_loc4_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
-				_loc3_.push(_loc4_);
+			case TINT_COLOR_GREY_DARK_2:
+				_local_5.setTint(MenuConstants.COLOR_GREY_DARK, 1);
 				break;
-			case "desaturated": 
-				_loc4_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DESATURATED);
-				_loc3_.push(_loc4_);
+			case TINT_COLOR_GREY_DARK_3:
+				_local_5.setTint(MenuConstants.COLOR_GREY_DARK, 1);
 				break;
-			case "markedforremoval": 
-				_loc4_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_BW);
-				_loc3_.push(_loc4_);
-				_loc5_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DARKENED);
-				_loc3_.push(_loc5_);
+			case TINT_COLOR_GREEN:
+				_local_5.setTint(MenuConstants.COLOR_GREEN, 1);
 				break;
-			case "unknown": 
-				_loc4_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
-				_loc3_.push(_loc4_);
+			case TINT_COLOR_GREEN_LIGHT:
+				_local_5.setTint(MenuConstants.COLOR_YELLOW, 1);
 				break;
-			default: 
-				_loc4_ = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DEFAULT);
-				_loc3_.push(_loc4_);
-			}
-			param1.filters = _loc3_;
+			case TINT_COLOR_COLOR_GREY_GOTY:
+				_local_5.setTint(MenuConstants.COLOR_GREY, 1);
+				break;
+			case TINT_COLOR_MEDIUM_GREY_GOTY:
+				_local_5.setTint(MenuConstants.COLOR_GREY_MEDIUM, 1);
+				break;
+			case TINT_COLOR_SUPER_LIGHT_GREY:
+				_local_5.setTint(MenuConstants.COLOR_GREY_LIGHT, 1);
+				break;
+			case TINT_COLOR_GREYBG:
+				_local_5.setTint(MenuConstants.COLOR_GREY_LIGHT, 1);
+				break;
+			case TINT_COLOR_YELLOW:
+				_local_5.setTint(MenuConstants.COLOR_YELLOW, 1);
+				break;
+			case TINT_COLOR_YELLOW_LIGHT:
+				_local_5.setTint(MenuConstants.COLOR_YELLOW, 1);
+				break;
+			case TINT_COLOR_MAGENTA_DARK:
+				_local_5.setTint(MenuConstants.COLOR_RED, 1);
+				break;
 		}
-		
-		public static function trySetCacheAsBitmap(param1:DisplayObject, param2:Boolean):void
-		{
-			if (param1 == null)
-			{
-				return;
-			}
-			if (param2 && ControlsMain.isVrModeActive())
-			{
-				param2 = false;
-			}
-			param1.cacheAsBitmap = param2;
+		;
+		_arg_1.transform.colorTransform = _local_5;
+		if (!_arg_3) {
+			_arg_1.alpha = _local_4;
 		}
-		
-		public static function formatNumber(param1:Number, param2:Boolean = true, param3:uint = 0):String
-		{
-			var _loc9_:String = null;
-			if (s_thousandsSeparator == null || s_thousandsSeparatorLocale != ControlsMain.getActiveLocale())
-			{
-				s_thousandsSeparator = Localization.get("UI_NUMBER_SEPARATOR_THOUSANDS");
-				s_decimalSeparator = Localization.get("UI_NUMBER_SEPARATOR_DECIMALS");
-				s_thousandsSeparatorLocale = ControlsMain.getActiveLocale();
-			}
-			var _loc4_:int;
-			if ((_loc4_ = s_thousandsSeparator.length) < 1)
-			{
-				return String(param1);
-			}
-			var _loc5_:* = param1 < 0;
-			param1 = param1 < 0 ? -param1 : param1;
-			var _loc6_:Number = param1;
-			param1 >>= 0;
-			_loc6_ -= param1;
-			var _loc7_:*;
-			var _loc8_:Number = ((_loc7_ = String(param1)).length - 1) % 3;
-			while (_loc8_ < _loc7_.length - 1)
-			{
-				_loc7_ = _loc7_.substr(0, _loc8_ + 1) + s_thousandsSeparator + _loc7_.substr(_loc8_ + 1);
-				_loc8_ += 3 + _loc4_;
-			}
-			if (param3 > 0)
-			{
-				param3 = Math.min(20, param3);
-				_loc9_ = _loc6_.toFixed(param3);
-				_loc7_ = _loc7_ + s_decimalSeparator + _loc9_.substr(2);
-			}
-			_loc7_ = _loc5_ ? "-" + _loc7_ : _loc7_;
-			if (param2)
-			{
-				_loc7_ = "<font face=\"$global\">" + _loc7_ + "</font>";
-			}
-			return _loc7_;
+		;
+	}
+
+	public static function removeTint(_arg_1:Object):void {
+		_arg_1.transform.colorTransform = new Color();
+	}
+
+	public static function setColor(_arg_1:DisplayObject, _arg_2:uint, _arg_3:Boolean = true, _arg_4:Number = 1):void {
+		var _local_5:Number = _arg_1.alpha;
+		var _local_6:ColorTransform = new ColorTransform();
+		_local_6.color = _arg_2;
+		_local_6.alphaMultiplier = ((_arg_3) ? _arg_4 : _local_5);
+		_arg_1.transform.colorTransform = _local_6;
+	}
+
+	public static function removeColor(_arg_1:DisplayObject):void {
+		_arg_1.transform.colorTransform = new ColorTransform();
+	}
+
+	public static function getRandomColor():uint {
+		return (Math.random() * 0xFFFFFF);
+	}
+
+	public static function hexToMatrix(_arg_1:Number, _arg_2:Number, _arg_3:Number):Array {
+		var _local_4:Array = [];
+		_local_4 = _local_4.concat([(((_arg_1 & 0xFF0000) >>> 16) / 0xFF), 0, 0, 0, _arg_2]);
+		_local_4 = _local_4.concat([0, (((_arg_1 & 0xFF00) >>> 8) / 0xFF), 0, 0, _arg_2]);
+		_local_4 = _local_4.concat([0, 0, ((_arg_1 & 0xFF) / 0xFF), 0, _arg_2]);
+		_local_4 = _local_4.concat([0, 0, 0, _arg_3, 0]);
+		return (_local_4);
+	}
+
+	public static function addDropShadowFilter(_arg_1:*):void {
+		var _local_2:TextField = (_arg_1 as TextField);
+		if (((_local_2 == null) && (ControlsMain.isVrModeActive()))) {
+			return;
 		}
-		
-		public static function getRandomInRange(param1:Number, param2:Number, param3:Boolean = true):Number
-		{
-			if (!param3)
-			{
-				return Math.random() * (param2 - param1) + param1;
-			}
-			return Math.round(Math.random() * (param2 - param1) + param1);
+		;
+		_arg_1.filters = [new DropShadowFilter(2, 45, 0, 0.5, 2, 2, 1, 1)];
+	}
+
+	public static function removeDropShadowFilter(_arg_1:*):void {
+		removeFilters(_arg_1);
+	}
+
+	public static function removeFilters(_arg_1:*):void {
+		_arg_1.filters = [];
+	}
+
+	public static function addColorFilter(_arg_1:DisplayObjectContainer, _arg_2:Array):void {
+		var _local_4:ColorMatrixFilter;
+		if (((_arg_2.length > 0) && (ControlsMain.isVrModeActive()))) {
+			return;
 		}
-		
-		public static function getRandomBoolean():Boolean
-		{
-			return Math.random() >= 0.5;
+		;
+		var _local_3:Array = [];
+		var _local_5:int;
+		while (_local_5 < _arg_2.length) {
+			_local_4 = new ColorMatrixFilter(_arg_2[_local_5]);
+			_local_3.push(_local_4);
+			_local_5++;
 		}
-		
-		public static function roundDecimal(param1:Number, param2:int):Number
-		{
-			var _loc3_:Number = Math.pow(10, param2);
-			return Math.round(_loc3_ * param1) / _loc3_;
+		;
+		_arg_1.filters = _local_3;
+	}
+
+	public static function setColorFilter(_arg_1:Sprite, _arg_2:String = ""):void {
+		var _local_4:ColorMatrixFilter;
+		var _local_5:ColorMatrixFilter;
+		if (ControlsMain.isVrModeActive()) {
+			return;
 		}
-		
-		public static function getPointsOnCircleEdge(param1:Number, param2:int, param3:Number = 0):Array
-		{
-			var _loc5_:Point = null;
-			param3 = toRadians(param3);
-			var _loc4_:Array = [];
-			var _loc6_:int = 0;
-			while (_loc6_ < param2)
-			{
-				_loc4_[_loc6_] = Point.polar(param1, _loc6_ / param2 * PI * 2 + param3);
-				_loc6_++;
-			}
-			return _loc4_;
+		;
+		var _local_3:Array = [];
+		switch (_arg_2) {
+			case "selected":
+				_local_4 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DEFAULT);
+				_local_3.push(_local_4);
+				break;
+			case "available":
+				_local_4 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DEFAULT);
+				_local_3.push(_local_4);
+				break;
+			case "locked":
+				_local_4 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DEFAULT);
+				_local_3.push(_local_4);
+				break;
+			case "masterylocked":
+				_local_4 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
+				_local_3.push(_local_4);
+				break;
+			case "shop":
+				_local_5 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
+				_local_3.push(_local_5);
+				break;
+			case "download":
+				_local_5 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
+				_local_3.push(_local_5);
+				break;
+			case "update":
+				_local_5 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
+				_local_3.push(_local_5);
+				break;
+			case "downloading":
+				_local_5 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
+				_local_3.push(_local_5);
+				break;
+			case "installing":
+				_local_5 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
+				_local_3.push(_local_5);
+				break;
+			case "completed":
+				_local_4 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DEFAULT);
+				_local_3.push(_local_4);
+				break;
+			case "notcompleted":
+				_local_4 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
+				_local_3.push(_local_4);
+				break;
+			case "objectivecompleted":
+				_local_5 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
+				_local_3.push(_local_5);
+				break;
+			case "failed":
+				_local_4 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
+				_local_3.push(_local_4);
+				break;
+			case "desaturated":
+				_local_4 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DESATURATED);
+				_local_3.push(_local_4);
+				break;
+			case "markedforremoval":
+				_local_4 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_BW);
+				_local_3.push(_local_4);
+				_local_5 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DARKENED);
+				_local_3.push(_local_5);
+				break;
+			case "unknown":
+				_local_4 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_NOT_OWNED);
+				_local_3.push(_local_4);
+				break;
+			default:
+				_local_4 = new ColorMatrixFilter(MenuConstants.COLOR_MATRIX_DEFAULT);
+				_local_3.push(_local_4);
 		}
-		
-		public static function toDegrees(param1:Number):Number
-		{
-			return actualRadians(param1) * (180 / PI);
+		;
+		_arg_1.filters = _local_3;
+	}
+
+	public static function trySetCacheAsBitmap(_arg_1:DisplayObject, _arg_2:Boolean):void {
+		if (_arg_1 == null) {
+			return;
 		}
-		
-		public static function toRadians(param1:Number):Number
-		{
-			return actualDegrees(param1) * (PI / 180);
+		;
+		if (((_arg_2) && (ControlsMain.isVrModeActive()))) {
+			_arg_2 = false;
 		}
-		
-		public static function actualDegrees(param1:Number):Number
-		{
-			return denominate(param1, 360);
+		;
+		_arg_1.cacheAsBitmap = _arg_2;
+	}
+
+	public static function formatNumber(_arg_1:Number, _arg_2:Boolean = true, _arg_3:uint = 0):String {
+		var _local_9:String;
+		if (((s_thousandsSeparator == null) || (!(s_thousandsSeparatorLocale == ControlsMain.getActiveLocale())))) {
+			s_thousandsSeparator = Localization.get("UI_NUMBER_SEPARATOR_THOUSANDS");
+			s_decimalSeparator = Localization.get("UI_NUMBER_SEPARATOR_DECIMALS");
+			s_thousandsSeparatorLocale = ControlsMain.getActiveLocale();
 		}
-		
-		public static function actualRadians(param1:Number):Number
-		{
-			return denominate(param1, PI * 2);
+		;
+		var _local_4:int = s_thousandsSeparator.length;
+		if (_local_4 < 1) {
+			return (String(_arg_1));
 		}
-		
-		public static function denominate(param1:Number, param2:Number):Number
-		{
-			var _loc3_:Number = param1;
-			while (_loc3_ >= param2)
-			{
-				_loc3_ -= param2;
-			}
-			while (_loc3_ < -param2)
-			{
-				_loc3_ += param2;
-			}
-			return _loc3_;
+		;
+		var _local_5:* = (_arg_1 < 0);
+		_arg_1 = ((_arg_1 < 0) ? -(_arg_1) : _arg_1);
+		var _local_6:Number = _arg_1;
+		_arg_1 = (_arg_1 >> 0);
+		_local_6 = (_local_6 - _arg_1);
+		var _local_7:String = String(_arg_1);
+		var _local_8:Number = ((_local_7.length - 1) % 3);
+		while (_local_8 < (_local_7.length - 1)) {
+			_local_7 = ((_local_7.substr(0, (_local_8 + 1)) + s_thousandsSeparator) + _local_7.substr((_local_8 + 1)));
+			_local_8 = (_local_8 + (3 + _local_4));
 		}
-		
-		public static function toPixel(param1:Number):Number
-		{
-			return MENU_METER_TO_PIXEL * param1;
+		;
+		if (_arg_3 > 0) {
+			_arg_3 = Math.min(20, _arg_3);
+			_local_9 = _local_6.toFixed(_arg_3);
+			_local_7 = ((_local_7 + s_decimalSeparator) + _local_9.substr(2));
 		}
-		
-		public static function shuffleArray(param1:Array):Array
-		{
-			var _loc3_:* = undefined;
-			var _loc4_:int = 0;
-			var _loc2_:int = int(param1.length);
-			while (_loc2_)
-			{
-				_loc4_ = Math.floor(Math.random() * _loc2_--);
-				_loc3_ = param1[_loc2_];
-				param1[_loc2_] = param1[_loc4_];
-				param1[_loc4_] = _loc3_;
-			}
-			return param1;
+		;
+		_local_7 = ((_local_5) ? ("-" + _local_7) : _local_7);
+		if (_arg_2) {
+			_local_7 = (('<font face="$global">' + _local_7) + "</font>");
 		}
-		
-		public static function createRefPointItem(param1:Number = 20, param2:int = 16711935):Sprite
-		{
-			var lineLength:Number = param1;
-			var color:int = param2;
-			var s:Sprite = new Sprite();
-			with (s)
-			{
-				graphics.beginFill(color, 0.8);
-				graphics.drawRect(0, 0, 10, 10);
-				graphics.endFill();
-				graphics.lineStyle(0.5, color);
-				graphics.lineTo(lineLength, 0);
-				graphics.moveTo(0, 0);
-				graphics.lineTo(0, lineLength);
-			}
-			return s;
+		;
+		return (_local_7);
+	}
+
+	public static function getRandomInRange(_arg_1:Number, _arg_2:Number, _arg_3:Boolean = true):Number {
+		if (!_arg_3) {
+			return ((Math.random() * (_arg_2 - _arg_1)) + _arg_1);
 		}
-		
-		public static function highlitePulsate(param1:Sprite, param2:Boolean):void
-		{
-			var clip:Sprite = param1;
-			var start:Boolean = param2;
-			Animate.kill(clip);
-			if (start)
-			{
-				clip.alpha = 0;
-				Animate.delay(clip, 2, function():void
-				{
-					highlitePulsateGo(clip, clip.scaleX, clip.scaleY);
-				});
-			}
+		;
+		return (Math.round(((Math.random() * (_arg_2 - _arg_1)) + _arg_1)));
+	}
+
+	public static function getRandomBoolean():Boolean {
+		return (Math.random() >= 0.5);
+	}
+
+	public static function roundDecimal(_arg_1:Number, _arg_2:int):Number {
+		var _local_3:Number = Math.pow(10, _arg_2);
+		return (Math.round((_local_3 * _arg_1)) / _local_3);
+	}
+
+	public static function getPointsOnCircleEdge(_arg_1:Number, _arg_2:int, _arg_3:Number = 0):Array {
+		var _local_5:Point;
+		_arg_3 = toRadians(_arg_3);
+		var _local_4:Array = [];
+		var _local_6:int;
+		while (_local_6 < _arg_2) {
+			_local_4[_local_6] = Point.polar(_arg_1, ((((_local_6 / _arg_2) * PI) * 2) + _arg_3));
+			_local_6++;
 		}
-		
-		private static function highlitePulsateGo(param1:Sprite, param2:Number, param3:Number):void
-		{
-			var clip:Sprite = param1;
-			var origScaleX:Number = param2;
-			var origScaleY:Number = param3;
-			clip.alpha = 1;
-			Animate.legacyTo(clip, 0.5, {"alpha": 0, "scaleX": origScaleX + 0.2, "scaleY": origScaleY + 0.2}, Animate.SineInOut, function():void
-			{
-				highlitePulsateDelay(clip, origScaleX, origScaleY);
-			});
+		;
+		return (_local_4);
+	}
+
+	public static function toDegrees(_arg_1:Number):Number {
+		return (actualRadians(_arg_1) * (180 / PI));
+	}
+
+	public static function toRadians(_arg_1:Number):Number {
+		return (actualDegrees(_arg_1) * (PI / 180));
+	}
+
+	public static function actualDegrees(_arg_1:Number):Number {
+		return (denominate(_arg_1, 360));
+	}
+
+	public static function actualRadians(_arg_1:Number):Number {
+		return (denominate(_arg_1, (PI * 2)));
+	}
+
+	public static function denominate(_arg_1:Number, _arg_2:Number):Number {
+		var _local_3:Number = _arg_1;
+		while (_local_3 >= _arg_2) {
+			_local_3 = (_local_3 - _arg_2);
 		}
-		
-		private static function highlitePulsateDelay(param1:Sprite, param2:Number, param3:Number):void
-		{
-			var clip:Sprite = param1;
-			var origScaleX:Number = param2;
-			var origScaleY:Number = param3;
-			clip.scaleX = origScaleX;
-			clip.scaleY = origScaleY;
-			Animate.delay(clip, 2, function():void
-			{
+		;
+		while (_local_3 < -(_arg_2)) {
+			_local_3 = (_local_3 + _arg_2);
+		}
+		;
+		return (_local_3);
+	}
+
+	public static function toPixel(_arg_1:Number):Number {
+		return (MENU_METER_TO_PIXEL * _arg_1);
+	}
+
+	public static function shuffleArray(_arg_1:Array):Array {
+		var _local_3:*;
+		var _local_4:int;
+		var _local_2:int = _arg_1.length;
+		while (_local_2) {
+			_local_4 = int(Math.floor((Math.random() * _local_2--)));
+			_local_3 = _arg_1[_local_2];
+			_arg_1[_local_2] = _arg_1[_local_4];
+			_arg_1[_local_4] = _local_3;
+		}
+		;
+		return (_arg_1);
+	}
+
+	public static function createRefPointItem(lineLength:Number = 20, color:int = 0xFF00FF):Sprite {
+		var s:Sprite = new Sprite();
+		var _local_4:* = s;
+		with (_local_4) {
+			graphics.beginFill(color, 0.8);
+			graphics.drawRect(0, 0, 10, 10);
+			graphics.endFill();
+			graphics.lineStyle(0.5, color);
+			graphics.lineTo(lineLength, 0);
+			graphics.moveTo(0, 0);
+			graphics.lineTo(0, lineLength);
+		}
+		;
+		return (s);
+	}
+
+	public static function highlitePulsate(clip:Sprite, start:Boolean):void {
+		Animate.kill(clip);
+		if (start) {
+			clip.alpha = 0;
+			Animate.delay(clip, 2, function ():void {
 				highlitePulsateGo(clip, clip.scaleX, clip.scaleY);
 			});
 		}
-		
-		public static function pulsate(param1:Sprite, param2:Boolean):void
-		{
-		}
-		
-		private static function pulsateFadeIn(param1:Sprite):void
-		{
-			Animate.legacyTo(param1, 2, {"alpha": 0.5}, Animate.SineInOut, pulsateFadeOut, param1);
-		}
-		
-		private static function pulsateFadeOut(param1:Sprite):void
-		{
-			Animate.legacyTo(param1, 2, {"alpha": 0}, Animate.SineInOut, pulsateFadeIn, param1);
-		}
-		
-		public static function getEaseType(easeType:String):int
-		{
-			var _loc2_:int = 0;
-			switch (easeType)
-			{
-			case "Linear": 
-				_loc2_ = Animate.Linear;
-				break;
-			case "SineIn": 
-				_loc2_ = Animate.SineIn;
-				break;
-			case "SineOut": 
-				_loc2_ = Animate.SineOut;
-				break;
-			case "SineInOut": 
-				_loc2_ = Animate.SineInOut;
-				break;
-			case "ExpoIn": 
-				_loc2_ = Animate.ExpoIn;
-				break;
-			case "ExpoOut": 
-				_loc2_ = Animate.ExpoOut;
-				break;
-			case "ExpoInOut": 
-				_loc2_ = Animate.ExpoInOut;
-				break;
-			case "BackIn": 
-				_loc2_ = Animate.BackIn;
-				break;
-			case "BackOut": 
-				_loc2_ = Animate.BackOut;
-				break;
-			case "BackInOut": 
-				_loc2_ = Animate.BackInOut;
-				break;
-			default: 
-				_loc2_ = Animate.Linear;
-			}
-			return _loc2_;
-		}
-		
-		public static function isDataEqual(param1:Object, param2:Object):Boolean
-		{
-			var _loc3_:int = 0;
-			var _loc4_:int = 0;
-			var _loc5_:String = null;
-			var _loc6_:int = 0;
-			var _loc7_:String = null;
-			if (param1 == null || param2 == null)
-			{
-				return param1 == param2;
-			}
-			if (param1 is Number && param2 is Number)
-			{
-				return param1 == param2;
-			}
-			if (param1 is Boolean && param2 is Boolean)
-			{
-				return param1 == param2;
-			}
-			if (param1 is String && param2 is String)
-			{
-				return param1 == param2;
-			}
-			if (param1 is Array && param2 is Array)
-			{
-				if (param1.length == param2.length)
-				{
-					_loc3_ = 0;
-					while (_loc3_ < param1.length)
-					{
-						if (!isDataEqual(param1[_loc3_], param2[_loc3_]))
-						{
-							return false;
-						}
-						_loc3_++;
-					}
-					return true;
-				}
-				return false;
-			}
-			if (param1 is Object && param2 is Object)
-			{
-				_loc4_ = 0;
-				for (_loc5_ in param1)
-				{
-					_loc4_++;
-					if (!isDataEqual(param1[_loc5_], param2[_loc5_]))
-					{
-						return false;
-					}
-				}
-				_loc6_ = 0;
-				for (_loc7_ in param2)
-				{
-					_loc6_++;
-					if (_loc6_ > _loc4_)
-					{
-						return false;
-					}
-				}
-				return _loc4_ == _loc6_;
-			}
-			return false;
-		}
+		;
 	}
+
+	private static function highlitePulsateGo(clip:Sprite, origScaleX:Number, origScaleY:Number):void {
+		clip.alpha = 1;
+		Animate.legacyTo(clip, 0.5, {
+			"alpha": 0,
+			"scaleX": (origScaleX + 0.2),
+			"scaleY": (origScaleY + 0.2)
+		}, Animate.SineInOut, function ():void {
+			highlitePulsateDelay(clip, origScaleX, origScaleY);
+		});
+	}
+
+	private static function highlitePulsateDelay(clip:Sprite, origScaleX:Number, origScaleY:Number):void {
+		clip.scaleX = origScaleX;
+		clip.scaleY = origScaleY;
+		Animate.delay(clip, 2, function ():void {
+			highlitePulsateGo(clip, clip.scaleX, clip.scaleY);
+		});
+	}
+
+	public static function pulsate(_arg_1:Sprite, _arg_2:Boolean):void {
+	}
+
+	private static function pulsateFadeIn(_arg_1:Sprite):void {
+		Animate.legacyTo(_arg_1, 2, {"alpha": 0.5}, Animate.SineInOut, pulsateFadeOut, _arg_1);
+	}
+
+	private static function pulsateFadeOut(_arg_1:Sprite):void {
+		Animate.legacyTo(_arg_1, 2, {"alpha": 0}, Animate.SineInOut, pulsateFadeIn, _arg_1);
+	}
+
+	public static function getEaseType(_arg_1:String):int {
+		var _local_2:int;
+		switch (_arg_1) {
+			case "Linear":
+				_local_2 = Animate.Linear;
+				break;
+			case "SineIn":
+				_local_2 = Animate.SineIn;
+				break;
+			case "SineOut":
+				_local_2 = Animate.SineOut;
+				break;
+			case "SineInOut":
+				_local_2 = Animate.SineInOut;
+				break;
+			case "ExpoIn":
+				_local_2 = Animate.ExpoIn;
+				break;
+			case "ExpoOut":
+				_local_2 = Animate.ExpoOut;
+				break;
+			case "ExpoInOut":
+				_local_2 = Animate.ExpoInOut;
+				break;
+			case "BackIn":
+				_local_2 = Animate.BackIn;
+				break;
+			case "BackOut":
+				_local_2 = Animate.BackOut;
+				break;
+			case "BackInOut":
+				_local_2 = Animate.BackInOut;
+				break;
+			default:
+				_local_2 = Animate.Linear;
+		}
+		;
+		return (_local_2);
+	}
+
+	public static function isDataEqual(_arg_1:Object, _arg_2:Object):Boolean {
+		var _local_3:int;
+		var _local_4:int;
+		var _local_5:String;
+		var _local_6:int;
+		var _local_7:String;
+		if (((_arg_1 == null) || (_arg_2 == null))) {
+			return (_arg_1 == _arg_2);
+		}
+		;
+		if (((_arg_1 is Number) && (_arg_2 is Number))) {
+			return (_arg_1 == _arg_2);
+		}
+		;
+		if (((_arg_1 is Boolean) && (_arg_2 is Boolean))) {
+			return (_arg_1 == _arg_2);
+		}
+		;
+		if (((_arg_1 is String) && (_arg_2 is String))) {
+			return (_arg_1 == _arg_2);
+		}
+		;
+		if (((_arg_1 is Array) && (_arg_2 is Array))) {
+			if (_arg_1.length == _arg_2.length) {
+				_local_3 = 0;
+				while (_local_3 < _arg_1.length) {
+					if (!isDataEqual(_arg_1[_local_3], _arg_2[_local_3])) {
+						return (false);
+					}
+					;
+					_local_3++;
+				}
+				;
+				return (true);
+			}
+			;
+			return (false);
+		}
+		;
+		if (((_arg_1 is Object) && (_arg_2 is Object))) {
+			_local_4 = 0;
+			for (_local_5 in _arg_1) {
+				_local_4++;
+				if (!isDataEqual(_arg_1[_local_5], _arg_2[_local_5])) {
+					return (false);
+				}
+				;
+			}
+			;
+			_local_6 = 0;
+			for (_local_7 in _arg_2) {
+				if (++_local_6 > _local_4) {
+					return (false);
+				}
+				;
+			}
+			;
+			return (_local_4 == _local_6);
+		}
+		;
+		return (false);
+	}
+
+
 }
+}//package common.menu
+

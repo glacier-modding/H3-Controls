@@ -1,51 +1,47 @@
-package menu3.indicator
-{
-   import flash.utils.Dictionary;
-   
-   public class IndicatorUtil
-   {
-       
-      
-      private var m_indicators:Dictionary;
-      
-      public function IndicatorUtil()
-      {
-         this.m_indicators = new Dictionary();
-         super();
-      }
-      
-      public function getIndicator(param1:int) : IIndicator
-      {
-         if(param1 in this.m_indicators)
-         {
-            return this.m_indicators[param1];
-         }
-         return null;
-      }
-      
-      public function add(param1:int, param2:IIndicator, param3:*, param4:Object) : void
-      {
-         param2.onSetData(param3,param4);
-         this.m_indicators[param1] = param2;
-      }
-      
-      public function clearIndicators() : void
-      {
-         var _loc1_:IIndicator = null;
-         for each(_loc1_ in this.m_indicators)
-         {
-            _loc1_.onUnregister();
-         }
-         this.m_indicators = new Dictionary();
-      }
-      
-      public function callTextTickers(param1:Boolean) : void
-      {
-         var _loc2_:IIndicator = null;
-         for each(_loc2_ in this.m_indicators)
-         {
-            _loc2_.callTextTicker(param1);
-         }
-      }
-   }
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
+
+//menu3.indicator.IndicatorUtil
+
+package menu3.indicator {
+import flash.utils.Dictionary;
+
+public class IndicatorUtil {
+
+	private var m_indicators:Dictionary = new Dictionary();
+
+
+	public function getIndicator(_arg_1:int):IIndicator {
+		if ((_arg_1 in this.m_indicators)) {
+			return (this.m_indicators[_arg_1]);
+		}
+		;
+		return (null);
+	}
+
+	public function add(_arg_1:int, _arg_2:IIndicator, _arg_3:*, _arg_4:Object):void {
+		_arg_2.onSetData(_arg_3, _arg_4);
+		this.m_indicators[_arg_1] = _arg_2;
+	}
+
+	public function clearIndicators():void {
+		var _local_1:IIndicator;
+		for each (_local_1 in this.m_indicators) {
+			_local_1.onUnregister();
+		}
+		;
+		this.m_indicators = new Dictionary();
+	}
+
+	public function callTextTickers(_arg_1:Boolean):void {
+		var _local_2:IIndicator;
+		for each (_local_2 in this.m_indicators) {
+			_local_2.callTextTicker(_arg_1);
+		}
+		;
+	}
+
+
 }
+}//package menu3.indicator
+

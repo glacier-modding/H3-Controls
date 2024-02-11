@@ -1,126 +1,129 @@
-﻿package menu3
-{
-	import common.Log;
-	import flash.display.DisplayObject;
-	import flash.geom.Rectangle;
-	import flash.geom.Vector3D;
-	
-	public class LeafNavigationUtil
-	{
-		
-		private static const m_debugOutput:Boolean = false;
-		
-		public function LeafNavigationUtil()
-		{
-			super();
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
+
+//menu3.LeafNavigationUtil
+
+package menu3 {
+import flash.geom.Rectangle;
+import flash.geom.Vector3D;
+
+import common.Log;
+
+import flash.display.DisplayObject;
+
+public class LeafNavigationUtil {
+
+	private static const m_debugOutput:Boolean = false;
+
+
+	public static function getBestElementForSelection(_arg_1:DisplayObject, _arg_2:MenuElementBase, _arg_3:MenuElementBase, _arg_4:Number, _arg_5:Number):MenuElementBase {
+		var _local_6:Rectangle = _arg_3.getView().getBounds(_arg_1);
+		var _local_7:Vector3D = getCenterFromBounds(_local_6);
+		if (m_debugOutput) {
+			Log.xinfo(Log.ChannelDebug, ((("getBestElementForSelection startPos:" + _local_7) + " bounds:") + _local_6));
 		}
-		
-		public static function getBestElementForSelection(param1:DisplayObject, param2:MenuElementBase, param3:MenuElementBase, param4:Number, param5:Number):MenuElementBase
-		{
-			var bounds:Rectangle = param3.getView().getBounds(param1);
-			var startPos:Vector3D = getCenterFromBounds(bounds);
-			if (m_debugOutput)
-			{
-				Log.xinfo(Log.ChannelDebug, "getBestElementForSelection startPos:" + startPos + " bounds:" + bounds);
-			}
-			var _loc8_:Vector3D = new Vector3D(param4, param5);
-			return LeafNavigationUtil.getBestElement(param1, startPos, _loc8_, param2);
-		}
-		
-		private static function getBestElement(param1:DisplayObject, param2:Vector3D, param3:Vector3D, param4:MenuElementBase):MenuElementBase
-		{
-			var bestElementId:MenuElementBase = null;
-			var bestElementBounds:Rectangle = null;
-			var bestElementScore:Number = NaN;
-			if (m_debugOutput)
-			{
-				Log.xinfo(Log.ChannelDebug, "getBestElement from container");
-			}
-			if (param4 == null || param4.m_children == null || param4.m_children.length <= 0)
-			{
-				if (m_debugOutput)
-				{
-					Log.xinfo(Log.ChannelDebug, "getBestElement container is null or emtpy");
-				}
-				return null;
-			}
-			var _loc5_:Number = -Number.MAX_VALUE;
-			var _loc6_:MenuElementBase = null;
-			var _loc7_:int = 0;
-			while (_loc7_ < param4.m_children.length)
-			{
-				if ((bestElementId = param4.m_children[_loc7_] as MenuElementBase) != null && MenuElementBase.getNodeProp(bestElementId, "selectable") != false)
-				{
-					if (bestElementId.m_children != null && bestElementId.m_children.length > 0)
-					{
-						bestElementId = getBestElement(param1, param2, param3, bestElementId);
-					}
-					if (bestElementId != null)
-					{
-						bestElementBounds = bestElementId.getView().getBounds(param1);
-						bestElementScore = getScoreFromBounds(param2, bestElementBounds, param3);
-						if (m_debugOutput)
-						{
-							Log.xinfo(Log.ChannelDebug, "getBestElement score:" + bestElementScore + " id:" + bestElementId["_nodedata"]["id"]);
-						}
-						if (bestElementScore > _loc5_)
-						{
-							_loc6_ = bestElementId;
-							_loc5_ = bestElementScore;
-						}
-					}
-				}
-				_loc7_++;
-			}
-			return _loc6_;
-		}
-		
-		private static function getScoreFromBounds(param1:Vector3D, param2:Rectangle, param3:Vector3D):Number
-		{
-			var _loc4_:Vector3D = getCenterFromBounds(param2);
-			return getScore(param1, _loc4_, param3);
-		}
-		
-		private static function getCenterFromBounds(param1:Rectangle):Vector3D
-		{
-			var _loc2_:Vector3D = new Vector3D(param1.topLeft.x, param1.topLeft.y);
-			var _loc3_:Vector3D = new Vector3D(param1.bottomRight.x, param1.bottomRight.y);
-			var _loc4_:Vector3D;
-			(_loc4_ = _loc3_.subtract(_loc2_)).scaleBy(0.5);
-			return _loc2_.add(_loc4_);
-		}
-		
-		private static function getScore(startPos:Vector3D, endPos:Vector3D, inputDir:Vector3D):Number
-		{
-			var _loc10_:Number = NaN;
-			var _loc11_:Number = NaN;
-			var _loc12_:Number = NaN;
-			if (m_debugOutput)
-			{
-				Log.xinfo(Log.ChannelDebug, "getScore startPos:" + startPos + " endPos:" + endPos + " inputDir:" + inputDir);
-			}
-			var _loc4_:Vector3D;
-			var _loc5_:Number = (_loc4_ = endPos.subtract(startPos)).length;
-			var _loc6_:Number = -Number.MAX_VALUE;
-			var _loc7_:Number = 0.0002;
-			if (_loc5_ <= _loc7_)
-			{
-				return _loc6_;
-			}
-			var _loc8_:Vector3D;
-			(_loc8_ = _loc4_.clone()).normalize();
-			var _loc9_:Number = inputDir.dotProduct(_loc8_);
-			if ((_loc9_ = Math.min(_loc9_, 1)) > 0)
-			{
-				_loc10_ = Math.acos(_loc9_);
-				_loc11_ = Math.PI / 2 * 0.95;
-				if (_loc10_ < _loc11_)
-				{
-					_loc12_ = 2;
-					_loc6_ = 1 - (Math.abs(_loc4_.x) + Math.abs(_loc4_.y) * _loc12_);
-				}
-			}
-			return _loc6_;
-		}
+		;
+		var _local_8:Vector3D = new Vector3D(_arg_4, _arg_5);
+		var _local_9:MenuElementBase = LeafNavigationUtil.getBestElement(_arg_1, _local_7, _local_8, _arg_2);
+		return (_local_9);
 	}
+
+	private static function getBestElement(_arg_1:DisplayObject, _arg_2:Vector3D, _arg_3:Vector3D, _arg_4:MenuElementBase):MenuElementBase {
+		var _local_8:MenuElementBase;
+		var _local_9:Rectangle;
+		var _local_10:Number;
+		if (m_debugOutput) {
+			Log.xinfo(Log.ChannelDebug, "getBestElement from container");
+		}
+		;
+		if ((((_arg_4 == null) || (_arg_4.m_children == null)) || (_arg_4.m_children.length <= 0))) {
+			if (m_debugOutput) {
+				Log.xinfo(Log.ChannelDebug, "getBestElement container is null or emtpy");
+			}
+			;
+			return (null);
+		}
+		;
+		var _local_5:Number = -(Number.MAX_VALUE);
+		var _local_6:MenuElementBase;
+		var _local_7:int;
+		while (_local_7 < _arg_4.m_children.length) {
+			_local_8 = (_arg_4.m_children[_local_7] as MenuElementBase);
+			if (((!(_local_8 == null)) && (!(MenuElementBase.getNodeProp(_local_8, "selectable") == false)))) {
+				if (((!(_local_8.m_children == null)) && (_local_8.m_children.length > 0))) {
+					_local_8 = getBestElement(_arg_1, _arg_2, _arg_3, _local_8);
+				}
+				;
+				if (_local_8 != null) {
+					_local_9 = _local_8.getView().getBounds(_arg_1);
+					_local_10 = getScoreFromBounds(_arg_2, _local_9, _arg_3);
+					if (m_debugOutput) {
+						Log.xinfo(Log.ChannelDebug, ((("getBestElement score:" + _local_10) + " id:") + _local_8["_nodedata"]["id"]));
+					}
+					;
+					if (_local_10 > _local_5) {
+						_local_6 = _local_8;
+						_local_5 = _local_10;
+					}
+					;
+				}
+				;
+			}
+			;
+			_local_7++;
+		}
+		;
+		return (_local_6);
+	}
+
+	private static function getScoreFromBounds(_arg_1:Vector3D, _arg_2:Rectangle, _arg_3:Vector3D):Number {
+		var _local_4:Vector3D = getCenterFromBounds(_arg_2);
+		return (getScore(_arg_1, _local_4, _arg_3));
+	}
+
+	private static function getCenterFromBounds(_arg_1:Rectangle):Vector3D {
+		var _local_2:Vector3D = new Vector3D(_arg_1.topLeft.x, _arg_1.topLeft.y);
+		var _local_3:Vector3D = new Vector3D(_arg_1.bottomRight.x, _arg_1.bottomRight.y);
+		var _local_4:Vector3D = _local_3.subtract(_local_2);
+		_local_4.scaleBy(0.5);
+		var _local_5:Vector3D = _local_2.add(_local_4);
+		return (_local_5);
+	}
+
+	private static function getScore(_arg_1:Vector3D, _arg_2:Vector3D, _arg_3:Vector3D):Number {
+		var _local_10:Number;
+		var _local_11:Number;
+		var _local_12:Number;
+		if (m_debugOutput) {
+			Log.xinfo(Log.ChannelDebug, ((((("getScore startPos:" + _arg_1) + " endPos:") + _arg_2) + " inputDir:") + _arg_3));
+		}
+		;
+		var _local_4:Vector3D = _arg_2.subtract(_arg_1);
+		var _local_5:Number = _local_4.length;
+		var _local_6:Number = -(Number.MAX_VALUE);
+		var _local_7:Number = 0.0002;
+		if (_local_5 <= _local_7) {
+			return (_local_6);
+		}
+		;
+		var _local_8:Vector3D = _local_4.clone();
+		_local_8.normalize();
+		var _local_9:Number = _arg_3.dotProduct(_local_8);
+		_local_9 = Math.min(_local_9, 1);
+		if (_local_9 > 0) {
+			_local_10 = Math.acos(_local_9);
+			_local_11 = ((Math.PI / 2) * 0.95);
+			if (_local_10 < _local_11) {
+				_local_12 = 2;
+				_local_6 = (1 - (Math.abs(_local_4.x) + (Math.abs(_local_4.y) * _local_12)));
+			}
+			;
+		}
+		;
+		return (_local_6);
+	}
+
+
 }
+}//package menu3
+

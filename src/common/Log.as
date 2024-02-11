@@ -1,197 +1,171 @@
-package common
-{
-	import flash.events.MouseEvent;
-	import flash.utils.getQualifiedClassName;
-	
-	public class Log
-	{
-		
-		public static const ChannelMem:String = "Memory";
-		
-		public static const ChannelVideo:String = "Video";
-		
-		public static const ChannelImage:String = "Image";
-		
-		public static const ChannelLoca:String = "Loca";
-		
-		public static const ChannelScale:String = "Scaling";
-		
-		public static const ChannelMouse:String = "Mouse";
-		
-		public static const ChannelDebug:String = "Debug";
-		
-		public static const ChannelModal:String = "ModalDialog";
-		
-		public static const ChannelAni:String = "Animation";
-		
-		public static const ChannelContainer:String = "Container";
-		
-		public static const ChannelButtonPrompt:String = "ButtonPrompt";
-		
-		public static const ChannelCommon:String = "Common";
-		
-		public static const ChannelMenuFrame:String = "MenuFrame";
-		
-		public function Log()
-		{
-			super();
-		}
-		
-		public static function error(param1:String, param2:Object, param3:String):void
-		{
-			logMessage("ERROR", param1, param2, param3);
-		}
-		
-		public static function xerror(param1:String, param2:String):void
-		{
-			error(param1, null, param2);
-		}
-		
-		public static function warning(param1:String, param2:Object, param3:String):void
-		{
-			logMessage("warning", param1, param2, param3);
-		}
-		
-		public static function xwarning(param1:String, param2:String):void
-		{
-			warning(param1, null, param2);
-		}
-		
-		public static function info(param1:String, param2:Object, param3:String):void
-		{
-			logMessage("info", param1, param2, param3);
-		}
-		
-		public static function xinfo(param1:String, param2:String):void
-		{
-			info(param1, null, param2);
-		}
-		
-		public static function mouse(param1:Object, param2:MouseEvent, param3:String = null):void
-		{
-			var _loc4_:String = "event null";
-			if (param2)
-			{
-				_loc4_ = "type: " + param2.type + " - target: " + (param2.target == null ? "<none>" : param2.target.name) + (param3 == null ? "" : " - " + param3);
-			}
-			logMessage("info", ChannelMouse, param1, _loc4_);
-		}
-		
-		public static function debugData(param1:Object, param2:Object):void
-		{
-			var _loc3_:int = 0;
-			debugDataRecursive(_loc3_, param2, param1);
-		}
-		
-		private static function debugDataRecursive(param1:int, param2:Object, param3:Object):void
-		{
-			var _loc5_:String = null;
-			var _loc6_:int = 0;
-			var _loc4_:String = "Key";
-			if (param1 > 0)
-			{
-				_loc4_ = ">";
-				_loc6_ = 0;
-				while (_loc6_ < param1 + 1)
-				{
-					_loc4_ = "--" + _loc4_;
-					_loc6_++;
-				}
-			}
-			for (_loc5_ in param2)
-			{
-				info(ChannelDebug, param3, "| " + _loc4_ + " : " + _loc5_ + ": " + param2[_loc5_]);
-				debugDataRecursive(param1 + 1, param2[_loc5_], param3);
-			}
-		}
-		
-		public static function dumpData(param1:Object, param2:Object):void
-		{
-			var _loc3_:int = 0;
-			var _loc4_:String = "";
-			_loc4_ = dumpDataRecursive(_loc4_, param2, false);
-			info(ChannelDebug, param1, _loc4_);
-		}
-		
-		private static function dumpDataRecursive(param1:String, param2:Object, param3:Boolean):String
-		{
-			var _loc5_:* = undefined;
-			var _loc6_:* = undefined;
-			if (param2 == null)
-			{
-				return param1 + "null";
-			}
-			if (param3)
-			{
-				param1 += "[";
-			}
-			else
-			{
-				param1 += "{";
-			}
-			var _loc4_:Boolean = true;
-			for (_loc5_ in param2)
-			{
-				if (!_loc4_)
-				{
-					param1 += ",";
-				}
-				_loc6_ = param2[_loc5_];
-				if (!param3)
-				{
-					param1 += "\"" + _loc5_ + "\":";
-				}
-				if (_loc6_ == null)
-				{
-					param1 += "null";
-				}
-				else if (_loc6_ is Number || _loc6_ is Boolean)
-				{
-					param1 += _loc6_;
-				}
-				else if (_loc6_ is String)
-				{
-					param1 += "\"" + _loc6_ + "\"";
-				}
-				else if (_loc6_ is Array)
-				{
-					param1 = dumpDataRecursive(param1, _loc6_, true);
-				}
-				else if (_loc6_ is Object)
-				{
-					param1 = dumpDataRecursive(param1, _loc6_, false);
-				}
-				else
-				{
-					param1 += "\"" + _loc6_ + "\"";
-				}
-				_loc4_ = false;
-			}
-			if (param3)
-			{
-				param1 += "]";
-			}
-			else
-			{
-				param1 += "}";
-			}
-			return param1;
-		}
-		
-		private static function logMessage(param1:String, param2:String, param3:Object, param4:String):void
-		{
-			if (!ControlsMain.isLogChannelEnabled(param2))
-			{
-				return;
-			}
-			if (param3)
-			{
-				trace(param1 + " | " + param2 + " | " + getQualifiedClassName(param3) + "(" + param3.name + "): " + param4);
-			}
-			else
-			{
-				trace(param1 + " | " + param2 + ": " + param4);
-			}
-		}
+﻿// Decompiled by AS3 Sorcerer 6.78
+// www.buraks.com/as3sorcerer
+
+//common.Log
+
+package common {
+import flash.events.MouseEvent;
+import flash.utils.getQualifiedClassName;
+
+public class Log {
+
+	public static const ChannelMem:String = "Memory";
+	public static const ChannelVideo:String = "Video";
+	public static const ChannelImage:String = "Image";
+	public static const ChannelLoca:String = "Loca";
+	public static const ChannelScale:String = "Scaling";
+	public static const ChannelMouse:String = "Mouse";
+	public static const ChannelDebug:String = "Debug";
+	public static const ChannelModal:String = "ModalDialog";
+	public static const ChannelAni:String = "Animation";
+	public static const ChannelContainer:String = "Container";
+	public static const ChannelButtonPrompt:String = "ButtonPrompt";
+	public static const ChannelCommon:String = "Common";
+	public static const ChannelMenuFrame:String = "MenuFrame";
+
+
+	public static function error(_arg_1:String, _arg_2:Object, _arg_3:String):void {
+		logMessage("ERROR", _arg_1, _arg_2, _arg_3);
 	}
+
+	public static function xerror(_arg_1:String, _arg_2:String):void {
+		error(_arg_1, null, _arg_2);
+	}
+
+	public static function warning(_arg_1:String, _arg_2:Object, _arg_3:String):void {
+		logMessage("warning", _arg_1, _arg_2, _arg_3);
+	}
+
+	public static function xwarning(_arg_1:String, _arg_2:String):void {
+		warning(_arg_1, null, _arg_2);
+	}
+
+	public static function info(_arg_1:String, _arg_2:Object, _arg_3:String):void {
+		logMessage("info", _arg_1, _arg_2, _arg_3);
+	}
+
+	public static function xinfo(_arg_1:String, _arg_2:String):void {
+		info(_arg_1, null, _arg_2);
+	}
+
+	public static function mouse(_arg_1:Object, _arg_2:MouseEvent, _arg_3:String = null):void {
+		var _local_4:* = "event null";
+		if (_arg_2) {
+			_local_4 = (((("type: " + _arg_2.type) + " - target: ") + ((_arg_2.target == null) ? "<none>" : _arg_2.target.name)) + ((_arg_3 == null) ? "" : (" - " + _arg_3)));
+		}
+		;
+		logMessage("info", ChannelMouse, _arg_1, _local_4);
+	}
+
+	public static function debugData(_arg_1:Object, _arg_2:Object):void {
+		var _local_3:int;
+		debugDataRecursive(_local_3, _arg_2, _arg_1);
+	}
+
+	private static function debugDataRecursive(_arg_1:int, _arg_2:Object, _arg_3:Object):void {
+		var _local_5:String;
+		var _local_6:int;
+		var _local_4:* = "Key";
+		if (_arg_1 > 0) {
+			_local_4 = ">";
+			_local_6 = 0;
+			while (_local_6 < (_arg_1 + 1)) {
+				_local_4 = ("--" + _local_4);
+				_local_6++;
+			}
+			;
+		}
+		;
+		for (_local_5 in _arg_2) {
+			info(ChannelDebug, _arg_3, ((((("| " + _local_4) + " : ") + _local_5) + ": ") + _arg_2[_local_5]));
+			debugDataRecursive((_arg_1 + 1), _arg_2[_local_5], _arg_3);
+		}
+		;
+	}
+
+	public static function dumpData(_arg_1:Object, _arg_2:Object):void {
+		var _local_3:int;
+		var _local_4:* = "";
+		_local_4 = dumpDataRecursive(_local_4, _arg_2, false);
+		info(ChannelDebug, _arg_1, _local_4);
+	}
+
+	private static function dumpDataRecursive(_arg_1:String, _arg_2:Object, _arg_3:Boolean):String {
+		var _local_5:*;
+		var _local_6:*;
+		if (_arg_2 == null) {
+			return (_arg_1 + "null");
+		}
+		;
+		if (_arg_3) {
+			_arg_1 = (_arg_1 + "[");
+		} else {
+			_arg_1 = (_arg_1 + "{");
+		}
+		;
+		var _local_4:Boolean = true;
+		for (_local_5 in _arg_2) {
+			if (!_local_4) {
+				_arg_1 = (_arg_1 + ",");
+			}
+			;
+			_local_6 = _arg_2[_local_5];
+			if (!_arg_3) {
+				_arg_1 = (_arg_1 + (('"' + _local_5) + '":'));
+			}
+			;
+			if (_local_6 == null) {
+				_arg_1 = (_arg_1 + "null");
+			} else {
+				if (((_local_6 is Number) || (_local_6 is Boolean))) {
+					_arg_1 = (_arg_1 + _local_6);
+				} else {
+					if ((_local_6 is String)) {
+						_arg_1 = (_arg_1 + (('"' + _local_6) + '"'));
+					} else {
+						if ((_local_6 is Array)) {
+							_arg_1 = dumpDataRecursive(_arg_1, _local_6, true);
+						} else {
+							if ((_local_6 is Object)) {
+								_arg_1 = dumpDataRecursive(_arg_1, _local_6, false);
+							} else {
+								_arg_1 = (_arg_1 + (('"' + _local_6) + '"'));
+							}
+							;
+						}
+						;
+					}
+					;
+				}
+				;
+			}
+			;
+			_local_4 = false;
+		}
+		;
+		if (_arg_3) {
+			_arg_1 = (_arg_1 + "]");
+		} else {
+			_arg_1 = (_arg_1 + "}");
+		}
+		;
+		return (_arg_1);
+	}
+
+	private static function logMessage(_arg_1:String, _arg_2:String, _arg_3:Object, _arg_4:String):void {
+		if (!ControlsMain.isLogChannelEnabled(_arg_2)) {
+			return;
+		}
+		;
+		if (_arg_3) {
+			trace(((((((((_arg_1 + " | ") + _arg_2) + " | ") + getQualifiedClassName(_arg_3)) + "(") + _arg_3.name) + "): ") + _arg_4));
+		} else {
+			trace(((((_arg_1 + " | ") + _arg_2) + ": ") + _arg_4));
+		}
+		;
+	}
+
+
 }
+}//package common
+
