@@ -5,10 +5,7 @@
       <configuration name="Basic" main-class="basic_Main" output-file="Basic.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="32.0">
           <entries>
-            <entry library-name="flash" library-level="project">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="babd5ee6-4959-43bc-be58-490f24e0544f">
+            <entry library-name="Controls" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -22,10 +19,7 @@
       <configuration name="Common" main-class="common_Main" output-file="Common.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="32.0">
           <entries>
-            <entry library-name="flash" library-level="project">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="ec3cf79e-e486-4f37-85fd-2ac08df7ecc8">
+            <entry library-name="Controls" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -39,7 +33,7 @@
       <configuration name="ControlsMain" main-class="ControlsMain" output-file="ControlsMain.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="32.0">
           <entries>
-            <entry library-name="flash" library-level="project">
+            <entry library-name="Controls" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -53,10 +47,7 @@
       <configuration name="Hud" main-class="hud_Main" output-file="Hud.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="32.0">
           <entries>
-            <entry library-name="flash" library-level="project">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="2f581542-92b1-4ef7-8091-1b7b10d8a74e">
+            <entry library-name="Controls" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -70,10 +61,7 @@
       <configuration name="Menu3" main-class="menu3_Main" output-file="Menu3.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="32.0">
           <entries>
-            <entry library-name="flash" library-level="project">
-              <dependency linkage="Merged" />
-            </entry>
-            <entry library-id="f87781a8-8515-4b57-9774-e6380a5c36eb">
+            <entry library-name="Controls" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -94,46 +82,7 @@
     </content>
     <orderEntry type="jdk" jdkName="FlexSDK" jdkType="Flex SDK Type (new)" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="babd5ee6-4959-43bc-be58-490f24e0544f" />
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/Basic.swc!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="2f581542-92b1-4ef7-8091-1b7b10d8a74e" />
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/Hud.swc!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="f87781a8-8515-4b57-9774-e6380a5c36eb" />
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/Menu3.swc!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library type="flex">
-        <properties id="ec3cf79e-e486-4f37-85fd-2ac08df7ecc8" />
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/Common.swc!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="library" exported="" name="flash" level="project" />
+    <orderEntry type="library" exported="" name="Flash" level="project" />
+    <orderEntry type="library" exported="" name="Controls" level="project" />
   </component>
 </module>
