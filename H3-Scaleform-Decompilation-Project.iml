@@ -9,7 +9,7 @@
               <dependency linkage="Merged" />
             </entry>
             <entry library-id="babd5ee6-4959-43bc-be58-490f24e0544f">
-              <dependency linkage="Include" />
+              <dependency linkage="Merged" />
             </entry>
           </entries>
           <sdk name="FlexSDK" />
