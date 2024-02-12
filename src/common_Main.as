@@ -31,6 +31,7 @@ import common.menu.MenuUtils;
 import common.menu.ObjectiveUtil;
 import common.menu.textTicker;
 
+[SWF(frameRate="60", width="500", height="375")]
 public class common_Main extends Sprite {
 
 	public function common_Main():void {

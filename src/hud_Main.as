@@ -173,6 +173,7 @@ import hud.versus.scoring.ActionXpBarElement;
 import hud.versus.scoring.UnnoticedKillElement;
 import hud.versus.scoring.VersusScoreElement;
 
+[SWF(frameRate="60", width="500", height="375")]
 public class hud_Main extends Sprite {
 
 	public function hud_Main():void {

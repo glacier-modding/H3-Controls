@@ -18,6 +18,7 @@ import flash.system.ApplicationDomain;
 
 import scaleform.gfx.*;
 
+[SWF(frameRate="60", width="500", height="375")]
 public class ControlsMain extends Sprite {
 
 	private static var ms_invertEnabledChannels:Boolean = false;

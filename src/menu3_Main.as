@@ -255,6 +255,7 @@ import menu3.tests.elusivetargetbriefingsequence.ElusiveTargetTesterSequence;
 import menu3.tests.elusivetargetbriefingsequence.ElusiveTargetTesterSequenceBase;
 import menu3.tests.elusivetargetbriefingsequence.EtSequenceTextBlocks;
 
+[SWF(frameRate="60", width="500", height="375")]
 public class menu3_Main extends Sprite {
 
 	public function menu3_Main():void {

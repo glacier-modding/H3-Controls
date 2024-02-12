@@ -45,6 +45,7 @@ import basic.TextBox;
 import basic.VideoBox;
 import basic.VideoBoxInfo;
 
+[SWF(frameRate="60", width="500", height="375")]
 public class basic_Main extends Sprite {
 
 	public function basic_Main():void {
