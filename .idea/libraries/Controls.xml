@@ -1,10 +1,10 @@
 <component name="libraryTable">
   <library name="Controls" type="flex">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/Hud.swc!/" />
-      <root url="jar://$PROJECT_DIR$/Menu3.swc!/" />
-      <root url="jar://$PROJECT_DIR$/Common.swc!/" />
-      <root url="jar://$PROJECT_DIR$/Basic.swc!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Basic.swc!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Common.swc!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Hud.swc!/" />
+      <root url="jar://$PROJECT_DIR$/lib/Menu3.swc!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
