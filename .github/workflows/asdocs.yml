@@ -22,7 +22,7 @@ jobs:
           accept-air-license: true
 
       - name: Generate docs
-        run: asdoc -source-path ".\src\" -doc-classes basic_Main common_Main ControlsMain hud_Main menu3_Main -exclude-classes EvergreenVitalInfoIcons_view -library-path ".\lib\" -main-title "H3 Controls Documentation" -window-title "H3 Controls Documentation" -output ".\asdoc\"
+        run: asdoc -source-path ".\src\" -doc-classes basic_Main common_Main ControlsMain hud_Main menu3_Main -library-path ".\lib\" -main-title "H3 Controls Documentation" -window-title "H3 Controls Documentation" -output ".\asdoc\"
 
       - name: Upload docs
         uses: actions/upload-pages-artifact@v1
