@@ -232,13 +232,13 @@ import flash.display.DisplayObject;
 class OnFrameCountAction {
 
 	/*private*/
-	var m_func:Function;
+	internal var m_func:Function;
 	/*private*/
-	var m_onNthFrame:int;
+	internal var m_onNthFrame:int;
 	/*private*/
-	var m_currentFrameCount:int = 0;
+	internal var m_currentFrameCount:int = 0;
 	/*private*/
-	var m_removed:Boolean = false;
+	internal var m_removed:Boolean = false;
 
 	public function OnFrameCountAction(_arg_1:DisplayObject, _arg_2:int, _arg_3:Boolean, _arg_4:Function):void {
 		this.m_func = _arg_4;
@@ -256,7 +256,7 @@ class OnFrameCountAction {
 	}
 
 	/*private*/
-	function onFrameUpdate(_arg_1:Event):void {
+	internal function onFrameUpdate(_arg_1:Event):void {
 		if (this.m_removed) {
 			return;
 		}
@@ -271,7 +271,7 @@ class OnFrameCountAction {
 	}
 
 	/*private*/
-	function onRemovedFromStage(_arg_1:Event):void {
+	internal function onRemovedFromStage(_arg_1:Event):void {
 		var _local_2:DisplayObject = (_arg_1.currentTarget as DisplayObject);
 		_local_2.removeEventListener(Event.ENTER_FRAME, this.onRemovedFromStage);
 		_local_2.removeEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);

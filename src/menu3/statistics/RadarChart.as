@@ -348,19 +348,19 @@ import common.menu.MenuConstants;
 class RadarChartData {
 
 	/*private*/
-	var m_apothem:Number = 170;
+	internal var m_apothem:Number = 170;
 	/*private*/
-	var m_radius:Number = 0;
+	internal var m_radius:Number = 0;
 	/*private*/
-	var m_sideLength:Number = 0;
+	internal var m_sideLength:Number = 0;
 	/*private*/
-	var m_numberOfSides:Number = 0;
+	internal var m_numberOfSides:Number = 0;
 	/*private*/
-	var m_centralAngle:Number = 0;
+	internal var m_centralAngle:Number = 0;
 	/*private*/
-	var m_dataTotal:Number = 0;
+	internal var m_dataTotal:Number = 0;
 	/*private*/
-	var m_statistics:Array = [];
+	internal var m_statistics:Array = [];
 
 	public function RadarChartData(_arg_1:Object) {
 		this.m_dataTotal = _arg_1.total;
@@ -428,7 +428,7 @@ class RadarChartPoint {
 	}
 
 	/*private*/
-	function drawClip():void {
+	internal function drawClip():void {
 		this.clip.visible = true;
 		this.clip.graphics.clear();
 		this.clip.graphics.beginFill(MenuConstants.COLOR_WHITE, 1);

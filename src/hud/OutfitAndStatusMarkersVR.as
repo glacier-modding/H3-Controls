@@ -262,30 +262,30 @@ import hud.OutfitAndStatusMarkersVR;
 class StatusMarkerViewLean extends Sprite {
 
 	/*private*/
-	const m_lstrHiddenInCrowd:String = Localization.get("UI_MENU_LVA_BLENDING_IN_CROWD").toUpperCase();
+	internal const m_lstrHiddenInCrowd:String = Localization.get("UI_MENU_LVA_BLENDING_IN_CROWD").toUpperCase();
 	/*private*/
-	const m_lstrHiddenInVegetation:String = Localization.get("UI_MENU_LVA_HIDDEN").toUpperCase();
+	internal const m_lstrHiddenInVegetation:String = Localization.get("UI_MENU_LVA_HIDDEN").toUpperCase();
 	/*private*/
-	const m_lstrDeepTrespassing:String = Localization.get("EGAME_TEXT_SL_HOSTILEAREA").toUpperCase();
+	internal const m_lstrDeepTrespassing:String = Localization.get("EGAME_TEXT_SL_HOSTILEAREA").toUpperCase();
 	/*private*/
-	const m_lstrTrespassing:String = Localization.get("EGAME_TEXT_SL_TRESPASSING_ON").toUpperCase();
+	internal const m_lstrTrespassing:String = Localization.get("EGAME_TEXT_SL_TRESPASSING_ON").toUpperCase();
 
 	/*private*/
-	var m_gradientOverlay:MovieClip;
+	internal var m_gradientOverlay:MovieClip;
 	/*private*/
-	var m_borderMc:MovieClip;
+	internal var m_borderMc:MovieClip;
 	/*private*/
-	var m_gradientOverlayLVA:MovieClip;
+	internal var m_gradientOverlayLVA:MovieClip;
 	/*private*/
-	var m_trespassingIndicatorMc:MovieClip;
+	internal var m_trespassingIndicatorMc:MovieClip;
 	/*private*/
-	var m_tensionIndicatorMc:MovieClip;
+	internal var m_tensionIndicatorMc:MovieClip;
 	/*private*/
-	var m_informationBarLVA:MovieClip;
+	internal var m_informationBarLVA:MovieClip;
 	/*private*/
-	var m_isHiddenInCrowd:Boolean = false;
+	internal var m_isHiddenInCrowd:Boolean = false;
 	/*private*/
-	var m_isHiddenInVegetation:Boolean = false;
+	internal var m_isHiddenInVegetation:Boolean = false;
 
 	public function StatusMarkerViewLean() {
 		var _local_1:StatusMarkerView = new StatusMarkerView();
@@ -361,7 +361,7 @@ class StatusMarkerViewLean extends Sprite {
 	}
 
 	/*private*/
-	function applyLVA():void {
+	internal function applyLVA():void {
 		if (this.m_isHiddenInCrowd) {
 			this.m_informationBarLVA.labelTxt.text = this.m_lstrHiddenInCrowd;
 			this.m_informationBarLVA.visible = true;

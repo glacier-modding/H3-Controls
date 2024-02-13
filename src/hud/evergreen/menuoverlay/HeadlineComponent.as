@@ -149,13 +149,13 @@ class TitleRow extends Sprite {
 	public static const PXGAPBETWEENICONANDTITLE:Number = 12;
 
 	/*private*/
-	var m_title_txt:TextField = new TextField();
+	internal var m_title_txt:TextField = new TextField();
 	/*private*/
-	var m_header_txt:TextField = new TextField();
+	internal var m_header_txt:TextField = new TextField();
 	/*private*/
-	var m_icon:iconsAll76x76View = new iconsAll76x76View();
+	internal var m_icon:iconsAll76x76View = new iconsAll76x76View();
 	/*private*/
-	var m_dxIconOffset:Number = 0;
+	internal var m_dxIconOffset:Number = 0;
 
 	public function TitleRow() {
 		this.m_title_txt.name = "m_title_txt";
@@ -230,9 +230,9 @@ class TitleRow extends Sprite {
 class MicroLabel extends Sprite {
 
 	/*private*/
-	var m_txt:TextField = new TextField();
+	internal var m_txt:TextField = new TextField();
 	/*private*/
-	var m_background:Shape = new Shape();
+	internal var m_background:Shape = new Shape();
 
 	public function MicroLabel() {
 		this.m_txt.name = "m_txt";
@@ -267,13 +267,13 @@ class MicroRow extends Sprite {
 	public static const PXPADDING:Number = (25 * MICROICONSCALE);//8.22368421052632
 
 	/*private*/
-	var m_labels:Sprite = new Sprite();
+	internal var m_labels:Sprite = new Sprite();
 	/*private*/
-	var m_microicons:Sprite = new Sprite();
+	internal var m_microicons:Sprite = new Sprite();
 	/*private*/
-	var m_micromessage_txt:TextField = new TextField();
+	internal var m_micromessage_txt:TextField = new TextField();
 	/*private*/
-	var m_dxTotalWidth:Number = 0;
+	internal var m_dxTotalWidth:Number = 0;
 
 	public function MicroRow() {
 		this.m_labels.name = "m_labels";

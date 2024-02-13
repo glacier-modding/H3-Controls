@@ -224,36 +224,36 @@ import __AS3__.vec.*;
 class CollapsedTooltipContent extends Sprite {
 
 	/*private*/
-	static const PXPADDING:Number = 40;
+	internal static const PXPADDING:Number = 40;
 	/*private*/
-	static const DYGAP:Number = 30;
+	internal static const DYGAP:Number = 30;
 
 	/*private*/
-	var m_destinationName_txt:TextField = new TextField();
+	internal var m_destinationName_txt:TextField = new TextField();
 	/*private*/
-	var m_dottedLine:DottedLineAlt = new DottedLineAlt(5);
+	internal var m_dottedLine:DottedLineAlt = new DottedLineAlt(5);
 	/*private*/
-	var m_iconTargets:iconsAll76x76View = new iconsAll76x76View();
+	internal var m_iconTargets:iconsAll76x76View = new iconsAll76x76View();
 	/*private*/
-	var m_iconSafes:iconsAll76x76View = new iconsAll76x76View();
+	internal var m_iconSafes:iconsAll76x76View = new iconsAll76x76View();
 	/*private*/
-	var m_iconMules:iconsAll76x76View = new iconsAll76x76View();
+	internal var m_iconMules:iconsAll76x76View = new iconsAll76x76View();
 	/*private*/
-	var m_iconSuppliers:iconsAll76x76View = new iconsAll76x76View();
+	internal var m_iconSuppliers:iconsAll76x76View = new iconsAll76x76View();
 	/*private*/
-	var m_numTargets_txt:TextField = new TextField();
+	internal var m_numTargets_txt:TextField = new TextField();
 	/*private*/
-	var m_numSafes_txt:TextField = new TextField();
+	internal var m_numSafes_txt:TextField = new TextField();
 	/*private*/
-	var m_numMules_txt:TextField = new TextField();
+	internal var m_numMules_txt:TextField = new TextField();
 	/*private*/
-	var m_numSuppliers_txt:TextField = new TextField();
+	internal var m_numSuppliers_txt:TextField = new TextField();
 	/*private*/
-	var m_bonusRequirements:Sprite = new Sprite();
+	internal var m_bonusRequirements:Sprite = new Sprite();
 	/*private*/
-	var m_backgroundWidth:Number = 0;
+	internal var m_backgroundWidth:Number = 0;
 	/*private*/
-	var m_backgroundHeight:Number = 0;
+	internal var m_backgroundHeight:Number = 0;
 
 	public function CollapsedTooltipContent() {
 		this.m_destinationName_txt.name = "m_destinationName_txt";
@@ -300,12 +300,12 @@ class CollapsedTooltipContent extends Sprite {
 	}
 
 	/*private*/
-	static function setupCounterIcon(_arg_1:iconsAll76x76View, _arg_2:String):void {
+	internal static function setupCounterIcon(_arg_1:iconsAll76x76View, _arg_2:String):void {
 		MenuUtils.setupIcon(_arg_1, _arg_2, 0xFFFFFF, false, false, 0xFFFFFF, 0, 0, true);
 	}
 
 	/*private*/
-	static function syncCounter(_arg_1:Number, _arg_2:Number, _arg_3:iconsAll76x76View, _arg_4:TextField):Number {
+	internal static function syncCounter(_arg_1:Number, _arg_2:Number, _arg_3:iconsAll76x76View, _arg_4:TextField):Number {
 		if (!_arg_2) {
 			_arg_3.alpha = 0.4;
 			_arg_4.alpha = 0.4;
@@ -403,16 +403,16 @@ class CollapsedTooltipContent extends Sprite {
 class PayoutBlock extends Sprite {
 
 	/*private*/
-	static const PXPADDING:Number = 5;
+	internal static const PXPADDING:Number = 5;
 
 	/*private*/
-	var m_background:Shape = new Shape();
+	internal var m_background:Shape = new Shape();
 	/*private*/
-	var m_amount_txt:TextField = new TextField();
+	internal var m_amount_txt:TextField = new TextField();
 	/*private*/
-	var m_merces_txt:TextField = new TextField();
+	internal var m_merces_txt:TextField = new TextField();
 	/*private*/
-	var m_payout_txt:TextField = new TextField();
+	internal var m_payout_txt:TextField = new TextField();
 
 	public function PayoutBlock() {
 		this.m_background.name = "m_background";
@@ -456,9 +456,9 @@ class BonusRequirement extends Sprite {
 	public static const DXGAPBETWEENICONANDTITLE:Number = 10;
 
 	/*private*/
-	var m_icon:iconsAll76x76View = new iconsAll76x76View();
+	internal var m_icon:iconsAll76x76View = new iconsAll76x76View();
 	/*private*/
-	var m_title_txt:TextField = new TextField();
+	internal var m_title_txt:TextField = new TextField();
 
 	public function BonusRequirement() {
 		this.m_icon.name = "m_icon";
@@ -495,13 +495,13 @@ class BonusRequirementsBlock extends Sprite {
 	public static const DYGAP:Number = 20;
 
 	/*private*/
-	var m_header_txt:TextField = new TextField();
+	internal var m_header_txt:TextField = new TextField();
 	/*private*/
-	var m_dottedLine:DottedLineAlt = new DottedLineAlt(1);
+	internal var m_dottedLine:DottedLineAlt = new DottedLineAlt(1);
 	/*private*/
-	var m_bonusRequirements:Vector.<BonusRequirement> = new Vector.<BonusRequirement>();
+	internal var m_bonusRequirements:Vector.<BonusRequirement> = new Vector.<BonusRequirement>();
 	/*private*/
-	var m_dyContentHeight:Number = 0;
+	internal var m_dyContentHeight:Number = 0;
 
 	public function BonusRequirementsBlock() {
 		this.m_header_txt.name = "m_header_txt";
@@ -583,18 +583,18 @@ class AirTicketButton extends Sprite {
 	public static const STATE_BOOKMESSAGE:int = 1;
 	public static const STATE_CANCELMESSAGE:int = 2;
 	/*private*/
-	static const s_lstrBook:String = Localization.get("UI_EVEREGREEN_SAFEHOUSE_WORLDMAP_SETNEXTDESTINATION").toUpperCase();
+	internal static const s_lstrBook:String = Localization.get("UI_EVEREGREEN_SAFEHOUSE_WORLDMAP_SETNEXTDESTINATION").toUpperCase();
 	/*private*/
-	static const s_lstrCancel:String = Localization.get("UI_EVEREGREEN_SAFEHOUSE_WORLDMAP_UNSETNEXTDESTINATION").toUpperCase();
+	internal static const s_lstrCancel:String = Localization.get("UI_EVEREGREEN_SAFEHOUSE_WORLDMAP_UNSETNEXTDESTINATION").toUpperCase();
 
 	/*private*/
-	var m_icon:iconsAll76x76View = new iconsAll76x76View();
+	internal var m_icon:iconsAll76x76View = new iconsAll76x76View();
 	/*private*/
-	var m_label_txt:TextField = new TextField();
+	internal var m_label_txt:TextField = new TextField();
 	/*private*/
-	var m_blinkOutline:Shape = new Shape();
+	internal var m_blinkOutline:Shape = new Shape();
 	/*private*/
-	var m_state:int;
+	internal var m_state:int;
 
 	public function AirTicketButton() {
 		this.m_icon.name = "m_icon";
@@ -642,7 +642,7 @@ class AirTicketButton extends Sprite {
 	}
 
 	/*private*/
-	function pulse():void {
+	internal function pulse():void {
 		var PXANIMDELTA:Number = (ExpandedTooltipContent.PXPADDING * 1.5);
 		Animate.fromTo(this.m_blinkOutline, (30 / 60), (40 / 60), {
 			"width": ExpandedTooltipContent.DXCONTENTWIDTH,
@@ -664,7 +664,7 @@ class AirTicketButton extends Sprite {
 	}
 
 	/*private*/
-	function changeState(state:int, lstrLabel:String):void {
+	internal function changeState(state:int, lstrLabel:String):void {
 		if (this.m_state != state) {
 			Animate.to(this.m_icon, 0.1, 0, {
 				"width": 1,
@@ -691,11 +691,11 @@ class TooltipHeadline extends Sprite {
 	public static const DYHEIGHT:Number = 70;
 
 	/*private*/
-	var m_icon:iconsAll76x76View = new iconsAll76x76View();
+	internal var m_icon:iconsAll76x76View = new iconsAll76x76View();
 	/*private*/
-	var m_title_txt:TextField = new TextField();
+	internal var m_title_txt:TextField = new TextField();
 	/*private*/
-	var m_subtitle_txt:TextField = new TextField();
+	internal var m_subtitle_txt:TextField = new TextField();
 
 	public function TooltipHeadline(_arg_1:uint, _arg_2:String, _arg_3:String, _arg_4:String) {
 		this.m_icon.name = "m_icon";
@@ -736,25 +736,25 @@ class ExpandedTooltipContent extends Sprite {
 	public static const DXCONTENTWIDTH:Number = 650;
 
 	/*private*/
-	var m_headlineAlerted:TooltipHeadline = new TooltipHeadline(MenuConstants.COLOR_YELLOW, "warning", "UI_EVEREGREEN_SAFEHOUSE_WORLDMAP_TERRITORYHEADLINE_ALERTED_TITLE", "UI_EVEREGREEN_SAFEHOUSE_WORLDMAP_TERRITORYHEADLINE_ALERTED_SUBTITLE");
+	internal var m_headlineAlerted:TooltipHeadline = new TooltipHeadline(MenuConstants.COLOR_YELLOW, "warning", "UI_EVEREGREEN_SAFEHOUSE_WORLDMAP_TERRITORYHEADLINE_ALERTED_TITLE", "UI_EVEREGREEN_SAFEHOUSE_WORLDMAP_TERRITORYHEADLINE_ALERTED_SUBTITLE");
 	/*private*/
-	var m_headlineHotMission:TooltipHeadline = new TooltipHeadline(MenuConstants.COLOR_PURPLE, "evergreen_showdown_mission", "UI_EVEREGREEN_SAFEHOUSE_WORLDMAP_TERRITORYHEADLINE_HOTMISSION_TITLE", "UI_EVEREGREEN_SAFEHOUSE_WORLDMAP_TERRITORYHEADLINE_HOTMISSION_SUBTITLE");
+	internal var m_headlineHotMission:TooltipHeadline = new TooltipHeadline(MenuConstants.COLOR_PURPLE, "evergreen_showdown_mission", "UI_EVEREGREEN_SAFEHOUSE_WORLDMAP_TERRITORYHEADLINE_HOTMISSION_TITLE", "UI_EVEREGREEN_SAFEHOUSE_WORLDMAP_TERRITORYHEADLINE_HOTMISSION_SUBTITLE");
 	/*private*/
-	var m_destinationCountry_txt:TextField = new TextField();
+	internal var m_destinationCountry_txt:TextField = new TextField();
 	/*private*/
-	var m_destinationCity_txt:TextField = new TextField();
+	internal var m_destinationCity_txt:TextField = new TextField();
 	/*private*/
-	var m_payoutBlock:PayoutBlock = new PayoutBlock();
+	internal var m_payoutBlock:PayoutBlock = new PayoutBlock();
 	/*private*/
-	var m_locationIntelBlock:LocationIntelBlock = new hud.evergreen.misc.LocationIntelBlock(ExpandedTooltipContent.DXCONTENTWIDTH, ExpandedTooltipContent.PXPADDING);
+	internal var m_locationIntelBlock:LocationIntelBlock = new hud.evergreen.misc.LocationIntelBlock(ExpandedTooltipContent.DXCONTENTWIDTH, ExpandedTooltipContent.PXPADDING);
 	/*private*/
-	var m_bonusRequirementsBlock:BonusRequirementsBlock = new BonusRequirementsBlock();
+	internal var m_bonusRequirementsBlock:BonusRequirementsBlock = new BonusRequirementsBlock();
 	/*private*/
-	var m_airTicketButton:AirTicketButton = new AirTicketButton();
+	internal var m_airTicketButton:AirTicketButton = new AirTicketButton();
 	/*private*/
-	var m_backgroundWidth:Number = 0;
+	internal var m_backgroundWidth:Number = 0;
 	/*private*/
-	var m_backgroundHeight:Number = 0;
+	internal var m_backgroundHeight:Number = 0;
 
 	public function ExpandedTooltipContent() {
 		this.m_headlineAlerted.name = "m_headlineAlerted";

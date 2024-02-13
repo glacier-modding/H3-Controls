@@ -105,13 +105,13 @@ class ImageLoader_internal extends Loader {
 	public var m_successCallbacks:Vector.<Function> = new Vector.<Function>();
 	public var m_failedCallbacks:Vector.<Function> = new Vector.<Function>();
 	/*private*/
-	var m_isLoading:Boolean = false;
+	internal var m_isLoading:Boolean = false;
 	public var m_failed:Boolean = false;
 	public var m_bitmapData:BitmapData = null;
 	/*private*/
-	var m_rid:String;
+	internal var m_rid:String;
 	/*private*/
-	var m_toLoadUrl:String = null;
+	internal var m_toLoadUrl:String = null;
 
 
 	public function isLoading():Boolean {
@@ -130,7 +130,7 @@ class ImageLoader_internal extends Loader {
 	}
 
 	/*private*/
-	function callCallbacks():void {
+	internal function callCallbacks():void {
 		var _local_1:Function;
 		for each (_local_1 in this.m_successCallbacks) {
 			(_local_1(this.m_bitmapData));
@@ -141,7 +141,7 @@ class ImageLoader_internal extends Loader {
 	}
 
 	/*private*/
-	function callFailedCallbacks():void {
+	internal function callFailedCallbacks():void {
 		var _local_1:Function;
 		for each (_local_1 in this.m_failedCallbacks) {
 			(_local_1());
@@ -152,7 +152,7 @@ class ImageLoader_internal extends Loader {
 	}
 
 	/*private*/
-	function triggerRequestAsyncLoad(_arg_1:String):void {
+	internal function triggerRequestAsyncLoad(_arg_1:String):void {
 		this.m_toLoadUrl = ("img://" + _arg_1);
 		ExternalInterface.call("RequestAsyncLoad", this.m_toLoadUrl, this);
 	}
@@ -197,7 +197,7 @@ class ImageLoader_internal extends Loader {
 	}
 
 	/*private*/
-	function onLoadingComplete(_arg_1:Event):void {
+	internal function onLoadingComplete(_arg_1:Event):void {
 		var _local_3:Bitmap;
 		this.closeRequest();
 		var _local_2:DisplayObject = content;
@@ -210,14 +210,14 @@ class ImageLoader_internal extends Loader {
 	}
 
 	/*private*/
-	function onLoadFailed(_arg_1:IOErrorEvent):void {
+	internal function onLoadFailed(_arg_1:IOErrorEvent):void {
 		this.m_failed = true;
 		this.closeRequest();
 		this.callFailedCallbacks();
 	}
 
 	/*private*/
-	function closeRequest():void {
+	internal function closeRequest():void {
 		this.m_rid = null;
 		this.m_toLoadUrl = null;
 		this.m_isLoading = false;
@@ -227,19 +227,19 @@ class ImageLoader_internal extends Loader {
 	}
 
 	/*private*/
-	function RegisterLoaderListeners():void {
+	internal function RegisterLoaderListeners():void {
 		this.contentLoaderInfo.addEventListener(Event.COMPLETE, this.onLoadingComplete);
 		this.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, this.onLoadFailed);
 	}
 
 	/*private*/
-	function UnregisterLoaderListeners():void {
+	internal function UnregisterLoaderListeners():void {
 		this.contentLoaderInfo.removeEventListener(Event.COMPLETE, this.onLoadingComplete);
 		this.contentLoaderInfo.removeEventListener(IOErrorEvent.IO_ERROR, this.onLoadFailed);
 	}
 
 	/*private*/
-	function ClearImage():void {
+	internal function ClearImage():void {
 		this.m_bitmapData = null;
 		this.unload();
 	}

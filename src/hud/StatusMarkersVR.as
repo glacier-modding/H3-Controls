@@ -604,11 +604,11 @@ import __AS3__.vec.*;
 class ObjlikeQueue {
 
 	/*private*/
-	var m_queue:Vector.<QueueItem> = new Vector.<QueueItem>();
+	internal var m_queue:Vector.<QueueItem> = new Vector.<QueueItem>();
 	/*private*/
-	var m_idCurrentlyShown:String = null;
+	internal var m_idCurrentlyShown:String = null;
 	/*private*/
-	var m_containerCurrentlyShown:DisplayObject = null;
+	internal var m_containerCurrentlyShown:DisplayObject = null;
 
 
 	public function push(id:String, prepare:Function, container:DisplayObject, icon_mc:DisplayObject, txt:TextField, dtLinger:Number):void {
@@ -648,7 +648,7 @@ class ObjlikeQueue {
 	}
 
 	/*private*/
-	function animateAppearance(_arg_1:DisplayObject, _arg_2:DisplayObject, _arg_3:TextField, _arg_4:Number):void {
+	internal function animateAppearance(_arg_1:DisplayObject, _arg_2:DisplayObject, _arg_3:TextField, _arg_4:Number):void {
 		_arg_1.alpha = 1;
 		_arg_3.x = 0;
 		_arg_3.alpha = 0;
@@ -667,7 +667,7 @@ class ObjlikeQueue {
 	}
 
 	/*private*/
-	function onComplete(containerJustFinished:DisplayObject):void {
+	internal function onComplete(containerJustFinished:DisplayObject):void {
 		var item:QueueItem;
 		var ts:TaskletSequencer;
 		if (this.m_queue.length == 0) {

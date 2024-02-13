@@ -269,17 +269,17 @@ import common.ImageLoaderCache;
 class Frame {
 
 	/*private*/
-	var m_rid:String;
+	internal var m_rid:String;
 	/*private*/
-	var m_bitmapData:BitmapData;
+	internal var m_bitmapData:BitmapData;
 	/*private*/
-	var m_msBegin:int;
+	internal var m_msBegin:int;
 	/*private*/
-	var m_msEnd:int;
+	internal var m_msEnd:int;
 	/*private*/
-	var m_isLoaded:Boolean = false;
+	internal var m_isLoaded:Boolean = false;
 	/*private*/
-	var m_label:String;
+	internal var m_label:String;
 
 	public function Frame(_arg_1:String, _arg_2:Number, _arg_3:Number, _arg_4:String) {
 		this.m_rid = _arg_1;
@@ -314,7 +314,7 @@ class Frame {
 	}
 
 	/*private*/
-	function onImageLoadSucceeded(_arg_1:BitmapData):void {
+	internal function onImageLoadSucceeded(_arg_1:BitmapData):void {
 		this.m_bitmapData = _arg_1;
 		this.m_isLoaded = true;
 	}

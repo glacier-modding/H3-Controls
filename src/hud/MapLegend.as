@@ -106,7 +106,7 @@ import common.menu.MenuConstants;
 class MapLegendRow extends Sprite {
 
 	/*private*/
-	static const Y_SPACING:Number = 50;
+	internal static const Y_SPACING:Number = 50;
 
 	public var dyTotal:Number = 0;
 
@@ -147,7 +147,7 @@ class MapLegendRow extends Sprite {
 	}
 
 	/*private*/
-	function addMapLegendListItemView(_arg_1:String, _arg_2:DisplayObject):void {
+	internal function addMapLegendListItemView(_arg_1:String, _arg_2:DisplayObject):void {
 		var _local_3:MapLegendListItemView = new MapLegendListItemView();
 		if (_arg_1 == "DIVIDERLINE") {
 			_local_3.gotoAndStop(2);

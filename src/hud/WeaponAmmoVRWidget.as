@@ -227,20 +227,20 @@ class ReloadView extends Sprite {
 	public static const WARNLEVEL_YELLOW:int = 1;
 	public static const WARNLEVEL_RED:int = 2;
 	/*private*/
-	static const DT_BLINK_YELLOW:Number = 0.3;
+	internal static const DT_BLINK_YELLOW:Number = 0.3;
 	/*private*/
-	static const DT_BLINK_RED:Number = 0.15;
+	internal static const DT_BLINK_RED:Number = 0.15;
 
 	/*private*/
-	var m_txtYellow:TextField = new TextField();
+	internal var m_txtYellow:TextField = new TextField();
 	/*private*/
-	var m_txtRed:TextField = new TextField();
+	internal var m_txtRed:TextField = new TextField();
 	/*private*/
-	var m_bgYellow:Shape = new Shape();
+	internal var m_bgYellow:Shape = new Shape();
 	/*private*/
-	var m_bgRed:Shape = new Shape();
+	internal var m_bgRed:Shape = new Shape();
 	/*private*/
-	var m_level:int = 0;
+	internal var m_level:int = 0;
 
 	public function ReloadView() {
 		var _local_1:Number = 24;
@@ -298,7 +298,7 @@ class ReloadView extends Sprite {
 	}
 
 	/*private*/
-	function toggleBlinkState(_arg_1:Number):void {
+	internal function toggleBlinkState(_arg_1:Number):void {
 		this.visible = (!(this.visible));
 		Animate.delay(this, _arg_1, this.toggleBlinkState, _arg_1);
 	}

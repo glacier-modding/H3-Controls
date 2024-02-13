@@ -278,7 +278,7 @@ class FAFMessageView extends MessageView {
 class FAFMessageViewContainer extends Sprite {
 
 	/*private*/
-	var m_viewsAvailable:Vector.<FAFMessageView> = new Vector.<FAFMessageView>();
+	internal var m_viewsAvailable:Vector.<FAFMessageView> = new Vector.<FAFMessageView>();
 
 	public function FAFMessageViewContainer() {
 		var _local_3:FAFMessageView;

@@ -279,11 +279,11 @@ public class BitmapReplacementOpenVR {
 class Component {
 
 	/*private*/
-	var m_idArchetype:int;
+	internal var m_idArchetype:int;
 	/*private*/
-	var m_direction:int;
+	internal var m_direction:int;
 	/*private*/
-	var m_label:String;
+	internal var m_label:String;
 
 	public function Component(_arg_1:int, _arg_2:int, _arg_3:String) {
 		this.m_idArchetype = _arg_1;

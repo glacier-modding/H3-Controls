@@ -83,9 +83,9 @@ public class BarChart extends Sprite {
 class BarChartData {
 
 	/*private*/
-	var m_playerIndex:Number = 0;
+	internal var m_playerIndex:Number = 0;
 	/*private*/
-	var m_scorePercentages:Array = [];
+	internal var m_scorePercentages:Array = [];
 
 	public function BarChartData(_arg_1:Object) {
 		this.m_playerIndex = _arg_1.playerIndex;

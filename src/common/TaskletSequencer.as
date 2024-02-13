@@ -126,7 +126,7 @@ import __AS3__.vec.*;
 class Queue {
 
 	/*private*/
-	var m_functions:Vector.<Function> = new Vector.<Function>();
+	internal var m_functions:Vector.<Function> = new Vector.<Function>();
 
 
 	public function enqueue(_arg_1:Function):void {
@@ -151,7 +151,7 @@ class Queue {
 class Stack {
 
 	/*private*/
-	var m_queues:Vector.<Queue> = new Vector.<Queue>();
+	internal var m_queues:Vector.<Queue> = new Vector.<Queue>();
 
 
 	public function push(_arg_1:Queue):void {

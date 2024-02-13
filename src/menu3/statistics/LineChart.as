@@ -319,9 +319,9 @@ import flash.geom.Point;
 class LineChartData {
 
 	/*private*/
-	var m_global:Array = [];
+	internal var m_global:Array = [];
 	/*private*/
-	var m_player:Array = [];
+	internal var m_player:Array = [];
 
 	public function LineChartData(_arg_1:Object) {
 		this.m_global = _arg_1.global;
@@ -358,7 +358,7 @@ class LineChartPoint {
 	}
 
 	/*private*/
-	function drawClip():void {
+	internal function drawClip():void {
 		this.clip.visible = true;
 		this.clip.graphics.clear();
 		this.clip.graphics.beginFill(this.color, 1);
