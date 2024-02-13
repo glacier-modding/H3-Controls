@@ -17,8 +17,6 @@ import flash.text.TextFormat;
 import common.menu.MenuUtils;
 import common.Animate;
 
-import __AS3__.vec.Vector;
-import __AS3__.vec.*;
 
 public class BriefingSequenceTextBlock extends BaseControl {
 

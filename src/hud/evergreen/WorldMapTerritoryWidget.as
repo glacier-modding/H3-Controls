@@ -209,7 +209,6 @@ import flash.display.Shape;
 
 import common.Localization;
 
-import __AS3__.vec.Vector;
 
 import flash.display.LineScaleMode;
 import flash.display.CapsStyle;
@@ -219,7 +218,6 @@ import common.Animate;
 
 import hud.evergreen.misc.LocationIntelBlock;
 
-import __AS3__.vec.*;
 
 class CollapsedTooltipContent extends Sprite {
 

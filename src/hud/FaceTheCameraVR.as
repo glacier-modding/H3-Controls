@@ -8,7 +8,6 @@ import common.BaseControl;
 
 import flash.display.Sprite;
 
-import __AS3__.vec.Vector;
 
 import flash.display.Shape;
 import flash.display.Graphics;
@@ -20,7 +19,6 @@ import common.Localization;
 import common.menu.MenuConstants;
 import common.Animate;
 
-import __AS3__.vec.*;
 
 public class FaceTheCameraVR extends BaseControl {
 

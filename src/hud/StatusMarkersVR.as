@@ -589,8 +589,6 @@ public class StatusMarkersVR extends BaseControl {
 }
 }//package hud
 
-import __AS3__.vec.Vector;
-
 import flash.display.DisplayObject;
 
 import common.TaskletSequencer;
@@ -599,7 +597,6 @@ import flash.text.TextField;
 
 import common.Animate;
 
-import __AS3__.vec.*;
 
 class ObjlikeQueue {
 

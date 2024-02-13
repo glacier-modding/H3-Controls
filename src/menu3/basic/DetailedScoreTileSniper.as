@@ -15,14 +15,12 @@ import common.menu.MenuConstants;
 import common.CommonUtils;
 import common.Animate;
 
-import __AS3__.vec.Vector;
 
 import basic.DottedLine;
 
 import flash.external.ExternalInterface;
 import flash.display.Sprite;
 
-import __AS3__.vec.*;
 
 public dynamic class DetailedScoreTileSniper extends MenuElementTileBase {
 

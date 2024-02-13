@@ -6,7 +6,6 @@
 package hud {
 import common.BaseControl;
 
-import __AS3__.vec.Vector;
 
 import flash.display.MovieClip;
 
@@ -21,7 +20,6 @@ import flash.text.TextFormat;
 
 import mx.utils.StringUtil;
 
-import __AS3__.vec.*;
 
 public class HUDActionPrompts extends BaseControl {
 

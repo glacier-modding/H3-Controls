@@ -6,7 +6,6 @@
 package hud.notification {
 import flash.display.Sprite;
 
-import __AS3__.vec.Vector;
 
 import common.Localization;
 import common.menu.MenuConstants;
@@ -15,7 +14,6 @@ import common.Animate;
 
 import flash.external.ExternalInterface;
 
-import __AS3__.vec.*;
 
 public class ActionXpBar extends NotificationListener {
 

@@ -17,11 +17,9 @@ import flash.display.MovieClip;
 import flash.geom.Rectangle;
 import flash.text.TextLineMetrics;
 
-import __AS3__.vec.Vector;
 
 import mx.utils.StringUtil;
 
-import __AS3__.vec.*;
 
 public dynamic class ControllerLayout extends MenuElementBase {
 

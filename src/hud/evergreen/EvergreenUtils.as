@@ -4,7 +4,7 @@
 //hud.evergreen.EvergreenUtils
 
 package hud.evergreen {
-import __AS3__.vec.Vector;
+
 
 import flash.display.DisplayObject;
 import flash.text.TextField;

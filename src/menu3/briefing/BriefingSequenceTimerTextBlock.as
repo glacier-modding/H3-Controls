@@ -19,8 +19,6 @@ import flash.text.TextLineMetrics;
 
 import common.Animate;
 
-import __AS3__.vec.Vector;
-import __AS3__.vec.*;
 
 public class BriefingSequenceTimerTextBlock extends BaseControl {
 

@@ -120,8 +120,6 @@ public class TaskletSequencer extends Sprite {
 }
 }//package common
 
-import __AS3__.vec.Vector;
-import __AS3__.vec.*;
 
 class Queue {
 

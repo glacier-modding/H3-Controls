@@ -22,7 +22,6 @@ import flash.display.DisplayObject;
 
 import common.ImageLoaderCache;
 
-import __AS3__.vec.Vector;
 
 import flash.display.BitmapData;
 

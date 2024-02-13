@@ -6,7 +6,6 @@
 package menu3.basic {
 import flash.display.Sprite;
 
-import __AS3__.vec.Vector;
 
 import flash.filters.DropShadowFilter;
 import flash.filters.BitmapFilterQuality;
@@ -15,7 +14,6 @@ import hud.InteractionIndicator;
 
 import common.menu.MenuConstants;
 
-import __AS3__.vec.*;
 
 public dynamic class OptionsInfoHoldTogglePreview extends OptionsInfoSlideshowPreview {
 
@@ -120,8 +118,6 @@ public dynamic class OptionsInfoHoldTogglePreview extends OptionsInfoSlideshowPr
 }
 }//package menu3.basic
 
-import __AS3__.vec.Vector;
-
 import flash.display.DisplayObjectContainer;
 import flash.display.DisplayObject;
 
@@ -129,7 +125,6 @@ import common.Animate;
 
 import hud.InteractionIndicator;
 
-import __AS3__.vec.*;
 
 class Trigger {
 

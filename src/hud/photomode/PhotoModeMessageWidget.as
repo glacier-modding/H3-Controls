@@ -8,11 +8,9 @@ import common.BaseControl;
 
 import flash.display.Sprite;
 
-import __AS3__.vec.Vector;
 
 import common.Animate;
 
-import __AS3__.vec.*;
 
 public class PhotoModeMessageWidget extends BaseControl {
 
@@ -156,8 +154,6 @@ import common.Animate;
 
 import flash.display.Shape;
 
-import __AS3__.vec.Vector;
-import __AS3__.vec.*;
 
 class MessageView extends Sprite {
 

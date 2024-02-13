@@ -6,14 +6,12 @@
 package basic {
 import flash.display.BitmapData;
 
-import __AS3__.vec.Vector;
 
 import flash.display.FrameLabel;
 import flash.display.MovieClip;
 import flash.text.TextField;
 import flash.geom.Matrix;
 
-import __AS3__.vec.*;
 
 public class BitmapReplacementOpenVR {
 

@@ -6,7 +6,6 @@
 package menu3 {
 import flash.display.Sprite;
 
-import __AS3__.vec.Vector;
 
 import common.Animate;
 
@@ -21,7 +20,6 @@ import flash.display.Bitmap;
 
 import common.menu.MenuUtils;
 
-import __AS3__.vec.*;
 
 public class MenuFrameBackgroundImage extends Sprite {
 

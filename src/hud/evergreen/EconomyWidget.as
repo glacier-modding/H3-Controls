@@ -6,14 +6,12 @@
 package hud.evergreen {
 import common.BaseControl;
 
-import __AS3__.vec.Vector;
 
 import common.Localization;
 import common.menu.MenuUtils;
 import common.menu.MenuConstants;
 import common.Animate;
 
-import __AS3__.vec.*;
 
 public class EconomyWidget extends BaseControl {
 

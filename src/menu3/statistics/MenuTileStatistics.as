@@ -6,7 +6,6 @@
 package menu3.statistics {
 import menu3.MenuElementTileBase;
 
-import __AS3__.vec.Vector;
 
 import flash.text.TextField;
 import flash.display.MovieClip;
@@ -20,7 +19,6 @@ import flash.display.Sprite;
 
 import common.Localization;
 
-import __AS3__.vec.*;
 
 public dynamic class MenuTileStatistics extends MenuElementTileBase {
 

@@ -6,7 +6,6 @@
 package menu3.statistics {
 import flash.display.Sprite;
 
-import __AS3__.vec.Vector;
 
 import flash.events.Event;
 
@@ -23,7 +22,6 @@ import common.menu.MenuUtils;
 
 import flash.display.*;
 
-import __AS3__.vec.*;
 
 import common.menu.*;
 

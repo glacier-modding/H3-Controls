@@ -4,7 +4,7 @@
 //menu3.containers.ScrollingCreditsListContainer
 
 package menu3.containers {
-import __AS3__.vec.Vector;
+
 
 import menu3.Credits;
 
@@ -23,7 +23,6 @@ import common.Log;
 
 import flash.events.MouseEvent;
 
-import __AS3__.vec.*;
 
 public dynamic class ScrollingCreditsListContainer extends ScrollingListContainer {
 

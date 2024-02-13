@@ -7,7 +7,6 @@ package menu3.basic {
 import hud.maptrackers.NorthIndicatorMapTracker;
 import hud.maptrackers.NpcMapTracker;
 
-import __AS3__.vec.Vector;
 
 import flash.display.Shape;
 
@@ -29,7 +28,6 @@ import common.CommonUtils;
 
 import flash.utils.setTimeout;
 
-import __AS3__.vec.*;
 
 import flash.utils.*;
 

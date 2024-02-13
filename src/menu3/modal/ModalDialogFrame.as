@@ -4,12 +4,11 @@
 //menu3.modal.ModalDialogFrame
 
 package menu3.modal {
-import __AS3__.vec.Vector;
+
 
 import common.menu.MenuConstants;
 import common.Log;
 
-import __AS3__.vec.*;
 
 public class ModalDialogFrame extends ModalDialogContainerBase {
 

@@ -15,7 +15,6 @@ import menu3.basic.TextTickerUtil;
 
 import common.menu.MenuConstants;
 
-import __AS3__.vec.Vector;
 
 import flash.utils.Dictionary;
 
@@ -38,7 +37,6 @@ import flash.filters.GlowFilter;
 
 import scaleform.gfx.Extensions;
 
-import __AS3__.vec.*;
 
 import flash.utils.*;
 

@@ -6,7 +6,6 @@
 package menu3.statistics {
 import flash.display.Sprite;
 
-import __AS3__.vec.Vector;
 
 import menu3.statistics.elements.LineChartLabel;
 
@@ -19,7 +18,6 @@ import common.Animate;
 
 import flash.display.*;
 
-import __AS3__.vec.*;
 
 import menu3.statistics.*;
 

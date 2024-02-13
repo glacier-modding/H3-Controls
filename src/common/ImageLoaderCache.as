@@ -87,7 +87,6 @@ public class ImageLoaderCache {
 
 import flash.display.Loader;
 
-import __AS3__.vec.Vector;
 
 import flash.display.BitmapData;
 import flash.external.ExternalInterface;
@@ -97,7 +96,6 @@ import flash.display.DisplayObject;
 import flash.events.Event;
 import flash.events.IOErrorEvent;
 
-import __AS3__.vec.*;
 
 class ImageLoader_internal extends Loader {
 

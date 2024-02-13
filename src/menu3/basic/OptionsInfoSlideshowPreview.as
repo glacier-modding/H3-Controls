@@ -7,7 +7,6 @@ package menu3.basic {
 import flash.display.Sprite;
 import flash.display.Bitmap;
 
-import __AS3__.vec.Vector;
 
 import flash.events.Event;
 import flash.utils.getTimer;
@@ -17,7 +16,6 @@ import common.Animate;
 
 import flash.utils.setTimeout;
 
-import __AS3__.vec.*;
 
 public dynamic class OptionsInfoSlideshowPreview extends OptionsInfo {
 

@@ -6,13 +6,11 @@
 package hud.photomode {
 import common.BaseControl;
 
-import __AS3__.vec.Vector;
 
 import basic.ButtonPromptImage;
 
 import common.menu.MenuUtils;
 
-import __AS3__.vec.*;
 
 public class PhotoModeWidget extends BaseControl {
 
@@ -297,8 +295,6 @@ public class PhotoModeWidget extends BaseControl {
 }
 }//package hud.photomode
 
-import __AS3__.vec.Vector;
-
 import basic.ButtonPromptImage;
 
 import flash.text.TextField;
@@ -307,7 +303,6 @@ import flash.text.TextFieldAutoSize;
 import common.menu.MenuUtils;
 import common.menu.MenuConstants;
 
-import __AS3__.vec.*;
 
 class PromptData {
 

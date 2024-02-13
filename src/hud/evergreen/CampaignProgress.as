@@ -6,7 +6,6 @@
 package hud.evergreen {
 import common.BaseControl;
 
-import __AS3__.vec.Vector;
 
 import common.Localization;
 import common.menu.MenuUtils;
@@ -17,7 +16,6 @@ import flash.external.ExternalInterface;
 
 import common.Log;
 
-import __AS3__.vec.*;
 
 public class CampaignProgress extends BaseControl {
 
