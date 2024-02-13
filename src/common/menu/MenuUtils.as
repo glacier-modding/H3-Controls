@@ -66,56 +66,56 @@ public class MenuUtils {
 	private static const MENU_METER_TO_PIXEL:Number = (1 / 0.00364583);//274.285965061454
 
 
-	public static function setupText(_arg_1:TextField, _arg_2:String, _arg_3:int = 28, _arg_4:String = "$medium", _arg_5:String = "#ebebeb", _arg_6:Boolean = false):void {
+	public static function setupText(t:TextField, string:String, fontSize:int = 28, fontStyle:String = "$medium", fontColor:String = "#ebebeb", _arg_6:Boolean = false):void {
 		var _local_7:TextFormat;
-		if (_arg_2 == null) {
-			_arg_2 = "";
+		if (string == null) {
+			string = "";
 		}
 
 		if (ControlsMain.isVrModeActive()) {
-			if (((_arg_4 == MenuConstants.FONT_TYPE_LIGHT) || (_arg_4 == MenuConstants.FONT_TYPE_NORMAL))) {
-				_arg_4 = MenuConstants.FONT_TYPE_MEDIUM;
+			if (((fontStyle == MenuConstants.FONT_TYPE_LIGHT) || (fontStyle == MenuConstants.FONT_TYPE_NORMAL))) {
+				fontStyle = MenuConstants.FONT_TYPE_MEDIUM;
 			}
 
 		}
 
 		if (_arg_6) {
-			_arg_1.htmlText = (_arg_1.htmlText + (((((((('<font face="' + _arg_4) + '" color="') + _arg_5) + '" size="') + _arg_3) + '">') + _arg_2) + "</font>"));
+			t.htmlText = (t.htmlText + (((((((('<font face="' + fontStyle) + '" color="') + fontColor) + '" size="') + fontSize) + '">') + string) + "</font>"));
 		} else {
-			_arg_1.htmlText = (((((((('<font face="' + _arg_4) + '" color="') + _arg_5) + '" size="') + _arg_3) + '">') + _arg_2) + "</font>");
+			t.htmlText = (((((((('<font face="' + fontStyle) + '" color="') + fontColor) + '" size="') + fontSize) + '">') + string) + "</font>");
 			_local_7 = new TextFormat();
-			_local_7.color = MenuConstants.ColorNumber(_arg_5);
-			_local_7.font = _arg_4;
-			_local_7.size = _arg_3;
-			_arg_1.defaultTextFormat = _local_7;
+			_local_7.color = MenuConstants.ColorNumber(fontColor);
+			_local_7.font = fontStyle;
+			_local_7.size = fontSize;
+			t.defaultTextFormat = _local_7;
 		}
 
 	}
 
-	public static function setTextColor(_arg_1:TextField, _arg_2:int):void {
-		_arg_1.textColor = _arg_2;
+	public static function setTextColor(t:TextField, textColor:int):void {
+		t.textColor = textColor;
 		var _local_3:TextFormat = new TextFormat();
-		_local_3.color = _arg_2;
-		_arg_1.defaultTextFormat = _local_3;
+		_local_3.color = textColor;
+		t.defaultTextFormat = _local_3;
 	}
 
-	public static function setupTextUpper(_arg_1:TextField, _arg_2:String, _arg_3:int = 28, _arg_4:String = "$medium", _arg_5:String = "#ebebeb", _arg_6:Boolean = false):void {
-		if (_arg_2 == null) {
-			_arg_2 = "";
+	public static function setupTextUpper(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", fontColor:String = "#ebebeb", _arg_6:Boolean = false):void {
+		if (text == null) {
+			text = "";
 		}
 
-		setupText(_arg_1, _arg_2.toUpperCase(), _arg_3, _arg_4, _arg_5, _arg_6);
+		setupText(t, text.toUpperCase(), fontSize, fontStyle, fontColor, _arg_6);
 	}
 
-	public static function setupProfileName(_arg_1:TextField, _arg_2:String, _arg_3:int = 28, _arg_4:String = "$medium", _arg_5:String = "#ebebeb", _arg_6:Boolean = false):void {
-		if (_arg_2 == null) {
-			_arg_2 = "";
+	public static function setupProfileName(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", fontColor:String = "#ebebeb", _arg_6:Boolean = false):void {
+		if (text == null) {
+			text = "";
 		}
 
-		setupText(_arg_1, _arg_2, _arg_3, _arg_4, _arg_5, _arg_6);
-		CommonUtils.changeFontToGlobalIfNeeded(_arg_1);
-		truncateTextfieldWithCharLimit(_arg_1, 1, MenuConstants.PLAYERNAME_MIN_CHAR_COUNT, _arg_5);
-		shrinkTextToFit(_arg_1, _arg_1.width, -1);
+		setupText(t, text, fontSize, fontStyle, fontColor, _arg_6);
+		CommonUtils.changeFontToGlobalIfNeeded(t);
+		truncateTextfieldWithCharLimit(t, 1, MenuConstants.PLAYERNAME_MIN_CHAR_COUNT, fontColor);
+		shrinkTextToFit(t, t.width, -1);
 	}
 
 	public static function convertToEscapedHtmlString(_arg_1:String):String {
@@ -132,11 +132,11 @@ public class MenuUtils {
 		return (_arg_1.replace(m_matchHtmlLineBreaks, " "));
 	}
 
-	public static function truncateTextfield(_arg_1:TextField, _arg_2:int, _arg_3:String = "#ebebeb", _arg_4:Boolean = false):Boolean {
-		return (truncateTextfieldWithCharLimit(_arg_1, _arg_2, 0, _arg_3, _arg_4));
+	public static function truncateTextfield(t:TextField, _arg_2:int, fontColor:String = "#ebebeb", _arg_4:Boolean = false):Boolean {
+		return (truncateTextfieldWithCharLimit(t, _arg_2, 0, fontColor, _arg_4));
 	}
 
-	public static function truncateTextfieldWithCharLimit(_arg_1:TextField, _arg_2:int, _arg_3:int = 0, _arg_4:String = "#ebebeb", _arg_5:Boolean = false):Boolean {
+	public static function truncateTextfieldWithCharLimit(t:TextField, _arg_2:int, _arg_3:int = 0, fontColor:String = "#ebebeb", useGlobalFont:Boolean = false):Boolean {
 		var _local_10:int;
 		var _local_11:int;
 		var _local_12:String;
@@ -145,36 +145,36 @@ public class MenuUtils {
 		var _local_15:String;
 		var _local_16:String;
 		var _local_17:String;
-		if (((_arg_2 <= 0) || (_arg_1.length <= 0))) {
+		if (((_arg_2 <= 0) || (t.length <= 0))) {
 			return (false);
 		}
 
-		if (_arg_5) {
-			CommonUtils.changeFontToGlobalFont(_arg_1);
+		if (useGlobalFont) {
+			CommonUtils.changeFontToGlobalFont(t);
 		}
 
-		var _local_6:TextFormat = _arg_1.getTextFormat();
-		if (((_arg_4) && (!(_arg_4 == "")))) {
-			_local_6.color = MenuConstants.ColorNumber(_arg_4);
+		var _local_6:TextFormat = t.getTextFormat();
+		if (((fontColor) && (!(fontColor == "")))) {
+			_local_6.color = MenuConstants.ColorNumber(fontColor);
 		}
 
-		var _local_7:Boolean = _arg_1.wordWrap;
-		var _local_8:Boolean = _arg_1.multiline;
+		var _local_7:Boolean = t.wordWrap;
+		var _local_8:Boolean = t.multiline;
 		if (((!(_local_8)) || (_arg_2 == 1))) {
-			_arg_1.wordWrap = true;
+			t.wordWrap = true;
 		}
 
-		_arg_1.multiline = true;
+		t.multiline = true;
 		var _local_9:Boolean;
-		if (_arg_1.numLines > _arg_2) {
-			_local_10 = _arg_1.getLineIndexOfChar((_arg_1.length - 1));
+		if (t.numLines > _arg_2) {
+			_local_10 = t.getLineIndexOfChar((t.length - 1));
 			if (_local_10 >= _arg_2) {
-				_local_11 = (_arg_1.getLineOffset(_arg_2) + _arg_1.getLineLength(_arg_2));
+				_local_11 = (t.getLineOffset(_arg_2) + t.getLineLength(_arg_2));
 				if (_local_11 < 0) {
 					_local_11 = 0;
 				}
 
-				_local_12 = _arg_1.text;
+				_local_12 = t.text;
 				_local_13 = _local_12.length;
 				if (((s_truncator == null) || (!(s_truncatorLocale == ControlsMain.getActiveLocale())))) {
 					s_truncator = Localization.get("UI_TEXT_TRUNCATOR");
@@ -183,7 +183,7 @@ public class MenuUtils {
 
 				_local_14 = false;
 				while ((((!(_local_14)) && (_local_11 > 0)) && (_local_13 > _arg_3))) {
-					_arg_1.text = "";
+					t.text = "";
 					_local_11--;
 					_local_15 = _local_12.charAt(_local_11);
 					while (((_local_11 > 0) && (((_local_15 == " ") || (_local_15 == "\n")) || (_local_15 == "\r")))) {
@@ -194,9 +194,9 @@ public class MenuUtils {
 					_local_16 = _local_12.substring(0, (_local_11 + 1));
 					_local_13 = _local_16.length;
 					_local_17 = (_local_16 + s_truncator);
-					_arg_1.text = _local_17;
-					_arg_1.setTextFormat(_local_6);
-					_local_10 = _arg_1.getLineIndexOfChar((_arg_1.length - 1));
+					t.text = _local_17;
+					t.setTextFormat(_local_6);
+					_local_10 = t.getLineIndexOfChar((t.length - 1));
 					_local_14 = (_local_10 < _arg_2);
 				}
 
@@ -205,12 +205,12 @@ public class MenuUtils {
 
 		}
 
-		_arg_1.wordWrap = _local_7;
-		_arg_1.multiline = _local_8;
+		t.wordWrap = _local_7;
+		t.multiline = _local_8;
 		return (_local_9);
 	}
 
-	public static function truncateMultipartTextfield(_arg_1:TextField, _arg_2:String, _arg_3:String, _arg_4:String, _arg_5:uint = 1, _arg_6:String = "#ebebeb", _arg_7:Boolean = false):void {
+	public static function truncateMultipartTextfield(t:TextField, text:String, _arg_3:String, _arg_4:String, _arg_5:uint = 1, fontColor:String = "#ebebeb", useGlobalFont:Boolean = false):void {
 		var _local_12:int;
 		var _local_13:int;
 		var _local_14:String;
@@ -222,42 +222,42 @@ public class MenuUtils {
 		var _local_20:String;
 		var _local_21:int;
 		var _local_22:int;
-		if (((_arg_2.length <= _arg_5) && (_arg_3.length <= _arg_5))) {
+		if (((text.length <= _arg_5) && (_arg_3.length <= _arg_5))) {
 			return;
 		}
 
 		var _local_8:int = 1;
-		if (_arg_7) {
-			CommonUtils.changeFontToGlobalFont(_arg_1);
+		if (useGlobalFont) {
+			CommonUtils.changeFontToGlobalFont(t);
 		}
 
-		var _local_9:TextFormat = _arg_1.getTextFormat();
-		if (((_arg_6) && (!(_arg_6 == "")))) {
-			_local_9.color = MenuConstants.ColorNumber(_arg_6);
+		var _local_9:TextFormat = t.getTextFormat();
+		if (((fontColor) && (!(fontColor == "")))) {
+			_local_9.color = MenuConstants.ColorNumber(fontColor);
 		}
 
-		var _local_10:Boolean = _arg_1.wordWrap;
-		var _local_11:Boolean = _arg_1.multiline;
+		var _local_10:Boolean = t.wordWrap;
+		var _local_11:Boolean = t.multiline;
 		if (((!(_local_11)) || (_local_8 == 1))) {
-			_arg_1.wordWrap = true;
+			t.wordWrap = true;
 		}
 
-		_arg_1.multiline = true;
-		if (_arg_1.numLines > _local_8) {
-			_local_12 = _arg_1.getLineIndexOfChar((_arg_1.length - 1));
+		t.multiline = true;
+		if (t.numLines > _local_8) {
+			_local_12 = t.getLineIndexOfChar((t.length - 1));
 			if (_local_12 >= _local_8) {
-				_local_13 = (_arg_1.getLineOffset(_local_8) + _arg_1.getLineLength(_local_8));
+				_local_13 = (t.getLineOffset(_local_8) + t.getLineLength(_local_8));
 				if (_local_13 < 0) {
 					_local_13 = 0;
 				}
 
-				_local_14 = _arg_1.text;
-				_arg_1.text = "";
-				_arg_1.htmlText = _arg_2;
-				_arg_2 = _arg_1.text;
-				_arg_1.htmlText = _arg_3;
-				_arg_3 = _arg_1.text;
-				_local_15 = _arg_2;
+				_local_14 = t.text;
+				t.text = "";
+				t.htmlText = text;
+				text = t.text;
+				t.htmlText = _arg_3;
+				_arg_3 = t.text;
+				_local_15 = text;
 				_local_16 = _arg_3;
 				if (((s_truncator == null) || (!(s_truncatorLocale == ControlsMain.getActiveLocale())))) {
 					s_truncator = Localization.get("UI_TEXT_TRUNCATOR");
@@ -267,14 +267,14 @@ public class MenuUtils {
 				_local_17 = false;
 				while ((!(_local_17))) {
 					_local_18 = /\S\s*$/;
-					if (_arg_2.length > _arg_3.length) {
-						_arg_2 = _arg_2.substr(0, (_arg_2.length - 1));
-						_local_21 = _arg_2.search(_local_18);
+					if (text.length > _arg_3.length) {
+						text = text.substr(0, (text.length - 1));
+						_local_21 = text.search(_local_18);
 						if (_local_21 > 0) {
-							_arg_2 = _arg_2.substring(0, (_local_21 + 1));
+							text = text.substring(0, (_local_21 + 1));
 						}
 
-						_local_15 = (_arg_2 + s_truncator);
+						_local_15 = (text + s_truncator);
 					} else {
 						_arg_3 = _arg_3.substr(0, (_arg_3.length - 1));
 						_local_22 = _arg_3.search(_local_18);
@@ -287,11 +287,11 @@ public class MenuUtils {
 
 					_local_19 = ((_local_15 + _arg_4) + _local_16);
 					_local_20 = convertToEscapedHtmlString(_local_19);
-					_arg_1.htmlText = _local_20;
-					_arg_1.setTextFormat(_local_9);
-					_local_12 = _arg_1.getLineIndexOfChar((_arg_1.length - 1));
+					t.htmlText = _local_20;
+					t.setTextFormat(_local_9);
+					_local_12 = t.getLineIndexOfChar((t.length - 1));
 					_local_17 = (_local_12 < _local_8);
-					if (((_arg_2.length <= _arg_5) && (_arg_3.length <= _arg_5))) {
+					if (((text.length <= _arg_5) && (_arg_3.length <= _arg_5))) {
 						_local_17 = true;
 					}
 
@@ -301,8 +301,8 @@ public class MenuUtils {
 
 		}
 
-		_arg_1.wordWrap = _local_10;
-		_arg_1.multiline = _local_11;
+		t.wordWrap = _local_10;
+		t.multiline = _local_11;
 	}
 
 	public static function truncateHTMLField(_arg_1:TextField, _arg_2:String, _arg_3:Sprite = null, _arg_4:Boolean = false):void {
@@ -520,56 +520,56 @@ public class MenuUtils {
 		return (_local_4);
 	}
 
-	public static function setupTextAndShrinkToFit(_arg_1:TextField, _arg_2:String, _arg_3:int = 28, _arg_4:String = "$medium", _arg_5:Number = 0, _arg_6:Number = 0, _arg_7:Number = 9, _arg_8:String = "#ebebeb", _arg_9:Boolean = false):Boolean {
+	public static function setupTextAndShrinkToFit(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", maxWidth:Number = 0, maxHeight:Number = 0, _arg_7:Number = 9, fontColor:String = "#ebebeb", _arg_9:Boolean = false):Boolean {
 		var _local_14:TextFormat;
-		var _local_10:TextFormat = _arg_1.getTextFormat();
+		var _local_10:TextFormat = t.getTextFormat();
 		var _local_11:String = _local_10.font;
 		var _local_12:int = int(_local_10.size);
-		var _local_13:* = (_arg_1.text.length > 0);
-		setupText(_arg_1, _arg_2, _arg_3, _arg_4, _arg_8, _arg_9);
-		_local_10 = _arg_1.getTextFormat();
+		var _local_13:* = (t.text.length > 0);
+		setupText(t, text, fontSize, fontStyle, fontColor, _arg_9);
+		_local_10 = t.getTextFormat();
 		if (((_local_13) && (_local_10.font == _local_11))) {
 			_local_14 = new TextFormat();
 			_local_14.size = _local_12;
-			_arg_1.setTextFormat(_local_14);
+			t.setTextFormat(_local_14);
 		}
 
-		return (shrinkTextToFit(_arg_1, _arg_5, _arg_6, _arg_7));
+		return (shrinkTextToFit(t, maxWidth, maxHeight, _arg_7));
 	}
 
-	public static function setupTextAndShrinkToFitUpper(_arg_1:TextField, _arg_2:String, _arg_3:int = 28, _arg_4:String = "$medium", _arg_5:Number = 0, _arg_6:Number = 0, _arg_7:Number = 9, _arg_8:String = "#ebebeb", _arg_9:Boolean = false):Boolean {
-		if (_arg_2 == null) {
-			_arg_2 = "";
+	public static function setupTextAndShrinkToFitUpper(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", _arg_5:Number = 0, _arg_6:Number = 0, _arg_7:Number = 9, fontColor:String = "#ebebeb", _arg_9:Boolean = false):Boolean {
+		if (text == null) {
+			text = "";
 		}
 
-		return (setupTextAndShrinkToFit(_arg_1, _arg_2.toUpperCase(), _arg_3, _arg_4, _arg_5, _arg_6, _arg_7, _arg_8, _arg_9));
+		return (setupTextAndShrinkToFit(t, text.toUpperCase(), fontSize, fontStyle, _arg_5, _arg_6, _arg_7, fontColor, _arg_9));
 	}
 
-	public static function shrinkTextToFit(_arg_1:TextField, _arg_2:Number, _arg_3:Number, _arg_4:Number = 9, _arg_5:int = -1, _arg_6:Number = 0):Boolean {
+	public static function shrinkTextToFit(t:TextField, maxWidth:Number, maxHeight:Number, _arg_4:Number = 9, _arg_5:int = -1, _arg_6:Number = 0):Boolean {
 		var _local_10:int;
 		_arg_4 = Math.max(_arg_4, 1);
-		if (_arg_2 > 0) {
-			_arg_2 = Math.max(1, (_arg_2 - 5));
+		if (maxWidth > 0) {
+			maxWidth = Math.max(1, (maxWidth - 5));
 		}
 
-		if (_arg_3 > 0) {
-			_arg_3 = Math.max(1, (_arg_3 - 5));
+		if (maxHeight > 0) {
+			maxHeight = Math.max(1, (maxHeight - 5));
 		}
 
-		var _local_7:TextFormat = _arg_1.getTextFormat();
+		var _local_7:TextFormat = t.getTextFormat();
 		var _local_8:TextFormat = new TextFormat();
 		_local_8.size = _local_7.size;
 		var _local_9:Boolean;
 		while ((!(_local_9))) {
 			_local_9 = true;
 			_local_10 = int(_local_8.size);
-			if (((_arg_2 > 0) && (_arg_1.textWidth > _arg_2))) {
+			if (((maxWidth > 0) && (t.textWidth > maxWidth))) {
 				_local_9 = false;
 			} else {
-				if (((_arg_3 > 0) && (_arg_1.textHeight > _arg_3))) {
+				if (((maxHeight > 0) && (t.textHeight > maxHeight))) {
 					_local_9 = false;
 				} else {
-					if (((_arg_5 > 0) && (_arg_1.numLines > _arg_5))) {
+					if (((_arg_5 > 0) && (t.numLines > _arg_5))) {
 						_local_9 = false;
 					}
 
@@ -587,7 +587,7 @@ public class MenuUtils {
 					_local_8.leading = ((_local_10 - 1) * _arg_6);
 				}
 
-				_arg_1.setTextFormat(_local_8);
+				t.setTextFormat(_local_8);
 			}
 
 		}
