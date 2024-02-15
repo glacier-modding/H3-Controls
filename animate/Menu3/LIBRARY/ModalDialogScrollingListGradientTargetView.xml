@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ModalDialogScrollingListGradientTargetView" itemID="65c20e5c-00001fbf" linkageExportForAS="true" linkageIdentifier="ModalDialogScrollingListGradientTargetView" linkageClassName="ModalDialogScrollingListGradientTargetView" lastModified="1707216476">
+  <timeline>
+    <DOMTimeline name="ModalDialogScrollingListGradientTargetView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#10A1DE" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 992" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

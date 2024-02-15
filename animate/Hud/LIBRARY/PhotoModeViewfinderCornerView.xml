@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PhotoModeViewfinderCornerView" itemID="65c1ebd7-000008bc" linkageExportForAS="true" linkageIdentifier="PhotoModeViewfinderCornerView" linkageClassName="PhotoModeViewfinderCornerView" lastModified="1707207639">
+  <timeline>
+    <DOMTimeline name="PhotoModeViewfinderCornerView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#6D50C8" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1407" name="cameraitem_corner_mc" centerPoint3DX="60" centerPoint3DY="60">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

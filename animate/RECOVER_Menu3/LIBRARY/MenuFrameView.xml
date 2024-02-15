@@ -1,0 +1,15 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="MenuFrameView" itemID="65c20f0a-00002031" linkageExportForAS="true" linkageIdentifier="MenuFrameView" linkageClassName="MenuFrameView" lastModified="1707216650">
+  <timeline>
+    <DOMTimeline name="MenuFrameView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#AA92B1" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

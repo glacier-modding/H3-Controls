@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1955" itemID="65c1d214-00002738" scaleGridLeft="-50" scaleGridRight="50" scaleGridTop="-50" scaleGridBottom="50" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 1955">
+      <layers>
+        <DOMLayer name="Layer 1" color="#EA35E6" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EBEBEB"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!1142 -1400|1001 -1400!1001 -1400|-1001 -1400!-1001 -1400|-1143 -1400!-1143 -1400[-1400 -1400 -1400 -1143!-1400 -1143|-1400 -1001!-1400 -1001|-1400 1001!-1400 1001|-1400 1143!-1400 1143[-1400 1400 -1143 1400!-1143 1400|-1001 1400!-1001
+ 1400|1001 1400!1001 1400|1142 1400!1142 1400[1400 1400 1400 1143!1400 1143|1400 1001!1400 1001|1400 -1001!1400 -1001|1400 -1143!1400 -1143[1400 -1400 1142 -1400!1280 -1143|1280 -1001!1280 -1001|1280 1001!1280 1001|1280 1143!1280 1143
+[1280 1280 1142 1280!1142 1280|1001 1280!1001 1280|-1001 1280!-1001 1280|-1143 1280!-1143 1280[-1280 1280 -1280 1143!-1280 1143|-1280 1001!-1280 1001|-1280 -1001!-1280 -1001|-1280 -1143!-1280 -1143[-1280 -1280 -1143 -1280!-1143 -1280
+|-1001 -1280!-1001 -1280|1001 -1280!1001 -1280|1142 -1280!1142 -1280[1280 -1280 1280 -1143"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

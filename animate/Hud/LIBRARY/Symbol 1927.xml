@@ -1,0 +1,48 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1927" itemID="65c1d214-00002730" symbolType="graphic" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 1927">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EBEBEB"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!1040 0|840 -220!840 -220|732 -220!732 -220|893 -42!893 -42|600 -42!600 -42|600 43!600 43|893 43!893 43|731 220!731 220|839 220!839 220|1040 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap1926.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="-20" d="20" tx="57" ty="-14"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!1140 -280|500 -280!500 -280|500 360!500 360|1140 360!1140 360|1140 -280"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

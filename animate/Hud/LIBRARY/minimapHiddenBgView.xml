@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="minimapHiddenBgView" itemID="65c1ec08-000008ce" linkageExportForAS="true" linkageIdentifier="minimapHiddenBgView" linkageClassName="minimapHiddenBgView" lastModified="1707207688">
+  <timeline>
+    <DOMTimeline name="minimapHiddenBgView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#CAED1E" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap2239.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="20" d="20" tx="-105" ty="-105"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-2100 -2100|2100 -2100!2100 -2100|2100 2100!2100 2100|-2100 2100!-2100 2100|-2100 -2100"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

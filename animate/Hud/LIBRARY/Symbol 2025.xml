@@ -1,0 +1,77 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2025" itemID="65c1d214-00002767" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 2025">
+      <layers>
+        <DOMLayer name="Layer 1" color="#7CBAFB">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2018" name="visualIcon_mc" centerPoint3DX="73" centerPoint3DY="73">
+                  <matrix>
+                    <Matrix a="0.824462890625" d="0.824462890625" tx="33" ty="33"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#50EDE2">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="visualHeadline_txt" fontRenderingMode="standard" width="400.3" height="28.6" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="81.45" ty="18.75"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="26.85" size="24" bitmapSize="480" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#59D751">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2023" centerPoint3DX="33" centerPoint3DY="33">
+                  <matrix>
+                    <Matrix a="0.999496459960938" d="0.999984741210938" tx="2" ty="2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#6CCBAA" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2023" name="back_mc" centerPoint3DX="94" centerPoint3DY="31.05">
+                  <matrix>
+                    <Matrix a="3.58500671386719" d="1.06451416015625" tx="63" ty="0.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

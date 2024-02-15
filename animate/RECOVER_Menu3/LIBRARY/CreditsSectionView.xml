@@ -1,0 +1,82 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="CreditsSectionView" itemID="65c20e77-00001fd1" linkageExportForAS="true" linkageIdentifier="CreditsSectionView" linkageClassName="CreditsSectionView" lastModified="1707216503">
+  <timeline>
+    <DOMTimeline name="CreditsSectionView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#1AEED1">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="headline_txt" fontRenderingMode="standard" width="1061" height="131" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="2" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#E6D56F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="subline_txt" fontRenderingMode="standard" width="1061" height="139" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="2" ty="74"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#12A3CE">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1085" name="separator_mc" centerPoint3DX="530" centerPoint3DY="66">
+                  <matrix>
+                    <Matrix ty="65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#E9BFC0" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 15" name="titlesAndNames_mc" centerPoint3DX="1060" centerPoint3DY="90">
+                  <matrix>
+                    <Matrix tx="1060" ty="90"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

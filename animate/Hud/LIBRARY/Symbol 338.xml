@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 338" itemID="65c1d213-0000233c" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 338">
+      <layers>
+        <DOMLayer name="Layer 1" color="#B38F7B" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="scoreLabel" fontRenderingMode="standard" width="56" height="51.5" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-28" ty="-25.75"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>0</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineSpacing="0" lineHeight="48.05" size="43" bitmapSize="860" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

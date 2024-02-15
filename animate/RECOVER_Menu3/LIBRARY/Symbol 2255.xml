@@ -1,0 +1,32 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2255" itemID="65c1d1f3-0000106d" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 2255">
+      <layers>
+        <DOMLayer name="Layer 1" color="#EB1CA1" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!286 28[276 112 205 173!205 173[120 244 1 244!1 244[-118 244 -200 173!-200 173[-246 135 -268 89!-268 89|-272 79!-272 79[-286 43 -286 2!-286 2[-286 -102 -200 -173!-200 -173[-118 -243 1 -243!1 -243[120 -243 205 -173!205 -173[287 -102 287
+ 2!287 2|286 28"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!-78 100|-100 100!-100 100|-15 -68!-15 -68|4 -68!4 -68|89 100!89 100|67 100!67 100|45 55!45 55|-56 55!-56 55|-78 100!-48 40|37 40!37 40|-4 -49!-4 -49|-48 40"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

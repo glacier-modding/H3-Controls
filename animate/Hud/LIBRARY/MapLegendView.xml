@@ -1,0 +1,42 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="MapLegendView" itemID="65c20ac8-000008fc" linkageExportForAS="true" linkageIdentifier="MapLegendView" linkageClassName="MapLegendView" lastModified="1707215560">
+  <timeline>
+    <DOMTimeline name="MapLegendView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#80ABC1">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="info_mapname_txt" fontRenderingMode="standard" width="254" height="57.5" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="14" ty="10"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineSpacing="0" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#E0AAE2" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2084" name="back_mc" centerPoint3DX="137" centerPoint3DY="302">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

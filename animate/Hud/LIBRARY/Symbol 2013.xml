@@ -1,0 +1,62 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2013" itemID="65c1d214-0000275f" symbolType="graphic" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 2013">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!-7 -79|-319 233!-319 233|-5 546!-5 546|307 234!307 234|-7 -79"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!-61 -179|-61 -505!-61 -505|-559 -7!-559 -7|-395 155!-395 155|-61 -179"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!49 -179|385 157!385 157|549 -7!549 -7|49 -508!49 -508|49 -179"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

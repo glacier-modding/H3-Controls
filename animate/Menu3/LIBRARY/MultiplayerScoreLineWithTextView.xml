@@ -1,0 +1,61 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="MultiplayerScoreLineWithTextView" itemID="65c20ef4-00002023" linkageExportForAS="true" linkageIdentifier="MultiplayerScoreLineWithTextView" linkageClassName="MultiplayerScoreLineWithTextView" lastModified="1707216628">
+  <timeline>
+    <DOMTimeline name="MultiplayerScoreLineWithTextView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#EDA5E3">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="text" fontRenderingMode="standard" width="296" height="201" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-148" ty="217"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>VS</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="189.95" size="170" bitmapSize="3400" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#E5DCEE">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1804" name="line" centerPoint3DX="0.5" centerPoint3DY="32.1">
+                  <matrix>
+                    <Matrix d="2.19998168945312" ty="-17.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#987A82" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1804" name="line" centerPoint3DX="0.5" centerPoint3DY="460">
+                  <matrix>
+                    <Matrix d="2.19998168945312" ty="410"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

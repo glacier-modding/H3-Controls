@@ -1,0 +1,82 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ProfileElementView" itemID="65c20f14-00002038" linkageExportForAS="true" linkageIdentifier="ProfileElementView" linkageClassName="ProfileElementView" lastModified="1707216660">
+  <timeline>
+    <DOMTimeline name="ProfileElementView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#F45952">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="usertitle" fontRenderingMode="standard" width="274" height="21.5" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="77" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#D7E5F9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="onlineheader" fontRenderingMode="standard" width="274" height="14.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="77" ty="28"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#DF61D0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.WhiteSelect_38" name="line" centerPoint3DX="116.5" centerPoint3DY="72">
+                  <matrix>
+                    <Matrix a="0.0099945068359375" d="0.399993896484375" tx="66.5" ty="22"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#71FDE6" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 15" name="badgecontainer" centerPoint3DX="36" centerPoint3DY="22">
+                  <matrix>
+                    <Matrix tx="36" ty="22"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

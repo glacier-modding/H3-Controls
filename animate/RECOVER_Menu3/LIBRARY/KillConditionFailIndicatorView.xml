@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="KillConditionFailIndicatorView" itemID="65c20f49-0000205a" linkageExportForAS="true" linkageIdentifier="KillConditionFailIndicatorView" linkageClassName="KillConditionFailIndicatorView" lastModified="1707216713">
+  <timeline>
+    <DOMTimeline name="KillConditionFailIndicatorView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#AE37B0" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2620" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

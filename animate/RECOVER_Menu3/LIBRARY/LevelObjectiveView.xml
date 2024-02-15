@@ -1,0 +1,55 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LevelObjectiveView" itemID="65c20fb1-0000209d" linkageExportForAS="true" linkageIdentifier="LevelObjectiveView" linkageClassName="LevelObjectiveView" lastModified="1707216817">
+  <timeline>
+    <DOMTimeline name="LevelObjectiveView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4EC1B1">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3424" name="iconAnim_mc" centerPoint3DX="12.25" centerPoint3DY="12.25">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#B879D1">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label_txt" fontRenderingMode="standard" width="665.95" height="131.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="32" ty="1"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineSpacing="0" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#CAFEF8" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3289" name="counterTimer_mc" centerPoint3DX="335.5" centerPoint3DY="26">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

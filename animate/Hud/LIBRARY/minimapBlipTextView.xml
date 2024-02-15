@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="minimapBlipTextView" itemID="65c1ec0b-000008d0" linkageExportForAS="true" linkageIdentifier="minimapBlipTextView" linkageClassName="minimapBlipTextView" lastModified="1707207691">
+  <timeline>
+    <DOMTimeline name="minimapBlipTextView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#FA19A3" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="title" fontRenderingMode="standard" width="996" height="58" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="33" ty="-27"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

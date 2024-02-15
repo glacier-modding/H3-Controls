@@ -1,0 +1,28 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 242" itemID="65c1d1f2-00000b94" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 242">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!0 -406[-159 -406 -306 -346!-306 -346[-404 -307 -486 -245!-486 -245|-558 -184!-558 -184|-404 -20!-404 -20[-324 -97 -221 -138!-221 -138[-115 -181 0 -181!0 -181[115 -181 220 -138!220 -138[323 -97 403 -20!403 -20|558 -184!558 -184[446 -289
+ 305 -346!305 -346[159 -406 0 -406!0 -100[-100 -100 -191 -62!-191 -62[-278 -26 -347 39!-347 39|-218 177!-218 177[-126 89 0 89!0 89[126 89 218 177!218 177|347 39!347 39[277 -26 190 -62!190 -62[99 -100 0 -100!-620 -760|620 -760!620 -760
+[760 -760 760 -620!760 -620|760 619!760 619[760 759 620 759!620 759|-620 759!-620 759[-760 759 -760 619!-760 619|-760 -620!-760 -620[-760 -760 -620 -760!-162 236|0 406!0 406|161 236!161 236[94 171 0 171!0 171[-93 171 -162 236"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

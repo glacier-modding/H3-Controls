@@ -1,0 +1,26 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1689" itemID="65c1d214-0000266e" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 1689">
+      <layers>
+        <DOMLayer name="Layer 1" color="#5DD8FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#CC0000"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!80 0[80 33 56 57!56 57[33 80 0 80!0 80[-33 80 -57 57!-57 57[-80 33 -80 0!-80 0[-80 -33 -57 -57!-57 -57[-33 -80 0 -80!0 -80[33 -80 56 -57!56 -57[80 -33 80 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

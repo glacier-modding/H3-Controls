@@ -1,0 +1,114 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="OptionsListElementBigView" itemID="65c20ea5-00001fef" linkageExportForAS="true" linkageIdentifier="OptionsListElementBigView" linkageClassName="OptionsListElementBigView" lastModified="1707216549">
+  <timeline>
+    <DOMTimeline name="OptionsListElementBigView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#E17BD2">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="value" fontRenderingMode="standard" width="88" height="33.4" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="649" ty="19"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#6C71C0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="title" fontRenderingMode="standard" width="409" height="33.55" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="23" ty="19"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#A8BFD6">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.OptionsIndicator_168" name="optionsIndicator" centerPoint3DX="542" centerPoint3DY="37.5">
+                  <matrix>
+                    <Matrix tx="452" ty="32.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#D4D304">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.WhiteSelect_38" name="tileSelect" centerPoint3DX="430" centerPoint3DY="82.5">
+                  <matrix>
+                    <Matrix a="7.5799560546875" d="0.6300048828125" tx="380" ty="32.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#E7C23D">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 11" name="tileDarkBg" centerPoint3DX="430" centerPoint3DY="82.5">
+                  <matrix>
+                    <Matrix a="7.5799560546875" d="0.6300048828125" tx="380" ty="32.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#32E39C" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 11" name="tileBg" centerPoint3DX="430.5" centerPoint3DY="83">
+                  <matrix>
+                    <Matrix a="7.61016845703125" d="0.6600341796875" tx="380.5" ty="33"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

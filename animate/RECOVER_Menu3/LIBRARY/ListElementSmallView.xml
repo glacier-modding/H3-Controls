@@ -1,0 +1,93 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ListElementSmallView" itemID="65c20edf-00002015" linkageExportForAS="true" linkageIdentifier="ListElementSmallView" linkageClassName="ListElementSmallView" lastModified="1707216607">
+  <timeline>
+    <DOMTimeline name="ListElementSmallView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#30BFE0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="iconsAll40x40View" name="tileIcon" centerPoint3DX="56.5" centerPoint3DY="52.5">
+                  <matrix>
+                    <Matrix tx="36.5" ty="32.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4FC8C6">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="title" fontRenderingMode="standard" width="276" height="33.55" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="67" ty="19"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#F098B0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.WhiteSelect_38" name="tileSelect" centerPoint3DX="225.5" centerPoint3DY="82.5">
+                  <matrix>
+                    <Matrix a="3.489990234375" d="0.6300048828125" tx="175.5" ty="32.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#2CA2E9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 11" name="tileDarkBg" centerPoint3DX="225.5" centerPoint3DY="82.5">
+                  <matrix>
+                    <Matrix a="3.489990234375" d="0.6300048828125" tx="175.5" ty="32.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#ACBAB3" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 11" name="tileBg" centerPoint3DX="226" centerPoint3DY="83">
+                  <matrix>
+                    <Matrix a="3.5201416015625" d="0.6600341796875" tx="176" ty="33"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

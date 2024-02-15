@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2650" itemID="65c1d1f3-000010e1" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 2650">
+      <layers>
+        <DOMLayer name="Layer 1" color="#B647DB" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label_txt" fontRenderingMode="standard" width="596" height="38.2" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-1" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineSpacing="0" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

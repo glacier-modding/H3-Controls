@@ -1,0 +1,50 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="WeaponHintsElementView" itemID="65c1eb0b-00000895" linkageExportForAS="true" linkageIdentifier="WeaponHintsElementView" linkageClassName="WeaponHintsElementView" lastModified="1707207435">
+  <timeline>
+    <DOMTimeline name="WeaponHintsElementView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#5E64DB">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2295" name="reload" centerPoint3DX="250" centerPoint3DY="12.4">
+                  <matrix>
+                    <Matrix ty="-0.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#DBFB45">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2293" name="reloadTimerMc" centerPoint3DX="108" centerPoint3DY="100.25">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#DDB110" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2293" name="bulletChamberingTimerMc" centerPoint3DX="108" centerPoint3DY="100.25">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

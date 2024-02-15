@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1178" itemID="65c1d214-0000254e" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 1178">
+      <layers>
+        <DOMLayer name="Layer 1" color="#8365BC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap1132.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="8.3331298828125" d="8.3331298828125" tx="13" ty="14"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!260 280|660 280!660 280|660 680!660 680|260 680!260 680|260 280"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

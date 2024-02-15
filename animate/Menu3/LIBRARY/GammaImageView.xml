@@ -1,0 +1,37 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="GammaImageView" itemID="65c20e6a-00001fc8" linkageExportForAS="true" linkageIdentifier="GammaImageView" linkageClassName="GammaImageView" lastModified="1707216490">
+  <timeline>
+    <DOMTimeline name="GammaImageView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#CC9C43">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1060" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#EB5A75" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 11" name="tileDarkBg" centerPoint3DX="250" centerPoint3DY="165.5">
+                  <matrix>
+                    <Matrix a="4.00009155273438" d="2.31011962890625" tx="200" ty="115.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

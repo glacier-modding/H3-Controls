@@ -1,0 +1,61 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HeadlineTagView" itemID="65c20f17-0000203a" linkageExportForAS="true" linkageIdentifier="HeadlineTagView" linkageClassName="HeadlineTagView" lastModified="1707216663">
+  <timeline>
+    <DOMTimeline name="HeadlineTagView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#6974D6">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.WhiteSelect_38" name="linethrough" centerPoint3DX="70" centerPoint3DY="65">
+                  <matrix>
+                    <Matrix a="0.300003051757812" d="0.02001953125" tx="20" ty="15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#D9D6C9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="title" fontRenderingMode="standard" width="16" height="22" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="12" ty="4"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineSpacing="0" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#BAF7B4" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1927" name="bg" centerPoint3DX="70" centerPoint3DY="65">
+                  <matrix>
+                    <Matrix a="0.400009155273438" d="0.300003051757812" tx="20" ty="15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

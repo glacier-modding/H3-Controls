@@ -1,0 +1,66 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1290" itemID="65c1d214-0000258d" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 1290">
+      <layers>
+        <DOMLayer name="Layer 1" color="#35DB79">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="body_text" fontRenderingMode="standard" width="481" height="178.8" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="-238" ty="-188"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Hint body text.&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="20.1" size="18" bitmapSize="360" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#AEA885">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="title_text" fontRenderingMode="standard" width="481" height="23" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="-238" ty="-211"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>HINT TITLE</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="20.1" size="18" bitmapSize="360" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#BA23FB" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1287" name="background_mc" centerPoint3DX="-196" centerPoint3DY="-170">
+                  <matrix>
+                    <Matrix a="5" d="1.43002319335938" tx="-246" ty="-220"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

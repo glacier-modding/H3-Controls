@@ -1,0 +1,103 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContractSearchSelectedTagElementView" itemID="65c20f1f-0000203f" linkageExportForAS="true" linkageIdentifier="ContractSearchSelectedTagElementView" linkageClassName="ContractSearchSelectedTagElementView" lastModified="1707216671">
+  <timeline>
+    <DOMTimeline name="ContractSearchSelectedTagElementView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#CCD39F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="iconsAll40x40View" name="iconMc" centerPoint3DX="297" centerPoint3DY="46">
+                  <matrix>
+                    <Matrix a="0.631576538085938" d="0.631576538085938" tx="277" ty="26"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#D034E8">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label_txt" fontRenderingMode="standard" width="226" height="21.5" isSelectable="false" renderAsHTML="true" lineType="multiline no wrap">
+                  <matrix>
+                    <Matrix tx="12" ty="15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#EBFB49">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1952" name="tileSelectPulsate" centerPoint3DX="152" centerPoint3DY="26">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#E46245">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1951" name="tileHoverMc" centerPoint3DX="152" centerPoint3DY="26">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#B22EAF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1950" name="tileSelectMc" centerPoint3DX="150" centerPoint3DY="24">
+                  <matrix>
+                    <Matrix d="1.00048828125"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#7AF31E" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1949" name="tileBgMc" centerPoint3DX="150" centerPoint3DY="24">
+                  <matrix>
+                    <Matrix d="0.999603271484375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

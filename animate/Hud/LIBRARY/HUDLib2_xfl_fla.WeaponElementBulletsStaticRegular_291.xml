@@ -1,0 +1,575 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HUDLib2_xfl_fla.WeaponElementBulletsStaticRegular_291" itemID="65c20a7b-000008ae" lastModified="1707640874">
+  <timeline>
+    <DOMTimeline name="HUDLib2_xfl_fla.WeaponElementBulletsStaticRegular_291">
+      <layers>
+        <DOMLayer name="Script Layer" color="#DEAF9A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#B7F3A0">
+          <frames>
+            <DOMFrame index="0" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="13" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 891" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="27" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 904" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="28" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="41" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 917" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#21EFFB">
+          <frames>
+            <DOMFrame index="0" duration="12" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 890" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="26" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 903" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="27" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="40" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 916" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="41" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#617CC4">
+          <frames>
+            <DOMFrame index="0" duration="11" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="11" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 889" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="12" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="25" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 902" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="26" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="39" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 915" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="40" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#74F82D">
+          <frames>
+            <DOMFrame index="0" duration="10" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 888" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="24" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 901" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="25" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="38" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 914" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="39" duration="3" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#5BFAC0">
+          <frames>
+            <DOMFrame index="0" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 887" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="10" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="23" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 900" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="24" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="37" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 913" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="38" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#FD72D9">
+          <frames>
+            <DOMFrame index="0" duration="8" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 886" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="22" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 899" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="23" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="36" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 912" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="37" duration="5" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#67F960">
+          <frames>
+            <DOMFrame index="0" duration="7" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 885" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 898" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="35" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 911" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="36" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 9" color="#EEC8C9">
+          <frames>
+            <DOMFrame index="0" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 884" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="20" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 897" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="21" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="34" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 910" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="35" duration="7" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 10" color="#E98173">
+          <frames>
+            <DOMFrame index="0" duration="5" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 883" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="19" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 896" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="33" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 909" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="34" duration="8" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 11" color="#FD714F">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 882" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="18" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 895" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="32" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 908" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="33" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 12" color="#5D80C9">
+          <frames>
+            <DOMFrame index="0" duration="3" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 881" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="17" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 894" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="31" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 907" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="32" duration="10" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 13" color="#D377BA">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 880" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 893" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="30" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 906" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="31" duration="11" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 14" color="#7EEA92" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 879" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="15" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 892" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="16" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="29" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 905" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="30" duration="12" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

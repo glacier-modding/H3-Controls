@@ -1,0 +1,104 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PhotoModeViewfinderBorderView" itemID="65c1ebdc-000008be" linkageExportForAS="true" linkageIdentifier="PhotoModeViewfinderBorderView" linkageClassName="PhotoModeViewfinderBorderView" lastModified="1707207644">
+  <timeline>
+    <DOMTimeline name="PhotoModeViewfinderBorderView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#E1B98B">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1284" name="battery_mc" centerPoint3DX="-108" centerPoint3DY="143.1">
+                  <matrix>
+                    <Matrix a="9.1552734375e-05" b="1" c="-1" d="9.1552734375e-05" tx="-120" ty="120"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#9BE684">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1281" name="flash_mc" centerPoint3DX="-108" centerPoint3DY="143.1">
+                  <matrix>
+                    <Matrix tx="-120" ty="120"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#74EE8C">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1278" name="corner_rb" centerPoint3DX="180" centerPoint3DY="180">
+                  <matrix>
+                    <Matrix a="-1" d="-1" tx="120" ty="120"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#BF7BDD">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1278" name="corner_lb" centerPoint3DX="-60" centerPoint3DY="180">
+                  <matrix>
+                    <Matrix d="-1" tx="-120" ty="120"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#D3E87E">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1278" name="corner_rt" centerPoint3DX="180" centerPoint3DY="-60">
+                  <matrix>
+                    <Matrix a="-1" tx="120" ty="-120"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#F19948" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1278" name="corner_lt" centerPoint3DX="-60" centerPoint3DY="-60">
+                  <matrix>
+                    <Matrix tx="-120" ty="-120"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

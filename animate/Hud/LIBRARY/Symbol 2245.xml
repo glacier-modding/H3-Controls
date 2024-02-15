@@ -1,0 +1,32 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2245" itemID="65c1d214-000027e1" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 2245">
+      <layers>
+        <DOMLayer name="Layer 1" color="#C521C9" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="txtLabel" fontRenderingMode="standard" width="352.6" height="43.1" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="-176.3" ty="-21.55"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>NEW TARGET IN</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineSpacing="0" lineHeight="40.25" size="36" bitmapSize="720" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="2" blurY="2" distance="2" strength="0.4"/>
+                  </filters>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,28 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1994" itemID="65c1d214-00002751" symbolType="graphic" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 1994">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!559 817[559 774 567 744!567 744[574 716 590 694!590 694[602 674 622 659!622 659|665 626!665 626|695 603!695 603|720 581!720 581|740 551!740 551|745 510!745 510[745 465 715 438!715 438[685 412 640 412!640 412[582 412 549 445!549 445[514
+ 478 514 538!514 538|383 538!383 538[386 488 401 443!401 443[419 400 451 367!451 367[481 334 529 314!529 314[577 297 637 297!637 297[695 297 740 312!740 312[788 329 818 357!818 357[848 385 866 422!866 422[884 463 884 505!884 505[884 543
+ 873 571!873 571|851 618!851 618|821 654!821 654|788 679!788 679|738 714!738 714|705 744!705 744[693 757 688 774!688 774[682 792 682 817!682 817|559 817!547 882|695 882!695 882|695 1028!695 1028|547 1028!547 1028|547 882"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

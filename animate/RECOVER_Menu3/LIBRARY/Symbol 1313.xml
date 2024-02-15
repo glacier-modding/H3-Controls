@@ -1,0 +1,44 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1313" itemID="65c1d1f2-00000e35" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 1313">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!630 80[596 80 573 57!573 57[550 34 550 0!550 0[550 -34 573 -57!573 -57[596 -80 630 -80!630 -80[663 -80 686 -57!686 -57[710 -34 710 0!710 0[710 34 686 57!686 57[663 80 630 80"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#929292"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!569 -80|81 -80!81 -80[48 -80 25 -56!25 -56[1 -33 1 0!1 0[1 33 25 57!25 57[48 80 81 80!81 80|569 80!569 80|559 71!559 71[530 43 530 0!530 0[530 -42 559 -71!559 -71|569 -80"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

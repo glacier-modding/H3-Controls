@@ -1,0 +1,72 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="InventoryItemIconMC" itemID="65c20abc-000008f0" linkageExportForAS="true" linkageIdentifier="InventoryItemIconMC" linkageClassName="InventoryItemIconMC" lastModified="1707215548">
+  <timeline>
+    <DOMTimeline name="InventoryItemIconMC">
+      <layers>
+        <DOMLayer name="Layer 1" color="#31DF7F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1957" name="tileSelectPulsate" centerPoint3DX="140" centerPoint3DY="110">
+                  <matrix>
+                    <Matrix a="1.04270935058594" d="0.6141357421875" tx="70" ty="40"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#84CF3F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1955" name="tileSelect" centerPoint3DX="140" centerPoint3DY="110">
+                  <matrix>
+                    <Matrix a="1.0426025390625" d="0.614227294921875" tx="70" ty="40"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#58F5C4">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1953" name="tileDarkBg" centerPoint3DX="119.95" centerPoint3DY="90">
+                  <matrix>
+                    <Matrix a="1.39999389648438" d="0.79998779296875" tx="69.95" ty="40"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#B64190" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 24" name="tileBg" centerPoint3DX="120" centerPoint3DY="90">
+                  <matrix>
+                    <Matrix a="1.39999389648438" d="0.79998779296875" tx="70" ty="40"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

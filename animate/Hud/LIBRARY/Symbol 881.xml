@@ -1,0 +1,70 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 881" itemID="65c1d214-00002456" symbolType="graphic" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 881">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#BDBDBD"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!160 627|160 621!160 621|348 621!348 621|573 574!573 574|600 563!600 563|600 556!600 556|573 545!573 545|348 498!348 498|160 498!160 498|160 492!160 492|139 492!139 492|139 627!139 627|160 627!-600 641|-592 650!-592 650|-573 650!-573
+ 650|-573 640!-573 640|-548 640!-548 640|-535 650!-535 650|1 650!1 650|63 627!63 627|95 627!95 627|95 621!95 621|107 621!107 621|107 627!107 627|129 627!129 627|129 492!129 492|107 492!107 492|107 498!107 498|95 498!95 498|95 492!95 492
+|63 492!63 492|1 470!1 470|-535 470!-535 470|-548 480!-548 480|-573 480!-573 480|-573 470!-573 470|-592 470!-592 470|-600 478!-600 478|-600 641"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#BDBDBD"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!160 347|160 341!160 341|348 341!348 341|573 294!573 294|600 283!600 283|600 276!600 276|573 265!573 265|348 218!348 218|160 218!160 218|160 212!160 212|139 212!139 212|139 347!139 347|160 347!-600 361|-592 370!-592 370|-573 370!-573
+ 370|-573 360!-573 360|-548 360!-548 360|-535 370!-535 370|1 370!1 370|63 347!63 347|95 347!95 347|95 341!95 341|107 341!107 341|107 347!107 347|129 347!129 347|129 212!129 212|107 212!107 212|107 218!107 218|95 218!95 218|95 212!95 212
+|63 212!63 212|1 190!1 190|-535 190!-535 190|-548 200!-548 200|-573 200!-573 200|-573 190!-573 190|-592 190!-592 190|-600 198!-600 198|-600 361"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#BDBDBD"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!-600 81|-592 90!-592 90|-573 90!-573 90|-573 80!-573 80|-548 80!-548 80|-535 90!-535 90|1 90!1 90|63 67!63 67|95 67!95 67|95 61!95 61|107 61!107 61|107 67!107 67|129 67!129 67|129 -68!129 -68|107 -68!107 -68|107 -62!107 -62|95 -62!95
+ -62|95 -68!95 -68|63 -68!63 -68|1 -90!1 -90|-535 -90!-535 -90|-548 -80!-548 -80|-573 -80!-573 -80|-573 -90!-573 -90|-592 -90!-592 -90|-600 -82!-600 -82|-600 81!160 67|160 61!160 61|348 61!348 61|573 14!573 14|600 3!600 3|600 -4!600 -4
+|573 -15!573 -15|348 -62!348 -62|160 -62!160 -62|160 -68!160 -68|139 -68!139 -68|139 67!139 67|160 67"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

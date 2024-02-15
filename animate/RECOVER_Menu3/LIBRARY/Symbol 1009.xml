@@ -1,0 +1,107 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1009" itemID="65c1d1f2-00000d94" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 1009">
+      <layers>
+        <DOMLayer name="Layer 1" color="#59FCE0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="timeTitle" fontRenderingMode="standard" width="208" height="21.5" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="11" ty="12"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>MISSION TIME</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.2" lineSpacing="0" lineHeight="20.1" size="18" bitmapSize="360" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#E5A1F4">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="newBestTitle" fontRenderingMode="standard" width="208" height="38.2" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="11" ty="70"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>NEW BEST</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.2" lineSpacing="0" lineHeight="15.6" size="14" bitmapSize="280" fillColor="#212121"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#FC35CF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="timeValue" fontRenderingMode="standard" width="208" height="48" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="11" ty="27"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>00:02:52</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.2" lineSpacing="0" lineHeight="44.7" size="40" bitmapSize="800" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#DCD1A3">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.WhiteSelect_38" name="newBestFx" centerPoint3DX="164" centerPoint3DY="99.5">
+                  <matrix>
+                    <Matrix a="2.23989868164062" d="0.8199462890625" tx="114" ty="49.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <BlurFilter blurX="43" blurY="43"/>
+                    <GlowFilter blurX="62" blurY="62" color="#FFFFFF" strength="1.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#4EF68A" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1000" name="newBestBg" centerPoint3DX="52" centerPoint3DY="58.5">
+                  <matrix>
+                    <Matrix a="2.2398681640625" d="0.819915771484375" tx="2" ty="8.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

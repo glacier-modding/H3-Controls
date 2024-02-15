@@ -1,0 +1,187 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HUDLibEvergreen_xfl_fla.SpyCameraStatus_37" itemID="65c20ac0-000008f4" lastModified="1707640854">
+  <timeline>
+    <DOMTimeline name="HUDLibEvergreen_xfl_fla.SpyCameraStatus_37">
+      <layers>
+        <DOMLayer name="Labels Layer" color="#93CA6A">
+          <frames>
+            <DOMFrame index="0" name="suspect" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" name="prime" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" name="notsuspect" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="3" name="nosuspect" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Script Layer" color="#E7D3E8">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#818BF3">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1993" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#02D4C1">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!275 1141|1045 1141!1045 1141[1075 1141 1094 1121!1094 1121[1115 1101 1115 1071!1115 1071|1115 914!1115 914|882 819!882 819|822 771!822 771|812 771!812 771|794 736!794 736|801 721!801 721[806 712 812 636!812 636|837 584!837 584[846 563
+ 847 535!847 535[850 507 843 505!843 505[837 502 830 508!830 508|824 514!824 514|830 483!830 483[833 444 818 406!818 406[801 358 757 329!757 329[714 299 671 299!671 299[626 299 584 329!584 329[540 358 523 406!523 406[509 444 512 483!512
+ 483|516 514!516 514[507 501 498 505!498 505[491 507 492 535!492 535[495 563 503 584!503 584|529 636!529 636|532 675!532 675|540 721!540 721|546 736!546 736|528 771!528 771|519 771!519 771|460 819!460 819|205 918!205 918|205 1071!205
+ 1071[205 1101 225 1121!225 1121[246 1141 275 1141"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!661 194|282 384!282 384|282 763!282 763|661 1161!661 1161|1040 763!1040 763|1040 384!1040 384|661 194"/>
+                    <Edge fillStyle1="1" edges="
+!660 362[597 362 552 407!552 407[506 452 506 516!506 516[506 558 527 593!527 593[548 628 582 648!582 648|582 700!582 700|737 700!737 700|737 648!737 648[772 628 792 593!792 593[814 558 814 516!814 516[814 452 768 407!768 407[724 362 660
+ 362!721 556[704 556 693 545!693 545[681 533 681 516!681 516[681 499 693 487!693 487[704 476 721 476!721 476[738 476 750 487!750 487[762 499 762 516!762 516[762 533 750 545!750 545[738 556 721 556!599 556[582 556 570 545!570 545[558 533
+ 558 516!558 516[558 499 570 487!570 487[582 476 599 476!599 476[615 476 627 487!627 487[639 499 639 516!639 516[639 533 627 545!627 545[615 556 599 556"/>
+                    <Edge fillStyle0="1" edges="
+!824 843|803 890!803 890|660 827!660 827|517 890!517 890|496 843!496 843|597 800!597 800|496 755!496 755|517 709!517 709|660 772!660 772|803 709!803 709|824 755!824 755|723 800!723 800|824 843"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!809 660|1049 421!1049 421|1058 399!1058 399[1058 386 1049 377!1049 377|943 271!943 271[935 263 922 263!922 263[909 263 900 271!900 271|660 511!660 511|421 271!421 271[412 263 399 263!399 263[386 263 377 271!377 271|272 377!272 377[262
+ 386 262 399!262 399[262 411 272 421!272 421|511 660!511 660|272 900!272 900[262 909 262 922!262 922[262 934 272 944!272 944|377 1049!377 1049[386 1058 399 1058!399 1058[412 1058 421 1049!421 1049|660 810!660 810|900 1049!900 1049|922
+ 1058!922 1058[935 1058 943 1049!943 1049|1049 944!1049 944|1058 922!1058 922[1058 909 1049 900!1049 900|809 660"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1994" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#9DE1FD">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="statusPrime_txt" fontRenderingMode="standard" width="400.3" height="28.6" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="81.45" ty="30.85"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="26.85" size="24" bitmapSize="480" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#5B9FD7">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="statusHeadline_txt" fontRenderingMode="standard" width="400.3" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="81.45" ty="8.55"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="24.55" size="22" bitmapSize="440" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#97F7F9">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2029" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#B179B8" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2030" name="back_mc" centerPoint3DX="94" centerPoint3DY="31.05">
+                  <matrix>
+                    <Matrix a="3.9085693359375" d="1.06451416015625" tx="63" ty="0.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

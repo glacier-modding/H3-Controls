@@ -1,0 +1,45 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ModalDialogItemDetailsKilltypeView" itemID="65c1ec05-000008cd" linkageExportForAS="true" linkageIdentifier="ModalDialogItemDetailsKilltypeView" linkageClassName="ModalDialogItemDetailsKilltypeView" lastModified="1707207685">
+  <timeline>
+    <DOMTimeline name="ModalDialogItemDetailsKilltypeView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#DC557A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label_txt" fontRenderingMode="standard" width="512.45" height="22.9" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="8" ty="4.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Killtype</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" letterSpacing="0.5" lineSpacing="0" lineHeight="20.1" size="18" bitmapSize="360" fillColor="#F1F1F2"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#A5D0A4" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2232" name="back_mc" centerPoint3DX="124.45" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix a="0.425765991210938" d="1.15383911132812"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

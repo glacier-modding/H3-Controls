@@ -1,0 +1,61 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2398" itemID="65c1d1f3-000010b2" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 2398">
+      <layers>
+        <DOMLayer name="Layer 1" color="#B76074">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2397" name="toggleIconLeft" centerPoint3DX="277" centerPoint3DY="39">
+                  <matrix>
+                    <Matrix tx="262" ty="24"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#65FD80">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2397" name="toggleIconRight" centerPoint3DX="348" centerPoint3DY="39">
+                  <matrix>
+                    <Matrix a="-1" tx="333" ty="24"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#C978B9" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="toggletitle" fontRenderingMode="standard" width="36.9" height="21.6" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="279" ty="13.5"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>1  /  3</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineHeight="20.1" size="18" bitmapSize="360" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

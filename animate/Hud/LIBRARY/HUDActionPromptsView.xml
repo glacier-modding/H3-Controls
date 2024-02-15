@@ -1,0 +1,120 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HUDActionPromptsView" itemID="65c20ac9-000008fd" linkageExportForAS="true" linkageIdentifier="HUDActionPromptsView" linkageClassName="HUDActionPromptsView" lastModified="1707215561">
+  <timeline>
+    <DOMTimeline name="HUDActionPromptsView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#A6F241">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2087" name="button05_button_mc" centerPoint3DX="83.8" centerPoint3DY="-103.4">
+                  <matrix>
+                    <Matrix tx="-112" ty="-140"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#E2B6AE">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2087" name="button06_button_mc" centerPoint3DX="83.8" centerPoint3DY="-163.4">
+                  <matrix>
+                    <Matrix tx="-112" ty="-200"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#C4A93A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2087" name="button07_button_mc" centerPoint3DX="83.8" centerPoint3DY="-223.4">
+                  <matrix>
+                    <Matrix tx="-112" ty="-260"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#C2FD3B">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2091" name="button04_button_mc" centerPoint3DX="135.8" centerPoint3DY="36.6">
+                  <matrix>
+                    <Matrix tx="-60"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#E91DBE">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2087" name="button03_button_mc" centerPoint3DX="195.8" centerPoint3DY="-23.4">
+                  <matrix>
+                    <Matrix ty="-60"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#926C9F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2087" name="button02_button_mc" centerPoint3DX="255.8" centerPoint3DY="36.6">
+                  <matrix>
+                    <Matrix tx="60"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#B2DF94" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2087" name="button01_button_mc" centerPoint3DX="195.8" centerPoint3DY="96.6">
+                  <matrix>
+                    <Matrix ty="60"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

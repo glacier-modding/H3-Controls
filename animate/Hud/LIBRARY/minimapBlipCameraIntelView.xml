@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="minimapBlipCameraIntelView" itemID="65c20aac-000008e0" linkageExportForAS="true" linkageIdentifier="minimapBlipCameraIntelView" linkageClassName="minimapBlipCameraIntelView" lastModified="1707215532">
+  <timeline>
+    <DOMTimeline name="minimapBlipCameraIntelView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#CD9436" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap1668.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="20" d="20" tx="-26" ty="-26"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-520 -520|520 -520!520 -520|520 520!520 520|-520 520!-520 520|-520 -520"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

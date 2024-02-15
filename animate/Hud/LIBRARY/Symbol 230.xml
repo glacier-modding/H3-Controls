@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 230" itemID="65c1d213-0000230c" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 230">
+      <layers>
+        <DOMLayer name="Layer 1" color="#8787CA" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLib2_xfl_fla.LevelObjectiveObjectiveIcons_93" name="icon_mc" centerPoint3DX="12.25" centerPoint3DY="12.25">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

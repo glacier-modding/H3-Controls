@@ -1,0 +1,97 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Center_10_3" itemID="65c20db8-00001f53" linkageExportForAS="true" linkageIdentifier="Center_10_3" linkageClassName="Center_10_3" lastModified="1707216312">
+  <timeline>
+    <DOMTimeline name="Center_10_3">
+      <layers>
+        <DOMLayer name="Layer 1" color="#EC24CE">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 518" name="p3" centerPoint3DX="30.65" centerPoint3DY="140.45">
+                  <matrix>
+                    <Matrix ty="120.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#95F53E">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 515" name="p2" centerPoint3DX="104.45" centerPoint3DY="103.1">
+                  <matrix>
+                    <Matrix a="0.649978637695312" d="0.649978637695312" tx="78.4" ty="77.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#16CDE7">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 515" name="p1" centerPoint3DX="-53.75" centerPoint3DY="103.1">
+                  <matrix>
+                    <Matrix a="0.649978637695312" d="0.649978637695312" tx="-79.8" ty="77.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#4AFB4C">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 593" name="logo" centerPoint3DX="107.15" centerPoint3DY="101.75">
+                  <matrix>
+                    <Matrix ty="17.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#7D8AE6" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 508" name="shield" centerPoint3DX="131.6" centerPoint3DY="171.75">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

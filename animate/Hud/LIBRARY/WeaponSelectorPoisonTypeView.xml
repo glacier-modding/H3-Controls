@@ -1,0 +1,45 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="WeaponSelectorPoisonTypeView" itemID="65c1eaf0-0000088d" linkageExportForAS="true" linkageIdentifier="WeaponSelectorPoisonTypeView" linkageClassName="WeaponSelectorPoisonTypeView" lastModified="1707207408">
+  <timeline>
+    <DOMTimeline name="WeaponSelectorPoisonTypeView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#BB58A0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label_txt" fontRenderingMode="standard" width="296" height="20" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="8" ty="1"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#F3ECDC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLib2_xfl_fla.WeaponSelector_Poisontype_Back_318" name="back_mc" centerPoint3DX="50" centerPoint3DY="50">
+                  <matrix>
+                    <Matrix a="0.42578125" d="0.210006713867188"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

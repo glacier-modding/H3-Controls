@@ -1,0 +1,42 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ObjectivesElementView" itemID="65c1ebfc-000008c9" linkageExportForAS="true" linkageIdentifier="ObjectivesElementView" linkageClassName="ObjectivesElementView" lastModified="1707207676">
+  <timeline>
+    <DOMTimeline name="ObjectivesElementView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#87BF5D">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.ObjectivesElementIcons_31" name="icons" centerPoint3DX="12" centerPoint3DY="12">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#9BB6A8" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="objective_txt" fontRenderingMode="standard" width="396" height="23" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="32" ty="1.25"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Objective Title</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="20.1" size="18" bitmapSize="360" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

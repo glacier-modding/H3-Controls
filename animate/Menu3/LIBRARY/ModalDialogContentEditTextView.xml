@@ -1,0 +1,45 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ModalDialogContentEditTextView" itemID="65c20ebf-00002000" linkageExportForAS="true" linkageIdentifier="ModalDialogContentEditTextView" linkageClassName="ModalDialogContentEditTextView" lastModified="1707216575">
+  <timeline>
+    <DOMTimeline name="ModalDialogContentEditTextView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#AEB5E9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMInputText name="description" fontRenderingMode="standard" width="666" height="357.7" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="12" ty="10"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="0" lineHeight="22.35" size="20" bitmapSize="400"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMInputText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#249FFE" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.WhiteSelect_38" name="tileSelect" centerPoint3DX="395" centerPoint3DY="227.65">
+                  <matrix>
+                    <Matrix a="6.89999389648438" d="3.54875183105469" tx="345" ty="177.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

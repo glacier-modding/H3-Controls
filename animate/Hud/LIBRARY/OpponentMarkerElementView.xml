@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="OpponentMarkerElementView" itemID="65c1ebf9-000008c8" linkageExportForAS="true" linkageIdentifier="OpponentMarkerElementView" linkageClassName="OpponentMarkerElementView" lastModified="1707207673">
+  <timeline>
+    <DOMTimeline name="OpponentMarkerElementView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#92ED56" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1300" name="bg" centerPoint3DX="26" centerPoint3DY="37">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

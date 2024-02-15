@@ -1,0 +1,24 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1229" itemID="65c1d214-0000256b" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 1229">
+      <layers>
+        <DOMLayer name="Layer 1" color="#B677B1" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 241" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="3.19999694824219" d="0.029998779296875"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

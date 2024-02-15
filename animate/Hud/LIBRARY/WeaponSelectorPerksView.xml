@@ -1,0 +1,37 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="WeaponSelectorPerksView" itemID="65c1eaf5-0000088e" linkageExportForAS="true" linkageIdentifier="WeaponSelectorPerksView" linkageClassName="WeaponSelectorPerksView" lastModified="1707207413">
+  <timeline>
+    <DOMTimeline name="WeaponSelectorPerksView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#E66CF2">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 232" name="perks">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#FC14B8" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 242" name="bg" centerPoint3DX="50" centerPoint3DY="50">
+                  <matrix>
+                    <Matrix a="0.759994506835938" d="0.759994506835938"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

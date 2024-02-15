@@ -1,0 +1,112 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PlayerProfileListElementHeaderView" itemID="65c20f41-00002055" linkageExportForAS="true" linkageIdentifier="PlayerProfileListElementHeaderView" linkageClassName="PlayerProfileListElementHeaderView" lastModified="1707216705">
+  <timeline>
+    <DOMTimeline name="PlayerProfileListElementHeaderView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#3ED8D7">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="title" fontRenderingMode="standard" width="645.9" height="47.7" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix a="1.00015258789062" tx="16" ty="7.05"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Title</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="0" lineHeight="44.7" size="40" bitmapSize="800" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="1" blurY="1" color="#212121" distance="2" strength="0.5"/>
+                  </filters>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#A5867D">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="level" fontRenderingMode="standard" width="195.95" height="36" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix a="1.00015258789062" tx="667.95" ty="5.2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Level</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineSpacing="0" lineHeight="33.5" size="30" bitmapSize="600" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="1" blurY="1" color="#212121" distance="2" strength="0.5"/>
+                  </filters>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#52C7EF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="xp" fontRenderingMode="standard" width="196" height="22.85" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix a="1.00015258789062" tx="667.95" ty="34.25"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>XP</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineSpacing="0" lineHeight="20.1" size="18" bitmapSize="360" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="1" blurY="1" color="#212121" distance="2" strength="0.5"/>
+                  </filters>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#B24F9B">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 11" name="tileDarkBg" centerPoint3DX="490" centerPoint3DY="80">
+                  <matrix>
+                    <Matrix a="8.79986572265625" d="0.600006103515625" tx="440" ty="30"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#FB2FFA" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 11" name="tileBg" centerPoint3DX="490" centerPoint3DY="80">
+                  <matrix>
+                    <Matrix a="8.8001708984375" d="0.600006103515625" tx="440" ty="30"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

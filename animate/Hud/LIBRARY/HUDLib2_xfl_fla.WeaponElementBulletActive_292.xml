@@ -1,0 +1,50 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HUDLib2_xfl_fla.WeaponElementBulletActive_292" itemID="65c20a7f-000008b2" lastModified="1707640873">
+  <timeline>
+    <DOMTimeline name="HUDLib2_xfl_fla.WeaponElementBulletActive_292">
+      <layers>
+        <DOMLayer name="Script Layer" color="#E890C5">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#D9C59A" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLib2_xfl_fla.WeaponElementBulletRegularAnim_293" name="bulletAnimMc" centerPoint3DX="36" centerPoint3DY="5.4">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLib2_xfl_fla.WeaponElementBulletPiercingAnim_294" name="bulletAnimMc" centerPoint3DX="36" centerPoint3DY="5.4">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLib2_xfl_fla.WeaponElementBulletExplosiveAnim_295" name="bulletAnimMc" centerPoint3DX="36" centerPoint3DY="5.4">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

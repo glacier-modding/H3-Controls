@@ -1,0 +1,218 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="hud.evergreen.SpyCameraView" itemID="65c20ac1-000008f5" linkageExportForAS="true" linkageIdentifier="hud.evergreen.SpyCameraView" linkageClassName="hud.evergreen.SpyCameraView" lastModified="1707215553">
+  <timeline>
+    <DOMTimeline name="hud.evergreen.SpyCameraView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#CEF3AF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap2042.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="10" d="10" tx="491" ty="-449"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!9820 -8980|15560 -8980!15560 -8980|15560 -7960!15560 -7960|9820 -7960!9820 -7960|9820 -8980"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#F94163">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="effectBinary_txt" fontRenderingMode="standard" width="280.8" height="162" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="503.9" ty="-390.5"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>11001100</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="4" lineHeight="8.9" size="8" bitmapSize="160" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#F7E5EC">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2040" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#F7FF2C">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2039" name="frame_mc" centerPoint3DX="306" centerPoint3DY="212.5">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#E9A812">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2037" name="circle_mc" centerPoint3DX="140.25" centerPoint3DY="140.25">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#9A9AF8">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.SpyCameraStatus_37" name="status_mc" centerPoint3DX="98.85" centerPoint3DY="273.95">
+                  <matrix>
+                    <Matrix tx="-143" ty="240.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#C82BD8">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2028" name="tell2_mc" centerPoint3DX="-177.4" centerPoint3DY="121">
+                  <matrix>
+                    <Matrix tx="-419.25" ty="88"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#00D9D0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2028" name="tell1_mc" centerPoint3DX="-177.4" centerPoint3DY="21.5">
+                  <matrix>
+                    <Matrix tx="-419.25" ty="-11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 9" color="#F705A4">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2028" name="agenda_mc" centerPoint3DX="-177.4" centerPoint3DY="-78">
+                  <matrix>
+                    <Matrix tx="-419.25" ty="-111"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 10" color="#5C97DA">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2025" name="visual4_mc" centerPoint3DX="594.85" centerPoint3DY="145">
+                  <matrix>
+                    <Matrix tx="353" ty="112"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 11" color="#61958A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2025" name="visual3_mc" centerPoint3DX="594.85" centerPoint3DY="48">
+                  <matrix>
+                    <Matrix tx="353" ty="15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 12" color="#9CBD79">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2025" name="visual2_mc" centerPoint3DX="594.85" centerPoint3DY="-52">
+                  <matrix>
+                    <Matrix tx="353" ty="-85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 13" color="#5EA89B" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2025" name="visual1_mc" centerPoint3DX="594.85" centerPoint3DY="-151">
+                  <matrix>
+                    <Matrix tx="353" ty="-184"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

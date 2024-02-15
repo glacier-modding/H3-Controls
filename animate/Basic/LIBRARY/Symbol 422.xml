@@ -1,0 +1,99 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 422" itemID="65c1d208-0000167f" symbolType="graphic" lastModified="1707200103">
+  <timeline>
+    <DOMTimeline name="Symbol 422">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EBEBEB"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!350 512|350 556!350 556[350 574 364 587!364 587[377 600 394 600!394 600[413 600 426 587!426 587[439 574 439 556!439 556|439 512!439 512|350 512"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EBEBEB"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!-443 512|-443 556!-443 556[-443 574 -430 587!-430 587[-417 600 -399 600!-399 600[-380 600 -367 587!-367 587[-355 574 -355 556!-355 556|-355 512!-355 512|-443 512"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EBEBEB"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!441 -399|439 -399!439 -399|439 512!439 512|441 512!441 512[506 512 553 465!553 465[600 418 600 353!600 353|600 -240!600 -240[600 -305 553 -352!553 -352[506 -399 441 -399"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EBEBEB"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!-443 -398[-508 -398 -554 -352!-554 -352[-600 -305 -600 -240!-600 -240|-600 353!-600 353[-600 418 -554 465!-554 465[-508 511 -443 511!-443 511|-443 -398"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EBEBEB"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!280 -494[280 -538 249 -569!249 -569[218 -600 174 -600!174 -600|-175 -600!-175 -600[-217 -600 -249 -572!-249 -572[-281 -543 -281 -505!-281 -505|-281 -399!-281 -399|-355 -399!-355 -399|-355 512!-355 512|350 512!350 512|350 -399!350 -399
+|280 -399!280 -399|280 -494!-175 -506|174 -506!174 -506|174 -399!174 -399|-175 -399!-175 -399|-175 -506"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

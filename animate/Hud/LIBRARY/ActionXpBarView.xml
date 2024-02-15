@@ -1,0 +1,88 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ActionXpBarView" itemID="65c20a75-000008a8" linkageExportForAS="true" linkageIdentifier="ActionXpBarView" linkageClassName="ActionXpBarView" lastModified="1707215477">
+  <timeline>
+    <DOMTimeline name="ActionXpBarView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#B0AA6C">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="header" fontRenderingMode="standard" width="196" height="22" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="2" ty="-11"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineSpacing="0" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="2" blurY="2" distance="2" quality="3" strength="0.75"/>
+                  </filters>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#5CDC50">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="value" fontRenderingMode="standard" width="196" height="22" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="2" ty="-11"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineSpacing="0" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="2" blurY="2" distance="2" quality="3" strength="0.75"/>
+                  </filters>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#F1F5DA">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 242" name="bg" centerPoint3DX="50" centerPoint3DY="49.5">
+                  <matrix>
+                    <Matrix d="0.149978637695312" ty="-0.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#7D2FDA" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 366" name="info" centerPoint3DX="500" centerPoint3DY="40">
+                  <matrix>
+                    <Matrix ty="25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,162 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="DetailedScoreTileSniperView" itemID="65c20e61-00001fc2" linkageExportForAS="true" linkageIdentifier="DetailedScoreTileSniperView" linkageClassName="DetailedScoreTileSniperView" lastModified="1707216481">
+  <timeline>
+    <DOMTimeline name="DetailedScoreTileSniperView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#B4FC1D">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="headerTxt" fontRenderingMode="standard" width="678" height="71.9" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="13" ty="17"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#04F1C4">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="offlineTxt" fontRenderingMode="standard" width="678" height="175.7" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="13" ty="93"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>OFFLINE</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="0" lineHeight="29.05" size="26" bitmapSize="520" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#FBFEAB">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1034" name="playStyleMc" centerPoint3DX="353" centerPoint3DY="118.5">
+                  <matrix>
+                    <Matrix tx="12" ty="98"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#C7B74D">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1031" name="silentAssassinMc" centerPoint3DX="353" centerPoint3DY="118.5">
+                  <matrix>
+                    <Matrix tx="12" ty="98"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#32A2BD">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1027" name="leaderboardPosMc" centerPoint3DX="355.5" centerPoint3DY="263.5">
+                  <matrix>
+                    <Matrix tx="12" ty="153"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#D5ACED">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1022" name="preliminaryScoreMc" centerPoint3DX="122.5" centerPoint3DY="217">
+                  <matrix>
+                    <Matrix tx="10" ty="205"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#75B5E5">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1020" name="multipliersScoreMc" centerPoint3DX="122.5" centerPoint3DY="292">
+                  <matrix>
+                    <Matrix tx="10" ty="280"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#2CF88F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1018" name="missionSummaryMc" centerPoint3DX="340" centerPoint3DY="451.85">
+                  <matrix>
+                    <Matrix ty="401"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 9" color="#A49073" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 11" name="tileBg" centerPoint3DX="402" centerPoint3DY="314">
+                  <matrix>
+                    <Matrix a="7.04000854492188" d="5.27996826171875" tx="352" ty="264"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,53 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2620" itemID="65c1d1f3-000010d2" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 2620">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!50 -2|131 -83!131 -83|134 -91!134 -91|131 -99!131 -99|95 -135!95 -135|88 -137!88 -137|80 -135!80 -135|-1 -53!-1 -53|-83 -135!-83 -135|-90 -137!-90 -137|-98 -135!-98 -135|-134 -99!-134 -99|-137 -91!-137 -91|-134 -83!-134 -83|-52 -2!-52
+ -2|-134 80!-134 80|-137 87!-137 87|-134 95!-134 95|-98 131!-98 131|-90 134!-90 134[-86 134 -83 131!-83 131|-1 49!-1 49|80 131!80 131|88 134!88 134|95 131!95 131|131 95!131 95|134 87!134 87|131 80!131 80|50 -2"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#282425"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#DD0D12"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="
+!152 -176[162 -176 168 -168!168 -168[176 -162 176 -152!176 -152|176 152!176 152[176 162 168 168!168 168[162 176 152 176!152 176|-152 176!-152 176[-162 176 -168 168!-168 168[-176 162 -176 152!-176 152|-176 -152!-176 -152[-176 -162 -168
+ -168!-168 -168[-162 -176 -152 -176!-152 -176|152 -176"/>
+                    <Edge fillStyle0="1" edges="
+!152 -200|-152 -200!-152 -200[-171 -200 -186 -186!-186 -186[-200 -171 -200 -152!-200 -152|-200 152!-200 152[-200 172 -186 186!-186 186[-171 200 -152 200!-152 200|152 200!152 200[172 200 186 186!186 186[200 172 200 152!200 152|200 -152
+!200 -152[200 -171 186 -186!186 -186[172 -200 152 -200"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

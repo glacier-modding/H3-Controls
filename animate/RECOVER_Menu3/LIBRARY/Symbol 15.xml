@@ -1,0 +1,15 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 15" itemID="65c1d1f2-00000b0a" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 15">
+      <layers>
+        <DOMLayer name="Layer 1" color="#F6F39D" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

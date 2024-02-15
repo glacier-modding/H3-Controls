@@ -1,0 +1,100 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HUDLibEvergreen_xfl_fla.SuspectPerformingBackNotSuspect_45" itemID="65c20aa6-000008da" lastModified="1707640854">
+  <timeline>
+    <DOMTimeline name="HUDLibEvergreen_xfl_fla.SuspectPerformingBackNotSuspect_45">
+      <layers>
+        <DOMLayer name="Labels Layer" color="#FBB4ED">
+          <frames>
+            <DOMFrame index="0" name="normal" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" name="fill" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Script Layer" color="#72D9F2">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#C272A8">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#333333"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!983 0|0 0!0 0|0 762!0 762|492 1246!492 1246|983 762!983 762|983 0!942 42|942 744!942 744|492 1187!492 1187|41 744!41 744|41 42!41 42|942 42"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#D792DF" locked="true" layerType="mask">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1611" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#2DBAFB" parentLayerIndex="3" locked="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1613" name="fill_mc" centerPoint3DX="51.6" centerPoint3DY="89.75">
+                  <matrix>
+                    <Matrix tx="24.7" ty="60.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#6D918C" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#999999" alpha="0.498039215686275"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!942 744|492 1187!492 1187|41 744!41 744|41 42!41 42|942 42!942 42|942 744"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

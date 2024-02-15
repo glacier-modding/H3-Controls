@@ -1,0 +1,45 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="WeaponSelectorKilltypeView" itemID="65c1eaf8-0000088f" linkageExportForAS="true" linkageIdentifier="WeaponSelectorKilltypeView" linkageClassName="WeaponSelectorKilltypeView" lastModified="1707207416">
+  <timeline>
+    <DOMTimeline name="WeaponSelectorKilltypeView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#7FEDAA">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label_txt" fontRenderingMode="standard" width="296" height="20" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="8" ty="1"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#17EFBF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1204" name="back_mc" centerPoint3DX="50" centerPoint3DY="50">
+                  <matrix>
+                    <Matrix a="0.42578125" d="0.210006713867188"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

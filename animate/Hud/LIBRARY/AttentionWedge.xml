@@ -1,0 +1,24 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="AttentionWedge" itemID="65c20ace-00000902" linkageExportForAS="true" linkageIdentifier="AttentionWedge" linkageClassName="AttentionWedge" lastModified="1707215566">
+  <timeline>
+    <DOMTimeline name="AttentionWedge">
+      <layers>
+        <DOMLayer name="Layer 1" color="#54E053" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2138" name="wedgeMc" centerPoint3DX="96" centerPoint3DY="-227.5">
+                  <matrix>
+                    <Matrix ty="-250"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,56 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2090" itemID="65c1d214-0000278e" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 2090">
+      <layers>
+        <DOMLayer name="Layer 1" color="#FAA67D">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label_txt" fontRenderingMode="standard" width="296" height="16.8" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-295" ty="-14.3"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="2" blurY="2" distance="2" strength="0.75"/>
+                  </filters>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#AB86E7" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="desc_txt" fontRenderingMode="standard" width="296" height="13.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-295" ty="0.5"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="2" blurY="2" distance="2" strength="0.75"/>
+                  </filters>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

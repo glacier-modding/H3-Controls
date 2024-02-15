@@ -1,0 +1,28 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2744" itemID="65c1d1f3-0000110c" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 2744">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!319 -420|-319 -420!-319 -420[-360 -420 -391 -391!-391 -391[-420 -360 -420 -319!-420 -319|-420 319!-420 319[-420 361 -391 391!-391 391[-360 420 -319 420!-319 420|319 420!319 420[361 420 391 391!391 391[420 361 420 319!420 319|420 -319
+!420 -319[420 -360 391 -391!391 -391[361 -420 319 -420!319 -370[341 -370 354 -354!354 -354[370 -341 370 -319!370 -319|370 319!370 319[370 341 354 355!354 355[341 370 319 370!319 370|-319 370!-319 370[-341 370 -354 355!-354 355[-370 341
+ -370 319!-370 319|-370 -319!-370 -319[-370 -341 -354 -354!-354 -354[-341 -370 -319 -370!-319 -370|319 -370"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

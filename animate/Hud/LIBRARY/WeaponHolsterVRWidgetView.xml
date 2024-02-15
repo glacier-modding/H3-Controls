@@ -1,0 +1,104 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="WeaponHolsterVRWidgetView" itemID="65c1eb03-00000893" linkageExportForAS="true" linkageIdentifier="WeaponHolsterVRWidgetView" linkageClassName="WeaponHolsterVRWidgetView" lastModified="1707207427">
+  <timeline>
+    <DOMTimeline name="WeaponHolsterVRWidgetView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#D042BB">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="WeaponView_WeaponOnBackBlink" name="iconOnBackPri_mc" centerPoint3DX="120.5" centerPoint3DY="28.5">
+                  <matrix>
+                    <Matrix a="0.459991455078125" d="0.459991455078125" tx="70.5" ty="-21.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#B98068">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="WeaponView_WeaponOnBackBlink" name="iconOnBackSec_mc" centerPoint3DX="0.5" centerPoint3DY="-30">
+                  <matrix>
+                    <Matrix a="0.229965209960938" d="0.229965209960938" tx="-49.5" ty="-80"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#E41F8B">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="WeaponView_illegalIcon" name="iconPri_mc" centerPoint3DX="121.5" centerPoint3DY="4.5">
+                  <matrix>
+                    <Matrix a="0.459976196289062" d="0.459976196289062" tx="95.5" ty="-21.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#88A9BF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="WeaponView_illegalIcon" name="iconSec_mc" centerPoint3DX="-11" centerPoint3DY="-54">
+                  <matrix>
+                    <Matrix a="0.229965209960938" d="0.229965209960938" tx="-37" ty="-80"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#99EE58">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 232" name="imageHolderPri_mc" centerPoint3DX="96" centerPoint3DY="-104">
+                  <matrix>
+                    <Matrix tx="96" ty="-104"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#CE8DE5" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 232" name="imageHolderSec_mc" centerPoint3DX="-26" centerPoint3DY="-144">
+                  <matrix>
+                    <Matrix tx="-26" ty="-144"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

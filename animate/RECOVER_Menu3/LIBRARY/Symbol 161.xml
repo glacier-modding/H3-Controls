@@ -1,0 +1,37 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 161" itemID="65c1d1f2-00000b43" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 161">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-620 -760|620 -760!620 -760[760 -760 760 -620!760 -620|760 619!760 619[760 759 620 759!620 759|-620 759!-620 759[-760 759 -760 619!-760 619|-760 -620!-760 -620[-760 -760 -620 -760"/>
+                    <Edge fillStyle0="1" edges="!172 -507|36 -371!36 -371|-14 -422!-14 -422|122 -558!122 -558|172 -507"/>
+                    <Edge fillStyle1="1" edges="!443 -199|428 -249!428 -249|194 -483!194 -483|60 -349!60 -349|294 -115!294 -115|344 -101!344 -101|440 -35!440 -35[539 27 554 11!554 11[570 -4 508 -103!508 -103|443 -199"/>
+                    <Edge fillStyle0="1" edges="!-372 -507|-508 -371!-508 -371|-558 -422!-558 -422|-422 -558!-422 -558|-372 -507"/>
+                    <Edge fillStyle1="1" edges="!-101 -199|-116 -249!-116 -249|-350 -483!-350 -483|-484 -349!-484 -349|-250 -115!-250 -115|-200 -101!-200 -101|-104 -35!-104 -35[-5 27 10 11!10 11[26 -4 -36 -103!-36 -103|-101 -199!-101 345|-116 295!-116 295|-350 61!-350 61|-484 195!-484
+ 195|-250 429!-250 429|-200 443!-200 443|-104 509!-104 509[-5 571 10 555!10 555[26 540 -36 441!-36 441|-101 345"/>
+                    <Edge fillStyle0="1" edges="
+!-372 37|-508 173!-508 173|-558 122!-558 122|-422 -13!-422 -13|-372 37"/>
+                    <Edge fillStyle1="1" edges="
+!443 345|428 295!428 295|194 61!194 61|60 195!60 195|294 429!294 429|344 443!344 443|440 509!440 509[539 571 554 555!554 555[570 540 508 441!508 441|443 345"/>
+                    <Edge fillStyle0="1" edges="
+!172 37|36 173!36 173|-14 122!-14 122|122 -13!122 -13|172 37"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

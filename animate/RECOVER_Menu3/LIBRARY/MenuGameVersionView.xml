@@ -1,0 +1,63 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="MenuGameVersionView" itemID="65c20f0b-00002032" linkageExportForAS="true" linkageIdentifier="MenuGameVersionView" linkageClassName="MenuGameVersionView" lastModified="1707216651">
+  <timeline>
+    <DOMTimeline name="MenuGameVersionView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#18BFBF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1902" name="indicator" centerPoint3DX="0.5" centerPoint3DY="34">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#F12DB0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="gameversion" fontRenderingMode="standard" width="292" height="21.5" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="9" ty="6"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#A9E967" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="serverversion" fontRenderingMode="standard" width="292" height="21.5" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="9" ty="29"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,301 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HUDLibSniper_xfl_fla.TargetTimerElementNPCs_37" itemID="65c20a9c-000008d0" lastModified="1707640887">
+  <timeline>
+    <DOMTimeline name="HUDLibSniper_xfl_fla.TargetTimerElementNPCs_37">
+      <layers>
+        <DOMLayer name="Script Layer" color="#EAB660">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#48B0BF">
+          <frames>
+            <DOMFrame index="0" duration="14" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.TargetTimerElementNPC_38" name="n_15" centerPoint3DX="304.55" centerPoint3DY="32.75">
+                  <matrix>
+                    <Matrix a="1.08331298828125" tx="287"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#42F87B">
+          <frames>
+            <DOMFrame index="0" duration="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="13" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.TargetTimerElementNPC_38" name="n_14" centerPoint3DX="284.05" centerPoint3DY="32.75">
+                  <matrix>
+                    <Matrix a="1.08331298828125" tx="266.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#EB03EE">
+          <frames>
+            <DOMFrame index="0" duration="12" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="12" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.TargetTimerElementNPC_38" name="n_13" centerPoint3DX="263.55" centerPoint3DY="32.75">
+                  <matrix>
+                    <Matrix a="1.08331298828125" tx="246"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#FFC4DA">
+          <frames>
+            <DOMFrame index="0" duration="11" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="11" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.TargetTimerElementNPC_38" name="n_12" centerPoint3DX="243.05" centerPoint3DY="32.75">
+                  <matrix>
+                    <Matrix a="1.08331298828125" tx="225.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#E191E5">
+          <frames>
+            <DOMFrame index="0" duration="10" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="10" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.TargetTimerElementNPC_38" name="n_11" centerPoint3DX="222.55" centerPoint3DY="32.75">
+                  <matrix>
+                    <Matrix a="1.08331298828125" tx="205"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#F810F6">
+          <frames>
+            <DOMFrame index="0" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" duration="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.TargetTimerElementNPC_38" name="n_10" centerPoint3DX="202.05" centerPoint3DY="32.75">
+                  <matrix>
+                    <Matrix a="1.08331298828125" tx="184.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#FCC0EF">
+          <frames>
+            <DOMFrame index="0" duration="8" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="8" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.TargetTimerElementNPC_38" name="n_9" centerPoint3DX="181.55" centerPoint3DY="32.75">
+                  <matrix>
+                    <Matrix a="1.08331298828125" tx="164"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 9" color="#F5DDD8">
+          <frames>
+            <DOMFrame index="0" duration="7" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="7" duration="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.TargetTimerElementNPC_38" name="n_8" centerPoint3DX="161.05" centerPoint3DY="32.75">
+                  <matrix>
+                    <Matrix a="1.08331298828125" tx="143.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 10" color="#F1D514">
+          <frames>
+            <DOMFrame index="0" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="6" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.TargetTimerElementNPC_38" name="n_7" centerPoint3DX="140.55" centerPoint3DY="32.75">
+                  <matrix>
+                    <Matrix a="1.08331298828125" tx="123"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 11" color="#8A6DFB">
+          <frames>
+            <DOMFrame index="0" duration="5" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="5" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.TargetTimerElementNPC_38" name="n_6" centerPoint3DX="120.05" centerPoint3DY="32.75">
+                  <matrix>
+                    <Matrix a="1.08331298828125" tx="102.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 12" color="#F2BE25">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="11" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.TargetTimerElementNPC_38" name="n_5" centerPoint3DX="99.55" centerPoint3DY="32.75">
+                  <matrix>
+                    <Matrix a="1.08331298828125" tx="82"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 13" color="#36AFC6">
+          <frames>
+            <DOMFrame index="0" duration="3" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="3" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.TargetTimerElementNPC_38" name="n_4" centerPoint3DX="79.05" centerPoint3DY="32.75">
+                  <matrix>
+                    <Matrix a="1.08331298828125" tx="61.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 14" color="#AC927F">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" duration="13" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.TargetTimerElementNPC_38" name="n_3" centerPoint3DX="58.55" centerPoint3DY="32.75">
+                  <matrix>
+                    <Matrix a="1.08331298828125" tx="41"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 15" color="#84FA15">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" duration="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.TargetTimerElementNPC_38" name="n_2" centerPoint3DX="38.05" centerPoint3DY="32.75">
+                  <matrix>
+                    <Matrix a="1.08331298828125" tx="20.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 16" color="#97829C" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="15" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.TargetTimerElementNPC_38" name="n_1" centerPoint3DX="17.55" centerPoint3DY="32.75">
+                  <matrix>
+                    <Matrix a="1.08331298828125"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

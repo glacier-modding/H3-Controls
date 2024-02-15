@@ -1,0 +1,70 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HUDLib2_xfl_fla.breadcrumb_slappower_37" itemID="65c20aa2-000008d6" linkageExportForAS="true" linkageIdentifier="HUDLib2_xfl_fla.breadcrumb_slappower_37" linkageClassName="HUDLib2_xfl_fla.breadcrumb_slappower_37" lastModified="1707215522">
+  <timeline>
+    <DOMTimeline name="HUDLib2_xfl_fla.breadcrumb_slappower_37">
+      <layers>
+        <DOMLayer name="Script Layer" color="#DFBBBA">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#DA9F34">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1603" name="icon_mc" centerPoint3DX="16" centerPoint3DY="16">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#B2F30A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1600" name="power_mc" centerPoint3DX="82">
+                  <matrix>
+                    <Matrix tx="22" ty="-10"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#FE04EC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor alpha="0.498039215686275"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!440 -200|2840 -200!2840 -200|2840 200!2840 200|440 200!440 200|440 -200"/>
+                    <Edge fillStyle1="1" edges="!400 -240|2880 -240!2880 -240|2880 240!2880 240|400 240!400 240|400 -240"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

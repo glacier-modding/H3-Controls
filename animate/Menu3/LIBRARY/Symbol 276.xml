@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 276" itemID="65c1d1f2-00000bad" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 276">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EBEBEB"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!603 346|302 135!302 135|333 90!333 90|233 19!233 19|259 -31!259 -31|41 -184!41 -184|3 -142!3 -142|-115 -225!-115 -225|-130 -203!-130 -203|-169 -232!-169 -232|-143 -269!-143 -269|-362 -401!-362 -401|-368 -502!-368 -502|-370 -506!-370
+ -506[-385 -526 -406 -527!-406 -527[-427 -527 -438 -511!-438 -511|-481 -450!-481 -450|-568 -511!-568 -511|-603 -460!-603 -460|-418 -332!-418 -332|-434 -309!-434 -309|-230 -144!-230 -144|-204 -181!-204 -181|-164 -154!-164 -154|-207 -93
+!-207 -93|-177 -72!-177 -72|-202 -37!-202 -37|-190 -29!-190 -29[-243 7 -330 32!-330 32|-291 173!-291 173[-148 133 -65 59!-65 59|-44 74!-44 74|-20 39!-20 39|99 121!99 121|27 293!27 293|140 372!140 372|192 245!192 245|435 516!435 516[447
+ 527 462 526!462 526[478 524 486 512!486 512|603 346!-412 -468|-408 -398!-408 -398|-444 -423!-444 -423|-412 -468"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

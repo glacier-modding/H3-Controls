@@ -1,0 +1,26 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 950" itemID="65c1d1f2-00000d77" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 950">
+      <layers>
+        <DOMLayer name="Layer 1" color="#2AFCA3" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!5200 0|0 0!0 0|0 120!0 120|5200 120!5200 120|5200 0!20 20|5180 20!5180 20|5180 100!5180 100|20 100!20 100|20 20"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

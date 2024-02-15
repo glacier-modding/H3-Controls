@@ -1,0 +1,37 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="DroppedItemVRView" itemID="65c20a8a-000008be" linkageExportForAS="true" linkageIdentifier="DroppedItemVRView" linkageClassName="DroppedItemVRView" lastModified="1707215498">
+  <timeline>
+    <DOMTimeline name="DroppedItemVRView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#A7E841">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1237" name="icon_mc" centerPoint3DX="26" centerPoint3DY="26">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#E99D1F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLib2_xfl_fla.DroppedItemVRArrowsMc_277" name="arrow_mc" centerPoint3DX="26" centerPoint3DY="89">
+                  <matrix>
+                    <Matrix ty="43"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

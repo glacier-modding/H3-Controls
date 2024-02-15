@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 395" itemID="65c1d1f2-00000bf9" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 395">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!0 -324[47 -324 81 -358!81 -358[114 -391 114 -438!114 -438[114 -486 81 -519!81 -519[47 -553 0 -553!0 -553[-47 -553 -81 -519!-81 -519[-115 -486 -115 -438!-115 -438[-115 -391 -81 -358!-81 -358[-47 -324 0 -324!485 -287|467 -291!467 -291
+|-467 -291!-467 -291|-485 -287!-485 -287[-501 -281 -510 -267!-510 -267[-520 -253 -520 -235!-520 -235[-520 -213 -504 -197!-504 -197[-488 -181 -465 -181!-465 -181|-150 -181!-150 -181|-150 537!-150 537[-150 561 -133 577!-133 577[-117 593
+ -94 593!-94 593[-71 593 -54 577!-54 577[-38 561 -38 537!-38 537|-38 134!-38 134|38 134!38 134|38 537!38 537[38 561 55 577!55 577[71 593 94 593!94 593[117 593 134 577!134 577[150 561 150 537!150 537|150 -181!150 -181|465 -181!465 -181
+[488 -181 504 -197!504 -197[520 -213 520 -235!520 -235[520 -253 510 -267!510 -267[500 -281 485 -287"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

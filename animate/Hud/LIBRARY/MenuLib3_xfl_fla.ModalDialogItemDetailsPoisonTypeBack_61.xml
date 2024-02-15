@@ -1,0 +1,53 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="MenuLib3_xfl_fla.ModalDialogItemDetailsPoisonTypeBack_61" itemID="65c20a54-00000886" linkageExportForAS="true" linkageIdentifier="MenuLib3_xfl_fla.ModalDialogItemDetailsPoisonTypeBack_61" linkageClassName="MenuLib3_xfl_fla.ModalDialogItemDetailsPoisonTypeBack_61" lastModified="1707215444">
+  <timeline>
+    <DOMTimeline name="MenuLib3_xfl_fla.ModalDialogItemDetailsPoisonTypeBack_61">
+      <layers>
+        <DOMLayer name="Script Layer" color="#C16F80">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#2FCEE1" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2225" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="2.489501953125" d="0.259994506835938" tx="124.5" ty="13"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2226" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2227" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

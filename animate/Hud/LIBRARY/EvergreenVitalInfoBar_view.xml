@@ -1,0 +1,330 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EvergreenVitalInfoBar_view" itemID="65c20aba-000008ee" linkageExportForAS="true" linkageIdentifier="EvergreenVitalInfoBar_view" linkageClassName="EvergreenVitalInfoBar_view" lastModified="1707215546">
+  <timeline>
+    <DOMTimeline name="EvergreenVitalInfoBar_view">
+      <layers>
+        <DOMLayer name="Labels Layer" color="#5FDBD2">
+          <frames>
+            <DOMFrame index="0" name="assassin_near" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" name="assassin_alert" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="3" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" name="lookout_near" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="6" name="lookout_alert" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="7" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="8" name="allerted" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="10" name="prestige_incomplete" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Script Layer" color="#C68A81">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#A4F704">
+          <frames>
+            <DOMFrame index="0" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1915" name="flash_mc" centerPoint3DX="111.5" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix a="0.986541748046875" d="0.884613037109375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#78A0C2">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1913" name="icon_mc" centerPoint3DX="32.5" centerPoint3DY="21">
+                  <matrix>
+                    <Matrix tx="19" ty="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1913" name="icon_mc" centerPoint3DX="32.5" centerPoint3DY="21">
+                  <matrix>
+                    <Matrix tx="19" ty="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1919" name="icon_mc" centerPoint3DX="28.6" centerPoint3DY="21">
+                  <matrix>
+                    <Matrix tx="19" ty="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1919" name="icon_mc" centerPoint3DX="28.6" centerPoint3DY="21">
+                  <matrix>
+                    <Matrix tx="19" ty="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="255" blueOffset="255" greenOffset="255"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1922" name="icon_mc" centerPoint3DX="29" centerPoint3DY="22">
+                  <matrix>
+                    <Matrix tx="19" ty="12"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="10" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1924" name="icon_mc" centerPoint3DX="20.3" centerPoint3DY="20.2">
+                  <matrix>
+                    <Matrix tx="18.55" ty="11.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#1EA5D5">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label_txt" fontRenderingMode="standard" width="346" height="23.85" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="38.8" ty="3"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>TEXT LABEL</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="17.9" size="16" bitmapSize="320"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" duration="2" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label_txt" fontRenderingMode="standard" width="346" height="23.85" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="38.8" ty="3"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>TEXT LABEL</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="17.9" size="16" bitmapSize="320" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="2" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label_txt" fontRenderingMode="standard" width="346" height="23.85" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="38.8" ty="3"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>TEXT LABEL</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="17.9" size="16" bitmapSize="320"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" duration="2" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label_txt" fontRenderingMode="standard" width="346" height="23.85" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="38.8" ty="3"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>TEXT LABEL</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="17.9" size="16" bitmapSize="320" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" duration="2" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label_txt" fontRenderingMode="standard" width="346" height="23.85" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="38.8" ty="3"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>TEXT LABEL</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="17.9" size="16" bitmapSize="320"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="10" duration="2" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label_txt" fontRenderingMode="standard" width="346" height="23.85" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="38.8" ty="3"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>TEXT LABEL</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="17.9" size="16" bitmapSize="320" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#91B5D7" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1909" name="back_mc" centerPoint3DX="110" centerPoint3DY="11.5">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="255" blueOffset="1" greenOffset="200"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1909" name="back_mc" centerPoint3DX="110" centerPoint3DY="11.5">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1909" name="back_mc" centerPoint3DX="110" centerPoint3DY="11.5">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="255" blueOffset="1" greenOffset="200"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1909" name="back_mc" centerPoint3DX="110" centerPoint3DY="11.5">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1909" name="back_mc" centerPoint3DX="110" centerPoint3DY="11.5">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="255" blueOffset="1" greenOffset="200"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="10" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1909" name="back_mc" centerPoint3DX="110" centerPoint3DY="11.5">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

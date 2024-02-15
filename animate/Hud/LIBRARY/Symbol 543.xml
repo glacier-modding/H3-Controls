@@ -1,0 +1,32 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 543" itemID="65c1d214-0000239a" symbolType="graphic" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 543">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!510 558|-510 558!-510 558[-529 558 -543 544!-543 544[-558 529 -558 510!-558 510|-558 -511!-558 -511[-558 -530 -543 -544!-543 -544[-529 -558 -510 -558!-510 -558[-489 -558 -475 -544!-475 -544[-461 -530 -461 -511!-461 -511|-461 461!-461
+ 461|461 461!461 461|461 -511!461 -511[461 -530 475 -544!475 -544[489 -558 510 -558!510 -558[530 -558 544 -544!544 -544[558 -530 558 -511!558 -511|558 510!558 510[558 529 544 544!544 544[530 558 510 558"/>
+                    <Edge fillStyle1="1" edges="
+!-620 -760|620 -760!620 -760[760 -760 760 -620!760 -620|760 619!760 619[760 759 620 759!620 759|-620 759!-620 759[-760 759 -760 619!-760 619|-760 -620!-760 -620[-760 -760 -620 -760"/>
+                    <Edge fillStyle0="1" edges="
+!-121 -105|-74 -59!-74 -59|-42 -124!-42 -124|-103 -186!-103 -186|-123 -138!-123 -138[-129 -113 -121 -105!-183 258|-70 35!-70 35|-166 -60!-166 -60[-220 -115 -149 -232!-149 -232|-358 -441!-358 -441|-244 -555!-244 -555|218 -94!218 -94|236
+ -113!236 -113|368 18!368 18|302 131!302 131|233 95!233 95|78 394!78 394|-183 258"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="minimapBlipTutorialView" itemID="65c1ec09-000008cf" linkageExportForAS="true" linkageIdentifier="minimapBlipTutorialView" linkageClassName="minimapBlipTutorialView" lastModified="1707207689">
+  <timeline>
+    <DOMTimeline name="minimapBlipTutorialView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#8D7BFA" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 345" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

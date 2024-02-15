@@ -1,0 +1,58 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="MapLayIndicatorLabelView" itemID="65c20a72-000008a5" linkageExportForAS="true" linkageIdentifier="MapLayIndicatorLabelView" linkageClassName="MapLayIndicatorLabelView" lastModified="1707215474">
+  <timeline>
+    <DOMTimeline name="MapLayIndicatorLabelView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#D490EA">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 360" name="icon" centerPoint3DX="33" centerPoint3DY="37.45">
+                  <matrix>
+                    <Matrix a="0.576889038085938" d="0.576889038085938" tx="20" ty="24.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#8253D9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label_txt" fontRenderingMode="standard" width="122" height="23.95" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="36" ty="12.8"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters> Level 0</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="22.35" size="20" bitmapSize="400" fillColor="#464646"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#DBA2F1" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 357" name="bg" centerPoint3DX="85" centerPoint3DY="24.5">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

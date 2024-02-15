@@ -1,0 +1,42 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 584" itemID="65c1d208-000016b5" lastModified="1707200103">
+  <timeline>
+    <DOMTimeline name="Symbol 584">
+      <layers>
+        <DOMLayer name="Layer 1" color="#2292DB" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0" b="0.006591796875" c="-0.05859375" d="0" tx="50"/>
+                        </matrix>
+                        <GradientEntry color="#333333" ratio="0"/>
+                        <GradientEntry color="#376A6A" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.05" solidStyle="hairline">
+                        <fill>
+                          <SolidColor color="#305959"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!0 20|0 -20!0 -20|2000 -20!2000 -20|2000 20"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!2000 20|0 20"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

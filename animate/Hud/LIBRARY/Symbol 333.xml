@@ -1,0 +1,72 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 333" itemID="65c1d213-00002338" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 333">
+      <layers>
+        <DOMLayer name="Layer 1" color="#A86B9E">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.CampaignProgress_FrameDots_20" name="campDots_mc" centerPoint3DX="106.25" centerPoint3DY="62.25">
+                  <matrix>
+                    <Matrix tx="91" ty="59"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#8CEE2C">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 325" name="end_mc" centerPoint3DX="151.2" centerPoint3DY="26">
+                  <matrix>
+                    <Matrix a="-1" tx="146.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#2AD38D">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 327" name="mid_mc" centerPoint3DX="60" centerPoint3DY="26">
+                  <matrix>
+                    <Matrix a="1.36199951171875" tx="10"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#A2B5AA" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 325" name="start_mc" centerPoint3DX="15" centerPoint3DY="26">
+                  <matrix>
+                    <Matrix tx="10"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

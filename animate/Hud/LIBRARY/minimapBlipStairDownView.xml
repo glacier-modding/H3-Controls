@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="minimapBlipStairDownView" itemID="65c1ec27-000008dd" linkageExportForAS="true" linkageIdentifier="minimapBlipStairDownView" linkageClassName="minimapBlipStairDownView" lastModified="1707207719">
+  <timeline>
+    <DOMTimeline name="minimapBlipStairDownView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#D2B56C" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap1361.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="0.00091552734375" b="-20" c="20.0006103515625" d="0.00091552734375" tx="-16" ty="16"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-320 320|-320 -320!-320 -320|320 -320!320 -320|320 320!320 320|-320 320"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

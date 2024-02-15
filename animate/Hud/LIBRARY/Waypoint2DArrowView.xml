@@ -1,0 +1,26 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Waypoint2DArrowView" itemID="65c1eb69-0000089a" linkageExportForAS="true" linkageIdentifier="Waypoint2DArrowView" linkageClassName="Waypoint2DArrowView" lastModified="1707207529">
+  <timeline>
+    <DOMTimeline name="Waypoint2DArrowView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#E942E4" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-105 178|-105 -541!-105 -541|104 -541!104 -541|104 178!104 178|540 -219!540 -219|540 46!540 46|0 539!0 539|-540 47!-540 47|-540 -217!-540 -217|-105 178"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,26 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="hud.evergreen.worldmap.IconStackThinSlice" itemID="65c20a97-000008cb" linkageExportForAS="true" linkageIdentifier="hud.evergreen.worldmap.IconStackThinSlice" linkageClassName="hud.evergreen.worldmap.IconStackThinSlice" lastModified="1707215511">
+  <timeline>
+    <DOMTimeline name="hud.evergreen.worldmap.IconStackThinSlice">
+      <layers>
+        <DOMLayer name="Layer 1" color="#D489F4" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!120 -608|120 608!120 608[120 715 44 747!44 747|0 758!0 758|0 -758!0 -758|44 -747!44 -747[120 -715 120 -608"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

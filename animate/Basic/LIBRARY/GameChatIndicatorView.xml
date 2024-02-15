@@ -1,0 +1,58 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="GameChatIndicatorView" itemID="65c20c3d-00000b4a" linkageExportForAS="true" linkageIdentifier="GameChatIndicatorView" linkageClassName="GameChatIndicatorView" lastModified="1707215933">
+  <timeline>
+    <DOMTimeline name="GameChatIndicatorView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#5BFAC0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="profilename" fontRenderingMode="standard" width="396" height="27" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-421" ty="-14"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#67F960">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="BasicLib_xfl_fla.GameChatIndicatorIcons_4" name="icon" centerPoint3DX="15" centerPoint3DY="15">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#E98173" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 598" name="bg" centerPoint3DX="65" centerPoint3DY="50">
+                  <matrix>
+                    <Matrix d="0.300003051757812" tx="15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

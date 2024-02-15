@@ -1,0 +1,28 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 281" itemID="65c1d1f2-00000bb1" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 281">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EBEBEB"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!-52 -22[-68 -22 -85 -51!-85 -51[-101 -77 -112 -116!-112 -116|6 -116!6 -116|37 -22!37 -22|-52 -22!598 213|477 -168!477 -168|578 -200!578 -200|543 -332!543 -332[538 -348 523 -359!523 -359[509 -370 491 -370!491 -370|282 -370!282 -370|282
+ -334!282 -334|-546 -334!-546 -334[-568 -334 -583 -318!-583 -318[-599 -303 -599 -281!-599 -281|-599 -170!-599 -170[-599 -148 -583 -133!-583 -133[-568 -117 -546 -117!-546 -117|-201 -116!-201 -116[-156 63 -52 63!-52 63|131 63!131 63|217
+ 330!217 330[221 348 235 358!235 358[250 370 268 370!268 370|284 367!284 367|566 280!566 280|591 260!591 260[602 246 602 230!602 230|598 213"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

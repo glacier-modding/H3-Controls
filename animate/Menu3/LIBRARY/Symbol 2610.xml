@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2610" itemID="65c1d1f3-000010cc" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 2610">
+      <layers>
+        <DOMLayer name="Layer 1" color="#D37BAD" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EDEDED"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor alpha="0.00392156862745098"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!3300 3300|0 3300!0 3300|0 0!0 0|3300 0!3300 0|3300 3300"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="!3260 40|40 40!40 40|40 3260!40 3260|3260 3260!3260 3260|3260 40"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

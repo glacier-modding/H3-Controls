@@ -1,0 +1,64 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ItemBreadcrumbView" itemID="65c20a62-00000895" linkageExportForAS="true" linkageIdentifier="ItemBreadcrumbView" linkageClassName="ItemBreadcrumbView" lastModified="1707215458">
+  <timeline>
+    <DOMTimeline name="ItemBreadcrumbView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#A947D3">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="AttentionOutlineView" name="attentionoutline" centerPoint3DX="50" centerPoint3DY="50">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#09BDC1">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap27.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="8.79974365234375" d="8.79974365234375" tx="-16" ty="-16"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-320 -320|314 -320!314 -320|314 314!314 314|-320 314!-320 314|-320 -320"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#7CFB1F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="distance_txt" fontRenderingMode="standard" width="467" height="14.3" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-233.5" ty="16.05"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

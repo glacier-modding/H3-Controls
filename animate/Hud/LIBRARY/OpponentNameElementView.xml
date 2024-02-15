@@ -1,0 +1,48 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="OpponentNameElementView" itemID="65c1ebea-000008c4" linkageExportForAS="true" linkageIdentifier="OpponentNameElementView" linkageClassName="OpponentNameElementView" lastModified="1707207658">
+  <timeline>
+    <DOMTimeline name="OpponentNameElementView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#516BF3">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="217" height="36" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="17" ty="12"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>OpponentName</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="33.5" size="30" bitmapSize="600" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#40A7CE" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 341" centerPoint3DX="50" centerPoint3DY="50">
+                  <matrix>
+                    <Matrix a="2.50999450683594" d="0.600006103515625"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="65" blueOffset="235" greenOffset="22"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

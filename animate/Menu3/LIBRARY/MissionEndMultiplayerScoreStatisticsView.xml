@@ -1,0 +1,40 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="MissionEndMultiplayerScoreStatisticsView" itemID="65c20efa-00002027" linkageExportForAS="true" linkageIdentifier="MissionEndMultiplayerScoreStatisticsView" linkageClassName="MissionEndMultiplayerScoreStatisticsView" lastModified="1707216634">
+  <timeline>
+    <DOMTimeline name="MissionEndMultiplayerScoreStatisticsView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#60F9A6">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1804" name="line" centerPoint3DX="0.5" centerPoint3DY="32.05">
+                  <matrix>
+                    <Matrix d="6.47994995117188" ty="-17.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#D180B4" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1804" name="line_static" centerPoint3DX="0.5" centerPoint3DY="558">
+                  <matrix>
+                    <Matrix d="1.21990966796875" ty="508"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

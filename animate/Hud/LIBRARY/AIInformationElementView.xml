@@ -1,0 +1,80 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="AIInformationElementView" itemID="65c20a91-000008c5" linkageExportForAS="true" linkageIdentifier="AIInformationElementView" linkageClassName="AIInformationElementView" lastModified="1707215505">
+  <timeline>
+    <DOMTimeline name="AIInformationElementView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#7DD947">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="info_txt" fontRenderingMode="standard" width="596" height="22" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="31" ty="4"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>AI info</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="20.1" size="18" bitmapSize="360" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#7CE684">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.AIInformationElementIcon_17" name="icons" centerPoint3DX="18" centerPoint3DY="18">
+                  <matrix>
+                    <Matrix a="0.76666259765625" d="0.76666259765625" tx="3" ty="3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#88ACB4">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 926" name="overlay" centerPoint3DX="50" centerPoint3DY="50">
+                  <matrix>
+                    <Matrix d="0.28997802734375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#A1D40E" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 926" name="bg" centerPoint3DX="50" centerPoint3DY="50">
+                  <matrix>
+                    <Matrix a="0.999984741210938" d="0.28997802734375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="255" blueOffset="60"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

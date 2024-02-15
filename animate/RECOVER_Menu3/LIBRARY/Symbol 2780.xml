@@ -1,0 +1,32 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2780" itemID="65c1d1f3-00001121" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 2780">
+      <layers>
+        <DOMLayer name="Layer 1" color="#CD7D45" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="infotxt" fontRenderingMode="standard" width="996" height="26" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-498" ty="-10"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineSpacing="0" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="2" blurY="2" distance="2" quality="3" strength="0.75"/>
+                  </filters>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

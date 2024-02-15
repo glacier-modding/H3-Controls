@@ -1,0 +1,40 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="BaseScoreElementView" itemID="65c20a99-000008cd" linkageExportForAS="true" linkageIdentifier="BaseScoreElementView" linkageClassName="BaseScoreElementView" lastModified="1707215513">
+  <timeline>
+    <DOMTimeline name="BaseScoreElementView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#C6FD27">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1451" name="icon" centerPoint3DX="15" centerPoint3DY="15">
+                  <matrix>
+                    <Matrix a="0.76666259765625" d="0.76666259765625"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#F56843" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 232" name="scorecontainer" centerPoint3DX="-21.15">
+                  <matrix>
+                    <Matrix tx="-21.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

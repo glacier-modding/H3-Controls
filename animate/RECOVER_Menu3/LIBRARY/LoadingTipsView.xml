@@ -1,0 +1,40 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="LoadingTipsView" itemID="65c20fa0-00002092" linkageExportForAS="true" linkageIdentifier="LoadingTipsView" linkageClassName="LoadingTipsView" lastModified="1707216800">
+  <timeline>
+    <DOMTimeline name="LoadingTipsView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#FA8551">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3238" name="tips" centerPoint3DX="-433.5" centerPoint3DY="-29.4">
+                  <matrix>
+                    <Matrix tx="-865" ty="-54"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#DCBED9" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3234" name="line" centerPoint3DX="0.5" centerPoint3DY="0.5">
+                  <matrix>
+                    <Matrix tx="-1000"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

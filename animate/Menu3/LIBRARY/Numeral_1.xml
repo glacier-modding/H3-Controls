@@ -1,0 +1,28 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Numeral_1" itemID="65c20e00-00001f82" linkageExportForAS="true" linkageIdentifier="Numeral_1" linkageClassName="Numeral_1" lastModified="1707216384">
+  <timeline>
+    <DOMTimeline name="Numeral_1">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FD85A" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!-86 -142|-87 206!-87 206[-90 278 -98 293!-98 293[-110 317 -152 324!-152 324|-191 326!-191 326|-191 369!-191 369|-126 371!-126 371|1 373!1 373|192 369!192 369|193 330!193 330|155 327!155 327[114 320 101 297!101 297[93 280 90 210!90 210
+|88 -147!88 -147|90 -214!90 -214[93 -284 101 -301!101 -301[114 -324 155 -331!155 -331|193 -334!193 -334|192 -373!192 -373|1 -369!1 -369|-126 -371!-126 -371|-191 -373!-191 -373|-191 -331!-191 -331|-152 -328!-152 -328[-110 -321 -98 -297
+!-98 -297[-86 -273 -86 -142"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

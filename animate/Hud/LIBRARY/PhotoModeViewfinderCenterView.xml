@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PhotoModeViewfinderCenterView" itemID="65c1ebd9-000008bd" linkageExportForAS="true" linkageIdentifier="PhotoModeViewfinderCenterView" linkageClassName="PhotoModeViewfinderCenterView" lastModified="1707207641">
+  <timeline>
+    <DOMTimeline name="PhotoModeViewfinderCenterView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#45A6E6" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2058" name="reticle_mc" centerPoint3DX="350" centerPoint3DY="350">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

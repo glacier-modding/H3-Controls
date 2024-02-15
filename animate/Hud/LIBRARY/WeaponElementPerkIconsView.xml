@@ -1,0 +1,37 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="WeaponElementPerkIconsView" itemID="65c1eb61-00000897" linkageExportForAS="true" linkageIdentifier="WeaponElementPerkIconsView" linkageClassName="WeaponElementPerkIconsView" lastModified="1707207521">
+  <timeline>
+    <DOMTimeline name="WeaponElementPerkIconsView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#CEA492">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementPerkIcons_41" name="icons" centerPoint3DX="34" centerPoint3DY="35.35">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#D06FCF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 242" name="bg" centerPoint3DX="50" centerPoint3DY="50">
+                  <matrix>
+                    <Matrix a="0.759994506835938" d="0.759994506835938"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

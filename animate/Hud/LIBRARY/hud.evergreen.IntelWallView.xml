@@ -1,0 +1,1213 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="hud.evergreen.IntelWallView" itemID="65c20abf-000008f3" linkageExportForAS="true" linkageIdentifier="hud.evergreen.IntelWallView" linkageClassName="hud.evergreen.IntelWallView" lastModified="1707215551">
+  <timeline>
+    <DOMTimeline name="hud.evergreen.IntelWallView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#E617B7">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2020" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#6891AB">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 232" name="dottedLine4_mc" centerPoint3DX="150" centerPoint3DY="-30.5">
+                  <matrix>
+                    <Matrix tx="150" ty="-30.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#B1F85F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 232" name="dottedLine3_mc" centerPoint3DX="634" centerPoint3DY="768">
+                  <matrix>
+                    <Matrix tx="634" ty="768"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#92ED26">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 232" name="dottedLine2_mc" centerPoint3DX="634" centerPoint3DY="520">
+                  <matrix>
+                    <Matrix tx="634" ty="520"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#508CDF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 232" name="dottedLine1_mc" centerPoint3DX="634" centerPoint3DY="112">
+                  <matrix>
+                    <Matrix tx="634" ty="112"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#83ADE2">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2018" name="crimeIcon_mc" centerPoint3DX="103" centerPoint3DY="-49">
+                  <matrix>
+                    <Matrix a="1.49984741210938" d="1.49984741210938" tx="63" ty="-89"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#C6F2DC">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2018" name="visual4Icon_mc" centerPoint3DX="1116" centerPoint3DY="733">
+                  <matrix>
+                    <Matrix a="0.824462890625" d="0.824462890625" tx="1076" ty="693"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#77E439">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2018" name="visual2Icon_mc" centerPoint3DX="1116" centerPoint3DY="643">
+                  <matrix>
+                    <Matrix a="0.824462890625" d="0.824462890625" tx="1076" ty="603"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 9" color="#C69935">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2018" name="visual3Icon_mc" centerPoint3DX="707" centerPoint3DY="733">
+                  <matrix>
+                    <Matrix a="0.824462890625" d="0.824462890625" tx="667" ty="693"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 10" color="#D7B0CE">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2018" name="visual1Icon_mc" centerPoint3DX="707" centerPoint3DY="643">
+                  <matrix>
+                    <Matrix a="0.824462890625" d="0.824462890625" tx="667" ty="603"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 11" color="#C7E1FD">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2018" name="tell3Icon_mc" centerPoint3DX="715.85" centerPoint3DY="478.45">
+                  <matrix>
+                    <Matrix a="1.04998779296875" d="1.04998779296875" tx="675.85" ty="438.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 12" color="#E3EBE8">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2018" name="tell2Icon_mc" centerPoint3DX="715.85" centerPoint3DY="355.4">
+                  <matrix>
+                    <Matrix a="1.04998779296875" d="1.04998779296875" tx="675.85" ty="315.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 13" color="#DE9F9B">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2018" name="tell1Icon_mc" centerPoint3DX="715.85" centerPoint3DY="234.4">
+                  <matrix>
+                    <Matrix a="1.04998779296875" d="1.04998779296875" tx="675.85" ty="194.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 14" color="#9C2CF7">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="crime1_txt" fontRenderingMode="standard" width="803.25" height="28.6" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="145" ty="-144"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>CRIMETYPE**</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="26.85" size="24" bitmapSize="480" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 15" color="#D2678E">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="visualHeadline4_txt" fontRenderingMode="standard" width="299.2" height="43.1" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="1128" ty="689"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="31.3" size="28" bitmapSize="560" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 16" color="#626AD1">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="visualType4_txt" fontRenderingMode="standard" width="299.2" height="31.05" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="1128" ty="666"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="22.35" size="20" bitmapSize="400" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 17" color="#CE59A6">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="visualHeadline3_txt" fontRenderingMode="standard" width="299.2" height="43.1" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="711" ty="689"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="31.3" size="28" bitmapSize="560" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 18" color="#3EBCFC">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="visualType3_txt" fontRenderingMode="standard" width="299.2" height="31.05" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="711" ty="666"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="22.35" size="20" bitmapSize="400" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 19" color="#1DEBAE">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="visualHeadline2_txt" fontRenderingMode="standard" width="299.2" height="43.1" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="1128" ty="601"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="31.3" size="28" bitmapSize="560" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 20" color="#B5FEDB">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="visualType2_txt" fontRenderingMode="standard" width="299.2" height="31.05" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="1128" ty="578"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="22.35" size="20" bitmapSize="400" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 21" color="#D174B9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="visualHeadline1_txt" fontRenderingMode="standard" width="299.2" height="43.1" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="711" ty="601"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="31.3" size="28" bitmapSize="560" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 22" color="#6441F8">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="visualType1_txt" fontRenderingMode="standard" width="299.2" height="31.05" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="711" ty="578"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="22.35" size="20" bitmapSize="400" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 23" color="#76C698">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="tellHeadline3_txt" fontRenderingMode="standard" width="695" height="43.1" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="740" ty="434"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="40.25" size="36" bitmapSize="720" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 24" color="#C3A124">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="tellType3_txt" fontRenderingMode="standard" width="696" height="31.05" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="740" ty="402"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="29.05" size="26" bitmapSize="520" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 25" color="#B697B0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="tellHeadline2_txt" fontRenderingMode="standard" width="695" height="43.1" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="740" ty="311"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="40.25" size="36" bitmapSize="720" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 26" color="#B392BA">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="tellType2_txt" fontRenderingMode="standard" width="696" height="31.05" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="740" ty="279"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="29.05" size="26" bitmapSize="520" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 27" color="#DECC3A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="tellHeadline1_txt" fontRenderingMode="standard" width="695" height="43.1" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="740" ty="190"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="40.25" size="36" bitmapSize="720" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 28" color="#C340F0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="tellType1_txt" fontRenderingMode="standard" width="696" height="31.05" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="740" ty="158"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="29.05" size="26" bitmapSize="520" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 29" color="#8B3DB9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="processing_txt" fontRenderingMode="standard" width="803.25" height="23.85" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="631" ty="831"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>PROCESSING PROFILE</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="1.5" lineHeight="22.35" size="20" bitmapSize="400" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 30" color="#59EAB1">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="crime2_txt" fontRenderingMode="standard" width="1271.4" height="86.25" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="145" ty="-120"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>MM-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="2" lineHeight="75.95" size="68" bitmapSize="1360" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 31" color="#56E79B">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="headline2_txt" fontRenderingMode="standard" width="804.55" height="81.5" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="631" ty="23"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="75.95" size="68" bitmapSize="1360" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 32" color="#8876FB">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="headline1_txt" fontRenderingMode="standard" width="803.25" height="28.6" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="631" ty="-1"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>-</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="26.85" size="24" bitmapSize="480" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 33" color="#8A45F5">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1968" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="11.8125" d="0.0625" tx="94" ty="895"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 34" color="#82ACBE">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1983" name="eq_mc" centerPoint3DX="1128" centerPoint3DY="808">
+                  <matrix>
+                    <Matrix tx="1059" ty="795"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 35" color="#F56CB5">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1975" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 36" color="#F6B669">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="801.9">
+                  <matrix>
+                    <Matrix ty="801.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 37" color="#D4D243">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="754.75">
+                  <matrix>
+                    <Matrix ty="754.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 38" color="#9782D7">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="707.6">
+                  <matrix>
+                    <Matrix ty="707.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 39" color="#C9B50B">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="660.45">
+                  <matrix>
+                    <Matrix ty="659.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 40" color="#2EFB59">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="613.3">
+                  <matrix>
+                    <Matrix ty="612.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 41" color="#C25CEA">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="566.15">
+                  <matrix>
+                    <Matrix ty="565.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 42" color="#8643C3">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="519">
+                  <matrix>
+                    <Matrix ty="518.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 43" color="#BB1DFF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="471.85">
+                  <matrix>
+                    <Matrix ty="471.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 44" color="#656EB0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="424.7">
+                  <matrix>
+                    <Matrix ty="424.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 45" color="#68C1A0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="377.55">
+                  <matrix>
+                    <Matrix ty="377.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 46" color="#7EEA9A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="330.4">
+                  <matrix>
+                    <Matrix ty="329.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 47" color="#4485E6">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="283.25">
+                  <matrix>
+                    <Matrix ty="282.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 48" color="#B8FD85">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="236.1">
+                  <matrix>
+                    <Matrix ty="235.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 49" color="#5BBCA5">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="188.95">
+                  <matrix>
+                    <Matrix ty="188.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 50" color="#96AD59">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="141.8">
+                  <matrix>
+                    <Matrix ty="141.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 51" color="#9B66CC">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="94.65">
+                  <matrix>
+                    <Matrix ty="94.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 52" color="#419EE4">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1974" centerPoint3DX="283" centerPoint3DY="47.5">
+                  <matrix>
+                    <Matrix ty="47"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 53" color="#E216E7">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1973" centerPoint3DX="518.5" centerPoint3DY="425">
+                  <matrix>
+                    <Matrix tx="517"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 54" color="#EC16CE">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1973" centerPoint3DX="471.4" centerPoint3DY="425">
+                  <matrix>
+                    <Matrix tx="469.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 55" color="#DD7376">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1973" centerPoint3DX="424.3" centerPoint3DY="425">
+                  <matrix>
+                    <Matrix tx="422.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 56" color="#1DF787">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1973" centerPoint3DX="377.2" centerPoint3DY="425">
+                  <matrix>
+                    <Matrix tx="375.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 57" color="#A8ED69">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1973" centerPoint3DX="330.1" centerPoint3DY="425">
+                  <matrix>
+                    <Matrix tx="328.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 58" color="#CA65F3">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1973" centerPoint3DX="283" centerPoint3DY="425">
+                  <matrix>
+                    <Matrix tx="281.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 59" color="#E9C313">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1973" centerPoint3DX="235.9" centerPoint3DY="425">
+                  <matrix>
+                    <Matrix tx="234.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 60" color="#FB5899">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1973" centerPoint3DX="188.8" centerPoint3DY="425">
+                  <matrix>
+                    <Matrix tx="187.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 61" color="#84E221">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1973" centerPoint3DX="141.7" centerPoint3DY="425">
+                  <matrix>
+                    <Matrix tx="140.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 62" color="#F2BECE">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1973" centerPoint3DX="94.6" centerPoint3DY="425">
+                  <matrix>
+                    <Matrix tx="93.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 63" color="#E13ABC">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1973" centerPoint3DX="47.5" centerPoint3DY="425">
+                  <matrix>
+                    <Matrix tx="46"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 64" color="#D8CFA5">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1969" name="effectBox5_mc" centerPoint3DX="259.5" centerPoint3DY="637.5">
+                  <matrix>
+                    <Matrix tx="236" ty="614"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.30078125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 65" color="#C6CA2F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1969" name="effectBox4_mc" centerPoint3DX="164.5" centerPoint3DY="401.5">
+                  <matrix>
+                    <Matrix tx="141" ty="378"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.30078125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 66" color="#8783B4">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1969" name="effectBox3_mc" centerPoint3DX="259.4" centerPoint3DY="258.35">
+                  <matrix>
+                    <Matrix tx="235.9" ty="234.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.30078125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 67" color="#8B06FD">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1969" name="effectBox2_mc" centerPoint3DX="23.5" centerPoint3DY="23.5">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.30078125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 68" color="#5291D3">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1969" name="effectBox1_mc" centerPoint3DX="541.95" centerPoint3DY="825.45">
+                  <matrix>
+                    <Matrix tx="518.45" ty="801.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.30078125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 69" color="#B912E9" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1967" name="ruler_mc" centerPoint3DX="271.6" centerPoint3DY="887">
+                  <matrix>
+                    <Matrix tx="94" ty="879"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

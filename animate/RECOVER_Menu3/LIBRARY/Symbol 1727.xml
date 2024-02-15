@@ -1,0 +1,57 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1727" itemID="65c1d1f2-00000f3a" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 1727">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" caps="none" joints="miter" miterLimit="10">
+                        <fill>
+                          <SolidColor color="#FFFFFF" alpha="0.8"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!27470 4264|25379 4265!25379 4265|20280 4268!20280 4268|19959 4310!19959 4310|17810 4590!27470 6086|25379 6087!25379 6087|20280 6090!20280 6090|19959 5965!19959 5965|18490 5390!11530 2690|11530 1410!11530 1410|9610 1210!9610 1210|9610
+ 810!9610 810|18590 814!18590 814|18590 1210!18590 1210|16650 1410!16650 1410|16650 2690!12058 1515|16116 1515!16116 1515|16121 3492!16121 3492|15010 4250!15010 4250|15010 5190!15411 2232|12058 2232!12058 2232|12054 3492!12054 3492|13250
+ 4230!13250 4230|13250 5190!27510 9810|25379 9811!25379 9811|20280 9814!20280 9814|18808 8020!18808 8020|16470 8020!16470 8020|16470 5750!16470 5750|16470 5737!27470 8021|25379 8022!25379 8022|20280 8025!20280 8025|19959 7820!19959 7820
+|17530 6270!27470 801|20280 805!20280 805|17910 2090!27470 2441|20280 2445!20280 2445|18430 3190!19310 9810|11470 9810!11470 9810|11463 9208!11463 9208|15753 8236!15753 8236|15750 7890!739 6090|7921 6090!7921 6090|12270 6450!739 805|7921
+ 805!7921 805|10330 2090!739 2445|7921 2445!7921 2445|9830 3190!739 4268|7921 4268!7921 4268|10250 5390!770 9810|9010 9810!9010 9810|12590 8290!12590 8290|12590 7690!739 8025|7921 8025!7921 8025|11710 7090"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap1281.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="20" d="20" tx="421.5" ty="84.4"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!8430 1688|19830 1688!19830 1688|19830 8688!19830 8688|8430 8688!8430 8688|8430 1688"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="minimapBlipEvergreenMeetingHandoverView" itemID="65c20a67-0000089a" linkageExportForAS="true" linkageIdentifier="minimapBlipEvergreenMeetingHandoverView" linkageClassName="minimapBlipEvergreenMeetingHandoverView" lastModified="1707215463">
+  <timeline>
+    <DOMTimeline name="minimapBlipEvergreenMeetingHandoverView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#86728D" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 80" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -5,6 +5,7 @@
       <root url="jar://$PROJECT_DIR$/lib/Common.swc!/" />
       <root url="jar://$PROJECT_DIR$/lib/Hud.swc!/" />
       <root url="jar://$PROJECT_DIR$/lib/Menu3.swc!/" />
+      <root url="jar://$PROJECT_DIR$/lib/flash.swc!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -1,0 +1,49 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 308" itemID="65c1d213-0000232a" symbolType="graphic" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 308">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!207 193|207 -185!207 -185|203 -196!203 -196|192 -200!192 -200|-157 -200!-157 -200|-168 -196!-168 -196|-172 -185!-172 -185|-172 -74!-172 -74|-137 -74!-137 -74|-137 -164!-137 -164|172 -164!172 -164|172 172!172 172|-137 172!-137 172|-137
+ 96!-137 96|-172 96!-172 96|-172 193!-172 193|-168 204!-168 204|-157 208!-157 208|192 208!192 208|203 204!203 204|207 193"/>
+                    <Edge fillStyle1="1" edges="
+!-81 134|15 29!15 29|-202 29!-202 29|-202 -22!-202 -22|15 -22!15 -22|-81 -127!-81 -127|-17 -127!-17 -127|103 3!103 3|-17 134!-17 134|-81 134"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!220 -300|-220 -300!-220 -300[-300 -300 -300 -220!-300 -220|-300 220!-300 220[-300 300 -220 300!-220 300|220 300!220 300[300 300 300 220!300 220|300 -220!300 -220[300 -300 220 -300!-220 -260|220 -260!220 -260[260 -260 260 -220!260 -220
+|260 220!260 220[260 260 220 260!220 260|-220 260!-220 260[-260 260 -260 220!-260 220|-260 -220!-260 -220[-260 -260 -220 -260"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

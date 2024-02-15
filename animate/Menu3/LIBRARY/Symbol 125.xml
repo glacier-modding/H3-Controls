@@ -1,0 +1,28 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 125" itemID="65c1d1f2-00000b1f" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 125">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-620 -760|620 -760!620 -760[760 -760 760 -620!760 -620|760 619!760 619[760 759 620 759!620 759|-620 759!-620 759[-760 759 -760 619!-760 619|-760 -620!-760 -620[-760 -760 -620 -760"/>
+                    <Edge fillStyle0="1" edges="!0 -455|147 -551!147 -551|228 -394!228 -394|403 -402!403 -402|395 -227!395 -227|551 -147!551 -147|457 0!457 0|551 149!551 149|395 228!395 228|403 403!403 403|228 395!228 395|147 551!147 551|0 457!0 457|-147 551!-147 551|-228 395!-228
+ 395|-403 403!-403 403|-395 228!-395 228|-551 149!-551 149|-457 0!-457 0|-551 -147!-551 -147|-395 -227!-395 -227|-403 -402!-403 -402|-228 -394!-228 -394|-147 -551!-147 -551|0 -455"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

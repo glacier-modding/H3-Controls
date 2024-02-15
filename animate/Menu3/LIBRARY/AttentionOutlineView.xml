@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="AttentionOutlineView" itemID="65c20f6c-00002071" linkageExportForAS="true" linkageIdentifier="AttentionOutlineView" linkageClassName="AttentionOutlineView" lastModified="1707216748">
+  <timeline>
+    <DOMTimeline name="AttentionOutlineView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#BCDAFA" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap2794.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="20" d="20" tx="-50" ty="-50"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-1000 -1000|1000 -1000!1000 -1000|1000 1000!1000 1000|-1000 1000!-1000 1000|-1000 -1000"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

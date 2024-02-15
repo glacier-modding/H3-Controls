@@ -1,0 +1,162 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1212" itemID="65c1d1f2-00000df9" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 1212">
+      <layers>
+        <DOMLayer name="Layer 1" color="#934FD7" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1211" name="fx" centerPoint3DX="679" centerPoint3DY="18">
+                  <matrix>
+                    <Matrix d="0.999954223632812" tx="340" ty="9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <BlurFilter blurX="30" blurY="30"/>
+                    <GlowFilter blurX="20" blurY="20" color="#FFFFFF" strength="2"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#7BF7F1">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="levelCurrentTxt" fontRenderingMode="standard" width="676" height="23.95" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix ty="22.9"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>0</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.2" lineSpacing="0" lineHeight="20.1" size="18" bitmapSize="360" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#58EEC8">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="infoTxt" fontRenderingMode="standard" width="676" height="23.95" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="2" ty="22.9"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineSpacing="0" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#E577EE">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="levelNextTxt" fontRenderingMode="standard" width="676" height="23.95" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="4" ty="22.9"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>1</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" letterSpacing="0.2" lineSpacing="0" lineHeight="20.1" size="18" bitmapSize="360" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#03E6EB" locked="true" layerType="mask">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#454545"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!13420 0|13580 0!13580 0|13580 360!13580 360|13420 360!13420 360|13420 0!13220 0|13380 0!13380 0|13380 360!13380 360|13220 360!13220 360|13220 0!13020 0|13180 0!13180 0|13180 360!13180 360|13020 360!13020 360|13020 0!12820 0|12980 0!12980
+ 0|12980 360!12980 360|12820 360!12820 360|12820 0!12620 0|12780 0!12780 0|12780 360!12780 360|12620 360!12620 360|12620 0!12420 0|12580 0!12580 0|12580 360!12580 360|12420 360!12420 360|12420 0!12220 0|12380 0!12380 0|12380 360!12380
+ 360|12220 360!12220 360|12220 0!12020 0|12180 0!12180 0|12180 360!12180 360|12020 360!12020 360|12020 0!11820 0|11980 0!11980 0|11980 360!11980 360|11820 360!11820 360|11820 0!11620 0|11780 0!11780 0|11780 360!11780 360|11620 360!11620
+ 360|11620 0!11420 0|11580 0!11580 0|11580 360!11580 360|11420 360!11420 360|11420 0!11220 0|11380 0!11380 0|11380 360!11380 360|11220 360!11220 360|11220 0!11020 0|11180 0!11180 0|11180 360!11180 360|11020 360!11020 360|11020 0!10820
+ 0|10980 0!10980 0|10980 360!10980 360|10820 360!10820 360|10820 0!10620 0|10780 0!10780 0|10780 360!10780 360|10620 360!10620 360|10620 0!10420 0|10580 0!10580 0|10580 360!10580 360|10420 360!10420 360|10420 0!10220 0|10380 0!10380 0
+|10380 360!10380 360|10220 360!10220 360|10220 0!10020 0|10180 0!10180 0|10180 360!10180 360|10020 360!10020 360|10020 0!9820 0|9980 0!9980 0|9980 360!9980 360|9820 360!9820 360|9820 0!9620 0|9780 0!9780 0|9780 360!9780 360|9620 360!9620
+ 360|9620 0!9420 0|9580 0!9580 0|9580 360!9580 360|9420 360!9420 360|9420 0!9220 0|9380 0!9380 0|9380 360!9380 360|9220 360!9220 360|9220 0!9020 0|9180 0!9180 0|9180 360!9180 360|9020 360!9020 360|9020 0!8820 0|8980 0!8980 0|8980 360
+!8980 360|8820 360!8820 360|8820 0!8620 0|8780 0!8780 0|8780 360!8780 360|8620 360!8620 360|8620 0!8420 0|8580 0!8580 0|8580 360!8580 360|8420 360!8420 360|8420 0!8220 0|8380 0!8380 0|8380 360!8380 360|8220 360!8220 360|8220 0!8020 0
+|8180 0!8180 0|8180 360!8180 360|8020 360!8020 360|8020 0!7820 0|7980 0!7980 0|7980 360!7980 360|7820 360!7820 360|7820 0!7620 0|7780 0!7780 0|7780 360!7780 360|7620 360!7620 360|7620 0!7420 0|7580 0!7580 0|7580 360!7580 360|7420 360
+!7420 360|7420 0!7220 0|7380 0!7380 0|7380 360!7380 360|7220 360!7220 360|7220 0!7020 0|7180 0!7180 0|7180 360!7180 360|7020 360!7020 360|7020 0!6820 0|6980 0!6980 0|6980 360!6980 360|6820 360!6820 360|6820 0!6620 0|6780 0!6780 0|6780
+ 360!6780 360|6620 360!6620 360|6620 0!6420 0|6580 0!6580 0|6580 360!6580 360|6420 360!6420 360|6420 0!6220 0|6380 0!6380 0|6380 360!6380 360|6220 360!6220 360|6220 0!6020 0|6180 0!6180 0|6180 360!6180 360|6020 360!6020 360|6020 0!5820
+ 0|5980 0!5980 0|5980 360!5980 360|5820 360!5820 360|5820 0!5620 0|5780 0!5780 0|5780 360!5780 360|5620 360!5620 360|5620 0!5420 0|5580 0!5580 0|5580 360!5580 360|5420 360!5420 360|5420 0!5220 0|5380 0!5380 0|5380 360!5380 360|5220 360
+!5220 360|5220 0!5020 0|5180 0!5180 0|5180 360!5180 360|5020 360!5020 360|5020 0!4820 0|4980 0!4980 0|4980 360!4980 360|4820 360!4820 360|4820 0!4620 0|4780 0!4780 0|4780 360!4780 360|4620 360!4620 360|4620 0!4420 0|4580 0!4580 0|4580
+ 360!4580 360|4420 360!4420 360|4420 0!4220 0|4380 0!4380 0|4380 360!4380 360|4220 360!4220 360|4220 0!4020 0|4180 0!4180 0|4180 360!4180 360|4020 360!4020 360|4020 0!3820 0|3980 0!3980 0|3980 360!3980 360|3820 360!3820 360|3820 0!3620
+ 0|3780 0!3780 0|3780 360!3780 360|3620 360!3620 360|3620 0!3420 0|3580 0!3580 0|3580 360!3580 360|3420 360!3420 360|3420 0!3220 0|3380 0!3380 0|3380 360!3380 360|3220 360!3220 360|3220 0!3020 0|3180 0!3180 0|3180 360!3180 360|3020 360
+!3020 360|3020 0!2820 0|2980 0!2980 0|2980 360!2980 360|2820 360!2820 360|2820 0!2620 0|2780 0!2780 0|2780 360!2780 360|2620 360!2620 360|2620 0!2420 0|2580 0!2580 0|2580 360!2580 360|2420 360!2420 360|2420 0!2220 0|2380 0!2380 0|2380
+ 360!2380 360|2220 360!2220 360|2220 0!2020 0|2180 0!2180 0|2180 360!2180 360|2020 360!2020 360|2020 0!1620 0|1780 0!1780 0|1780 360!1780 360|1620 360!1620 360|1620 0!1820 0|1980 0!1980 0|1980 360!1980 360|1820 360!1820 360|1820 0!1220
+ 0|1380 0!1380 0|1380 360!1380 360|1220 360!1220 360|1220 0!1420 0|1580 0!1580 0|1580 360!1580 360|1420 360!1420 360|1420 0!820 0|980 0!980 0|980 360!980 360|820 360!820 360|820 0!1020 0|1180 0!1180 0|1180 360!1180 360|1020 360!1020 360
+|1020 0!420 0|580 0!580 0|580 360!580 360|420 360!420 360|420 0!620 0|780 0!780 0|780 360!780 360|620 360!620 360|620 0!220 0|380 0!380 0|380 360!380 360|220 360!220 360|220 0!20 0|180 0!180 0|180 360!180 360|20 360!20 360|20 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#A0CCBF" parentLayerIndex="4" locked="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1000" name="barFill" centerPoint3DX="51" centerPoint3DY="50">
+                  <matrix>
+                    <Matrix a="6.77978515625" d="0.17999267578125" tx="1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#FF06CA" parentLayerIndex="4" locked="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1000" name="barBg" centerPoint3DX="51" centerPoint3DY="50">
+                  <matrix>
+                    <Matrix a="6.77999877929688" d="0.17999267578125" tx="1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

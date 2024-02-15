@@ -1,0 +1,565 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1983" itemID="65c1d214-0000274f" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 1983">
+      <layers>
+        <DOMLayer name="Layer 1" color="#9C77C2">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row35" centerPoint3DX="137" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="136"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#EC7CFF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row34" centerPoint3DX="133" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="132"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#D4F388">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row33" centerPoint3DX="129" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="128"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#ED6430">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row32" centerPoint3DX="125" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="124"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#ABF250">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row31" centerPoint3DX="121" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="120"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#CF81F7">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row30" centerPoint3DX="117" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="116"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#A0E777">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row29" centerPoint3DX="113" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="112"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#A34996">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row28" centerPoint3DX="109" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="108"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 9" color="#C1B562">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row27" centerPoint3DX="105" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="104"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 10" color="#D84CD6">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row26" centerPoint3DX="101" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="100"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 11" color="#EABBFD">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row25" centerPoint3DX="97" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="96"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 12" color="#6285B0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row24" centerPoint3DX="93" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="92"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 13" color="#D7BAC3">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row23" centerPoint3DX="89" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="88"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 14" color="#8EA6B9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row22" centerPoint3DX="85" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="84"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 15" color="#7A8AF9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row21" centerPoint3DX="81" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="80"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 16" color="#B5DC7F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row20" centerPoint3DX="77" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="76"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 17" color="#D1B634">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row19" centerPoint3DX="73" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="72"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 18" color="#F26845">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row18" centerPoint3DX="69" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="68"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 19" color="#D854A0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row17" centerPoint3DX="65" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="64"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 20" color="#D831B3">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row16" centerPoint3DX="61" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="60"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 21" color="#F260B1">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row15" centerPoint3DX="57" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="56"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 22" color="#3BD4A7">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row14" centerPoint3DX="53" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="52"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 23" color="#70C550">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row13" centerPoint3DX="49" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="48"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 24" color="#2ADAA8">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row12" centerPoint3DX="45" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="44"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 25" color="#CF3FBB">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row11" centerPoint3DX="41" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="40"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 26" color="#77BDF4">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row10" centerPoint3DX="37" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="36"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 27" color="#7AC0E3">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row9" centerPoint3DX="33" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="32"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 28" color="#47EDF2">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row8" centerPoint3DX="29" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="28"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 29" color="#4FF7AC">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row7" centerPoint3DX="25" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="24"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 30" color="#A573C9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row6" centerPoint3DX="21" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="20"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 31" color="#F9F20D">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row5" centerPoint3DX="17" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="16"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 32" color="#68AEA9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row4" centerPoint3DX="13" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="12"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 33" color="#DA07C9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row3" centerPoint3DX="9" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 34" color="#7DA4CA">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row2" centerPoint3DX="5" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix tx="4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 35" color="#F19642" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.intelwallEffectEqRow_30" name="row1" centerPoint3DX="1" centerPoint3DY="13">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

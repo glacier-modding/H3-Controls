@@ -1,0 +1,33 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2062" itemID="65c1d1f3-00000ffa" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 2062">
+      <layers>
+        <DOMLayer name="Layer 1" color="#49C8C8" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!-36 10|59 8!59 8|47 -29!47 -29|46 -29!46 -29|18 -118!18 -118|-36 10!-10 -206|53 -209!53 -209|56 -208!56 -208|58 -205!58 -205|174 116!174 116|174 118!174 118|173 121!173 121|170 122!170 122|110 136!110 136|107 136!107 136|105 133!105
+ 133|77 65!77 65|2 68!2 68|-59 71!-59 71|-95 141!-95 141|-97 143!-97 143|-100 143!-100 143|-160 139!-160 139|-163 138!-163 138|-165 135!-165 135|-164 132!-164 132[-115 39 -73 -55!-73 -55|-14 -203!-14 -203|-13 -205!-13 -205|-10 -206"/>
+                    <Edge fillStyle0="1" edges="
+!158 -191[94 -230 17 -230!17 -230[-45 -230 -103 -203!-103 -203[-208 -156 -246 -59!-246 -59[-283 37 -231 124!-231 124|-195 169!-195 169[-126 231 -20 231!-20 231[45 231 104 205!104 205[183 168 227 98!227 98[271 26 260 -48!260 -48|260 -47
+!260 -47|249 -88!249 -88|250 -88!250 -88[222 -153 158 -191"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,27 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 97" itemID="65c2e5f2-0000045a" sourceFlashFilepath="../../ButtonPrompt.fla" sourceLibraryItemHRef="Symbol 97" sourceLastModified="1707200112" lastModified="1707200112" sourceItemID="00000000-ffffffff">
+  <timeline>
+    <DOMTimeline name="Symbol 97">
+      <layers>
+        <DOMLayer name="Layer_1" color="#894DBE" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!-68 -107|-68 -307!-68 -307[-68 -338 -49 -361!-49 -361[-29 -385 0 -391!0 -391|0 -460!0 -460|-96 -460!-96 -460[-193 -460 -261 -391!-261 -391[-329 -323 -329 -227!-329 -227|-329 0!-329 0|0 0!0 0|0 -22!0 -22[-30 -29 -49 -52!-49 -52[-68 -76
+ -68 -107"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

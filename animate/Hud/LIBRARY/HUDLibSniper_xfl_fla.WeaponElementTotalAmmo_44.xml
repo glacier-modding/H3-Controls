@@ -1,0 +1,76 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HUDLibSniper_xfl_fla.WeaponElementTotalAmmo_44" itemID="65c20ad0-00000904" lastModified="1707640887">
+  <timeline>
+    <DOMTimeline name="HUDLibSniper_xfl_fla.WeaponElementTotalAmmo_44">
+      <layers>
+        <DOMLayer name="Script Layer" color="#CFF5D4">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#A349AF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!302 -42[320 -42 333 -50!333 -50[346 -58 355 -73!355 -73[363 -88 367 -110!367 -110|371 -158!371 -158|367 -206!367 -206|355 -242!355 -242|333 -266!333 -266[320 -274 302 -274!302 -274[284 -274 271 -266!271 -266|249 -242!249 -242|237 -206
+!237 -206|233 -158!233 -158|237 -111!237 -111[241 -89 249 -74!249 -74[258 -59 271 -50!271 -50[284 -42 302 -42!302 14[270 14 245 2!245 2[220 -11 202 -33!202 -33[184 -55 174 -87!174 -87[164 -119 164 -158!164 -158[164 -197 174 -230!174 -230
+[184 -261 202 -284!202 -284[220 -306 246 -318!246 -318[271 -330 302 -330!302 -330[334 -330 359 -318!359 -318[385 -306 402 -284!402 -284[420 -261 430 -230!430 -230[439 -197 439 -158!439 -158[439 -119 430 -87!430 -87[420 -55 402 -33!402
+ -33[385 -11 359 2!359 2[334 14 302 14"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!302 0[265 0 240 -13!240 -13[213 -26 196 -49!196 -49[178 -71 169 -101!169 -101[160 -131 160 -163!160 -163[160 -194 169 -224!169 -224[178 -253 196 -276!196 -276[214 -299 240 -312!240 -312[267 -325 302 -325!302 -325|353 -316!353 -316|397
+ -293!397 -293|434 -258!434 -258|465 -215!465 -215|495 -258!495 -258|531 -293!531 -293|572 -316!572 -316|622 -325!622 -325[654 -325 680 -313!680 -313[707 -301 726 -280!726 -280|754 -229!754 -229[764 -199 764 -163!764 -163[764 -127 754
+ -96!754 -96[744 -67 726 -45!726 -45[707 -23 680 -12!680 -12[654 0 622 0!622 0[594 0 572 -9!572 -9[550 -18 531 -32!531 -32|495 -67!495 -67|465 -109!465 -109|434 -67!434 -67|397 -32!397 -32[376 -18 353 -9!353 -9[331 0 302 0!307 -258[268
+ -258 251 -230!251 -230[234 -202 234 -163!234 -163[234 -123 251 -95!251 -95[268 -67 307 -67!307 -67|342 -75!342 -75|373 -96!373 -96|399 -126!399 -126|422 -162!422 -162|399 -198!399 -198|373 -228!373 -228|342 -250!342 -250|307 -258!616
+ -67[656 -67 673 -95!673 -95[690 -122 690 -163!690 -163[690 -203 673 -230!673 -230[656 -258 616 -258!616 -258[599 -258 584 -250!584 -250|555 -228!555 -228|530 -198!530 -198|507 -162!507 -162|530 -126!530 -126|555 -96!555 -96[568 -83 584
+ -75!584 -75[598 -67 616 -67"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#65BCEB" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2143" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.0099945068359375" d="0.19000244140625" ty="-19"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

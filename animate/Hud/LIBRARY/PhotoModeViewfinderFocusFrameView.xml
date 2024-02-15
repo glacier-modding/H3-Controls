@@ -1,0 +1,34 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PhotoModeViewfinderFocusFrameView" itemID="65c1ebd5-000008bb" linkageExportForAS="true" linkageIdentifier="PhotoModeViewfinderFocusFrameView" linkageClassName="PhotoModeViewfinderFocusFrameView" lastModified="1707207637">
+  <timeline>
+    <DOMTimeline name="PhotoModeViewfinderFocusFrameView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#28BEAA">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2071" name="scanframe_outer_mc" centerPoint3DX="210" centerPoint3DY="140">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#3AFAB8" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLib2_xfl_fla.ViewFinderCenterFullAnimMc_228" name="viewfinder_mc" centerPoint3DX="200" centerPoint3DY="130">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,27 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PieChartMask" itemID="65c20e4f-00001fb6" linkageExportForAS="true" linkageIdentifier="PieChartMask" linkageClassName="PieChartMask" lastModified="1707216463">
+  <timeline>
+    <DOMTimeline name="PieChartMask">
+      <layers>
+        <DOMLayer name="Layer 1" color="#7E45EF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FF0000"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-1500 -1500|-2 -1500!-2 -1500|-2 -1250!-2 -1250[-519 -1249 -884 -884!-884 -884[-1250 -518 -1250 0!-1250 0[-1250 518 -884 883!-884 883[-518 1250 0 1250!0 1250[518 1250 883 883!883 883[1250 518 1250 0!1250 0|1250 -12!1250 -12|1250 -22
+!1250 -22[1242 -526 883 -884!883 -884[519 -1248 1 -1250!1 -1250|1 -1500!1 -1500|1500 -1500!1500 -1500|1500 1500!1500 1500|-1500 1500!-1500 1500|-1500 -1500"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

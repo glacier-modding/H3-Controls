@@ -1,0 +1,77 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ChallengeNextScope" itemID="65c20f02-0000202c" linkageExportForAS="true" linkageIdentifier="ChallengeNextScope" linkageClassName="ChallengeNextScope" lastModified="1707216642">
+  <timeline>
+    <DOMTimeline name="ChallengeNextScope">
+      <layers>
+        <DOMLayer name="Layer 1" color="#73D984">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="iconsAll40x40View" name="icon" centerPoint3DX="20.5" centerPoint3DY="57.5">
+                  <matrix>
+                    <Matrix tx="0.5" ty="37.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#CC9497">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#D1D2D4"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-301 2641|112 2641!112 2641|-117 2390!-117 2390|35 2390!35 2390|320 2701!320 2701|35 3013!35 3013|-119 3013!-119 3013|112 2761!112 2761|-301 2761!-301 2761|-301 2641"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#6ED452">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1603" name="tileRedOverlay" centerPoint3DX="50" centerPoint3DY="136">
+                  <matrix>
+                    <Matrix a="0.66998291015625" d="1.64999389648438" ty="86"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#8646B6" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 11" name="tileBg" centerPoint3DX="50" centerPoint3DY="136">
+                  <matrix>
+                    <Matrix a="0.8699951171875" d="1.75" ty="86"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

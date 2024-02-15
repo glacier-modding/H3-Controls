@@ -1,0 +1,51 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1839" itemID="65c1d214-000026fa" symbolType="graphic" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 1839">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#7F017F"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!96 -168[122 -168 138 -186!138 -186[156 -202 156 -226!156 -226[156 -252 138 -268!138 -268[122 -286 96 -286!96 -286[72 -286 56 -268!56 -268[38 -252 38 -226!38 -226[38 -202 56 -186!56 -186[72 -168 96 -168!6 -452[100 -452 166 -386!166 -386
+[232 -320 232 -226!232 -226[232 -166 202 -114!202 -114[172 -62 120 -32!120 -32|120 42!120 42|-106 42!-106 42|-106 -32!-106 -32[-158 -62 -188 -114!-188 -114[-218 -166 -218 -226!-218 -226[-218 -320 -152 -386!-152 -386[-86 -452 6 -452!-480
+ -440|-480 200!-480 200|0 680!0 680|480 200!480 200|480 -440!480 -440|0 -680!0 -680|-480 -440!248 254|218 322!218 322|6 230!6 230|-204 322!-204 322|-234 254!-234 254|-86 190!-86 190|-234 124!-234 124|-204 56!-204 56|6 148!6 148|218 56
+!218 56|248 124!248 124|100 190!100 190|248 254!-82 -168[-58 -168 -40 -186!-40 -186[-24 -202 -24 -226!-24 -226[-24 -252 -40 -268!-40 -268[-58 -286 -82 -286!-82 -286[-108 -286 -124 -268!-124 -268[-142 -252 -142 -226!-142 -226[-142 -202
+ -124 -186!-124 -186[-108 -168 -82 -168"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#7F017F"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!-640 -800|640 -800!640 -800[800 -800 800 -640!800 -640|800 640!800 640[800 800 640 800!640 800|-640 800!-640 800[-800 800 -800 640!-800 640|-800 -640!-800 -640[-800 -800 -640 -800"/>
+                    <Edge fillStyle0="1" edges="
+!-640 -720|640 -720!640 -720[720 -720 720 -640!720 -640|720 640!720 640[720 720 640 720!640 720|-640 720!-640 720[-720 720 -720 640!-720 640|-720 -640!-720 -640[-720 -720 -640 -720"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

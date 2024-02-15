@@ -1,0 +1,109 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 65" itemID="65c1d208-00001649" lastModified="1707200103">
+  <timeline>
+    <DOMTimeline name="Symbol 65">
+      <layers>
+        <DOMLayer name="Layer 1" color="#E4E443">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 64" name="icon" centerPoint3DX="-10.5" centerPoint3DY="54.5">
+                  <matrix>
+                    <Matrix a="0.868423461914062" d="0.868423461914062" tx="-30.5" ty="34.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#AEB1BD">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 12" name="progressbar" centerPoint3DX="79.5" centerPoint3DY="39">
+                  <matrix>
+                    <Matrix tx="-8" ty="37"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#D3B46A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="BasicLib_xfl_fla.BarCodeLoaderBars_10" name="barcodes" centerPoint3DX="80.5" centerPoint3DY="45">
+                  <matrix>
+                    <Matrix a="0.988693237304688" d="0.8125" tx="-8" ty="37"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#D9B746">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="header" fontRenderingMode="standard" width="173.95" height="21.5" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-9" ty="15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#C255E2">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="BasicLib_xfl_fla.GlobalLoadIndicatorBgWhite_8" name="loadbarbg" centerPoint3DX="247" centerPoint3DY="34.5">
+                  <matrix>
+                    <Matrix tx="-53" ty="12"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#C344F4" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2" name="bg" centerPoint3DX="140" centerPoint3DY="33">
+                  <matrix>
+                    <Matrix a="0.805007934570312" tx="-60"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,31 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1623" itemID="65c1d214-0000264d" symbolType="graphic" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 1623">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-54 -483[-54 -458 -36 -442!-36 -442[-19 -424 5 -424!5 -424[29 -424 47 -442!47 -442[64 -458 64 -483!64 -483[64 -507 47 -524!47 -524[29 -542 5 -542!5 -542[-19 -542 -36 -524!-36 -524[-54 -507 -54 -483!-54 -208[-54 -183 -36 -166!-36 -166
+[-19 -150 5 -150!5 -150[29 -150 47 -166!47 -166[64 -183 64 -208!64 -208[64 -233 47 -250!47 -250[29 -267 5 -267!5 -267[-19 -267 -36 -250!-36 -250[-54 -233 -54 -208!-343 -382|-445 -594!-445 -594|455 -594!455 -594|353 -382!353 -382|-343
+ -382!495 -522|495 444!495 444[495 465 480 480!480 480[465 494 445 494!445 494|-435 494!-435 494[-455 494 -470 480!-470 480[-484 465 -484 444!-484 444|-484 -522!-484 -522|-384 -316!-384 -316|394 -316!394 -316|495 -522!261 157|-251 157
+!-251 157|-251 90!-251 90|261 90!261 90|261 157!337 36|-327 36!-327 36|-327 351!-327 351|337 351!337 351|337 36"/>
+                    <Edge fillStyle0="1" edges="
+!261 230|-251 230!-251 230|-251 297!-251 297|261 297!261 297|261 230"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

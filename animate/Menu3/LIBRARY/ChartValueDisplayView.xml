@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ChartValueDisplayView" itemID="65c20e50-00001fb7" linkageExportForAS="true" linkageIdentifier="ChartValueDisplayView" linkageClassName="ChartValueDisplayView" lastModified="1707216464">
+  <timeline>
+    <DOMTimeline name="ChartValueDisplayView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#EF4370" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label" fontRenderingMode="standard" width="147" height="86.25" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-73.5" ty="-43.1"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>0</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineSpacing="0" lineHeight="80.45" size="72" bitmapSize="1440" fillColor="#212121"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

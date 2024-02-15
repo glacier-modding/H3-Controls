@@ -1,0 +1,50 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1751" itemID="65c1d1f2-00000f49" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 1751">
+      <layers>
+        <DOMLayer name="Layer 1" color="#CBDA4B">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="title" fontRenderingMode="standard" width="718.95" height="33.4" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="32" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Lorem ipsum</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="8" lineHeight="31.3" size="28" bitmapSize="560" fillColor="#F1F1F2"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#E89078" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="description" fontRenderingMode="standard" width="718.95" height="261" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="32" ty="35"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra, lectus nec consequat tempor, enim diam malesuada nisi, a tincidunt felis libero in nulla. </characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="8" lineHeight="17.9" size="16" bitmapSize="320" fillColor="#F1F1F2"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

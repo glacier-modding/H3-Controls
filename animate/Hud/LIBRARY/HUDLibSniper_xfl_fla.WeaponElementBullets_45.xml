@@ -1,0 +1,540 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HUDLibSniper_xfl_fla.WeaponElementBullets_45" itemID="65c20ad4-00000908" lastModified="1707640887">
+  <timeline>
+    <DOMTimeline name="HUDLibSniper_xfl_fla.WeaponElementBullets_45">
+      <layers>
+        <DOMLayer name="Script Layer" color="#B00BFC">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#7E82E0">
+          <frames>
+            <DOMFrame index="0" duration="10" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletRegular_46" name="b_11" centerPoint3DX="-144.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-150"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="10" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="21" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletPiercing_47" name="b_11" centerPoint3DX="-144.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-150"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="10" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="32" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletExplosive_48" name="b_11" centerPoint3DX="-144.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-150"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#D2A370">
+          <frames>
+            <DOMFrame index="0" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletRegular_46" name="b_10" centerPoint3DX="-129.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-135"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="20" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletPiercing_47" name="b_10" centerPoint3DX="-129.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-135"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="31" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletExplosive_48" name="b_10" centerPoint3DX="-129.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-135"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#4D7BDD">
+          <frames>
+            <DOMFrame index="0" duration="8" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="8" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletRegular_46" name="b_9" centerPoint3DX="-114.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-120"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="8" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="19" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletPiercing_47" name="b_9" centerPoint3DX="-114.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-120"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="8" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="30" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletExplosive_48" name="b_9" centerPoint3DX="-114.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-120"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#9FB65A">
+          <frames>
+            <DOMFrame index="0" duration="7" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="7" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletRegular_46" name="b_8" centerPoint3DX="-99.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-105"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="7" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="18" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletPiercing_47" name="b_8" centerPoint3DX="-99.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-105"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="7" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="29" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletExplosive_48" name="b_8" centerPoint3DX="-99.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-105"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#F945FE">
+          <frames>
+            <DOMFrame index="0" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="6" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletRegular_46" name="b_7" centerPoint3DX="-84.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-90"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="17" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletPiercing_47" name="b_7" centerPoint3DX="-84.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-90"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="28" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletExplosive_48" name="b_7" centerPoint3DX="-84.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-90"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#CACC83">
+          <frames>
+            <DOMFrame index="0" duration="5" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="5" duration="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletRegular_46" name="b_6" centerPoint3DX="-69.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="5" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="16" duration="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletPiercing_47" name="b_6" centerPoint3DX="-69.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="5" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="27" duration="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletExplosive_48" name="b_6" centerPoint3DX="-69.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#B4F917">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletRegular_46" name="b_5" centerPoint3DX="-54.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-60"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="15" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletPiercing_47" name="b_5" centerPoint3DX="-54.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-60"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="26" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletExplosive_48" name="b_5" centerPoint3DX="-54.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-60"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 9" color="#EFFE11">
+          <frames>
+            <DOMFrame index="0" duration="3" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="3" duration="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletRegular_46" name="b_4" centerPoint3DX="-39.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="3" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="14" duration="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletPiercing_47" name="b_4" centerPoint3DX="-39.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="3" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="25" duration="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletExplosive_48" name="b_4" centerPoint3DX="-39.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 10" color="#34B4F4">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletRegular_46" name="b_3" centerPoint3DX="-24.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-30"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="13" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletPiercing_47" name="b_3" centerPoint3DX="-24.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-30"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="24" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletExplosive_48" name="b_3" centerPoint3DX="-24.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-30"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 11" color="#07EFCE">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletRegular_46" name="b_2" centerPoint3DX="-9.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="12" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletPiercing_47" name="b_2" centerPoint3DX="-9.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="23" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletExplosive_48" name="b_2" centerPoint3DX="-9.6" centerPoint3DY="51.75">
+                  <matrix>
+                    <Matrix tx="-15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 12" color="#59B9C0" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="11" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletRegular_46" name="b_1" centerPoint3DX="5.4" centerPoint3DY="51.75">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" duration="11" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletPiercing_47" name="b_1" centerPoint3DX="5.4" centerPoint3DY="51.75">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" duration="11" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.WeaponElementBulletExplosive_48" name="b_1" centerPoint3DX="5.4" centerPoint3DY="51.75">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

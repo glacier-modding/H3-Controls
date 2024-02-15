@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 466" itemID="65c1d208-0000169c" symbolType="graphic" lastModified="1707200103">
+  <timeline>
+    <DOMTimeline name="Symbol 466">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#F5F5F5"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!167 107[167 176 118 225!118 225[69 273 0 273!0 273[-68 273 -116 225!-116 225[-165 176 -165 107!-165 107[-165 38 -116 -10!-116 -10[-68 -59 0 -59!0 -59[69 -59 118 -10!118 -10[167 38 167 107!542 410|47 -563!47 -563[28 -600 0 -600!0 -600
+[-25 -600 -46 -563!-46 -563|-541 410!-541 410[-559 448 -542 475!-542 475[-525 502 -483 502!-483 502|484 502!484 502[527 502 544 475!544 475[561 448 542 410"/>
+                    <Edge fillStyle1="1" edges="
+!223 107[223 200 158 265!158 265[93 330 0 330!0 330[-91 330 -157 265!-157 265[-222 200 -222 107!-222 107[-222 15 -157 -50!-157 -50[-91 -116 0 -116!0 -116[93 -116 158 -50!158 -50[223 15 223 107!270 107[270 -5 192 -83!192 -83[112 -163 0
+ -163!0 -163[-110 -163 -190 -83!-190 -83[-269 -5 -269 107!-269 107[-269 219 -190 298!-190 298[-110 377 0 377!0 377[112 377 192 298!192 298[270 219 270 107"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

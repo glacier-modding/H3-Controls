@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ChallengeDetailsBody" itemID="65c20eb3-00001ff8" linkageExportForAS="true" linkageIdentifier="ChallengeDetailsBody" linkageClassName="ChallengeDetailsBody" lastModified="1707216563">
+  <timeline>
+    <DOMTimeline name="ChallengeDetailsBody">
+      <layers>
+        <DOMLayer name="Layer 1" color="#EF9EDA" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="description" fontRenderingMode="standard" width="686" height="302" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="2" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra, lectus nec nec nec consequat tempor, enim diam malesuada nisi, a tincidunt felis libero in nulla. </characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="4" lineHeight="20.1" size="18" bitmapSize="360" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,344 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2284" itemID="65c1d1f3-0000107c" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 2284">
+      <layers>
+        <DOMLayer name="Layer 1" color="#CBB90B">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2283" name="BTN10nsp" centerPoint3DX="354.7" centerPoint3DY="37.9">
+                  <matrix>
+                    <Matrix tx="318" ty="19"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#AE648C">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2281" name="BTN14nsp" centerPoint3DX="119.05" centerPoint3DY="37.9">
+                  <matrix>
+                    <Matrix tx="82.35" ty="18.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#C6AD56">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2279" name="BTN9nsp" centerPoint3DX="356.65" centerPoint3DY="50.15">
+                  <matrix>
+                    <Matrix tx="308.85" ty="33.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#728495">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2277" name="BTN13nsp" centerPoint3DX="139.6" centerPoint3DY="50.15">
+                  <matrix>
+                    <Matrix tx="91.7" ty="33.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#9059A2">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2275" name="BTN11nsp" centerPoint3DX="275.85" centerPoint3DY="187.3">
+                  <matrix>
+                    <Matrix tx="253.2" ty="166.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#C028D2">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2273" name="BTN15nsp" centerPoint3DX="112.25" centerPoint3DY="139.3">
+                  <matrix>
+                    <Matrix tx="89.55" ty="118.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#A2E3C1">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2275" name="BTN12nsp" centerPoint3DX="275.85" centerPoint3DY="187.3">
+                  <matrix>
+                    <Matrix tx="253.2" ty="166.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#F98DD2">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2273" name="BTN16nsp" centerPoint3DX="112.25" centerPoint3DY="139.3">
+                  <matrix>
+                    <Matrix tx="89.55" ty="118.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 9" color="#7AB6F7">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2271" name="BTN7nsp" centerPoint3DX="167.45" centerPoint3DY="184.1">
+                  <matrix>
+                    <Matrix tx="138.45" ty="159.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 10" color="#42E9BB">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2269" name="BTN6nsp" centerPoint3DX="167.45" centerPoint3DY="184.1">
+                  <matrix>
+                    <Matrix tx="138.45" ty="159.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 11" color="#5BA8A9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2267" name="BTN8nsp" centerPoint3DX="167.45" centerPoint3DY="184.1">
+                  <matrix>
+                    <Matrix tx="138.45" ty="159.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 12" color="#639EF5">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2265" name="BTN5nsp" centerPoint3DX="167.45" centerPoint3DY="184.1">
+                  <matrix>
+                    <Matrix tx="138.45" ty="159.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 13" color="#B1CB5C">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2263" name="BTN18nsp" centerPoint3DX="158.85" centerPoint3DY="91.3">
+                  <matrix>
+                    <Matrix tx="150.7" ty="83.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 14" color="#A5B78D">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2261" name="BTN17nsp" centerPoint3DX="258" centerPoint3DY="91.3">
+                  <matrix>
+                    <Matrix tx="249.85" ty="83.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 15" color="#DE9C1D">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2259" name="BTN3nsp" centerPoint3DX="289.85" centerPoint3DY="123.65">
+                  <matrix>
+                    <Matrix tx="275.35" ty="111.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 16" color="#8AB480">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2257" name="BTN1nsp" centerPoint3DX="320.9" centerPoint3DY="146.9">
+                  <matrix>
+                    <Matrix tx="306.4" ty="135"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 17" color="#C87BC8">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2255" name="BTN4nsp" centerPoint3DX="352.3" centerPoint3DY="123.25">
+                  <matrix>
+                    <Matrix tx="338" ty="111.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 18" color="#C5F4A5" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2253" name="BTN2nsp" centerPoint3DX="320.5" centerPoint3DY="100.45">
+                  <matrix>
+                    <Matrix tx="306.2" ty="88.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="10" blurY="10" distance="0" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

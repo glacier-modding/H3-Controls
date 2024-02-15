@@ -1,0 +1,32 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 398" itemID="65c1d1f2-00000bfc" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 398">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EBEBEB"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!494 -600|-494 -600!-494 -600[-538 -600 -569 -569!-569 -569[-600 -538 -600 -494!-600 -494|-600 494!-600 494[-600 538 -569 569!-569 569[-537 600 -494 600!-494 600|494 600!494 600[538 600 569 569!569 569[600 538 600 494!600 494|600 -494
+!600 -494[600 -538 569 -569!569 -569[538 -600 494 -600!-476 317|-326 409!-326 409|-201 207!-201 207|-476 39!-476 39|-476 -476!-476 -476|476 -476!476 -476|476 -362!476 -362|365 -431!365 -431|195 -152!195 -152|394 -31!394 -31|83 476!83
+ 476|-476 476!-476 476|-476 317"/>
+                    <Edge fillStyle1="1" edges="
+!111 -25[139 21 125 73!125 73[112 124 66 152!66 152[20 179 -32 166!-32 166[-83 153 -110 107!-110 107[-138 61 -124 10!-124 10[-111 -42 -65 -70!-65 -70[-19 -97 32 -84!32 -84[83 -71 111 -25"/>
+                    <Edge fillStyle0="1" edges="
+!-94 -116[-49 -143 -2 -144!-2 -144|-221 -332!-221 -332|-161 -49!-161 -49[-133 -94 -94 -116"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

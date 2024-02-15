@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="minimapBlipNpcInfectedView" itemID="65c20f90-00002088" linkageExportForAS="true" linkageIdentifier="minimapBlipNpcInfectedView" linkageClassName="minimapBlipNpcInfectedView" lastModified="1707216784">
+  <timeline>
+    <DOMTimeline name="minimapBlipNpcInfectedView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#CD3BA0" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3010" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,399 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ButtonPrompt_xfl_fla.ButtonGraphicsNSPro_13" itemID="65c20c6c-00000cca" sourceFlashFilepath="../ButtonPrompt/ButtonPrompt.xfl" sourceLibraryItemHRef="ButtonPrompt_xfl_fla.ButtonGraphicsNSPro_13" sourceLastModified="1707215980" lastModified="1707989167" sourceItemID="65c20c6c-00000cca">
+  <timeline>
+    <DOMTimeline name="ButtonPrompt_xfl_fla.ButtonGraphicsNSPro_13">
+      <layers>
+        <DOMLayer name="Labels_Layer" color="#9C59C6">
+          <frames>
+            <DOMFrame index="0" name="cancel" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" name="action-y" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" name="action-x" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="3" name="accept" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" name="dpadup" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="5" name="dpadright" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="6" name="dpaddown" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="7" name="dpadleft" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="8" name="rb" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" name="rt" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="10" name="rs" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="11" name="r" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="12" name="lb" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="13" name="lt" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="14" name="ls" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="15" name="l" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="16" name="back" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="17" name="select" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="18" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="20" name="dpadall" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="21" name="dpadupdown" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="22" name="dpadleftright" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="23" name="lt_rt" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="24" name="capture" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="25" name="home" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="26" name="assistant" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Script_Layer" color="#FFB4AD">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_3" color="#33B0A8" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN1nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN2nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN3nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN4nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN5nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN6nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN7nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN8nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN9nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN10nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="10" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN11nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN12nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="12" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN13nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN14nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN15nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN16nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="16" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN17nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN18nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="20" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN21nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="21" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN22nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN23nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="23" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN24nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-37" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="24" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN25nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="25" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN26nsp">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5" tx="-18" ty="-18"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="26" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

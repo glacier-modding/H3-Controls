@@ -1,0 +1,55 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1270" itemID="65c1d1f2-00000e15" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 1270">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" caps="none" joints="miter" miterLimit="10">
+                        <fill>
+                          <SolidColor color="#FFFFFF" alpha="0.8"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!12200 1310|16350 1310!16350 1310|16350 3746!15500 2630|12200 2630!12200 2630|12200 3686!12200 3686|12201 3686!12201 3686|12226 3699!12226 3699|12282 3728!12282 3728|12342 3759!12342 3759|12361 3769!12361 3769|13052 4129!13052 4129|13301
+ 4259!27560 7910|20520 7910!20520 7910|16570 7070!27560 3950|20520 3950!20520 3950|18260 3219!27560 1310|20520 1310!20520 1310|17638 2394!800 6590|7840 6590!7840 6590|9999 5531!800 7910|7840 7910!7840 7910|10541 5979!800 5270|7840 5270
+!7840 5270|10540 4690!800 1310|7840 1310!7840 1310|10759 2382!800 3950|7840 3950!7840 3950|10146 3219"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap1269.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="20" d="20" tx="434" ty="112"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!8680 2240|19680 2240!19680 2240|19680 8260!19680 8260|8680 8260!8680 8260|8680 2240"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

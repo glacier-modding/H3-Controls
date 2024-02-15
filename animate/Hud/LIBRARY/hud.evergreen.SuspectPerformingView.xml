@@ -1,0 +1,142 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="hud.evergreen.SuspectPerformingView" itemID="65c20aaa-000008de" linkageExportForAS="true" linkageIdentifier="hud.evergreen.SuspectPerformingView" linkageClassName="hud.evergreen.SuspectPerformingView" lastModified="1707215530">
+  <timeline>
+    <DOMTimeline name="hud.evergreen.SuspectPerformingView">
+      <layers>
+        <DOMLayer name="Labels Layer" color="#EC1F9E">
+          <frames>
+            <DOMFrame index="0" name="suspect" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="3" name="notsuspect" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="6" name="prime" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Script Layer" color="#5ACDDD">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#F4543A">
+          <frames>
+            <DOMFrame index="0" duration="9" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="distance_txt" fontRenderingMode="standard" width="346" height="23.85" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-173" ty="-46.7"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>XX m to Exit</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="22.35" size="20" bitmapSize="400" fillColor="#DDDDDD"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#13FD9C">
+          <frames>
+            <DOMFrame index="0" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.SuspectPerformingIcons_44" name="icon_mc" centerPoint3DX="16.45" centerPoint3DY="17.2">
+                  <matrix>
+                    <Matrix tx="-0.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.NotSuspectPerformingIcons_46" name="icon_mc" centerPoint3DX="16.4" centerPoint3DY="17.2">
+                  <matrix>
+                    <Matrix tx="-0.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="51" blueOffset="51" greenOffset="51"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.SuspectPerformingIconsPrime_48" name="icon_mc" centerPoint3DX="16.4" centerPoint3DY="17.6">
+                  <matrix>
+                    <Matrix tx="-0.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#30A5E6" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.SuspectPerformingBackSuspect_42" name="back_mc" centerPoint3DX="2.3" centerPoint3DY="10.65">
+                  <matrix>
+                    <Matrix tx="-24.6" ty="-20.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.SuspectPerformingBackNotSuspect_45" name="back_mc" centerPoint3DX="2.3" centerPoint3DY="10.65">
+                  <matrix>
+                    <Matrix tx="-24.6" ty="-20.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.SuspectPerformingBackPrime_47" name="back_mc" centerPoint3DX="1.85" centerPoint3DY="6.65">
+                  <matrix>
+                    <Matrix tx="-25.05" ty="-25.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

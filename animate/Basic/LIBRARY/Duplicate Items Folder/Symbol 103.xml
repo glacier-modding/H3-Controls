@@ -1,0 +1,26 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Duplicate Items Folder/Symbol 103" itemID="65cdd8d3-00002b13" sourceFlashFilepath="../ButtonPrompt/ButtonPrompt.xfl" sourceLibraryItemHRef="Symbol 103" sourceLastModified="1707200112" lastModified="1707200112" sourceItemID="65c1d20a-00001a05">
+  <timeline>
+    <DOMTimeline name="Symbol 103">
+      <layers>
+        <DOMLayer name="Layer_1" color="#4CFCAF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!350 126[350 271 247 373!247 373[145 476 0 476!0 476[-145 476 -248 373!-248 373[-350 271 -350 126!-350 126|-350 0!-350 0|350 0!350 0|350 126"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

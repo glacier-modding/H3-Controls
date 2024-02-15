@@ -1,0 +1,32 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2088" itemID="65c1d1f3-00001007" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 2088">
+      <layers>
+        <DOMLayer name="Layer 1" color="#AF837B" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!168 15|168 10!168 10[173 -46 132 -90!132 -90[84 -143 3 -143!3 -143[-82 -143 -133 -86!-133 -86[-169 -51 -169 1!-169 1|-167 27!-167 27[-159 77 -110 110!-110 110[-62 144 3 144!3 144[69 144 117 106!117 106[164 69 168 15"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!98 0|98 20!98 20|97 24!97 24|93 25!93 25|-89 25!-89 25|-92 24!-92 24|-94 20!-94 20|-94 0!-94 0|-92 -3!-92 -3|-89 -5!-89 -5|93 -5!93 -5|97 -3!97 -3|98 0!98 -50|98 -29!98 -29|97 -25!97 -25|93 -24!93 -24|-89 -24!-89 -24|-92 -25!-92 -25
+|-94 -29!-94 -29|-94 -50!-94 -50|-92 -53!-92 -53|-89 -55!-89 -55|93 -55!93 -55|97 -53!97 -53|98 -50!-94 69|-94 49!-94 49|-92 46!-92 46|-89 44!-89 44|93 44!93 44|97 46!97 46|98 49!98 49|98 69!98 69|97 73!97 73|93 74!93 74|-89 74!-89 74
+|-92 73!-92 73|-94 69"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

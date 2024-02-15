@@ -1,0 +1,24 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="line" itemID="65c20a77-000008aa" linkageExportForAS="true" linkageIdentifier="line" linkageClassName="line" lastModified="1707215479">
+  <timeline>
+    <DOMTimeline name="line">
+      <layers>
+        <DOMLayer name="Layer 1" color="#AE7A77" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 375" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix d="0.0099945068359375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

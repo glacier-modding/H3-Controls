@@ -1,0 +1,88 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ActionRewardsDetailView" itemID="65c20f2a-00002046" linkageExportForAS="true" linkageIdentifier="ActionRewardsDetailView" linkageClassName="ActionRewardsDetailView" lastModified="1707216682">
+  <timeline>
+    <DOMTimeline name="ActionRewardsDetailView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#AD15BE">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2382" name="headerMc" centerPoint3DX="513" centerPoint3DY="85.5">
+                  <matrix>
+                    <Matrix ty="56"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#997D7F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2379" name="actionCategory1Mc" centerPoint3DX="164" centerPoint3DY="163">
+                  <matrix>
+                    <Matrix ty="145"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#60A3A9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2379" name="actionCategory3Mc" centerPoint3DX="512" centerPoint3DY="429.9">
+                  <matrix>
+                    <Matrix tx="348" ty="411.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#E7E268">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2379" name="actionCategory2Mc" centerPoint3DX="512" centerPoint3DY="163">
+                  <matrix>
+                    <Matrix tx="348" ty="145"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#AAF07E" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2379" name="actionCategory4Mc" centerPoint3DX="860" centerPoint3DY="163">
+                  <matrix>
+                    <Matrix tx="696" ty="145"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

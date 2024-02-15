@@ -1,0 +1,747 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="hud.evergreen.CampaignActivatorPageView" itemID="65c20aae-000008e2" linkageExportForAS="true" linkageIdentifier="hud.evergreen.CampaignActivatorPageView" linkageClassName="hud.evergreen.CampaignActivatorPageView" lastModified="1707215534">
+  <timeline>
+    <DOMTimeline name="hud.evergreen.CampaignActivatorPageView">
+      <layers>
+        <DOMLayer name="Script Layer" color="#DECA6A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#B2DA38">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 232" name="iconHolder2_mc" centerPoint3DX="289.5" centerPoint3DY="417.6">
+                  <matrix>
+                    <Matrix tx="289.5" ty="417.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.0703125" redMultiplier="0" blueMultiplier="0" greenMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#E0ECDB">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="labelCampProgress_txt" fontRenderingMode="standard" width="309" height="13.5" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="37" ty="37"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>CAMPAIGN PROGRESS **</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="13.35" bitmapSize="240"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#D3DD14">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="objdesc_txt" fontRenderingMode="standard" width="326" height="138" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="39" ty="304.7"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel pharetra diam. Sed at aliquam dui, a accumsan odio. Pellentesque sagittis in turpis vitae tempor. Nullam ornare, mauris vitae tincidunt mattis, ex est lacinia eros, vel congue libero felis eu mauris. Mauris dignissim vel neque non volutpat.</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="justify" aliasText="false" rotation="true" lineSpacing="0" lineHeight="15.6" size="14" bitmapSize="280"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#EF9457">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="flavour7_mc" centerPoint3DX="196.9" centerPoint3DY="480.35">
+                  <matrix>
+                    <Matrix tx="40" ty="470"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#65D4C8">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="flavour6_mc" centerPoint3DX="196.9" centerPoint3DY="456.35">
+                  <matrix>
+                    <Matrix tx="40" ty="446"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#A5ACD9">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="flavour5_mc" centerPoint3DX="196.9" centerPoint3DY="432.35">
+                  <matrix>
+                    <Matrix tx="40" ty="422"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#DFFEFC">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="flavour4_mc" centerPoint3DX="196.9" centerPoint3DY="408.35">
+                  <matrix>
+                    <Matrix tx="40" ty="398"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 9" color="#D894D6">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="flavour3_mc" centerPoint3DX="196.9" centerPoint3DY="384.35">
+                  <matrix>
+                    <Matrix tx="40" ty="374"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 10" color="#B8F317">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="flavour2_mc" centerPoint3DX="196.9" centerPoint3DY="360.35">
+                  <matrix>
+                    <Matrix tx="40" ty="350"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 11" color="#A1A7AF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="flavour1_mc" centerPoint3DX="196.9" centerPoint3DY="336.35">
+                  <matrix>
+                    <Matrix tx="40" ty="326"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.CampaignActivator_MiniProgress_11" name="miniProgress_mc" centerPoint3DX="137.85" centerPoint3DY="83.75">
+                  <matrix>
+                    <Matrix tx="38" ty="74"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 12" color="#F9C990">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="flavour0_mc" centerPoint3DX="196.9" centerPoint3DY="312.35">
+                  <matrix>
+                    <Matrix tx="40" ty="302"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="territory7_mc" centerPoint3DX="196.9" centerPoint3DY="481.35">
+                  <matrix>
+                    <Matrix tx="40" ty="471"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 13" color="#E05A7F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="labelFlavours_txt" fontRenderingMode="standard" width="326" height="14.3" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="37" ty="282.5"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>PAYOUT OBJECTIVE FLAVOURS ***</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="13.35" bitmapSize="240"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="labelDestinations_txt" fontRenderingMode="standard" width="326" height="14.3" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="37" ty="284"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>DESTINATIONS  ***</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="13.35" bitmapSize="240"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 14" color="#D0B8F7">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1678" name="dividerTop2_mc" centerPoint3DX="199" centerPoint3DY="276.65">
+                  <matrix>
+                    <Matrix tx="35" ty="276.15"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1678" name="dividerTop2_mc" centerPoint3DX="199" centerPoint3DY="277.5">
+                  <matrix>
+                    <Matrix tx="35" ty="277"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 15" color="#A80BFE">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1690" name="mapDots_mc" centerPoint3DX="374.55" centerPoint3DY="254.5">
+                  <matrix>
+                    <Matrix a="0.827392578125" d="0.827392578125" tx="219.45" ty="189.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 16" color="#2686F1">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="crimeType_txt" fontRenderingMode="standard" width="326" height="26.25" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="36" ty="249"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>BIG PHARMA</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="24.55" size="22" bitmapSize="440"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 17" color="#B917E6">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="labelCrimeType_txt" fontRenderingMode="standard" width="326" height="14.3" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="37" ty="239"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>CRIME TYPE</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="13.35" bitmapSize="240"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 18" color="#D8F09D">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="leader_txt" fontRenderingMode="standard" width="326" height="45.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="36" ty="42"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Insert Leader Name&#xA;&#xA; Here</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="42.45" size="38" bitmapSize="760"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 19" color="#C71AAE">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="labelLeader_txt" fontRenderingMode="standard" width="326" height="14.3" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="39" ty="34"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>LEADER CODENAME</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="13.35" bitmapSize="240"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1687" name="map_mc" centerPoint3DX="590.2" centerPoint3DY="378">
+                  <matrix>
+                    <Matrix a="0.40069580078125" d="0.400482177734375" tx="199.65" ty="178.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 20" color="#B46D6F">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1678" name="dividerTop_mc" centerPoint3DX="201" centerPoint3DY="83.5">
+                  <matrix>
+                    <Matrix tx="37" ty="83"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1678" name="dividerTop_mc" centerPoint3DX="201" centerPoint3DY="85.5">
+                  <matrix>
+                    <Matrix tx="37" ty="85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 21" color="#D581BE">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="territory6_mc" centerPoint3DX="196.9" centerPoint3DY="457.35">
+                  <matrix>
+                    <Matrix tx="40" ty="447"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 22" color="#9488A1">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="territory5_mc" centerPoint3DX="196.9" centerPoint3DY="433.35">
+                  <matrix>
+                    <Matrix tx="40" ty="423"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 23" color="#E9C4C2">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="territory4_mc" centerPoint3DX="196.9" centerPoint3DY="409.35">
+                  <matrix>
+                    <Matrix tx="40" ty="399"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 24" color="#C664CE">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="territory3_mc" centerPoint3DX="196.9" centerPoint3DY="385.35">
+                  <matrix>
+                    <Matrix tx="40" ty="375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 25" color="#B422DF">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="territory2_mc" centerPoint3DX="196.9" centerPoint3DY="361.35">
+                  <matrix>
+                    <Matrix tx="40" ty="351"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 26" color="#66EBD0">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1675" name="notAvailable_mc" centerPoint3DX="425" centerPoint3DY="210.85">
+                  <matrix>
+                    <Matrix tx="200" ty="173.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 27" color="#58E8FA">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="crimeSector_txt" fontRenderingMode="standard" width="248" height="83" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="76" ty="280"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>INSERT CRIME &#xA;SECTOR HERE</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="22.35" size="20" bitmapSize="400" fillColor="#DDDDDD"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="territory1_mc" centerPoint3DX="196.9" centerPoint3DY="337.35">
+                  <matrix>
+                    <Matrix tx="40" ty="327"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 28" color="#F5877B">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 232" name="iconHolder_mc" centerPoint3DX="200" centerPoint3DY="173.05">
+                  <matrix>
+                    <Matrix tx="200" ty="173.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="221" blueOffset="221" greenOffset="221"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 29" color="#E59293" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="leader_txt" fontRenderingMode="standard" width="346" height="131.35" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="27" ty="329.85"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>INSERT LEADER CODENAME&#xA;HERE</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="42.45" size="38" bitmapSize="760" fillColor="#DDDDDD"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="biography_txt" fontRenderingMode="standard" width="326" height="138" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="39" ty="90.7"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel pharetra diam. Sed at aliquam dui, a accumsan odio. Pellentesque sagittis in turpis vitae tempor. Nullam ornare, mauris vitae tincidunt mattis, ex est lacinia eros, vel congue libero felis eu mauris. Mauris dignissim vel neque non volutpat.</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="justify" aliasText="false" rotation="true" lineSpacing="0" lineHeight="15.6" size="14" bitmapSize="280"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1685" name="territory0_mc" centerPoint3DX="196.9" centerPoint3DY="313.35">
+                  <matrix>
+                    <Matrix tx="40" ty="303"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 428" itemID="65c1d208-00001681" symbolType="graphic" lastModified="1707200103">
+  <timeline>
+    <DOMTimeline name="Symbol 428">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EBEBEB"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!51 431|51 290!51 290|-52 290!-52 290|-52 431!-52 431[-201 414 -308 307!-308 307[-415 200 -432 51!-432 51|-291 51!-291 51|-291 -52!-291 -52|-432 -52!-432 -52[-415 -201 -308 -308!-308 -308[-201 -415 -52 -432!-52 -432|-52 -291!-52 -291
+|51 -291!51 -291|51 -432!51 -432[200 -415 307 -308!307 -308[414 -201 431 -52!431 -52|290 -52!290 -52|290 51!290 51|431 51!431 51[414 200 307 307!307 307[200 414 51 431!600 -52|536 -52!536 -52[517 -244 380 -381!380 -381[244 -518 51 -536
+!51 -536|51 -600!51 -600|-52 -600!-52 -600|-52 -536!-52 -536[-244 -518 -381 -381!-381 -381[-518 -244 -536 -52!-536 -52|-600 -52!-600 -52|-600 51!-600 51|-536 51!-536 51[-518 244 -381 380!-381 380[-244 517 -52 536!-52 536|-52 600!-52 600
+|51 600!51 600|51 536!51 536[244 517 380 380!380 380[517 244 536 51!536 51|600 51!600 51|600 -52"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

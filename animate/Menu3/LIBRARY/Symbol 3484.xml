@@ -1,0 +1,28 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 3484" itemID="65c1d1f3-00001278" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 3484">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#BDBDBD"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!-600 81|-593 90!-593 90|-574 90!-574 90|-574 80!-574 80|-549 80!-549 80|-535 90!-535 90|1 90!1 90|63 67!63 67|95 67!95 67|95 62!95 62|107 62!107 62|107 67!107 67|129 67!129 67|129 -67!129 -67|107 -67!107 -67|107 -62!107 -62|95 -62!95
+ -62|95 -67!95 -67|63 -67!63 -67|1 -90!1 -90|-535 -90!-535 -90|-549 -80!-549 -80|-574 -80!-574 -80|-574 -90!-574 -90|-593 -90!-593 -90|-600 -82!-600 -82|-600 81!160 67|160 62!160 62|389 62!389 62|545 41!545 41|572 31!572 31|591 19!591
+ 19|600 3!600 3|600 -4!600 -4|591 -20!591 -20|572 -32!572 -32|545 -42!545 -42|389 -62!389 -62|160 -62!160 -62|160 -67!160 -67|139 -67!139 -67|139 67!139 67|160 67"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

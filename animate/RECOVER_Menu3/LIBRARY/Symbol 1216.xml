@@ -1,0 +1,45 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1216" itemID="65c1d1f2-00000dfb" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 1216">
+      <layers>
+        <DOMLayer name="Layer 1" color="#DF5268">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="levelTxt" fontRenderingMode="standard" width="196" height="55.1" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-98" ty="-27.55"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>0</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="51.4" size="46" bitmapSize="920" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#DE35DF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1214" name="levelBg" centerPoint3DX="75" centerPoint3DY="18">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.109375"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

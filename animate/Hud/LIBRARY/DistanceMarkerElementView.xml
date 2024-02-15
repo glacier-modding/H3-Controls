@@ -1,0 +1,32 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="DistanceMarkerElementView" itemID="65c20a64-00000897" linkageExportForAS="true" linkageIdentifier="DistanceMarkerElementView" linkageClassName="DistanceMarkerElementView" lastModified="1707215460">
+  <timeline>
+    <DOMTimeline name="DistanceMarkerElementView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#D17092" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="txtLabel" fontRenderingMode="standard" width="81" height="28.75" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-40.5" ty="-14.35"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>999</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineSpacing="0" lineHeight="26.85" size="24" bitmapSize="480" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="2" blurY="2" distance="2" strength="0.4"/>
+                  </filters>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

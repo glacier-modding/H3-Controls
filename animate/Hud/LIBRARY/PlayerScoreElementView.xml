@@ -1,0 +1,64 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PlayerScoreElementView" itemID="65c1ebc3-000008b5" linkageExportForAS="true" linkageIdentifier="PlayerScoreElementView" linkageClassName="PlayerScoreElementView" lastModified="1707207619">
+  <timeline>
+    <DOMTimeline name="PlayerScoreElementView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#3CDB70">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="nameLabel" fontRenderingMode="standard" width="116" height="22" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-198" ty="-11"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>name</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" lineSpacing="0" lineHeight="20.1" size="18" bitmapSize="360" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#BECFFA">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 338" name="scoreMc" centerPoint3DX="-10" centerPoint3DY="27.75">
+                  <matrix>
+                    <Matrix tx="-40"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#EB53C7" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 336" name="bgMc" centerPoint3DX="50" centerPoint3DY="25">
+                  <matrix>
+                    <Matrix a="2.14990234375" d="0.5" ty="-25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="255" blueOffset="60"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

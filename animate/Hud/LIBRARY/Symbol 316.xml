@@ -1,0 +1,48 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 316" itemID="65c1d213-0000232d" symbolType="graphic" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 316">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!283 -211|-34 248!-34 248[-43 262 -60 263!-60 263[-77 265 -88 253!-88 253|-279 59!-279 59|-286 45!-286 45[-286 36 -279 32!-279 32|-221 -27!-221 -27|-207 -32!-207 -32|-193 -27!-193 -27|-74 92!-74 92|182 -279!182 -279|193 -288!193 -288
+|210 -284!210 -284|277 -238!277 -238|286 -225!286 -225|283 -211"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!319 -420|-319 -420!-319 -420[-360 -420 -391 -391!-391 -391[-420 -360 -420 -319!-420 -319|-420 319!-420 319[-420 361 -391 391!-391 391[-360 420 -319 420!-319 420|319 420!319 420[361 420 391 391!391 391[420 361 420 319!420 319|420 -319
+!420 -319[420 -360 391 -391!391 -391[361 -420 319 -420!319 -370[341 -370 354 -354!354 -354[370 -341 370 -319!370 -319|370 319!370 319[370 341 354 355!354 355[341 370 319 370!319 370|-319 370!-319 370[-341 370 -354 355!-354 355[-370 341
+ -370 319!-370 319|-370 -319!-370 -319[-370 -341 -354 -354!-354 -354[-341 -370 -319 -370!-319 -370|319 -370"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

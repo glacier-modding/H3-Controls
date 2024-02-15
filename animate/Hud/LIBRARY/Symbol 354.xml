@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 354" itemID="65c1d213-00002345" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 354">
+      <layers>
+        <DOMLayer name="Layer 1" color="#93BC6A" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap352.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="11.99951171875" d="11.99951171875" tx="-17" ty="-27"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-340 -540|524 -540!524 -540|524 324!524 324|-340 324!-340 324|-340 -540"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

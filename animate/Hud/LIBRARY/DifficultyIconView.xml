@@ -1,0 +1,85 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="DifficultyIconView" itemID="65c20a92-000008c6" linkageExportForAS="true" linkageClassName="DifficultyIconView" lastModified="1707628178">
+  <timeline>
+    <DOMTimeline name="DifficultyIconView">
+      <layers>
+        <DOMLayer name="Labels Layer" color="#76DCE5">
+          <frames>
+            <DOMFrame index="0" name="difficultyeasy" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" name="difficultynormal" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" name="difficultyhard" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Script Layer" color="#2FA9DB">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#59CFF8">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="ICON_50x50_Difficulty_Easy">
+                  <matrix>
+                    <Matrix tx="-26" ty="-26"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="ICON_50x50_Difficulty_Normal">
+                  <matrix>
+                    <Matrix tx="-26" ty="-26"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="ICON_50x50_Difficulty_Hard">
+                  <matrix>
+                    <Matrix tx="-26" ty="-26"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#A3AE5F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 295" name="bg" centerPoint3DX="26" centerPoint3DY="26">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,26 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 360" itemID="65c1d213-00002348" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 360">
+      <layers>
+        <DOMLayer name="Layer 1" color="#96B649" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#464646"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!260 0|-4 260!-4 260|-87 179!-87 179|37 58!37 58|-260 58!-260 58|-260 -58!-260 -58|37 -58!37 -58|-87 -179!-87 -179|-4 -260!-4 -260|260 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

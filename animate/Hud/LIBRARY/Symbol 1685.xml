@@ -1,0 +1,45 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1685" itemID="65c1d214-0000266b" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 1685">
+      <layers>
+        <DOMLayer name="Layer 1" color="#1BBED2">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 232" name="iconHolder_mc" centerPoint3DX="11" centerPoint3DY="11">
+                  <matrix>
+                    <Matrix tx="11" ty="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#AA5AE5" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="territoryName_txt" fontRenderingMode="standard" width="298.85" height="16.7" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="24" ty="3"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Text goes here</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="10" lineHeight="15.6" size="14" bitmapSize="280"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

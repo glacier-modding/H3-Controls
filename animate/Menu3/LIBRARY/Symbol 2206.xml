@@ -1,0 +1,49 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2206" itemID="65c1d1f3-0000104a" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 2206">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-136 -172|22 -172!22 -172|67 -165!67 -165|102 -146!102 -146|124 -116!124 -116[132 -98 132 -77!132 -77[132 -46 117 -25!117 -25[102 -3 69 6!69 6|69 8!69 8[93 14 106 30!106 30[118 46 122 77!122 77|124 111!124 111|126 138!126 138|130 158
+!130 158|137 168!137 168|137 171!137 171|70 171!70 171|65 162!65 162|61 144!61 144|59 119!59 119|57 92!57 92[55 63 39 48!39 48[23 33 -10 33!-10 33|-66 33!-66 33|-66 171!-66 171|-136 171!-136 171|-136 -172!-66 -20|8 -20!8 -20[37 -20 51
+ -34!51 -34[65 -47 65 -68!65 -68[65 -89 51 -102!51 -102[38 -116 10 -116!10 -116|-66 -116!-66 -116|-66 -20"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!438 -669[685 -395 747 -107!747 -107[787 84 772 574!772 574[768 715 724 1034!724 1034|722 1039!722 1039|717 1042!717 1042|712 1042!712 1042[90 899 -529 875!-529 875|-535 873!-535 873|-539 867!-539 867|-538 861!-538 861[-527 839 -527 812
+!-527 812|-527 -668!-527 -668[-527 -711 -557 -742!-557 -742|-558 -744!-558 -744[-590 -773 -632 -773!-632 -773|-767 -773!-767 -773|-774 -776!-774 -776|-777 -783!-777 -783|-777 -1031!-777 -1031|-774 -1038!-774 -1038|-767 -1041!-767 -1041
+|-643 -1041!-643 -1041|-311 -1011!-311 -1011[202 -929 438 -669"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

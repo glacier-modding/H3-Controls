@@ -1,0 +1,305 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="AIIndicatorElementView" itemID="65c20a84-000008b7" linkageExportForAS="true" linkageIdentifier="AIIndicatorElementView" linkageClassName="AIIndicatorElementView" lastModified="1707215492">
+  <timeline>
+    <DOMTimeline name="AIIndicatorElementView">
+      <layers>
+        <DOMLayer name="Labels Layer" color="#DAA9F2">
+          <frames>
+            <DOMFrame index="0" duration="10" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="10" name="distracted" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="11" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="20" name="attentive" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="21" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="30" name="emptythreat" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="31" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="40" name="curious" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="41" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="50" name="alert" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="51" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="60" name="unconscious" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="61" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="70" name="escort" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="71" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="80" name="fleeing" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Script Layer" color="#D53683">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#C715EA">
+          <frames>
+            <DOMFrame index="0" duration="90" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1055" name="infectedIcon" centerPoint3DX="24.05" centerPoint3DY="52">
+                  <matrix>
+                    <Matrix a="0.41998291015625" d="0.41998291015625" tx="0.05" ty="28"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#24EC7E">
+          <frames>
+            <DOMFrame index="0" duration="30" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1052" name="ring_mc" centerPoint3DX="15" centerPoint3DY="15">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="30" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1052" name="ring_mc" centerPoint3DX="15" centerPoint3DY="15">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="40" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1052" name="ring_mc" centerPoint3DX="15" centerPoint3DY="15">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="50" duration="40" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1052" name="ring_mc" centerPoint3DX="15" centerPoint3DY="15">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#AF8053">
+          <frames>
+            <DOMFrame index="0" duration="90" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1049" name="anim_mc" centerPoint3DX="15" centerPoint3DY="15">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#4FA5F7">
+          <frames>
+            <DOMFrame index="0" duration="40" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="40" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1058" centerPoint3DX="-5.5" centerPoint3DY="-32.8">
+                  <matrix>
+                    <Matrix tx="-16" ty="-43.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="50" duration="40" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#FA8AB4">
+          <frames>
+            <DOMFrame index="0" duration="20" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="20" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.AIIndicatorSliceAnimation_7" name="sliceanimation" centerPoint3DX="10" centerPoint3DY="10">
+                  <matrix>
+                    <Matrix a="0.999984741210938" d="0.999984741210938"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="30" duration="50" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="80" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1137" centerPoint3DX="6.5" centerPoint3DY="7">
+                  <matrix>
+                    <Matrix tx="-0.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#F5FC94" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="10" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="10" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1058" centerPoint3DX="-5.5" centerPoint3DY="-5.5">
+                  <matrix>
+                    <Matrix tx="-16" ty="-16"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1061" centerPoint3DX="8" centerPoint3DY="8">
+                  <matrix>
+                    <Matrix a="1.375" d="1.375"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="255" greenOffset="201"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="30" duration="10" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="40" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibSniper_xfl_fla.ThreatMarkersView_8" centerPoint3DX="24" centerPoint3DY="28.5">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="50" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1127" centerPoint3DY="-2.7">
+                  <matrix>
+                    <Matrix tx="-2.2" ty="-11.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="60" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1131" name="uncon_mc" centerPoint3DX="16.25" centerPoint3DY="16.25">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="70" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1134" centerPoint3DX="10" centerPoint3DY="10">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="80" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1061" centerPoint3DX="8" centerPoint3DY="8">
+                  <matrix>
+                    <Matrix a="1.37492370605469" d="1.37492370605469"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="250" blueOffset="14"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="minimapBlipPlayerView" itemID="65c20f7d-0000207c" linkageExportForAS="true" linkageIdentifier="minimapBlipPlayerView" linkageClassName="minimapBlipPlayerView" lastModified="1707216765">
+  <timeline>
+    <DOMTimeline name="minimapBlipPlayerView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#FA27D1" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap2927.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="20" d="20" tx="-40" ty="-40"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-800 -800|800 -800!800 -800|800 800!800 800|-800 800!-800 800|-800 -800"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

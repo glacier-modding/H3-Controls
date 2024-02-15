@@ -1,0 +1,31 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 170" itemID="65c1d1f2-00000b4c" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 170">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-620 -760|620 -760!620 -760[760 -760 760 -620!760 -620|760 619!760 619[760 759 620 759!620 759|-620 759!-620 759[-760 759 -760 619!-760 619|-760 -620!-760 -620[-760 -760 -620 -760"/>
+                    <Edge fillStyle0="1" edges="!558 170|553 175!553 175[516 177 491 204!491 204[464 231 464 269!464 269[464 291 472 315!472 315[483 341 496 353!496 353|543 353!543 353|554 357!554 357|558 368!558 368|558 543!558 543|554 553!554 553|543 558!543 558|234 558!234 558|224
+ 553!224 553|220 543!220 543|220 368!220 368|224 357!224 357[228 353 234 353!234 353|282 353!282 353[296 341 304 315!304 315[312 292 312 269!312 269[312 230 286 202!286 202[258 175 219 175!219 175|175 175!175 175|175 -73!175 -73|219 -73
+!219 -73[258 -73 286 -100!286 -100[312 -128 312 -167!312 -167[313 -286 241 -416!241 -416|169 -522!169 -522|206 -558!206 -558|261 -524!261 -524|382 -424!382 -424[558 -253 558 -73!558 -73|558 170"/>
+                    <Edge fillStyle1="1" edges="
+!129 174|129 -73!129 -73|-558 -73!-558 -73|-558 174!-558 174|129 174"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,28 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1047" itemID="65c1d1f2-00000da8" scaleGridLeft="-25" scaleGridRight="25" scaleGridTop="-25" scaleGridBottom="25" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 1047">
+      <layers>
+        <DOMLayer name="Layer 1" color="#A2C3F6" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#393939"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!1020 1000|1020 501!1020 501|1020 -501!1020 -501|1019 -1000!1019 -1000|1013 -1014!1013 -1014[1007 -1020 999 -1020!999 -1020|501 -1020!501 -1020|-501 -1020!-501 -1020|-1000 -1020!-1000 -1020|-1014 -1014!-1014 -1014|-1020 -1000!-1020 -1000
+|-1020 -501!-1020 -501|-1020 501!-1020 501|-1020 1000!-1020 1000|-1014 1014!-1014 1014|-1000 1020!-1000 1020|-501 1020!-501 1020|501 1020!501 1020|1000 1020!1000 1020|1014 1014!1014 1014|1020 1000!980 980|501 980!501 980|-501 980!-501
+ 980|-980 980!-980 980|-980 501!-980 501|-980 -501!-980 -501|-980 -980!-980 -980|-501 -980!-501 -980|501 -980!501 -980|979 -980!979 -980|979 -501!979 -501|980 501!980 501|980 980"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

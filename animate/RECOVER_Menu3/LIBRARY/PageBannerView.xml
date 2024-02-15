@@ -1,0 +1,87 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PageBannerView" itemID="65c20ef7-00002025" linkageExportForAS="true" linkageIdentifier="PageBannerView" linkageClassName="PageBannerView" lastModified="1707216631">
+  <timeline>
+    <DOMTimeline name="PageBannerView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#8FC137">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="title" fontRenderingMode="standard" width="1756.2" height="57.25" isSelectable="false" renderAsHTML="true" lineType="multiline no wrap">
+                  <matrix>
+                    <Matrix a="0.999893188476562" tx="2" ty="-25.4"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#677DC3">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1810" name="bg" centerPoint3DX="930" centerPoint3DY="50">
+                  <matrix>
+                    <Matrix a="28.8001403808594" d="1.17999267578125" tx="880"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#859180">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.WhiteSelect_38" name="bgBorder" centerPoint3DX="930" centerPoint3DY="50">
+                  <matrix>
+                    <Matrix a="28.900390625" d="1.27999877929688" tx="880"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#E0BF45" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0" b="0.0975799560546875" c="-1.76300048828125" d="0" tx="878.5"/>
+                        </matrix>
+                        <GradientEntry alpha="0" ratio="0"/>
+                        <GradientEntry ratio="0.345098039215686"/>
+                        <GradientEntry ratio="0.615686274509804"/>
+                        <GradientEntry alpha="0" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!46500 -1600|46500 1600!46500 1600|-11300 1600!-11300 1600|-11300 -1600!-11300 -1600|46500 -1600"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

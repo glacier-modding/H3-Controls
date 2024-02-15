@@ -1,0 +1,50 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1198" itemID="65c1d1f2-00000df3" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 1198">
+      <layers>
+        <DOMLayer name="Layer 1" color="#EAA80C">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="globalTxt" fontRenderingMode="standard" width="676" height="23.95" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="4" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>LEADERBOARD GLOBAL</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="right" aliasText="false" rotation="true" letterSpacing="0.2" lineSpacing="0" lineHeight="20.1" size="18" bitmapSize="360" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#E7DD37" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="friendsTxt" fontRenderingMode="standard" width="676" height="23.95" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>LEADERBOARD FRIENDS</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.2" lineSpacing="0" lineHeight="20.1" size="18" bitmapSize="360" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

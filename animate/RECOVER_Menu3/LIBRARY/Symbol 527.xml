@@ -1,0 +1,40 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 527" itemID="65c1d1f2-00000c15" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 527">
+      <layers>
+        <DOMLayer name="Layer 1" color="#8DE1ED">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 526" centerPoint3DX="53.75" centerPoint3DY="22.55">
+                  <matrix>
+                    <Matrix a="0.999984741210938" d="0.999984741210938" tx="30"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#B380AC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 526" centerPoint3DX="-6.25" centerPoint3DY="22.55">
+                  <matrix>
+                    <Matrix a="0.999984741210938" d="0.999984741210938" tx="-30"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,34 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="MapReticleView" itemID="65c20f1c-0000203d" linkageExportForAS="true" linkageIdentifier="MapReticleView" linkageClassName="MapReticleView" lastModified="1707216668">
+  <timeline>
+    <DOMTimeline name="MapReticleView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#B7F5ED">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1941" name="reticle" centerPoint3DX="36" centerPoint3DY="36">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#D54B62" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.MapReticleFrame_303" name="finder" centerPoint3DX="25" centerPoint3DY="25">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

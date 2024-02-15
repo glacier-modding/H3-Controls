@@ -1,0 +1,103 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="SplashHintGlobalHintView" itemID="65c20f22-00002041" linkageExportForAS="true" linkageIdentifier="SplashHintGlobalHintView" linkageClassName="SplashHintGlobalHintView" lastModified="1707216674">
+  <timeline>
+    <DOMTimeline name="SplashHintGlobalHintView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#17FFB2">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="description" fontRenderingMode="standard" width="846" height="120.4" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="228" ty="130.2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Sdescription</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineHeight="26.85" size="24" bitmapSize="480" fillColor="#EBEBEB"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#EC6BB8">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="header" fontRenderingMode="standard" width="846" height="31" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="227" ty="26.05"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>header</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" lineSpacing="0" lineHeight="26.85" size="24" bitmapSize="480" fillColor="#EBEBEB"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#B0B0FD">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="title" fontRenderingMode="standard" width="846" height="73" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="228" ty="52.75"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>titlge</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="2" lineSpacing="0" lineHeight="67" size="60" bitmapSize="1200" fillColor="#EBEBEB"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#EFDF2E">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2003" name="icon" centerPoint3DX="213" centerPoint3DY="109.8">
+                  <matrix>
+                    <Matrix tx="173" ty="69.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#AE1BC1" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1956" name="line" centerPoint3DX="551.5" centerPoint3DY="125.85">
+                  <matrix>
+                    <Matrix tx="133" ty="124.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,46 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1966" itemID="65c1d1f3-00000fc8" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 1966">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!-21 -554|-511 -358!-511 -358|-511 -274!-511 -274|-3 -481!-3 -481|513 -525!513 -525|513 -600!513 -600|-21 -554"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!93 -252[112 -252 124 -239!124 -239[138 -226 138 -207!138 -207[138 -189 124 -176!124 -176[112 -163 93 -163!93 -163[74 -163 61 -176!61 -176[48 -189 48 -207!48 -207[48 -226 61 -239!61 -239[74 -252 93 -252!-1 -432|-513 -222!-513 -222|-513
+ 391!-513 391|-1 600!-1 600|512 391!512 391|512 -222!512 -222|221 -341!221 -341|512 -477!512 -477|-1 -432!437 -162|437 341!437 341|31 507!31 507|31 4!31 4|437 -162!-57 -163[-75 -163 -88 -176!-88 -176[-102 -189 -102 -207!-102 -207[-102
+ -226 -88 -239!-88 -239[-75 -252 -57 -252!-57 -252[-38 -252 -25 -239!-25 -239[-12 -226 -12 -207!-12 -207[-12 -189 -25 -176!-25 -176[-38 -163 -57 -163!-44 501|-438 341!-438 341|-438 -162!-438 -162|-44 -1!-44 -1|-44 501"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

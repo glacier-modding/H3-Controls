@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 181" itemID="65c1d1f2-00000b57" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 181">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-620 -760|620 -760!620 -760[760 -760 760 -620!760 -620|760 619!760 619[760 759 620 759!620 759|-620 759!-620 759[-760 759 -760 619!-760 619|-760 -620!-760 -620[-760 -760 -620 -760"/>
+                    <Edge fillStyle0="1" edges="!558 -452|558 496!558 496[558 516 543 530!543 530[529 545 509 545!509 545|498 544!498 544|228 491!228 491|228 -557!228 -557|517 -500!517 -500[535 -497 546 -483!546 -483[558 -470 558 -452"/>
+                    <Edge fillStyle1="1" edges="!165 -557|-166 -492!-166 -492|-166 556!-166 556|165 491!165 491|165 -557"/>
+                    <Edge fillStyle0="1" edges="!-228 -492|-228 556!-228 556|-518 498!-518 498[-536 495 -547 482!-547 482[-558 468 -558 450!-558 450|-558 -497!-558 -497[-558 -517 -544 -532!-544 -532[-529 -546 -509 -546!-509 -546|-499 -545!-499 -545|-228 -492"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

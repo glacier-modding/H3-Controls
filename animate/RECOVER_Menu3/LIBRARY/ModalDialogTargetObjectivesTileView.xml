@@ -1,0 +1,190 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ModalDialogTargetObjectivesTileView" itemID="65c20ec3-00002003" linkageExportForAS="true" linkageIdentifier="ModalDialogTargetObjectivesTileView" linkageClassName="ModalDialogTargetObjectivesTileView" lastModified="1707216579">
+  <timeline>
+    <DOMTimeline name="ModalDialogTargetObjectivesTileView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#A69749">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 15" name="selectButtonPrompt" centerPoint3DX="200" centerPoint3DY="430">
+                  <matrix>
+                    <Matrix tx="200" ty="430"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="1" blurY="1" color="#212121" distance="1" strength="0.4"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#F9E151">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 15" name="buttonPrompts" centerPoint3DX="20" centerPoint3DY="430">
+                  <matrix>
+                    <Matrix tx="20" ty="430"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="1" blurY="1" color="#212121" distance="1" strength="0.4"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#6279F6">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="iconsAll40x40View" name="infoIcon" centerPoint3DX="763" centerPoint3DY="70">
+                  <matrix>
+                    <Matrix tx="743" ty="50"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#20C4E8">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="iconsAll40x40View" name="targetIcon" centerPoint3DX="70" centerPoint3DY="70">
+                  <matrix>
+                    <Matrix tx="50" ty="50"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="1" blurY="1" color="#212121" distance="1" strength="0.4"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#89DADB">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="targetLabel" fontRenderingMode="standard" width="609" height="33.4" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="82" ty="34.05"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineSpacing="0" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                  <filters>
+                    <DropShadowFilter angle="44.9992520943067" blurX="4" blurY="4" color="#212121" distance="1" strength="0.4"/>
+                  </filters>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#A7FB80">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="infoLabel" fontRenderingMode="standard" width="629" height="33.4" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="775" ty="34"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#BE91CE">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1056" name="scrollAreaReferenceClip" centerPoint3DX="772.95" centerPoint3DY="160">
+                  <matrix>
+                    <Matrix a="6.530029296875" d="3.7698974609375" tx="722.95" ty="110"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.05078125" redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="255" blueOffset="60"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#E730F0" locked="true" layerType="mask">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1095" centerPoint3DX="101" centerPoint3DY="101">
+                  <matrix>
+                    <Matrix a="3.43060302734375" d="2.55949401855469"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 9" color="#8DAA5E" parentLayerIndex="7" locked="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 15" name="targetImage">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 10" color="#86D450" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1093" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="4.01713562011719" d="7.83332824707031" tx="-4" ty="-7.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Latin_5_1" itemID="65c20d0a-00001edf" linkageExportForAS="true" linkageIdentifier="Latin_5_1" linkageClassName="Latin_5_1" lastModified="1707216138">
+  <timeline>
+    <DOMTimeline name="Latin_5_1">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4C8EAB" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 610" centerPoint3DX="237.95" centerPoint3DY="86.75">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

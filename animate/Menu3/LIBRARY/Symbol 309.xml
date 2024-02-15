@@ -1,0 +1,31 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 309" itemID="65c1d1f2-00000bbf" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 309">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EBEBEB"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!0 -600[-37 -600 -81 -406!-81 -406[-103 -309 -117 -213!-117 -213|-160 -136!-160 -136|-160 423!-160 423|162 423!162 423|162 -136!162 -136|118 -213!118 -213[104 -309 82 -406!82 -406[38 -600 0 -600!440 -600[403 -600 358 -406!358 -406[336
+ -309 321 -213!321 -213|278 -136!278 -136|278 423!278 423|600 423!600 423|600 -136!600 -136|557 -213!557 -213[543 -309 521 -406!521 -406[478 -600 440 -600!-438 -600[-475 -600 -519 -406!-519 -406|-556 -213!-556 -213|-600 -136!-600 -136
+|-600 423!-600 423|-277 423!-277 423|-277 -136!-277 -136|-320 -213!-320 -213[-334 -309 -356 -406!-356 -406[-400 -600 -438 -600!164 478|-163 478!-163 478|-163 600!-163 600|164 600!164 600|164 478!-272 478|-600 478!-600 478|-600 600!-600
+ 600|-272 600!-272 600|-272 478"/>
+                    <Edge fillStyle1="1" edges="
+!600 600|274 600!274 600|274 478!274 478|600 478!600 478|600 600"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

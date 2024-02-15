@@ -1,0 +1,47 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1619" itemID="65c1d214-00002649" symbolType="graphic" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 1619">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!357 -407|269 -396!269 -396|269 -232!269 -232|206 -311!206 -311|145 -215!145 -215|141 -381!141 -381|-219 -334!-219 -334[-259 -326 -262 -339!-262 -339|-257 -350!-257 -350|-250 -354!-250 -354|241 -518!241 -518|224 -535!224 -535[212 -545
+ 193 -542!193 -542|-315 -379!-315 -379[-326 -377 -336 -367!-336 -367[-357 -347 -357 -310!-357 -310|-357 495!-357 495[-357 531 -331 541!-331 541[-308 550 -255 541!-255 541|358 427!358 427|358 -406!358 -406|357 -407!219 -48|-167 19!-167
+ 19|-167 -77!-167 -77|219 -144!219 -144|219 -48!89 139|-167 185!-167 185|-167 89!-167 89|89 43!89 43|89 139"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!265 -495|310 -452!310 -452|-99 -378!-99 -378|265 -495"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

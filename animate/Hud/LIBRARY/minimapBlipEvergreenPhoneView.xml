@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="minimapBlipEvergreenPhoneView" itemID="65c1ec52-000008f1" linkageExportForAS="true" linkageIdentifier="minimapBlipEvergreenPhoneView" linkageClassName="minimapBlipEvergreenPhoneView" lastModified="1707207762">
+  <timeline>
+    <DOMTimeline name="minimapBlipEvergreenPhoneView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#69BEF8" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap1335.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="20" d="20" tx="-25" ty="-25"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-500 -500|500 -500!500 -500|500 500!500 500|-500 500!-500 500|-500 -500"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

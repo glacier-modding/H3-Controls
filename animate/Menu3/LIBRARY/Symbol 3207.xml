@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 3207" itemID="65c1d1f3-000011df" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 3207">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EBEBEB"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!179 -324|140 -285!140 -285|-86 -511!-86 -511[-175 -599 -299 -599!-299 -599[-423 -599 -511 -511!-511 -511[-599 -423 -599 -299!-599 -299[-599 -175 -511 -86!-511 -86|-441 -17!-441 -17|-333 -124!-333 -124|-404 -194!-404 -194[-447 -237 -447
+ -299!-447 -299[-447 -360 -404 -404!-404 -404[-360 -447 -299 -447!-299 -447[-237 -447 -194 -404!-194 -404|33 -177!33 -177|-324 179!-324 179[-337 192 -337 212!-337 212[-337 230 -324 243!-324 243|19 586!19 586[33 600 52 600!52 600[71 600
+ 84 586!84 586|586 84!586 84[600 71 600 52!600 52[600 33 586 19!586 19|243 -324!243 -324[230 -337 212 -337!212 -337[192 -337 179 -324!165 101|257 192!257 192[270 205 270 225!270 225[270 243 257 257!257 257[243 270 225 270!225 270[205
+ 270 192 257!192 257|101 165!101 165[51 176 17 142!17 142[-9 116 -9 79!-9 79[-9 42 17 17!17 17[42 -9 79 -9!79 -9[116 -9 142 17!142 17[176 51 165 101"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

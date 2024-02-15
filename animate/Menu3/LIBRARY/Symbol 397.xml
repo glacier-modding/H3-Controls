@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 397" itemID="65c1d1f2-00000bfb" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 397">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EBEBEB"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!107 -600|-119 -600!-119 -600[-141 -600 -156 -585!-156 -585[-172 -569 -172 -547!-172 -547|-172 547!-172 547[-172 569 -156 584!-156 584[-141 600 -119 600!-119 600|107 600!107 600[129 600 144 584!144 584[160 569 160 547!160 547|160 -547
+!160 -547[160 -569 144 -585!144 -585[129 -600 107 -600!547 -363|322 -363!322 -363[300 -363 284 -347!284 -347[269 -332 269 -310!269 -310|269 547!269 547[269 569 284 584!284 584[300 600 322 600!322 600|547 600!547 600[569 600 585 584!585
+ 584[600 569 600 547!600 547|600 -310!600 -310[600 -332 585 -347!585 -347[569 -363 547 -363!-321 -36|-547 -36!-547 -36[-569 -36 -584 -20!-584 -20[-600 -5 -600 17!-600 17|-600 547!-600 547[-600 569 -584 584!-584 584[-569 600 -547 600!-547
+ 600|-321 600!-321 600[-299 600 -283 584!-283 584[-268 569 -268 547!-268 547|-268 17!-268 17[-268 -5 -283 -20!-283 -20[-299 -36 -321 -36"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

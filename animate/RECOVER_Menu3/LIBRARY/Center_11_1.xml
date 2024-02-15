@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Center_11_1" itemID="65c20e01-00001f83" linkageExportForAS="true" linkageIdentifier="Center_11_1" linkageClassName="Center_11_1" lastModified="1707216385">
+  <timeline>
+    <DOMTimeline name="Center_11_1">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4372FA" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 756" name="logo" centerPoint3DX="87.9" centerPoint3DY="121.85">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,34 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="FxClipMc" itemID="65c20f27-00002044" linkageExportForAS="true" linkageIdentifier="FxClipMc" linkageClassName="FxClipMc" lastModified="1707216679">
+  <timeline>
+    <DOMTimeline name="FxClipMc">
+      <layers>
+        <DOMLayer name="Layer 1" color="#2EB1B3">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2371" name="mc2" centerPoint3DX="14" centerPoint3DY="14">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#CCDA33" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2371" name="mc1" centerPoint3DX="14" centerPoint3DY="14">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

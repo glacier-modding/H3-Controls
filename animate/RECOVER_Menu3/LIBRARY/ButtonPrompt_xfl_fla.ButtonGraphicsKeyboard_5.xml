@@ -1,0 +1,2222 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ButtonPrompt_xfl_fla.ButtonGraphicsKeyboard_5" itemID="65c20c6c-00000cc6" sourceFlashFilepath="../ButtonPrompt/ButtonPrompt.xfl" sourceLibraryItemHRef="ButtonPrompt_xfl_fla.ButtonGraphicsKeyboard_5" sourceLastModified="1707990183" lastModified="1707990183" sourceItemID="65c20c6c-00000cc6">
+  <timeline>
+    <DOMTimeline name="ButtonPrompt_xfl_fla.ButtonGraphicsKeyboard_5">
+      <layers>
+        <DOMLayer name="Labels_Layer_1" color="#8AF640">
+          <frames>
+            <DOMFrame index="0" name="kb_a" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" name="kb_b" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" name="kb_c" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="3" name="kb_d" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" name="kb_e" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="5" name="kb_f" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="6" name="kb_g" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="7" name="kb_h" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="8" name="kb_i" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" name="kb_j" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="10" name="kb_k" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="11" name="kb_l" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="12" name="kb_m" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="13" name="kb_n" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="14" name="kb_o" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="15" name="kb_p" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="16" name="kb_q" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="17" name="kb_r" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="18" name="kb_s" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="19" name="kb_t" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="20" name="kb_u" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="21" name="kb_v" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="22" name="kb_w" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="23" name="kb_x" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="24" name="kb_y" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="25" name="kb_z" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="26" name="kb_f1" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="27" name="kb_f2" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="28" name="kb_f3" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="29" duration="5" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="34" name="kb_f10" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="35" duration="3" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="38" name="kb_esc" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="39" name="kb_space" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="40" name="kb_enter" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="41" name="kb_ralt" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="42" name="kb_lalt" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="43" name="kb_capital" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="44" name="kb_rcontrol" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="45" name="kb_lcontrol" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="46" name="kb_rshift" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="47" name="kb_lshift" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="48" name="mouse" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="49" name="mouse_lmb" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="50" name="mouse_rmb" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="51" name="mouse_mmb_up" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="52" name="mouse_mmb_down" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="53" name="mouse_mmb" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="54" name="mouse_mmb_up_down" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="55" name="kb_arrow_key_up" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="56" name="kb_arrow_key_down" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="57" name="kb_arrow_key_left" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="58" name="kb_arrow_key_right" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="59" name="lb" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="60" name="rb" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="61" name="mouse_mb4" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="62" name="mouse_mb5" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="63" name="mouse_mb6" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="64" name="mouse_mb7" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="65" name="mouse_mb8" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="66" name="kb_backspace" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="67" name="kb_tab" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="68" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="77" name="customKey" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="78" duration="11" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="89" name="allDirections" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="90" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" name="dummy" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Labels_Layer_2" color="#8DBFCB">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" name="r" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="5" name="action-y" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="6" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="15" name="action-x" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="16" duration="10" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="26" name="select" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="27" duration="11" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="38" name="cancel" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="39" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="40" name="accept" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="41" duration="8" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="49" name="ls" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="50" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="54" name="l" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="55" name="lt" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="56" name="rt" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Script_Layer" color="#86728D">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_4" color="#BBA62B">
+          <frames>
+            <DOMFrame index="0" duration="92" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" duration="2" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN66key">
+                  <matrix>
+                    <Matrix a="0.0999908447265625" d="0.0999908447265625" tx="16" ty="2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_5" color="#3ABDC0">
+          <frames>
+            <DOMFrame index="0" duration="92" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" duration="2" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN65key">
+                  <matrix>
+                    <Matrix a="0.0999908447265625" d="0.0999908447265625" tx="-10" ty="3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_6" color="#9562A0">
+          <frames>
+            <DOMFrame index="0" duration="92" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" duration="2" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN64key">
+                  <matrix>
+                    <Matrix a="0.0999908447265625" d="0.0999908447265625" tx="9.5" ty="-6.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_7" color="#F619B9">
+          <frames>
+            <DOMFrame index="0" duration="61" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="61" keyMode="9728">
+              <elements>
+                <DOMStaticText fontRenderingMode="standard" width="28.7" height="28.7" isSelectable="false">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" tx="0.1" ty="0.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>M4&#xD;</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineSpacing="0" lineHeight="14.35" bitmapSize="240" face="Neue Haas Grotesk Display Pro 75 Bold*" fillColor="#212121"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="62" keyMode="9728">
+              <elements>
+                <DOMStaticText fontRenderingMode="standard" width="28.3" height="28.7" isSelectable="false">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" tx="0.3" ty="0.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>M5&#xD;</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineSpacing="0" lineHeight="14.35" bitmapSize="240" face="Neue Haas Grotesk Display Pro 75 Bold*" fillColor="#212121"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="63" keyMode="9728">
+              <elements>
+                <DOMStaticText fontRenderingMode="standard" width="28.7" height="28.7" isSelectable="false">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" tx="0.1" ty="0.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>M6&#xD;</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineSpacing="0" lineHeight="14.35" bitmapSize="240" face="Neue Haas Grotesk Display Pro 75 Bold*" fillColor="#212121"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="64" keyMode="9728">
+              <elements>
+                <DOMStaticText fontRenderingMode="standard" width="27.3" height="28.7" isSelectable="false">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" tx="0.8" ty="0.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>M7&#xD;</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineSpacing="0" lineHeight="14.35" bitmapSize="240" face="Neue Haas Grotesk Display Pro 75 Bold*" fillColor="#212121"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="65" keyMode="9728">
+              <elements>
+                <DOMStaticText fontRenderingMode="standard" width="28.4" height="28.7" isSelectable="false">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" tx="0.25" ty="0.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>M8&#xD;</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineSpacing="0" lineHeight="14.35" bitmapSize="240" face="Neue Haas Grotesk Display Pro 75 Bold*" fillColor="#212121"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="66" duration="26" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" duration="2" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN63key">
+                  <matrix>
+                    <Matrix a="0.0999908447265625" d="0.0999908447265625" tx="-9.5" ty="-6.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_8" color="#E4E443">
+          <frames>
+            <DOMFrame index="0" duration="92" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" duration="2" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN62key">
+                  <matrix>
+                    <Matrix a="0.0999908447265625" d="0.0999908447265625" tx="1.5" ty="-10.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_9" color="#B61AB0">
+          <frames>
+            <DOMFrame index="0" duration="48" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="48" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 103 copy" centerPoint3DX="17.5" centerPoint3DY="12.35">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" ty="0.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="49" duration="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 103 copy" centerPoint3DX="17.5" centerPoint3DY="12.35">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" ty="0.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.3515625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="55" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="61" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 103 copy" centerPoint3DX="17.5" centerPoint3DY="12.35">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" ty="0.45"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="66" duration="26" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" duration="2" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN55key">
+                  <matrix>
+                    <Matrix a="0.0999908447265625" d="0.0999908447265625" tx="-9" ty="10"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_10" color="#BAECCC">
+          <frames>
+            <DOMFrame index="0" duration="92" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" duration="2" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN54key">
+                  <matrix>
+                    <Matrix a="0.0999908447265625" d="0.0999908447265625" tx="11.5" ty="8.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_11" color="#EDD155">
+          <frames>
+            <DOMFrame index="0" duration="48" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="48" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 101 copy" centerPoint3DX="2.6" centerPoint3DY="-2">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" ty="-9.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="49" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 101 copy" centerPoint3DX="2.6" centerPoint3DY="-2">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" ty="-9.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.3515625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="51" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 101 copy" centerPoint3DX="2.6" centerPoint3DY="-2">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" ty="-9.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="55" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="61" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 101 copy" centerPoint3DX="2.6" centerPoint3DY="-2">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" ty="-9.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="66" duration="26" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" duration="2" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN53key">
+                  <matrix>
+                    <Matrix a="0.0999908447265625" d="0.0999908447265625" tx="-5.5" ty="-1.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_12" color="#AEB1BD">
+          <frames>
+            <DOMFrame index="0" duration="92" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" duration="2" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN52key">
+                  <matrix>
+                    <Matrix a="0.0999908447265625" d="0.0999908447265625" tx="7.5" ty="1.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_13" color="#F6D022">
+          <frames>
+            <DOMFrame index="0" duration="48" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="48" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 99 copy" centerPoint3DX="9" centerPoint3DY="10.4">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" tx="0.8" ty="-1.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="49" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 99 copy" centerPoint3DX="9" centerPoint3DY="10.4">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" tx="0.8" ty="-1.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.3515625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="50" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 99 copy" centerPoint3DX="9" centerPoint3DY="10.4">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" tx="0.8" ty="-1.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="51" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 99 copy" centerPoint3DX="9" centerPoint3DY="10.4">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" tx="0.8" ty="-1.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.3515625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="55" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="61" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 99 copy" centerPoint3DX="9" centerPoint3DY="10.4">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" tx="0.8" ty="-1.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="66" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!226 139|-126 139!-126 139|-126 170!-126 170|-240 110!-240 110|-240 108!-240 108|-126 46!-126 46|-126 77!-126 77|226 77!226 77|226 139"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="67" duration="25" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" duration="2" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN51key">
+                  <matrix>
+                    <Matrix a="0.0999908447265625" d="0.0999908447265625" tx="3.5" ty="12.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_14" color="#F89698" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>A</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>B</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>C</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>D</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>E</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>F</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>G</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>H</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>I</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>J</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="10" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>K</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>L</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="12" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>M</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>N</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>O</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>P</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="16" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Q</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>R</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>S</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>T</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="20" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>U</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="21" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>V</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="22" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>W</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="23" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>X</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="24" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Y</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="25" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="37.2" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Z</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="26" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="54.65" height="19.15" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-26.4" ty="-10.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>F1</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="1" lineHeight="19.15" size="16" bitmapSize="320" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="27" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="54.35" height="19.15" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-26.25" ty="-10.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>F2</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="1" lineHeight="19.15" size="16" bitmapSize="320" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="28" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="54.35" height="19.15" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-26.25" ty="-10.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>F3</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="1" lineHeight="19.15" size="16" bitmapSize="320" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="29" keyMode="9728">
+              <elements>
+                <DOMDynamicText selected="true" fontRenderingMode="standard" width="54.35" height="19.15" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-26.25" ty="-10.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>F4</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="1" lineHeight="19.15" size="16" bitmapSize="320" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="30" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="54.35" height="19.15" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-26.25" ty="-10.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>F5</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="1" lineHeight="19.15" size="16" bitmapSize="320" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="31" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="54.35" height="19.15" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-26.25" ty="-10.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>F6</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="1" lineHeight="19.15" size="16" bitmapSize="320" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="32" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="54.35" height="19.15" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-26.25" ty="-10.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>F7</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="1" lineHeight="19.15" size="16" bitmapSize="320" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="33" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="54.35" height="19.15" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-26.25" ty="-10.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>F8</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="1" lineHeight="19.15" size="16" bitmapSize="320" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="34" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="54.35" height="19.15" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-26.25" ty="-10.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>F9</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="1" lineHeight="19.15" size="16" bitmapSize="320" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="35" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="54.35" height="19.15" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-26.25" ty="-10.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>F10</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="1" lineHeight="19.15" size="16" bitmapSize="320" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="36" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="54.35" height="19.15" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-26.25" ty="-10.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>F11</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="1" lineHeight="19.15" size="16" bitmapSize="320" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="37" keyMode="9728">
+              <elements>
+                <DOMDynamicText fontRenderingMode="standard" width="54.35" height="19.15" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-26.25" ty="-10.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>F12</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="1" lineHeight="19.15" size="16" bitmapSize="320" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="38" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="46.05" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-19.1" ty="-8.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>ESC</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="39" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!215 149|-214 149!-214 149|-214 25!-214 25|-151 25!-151 25|-151 87!-151 87|153 87!153 87|153 25!153 25|215 25!215 25|215 149"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="40" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="46.05" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-19.1" ty="-8.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>ENTER</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="41" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="46.05" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-19.1" ty="-8.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>R ALT</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="42" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="46.05" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-19.1" ty="-8.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>L ALT</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="43" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="46.05" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-19.1" ty="-14.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>CAPS LOCK</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="44" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="49.05" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-20.4" ty="-8.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>R CTRL</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="45" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="49.05" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-20.4" ty="-8.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>L CTRL</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="46" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="49.1" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-20.7" ty="-8.9"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>R SHIFT</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="47" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="49.1" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-20.7" ty="-8.9"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>L SHIFT</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="48" duration="7" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="55" keyMode="9728">
+              <elements>
+                <DOMShape selected="true" isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!-97 7|-97 200!-97 200|93 200!93 200|93 7!93 7|207 7!207 7|0 -200!0 -200|-207 7!-207 7|-97 7"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="56" keyMode="9728">
+              <elements>
+                <DOMShape selected="true" isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!97 -7|97 -200!97 -200|-93 -200!-93 -200|-93 -7!-93 -7|-207 -7!-207 -7|0 200!0 200|207 -7!207 -7|97 -7"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="57" keyMode="9728">
+              <elements>
+                <DOMShape selected="true" isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!7 97|200 97!200 97|200 -93!200 -93|7 -93!7 -93|7 -207!7 -207|-200 0!-200 0|7 207!7 207|7 97"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="58" keyMode="9728">
+              <elements>
+                <DOMShape selected="true" isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!-7 -97|-200 -97!-200 -97|-200 93!-200 93|-7 93!-7 93|-7 207!-7 207|200 0!200 0|-7 -207!-7 -207|-7 -97"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="59" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="46.05" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-19.1" ty="-14.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>PAGE UP</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="60" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="46.05" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-19.1" ty="-14.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>PAGE DOWN</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="61" duration="5" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="66" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="50" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-20.7" ty="-11"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>BKSP</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="13.35" bitmapSize="240"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="67" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!171 -62|-34 -62!-34 -62|-78 -62!-78 -62|-181 -62!-181 -62|-181 -93!-181 -93|-293 -34!-293 -34|-293 -93!-293 -93|-337 -93!-337 -93|-337 31!-337 31|-293 31!-293 31|-293 -30!-293 -30|-181 31!-181 31|-181 0!-181 0|-78 0!-78 0|-34 0!-34 0
+|171 0!171 0|171 -62"/>
+                    <Edge fillStyle1="1" edges="
+!-337 77|-132 77!-132 77|-88 77!-88 77|15 77!15 77|15 46!15 46|127 105!127 105|127 46!127 46|171 46!171 46|171 170!171 170|127 170!127 170|127 109!127 109|15 170!15 170|15 139!15 139|-88 139!-88 139|-132 139!-132 139|-337 139!-337 139
+|-337 77"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="68" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="50" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-20.7" ty="-8.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>PAUSE</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="69" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="54.1" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-22.4" ty="-12.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>SCROLL&#xA;LOCK</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="14.35" bitmapSize="240" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="70" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="54.1" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-22.4" ty="-12.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>PRINT&#xA;SCREEN</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="14.35" bitmapSize="240" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="71" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="46.05" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-19.1" ty="-8.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>HOME</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="72" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="46.05" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-19.1" ty="-8.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>END</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="73" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="56.45" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-23.4" ty="-8.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>INSERT</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="74" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="56.45" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-23.4" ty="-8.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>DELETE</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="75" keyMode="9728">
+              <elements>
+                <DOMShape selected="true" isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="2" joints="miter">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="
+!-316 -97|-316 -194!-316 -194|119 -194!119 -194|119 -97!-316 97|-316 0!119 97|119 194!119 194|-316 194!-316 194|-316 97!119 0|119 97"/>
+                    <Edge fillStyle0="1" strokeStyle="1" edges="
+!-316 0|119 0"/>
+                    <Edge strokeStyle="1" edges="
+!119 97|-316 97"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="
+!-316 -97|119 -97!-316 0|-316 -97!119 -97|119 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="76" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="button_txt" fontRenderingMode="standard" width="46.05" height="59.2" isSelectable="false" renderAsHTML="true" lineType="multiline">
+                  <matrix>
+                    <Matrix a="0.8499755859375" tx="-19.1" ty="-14.15"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>NUM&#xA;LOCK</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="-0.5" lineHeight="16.8" size="14" bitmapSize="280" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="77" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="key_txt" fontRenderingMode="standard" width="58.25" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-29.1" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>_</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="78" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="key_txt" fontRenderingMode="standard" width="58.25" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-29.1" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>_</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="79" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="key_txt" fontRenderingMode="standard" width="58.25" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-29.1" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>_</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="80" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="key_txt" fontRenderingMode="standard" width="58.25" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-29.1" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>_</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="81" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="key_txt" fontRenderingMode="standard" width="58.25" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-29.1" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>_</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="82" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="key_txt" fontRenderingMode="standard" width="58.25" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-29.1" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>_</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="83" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="key_txt" fontRenderingMode="standard" width="58.25" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-29.1" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>_</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="84" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="key_txt" fontRenderingMode="standard" width="58.25" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-29.1" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>_</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="85" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="key_txt" fontRenderingMode="standard" width="58.25" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-29.1" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>_</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="86" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="key_txt" fontRenderingMode="standard" width="58.25" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-29.1" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>_</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="87" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="key_txt" fontRenderingMode="standard" width="58.25" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-29.1" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>_</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="88" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="key_txt" fontRenderingMode="standard" width="58.25" height="26.35" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-29.1" ty="-13"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>_</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" lineHeight="26.35" size="22" bitmapSize="440" face="Neue Haas Grotesk Display Pro 75 Bold*"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="89" duration="3" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" duration="2" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN50key">
+                  <matrix>
+                    <Matrix a="0.0999908447265625" d="0.0999908447265625" tx="-3" ty="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer_15" color="#917D73">
+          <frames>
+            <DOMFrame index="0" duration="39" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 46 copy" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="39" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 86 copy" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="48" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 97 copy" centerPoint3DX="7.4" centerPoint3DY="10.4">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" tx="-0.8" ty="-1.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="50" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 97 copy" centerPoint3DX="7.4" centerPoint3DY="10.4">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" tx="-0.8" ty="-1.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.3515625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="55" duration="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 46 copy" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="59" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 86 copy" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="61" duration="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 97 copy" centerPoint3DX="7.4" centerPoint3DY="10.4">
+                  <matrix>
+                    <Matrix a="0.799972534179688" d="0.799972534179688" tx="-0.8" ty="-1.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="66" duration="2" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!290 -300|-290 -300!-290 -300[-410 -300 -410 -180!-410 -180|-410 180!-410 180[-410 300 -290 300!-290 300|290 300!290 300[410 300 410 180!410 180|410 -173!410 -173|410 -180!410 -180[410 -300 290 -300"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="68" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 86 copy" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="77" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 46 copy" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="89" duration="3" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!-60 -411|-300 -411!-300 -411[-363 -411 -363 -338!-363 -338|-363 -119!-363 -119[-363 -46 -300 -46!-300 -46|-60 -46!-60 -46[3 -46 3 -119!3 -119|3 -338!3 -338[3 -411 -60 -411!-60 6|-300 6!-300 6[-363 6 -363 79!-363 79|-363 298!-363 298
+[-363 371 -300 371!-300 371|-60 371!-60 371[3 371 3 298!3 298|3 79!3 79[3 6 -60 6!-477 6|-717 6!-717 6[-780 6 -780 79!-780 79|-780 298!-780 298[-780 371 -717 371!-717 371|-477 371!-477 371[-415 371 -415 298!-415 298|-415 79!-415 79[-415
+ 6 -477 6!357 6|117 6!117 6[55 6 55 79!55 79|55 298!55 298[55 371 117 371!117 371|357 371!357 371[420 371 420 298!420 298|420 79!420 79[420 6 357 6"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="92" duration="2" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="BTN49key">
+                  <matrix>
+                    <Matrix a="0.0999908447265625" d="0.0999908447265625" tx="1.5" ty="2.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

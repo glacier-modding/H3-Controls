@@ -1,0 +1,328 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="hud.evergreen.CampaignProgressBarView" itemID="65c20a6e-000008a1" linkageExportForAS="true" linkageIdentifier="hud.evergreen.CampaignProgressBarView" linkageClassName="hud.evergreen.CampaignProgressBarView" lastModified="1707215470">
+  <timeline>
+    <DOMTimeline name="hud.evergreen.CampaignProgressBarView">
+      <layers>
+        <DOMLayer name="Script Layer" color="#FB6A4D">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#F54BF5">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 302" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="8" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 312" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="10" duration="7" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#E6BA98">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 306" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 307" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 308" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="13" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 316" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="15" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 318" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="16" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#9EB2E5">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!220 -300|-220 -300!-220 -300[-300 -300 -300 -220!-300 -220|-300 220!-300 220[-300 300 -220 300!-220 300|220 300!220 300[300 300 300 220!300 220|300 -220!300 -220[300 -300 220 -300"/>
+                    <Edge fillStyle1="1" edges="!2 -86[34 -86 57 -64!57 -64[79 -41 79 -9!79 -9[79 12 69 29!69 29[59 47 41 57!41 57|41 83!41 83|-36 83!-36 83|-36 57!-36 57|-64 29!-64 29[-74 12 -74 -9!-74 -9[-74 -41 -52 -64!-52 -64[-29 -86 2 -86!33 11[41 11 47 5!47 5|53 -9!53 -9|47 -23
+!47 -23[41 -29 33 -29!33 -29|19 -23!19 -23[13 -17 13 -9!13 -9[13 -1 19 5!19 5|33 11!200 170|17 -190!17 -190[10 -204 0 -204!0 -204[-10 -204 -17 -190!-17 -190|-200 170!-200 170[-207 184 -201 194!-201 194[-194 204 -179 204!-179 204|179 204
+!179 204[195 204 202 194!202 194[208 184 200 170!85 155|74 178!74 178|2 146!2 146|-69 178!-69 178|-79 155!-79 155|-29 133!-29 133|-79 110!-79 110|-69 88!-69 88|2 119!2 119|74 88!74 88|85 110!85 110|34 133!34 133|85 155!-28 11[-20 11 -14
+ 5!-14 5[-8 -1 -8 -9!-8 -9[-8 -17 -14 -23!-14 -23[-20 -29 -28 -29!-28 -29|-43 -23!-43 -23|-49 -9!-49 -9|-43 5!-43 5|-28 11"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!202 -151|-24 177!-24 177[-31 187 -43 188!-43 188[-55 189 -63 181!-63 181|-199 42!-199 42|-204 32!-204 32|-199 23!-199 23|-158 -19!-158 -19|-148 -23!-148 -23|-138 -19!-138 -19|-53 66!-53 66|130 -199!130 -199|138 -206!138 -206|150 -203
+!150 -203|198 -170!198 -170|204 -161!204 -161|202 -151!220 -300|-220 -300!-220 -300[-300 -300 -300 -220!-300 -220|-300 220!-300 220[-300 300 -220 300!-220 300|220 300!220 300[300 300 300 220!300 220|300 -220!300 -220[300 -300 220 -300"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!200 123|205 134!205 134|200 146!200 146|146 200!146 200[134 210 123 200!123 200|0 77!0 77|-122 200!-122 200[-134 210 -145 200!-145 200|-199 146!-199 146|-203 134!-203 134|-199 123!-199 123|-76 0!-76 0|-199 -122!-199 -122|-203 -134!-203
+ -134|-199 -145!-199 -145|-145 -199!-145 -199|-134 -203!-134 -203[-127 -203 -122 -199!-122 -199|0 -76!0 -76|123 -199!123 -199|134 -203!134 -203|146 -199!146 -199|200 -145!200 -145|205 -134!205 -134|200 -122!200 -122|77 0!77 0|200 123
+!220 -300|-220 -300!-220 -300[-300 -300 -300 -220!-300 -220|-300 220!-300 220[-300 300 -220 300!-220 300|220 300!220 300[300 300 300 220!300 220|300 -220!300 -220[300 -300 220 -300"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="3" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="7" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!-204 -26|13 -26!13 -26|-83 -131!-83 -131|-19 -131!-19 -131|100 -1!100 -1|-19 130!-19 130|-83 130!-83 130|13 25!13 25|-204 25!-204 25|-204 -26!220 -300|-220 -300!-220 -300[-300 -300 -300 -220!-300 -220|-300 220!-300 220[-300 300 -220
+ 300!-220 300|220 300!220 300[300 300 300 220!300 220|300 -220!300 -220[300 -300 220 -300!204 190|200 200!200 200[196 204 190 204!190 204|-159 204!-159 204|-170 200!-170 200|-174 190!-174 190|-174 92!-174 92|-139 92!-139 92|-139 169!-139
+ 169|169 169!169 169|169 -168!169 -168|-139 -168!-139 -168|-139 -77!-139 -77|-174 -77!-174 -77|-174 -189!-174 -189|-170 -200!-170 -200|-159 -204!-159 -204|190 -204!190 -204|200 -200!200 -200|204 -189!204 -189|204 190"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!-220 -260|220 -260!220 -260[260 -260 260 -220!260 -220|260 220!260 220[260 260 220 260!220 260|-220 260!-220 260[-260 260 -260 220!-260 220|-260 -220!-260 -220[-260 -260 -220 -260!220 -300|-220 -300!-220 -300[-300 -300 -300 -220!-300
+ -220|-300 220!-300 220[-300 300 -220 300!-220 300|220 300!220 300[300 300 300 220!300 220|300 -220!300 -220[300 -300 220 -300"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="10" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!319 -420|-319 -420!-319 -420[-360 -420 -391 -391!-391 -391[-420 -360 -420 -319!-420 -319|-420 319!-420 319[-420 361 -391 391!-391 391[-360 420 -319 420!-319 420|319 420!319 420[361 420 391 391!391 391[420 361 420 319!420 319|420 -319
+!420 -319[420 -360 391 -391!391 -391[361 -420 319 -420"/>
+                    <Edge fillStyle1="1" edges="
+!44 -89|65 -97!65 -97[73 -106 73 -118!73 -118|65 -139!65 -139|44 -147!44 -147[32 -147 23 -139!23 -139|15 -118!15 -118[15 -106 23 -97!23 -97[32 -89 44 -89!0 -228[45 -228 78 -196!78 -196[110 -164 110 -118!110 -118[110 -88 95 -62!95 -62
+[81 -38 55 -23!55 -23|55 14!55 14|-55 14!-55 14|-55 -23!-55 -23[-81 -38 -95 -62!-95 -62[-110 -88 -110 -118!-110 -118[-110 -164 -78 -196!-78 -196[-46 -228 0 -228!0 -325|-255 -197!-255 -197|-255 58!-255 58|0 326!0 326|254 58!254 58|254
+ -197!254 -197|0 -325!-45 -89[-32 -89 -24 -97!-24 -97[-15 -106 -15 -118!-15 -118[-15 -129 -24 -139!-24 -139[-32 -147 -45 -147!-45 -147[-56 -147 -65 -139!-65 -139|-73 -118!-73 -118[-73 -106 -65 -97!-65 -97[-56 -89 -45 -89!118 117|102 150
+!102 150|0 105!0 105|-103 150!-103 150|-118 117!-118 117|-45 86!-45 86|-118 54!-118 54|-103 20!-103 20|0 65!0 65|102 20!102 20|118 54!118 54|45 86!45 86|118 117"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!283 -211|-34 248!-34 248[-43 262 -60 263!-60 263[-77 265 -88 253!-88 253|-279 59!-279 59|-286 45!-286 45[-286 36 -279 32!-279 32|-221 -27!-221 -27|-207 -32!-207 -32|-193 -27!-193 -27|-74 92!-74 92|182 -279!182 -279|193 -288!193 -288
+|210 -284!210 -284|277 -238!277 -238|286 -225!286 -225|283 -211!319 -420|-319 -420!-319 -420[-360 -420 -391 -391!-391 -391[-420 -360 -420 -319!-420 -319|-420 319!-420 319[-420 361 -391 391!-391 391[-360 420 -319 420!-319 420|319 420!319
+ 420[361 420 391 391!391 391[420 361 420 319!420 319|420 -319!420 -319[420 -360 391 -391!391 -391[361 -420 319 -420"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="12" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!280 172|286 188!286 188|280 204!280 204|204 280!204 280[188 294 172 280!172 280|0 108!0 108|-171 280!-171 280[-187 294 -203 280!-203 280|-279 204!-279 204|-285 188!-285 188|-279 172!-279 172|-107 0!-107 0|-279 -171!-279 -171|-285 -187
+!-285 -187|-279 -203!-279 -203|-203 -279!-203 -279|-187 -285!-187 -285[-178 -285 -171 -279!-171 -279|0 -107!0 -107|172 -279!172 -279|188 -285!188 -285|204 -279!204 -279|280 -203!280 -203|286 -187!286 -187|280 -171!280 -171|108 0!108 0
+|280 172!319 -420|-319 -420!-319 -420[-360 -420 -391 -391!-391 -391[-420 -360 -420 -319!-420 -319|-420 319!-420 319[-420 361 -391 391!-391 391[-360 420 -319 420!-319 420|319 420!319 420[361 420 391 391!391 391[420 361 420 319!420 319
+|420 -319!420 -319[420 -360 391 -391!391 -391[361 -420 319 -420"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!319 -420|-319 -420!-319 -420[-360 -420 -391 -391!-391 -391[-420 -360 -420 -319!-420 -319|-420 319!-420 319[-420 361 -391 391!-391 391[-360 420 -319 420!-319 420|319 420!319 420[361 420 391 391!391 391[420 361 420 319!420 319|420 -319
+!420 -319[420 -360 391 -391!391 -391[361 -420 319 -420!319 -370[341 -370 354 -354!354 -354[370 -341 370 -319!370 -319|370 319!370 319[370 341 354 355!354 355[341 370 319 370!319 370|-319 370!-319 370[-341 370 -354 355!-354 355[-370 341
+ -370 319!-370 319|-370 -319!-370 -319[-370 -341 -354 -354!-354 -354[-341 -370 -319 -370!-319 -370|319 -370"/>
+                    <Edge fillStyle1="1" edges="
+!280 172|286 188!286 188|280 204!280 204|204 280!204 280[188 294 172 280!172 280|0 108!0 108|-171 280!-171 280[-187 294 -203 280!-203 280|-279 204!-279 204|-285 188!-285 188|-279 172!-279 172|-107 0!-107 0|-279 -171!-279 -171|-285 -187
+!-285 -187|-279 -203!-279 -203|-203 -279!-203 -279|-187 -285!-187 -285[-178 -285 -171 -279!-171 -279|0 -107!0 -107|172 -279!172 -279|188 -285!188 -285|204 -279!204 -279|280 -203!280 -203|286 -187!286 -187|280 -171!280 -171|108 0!108 0
+|280 172"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="16" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!-286 -36|18 -36!18 -36|-116 -183!-116 -183|-26 -183!-26 -183|140 -1!140 -1|-27 182!-27 182|-117 182!-117 182|18 35!18 35|-286 35!-286 35|-286 -36!319 -420|-319 -420!-319 -420[-360 -420 -391 -391!-391 -391[-420 -360 -420 -319!-420 -319
+|-420 319!-420 319[-420 361 -391 391!-391 391[-360 420 -319 420!-319 420|319 420!319 420[361 420 391 391!391 391[420 361 420 319!420 319|420 -319!420 -319[420 -360 391 -391!391 -391[361 -420 319 -420!286 265|280 280!280 280[274 286 265
+ 286!265 286|-223 286!-223 286|-238 280!-238 280|-244 265!-244 265|-244 129!-244 129|-194 129!-194 129|-194 236!-194 236|236 236!236 236|236 -235!236 -235|-194 -235!-194 -235|-194 -108!-194 -108|-244 -108!-244 -108|-244 -265!-244 -265
+|-238 -280!-238 -280|-223 -286!-223 -286|265 -286!265 -286|280 -280!280 -280|286 -265!286 -265|286 265"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#888BCD" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 301" name="flash_mc" centerPoint3DX="15" centerPoint3DY="15">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 311" name="flash_mc" centerPoint3DX="21" centerPoint3DY="21">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

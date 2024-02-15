@@ -1,0 +1,149 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Center_11_10" itemID="65c20e39-00001fa7" linkageExportForAS="true" linkageIdentifier="Center_11_10" linkageClassName="Center_11_10" lastModified="1707216441">
+  <timeline>
+    <DOMTimeline name="Center_11_10">
+      <layers>
+        <DOMLayer name="Layer 1" color="#26C796">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 518" name="p7" centerPoint3DX="30.65" centerPoint3DY="177.6">
+                  <matrix>
+                    <Matrix a="0.899978637695312" d="0.899978637695312" ty="158"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#2D83E5">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 759" name="p7" centerPoint3DX="131.6" centerPoint3DY="108.7">
+                  <matrix>
+                    <Matrix a="0.79998779296875" d="0.79998779296875" tx="120" ty="94"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#8FAB94">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 529" name="p4" centerPoint3DX="-118.8" centerPoint3DY="27.6">
+                  <matrix>
+                    <Matrix a="0.8499755859375" d="0.8499755859375" tx="-141" ty="1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#D26395">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 759" name="p6" centerPoint3DX="-108.4" centerPoint3DY="108.7">
+                  <matrix>
+                    <Matrix a="0.79998779296875" d="0.79998779296875" tx="-120" ty="94"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#E96D67">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 529" name="p5" centerPoint3DX="163.2" centerPoint3DY="27.6">
+                  <matrix>
+                    <Matrix a="0.8499755859375" d="0.8499755859375" tx="141" ty="1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#FC325A">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 759" name="p3" centerPoint3DX="131.55" centerPoint3DY="-75.25">
+                  <matrix>
+                    <Matrix a="0.79998779296875" d="0.79998779296875" tx="119.95" ty="-89.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#B942AF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 759" name="p2" centerPoint3DX="-108.4" centerPoint3DY="-75.3">
+                  <matrix>
+                    <Matrix a="0.79998779296875" d="0.79998779296875" tx="-120" ty="-90"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#50E65D">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 545" name="p1" centerPoint3DX="38.5" centerPoint3DY="-144.3">
+                  <matrix>
+                    <Matrix a="0.899978637695312" d="0.899978637695312" ty="-158.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 9" color="#2BF97D" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 756" name="logo" centerPoint3DX="87.9" centerPoint3DY="121.85">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,43 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2329" itemID="65c1d1f3-00001095" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 2329">
+      <layers>
+        <DOMLayer name="Layer 1" color="#C16566">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2328" name="outlines" centerPoint3DX="200" centerPoint3DY="143.5">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <GlowFilter blurX="6" blurY="6" color="#000000" strength="0.5"/>
+                  </filters>
+                  <color>
+                    <Color alphaMultiplier="0.80078125" redMultiplier="0" blueMultiplier="0" greenMultiplier="0" redOffset="255" blueOffset="255" greenOffset="255"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#D4934C" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 2325" name="fill" centerPoint3DX="200" centerPoint3DY="143.5">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <GlowFilter alpha="0.749019607843137" blurX="45" blurY="45" color="#000000"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,72 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1282" itemID="65c1d1f2-00000e1c" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 1282">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" caps="none" joints="miter" miterLimit="10">
+                        <fill>
+                          <SolidColor color="#FFFFFF" alpha="0.8"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                    <StrokeStyle index="2">
+                      <SolidStroke scaleMode="normal" caps="none" joints="miter" miterLimit="10">
+                        <fill>
+                          <SolidColor color="#FFFFFF" alpha="0.8"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                    <StrokeStyle index="3">
+                      <SolidStroke scaleMode="normal" joints="miter" miterLimit="10">
+                        <fill>
+                          <SolidColor color="#FFFFFF" alpha="0.8"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!16160 4146|16160 2630!16160 2630|16165 2630"/>
+                    <Edge strokeStyle="3" edges="!16160 1310|16160 2630"/>
+                    <Edge strokeStyle="2" edges="!16160 4146|15103 4719!15103 4719|15103 5153"/>
+                    <Edge strokeStyle="1" edges="!15500 2630|12200 2630!12200 2630|12200 4146!12200 4146|12201 4146!12201 4146|12282 4188!12282 4188|13301 4719!13301 4719|13300 5152!27560 9230|20520 9230!20520 9230|16370 7590!27560 1310|20520 1310!20520 1310|18112 2294!27560 3950|20520
+ 3950!20520 3950|18521 3379!800 7910|7840 7910!7840 7910|11739 7072!800 1310|7840 1310!7840 1310|10248 2281!800 6590|7840 6590!7840 6590|12259 6432!800 3950|7840 3950!7840 3950|9807 3379!800 9230|7840 9230!7840 9230|12330 7580!12200 1310
+|16160 1310"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#4F4FFF">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap1281.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="20" d="20" tx="424" ty="84.4"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!8480 1688|19880 1688!19880 1688|19880 8688!19880 8688|8480 8688!8480 8688|8480 1688"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

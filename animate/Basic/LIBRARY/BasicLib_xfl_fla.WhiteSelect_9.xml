@@ -1,0 +1,54 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="BasicLib_xfl_fla.WhiteSelect_9" itemID="65c20c3c-00000b26" linkageExportForAS="true" linkageIdentifier="BasicLib_xfl_fla.WhiteSelect_9" linkageClassName="BasicLib_xfl_fla.WhiteSelect_9" lastModified="1707215932">
+  <timeline>
+    <DOMTimeline name="BasicLib_xfl_fla.WhiteSelect_9">
+      <layers>
+        <DOMLayer name="Labels Layer" color="#9FE08C">
+          <frames>
+            <DOMFrame index="0" name="normal" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" name="pro1" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Script Layer" color="#AECB44">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#943EE8" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="8.33332824707031" d="8.33332824707031"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 4" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

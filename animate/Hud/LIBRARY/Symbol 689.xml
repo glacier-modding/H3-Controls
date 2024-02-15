@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 689" itemID="65c1d214-00002413" symbolType="graphic" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 689">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#EBEBEB"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!488 -243[492 -252 418 -325!418 -325[344 -399 336 -395!336 -395|274 -332!274 -332[172 -397 54 -409!54 -409|54 -511!54 -511|126 -511!126 -511|153 -516!153 -516[157 -521 157 -544!157 -544[157 -570 151 -582!151 -582[142 -598 122 -598!122
+ -598|-131 -598!-131 -598[-167 -598 -167 -544!-167 -544[-167 -522 -161 -516!-161 -516|-131 -511!-131 -511|-53 -511!-53 -511|-53 -409!-53 -409[-244 -389 -374 -246!-374 -246[-505 -102 -505 93!-505 93[-505 302 -356 449!-356 449[-208 598
+ 1 598!1 598[210 598 357 449!357 449[505 302 505 93!505 93[505 -55 426 -180!426 -180|488 -243!1 194[-41 194 -71 164!-71 164[-101 135 -101 93!-101 93[-101 61 -82 35!-82 35[-65 10 -35 -1!-35 -1|-35 -219!-35 -219[-35 -234 -25 -244!-25 -244
+[-14 -255 1 -255!1 -255[15 -255 26 -244!26 -244[36 -234 36 -219!36 -219|36 -1!36 -1[65 10 84 35!84 35[102 61 102 93!102 93[102 135 72 164!72 164[43 194 1 194"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

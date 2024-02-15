@@ -1,0 +1,74 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 596" itemID="65c1d208-000016be" lastModified="1707200103">
+  <timeline>
+    <DOMTimeline name="Symbol 596">
+      <layers>
+        <DOMLayer name="Labels Layer 1" color="#D38F77">
+          <frames>
+            <DOMFrame index="0" name="line" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Labels Layer 2" color="#7B69F3">
+          <frames>
+            <DOMFrame index="0" name="arrowleft" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Labels Layer 3" color="#DCB710">
+          <frames>
+            <DOMFrame index="0" name="arrowright" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#AA7EB7">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 595" name="indicatorline" centerPoint3DX="0.5" centerPoint3DY="34">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#96F147">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 593" name="arrowleft" centerPoint3DX="-17" centerPoint3DY="39">
+                  <matrix>
+                    <Matrix tx="-27" ty="29"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#6BE887" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 591" name="arrowright" centerPoint3DX="70" centerPoint3DY="39">
+                  <matrix>
+                    <Matrix tx="60" ty="29"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

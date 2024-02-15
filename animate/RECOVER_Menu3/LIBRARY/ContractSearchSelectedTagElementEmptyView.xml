@@ -1,0 +1,40 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ContractSearchSelectedTagElementEmptyView" itemID="65c20e8e-00001fe0" linkageExportForAS="true" linkageIdentifier="ContractSearchSelectedTagElementEmptyView" linkageClassName="ContractSearchSelectedTagElementEmptyView" lastModified="1707216526">
+  <timeline>
+    <DOMTimeline name="ContractSearchSelectedTagElementEmptyView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#68DFEF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.WhiteSelect_38" centerPoint3DX="327" centerPoint3DY="76">
+                  <matrix>
+                    <Matrix a="0.500213623046875" d="0.479995727539062" tx="277" ty="26"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#D5E961" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.WhiteSelect_38" centerPoint3DX="177" centerPoint3DY="76">
+                  <matrix>
+                    <Matrix a="2.49998474121094" d="0.479995727539062" tx="127" ty="26"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

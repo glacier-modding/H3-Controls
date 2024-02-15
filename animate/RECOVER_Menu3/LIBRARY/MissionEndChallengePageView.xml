@@ -1,0 +1,103 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="MissionEndChallengePageView" itemID="65c20f19-0000203b" linkageExportForAS="true" linkageIdentifier="MissionEndChallengePageView" linkageClassName="MissionEndChallengePageView" lastModified="1707216665">
+  <timeline>
+    <DOMTimeline name="MissionEndChallengePageView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#FE1C71">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="header" fontRenderingMode="standard" width="1326" height="47.7" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="512" ty="848"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>header</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.2" lineSpacing="0" lineHeight="24.55" size="22" bitmapSize="440"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#974FCA">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="title" fontRenderingMode="standard" width="1326" height="81.5" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="512" ty="866"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>title</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="0.2" lineSpacing="0" lineHeight="75.95" size="68" bitmapSize="1360"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#01ADE6">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="totalXP" fontRenderingMode="standard" width="416" height="84" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="82" ty="850.35"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>XP</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" rotation="true" letterSpacing="0.2" lineSpacing="0" lineHeight="78.2" size="70" bitmapSize="1400"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#FE3E6D">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1933" name="totalXP_bg" centerPoint3DX="289.9" centerPoint3DY="930.9">
+                  <matrix>
+                    <Matrix a="1.04998779296875" d="0.999984741210938" tx="79.9" ty="890.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#BD8F65" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 1931" name="challengeArea" centerPoint3DX="960" centerPoint3DY="492.5">
+                  <matrix>
+                    <Matrix tx="80" ty="165"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

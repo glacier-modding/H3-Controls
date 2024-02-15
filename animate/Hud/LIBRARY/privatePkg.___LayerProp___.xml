@@ -1,0 +1,15 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="privatePkg.___LayerProp___" itemID="65c1ebc0-000008b4" linkageExportForAS="true" linkageIdentifier="privatePkg.___LayerProp___" linkageClassName="privatePkg.___LayerProp___" lastModified="1707207616">
+  <timeline>
+    <DOMTimeline name="privatePkg.___LayerProp___">
+      <layers>
+        <DOMLayer name="Layer 1" color="#52B3D8" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

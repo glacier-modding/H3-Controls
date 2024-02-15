@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Numeral_2" itemID="65c20e03-00001f84" linkageExportForAS="true" linkageIdentifier="Numeral_2" linkageClassName="Numeral_2" lastModified="1707216387">
+  <timeline>
+    <DOMTimeline name="Numeral_2">
+      <layers>
+        <DOMLayer name="Layer 1" color="#71AD63" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-374 -340|-371 -379!-371 -379|-257 -372!-257 -372[-120 -365 1 -365!1 -365[123 -365 261 -372!261 -372|374 -380!374 -380|377 -340!377 -340|318 -331!318 -331|290 -310!290 -310[278 -297 275 -267!275 -267|274 -239!274 -239|297 260!297 260
+[304 296 321 308!321 308[338 320 373 323!373 323|404 324!404 324|406 364!406 364|293 373!293 373[150 381 -1 381!-1 381[-148 381 -291 373!-291 373|-404 364!-404 364|-401 323!-401 323|-366 322!-366 322[-328 318 -314 303!-314 303[-300 288
+ -294 256!-294 256|-271 -250!-271 -250|-274 -275!-274 -275[-278 -302 -289 -313!-289 -313|-315 -330!-315 -330|-374 -340!-119 269[-120 304 -93 323!-93 323[-72 339 -39 340!-39 340|40 340!40 340[71 341 95 322!95 322[120 302 121 274!121 274
+|99 -261!99 -261[98 -288 81 -305!81 -305[64 -322 37 -323!37 -323|-26 -323!-26 -323[-53 -324 -73 -306!-73 -306[-93 -288 -94 -263!-94 -263|-119 269"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

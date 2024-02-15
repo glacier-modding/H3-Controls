@@ -1,0 +1,24 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HeadlineOutbreakLevelAddonView" itemID="65c20ebc-00001ffe" linkageExportForAS="true" linkageIdentifier="HeadlineOutbreakLevelAddonView" linkageClassName="HeadlineOutbreakLevelAddonView" lastModified="1707216572">
+  <timeline>
+    <DOMTimeline name="HeadlineOutbreakLevelAddonView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#B6C604" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 15" name="indicator" centerPoint3DX="250" centerPoint3DY="122">
+                  <matrix>
+                    <Matrix a="0.816329956054688" d="0.816329956054688" tx="250" ty="122"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

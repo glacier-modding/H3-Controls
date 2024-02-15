@@ -1,0 +1,28 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 3500" itemID="65c1d1f3-00001288" symbolType="graphic" lastModified="1707200131">
+  <timeline>
+    <DOMTimeline name="Symbol 3500">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!67 -160|61 -160!61 -160|61 -382!61 -382|33 -424!33 -424|11 -600!11 -600|-12 -600!-12 -600|-33 -424!-33 -424|-62 -382!-62 -382|-62 -160!-62 -160|-68 -160!-68 -160|-68 -139!-68 -139|67 -139!67 -139|67 -160!81 600|90 592!90 592|90 573!90
+ 573|80 573!80 573|80 548!80 548|90 535!90 535|90 -1!90 -1|67 -63!67 -63|67 -95!67 -95|61 -95!61 -95|61 -107!61 -107|67 -107!67 -107|67 -129!67 -129|-68 -129!-68 -129|-68 -107!-68 -107|-62 -107!-62 -107|-62 -95!-62 -95|-68 -95!-68 -95
+|-68 -63!-68 -63|-90 -1!-90 -1|-90 535!-90 535|-80 548!-80 548|-80 573!-80 573|-90 573!-90 573|-90 592!-90 592|-82 600!-82 600|81 600"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

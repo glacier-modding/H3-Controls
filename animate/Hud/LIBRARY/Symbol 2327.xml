@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2327" itemID="65c1d214-0000281b" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 2327">
+      <layers>
+        <DOMLayer name="Layer 1" color="#9A6EEE" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="HUDLibVersus_xfl_fla.StashMarkerProgressBar_16" name="bar" centerPoint3DX="26" centerPoint3DY="6">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

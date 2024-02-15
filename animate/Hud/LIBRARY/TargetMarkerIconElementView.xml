@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="TargetMarkerIconElementView" itemID="65c1eb82-000008a3" linkageExportForAS="true" linkageIdentifier="TargetMarkerIconElementView" linkageClassName="TargetMarkerIconElementView" lastModified="1707207554">
+  <timeline>
+    <DOMTimeline name="TargetMarkerIconElementView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#AFC2F1" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap273.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="16.1538543701172" d="16.1538543701172" tx="-21" ty="-21"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-420 -420|420 -420!420 -420|420 420!420 420|-420 420!-420 420|-420 -420"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

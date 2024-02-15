@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ChallengeSelectionFrameView" itemID="65c20eba-00001ffd" linkageExportForAS="true" linkageIdentifier="ChallengeSelectionFrameView" linkageClassName="ChallengeSelectionFrameView" scaleGridLeft="-65" scaleGridRight="65" scaleGridTop="-65" scaleGridBottom="65" lastModified="1707216570">
+  <timeline>
+    <DOMTimeline name="ChallengeSelectionFrameView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#F8845E" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-1400 -1400|-1301 -1400!-1301 -1400|1301 -1400!1301 -1400|1400 -1400!1400 -1400|1400 -1301!1400 -1301|1400 1301!1400 1301|1400 1400!1400 1400|1301 1400!1301 1400|-1301 1400!-1301 1400|-1400 1400!-1400 1400|-1400 1301!-1400 1301|-1400
+ -1301!-1400 -1301|-1400 -1400"/>
+                    <Edge fillStyle0="1" edges="
+!-1300 -1300|1300 -1300!1300 -1300|1300 1300!1300 1300|-1300 1300!-1300 1300|-1300 -1300"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

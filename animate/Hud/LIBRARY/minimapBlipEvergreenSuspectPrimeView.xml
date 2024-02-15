@@ -1,0 +1,30 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="minimapBlipEvergreenSuspectPrimeView" itemID="65c1ec44-000008eb" linkageExportForAS="true" linkageIdentifier="minimapBlipEvergreenSuspectPrimeView" linkageClassName="minimapBlipEvergreenSuspectPrimeView" lastModified="1707207748">
+  <timeline>
+    <DOMTimeline name="minimapBlipEvergreenSuspectPrimeView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#79CF70" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap1649.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="20" d="20" tx="-25" ty="-25"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-500 -500|500 -500!500 -500|500 500!500 500|-500 500!-500 500|-500 -500"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

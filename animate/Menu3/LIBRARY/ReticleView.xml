@@ -1,0 +1,603 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ReticleView" itemID="65c20fb6-000020a0" linkageExportForAS="true" linkageIdentifier="ReticleView" linkageClassName="ReticleView" lastModified="1707216822">
+  <timeline>
+    <DOMTimeline name="ReticleView">
+      <layers>
+        <DOMLayer name="Labels Layer" color="#E386BC">
+          <frames>
+            <DOMFrame index="0" name="NONE" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="7" name="PISTOL" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="8" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="14" name="REVOLVER" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="15" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="24" name="SMG" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="25" duration="5" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="30" name="RIFLE" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="31" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="37" name="SHOTGUN" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="38" duration="8" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="46" name="SNIPER" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="47" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="53" name="HARDBALLER" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="54" duration="11" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="65" name="SPOTTER" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="66" duration="8" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="74" name="POINTER" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="75" duration="7" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="82" name="WORLDMAP" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="83" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="92" name="BLINDFIRE" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="93" duration="11" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="104" name="RANGEDINDICATOR" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Script Layer" color="#D55B55">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <Actionscript>
+                <script><![CDATA[stop();
+]]></script>
+              </Actionscript>
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#B7F09C">
+          <frames>
+            <DOMFrame index="0" duration="120" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3443" name="hitKill_mc" centerPoint3DX="15" centerPoint3DY="15">
+                  <matrix>
+                    <Matrix a="0.75" d="0.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 4" color="#D8794F">
+          <frames>
+            <DOMFrame index="0" duration="120" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3442" name="hit_mc" centerPoint3DX="15" centerPoint3DY="15">
+                  <matrix>
+                    <Matrix a="0.5" d="0.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#83BBDD">
+          <frames>
+            <DOMFrame index="0" duration="65" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3438" name="center_mc" centerPoint3DX="3" centerPoint3DY="3">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="65" duration="55" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 6" color="#23F26C">
+          <frames>
+            <DOMFrame index="0" duration="46" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="46" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker2_mc" centerPoint3DX="19" centerPoint3DY="2">
+                  <matrix>
+                    <Matrix a="-1" tx="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="53" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker2_mc" centerPoint3DX="9" centerPoint3DY="2">
+                  <matrix>
+                    <Matrix a="-1" tx="1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="65" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker2_mc" centerPoint3DX="19" centerPoint3DY="2">
+                  <matrix>
+                    <Matrix a="-1" tx="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="74" duration="46" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#DBD32C">
+          <frames>
+            <DOMFrame index="0" duration="46" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="46" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker1_mc" centerPoint3DX="8" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix a="0" b="-1" c="1" d="0" ty="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="53" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker1_mc" centerPoint3DX="8" centerPoint3DY="3">
+                  <matrix>
+                    <Matrix a="0" b="-1" c="1" d="0" ty="1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="65" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker1_mc" centerPoint3DX="8" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix a="0" b="-1" c="1" d="0" ty="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="74" duration="46" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#ADD4E5">
+          <frames>
+            <DOMFrame index="0" duration="46" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="46" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker0_mc" centerPoint3DX="-3" centerPoint3DY="2">
+                  <matrix>
+                    <Matrix tx="-11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="53" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker0_mc" centerPoint3DX="7" centerPoint3DY="2">
+                  <matrix>
+                    <Matrix tx="-1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="65" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker0_mc" centerPoint3DX="-3" centerPoint3DY="2">
+                  <matrix>
+                    <Matrix tx="-11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="74" duration="46" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 9" color="#69C751">
+          <frames>
+            <DOMFrame index="0" duration="46" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="46" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3452" name="marker4_mc" centerPoint3DX="18.35" centerPoint3DY="18.35">
+                  <matrix>
+                    <Matrix a="-1" d="-1" tx="12" ty="12"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="53" duration="29" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="82" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker3_mc" centerPoint3DX="8" centerPoint3DY="-10.5">
+                  <matrix>
+                    <Matrix a="0" b="1" c="-1" d="0" ty="-12.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="92" duration="28" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 10" color="#C3E2C3">
+          <frames>
+            <DOMFrame index="0" duration="7" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="7" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker2_mc" centerPoint3DX="9" centerPoint3DY="2">
+                  <matrix>
+                    <Matrix a="-1" tx="1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3447" name="marker2_mc" centerPoint3DX="16.5" centerPoint3DY="2">
+                  <matrix>
+                    <Matrix a="-1" tx="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="30" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker2_mc" centerPoint3DX="19" centerPoint3DY="2">
+                  <matrix>
+                    <Matrix a="-1" tx="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="37" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="46" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3452" name="marker3_mc" centerPoint3DX="-5.65" centerPoint3DY="18.35">
+                  <matrix>
+                    <Matrix d="-1" tx="-12" ty="12"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="53" duration="29" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="82" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker2_mc" centerPoint3DX="19" centerPoint3DY="2">
+                  <matrix>
+                    <Matrix a="-1" tx="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="92" duration="28" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 11" color="#84B7C7">
+          <frames>
+            <DOMFrame index="0" duration="7" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="7" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker1_mc" centerPoint3DX="8" centerPoint3DY="3">
+                  <matrix>
+                    <Matrix a="0" b="-1" c="1" d="0" ty="1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3447" name="marker1_mc" centerPoint3DX="5.5" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix a="0" b="-1" c="1" d="0" ty="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="30" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker1_mc" centerPoint3DX="8" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix a="0" b="-1" c="1" d="0" ty="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="37" duration="9" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="46" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3452" name="marker5_mc" centerPoint3DX="18.35" centerPoint3DY="-5.65">
+                  <matrix>
+                    <Matrix a="-1" tx="12" ty="-12"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="53" duration="29" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="82" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker1_mc" centerPoint3DX="8" centerPoint3DY="13">
+                  <matrix>
+                    <Matrix a="0" b="-1" c="1" d="0" ty="11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="92" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3454" name="marker1_mc" centerPoint3DX="15.75" centerPoint3DY="107.8">
+                  <matrix>
+                    <Matrix a="-0.5625" d="0.5625" tx="-7.5" ty="0.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="104" duration="16" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 12" color="#D1794E" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="7" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="7" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker0_mc" centerPoint3DX="7" centerPoint3DY="2">
+                  <matrix>
+                    <Matrix tx="-1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3447" name="marker0_mc" centerPoint3DX="-5.5" centerPoint3DY="2">
+                  <matrix>
+                    <Matrix tx="-11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="30" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker0_mc" centerPoint3DX="-3" centerPoint3DY="2">
+                  <matrix>
+                    <Matrix tx="-11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="37" duration="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3450" name="marker0_mc" centerPoint3DX="128" centerPoint3DY="128">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="46" duration="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3452" name="marker6_mc" centerPoint3DX="-5.65" centerPoint3DY="-5.65">
+                  <matrix>
+                    <Matrix tx="-12" ty="-12"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="53" duration="21" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="74" duration="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3438" name="center_mc" centerPoint3DX="3" centerPoint3DY="3">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="82" duration="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3445" name="marker0_mc" centerPoint3DX="-3" centerPoint3DY="2">
+                  <matrix>
+                    <Matrix tx="-11"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="92" duration="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 3454" name="marker0_mc" centerPoint3DX="30.75" centerPoint3DY="107.8">
+                  <matrix>
+                    <Matrix a="0.5625" d="0.5625" tx="7.5" ty="0.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="104" duration="16" keyMode="9728">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <BitmapFill bitmapPath="bitmap3455.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="20" d="20" tx="-25" ty="-1"/>
+                        </matrix>
+                      </BitmapFill>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-500 -20|500 -20!500 -20|500 1020!500 1020|-500 1020!-500 1020|-500 -20"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

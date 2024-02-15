@@ -1,0 +1,50 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="timeDisplayView" itemID="65c1eb79-000008a0" linkageExportForAS="true" linkageIdentifier="timeDisplayView" linkageClassName="timeDisplayView" lastModified="1707207545">
+  <timeline>
+    <DOMTimeline name="timeDisplayView">
+      <layers>
+        <DOMLayer name="Layer 1" color="#C7CA99">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="header_txt" fontRenderingMode="standard" width="288.45" height="19.1" isSelectable="false" renderAsHTML="true" lineType="multiline no wrap">
+                  <matrix>
+                    <Matrix tx="2" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#B04E9A" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="time_txt" fontRenderingMode="standard" width="171.95" height="71.6" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="2" ty="8"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>00:00</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" rotation="true" letterSpacing="-2" lineHeight="67" size="60" bitmapSize="1200" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

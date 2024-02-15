@@ -1,0 +1,593 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 369" itemID="65c1d213-0000234e" lastModified="1707200124">
+  <timeline>
+    <DOMTimeline name="Symbol 369">
+      <layers>
+        <DOMLayer name="Layer 1" color="#779AB8">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="210" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.10459899902344" d="0.999984741210938" tx="105" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.73828125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="210" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.18606567382812" d="0.999984741210938" tx="105" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.5390625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="209.9" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.24847412109375" d="0.999984741210938" tx="104.9" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.37890625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="209.95" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.29539489746094" d="0.999984741210938" tx="104.95" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.26171875"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="5" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="209.9" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.32989501953125" d="0.999984741210938" tx="104.9" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.1796875"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="209.9" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.3546142578125" d="0.999984741210938" tx="104.9" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.109375"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="7" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="209.9" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.371826171875" d="0.999984741210938" tx="104.9" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.0703125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="209.95" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.38336181640625" d="0.999984741210938" tx="104.95" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.0390625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="209.95" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.39076232910156" d="0.999984741210938" tx="104.95" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.01953125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="10" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="209.95" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.395263671875" d="0.999984741210938" tx="104.95" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.01171875"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="11" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="209.95" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.39779663085938" d="0.999984741210938" tx="104.95" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="12" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="209.95" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.39910888671875" d="0.999984741210938" tx="104.95" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="13" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="209.95" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.39970397949219" d="0.999984741210938" tx="104.95" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="209.9" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.39991760253906" d="0.999984741210938" tx="104.9" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="15" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="209.9" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.39997863769531" d="0.999984741210938" tx="104.9" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="16" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="209.9" centerPoint3DY="23.05">
+                  <matrix>
+                    <Matrix a="1.39999389648438" d="0.999984741210938" tx="104.9" ty="11.55"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="17" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="209.95" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix a="1.39999389648438" d="0.999984741210938" tx="104.95" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="18" duration="78" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="pulseMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#F18CA7">
+          <frames>
+            <DOMFrame index="0" duration="78" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="78" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="79" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.98828125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="80" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.96875"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="81" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.94921875"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="82" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.921875"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="83" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.890625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="84" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.8515625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="85" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.80078125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="86" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.75"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="87" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.69140625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="88" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.62890625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="89" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.55078125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="90" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.48046875"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="91" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.390625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="92" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.30078125"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="93" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.2109375"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="94" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.109375"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="95" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 248" name="overlayMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#F0AE01" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="96" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Symbol 247" name="bgMc" centerPoint3DX="210" centerPoint3DY="23">
+                  <matrix>
+                    <Matrix d="0.999984741210938" tx="105" ty="11.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
