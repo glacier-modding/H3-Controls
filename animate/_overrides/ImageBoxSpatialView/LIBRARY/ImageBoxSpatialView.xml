@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ImageBoxSpatialView" itemID="65cca8d2-0000093e" linkageExportForAS="true" linkageIdentifier="ImageBoxSpatialView" linkageClassName="ImageBoxSpatialView" lastModified="1708094188">
+  <timeline>
+    <DOMTimeline name="ImageBoxSpatialView" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_1" color="#57D3A8" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="txt_info" width="396" height="16" isSelectable="false" renderAsHTML="true">
+                  <matrix>
+                    <Matrix tx="-198" ty="-8"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" rotation="true" lineHeight="14.35" bitmapSize="240" face="Neue Haas Grotesk Display Pro 75 Bold*" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
