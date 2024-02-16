@@ -5,7 +5,10 @@
       <configuration name="Basic" main-class="basic_Main" output-file="Basic.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="32.0">
           <entries>
-            <entry library-name="Controls" library-level="project">
+            <entry library-name="_overrides" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="lib" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -19,7 +22,10 @@
       <configuration name="Common" main-class="common_Main" output-file="Common.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="32.0">
           <entries>
-            <entry library-name="Controls" library-level="project">
+            <entry library-name="_overrides" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="lib" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -33,7 +39,10 @@
       <configuration name="ControlsMain" main-class="ControlsMain" output-file="ControlsMain.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="32.0">
           <entries>
-            <entry library-name="Controls" library-level="project">
+            <entry library-name="_overrides" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="lib" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -47,7 +56,10 @@
       <configuration name="Hud" main-class="hud_Main" output-file="Hud.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="32.0">
           <entries>
-            <entry library-name="Controls" library-level="project">
+            <entry library-name="_overrides" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="lib" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -61,7 +73,10 @@
       <configuration name="Menu3" main-class="menu3_Main" output-file="Menu3.swf" output-folder="$MODULE_DIR$/bin">
         <dependencies target-player="32.0">
           <entries>
-            <entry library-name="Controls" library-level="project">
+            <entry library-name="_overrides" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="lib" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -84,5 +99,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="Flash" level="project" />
     <orderEntry type="library" exported="" name="Controls" level="project" />
+    <orderEntry type="library" exported="" name="_overrides" level="project" />
+    <orderEntry type="library" exported="" name="lib" level="project" />
   </component>
 </module>

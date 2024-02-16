@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="_overrides" type="flex">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/_overrides" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/_overrides" recursive="false" />
+  </library>
+</component>
