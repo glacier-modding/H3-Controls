@@ -1,0 +1,26 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 136" itemID="65cca8cd-000008b0" symbolType="graphic" lastModified="1707910004">
+  <timeline>
+    <DOMTimeline name="Symbol 136" layerDepthEnabled="true">
+      <layers>
+        <DOMLayer name="Layer_1" color="#4F4FFF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+              <elements>
+                <DOMShape isFloating="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!290 -300|-290 -300!-290 -300[-410 -300 -410 -180!-410 -180|-410 180!-410 180[-410 300 -290 300!-290 300|290 300!290 300[410 300 410 180!410 180|410 -180!410 -180[410 -300 290 -300"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
