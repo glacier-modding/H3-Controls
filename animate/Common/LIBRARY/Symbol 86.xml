@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 86" itemID="65c2e5f2-0000045b" sourceFlashFilepath="../../ButtonPrompt.fla" sourceLibraryItemHRef="Symbol 86" sourceLastModified="1707200112" symbolType="graphic" lastModified="1707200112" sourceItemID="00000000-ffffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 86" itemID="65cca89b-00000456" symbolType="graphic" lastModified="1707910002">
   <timeline>
     <DOMTimeline name="Symbol 86">
       <layers>
-        <DOMLayer name="Layer_1" color="#4F4FFF" current="true" isSelected="true">
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2777" itemID="65c1d1f3-0000111f" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2777" itemID="65cf2470-00000ec8" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 2777">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="HUDLibEvergreen_xfl_fla.CampaignProgress_FrameDots_20" name="campDots_mc" centerPoint3DX="106.25" centerPoint3DY="62.25">
+                <DOMSymbolInstance libraryItemName="Symbol 2776" name="campDots_mc" centerPoint3DX="106.25" centerPoint3DY="62.25">
                   <matrix>
                     <Matrix tx="91" ty="59"/>
                   </matrix>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ChartValueDisplayView" itemID="65c20e50-00001fb7" linkageExportForAS="true" linkageIdentifier="ChartValueDisplayView" linkageClassName="ChartValueDisplayView" lastModified="1707216464">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ChartValueDisplayView" itemID="65ccac62-00002c8a" linkageExportForAS="true" linkageIdentifier="ChartValueDisplayView" linkageClassName="ChartValueDisplayView" lastModified="1707912290">
   <timeline>
     <DOMTimeline name="ChartValueDisplayView">
       <layers>

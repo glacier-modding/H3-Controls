@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ButtonPrompt_xfl_fla.ButtonTemplateOpenVR_ButtonSymbol_18" itemID="65c20c6d-00000cce" sourceFlashFilepath="../ButtonPrompt/ButtonPrompt.xfl" sourceLibraryItemHRef="ButtonPrompt_xfl_fla.ButtonTemplateOpenVR_ButtonSymbol_18" sourceLastModified="1707990183" lastModified="1707990183" sourceItemID="65c20c6d-00000cce">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ButtonPrompt_xfl_fla.ButtonTemplateOpenVR_ButtonSymbol_18" itemID="65ccade8-00002d8e" lastModified="1708074224">
   <timeline>
     <DOMTimeline name="ButtonPrompt_xfl_fla.ButtonTemplateOpenVR_ButtonSymbol_18">
       <layers>
-        <DOMLayer name="Labels_Layer" color="#5AD2ED">
+        <DOMLayer name="Labels Layer" color="#6ED364">
           <frames>
             <DOMFrame index="0" name="menu" labelType="name" keyMode="9728">
               <elements/>
@@ -12,7 +12,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Script_Layer" color="#936BEA">
+        <DOMLayer name="Script Layer" color="#9C10D5">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
@@ -23,7 +23,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer_3" color="#5586F0" current="true" isSelected="true">
+        <DOMLayer name="Layer 3" color="#6E84D8" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -48,7 +48,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle0="1" edges="!0 176|260 50!260 50|156 0!156 0|260 -50!260 -50|0 -176!0 -176|-260 -50!-260 -50|-155 0!-155 0|-260 50!-260 50|0 176!0 41|-190 -50!-190 -50|0 -142!0 -142|190 -50!190 -50|0 41!0 142|-190 50!-190 50|-121 17!-121 17|0 75!0 75|121 17!121
+                    <Edge fillStyle0="1" edges="!0 41|-190 -50!-190 -50|0 -142!0 -142|190 -50!190 -50|0 41!0 176|260 50!260 50|156 0!156 0|260 -50!260 -50|0 -176!0 -176|-260 -50!-260 -50|-155 0!-155 0|-260 50!-260 50|0 176!0 142|-190 50!-190 50|-121 17!-121 17|0 75!0 75|121 17!121
  17|190 50!190 50|0 142"/>
                   </edges>
                 </DOMShape>

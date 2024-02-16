@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2702" itemID="65c1d1f3-000010fa" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2702" itemID="65cf2470-00001016" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 2702">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" duration="25" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -18,7 +18,7 @@
             </DOMFrame>
             <DOMFrame index="25" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -27,7 +27,7 @@
             </DOMFrame>
             <DOMFrame index="26" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.10531616210938" d="1.1646728515625"/>
                   </matrix>
@@ -42,7 +42,7 @@
             </DOMFrame>
             <DOMFrame index="27" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.20010375976562" d="1.31288146972656"/>
                   </matrix>
@@ -57,7 +57,7 @@
             </DOMFrame>
             <DOMFrame index="28" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.28518676757812" d="1.44593811035156"/>
                   </matrix>
@@ -72,7 +72,7 @@
             </DOMFrame>
             <DOMFrame index="29" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.36131286621094" d="1.56497192382813"/>
                   </matrix>
@@ -87,7 +87,7 @@
             </DOMFrame>
             <DOMFrame index="30" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.42924499511719" d="1.67117309570313"/>
                   </matrix>
@@ -102,7 +102,7 @@
             </DOMFrame>
             <DOMFrame index="31" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.4896240234375" d="1.76557922363281"/>
                   </matrix>
@@ -117,7 +117,7 @@
             </DOMFrame>
             <DOMFrame index="32" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.54310607910156" d="1.84921264648438"/>
                   </matrix>
@@ -132,7 +132,7 @@
             </DOMFrame>
             <DOMFrame index="33" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.59030151367188" d="1.92301940917969"/>
                   </matrix>
@@ -147,7 +147,7 @@
             </DOMFrame>
             <DOMFrame index="34" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.63179016113281" d="1.98789978027344"/>
                   </matrix>
@@ -162,7 +162,7 @@
             </DOMFrame>
             <DOMFrame index="35" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.66810607910156" d="2.044677734375"/>
                   </matrix>
@@ -177,7 +177,7 @@
             </DOMFrame>
             <DOMFrame index="36" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.69973754882813" d="2.09413146972656"/>
                   </matrix>
@@ -192,7 +192,7 @@
             </DOMFrame>
             <DOMFrame index="37" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.72715759277344" d="2.13702392578125"/>
                   </matrix>
@@ -207,7 +207,7 @@
             </DOMFrame>
             <DOMFrame index="38" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.75080871582031" d="2.17398071289062"/>
                   </matrix>
@@ -222,7 +222,7 @@
             </DOMFrame>
             <DOMFrame index="39" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.77108764648438" d="2.20570373535156"/>
                   </matrix>
@@ -237,7 +237,7 @@
             </DOMFrame>
             <DOMFrame index="40" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.78837585449219" d="2.23272705078125"/>
                   </matrix>
@@ -252,7 +252,7 @@
             </DOMFrame>
             <DOMFrame index="41" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.80299377441406" d="2.25558471679688"/>
                   </matrix>
@@ -267,7 +267,7 @@
             </DOMFrame>
             <DOMFrame index="42" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.81529235839844" d="2.27481079101562"/>
                   </matrix>
@@ -282,7 +282,7 @@
             </DOMFrame>
             <DOMFrame index="43" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.82553100585938" d="2.29083251953125"/>
                   </matrix>
@@ -297,7 +297,7 @@
             </DOMFrame>
             <DOMFrame index="44" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.83401489257813" d="2.3040771484375"/>
                   </matrix>
@@ -312,7 +312,7 @@
             </DOMFrame>
             <DOMFrame index="45" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.8409423828125" d="2.31494140625"/>
                   </matrix>
@@ -327,7 +327,7 @@
             </DOMFrame>
             <DOMFrame index="46" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.84657287597656" d="2.32373046875"/>
                   </matrix>
@@ -342,7 +342,7 @@
             </DOMFrame>
             <DOMFrame index="47" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.85107421875" d="2.33076477050781"/>
                   </matrix>
@@ -357,7 +357,7 @@
             </DOMFrame>
             <DOMFrame index="48" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.85462951660156" d="2.33633422851562"/>
                   </matrix>
@@ -372,7 +372,7 @@
             </DOMFrame>
             <DOMFrame index="49" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.85740661621094" d="2.34066772460938"/>
                   </matrix>
@@ -387,7 +387,7 @@
             </DOMFrame>
             <DOMFrame index="50" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.85952758789063" d="2.34397888183594"/>
                   </matrix>
@@ -402,7 +402,7 @@
             </DOMFrame>
             <DOMFrame index="51" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.86112976074219" d="2.34648132324219"/>
                   </matrix>
@@ -417,7 +417,7 @@
             </DOMFrame>
             <DOMFrame index="52" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.86228942871094" d="2.34831237792969"/>
                   </matrix>
@@ -432,7 +432,7 @@
             </DOMFrame>
             <DOMFrame index="53" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.86314392089844" d="2.34963989257812"/>
                   </matrix>
@@ -447,7 +447,7 @@
             </DOMFrame>
             <DOMFrame index="54" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.86372375488281" d="2.35054016113281"/>
                   </matrix>
@@ -462,7 +462,7 @@
             </DOMFrame>
             <DOMFrame index="55" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.86412048339844" d="2.35116577148438"/>
                   </matrix>
@@ -477,7 +477,7 @@
             </DOMFrame>
             <DOMFrame index="56" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.86436462402344" d="2.3515625"/>
                   </matrix>
@@ -492,7 +492,7 @@
             </DOMFrame>
             <DOMFrame index="57" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.86451721191406" d="2.35177612304688"/>
                   </matrix>
@@ -507,7 +507,7 @@
             </DOMFrame>
             <DOMFrame index="58" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.86460876464844" d="2.3519287109375"/>
                   </matrix>
@@ -522,7 +522,7 @@
             </DOMFrame>
             <DOMFrame index="59" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.86463928222656" d="2.35198974609375"/>
                   </matrix>
@@ -537,7 +537,7 @@
             </DOMFrame>
             <DOMFrame index="60" duration="3" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.86466979980469" d="2.35203552246094"/>
                   </matrix>
@@ -552,7 +552,7 @@
             </DOMFrame>
             <DOMFrame index="63" duration="2" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <matrix>
                     <Matrix a="1.86468505859375" d="2.35205078125"/>
                   </matrix>
@@ -567,7 +567,7 @@
             </DOMFrame>
             <DOMFrame index="65" duration="10" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Subtitles_xfl_fla.SpeakerBubblePulse_9" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
+                <DOMSymbolInstance libraryItemName="Symbol 2701" name="pulse_mc" centerPoint3DX="11" centerPoint3DY="8.5">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

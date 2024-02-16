@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 561" itemID="65c1d214-000023ac" symbolType="graphic" lastModified="1707200124">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 561" itemID="65cca918-0000137d" symbolType="graphic" lastModified="1707910006">
   <timeline>
     <DOMTimeline name="Symbol 561">
       <layers>
@@ -25,7 +25,7 @@
                     <Edge fillStyle1="1" edges="
 !-144 -214|-144 -269"/>
                     <Edge fillStyle0="1" edges="
-!-144 285|-99 287!-99 287[29 287 202 232!202 232[383 176 472 100!472 100|410 62!410 62|346 24!346 24[231 124 143 168!143 168[25 230 -101 230!-101 230|-144 227!-144 227|-144 166!-144 113|-144 166"/>
+!-144 227|-144 166!-144 113|-144 166!-144 285|-99 287!-99 287[29 287 202 232!202 232[383 176 472 100!472 100|410 62!410 62|346 24!346 24[231 124 143 168!143 168[25 230 -101 230!-101 230|-144 227"/>
                     <Edge fillStyle1="1" edges="
 !-144 285|-144 227"/>
                     <Edge fillStyle0="1" edges="

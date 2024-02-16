@@ -20,15 +20,15 @@
     <pngDefaultName>1</pngDefaultName>
     <swcDefaultName>0</swcDefaultName>
     <oamDefaultName>1</oamDefaultName>
-    <flashFileName>Basic.swf</flashFileName>
-    <projectorWinFileName>Basic.exe</projectorWinFileName>
-    <projectorMacFileName>Basic.app</projectorMacFileName>
-    <htmlFileName>Basic.html</htmlFileName>
-    <gifFileName>Basic.gif</gifFileName>
-    <jpegFileName>Basic.jpg</jpegFileName>
-    <pngFileName>Basic.png</pngFileName>
-    <swcFileName>..\lib\Basic.swc</swcFileName>
-    <oamFileName>Basic.oam</oamFileName>
+    <flashFileName>basic.swf</flashFileName>
+    <projectorWinFileName>basic.exe</projectorWinFileName>
+    <projectorMacFileName>basic.app</projectorMacFileName>
+    <htmlFileName>basic.html</htmlFileName>
+    <gifFileName>basic.gif</gifFileName>
+    <jpegFileName>basic.jpg</jpegFileName>
+    <pngFileName>basic.png</pngFileName>
+    <swcFileName>..\lib\basic.swc</swcFileName>
+    <oamFileName>basic.oam</oamFileName>
     <publishFormat id="3E6AA359-3A3C-4827-B709-9977BDDDACCB">0</publishFormat>
     <publishFormat id="BBC1F406-65F2-4219-9304-FA48C7549E44">0</publishFormat>
     <publishFormat id="BBC1F806-66F2-4339-9306-FA48C7549E59">0</publishFormat>
@@ -39,8 +39,8 @@
     <VersionInfo>32,0,0,0;30,0,0,0;26,0,0,0;25,0,0,0;23,0,0,0;21,0,0,0;20,0,0,0;19,0,0,0;18,0,0,0;17,0,0,0;16,0,0,0;14,0,0,0;13,0,0,0;12,0,0,0;11,9,0,0;11,8,0,0;11,7,0,0;11,6,0,0;11,5,0,0;11,4,0,0;11,3,0,0;11,2,0,0;11,1,0,0;10,3,0,0;10,2,153,0;10,1,52,0;9,0,124,0;8,0,24,0;7,0,14,0;6,0,79,0;5,0,58,0;4,0,32,0;3,0,8,0;2,0,1,12;1,0,0,1;</VersionInfo>
     <UsingDefaultContentFilename>1</UsingDefaultContentFilename>
     <UsingDefaultAlternateFilename>1</UsingDefaultAlternateFilename>
-    <ContentFilename>Basic_content.html</ContentFilename>
-    <AlternateFilename>Basic_alternate.html</AlternateFilename>
+    <ContentFilename>basic_content.html</ContentFilename>
+    <AlternateFilename>basic_alternate.html</AlternateFilename>
     <UsingOwnAlternateFile>0</UsingOwnAlternateFile>
     <OwnAlternateFilename></OwnAlternateFilename>
     <Width>500</Width>
@@ -90,10 +90,10 @@
     <StreamUse8kSampleRate>0</StreamUse8kSampleRate>
     <EventUse8kSampleRate>0</EventUse8kSampleRate>
     <UseNetwork>1</UseNetwork>
-    <DocumentClass></DocumentClass>
+    <DocumentClass>basic_Main</DocumentClass>
     <AS3Strict>2</AS3Strict>
     <AS3Coach>4</AS3Coach>
-    <AS3AutoDeclare>0</AS3AutoDeclare>
+    <AS3AutoDeclare>4096</AS3AutoDeclare>
     <AS3Dialect>AS3</AS3Dialect>
     <AS3ExportFrame>1</AS3ExportFrame>
     <AS3Optimize>1</AS3Optimize>
@@ -101,7 +101,7 @@
     <ScriptStuckDelay>15</ScriptStuckDelay>
     <IncludeXMP>1</IncludeXMP>
     <HardwareAcceleration>0</HardwareAcceleration>
-    <AS3Flags>6</AS3Flags>
+    <AS3Flags>4102</AS3Flags>
     <DefaultLibraryLinkage>rsl</DefaultLibraryLinkage>
     <RSLPreloaderMethod>wrap</RSLPreloaderMethod>
     <RSLPreloaderSWF>$(AppConfig)/ActionScript 3.0/rsls/loader_animation.swf</RSLPreloaderSWF>
@@ -111,11 +111,13 @@
         <linkage>merge</linkage>
       </library-path-entry>
       <library-path-entry>
-        <swc-path>$(FlexSDK)/frameworks/libs/core.swc</swc-path>
+        <swc-path>$(FlexSDK)/frameworks/libs/flex.swc</swc-path>
         <linkage>merge</linkage>
         <rsl-url>textLayout_2.0.0.232.swz</rsl-url>
-        <rsl-url>textLayout_2.0.0.232.swz</rsl-url>
-        <rsl-url>textLayout_2.0.0.232.swz</rsl-url>
+      </library-path-entry>
+      <library-path-entry>
+        <swc-path>$(FlexSDK)/frameworks/libs/core.swc</swc-path>
+        <linkage>merge</linkage>
         <rsl-url>textLayout_2.0.0.232.swz</rsl-url>
         <rsl-url>textLayout_2.0.0.232.swz</rsl-url>
         <rsl-url>textLayout_2.0.0.232.swz</rsl-url>
@@ -165,13 +167,13 @@
   </PublishOamProperties>
   <PublishProperties id="3E6AA359-3A3C-4827-B709-9977BDDDACCB" name="SWF Archive" otf="true" enabled="true">
     <Property name="default">true</Property>
-    <Property name="filename">Basic.zip</Property>
+    <Property name="filename">basic.zip</Property>
   </PublishProperties>
   <PublishProperties id="BBC1F406-65F2-4219-9304-FA48C7549E44" name="SVG Image" otf="true" enabled="true">
     <Property name="copy">true</Property>
     <Property name="default">true</Property>
     <Property name="embed">false</Property>
-    <Property name="filename">Basic.svg</Property>
+    <Property name="filename">basic.svg</Property>
     <Property name="imagesPath">images</Property>
     <Property name="includeHiddenLayers">true</Property>
     <Property name="optimizeForCH">false</Property>
@@ -179,11 +181,11 @@
   </PublishProperties>
   <PublishProperties id="BBC1F806-66F2-4339-9306-FA48C7549E59" name="Mac Projector" otf="true" enabled="true">
     <Property name="default">true</Property>
-    <Property name="filename">Basic.app</Property>
+    <Property name="filename">basic.app</Property>
   </PublishProperties>
   <PublishProperties id="BBC2F906-78F3-4239-9305-FA48C8549E59" name="Win Projector" otf="true" enabled="true">
     <Property name="default">true</Property>
-    <Property name="filename">Basic.exe</Property>
+    <Property name="filename">basic.exe</Property>
   </PublishProperties>
 </flash_profile>
 </flash_profiles>

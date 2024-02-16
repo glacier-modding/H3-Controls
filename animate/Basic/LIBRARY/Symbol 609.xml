@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 609" itemID="65c1d208-000016c3" lastModified="1707200103">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 609" itemID="65cca8ce-00000922" lastModified="1707910004">
   <timeline>
     <DOMTimeline name="Symbol 609">
       <layers>
@@ -35,10 +35,10 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge fillStyle1="1" edges="!1000 0|1000 1000"/>
-                    <Edge fillStyle1="1" strokeStyle="1" edges="!0 0|1000 0"/>
-                    <Edge fillStyle1="1" edges="!0 1000|0 0"/>
                     <Edge fillStyle1="1" strokeStyle="2" edges="!1000 1000|0 1000"/>
+                    <Edge fillStyle1="1" edges="!0 1000|0 0"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!0 0|1000 0"/>
+                    <Edge fillStyle1="1" edges="!1000 0|1000 1000"/>
                   </edges>
                 </DOMShape>
               </elements>

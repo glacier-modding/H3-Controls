@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 846" itemID="65c1d1f2-00000d27" symbolType="graphic" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 846" itemID="65cf2470-00000e97" symbolType="graphic" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 846">
       <layers>
@@ -315,8 +315,6 @@
                     <Edge fillStyle0="1" edges="
 !3471 -4036[3468 -4020.5 3399 -3957!3399 -3957[3304 -3870 3179 -3801!3179 -3801[3057 -3735 3008 -3603!3008 -3603[2992 -3558 2987 -3516!2987 -3516[2984 -3483 2988 -3478!2988 -3478[2981 -3489 3059 -3560!3059 -3560[3154 -3647 3279 -3715
 !3279 -3715[3401 -3782 3450 -3914!3450 -3914[3466 -3958 3471 -4001!3471 -4001|3471 -4036"/>
-                    <Edge fillStyle0="1" fillStyle1="1" edges="
-!3471 -4036|3471 -4038"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -1117,8 +1115,6 @@
                     <Edge fillStyle0="1" edges="
 !-3471 4041[-3468 4025.5 -3400 3962!-3400 3962[-3304 3874 -3179 3806!-3179 3806[-3057 3740 -3009 3608!-3009 3608[-2992 3563 -2988 3521!-2988 3521[-2985 3490 -2988 3483!-2988 3483[-2983 3495 -3059 3564!-3059 3564[-3154 3652 -3279 3720
 !-3279 3720[-3401 3787 -3450 3919!-3450 3919[-3466 3963 -3471 4006!-3471 4006|-3471 4041"/>
-                    <Edge fillStyle0="1" fillStyle1="1" edges="
-!-3471 4041|-3471 4043"/>
                   </edges>
                 </DOMShape>
               </elements>

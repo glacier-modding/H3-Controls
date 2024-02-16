@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ButtonTemplateOpenVR" itemID="65c20aea-0000091e" linkageExportForAS="true" linkageIdentifier="ButtonTemplateOpenVR" linkageClassName="ButtonTemplateOpenVR" lastModified="1707989421">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ButtonTemplateOpenVR" itemID="65ccaa08-0000191f" linkageExportForAS="true" linkageIdentifier="ButtonTemplateOpenVR" linkageClassName="ButtonTemplateOpenVR" lastModified="1707911688">
   <timeline>
     <DOMTimeline name="ButtonTemplateOpenVR">
       <layers>
@@ -458,8 +458,8 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge fillStyle0="1" strokeStyle="1" edges="!-300 -60[-300 64 -212 152!-212 152[-124 240 0 240!0 240[124 240 212 152!212 152[300 64 300 -60!300 -60[300 -184 212 -272!212 -272[124 -360 0 -360!0 -360[-124 -360 -212 -272!-212 -272[-300 -184 -300 -60"/>
                     <Edge fillStyle1="2" edges="!316 -121[381 114 320 273!320 273[277 364 230 368!230 368[183 371 152 318!152 318[121 265 83 250!83 250[163 229 226 166!226 166[320 72 320 -60!320 -60|316 -109!316 -109|316 -121"/>
+                    <Edge fillStyle0="1" strokeStyle="1" edges="!-300 -60[-300 64 -212 152!-212 152[-124 240 0 240!0 240[124 240 212 152!212 152[300 64 300 -60!300 -60[300 -184 212 -272!212 -272[124 -360 0 -360!0 -360[-124 -360 -212 -272!-212 -272[-300 -184 -300 -60"/>
                   </edges>
                 </DOMShape>
               </elements>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2003" itemID="65c1d1f3-00000fd0" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2003" itemID="65cf2470-000012b5" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 2003">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="SplashHints_xfl_fla.iconGrfx_6" name="icons" centerPoint3DX="32.85" centerPoint3DY="31.7">
+                <DOMSymbolInstance libraryItemName="Symbol 2002" name="icons" centerPoint3DX="32.85" centerPoint3DY="31.7">
                   <matrix>
                     <Matrix a="0.999969482421875" d="0.999969482421875"/>
                   </matrix>

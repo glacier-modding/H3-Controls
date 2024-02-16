@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="BasicLib_xfl_fla.GlobalLoadIndicatorIcons76x76_18" itemID="65c20fdb-000020b8" linkageExportForAS="true" linkageIdentifier="BasicLib_xfl_fla.GlobalLoadIndicatorIcons76x76_18" linkageClassName="BasicLib_xfl_fla.GlobalLoadIndicatorIcons76x76_18" lastModified="1707216859">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="BasicLib_xfl_fla.GlobalLoadIndicatorIcons76x76_18" itemID="65ccade3-00002d8b" lastModified="1708074224">
   <timeline>
     <DOMTimeline name="BasicLib_xfl_fla.GlobalLoadIndicatorIcons76x76_18">
       <layers>
@@ -259,8 +259,8 @@
                   </fills>
                   <edges>
                     <Edge fillStyle1="1" edges="
-!32 205|65 -35!65 -35|65 -166!65 -166|-65 -166!-65 -166|-65 -35!-65 -35|-32 205!-32 205|32 205!-65 387|65 387!65 387|65 256!65 256|-65 256!-65 256|-65 387!473 542|-473 542!-473 542[-511 542 -532 510!-532 510[-551 478 -534 443!-534 443
-|-68 -502!-68 -502[-49 -540 -6 -540!-6 -540[35 -542 54 -503!54 -503|534 443!534 443[551 478 532 510!532 510[511 542 473 542"/>
+!32 205|65 -35!65 -35|65 -166!65 -166|-65 -166!-65 -166|-65 -35!-65 -35|-32 205!-32 205|32 205!473 542|-473 542!-473 542[-511 542 -532 510!-532 510[-551 478 -534 443!-534 443|-68 -502!-68 -502[-49 -540 -6 -540!-6 -540[35 -542 54 -503
+!54 -503|534 443!534 443[551 478 532 510!532 510[511 542 473 542!-65 387|65 387!65 387|65 256!65 256|-65 256!-65 256|-65 387"/>
                   </edges>
                 </DOMShape>
               </elements>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 222" itemID="65c1d1f2-00000b80" symbolType="graphic" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 222" itemID="65cf2470-00001178" symbolType="graphic" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 222">
       <layers>
@@ -23,9 +23,9 @@
                     <Edge fillStyle1="1" edges="
 !558 -64|558 -195!558 -195|429 -129!429 -129|558 -64!66 -428|-66 -428!-66 -428|-66 -498!-66 -498|66 -498!66 -498|66 -428"/>
                     <Edge fillStyle0="1" edges="
-!-558 -64|-558 -195!-558 -195|-429 -129!-429 -129|-558 -64!-558 353|-558 221!-558 221|-429 287!-429 287|-558 353!-558 144|-558 13!-558 13|-429 79!-429 79|-558 144"/>
+!-558 -64|-558 -195!-558 -195|-429 -129!-429 -129|-558 -64!-558 144|-558 13!-558 13|-429 79!-429 79|-558 144!-558 353|-558 221!-558 221|-429 287!-429 287|-558 353"/>
                     <Edge fillStyle1="1" edges="
-!558 144|558 13!558 13|429 79!429 79|558 144!558 353|558 221!558 221|429 287!429 287|558 353"/>
+!558 353|558 221!558 221|429 287!429 287|558 353!558 144|558 13!558 13|429 79!429 79|558 144"/>
                   </edges>
                 </DOMShape>
               </elements>

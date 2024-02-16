@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1291" itemID="65c1d1f2-00000e21" symbolType="graphic" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1291" itemID="65cf246f-00000e54" symbolType="graphic" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 1291">
       <layers>
@@ -28,13 +28,15 @@
                     <Edge strokeStyle="2" edges="!19124 3925|19050 3903"/>
                     <Edge strokeStyle="1" edges="!12298 5184|15900 5184!15900 5184|15906 5184!15906 5184|16040 5332!16040 5332|16348 5671"/>
                     <Edge strokeStyle="2" edges="!16348 5671|16708 6068!19118 10845|18958 10737!18958 10737|18196 10219"/>
-                    <Edge strokeStyle="1" edges="!27468 11632|20280 11634!20280 11634|19118 10845!27470 4261|20280 4265!20280 4265|19124 3925"/>
-                    <Edge strokeStyle="2" edges="!9056 3930|9130 3908!11440 6211|11845 6579"/>
-                    <Edge strokeStyle="1" edges="!11845 6579|11860 6592!11860 6592|12323 7012!12323 7012|12405 7012!12405 7012|15851 7012!804 4270|7900 4270!7900 4270|9056 3930!739 805|7921 805!7921 805|9830 2600"/>
+                    <Edge strokeStyle="1" edges="!27470 4261|20280 4265!20280 4265|19124 3925!27468 11632|20280 11634!20280 11634|19118 10845"/>
+                    <Edge strokeStyle="2" edges="!9056 3930|9130 3908"/>
+                    <Edge strokeStyle="1" edges="!11845 6579|11860 6592!11860 6592|12323 7012!12323 7012|12405 7012!12405 7012|15851 7012"/>
+                    <Edge strokeStyle="2" edges="!11440 6211|11845 6579"/>
+                    <Edge strokeStyle="1" edges="!739 805|7921 805!7921 805|9830 2600!804 4270|7900 4270!7900 4270|9056 3930"/>
                     <Edge strokeStyle="2" edges="!9098 9845|9581 9845"/>
                     <Edge strokeStyle="1" edges="!770 11630|8210 11630!8210 11630|9098 11188"/>
-                    <Edge strokeStyle="2" edges="!9098 11188|10279 10599!9098 8489|10269 9065"/>
-                    <Edge strokeStyle="1" edges="!739 7910|7921 7910!7921 7910|9098 8489!739 9845|9098 9845"/>
+                    <Edge strokeStyle="2" edges="!9098 8489|10269 9065!9098 11188|10279 10599"/>
+                    <Edge strokeStyle="1" edges="!739 9845|9098 9845!739 7910|7921 7910!7921 7910|9098 8489"/>
                   </edges>
                 </DOMShape>
               </elements>

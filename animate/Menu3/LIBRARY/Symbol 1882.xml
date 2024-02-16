@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1882" itemID="65c1d1f3-00000f98" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1882" itemID="65cf2470-00000e69" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 1882">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="iconsAll40x40View" name="icon" centerPoint3DX="54" centerPoint3DY="481">
+                <DOMSymbolInstance libraryItemName="Symbol 503" name="icon" centerPoint3DX="54" centerPoint3DY="481">
                   <matrix>
                     <Matrix tx="34" ty="461"/>
                   </matrix>

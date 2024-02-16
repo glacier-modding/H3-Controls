@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="MenuGameVersionView" itemID="65c20f0b-00002032" linkageExportForAS="true" linkageIdentifier="MenuGameVersionView" linkageClassName="MenuGameVersionView" lastModified="1707992211">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="MenuGameVersionView" itemID="65ccad16-00002d05" linkageExportForAS="true" linkageIdentifier="MenuGameVersionView" linkageClassName="MenuGameVersionView" lastModified="1707912470">
   <timeline>
     <DOMTimeline name="MenuGameVersionView">
       <layers>
@@ -19,7 +19,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="gameversion" fontRenderingMode="standard" width="292" height="21.6" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="gameversion" fontRenderingMode="standard" width="292" height="21.5" isSelectable="false" renderAsHTML="true">
                   <matrix>
                     <Matrix tx="9" ty="6"/>
                   </matrix>
@@ -27,7 +27,7 @@
                     <DOMTextRun>
                       <characters></characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" letterSpacing="-0.5" lineHeight="21.5" size="18" face="Neue Haas Grotesk Display Pro 65 Medium*"/>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>
@@ -40,7 +40,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="serverversion" fontRenderingMode="standard" width="292" height="21.6" isSelectable="false" renderAsHTML="true">
+                <DOMDynamicText name="serverversion" fontRenderingMode="standard" width="292" height="21.5" isSelectable="false" renderAsHTML="true">
                   <matrix>
                     <Matrix tx="9" ty="29"/>
                   </matrix>
@@ -48,7 +48,7 @@
                     <DOMTextRun>
                       <characters></characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" letterSpacing="-0.5" lineHeight="21.5" size="18" bitmapSize="360" face="Neue Haas Grotesk Display Pro 65 Medium*"/>
+                        <DOMTextAttrs aliasText="false" autoKern="false" rotation="true" lineHeight="13.35"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>

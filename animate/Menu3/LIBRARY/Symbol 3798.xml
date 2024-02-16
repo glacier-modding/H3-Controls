@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 3798" itemID="65c1d1f3-000012ae" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 3798" itemID="65ccaac1-00002b5c" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 3798">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="BasicLib_xfl_fla.GlobalLoadIndicatorIcons76x76_18" name="icons" centerPoint3DX="30" centerPoint3DY="33.65">
+                <DOMSymbolInstance libraryItemName="Symbol 3797" name="icons" centerPoint3DX="30" centerPoint3DY="33.65">
                   <matrix>
                     <Matrix a="0.4666748046875" d="0.4666748046875"/>
                   </matrix>
@@ -35,7 +35,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="BasicLib_xfl_fla.icons76x76_cut_out_16" name="icons_cutout" centerPoint3DX="38" centerPoint3DY="37.95">
+                <DOMSymbolInstance libraryItemName="Symbol 3048" name="icons_cutout" centerPoint3DX="38" centerPoint3DY="37.95">
                   <matrix>
                     <Matrix a="0.525665283203125" d="0.525665283203125"/>
                   </matrix>
@@ -51,7 +51,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="BasicLib_xfl_fla.GlobalLoadIndicatorIconsBg40x40_15" name="bg" centerPoint3DX="20" centerPoint3DY="20">
+                <DOMSymbolInstance libraryItemName="Symbol 3792" name="bg" centerPoint3DX="20" centerPoint3DY="20">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

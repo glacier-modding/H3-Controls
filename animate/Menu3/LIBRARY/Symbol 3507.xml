@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 3507" itemID="65c1d1f3-0000128e" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 3507" itemID="65ccaac1-00002b3c" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 3507">
       <layers>
@@ -40,7 +40,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="HUDLib2_xfl_fla.WeaponElementBulletActive_292" name="bulletActiveMc" centerPoint3DX="181" centerPoint3DY="28.4">
+                <DOMSymbolInstance libraryItemName="Symbol 3504" name="bulletActiveMc" centerPoint3DX="181" centerPoint3DY="28.4">
                   <matrix>
                     <Matrix tx="145" ty="23"/>
                   </matrix>
@@ -56,7 +56,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="HUDLib2_xfl_fla.WeaponElementBulletsStaticRegular_291" name="bulletsStaticMc" centerPoint3DX="175" centerPoint3DY="125.5">
+                <DOMSymbolInstance libraryItemName="Symbol 3497" name="bulletsStaticMc" centerPoint3DX="175" centerPoint3DY="125.5">
                   <matrix>
                     <Matrix tx="145" ty="37"/>
                   </matrix>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="hud.evergreen.EvergreenEconomyWidgetView" itemID="65c20fa6-00002096" linkageExportForAS="true" linkageIdentifier="hud.evergreen.EvergreenEconomyWidgetView" linkageClassName="hud.evergreen.EvergreenEconomyWidgetView" lastModified="1707216806">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="hud.evergreen.EvergreenEconomyWidgetView" itemID="65ccadae-00002d69" linkageExportForAS="true" linkageIdentifier="hud.evergreen.EvergreenEconomyWidgetView" linkageClassName="hud.evergreen.EvergreenEconomyWidgetView" lastModified="1707912622">
   <timeline>
     <DOMTimeline name="hud.evergreen.EvergreenEconomyWidgetView">
       <layers>

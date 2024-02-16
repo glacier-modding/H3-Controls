@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2981" itemID="65c1d1f3-0000118e" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2981" itemID="65cf2470-000012d8" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 2981">
       <layers>
@@ -27,7 +27,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="HUDLib2_xfl_fla.tensionIndicatorIcons_135" name="iconMc" centerPoint3DX="20.8" centerPoint3DY="20.85">
+                <DOMSymbolInstance libraryItemName="Symbol 2980" name="iconMc" centerPoint3DX="20.8" centerPoint3DY="20.85">
                   <matrix>
                     <Matrix a="1.14285278320312" d="1.14285278320312" tx="11.5" ty="11.5"/>
                   </matrix>
@@ -75,7 +75,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="HUDLib2_xfl_fla.tensionIndicatorBgGradientOverlay_132" name="bgGradient" centerPoint3DX="105" centerPoint3DY="127">
+                <DOMSymbolInstance libraryItemName="Symbol 2955" name="bgGradient" centerPoint3DX="105" centerPoint3DY="127">
                   <matrix>
                     <Matrix d="0.314285278320312" ty="22"/>
                   </matrix>

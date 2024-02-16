@@ -8,7 +8,10 @@
             <entry library-name="_overrides" library-level="project">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-name="lib" library-level="project">
+            <entry library-name="flash" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="basic" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -25,7 +28,10 @@
             <entry library-name="_overrides" library-level="project">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-name="lib" library-level="project">
+            <entry library-name="flash" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="common" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -42,7 +48,7 @@
             <entry library-name="_overrides" library-level="project">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-name="lib" library-level="project">
+            <entry library-name="flash" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -59,7 +65,10 @@
             <entry library-name="_overrides" library-level="project">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-name="lib" library-level="project">
+            <entry library-name="flash" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="hud" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -76,7 +85,10 @@
             <entry library-name="_overrides" library-level="project">
               <dependency linkage="Merged" />
             </entry>
-            <entry library-name="lib" library-level="project">
+            <entry library-name="flash" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="menu3" library-level="project">
               <dependency linkage="Merged" />
             </entry>
           </entries>
@@ -100,6 +112,10 @@
     <orderEntry type="library" exported="" name="Flash" level="project" />
     <orderEntry type="library" exported="" name="Controls" level="project" />
     <orderEntry type="library" exported="" name="_overrides" level="project" />
-    <orderEntry type="library" exported="" name="lib" level="project" />
+    <orderEntry type="library" exported="" name="flash" level="project" />
+    <orderEntry type="library" exported="" name="basic" level="project" />
+    <orderEntry type="library" exported="" name="common" level="project" />
+    <orderEntry type="library" exported="" name="hud" level="project" />
+    <orderEntry type="library" exported="" name="menu3" level="project" />
   </component>
 </module>

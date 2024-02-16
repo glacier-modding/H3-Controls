@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1950" itemID="65c1d1f3-00000fbf" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1950" itemID="65cf246f-00000e44" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 1950">
       <layers>
@@ -19,7 +19,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.WhiteSelect_38" centerPoint3DX="302" centerPoint3DY="75.95">
+                <DOMSymbolInstance libraryItemName="Symbol 14" centerPoint3DX="302" centerPoint3DY="75.95">
                   <matrix>
                     <Matrix a="0.0399932861328125" d="0.40997314453125" tx="252" ty="25.95"/>
                   </matrix>
@@ -38,7 +38,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.WhiteSelect_38" centerPoint3DX="327" centerPoint3DY="76">
+                <DOMSymbolInstance libraryItemName="Symbol 14" centerPoint3DX="327" centerPoint3DY="76">
                   <matrix>
                     <Matrix a="0.500213623046875" d="0.479995727539062" tx="277" ty="26"/>
                   </matrix>
@@ -57,7 +57,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.WhiteSelect_38" centerPoint3DX="177" centerPoint3DY="76">
+                <DOMSymbolInstance libraryItemName="Symbol 14" centerPoint3DX="177" centerPoint3DY="76">
                   <matrix>
                     <Matrix a="2.5" d="0.479995727539062" tx="127" ty="26"/>
                   </matrix>

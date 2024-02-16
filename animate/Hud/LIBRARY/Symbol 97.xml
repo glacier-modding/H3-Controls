@@ -1,20 +1,23 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 97" itemID="65c2e5f2-0000045a" sourceFlashFilepath="../../common.fla" sourceLibraryItemHRef="Symbol 97" sourceLastModified="1707200112" lastModified="1707200112" sourceItemID="00000000-ffffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 97" itemID="65cca918-00001298" symbolType="graphic" lastModified="1707910006">
   <timeline>
     <DOMTimeline name="Symbol 97">
       <layers>
-        <DOMLayer name="Layer_1" color="#894DBE" current="true" isSelected="true">
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
           <frames>
-            <DOMFrame index="0" keyMode="9728">
+            <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>
                 <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
-                      <SolidColor color="#FFFFFF"/>
+                      <BitmapFill bitmapPath="bitmap96.png" bitmapIsClipped="true">
+                        <matrix>
+                          <Matrix a="20" d="20" tx="-1" ty="-1"/>
+                        </matrix>
+                      </BitmapFill>
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle0="1" edges="!-68 -107|-68 -307!-68 -307[-68 -338 -49 -361!-49 -361[-29 -385 0 -391!0 -391|0 -460!0 -460|-96 -460!-96 -460[-193 -460 -261 -391!-261 -391[-329 -323 -329 -227!-329 -227|-329 0!-329 0|0 0!0 0|0 -22!0 -22[-30 -29 -49 -52!-49 -52[-68 -76
- -68 -107"/>
+                    <Edge fillStyle1="1" edges="!-20 -20|1020 -20!1020 -20|1020 1020!1020 1020|-20 1020!-20 1020|-20 -20"/>
                   </edges>
                 </DOMShape>
               </elements>

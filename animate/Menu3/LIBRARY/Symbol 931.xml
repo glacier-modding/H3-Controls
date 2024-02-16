@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 931" itemID="65c1d1f2-00000d6e" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 931" itemID="65cf2470-00001085" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 931">
       <layers>
@@ -125,7 +125,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="Symbol 930" symbolType="graphic" loop="loop">
                   <matrix>
-                    <Matrix a="0.499969482421875" b="-0.865966796875" c="0.865936279296875" d="0.499954223632812"/>
+                    <Matrix a="0.499969482421875" b="-0.865982055664062" c="0.865936279296875" d="0.499954223632812"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>

@@ -1,19 +1,19 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 46" itemID="65c2e5f2-0000045c" sourceFlashFilepath="../../common.fla" sourceLibraryItemHRef="Symbol 46" sourceLastModified="1707200112" symbolType="graphic" lastModified="1707200112" sourceItemID="00000000-ffffffff">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 46" itemID="65cca8cd-00000897" symbolType="graphic" lastModified="1707910004">
   <timeline>
     <DOMTimeline name="Symbol 46">
       <layers>
-        <DOMLayer name="Layer_1" color="#4F4FFF" current="true" isSelected="true">
+        <DOMLayer name="Layer 1" color="#4F4FFF" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
               <elements>
                 <DOMShape isFloating="true">
                   <fills>
                     <FillStyle index="1">
-                      <SolidColor color="#FFFFFF"/>
+                      <SolidColor color="#EBEBEB"/>
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle0="1" edges="!230 -300|-230 -300!-230 -300[-350 -300 -350 -180!-350 -180|-350 180!-350 180[-350 300 -230 300!-230 300|230 300!230 300[350 300 350 180!350 180|350 -180!350 -180[350 -300 230 -300"/>
+                    <Edge fillStyle0="1" edges="!600 54|600 -240!600 -240|116 199!116 199|116 -600!116 -600|-116 -600!-116 -600|-116 199!-116 199|-600 -242!-600 -242|-600 52!-600 52|0 600!0 600|600 54"/>
                   </edges>
                 </DOMShape>
               </elements>

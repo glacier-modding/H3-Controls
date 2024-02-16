@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="SplashHints_xfl_fla.ControllerView_10" itemID="65c20f24-00002042" linkageExportForAS="true" linkageIdentifier="SplashHints_xfl_fla.ControllerView_10" linkageClassName="SplashHints_xfl_fla.ControllerView_10" lastModified="1707216676">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="SplashHints_xfl_fla.ControllerView_10" itemID="65ccad2e-00002d15" lastModified="1708074225">
   <timeline>
-    <DOMTimeline name="SplashHints_xfl_fla.ControllerView_10" currentFrame="9">
+    <DOMTimeline name="SplashHints_xfl_fla.ControllerView_10">
       <layers>
         <DOMLayer name="Labels Layer" color="#B49B86">
           <frames>
@@ -63,7 +63,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Script Layer" color="#F1C2F1" current="true" isSelected="true">
+        <DOMLayer name="Script Layer" color="#F1C2F1">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
@@ -314,7 +314,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 6" color="#B835CC">
+        <DOMLayer name="Layer 6" color="#B835CC" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" duration="9" keyMode="9728">
               <elements>

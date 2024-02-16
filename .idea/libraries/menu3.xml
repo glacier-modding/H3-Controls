@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="menu3" type="flex">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/menu3.swc!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ChallengeNextScope" itemID="65c20f02-0000202c" linkageExportForAS="true" linkageIdentifier="ChallengeNextScope" linkageClassName="ChallengeNextScope" lastModified="1707216642">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ChallengeNextScope" itemID="65ccad0d-00002cff" linkageExportForAS="true" linkageIdentifier="ChallengeNextScope" linkageClassName="ChallengeNextScope" lastModified="1707912461">
   <timeline>
     <DOMTimeline name="ChallengeNextScope">
       <layers>
@@ -42,7 +42,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="Symbol 1603" name="tileRedOverlay" centerPoint3DX="50" centerPoint3DY="136">
                   <matrix>
-                    <Matrix a="0.66998291015625" d="1.64999389648438" ty="86"/>
+                    <Matrix a="0.669998168945312" d="1.64999389648438" ty="86"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>

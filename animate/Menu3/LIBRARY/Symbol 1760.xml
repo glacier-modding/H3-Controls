@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1760" itemID="65c1d1f2-00000f4c" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1760" itemID="65cf2470-0000121a" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 1760">
       <layers>
@@ -27,7 +27,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="iconsAll40x40View" name="masteryIcon" centerPoint3DX="455" centerPoint3DY="363">
+                <DOMSymbolInstance libraryItemName="Symbol 503" name="masteryIcon" centerPoint3DX="455" centerPoint3DY="363">
                   <matrix>
                     <Matrix a="0.500411987304688" d="0.500411987304688" tx="435" ty="343"/>
                   </matrix>
@@ -64,7 +64,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="iconsAll40x40View" name="challengesIcon" centerPoint3DX="46" centerPoint3DY="363">
+                <DOMSymbolInstance libraryItemName="Symbol 503" name="challengesIcon" centerPoint3DX="46" centerPoint3DY="363">
                   <matrix>
                     <Matrix a="0.500411987304688" d="0.500411987304688" tx="26" ty="343"/>
                   </matrix>

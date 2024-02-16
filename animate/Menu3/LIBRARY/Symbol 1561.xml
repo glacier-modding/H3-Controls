@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1561" itemID="65c1d1f2-00000f14" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1561" itemID="65cf246f-00000e33" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 1561">
       <layers>
@@ -22,7 +22,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="RarityIconView" name="rarityIcon" centerPoint3DX="375" centerPoint3DY="104.5">
+                <DOMSymbolInstance libraryItemName="Symbol 1227" name="rarityIcon" centerPoint3DX="375" centerPoint3DY="104.5">
                   <matrix>
                     <Matrix a="0.816177368164062" d="0.816299438476562" tx="285" ty="80"/>
                   </matrix>
@@ -83,7 +83,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.WhiteSelect_38" name="imageBG" centerPoint3DX="151" centerPoint3DY="126">
+                <DOMSymbolInstance libraryItemName="Symbol 14" name="imageBG" centerPoint3DX="151" centerPoint3DY="126">
                   <matrix>
                     <Matrix a="2.01998901367188" d="1.52000427246094" tx="101" ty="76"/>
                   </matrix>

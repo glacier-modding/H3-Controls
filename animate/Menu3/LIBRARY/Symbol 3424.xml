@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 3424" itemID="65c1d1f3-0000124c" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 3424" itemID="65cf2470-00001079" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 3424">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="HUDLib2_xfl_fla.LevelObjectiveObjectiveIcons_93" name="icon_mc" centerPoint3DX="12.25" centerPoint3DY="12.25">
+                <DOMSymbolInstance libraryItemName="Symbol 3423" name="icon_mc" centerPoint3DX="12.25" centerPoint3DY="12.25">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

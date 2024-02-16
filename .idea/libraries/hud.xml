@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hud" type="flex">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/hud.swc!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

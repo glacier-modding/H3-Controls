@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="GlobalLoadIndicatorView" itemID="65c20c3d-00000b2c" linkageExportForAS="true" linkageIdentifier="GlobalLoadIndicatorView" linkageClassName="GlobalLoadIndicatorView" lastModified="1707215933">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="GlobalLoadIndicatorView" itemID="65cca8d2-00000931" linkageExportForAS="true" linkageIdentifier="GlobalLoadIndicatorView" linkageClassName="GlobalLoadIndicatorView" lastModified="1707911378">
   <timeline>
-    <DOMTimeline name="GlobalLoadIndicatorView" currentFrame="14">
+    <DOMTimeline name="GlobalLoadIndicatorView">
       <layers>
-        <DOMLayer name="Script Layer" color="#EBE042" current="true" isSelected="true">
+        <DOMLayer name="Script Layer" color="#EBE042">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
@@ -23,7 +23,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#B5F5B0">
+        <DOMLayer name="Layer 2" color="#B5F5B0" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

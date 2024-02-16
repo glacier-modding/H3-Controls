@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1051" itemID="65c1d1f2-00000dab" symbolType="graphic" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1051" itemID="65cf2470-00001040" symbolType="graphic" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 1051">
       <layers>
@@ -17,7 +17,7 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="1" edges="!600 740|600 860!600 500|600 620!600 260|600 380!600 20|600 140!600 980|600 1100"/>
+                    <Edge strokeStyle="1" edges="!600 20|600 140!600 260|600 380!600 500|600 620!600 740|600 860!600 980|600 1100"/>
                   </edges>
                 </DOMShape>
               </elements>

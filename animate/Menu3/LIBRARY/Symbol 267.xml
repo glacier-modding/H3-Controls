@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 267" itemID="65c1d1f2-00000bac" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 267" itemID="65cf2470-00001025" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 267">
       <layers>
@@ -13,8 +13,8 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!-320 -400|320 -400!320 -400[400 -400 400 -320!400 -320|400 320!400 320[400 400 320 400!320 400|-320 400!-320 400[-400 400 -400 320!-400 320|-400 -320!-400 -320[-400 -400 -320 -400"/>
                     <Edge fillStyle0="1" edges="!-320 -360|320 -360!320 -360[360 -360 360 -320!360 -320|360 320!360 320[360 360 320 360!320 360|-320 360!-320 360[-360 360 -360 320!-360 320|-360 -320!-360 -320[-360 -360 -320 -360"/>
+                    <Edge fillStyle1="1" edges="!-320 -400|320 -400!320 -400[400 -400 400 -320!400 -320|400 320!400 320[400 400 320 400!320 400|-320 400!-320 400[-400 400 -400 320!-400 320|-400 -320!-400 -320[-400 -400 -320 -400"/>
                   </edges>
                 </DOMShape>
               </elements>

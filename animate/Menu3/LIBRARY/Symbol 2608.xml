@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2608" itemID="65c1d1f3-000010cb" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2608" itemID="65ccaac0-00002979" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 2608">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="iconsAll40x40View" name="icon" centerPoint3DX="51" centerPoint3DY="139">
+                <DOMSymbolInstance libraryItemName="Symbol 503" name="icon" centerPoint3DX="51" centerPoint3DY="139">
                   <matrix>
                     <Matrix a="0.789474487304688" d="0.789474487304688" tx="31" ty="119"/>
                   </matrix>
@@ -22,7 +22,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="iconsAll40x40View" name="icon2" centerPoint3DX="164" centerPoint3DY="139">
+                <DOMSymbolInstance libraryItemName="Symbol 503" name="icon2" centerPoint3DX="164" centerPoint3DY="139">
                   <matrix>
                     <Matrix a="0.789474487304688" d="0.789474487304688" tx="144" ty="119"/>
                   </matrix>
@@ -70,7 +70,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="MenuLib3_xfl_fla.WhiteSelect_38" name="tileDarkBg" centerPoint3DX="138" centerPoint3DY="112">
+                <DOMSymbolInstance libraryItemName="Symbol 14" name="tileDarkBg" centerPoint3DX="138" centerPoint3DY="112">
                   <matrix>
                     <Matrix a="1.65000915527344" d="1.64999389648438" tx="88" ty="62"/>
                   </matrix>

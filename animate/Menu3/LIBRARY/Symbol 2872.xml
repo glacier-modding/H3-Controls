@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2872" itemID="65c1d1f3-00001167" symbolType="graphic" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2872" itemID="65cf2470-00000f09" symbolType="graphic" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 2872">
       <layers>
@@ -13,7 +13,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle0="1" edges="!73 -119|169 -216!169 -216|0 -384!0 -384|-169 -216!-169 -216|-72 -119!-72 -119|0 -192!0 -192|73 -119!119 -73|192 0!192 0|119 72!119 72|216 169!216 169|384 0!384 0|216 -169!216 -169|119 -73!73 119|0 192!0 192|-72 119!-72 119|-169 215!-169
+                    <Edge fillStyle0="1" edges="!119 -73|192 0!192 0|119 72!119 72|216 169!216 169|384 0!384 0|216 -169!216 -169|119 -73!73 -119|169 -216!169 -216|0 -384!0 -384|-169 -216!-169 -216|-72 -119!-72 -119|0 -192!0 -192|73 -119!73 119|0 192!0 192|-72 119!-72 119|-169 215!-169
  215|0 384!0 384|169 215!169 215|73 119!-119 72|-192 0!-192 0|-119 -73!-119 -73|-215 -169!-215 -169|-384 0!-384 0|-215 169!-215 169|-119 72"/>
                   </edges>
                 </DOMShape>

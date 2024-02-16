@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1415" itemID="65c1d1f2-00000e91" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1415" itemID="65cf2470-00001037" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 1415">
       <layers>
@@ -13,8 +13,8 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle0="1" edges="!-80 -80|80 -80!80 -80|80 80!80 80|-80 80!-80 80|-80 -80"/>
                     <Edge fillStyle1="1" edges="!-120 -120|120 -120!120 -120|120 120!120 120|-120 120!-120 120|-120 -120"/>
+                    <Edge fillStyle0="1" edges="!-80 -80|80 -80!80 -80|80 80!80 80|-80 80!-80 80|-80 -80"/>
                   </edges>
                 </DOMShape>
               </elements>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 3219" itemID="65c1d1f3-000011e1" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 3219" itemID="65cf2470-00001087" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 3219">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="BasicLib_xfl_fla.icons76x76_28" name="icons" centerPoint3DX="36.15" centerPoint3DY="35.35">
+                <DOMSymbolInstance libraryItemName="Symbol 3218" name="icons" centerPoint3DX="36.15" centerPoint3DY="35.35">
                   <matrix>
                     <Matrix a="0.4666748046875" d="0.4666748046875"/>
                   </matrix>
@@ -35,7 +35,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="BasicLib_xfl_fla.icons76x76_cut_out_16" name="icons_cutout" centerPoint3DX="38" centerPoint3DY="37.95">
+                <DOMSymbolInstance libraryItemName="Symbol 3048" name="icons_cutout" centerPoint3DX="38" centerPoint3DY="37.95">
                   <matrix>
                     <Matrix a="0.525665283203125" d="0.525665283203125"/>
                   </matrix>

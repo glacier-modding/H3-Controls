@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2227" itemID="65c1d1f3-00001058" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2227" itemID="65ccaac0-00002906" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 2227">
       <layers>
@@ -16,9 +16,10 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle0="2" fillStyle1="1" edges="!-37 -123|-46 -109!-46 -109[-47 -103 -35 -103!-35 -103|61 -102!61 -102[81 -102 65 -116!65 -116|23 -150!23 -150[10 -163 -6 -147!-6 -147|-37 -123"/>
                     <Edge fillStyle0="1" edges="!166 -188[121 -209 3 -209!3 -209[-113 -209 -167 -186!-167 -186[-216 -164 -219 -118!-219 -118|-200 48!-200 48[-197 72 -170 95!-170 95|-170 94!-170 94|-50 191!-50 191|-51 191!-51 191[-29 207 -1 208!-1 208[31 210 58 190!58 190|58 189!58
  189|179 89!179 89|179 88!179 88[201 72 205 49!205 49|219 -116!219 -116[216 -165 166 -188"/>
+                    <Edge fillStyle0="2" fillStyle1="1" edges="
+!-37 -123|-46 -109!-46 -109[-47 -103 -35 -103!-35 -103|61 -102!61 -102[81 -102 65 -116!65 -116|23 -150!23 -150[10 -163 -6 -147!-6 -147|-37 -123"/>
                   </edges>
                 </DOMShape>
               </elements>

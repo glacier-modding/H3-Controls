@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 3799" itemID="65c1d1f3-000012af" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 3799" itemID="65cf2470-00000eb7" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 3799">
       <layers>
@@ -38,7 +38,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="BasicLib_xfl_fla.BarCodeLoaderBars_10" name="barcodes" centerPoint3DX="80.5" centerPoint3DY="45">
+                <DOMSymbolInstance libraryItemName="Symbol 3775" name="barcodes" centerPoint3DX="80.5" centerPoint3DY="45">
                   <matrix>
                     <Matrix a="0.988693237304688" d="0.8125" tx="-8" ty="37"/>
                   </matrix>
@@ -75,7 +75,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="BasicLib_xfl_fla.GlobalLoadIndicatorBgWhite_8" name="loadbarbg" centerPoint3DX="247" centerPoint3DY="34.5">
+                <DOMSymbolInstance libraryItemName="Symbol 3773" name="loadbarbg" centerPoint3DX="247" centerPoint3DY="34.5">
                   <matrix>
                     <Matrix tx="-53" ty="12"/>
                   </matrix>

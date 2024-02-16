@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1484" itemID="65c1d1f2-00000ed1" symbolType="graphic" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1484" itemID="65cf2470-00000f4a" symbolType="graphic" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 1484">
       <layers>
@@ -13,8 +13,8 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!0 480[-199 480 -339 339!-339 339[-480 199 -480 0!-480 0[-480 -199 -339 -339!-339 -339[-199 -480 0 -480!0 -480[198 -480 338 -339!338 -339[480 -199 480 0!480 0[480 199 338 339!338 339[198 480 0 480"/>
                     <Edge fillStyle0="1" edges="!0 380[-157 380 -269 269!-269 269[-380 157 -380 0!-380 0[-380 -157 -269 -269!-269 -269[-157 -380 0 -380!0 -380[156 -380 268 -269!268 -269[380 -157 380 0!380 0[380 157 268 269!268 269[156 380 0 380"/>
+                    <Edge fillStyle1="1" edges="!0 480[-199 480 -339 339!-339 339[-480 199 -480 0!-480 0[-480 -199 -339 -339!-339 -339[-199 -480 0 -480!0 -480[198 -480 338 -339!338 -339[480 -199 480 0!480 0[480 199 338 339!338 339[198 480 0 480"/>
                   </edges>
                 </DOMShape>
               </elements>

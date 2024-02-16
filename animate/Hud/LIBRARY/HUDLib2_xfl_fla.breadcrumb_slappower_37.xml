@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HUDLib2_xfl_fla.breadcrumb_slappower_37" itemID="65c20aa2-000008d6" linkageExportForAS="true" linkageIdentifier="HUDLib2_xfl_fla.breadcrumb_slappower_37" linkageClassName="HUDLib2_xfl_fla.breadcrumb_slappower_37" lastModified="1707215522">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HUDLib2_xfl_fla.breadcrumb_slappower_37" itemID="65cca9a0-000018ad" lastModified="1708074069">
   <timeline>
     <DOMTimeline name="HUDLib2_xfl_fla.breadcrumb_slappower_37">
       <layers>
@@ -56,8 +56,8 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle0="1" fillStyle1="2" edges="!440 -200|2840 -200!2840 -200|2840 200!2840 200|440 200!440 200|440 -200"/>
                     <Edge fillStyle1="1" edges="!400 -240|2880 -240!2880 -240|2880 240!2880 240|400 240!400 240|400 -240"/>
+                    <Edge fillStyle0="1" fillStyle1="2" edges="!440 -200|2840 -200!2840 -200|2840 200!2840 200|440 200!440 200|440 -200"/>
                   </edges>
                 </DOMShape>
               </elements>

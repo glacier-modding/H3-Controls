@@ -1,8 +1,8 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ButtonPrompt_xfl_fla.ButtonTemplateOpenVR_ButtonSymbol_18" itemID="65c20c6d-00000cce" sourceFlashFilepath="../ButtonPrompt/ButtonPrompt.xfl" sourceLibraryItemHRef="ButtonPrompt_xfl_fla.ButtonTemplateOpenVR_ButtonSymbol_18" sourceLastModified="1707215981" lastModified="1707989167" sourceItemID="65c20c6d-00000cce">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ButtonPrompt_xfl_fla.ButtonTemplateOpenVR_ButtonSymbol_18" itemID="65cca8a3-00000483" lastModified="1708074034">
   <timeline>
     <DOMTimeline name="ButtonPrompt_xfl_fla.ButtonTemplateOpenVR_ButtonSymbol_18">
       <layers>
-        <DOMLayer name="Labels_Layer" color="#5AD2ED">
+        <DOMLayer name="Labels Layer" color="#5AD2ED">
           <frames>
             <DOMFrame index="0" name="menu" labelType="name" keyMode="9728">
               <elements/>
@@ -12,7 +12,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Script_Layer" color="#936BEA">
+        <DOMLayer name="Script Layer" color="#936BEA">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Actionscript>
@@ -23,7 +23,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer_3" color="#5586F0" current="true" isSelected="true">
+        <DOMLayer name="Layer 3" color="#5586F0" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

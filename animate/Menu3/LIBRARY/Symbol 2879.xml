@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2879" itemID="65c1d1f3-0000116b" lastModified="1707200131">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 2879" itemID="65cf246f-00000d12" lastModified="1707910009">
   <timeline>
     <DOMTimeline name="Symbol 2879">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="HUDLib2_xfl_fla.TargetDiscoveryIconSymbolClip_33" name="symbol" centerPoint3DX="19.2" centerPoint3DY="21.35">
+                <DOMSymbolInstance libraryItemName="Symbol 2878" name="symbol" centerPoint3DX="19.2" centerPoint3DY="21.35">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -32,7 +32,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="HUDLib2_xfl_fla.DiscoveryIconProgressBar_31" name="progression" centerPoint3DX="35.35" centerPoint3DY="35.35">
+                <DOMSymbolInstance libraryItemName="Symbol 2865" name="progression" centerPoint3DX="35.35" centerPoint3DY="35.35">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -45,7 +45,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="HUDLib2_xfl_fla.TargetDiscoveryIconBackgroundClip_30" name="bg" centerPoint3DX="35.35" centerPoint3DY="35.35">
+                <DOMSymbolInstance libraryItemName="Symbol 2812" name="bg" centerPoint3DX="35.35" centerPoint3DY="35.35">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
