@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout repository
         id: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Apache Flex SDK
         uses: joshtynjala/setup-apache-flex-action@v2
@@ -25,7 +25,7 @@ jobs:
         run: asdoc -source-path ".\src\" -doc-classes basic_Main common_Main ControlsMain hud_Main menu3_Main -library-path ".\lib\" -library-path "${{ env.FLEX_HOME }}\frameworks\libs" -main-title "H3 Controls Documentation" -window-title "H3 Controls Documentation" -output ".\asdoc\"
 
       - name: Upload docs
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: .\asdoc
 
@@ -43,4 +43,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to Github Pages
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
