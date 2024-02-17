@@ -35,7 +35,7 @@ import common.menu.textTicker;
 public class common_Main extends Sprite {
 
 	public function common_Main():void {
-		var _local_1:Array = [Animate, AnimateLegacy, AnimationContainerBase, BaseControl, BaseControlEditorDebug, CalcUtil, CommonUtils, DateTimeUtils, DebugDraw, ImageLoader, ImageLoaderCache, InputTextFieldSpecialCharacterHandler, Localization, Log, MouseUtil, ObjectPool, ObjectUtils, TaskletSequencer, UtcClockInitializer, VideoLoader, MenuConstants, MenuUtils, ObjectiveUtil, textTicker];
+		var dummy:Array = [Animate, AnimateLegacy, AnimationContainerBase, BaseControl, BaseControlEditorDebug, CalcUtil, CommonUtils, DateTimeUtils, DebugDraw, ImageLoader, ImageLoaderCache, InputTextFieldSpecialCharacterHandler, Localization, Log, MouseUtil, ObjectPool, ObjectUtils, TaskletSequencer, UtcClockInitializer, VideoLoader, MenuConstants, MenuUtils, ObjectiveUtil, textTicker];
 	}
 
 }

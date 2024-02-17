@@ -49,7 +49,7 @@ import basic.VideoBoxInfo;
 public class basic_Main extends Sprite {
 
 	public function basic_Main():void {
-		var _local_1:Array = [BitmapReplacementOpenVR, BootFlowBackdropImage, BootFlowColorFill, BoundsExtender, Box, ButtonPrompt, ButtonPromptContainer, ButtonPromptImage, ButtonPromtUtil, Checkbox, DottedLine, GameChatIndicator, GlobalLoadindicator, Gradient, GradientFlipped, IButtonPromptOwner, ImageBox, ImageBoxSpatial, ImageButton, InfoBoxWithBackground, ItemBg, Line, LoadingScreenImageLoader, LoadingScreenObjectiveTile, LoadingTips, Mask, MaskCentered, MaskCircular, PieChart, Quad, SafeAreaScaleContainer, ScrollingList, Slider, SolidLine, Subtitle, TextBox, VideoBox, VideoBoxInfo];
+		var dummy:Array = [BitmapReplacementOpenVR, BootFlowBackdropImage, BootFlowColorFill, BoundsExtender, Box, ButtonPrompt, ButtonPromptContainer, ButtonPromptImage, ButtonPromtUtil, Checkbox, DottedLine, GameChatIndicator, GlobalLoadindicator, Gradient, GradientFlipped, IButtonPromptOwner, ImageBox, ImageBoxSpatial, ImageButton, InfoBoxWithBackground, ItemBg, Line, LoadingScreenImageLoader, LoadingScreenObjectiveTile, LoadingTips, Mask, MaskCentered, MaskCircular, PieChart, Quad, SafeAreaScaleContainer, ScrollingList, Slider, SolidLine, Subtitle, TextBox, VideoBox, VideoBoxInfo];
 	}
 
 }
