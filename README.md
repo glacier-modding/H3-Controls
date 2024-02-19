@@ -17,14 +17,5 @@ You will need the following things:
    File -> Project Structure -> SDKs -> Click the + icon -> Add new Flex/AIR SDK... -> Point it to `C:\FlexSDK` or whichever folder you choose earlier.
 5. Hit Ctrl - F9 and it should build all the SWFs.
 
-## Todo
-* Organise all the symbols in the fla files.
-    * Moving shared ones to libraries like what was done with ButtonPrompt.fla.
-    * Create folders.
-    * Rename symbols that don't have proper names? (Not sure if this will make it harder to update the files when new game versions come out.)
-* Figure out more variable names for scripts.
-* Fix bugs, bugs, bugs and more bugs.
-* Don't go insane.
-
 ## Example mods that utilised files from this repository
 1. [Simple Health Bar](https://github.com/Notexe/h3-simple-health-bar)
