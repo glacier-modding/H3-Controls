@@ -25,3 +25,6 @@ You will need the following things:
 * Figure out more variable names for scripts.
 * Fix bugs, bugs, bugs and more bugs.
 * Don't go insane.
+
+## Example mods that utilised files from this repository
+1. [Simple Health Bar](https://github.com/Notexe/h3-simple-health-bar)
