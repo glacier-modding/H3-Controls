@@ -13,9 +13,9 @@ You will need the following things:
 2. Extract the contents of Air SDK into the `C:\FlexSDK` folder.
 3. Open up this project in IDEA.
 4. Point IDEA to the Flex SDK:
-   5. File -> Project Structure -> SDKs -> Click the + icon -> Add new Flex/AIR SDK... -> Point it to `C:\FlexSDK` or whichever folder you choose earlier. 
-   6. File -> Project Structure -> Modules -> Module -> -> Dependencies -> Select Flex/AIR SDK in Flex/AIR SDK dropdown.
-   7. File -> Project Structure -> Project -> Select Flex/AIR SDK in the SDK dropdown.
+5. File -> Project Structure -> SDKs -> Click the + icon -> Add new Flex/AIR SDK... -> Point it to `C:\FlexSDK` or whichever folder you choose earlier. 
+6. File -> Project Structure -> Modules -> Module -> -> Dependencies -> Select Flex/AIR SDK in Flex/AIR SDK dropdown.
+7. File -> Project Structure -> Project -> Select Flex/AIR SDK in the SDK dropdown.
 5. Hit Ctrl - F9 and it should build all the SWFs.
 
 ## Example mods that utilised files from this repository
