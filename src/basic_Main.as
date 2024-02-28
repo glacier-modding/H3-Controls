@@ -45,6 +45,9 @@ import basic.TextBox;
 import basic.VideoBox;
 import basic.VideoBoxInfo;
 
+/**
+ * Main class for [assembly:/ui/controls/basic.swf].pc_swf
+ */
 [SWF(frameRate="60", width="500", height="375")]
 public class basic_Main extends Sprite {
 

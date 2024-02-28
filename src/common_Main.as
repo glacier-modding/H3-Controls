@@ -31,6 +31,9 @@ import common.menu.MenuUtils;
 import common.menu.ObjectiveUtil;
 import common.menu.textTicker;
 
+/**
+ * Main class for [assembly:/ui/controls/common.swf].pc_swf
+ */
 [SWF(frameRate="60", width="500", height="375")]
 public class common_Main extends Sprite {
 

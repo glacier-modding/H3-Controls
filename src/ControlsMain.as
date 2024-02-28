@@ -18,6 +18,9 @@ import flash.system.ApplicationDomain;
 
 import scaleform.gfx.*;
 
+/**
+ * Main class for [assembly:/ui/controls/controlsmain.swf].pc_swf
+ */
 [SWF(frameRate="60", width="500", height="375")]
 public class ControlsMain extends Sprite {
 

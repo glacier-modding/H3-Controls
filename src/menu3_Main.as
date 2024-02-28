@@ -255,6 +255,9 @@ import menu3.tests.elusivetargetbriefingsequence.ElusiveTargetTesterSequence;
 import menu3.tests.elusivetargetbriefingsequence.ElusiveTargetTesterSequenceBase;
 import menu3.tests.elusivetargetbriefingsequence.EtSequenceTextBlocks;
 
+/**
+ * Main class for [assembly:/ui/controls/menu3.swf].pc_swf
+ */
 [SWF(frameRate="60", width="500", height="375")]
 public class menu3_Main extends Sprite {
 
