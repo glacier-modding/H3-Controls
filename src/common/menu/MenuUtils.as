@@ -66,7 +66,7 @@ public class MenuUtils {
 	private static const MENU_METER_TO_PIXEL:Number = (1 / 0.00364583);//274.285965061454
 
 
-	public static function setupText(t:TextField, string:String, fontSize:int = 28, fontStyle:String = "$medium", fontColor:String = "#ebebeb", _arg_6:Boolean = false):void {
+	public static function setupText(t:TextField, string:String, fontSize:int = 28, fontStyle:String = "$medium", fontColor:String = "#ebebeb", appendText:Boolean = false):void {
 		var _local_7:TextFormat;
 		if (string == null) {
 			string = "";
@@ -79,7 +79,7 @@ public class MenuUtils {
 
 		}
 
-		if (_arg_6) {
+		if (appendText) {
 			t.htmlText = (t.htmlText + (((((((('<font face="' + fontStyle) + '" color="') + fontColor) + '" size="') + fontSize) + '">') + string) + "</font>"));
 		} else {
 			t.htmlText = (((((((('<font face="' + fontStyle) + '" color="') + fontColor) + '" size="') + fontSize) + '">') + string) + "</font>");
@@ -99,20 +99,20 @@ public class MenuUtils {
 		t.defaultTextFormat = _local_3;
 	}
 
-	public static function setupTextUpper(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", fontColor:String = "#ebebeb", _arg_6:Boolean = false):void {
+	public static function setupTextUpper(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", fontColor:String = "#ebebeb", appendText:Boolean = false):void {
 		if (text == null) {
 			text = "";
 		}
 
-		setupText(t, text.toUpperCase(), fontSize, fontStyle, fontColor, _arg_6);
+		setupText(t, text.toUpperCase(), fontSize, fontStyle, fontColor, appendText);
 	}
 
-	public static function setupProfileName(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", fontColor:String = "#ebebeb", _arg_6:Boolean = false):void {
+	public static function setupProfileName(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", fontColor:String = "#ebebeb", appendText:Boolean = false):void {
 		if (text == null) {
 			text = "";
 		}
 
-		setupText(t, text, fontSize, fontStyle, fontColor, _arg_6);
+		setupText(t, text, fontSize, fontStyle, fontColor, appendText);
 		CommonUtils.changeFontToGlobalIfNeeded(t);
 		truncateTextfieldWithCharLimit(t, 1, MenuConstants.PLAYERNAME_MIN_CHAR_COUNT, fontColor);
 		shrinkTextToFit(t, t.width, -1);
@@ -520,13 +520,13 @@ public class MenuUtils {
 		return (_local_4);
 	}
 
-	public static function setupTextAndShrinkToFit(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", maxWidth:Number = 0, maxHeight:Number = 0, _arg_7:Number = 9, fontColor:String = "#ebebeb", _arg_9:Boolean = false):Boolean {
+	public static function setupTextAndShrinkToFit(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", maxWidth:Number = 0, maxHeight:Number = 0, _arg_7:Number = 9, fontColor:String = "#ebebeb", appendText:Boolean = false):Boolean {
 		var _local_14:TextFormat;
 		var _local_10:TextFormat = t.getTextFormat();
 		var _local_11:String = _local_10.font;
 		var _local_12:int = int(_local_10.size);
 		var _local_13:* = (t.text.length > 0);
-		setupText(t, text, fontSize, fontStyle, fontColor, _arg_9);
+		setupText(t, text, fontSize, fontStyle, fontColor, appendText);
 		_local_10 = t.getTextFormat();
 		if (((_local_13) && (_local_10.font == _local_11))) {
 			_local_14 = new TextFormat();
@@ -537,12 +537,12 @@ public class MenuUtils {
 		return (shrinkTextToFit(t, maxWidth, maxHeight, _arg_7));
 	}
 
-	public static function setupTextAndShrinkToFitUpper(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", _arg_5:Number = 0, _arg_6:Number = 0, _arg_7:Number = 9, fontColor:String = "#ebebeb", _arg_9:Boolean = false):Boolean {
+	public static function setupTextAndShrinkToFitUpper(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", _arg_5:Number = 0, _arg_6:Number = 0, _arg_7:Number = 9, fontColor:String = "#ebebeb", appendText:Boolean = false):Boolean {
 		if (text == null) {
 			text = "";
 		}
 
-		return (setupTextAndShrinkToFit(t, text.toUpperCase(), fontSize, fontStyle, _arg_5, _arg_6, _arg_7, fontColor, _arg_9));
+		return (setupTextAndShrinkToFit(t, text.toUpperCase(), fontSize, fontStyle, _arg_5, _arg_6, _arg_7, fontColor, appendText));
 	}
 
 	public static function shrinkTextToFit(t:TextField, maxWidth:Number, maxHeight:Number, _arg_4:Number = 9, _arg_5:int = -1, _arg_6:Number = 0):Boolean {
