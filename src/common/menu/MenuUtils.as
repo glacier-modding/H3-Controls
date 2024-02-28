@@ -65,11 +65,19 @@ public class MenuUtils {
 	public static const TINT_COLOR_MAGENTA_DARK:int = 22;
 	private static const MENU_METER_TO_PIXEL:Number = (1 / 0.00364583);//274.285965061454
 
-
-	public static function setupText(t:TextField, string:String, fontSize:int = 28, fontStyle:String = "$medium", fontColor:String = "#ebebeb", appendText:Boolean = false):void {
+	/**
+	 *
+	 * @param t TextField
+	 * @param text Input string
+	 * @param fontSize Font size
+	 * @param fontStyle Font style, possible options are: $global, $light, $normal, $medium and $bold
+	 * @param fontColor Font colour
+	 * @param appendText Append text to TextField
+	 */
+	public static function setupText(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", fontColor:String = "#ebebeb", appendText:Boolean = false):void {
 		var _local_7:TextFormat;
-		if (string == null) {
-			string = "";
+		if (text == null) {
+			text = "";
 		}
 
 		if (ControlsMain.isVrModeActive()) {
@@ -80,9 +88,9 @@ public class MenuUtils {
 		}
 
 		if (appendText) {
-			t.htmlText = (t.htmlText + (((((((('<font face="' + fontStyle) + '" color="') + fontColor) + '" size="') + fontSize) + '">') + string) + "</font>"));
+			t.htmlText = (t.htmlText + (((((((('<font face="' + fontStyle) + '" color="') + fontColor) + '" size="') + fontSize) + '">') + text) + "</font>"));
 		} else {
-			t.htmlText = (((((((('<font face="' + fontStyle) + '" color="') + fontColor) + '" size="') + fontSize) + '">') + string) + "</font>");
+			t.htmlText = (((((((('<font face="' + fontStyle) + '" color="') + fontColor) + '" size="') + fontSize) + '">') + text) + "</font>");
 			_local_7 = new TextFormat();
 			_local_7.color = MenuConstants.ColorNumber(fontColor);
 			_local_7.font = fontStyle;
@@ -99,6 +107,15 @@ public class MenuUtils {
 		t.defaultTextFormat = _local_3;
 	}
 
+	/**
+	 *
+	 * @param t TextField
+	 * @param text Input string
+	 * @param fontSize  Font size
+	 * @param fontStyle Font style, possible options are: $global, $light, $normal, $medium and $bold
+	 * @param fontColor Font colour
+	 * @param appendText Append text to TextField
+	 */
 	public static function setupTextUpper(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", fontColor:String = "#ebebeb", appendText:Boolean = false):void {
 		if (text == null) {
 			text = "";
@@ -107,6 +124,15 @@ public class MenuUtils {
 		setupText(t, text.toUpperCase(), fontSize, fontStyle, fontColor, appendText);
 	}
 
+	/**
+	 *
+	 * @param t TextField
+	 * @param text Input string
+	 * @param fontSize Font size
+	 * @param fontStyle Font style, possible options are: $global, $light, $normal, $medium and $bold
+	 * @param fontColor Font colour
+	 * @param appendText Append text to TextField
+	 */
 	public static function setupProfileName(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", fontColor:String = "#ebebeb", appendText:Boolean = false):void {
 		if (text == null) {
 			text = "";
@@ -520,6 +546,19 @@ public class MenuUtils {
 		return (_local_4);
 	}
 
+	/**
+	 *
+	 * @param t TextField
+	 * @param text Input string
+	 * @param fontSize Font size
+	 * @param fontStyle Font style, possible options are: $global, $light, $normal, $medium and $bold
+	 * @param maxWidth Max width
+	 * @param maxHeight Max height
+	 * @param _arg_7
+	 * @param fontColor Font colour
+	 * @param appendText Append text to TextField
+	 * @return
+	 */
 	public static function setupTextAndShrinkToFit(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", maxWidth:Number = 0, maxHeight:Number = 0, _arg_7:Number = 9, fontColor:String = "#ebebeb", appendText:Boolean = false):Boolean {
 		var _local_14:TextFormat;
 		var _local_10:TextFormat = t.getTextFormat();
@@ -537,14 +576,37 @@ public class MenuUtils {
 		return (shrinkTextToFit(t, maxWidth, maxHeight, _arg_7));
 	}
 
-	public static function setupTextAndShrinkToFitUpper(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", _arg_5:Number = 0, _arg_6:Number = 0, _arg_7:Number = 9, fontColor:String = "#ebebeb", appendText:Boolean = false):Boolean {
+	/**
+	 *
+	 * @param t TextField
+	 * @param text Input string
+	 * @param fontSize Font size
+	 * @param fontStyle Font style, possible options are: $global, $light, $normal, $medium and $bold
+	 * @param maxWidth Max width
+	 * @param maxHeight Max height
+	 * @param _arg_7
+	 * @param fontColor Font colour
+	 * @param appendText Append text to TextField
+	 * @return
+	 */
+	public static function setupTextAndShrinkToFitUpper(t:TextField, text:String, fontSize:int = 28, fontStyle:String = "$medium", maxWidth:Number = 0, maxHeight:Number = 0, _arg_7:Number = 9, fontColor:String = "#ebebeb", appendText:Boolean = false):Boolean {
 		if (text == null) {
 			text = "";
 		}
 
-		return (setupTextAndShrinkToFit(t, text.toUpperCase(), fontSize, fontStyle, _arg_5, _arg_6, _arg_7, fontColor, appendText));
+		return (setupTextAndShrinkToFit(t, text.toUpperCase(), fontSize, fontStyle, maxWidth, maxHeight, _arg_7, fontColor, appendText));
 	}
 
+	/**
+	 *
+	 * @param t TextField
+	 * @param maxWidth Max width
+	 * @param maxHeight Max height
+	 * @param _arg_4
+	 * @param _arg_5
+	 * @param _arg_6
+	 * @return
+	 */
 	public static function shrinkTextToFit(t:TextField, maxWidth:Number, maxHeight:Number, _arg_4:Number = 9, _arg_5:int = -1, _arg_6:Number = 0):Boolean {
 		var _local_10:int;
 		_arg_4 = Math.max(_arg_4, 1);
