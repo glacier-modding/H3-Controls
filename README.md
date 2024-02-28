@@ -1,4 +1,4 @@
-# H3-Scaleform-Decompilation-Project
+# H3-Controls
 
 ## Building
 ### Prerequisites
